@@ -1,33 +1,42 @@
 {
-  "id": "module",
-  "title": "New Module",
+  "id": "pf2e-trigger-animations-pack",
+  "title": "Trigger Animations Pack (PF2e/SF2e)",
   "description": "",
   "version": "#{VERSION}#",
   "library": "false",
   "compatibility": {
-    "minimum": 12,
-    "verified": 12
+    "minimum": 14,
+    "verified": 14
   },
   "authors": [
     {
-      "name": "chasarooniZ",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
+      "name": "chasarooniZ"
     }
   ],
   "relationships": {
-    "systems": [],
-    "requires": []
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "manifest": "https://github.com/foundryvtt/pf2e/releases/download/latest/system.json"
+      },
+      {
+        "id": "sf2e",
+        "type": "system",
+        "manifest": "https://github.com/foundryvtt/pf2e/releases/download/latest/system.json",
+        "compatibility": {
+          "minimum": "0.0.3"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "trigger-animations",
+        "type": "module"
+      }
+    ]
   },
-  "esmodules": [
-    "scripts/module.js"
-  ],
-  "scripts": [
-    "scripts/lib/lib.js"
-  ],
-  "styles": [
-    "styles/module.css"
-  ],
+  "esmodules": ["scripts/module.js"],
   "languages": [
     {
       "lang": "en",
@@ -35,6 +44,11 @@
       "path": "languages/en.json"
     }
   ],
+  "flags": {
+    "trigger-animations": {
+      "triggers": "modules/trigger-animations/animations.json"
+    }
+  },
   "url": "#{URL}#",
   "manifest": "#{MANIFEST}#",
   "download": "#{DOWNLOAD}#",
