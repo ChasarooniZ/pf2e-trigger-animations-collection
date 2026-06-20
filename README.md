@@ -10,7 +10,7 @@
 <!--- ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2F<your-module-name>&colorB=4aa94a) -->
 <!--- [![](https://img.shields.io/badge/ko--fi-donate-%23FF5E5B?style=flat-square&logo=ko-fi&logoColor=white)](https://ko-fi.com/<Kofi Username>)-->
 
-# Trigger Animations Pack (PF2e/SF2e)
+# Trigger Animation Trove (PF2e / SF2e)
 
 Pack of animations for Trigger Animations!
 
