@@ -5,7 +5,8 @@
   "scripts": {
     "build": "node build.mjs",
     "watch": "node build.mjs --watch",
-    "combine": "node combine-animations.mjs",
+    "combine": "node macros/combine-animations.mjs",
+    "clean": "node macros/clean-jsons.mjs",
     "link": "node link.mjs"
   },
   "author": "Chasarooni",
@@ -14,5 +15,8 @@
     "@foundryvtt/foundryvtt-cli": "^1.0.3",
     "@types/prompts": "^2.4.9",
     "prompts": "^2.4.2"
+  },
+  "dependencies": {
+    "picocolors": "^1.1.1"
   }
 }

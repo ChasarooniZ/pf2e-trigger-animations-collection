@@ -1,0 +1,42 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  animations:
+    name: Animation files
+
+    permissions:
+      pull-requests: read
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Get changed animations
+        id: changed-animations
+        uses: tj-actions/changed-files@v45
+        with:
+          files: |
+            animations/**/*.json
+
+      - name: Install packages
+        if: steps.changed-animations.outputs.any_changed == 'true'
+        run: npm install
+
+      - name: Test animation files
+        if: steps.changed-animations.outputs.any_changed == 'true'
+        # env:
+        #   MODIFIED_ANIMATIONS: ${{ steps.changed-animations.outputs.all_changed_files }}
+        run: 'bun run test:animations' # -- ${MODIFIED_ANIMATIONS}

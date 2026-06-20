@@ -1,35 +1,7 @@
-const fs = require("fs");
-const path = require("path");
+import * as fs from "fs";
+import * as path from "path";
+import { getAllJsonFiles } from "./helpers.mjs";
 
-/**
- * Recursively get all JSON files from a directory
- * @param {string} dir - Directory to search
- * @returns {string[]} Array of file paths
- */
-function getAllJsonFiles(dir) {
-  if (!fs.existsSync(dir)) {
-    console.log(`Directory ${dir} not found, skipping animation combination`);
-    return [];
-  }
-
-  const files = [];
-  const entries = fs.readdirSync(dir, { withFileTypes: true });
-
-  for (const entry of entries) {
-    const fullPath = path.join(dir, entry.name);
-    if (entry.isDirectory()) {
-      files.push(...getAllJsonFiles(fullPath));
-    } else if (
-      entry.isFile() &&
-      entry.name.endsWith(".json") &&
-      !entry.name.endsWith("animations.json")
-    ) {
-      files.push(fullPath);
-    }
-  }
-
-  return files;
-}
 const PATH_START = "animations";
 const PATH_START_BOOST = PATH_START.length + 1;
 const SEGMENTS = {
@@ -107,10 +79,14 @@ function combineAnimations(animationsDir = "./animations", baseFile = null) {
         originalTags: data?.tags ?? [],
       });
 
+      data.tags = tags;
+      data.folder = category;
       // If the file itself is a animation object (has id, nodes, etc.)
       if (data.nodes && data.tags) {
         base.push(data);
         console.log(`+ ${filePath}`);
+      } else {
+        console.log(`- (SKIPPED) ${filePath}`);
       }
     } catch (error) {
       console.error(`Error processing ${filePath}:`, error.message);
@@ -125,18 +101,14 @@ function combineAnimations(animationsDir = "./animations", baseFile = null) {
       fs.mkdirSync(baseOutputDir, { recursive: true });
     }
 
-    fs.writeFileSync(baseFile, JSON.stringify(base, null, 4));
+    fs.writeFileSync(baseFile, JSON.stringify(base, null, 0));
     console.log(`Written to ${baseFile}`);
   }
 
   return base;
 }
 
-if (require.main === module) {
-  const animationsDir = process.argv[2] || "./animations";
-  const baseFile = process.argv[3] || "./animations.json";
+const animationsDir = process.argv[2] || "./animations";
+const baseFile = process.argv[3] || "./animations.json";
 
-  combineAnimations(animationsDir, baseFile);
-}
-
-module.exports = { combineAnimations, getAllJsonFiles };
+combineAnimations(animationsDir, baseFile);
