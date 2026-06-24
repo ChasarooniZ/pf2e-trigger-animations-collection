@@ -18,9 +18,9 @@ Pack of animations for Trigger Animations!
 
 - **Acceptable Sources**
   - Currently the following are acceptable sources for animations/SFX
-    - **JB2A**
-    - **GGG Asset Pack**
-    - **Future Vauxs Specific Asset Pack**
+    - **[JB2A](https://www.patreon.com/JB2A)** (Note animations are built for the Patreon version primarily, but some may also have workarounds to support the free version)
+    - **[GGG Asset Pack](https://github.com/ChasarooniZ/GGG-Sequencer-Sound-DB-Collection)**
+    - **Future Vauxs Specific Asset Pack** (has yet to be released)
 - **Animation Qualities**
   - **low** - 1 animation ~ 1 sfx
   - **medium** - ~3 animations / ~3 sfx --- This is the aim for the majority of animations
