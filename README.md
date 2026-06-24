@@ -19,7 +19,7 @@ Pack of animations for Trigger Animations!
 - **Acceptable Sources**
   - Currently the following are acceptable sources for animations/SFX
     - **JB2A**
-    - **Future Asset Pack (To Be Added Later)**
+    - **GGG Asset Pack**
     - **Future Vauxs Specific Asset Pack**
 - **Animation Qualities**
   - **low** - 1 animation ~ 1 sfx
