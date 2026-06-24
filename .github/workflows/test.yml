@@ -43,4 +43,4 @@ jobs:
         if: steps.changed-animations.outputs.any_changed == 'true'
         # env:
         #   MODIFIED_ANIMATIONS: ${{ steps.changed-animations.outputs.all_changed_files }}
-        run: "npm run test:animations" # -- ${MODIFIED_ANIMATIONS}
+        run: "node macros/test-animations.mjs" # -- ${MODIFIED_ANIMATIONS}

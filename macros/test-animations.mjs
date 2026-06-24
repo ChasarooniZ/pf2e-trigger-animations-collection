@@ -34,6 +34,22 @@ function validateFileName({ path, name }) {
   return slug === fileName;
 }
 
+function validateNodes(data) {
+  const errors = [];
+  for (const node of data.nodes) {
+    if (node.type === "file" && inputs?.file?.value?.includes("/")) {
+      console.error(
+        `- Non Sequencer DB Value '${inputs?.file?.value}' in ${data.name}`,
+      );
+      errors.push({
+        id: data.name,
+        error: `Non Sequencer DB Value '${inputs?.file?.value}'`,
+      });
+    }
+  }
+  return errors;
+}
+
 /**
  * Combine multiple animation JSON files into a single structure
  * @param {string} animationsDir - Directory containing animation JSON files
@@ -57,6 +73,10 @@ function testAnimations(animationsDir = "./animations") {
         })
       ) {
         errors.push({ id: filePath, error: "Invalid File name" });
+      }
+      const nodeErrors = validateNodes(data);
+      if (nodeErrors.length > 0) {
+        errors.push(...nodeErrors);
       }
     } catch (error) {
       console.error(`Error processing ${filePath}:`, error.message);
