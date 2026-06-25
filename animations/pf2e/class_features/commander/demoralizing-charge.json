@@ -1,0 +1,52 @@
+{
+    "name": "Demoralizing Charge (Local)",
+    "folder": "Class Features",
+    "priority": 0,
+    "nodes": [
+        {
+            "id": "TOIbZQ2XPCrZM39q",
+            "position": {
+                "x": 460.05194805194805,
+                "y": 195.98701298701303
+            },
+            "type": "animation-event",
+            "inputs": {
+                "name": {
+                    "value": "demoralizing-charge"
+                }
+            },
+            "outs": {
+                "out": {
+                    "connection": "2YaGSbcivpGz2Dbp:ins:in"
+                }
+            }
+        },
+        {
+            "type": "macro",
+            "position": {
+                "x": 992.2867132867134,
+                "y": 232.34805194805188
+            },
+            "id": "2YaGSbcivpGz2Dbp",
+            "inputs": {
+                "macro": {
+                    "value": "Animation: Demoralizing Charge"
+                }
+            },
+            "outs": {
+                "out": {
+                    "connection": "w2vpaNFhTJxenK54:ins:in"
+                }
+            }
+        },
+        {
+            "type": "play",
+            "position": {
+                "x": 1357.949050949051,
+                "y": 264.1883116883116
+            },
+            "id": "w2vpaNFhTJxenK54"
+        }
+    ],
+    "id": "RbEJxgY30QmjqvWC"
+}

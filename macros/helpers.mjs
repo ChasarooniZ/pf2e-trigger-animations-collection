@@ -154,6 +154,7 @@ export function getAllJsonFiles(dir) {
   return files;
 }
 
+// Stolen from the pf2e system
 export function sluggify(text2, { camel = null } = {}) {
   if (typeof text2 != "string")
     return (console.warn("Non-string argument passed to `sluggify`"), "");
