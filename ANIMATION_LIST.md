@@ -46,7 +46,7 @@
 
 #### Cantrips
 
-- Hurtling Stone 🆓🔇 (✍🏼 @Chasarooni)
+- Hurtling Stone 🔇🆓 (@Chasarooni)
 
 #### Focus Spells
 
@@ -63,8 +63,6 @@
 #### 6th Rank Spells
 
 #### 7th Rank Spells
-
-- Void Scour 💲🔊 (✍🏼 @Chasarooni)
 
 #### 8th Rank Spells
 
