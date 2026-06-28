@@ -80,7 +80,7 @@ jobs:
         id: get_version
         uses: battila7/get-version-action@v2
       - name: Combine Trigger Files
-        run: node ./macros/combine-animations.js
+        run: node ./macros/combine-animations.mjs
 
       # Modify "module.json" with values specific to the release.
       # Since the values for the "version" and "url" keys aren't known ahead of

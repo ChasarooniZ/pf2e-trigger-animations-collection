@@ -27,7 +27,7 @@ function getTagsAndCategory({ path, originalTags }) {
   const tags = new Set(originalTags);
   const pathSegments = path
     .slice(path.indexOf(PATH_START) + PATH_START_BOOST)
-    .split("\\");
+    .split(/[\\/]/);
   // System Tag
   const system = pathSegments[SEGMENTS.SYSTEM];
   tags.add(system);

@@ -3,6 +3,10 @@
 - **New Animations**
   - Hurtling Stone, Void Scour (@Chasarooni)
 
+## 0.0.8
+
+- Fixed bug in release script
+
 ## 0.0.7
 
 - Added a game setting to configure what level of persistence you want
