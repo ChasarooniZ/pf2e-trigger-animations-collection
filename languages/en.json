@@ -1,3 +1,18 @@
 {
-  "MODULE.hello": "hello"
+  "pf2e-trigger-animations-trove": {
+    "module-settings": {
+      "animation-config": {
+        "persistent": {
+          "name": "Enable Persistent animations?",
+          "hint": "When set can enable persistent animations for the following categories in order of performance cost (off, templates, effects, all)",
+          "choices": {
+            "off": "Low - Off",
+            "templates": "Medium - Templates",
+            "effects": "High - Effects",
+            "all": "Maximum - All"
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,7 +1,13 @@
 ## Unreleased
 
 - **New Animations**
-  - Hurtling Stone (@Chasarooni)
+  - Hurtling Stone, Void Scour (@Chasarooni)
+
+## 0.0.7
+
+- Added a game setting to configure what level of persistence you want
+- update PR template to better reflect what's wanted'
+- Update the `ANIMATION_LIST.md` to include more formatting emojis
 
 ## 0.0.6
 

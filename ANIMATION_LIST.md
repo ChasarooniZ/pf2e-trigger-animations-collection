@@ -2,13 +2,18 @@
 
 **Icon Guide**
 
+**Animation Properties**
+
 - 🆓 Supports JB2a Free
 - 💲 JB2a Patreon only
 - 🔊 Has Sounds
 - 🔇 No Sounds
+- ♾️ Has an optional persistent animation
+- 🥔 Has an option for a Potato quality animation (IE 1 sound + 1 animation max)
 
-- ✍🏼 Created by
-- 🛠️ Updated By
+- **Credit**
+  - ✍🏼 Created by
+  - 🛠️ Updated By
 
 ## Table Of Contents- [Animation List](#animation-list)
 
