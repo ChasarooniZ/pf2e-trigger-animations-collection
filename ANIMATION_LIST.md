@@ -42,7 +42,10 @@
       - [General Feats](#general-feats)
       - [Skill Feats](#skill-feats)
       - [Archetype Feats](#archetype-feats)
-    - [Attacks](#attacks)
+    - [Strikes](#strikes)
+      - [Weapons](#weapons)
+        - [Group](#group)
+        - [Base](#base)
     - [Equipment](#equipment)
     - [Creatures](#creatures)
   - [SF2e](#sf2e)
@@ -68,7 +71,7 @@
       - [General Feats](#general-feats-1)
       - [Skill Feats](#skill-feats-1)
       - [Archetype Feats](#archetype-feats-1)
-    - [Attacks](#attacks-1)
+    - [Attacks](#attacks)
     - [Equipment](#equipment-1)
     - [Creatures](#creatures-1)
 
@@ -124,7 +127,17 @@
 
 #### Archetype Feats
 
-### Attacks
+### Strikes
+
+#### Weapons
+
+##### Group
+
+- Polearm 🔊🆓 (✍🏼 @Chasarooni)
+
+##### Base
+
+- Greatpick 🔊🆓 (✍🏼 @Chasarooni)
 
 ### Equipment
 
