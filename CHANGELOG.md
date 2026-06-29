@@ -1,7 +1,11 @@
 ## Unreleased
 
 - **New Animations**
-  - Hurtling Stone, Void Scour (@Chasarooni)
+  - Hurtling Stone, Scatter Scree, Void Scour (@Chasarooni)
+
+## 0.0.9
+
+- Fixed manifest issue causing animations to not appear
 
 ## 0.0.8
 

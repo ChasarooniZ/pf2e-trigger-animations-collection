@@ -57,7 +57,7 @@
   ],
   "flags": {
     "trigger-animations": {
-      "triggers": "modules/trigger-animations/animations.json"
+      "triggers": "modules/pf2e-trigger-animations-trove/animations.json"
     }
   },
   "url": "#{URL}#",
