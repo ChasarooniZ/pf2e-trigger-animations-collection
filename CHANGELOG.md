@@ -2,6 +2,7 @@
 
 - **New Animations**
   - Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Group: Polearms, Great Pick (@Chasarooni)
+  - Fireball (@ChazPls)
 
 ## 0.0.11
 
