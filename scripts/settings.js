@@ -21,15 +21,6 @@ export function setupSettings() {
     },
   });
 
-  game.settings.register(MODULE_ID, "animation-config.potato-mode", {
-    name: "pf2e-trigger-animations-trove.module-settings.animation-config.potato-mode.name",
-    hint: "pf2e-trigger-animations-trove.module-settings.animation-config.potato-mode.hint",
-    scope: "world",
-    config: false,
-    type: Boolean,
-    default: false,
-  });
-
   game.settings.register(MODULE_ID, "persistent.templates", {
     name: "",
     hint: "",
