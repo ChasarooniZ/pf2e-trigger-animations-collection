@@ -98,6 +98,7 @@
 #### 3rd Rank Spells
 
 - Fireball 🔇💲 (✍🏼 @ChazPls)
+
 #### 4th Rank Spells
 
 #### 5th Rank Spells

@@ -15,7 +15,7 @@ Paste a video of it working here [ShareX](https://getsharex.com/) is an easy way
 
 ### Link Animation issue this closes
 
-closes 
+closes
 
 ## Actually Check these (for my logging purposes)
 

@@ -1,4 +1,4 @@
 import fs from "node:fs";
 
 const filePath = "./animations.json";
-fs.writeFileSync(filePath, '[]', { encoding: "utf8" });
+fs.writeFileSync(filePath, "[]", { encoding: "utf8" });
