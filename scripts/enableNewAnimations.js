@@ -10,7 +10,7 @@ export async function askToAddNewAnimationsDialog() {
   );
   if (list.length > 0) {
     const newAnimationsByFolder = {};
-    newAnimations.forEach(({ id, name, folder }) => {
+    list.forEach(({ id, name, folder }) => {
       if (!newAnimationsByFolder[folder]) {
         newAnimationsByFolder[folder] = [{ id, name }];
       } else {
