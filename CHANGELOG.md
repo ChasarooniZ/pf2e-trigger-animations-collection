@@ -1,7 +1,7 @@
 ## Unreleased
 
 - **New Animations**
-  - Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Group: Polearms, Great Pick (@Chasarooni)
+  - Persistent Damage, Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Group: Polearms, Claw (@Chasarooni)
   - Fireball (@ChazPls)
 
 ## 0.0.11
