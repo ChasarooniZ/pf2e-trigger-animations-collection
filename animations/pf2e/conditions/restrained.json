@@ -15,7 +15,7 @@
       },
       "inputs": {
         "name": {
-          "value": "grabbed"
+          "value": "restrained"
         }
       }
     },
@@ -119,9 +119,6 @@
         },
         "effect": {
           "connection": "DIKQm9cpxx67j5yf:outputs:effect"
-        },
-        "uniform": {
-          "value": true
         }
       },
       "outs": {
@@ -134,8 +131,8 @@
     {
       "type": "visibility",
       "position": {
-        "x": 1936.2246642246632,
-        "y": -72.24603174603169
+        "x": 2200.5103785103774,
+        "y": -59.388888888888914
       },
       "id": "Nrbbayr5LI09Phi2",
       "inputs": {
@@ -164,8 +161,8 @@
     {
       "type": "play",
       "position": {
-        "x": 3246.122571872572,
-        "y": -78.19696969696975
+        "x": 3099.872571872572,
+        "y": -50.696969696969745
       },
       "id": "SW6ZeNxbHQVg27Dj",
       "inputs": {
@@ -180,30 +177,30 @@
     {
       "type": "get-quality",
       "position": {
-        "x": 2261.2539682539687,
-        "y": -72.07936507936506
+        "x": 2514.1111111111113,
+        "y": -59.222222222222285
       },
       "id": "H2COAV35MOZAqh7W",
       "outs": {
         "minimal": {
           "connection": "SW6ZeNxbHQVg27Dj:ins:in"
         },
-        "high": {
-          "connection": "icMdaJ1q3j1VHfPK:ins:in"
+        "low": {
+          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
         },
         "medium": {
-          "connection": "0uhnjw5WZPNbk7Eb:ins:in"
+          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
         },
-        "low": {
-          "connection": "0uhnjw5WZPNbk7Eb:ins:in"
+        "high": {
+          "connection": "icMdaJ1q3j1VHfPK:ins:in"
         }
       }
     },
     {
       "type": "persist",
       "position": {
-        "x": 2579.6349206349205,
-        "y": 87.0158730158729
+        "x": 2776.7777777777774,
+        "y": 138.44444444444434
       },
       "id": "icMdaJ1q3j1VHfPK",
       "inputs": {
@@ -228,15 +225,15 @@
       },
       "outs": {
         "out": {
-          "connection": "0uhnjw5WZPNbk7Eb:ins:in"
+          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
         }
       }
     },
     {
       "type": "rotation",
       "position": {
-        "x": 1679.68253968254,
-        "y": -65.19047619047586
+        "x": 1943.9682539682542,
+        "y": -52.33333333333303
       },
       "id": "3v5Py0kM4c1sAYDK",
       "inputs": {
@@ -262,7 +259,7 @@
       "id": "kOveTNFibKl6yrrI",
       "inputs": {
         "file": {
-          "value": "jb2a.markers.chain.standard.loop.01.red"
+          "value": "jb2a.markers.chain.standard.complete.02.red"
         },
         "effect": {
           "connection": "DIKQm9cpxx67j5yf:outputs:effect"
@@ -270,15 +267,15 @@
       },
       "outs": {
         "out": {
-          "connection": "3v5Py0kM4c1sAYDK:ins:in"
+          "connection": "0uhnjw5WZPNbk7Eb:ins:in"
         }
       }
     },
     {
       "type": "style",
       "position": {
-        "x": 2903.208791208792,
-        "y": 63.642857142857395
+        "x": 1688.923076923077,
+        "y": -63.5
       },
       "id": "0uhnjw5WZPNbk7Eb",
       "inputs": {
@@ -294,17 +291,16 @@
       },
       "outs": {
         "out": {
-          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
+          "connection": "3v5Py0kM4c1sAYDK:ins:in"
         }
       }
     }
   ],
-  "name": "Grabbed",
+  "name": "Restrained",
   "description": "<p>Written by @Chasarooni</p>",
   "folder": "Conditions",
-  "id": "DI5GCmVNNSiBuonL",
+  "id": "YfuO4DPtbmZNBT2i",
   "tags": [
-    "action-posted",
-    "PF2e Trove"
+    "action-posted"
   ]
 }

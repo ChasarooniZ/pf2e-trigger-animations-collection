@@ -4,6 +4,11 @@
   - Persistent Damage, Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Group: Polearms, Claw, Blinded, Clumsy, Confused, Controlled, Dazzled, Deafened, Doomed, Drained, Dying, Encumbered, Enfeebled, Fascinated, Fatigued, Fleeing, Frightened, Grabbed, Immobilized, Off-Guard, Paralyzed, Petrified, Prone, Quickened, Sickened, Slowed, Stunned, Stupefied, Unconscious, Wounded (@Chasarooni)
   - Fireball (@ChazPls)
 
+## 0.0.20
+
+- Updated `Condition` animations to utilize the new `Effect / Condition Update Badge` Trigger
+- Added minimal quality option to some conditions which does not add filters to animations
+
 ## 0.0.19
 
 - Added a new Trigger `Effect / Condition Update Badge` for when the badge of an effect or condition is updated
