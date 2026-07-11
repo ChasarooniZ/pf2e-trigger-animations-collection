@@ -196,11 +196,11 @@
         "minimal": {
           "connection": "SW6ZeNxbHQVg27Dj:ins:in"
         },
-        "medium": {
-          "connection": "rcvw4F77H9wPxGBG:ins:in"
-        },
         "low": {
-          "connection": "rcvw4F77H9wPxGBG:ins:in"
+          "connection": "5zCSWzQgzzNBbL6G:ins:in"
+        },
+        "medium": {
+          "connection": "5zCSWzQgzzNBbL6G:ins:in"
         }
       }
     },
@@ -233,7 +233,7 @@
       },
       "outs": {
         "out": {
-          "connection": "rcvw4F77H9wPxGBG:ins:in"
+          "connection": "5zCSWzQgzzNBbL6G:ins:in"
         }
       }
     },
@@ -259,58 +259,10 @@
       }
     },
     {
-      "type": "get-setting",
-      "position": {
-        "x": -653.060606060606,
-        "y": -321.27272727272725
-      },
-      "id": "A3yWkBrgUo5srjzA",
-      "custom": {
-        "outputs": {
-          "li2LbkRiKwgVfTbL": {
-            "id": "li2LbkRiKwgVfTbL",
-            "label": "JB2A Patreon",
-            "slug": "output",
-            "isArray": false,
-            "type": "boolean"
-          }
-        }
-      },
-      "inputs": {
-        "key": {
-          "value": "module-active.jb2a-patreon"
-        },
-        "module": {
-          "value": "pf2e-trigger-animations-trove"
-        }
-      }
-    },
-    {
-      "type": "split-boolean",
-      "inputs": {
-        "input": {
-          "connection": "A3yWkBrgUo5srjzA:outputs:li2LbkRiKwgVfTbL"
-        }
-      },
-      "position": {
-        "x": 2018.0357142857142,
-        "y": -61.74783549783501
-      },
-      "id": "rcvw4F77H9wPxGBG",
-      "outs": {
-        "false": {
-          "connection": "pPMzOAN2WhxUdrnX:ins:in"
-        },
-        "true": {
-          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
-        }
-      }
-    },
-    {
       "type": "style",
       "position": {
-        "x": 2239.3160173160177,
-        "y": 12.620129870130086
+        "x": 2270.5660173160177,
+        "y": 13.870129870130086
       },
       "id": "pPMzOAN2WhxUdrnX",
       "inputs": {
@@ -386,8 +338,8 @@
     {
       "type": "split-number",
       "position": {
-        "x": -466.4908237203033,
-        "y": -137.85253430266812
+        "x": -497.7408237203033,
+        "y": -71.60253430266812
       },
       "id": "v9GiEXLJqJ8SXzRz",
       "custom": {
@@ -450,31 +402,31 @@
       },
       "outs": {
         "IpJMzyW6teHzTq2o": {
-          "connection": "wDAKrvfQ6qFz6cd2:ins:in"
+          "connection": "QwXAkONfvFjZ6KN4:ins:in"
         },
         "VKzfdQ2e9zPP02GI": {
-          "connection": "t4fH2EbAUnEyoD2h:ins:in"
-        },
-        "prtafW7008OVaAo9": {
-          "connection": "JdzZ2e8RKAiNG6e1:ins:in"
-        },
-        "H1CROC76Yfjc7eJS": {
-          "connection": "JdzZ2e8RKAiNG6e1:ins:in"
-        },
-        "DU6ufqaw9NBgbQWI": {
-          "connection": "JdzZ2e8RKAiNG6e1:ins:in"
-        },
-        "IcQwrW8ZGzP1stLO": {
-          "connection": "JdzZ2e8RKAiNG6e1:ins:in"
-        },
-        "1UASRKGVk58cwcWL": {
-          "connection": "JdzZ2e8RKAiNG6e1:ins:in"
-        },
-        "RmOWxAygz9G6N8bE": {
-          "connection": "JdzZ2e8RKAiNG6e1:ins:in"
+          "connection": "TxcDhvJCcGPz25WR:ins:in"
         },
         "MoUdOZHVhm1KwmbB": {
-          "connection": "JdzZ2e8RKAiNG6e1:ins:in"
+          "connection": "1zopC4zSlXIoIZO9:ins:in"
+        },
+        "RmOWxAygz9G6N8bE": {
+          "connection": "1zopC4zSlXIoIZO9:ins:in"
+        },
+        "IcQwrW8ZGzP1stLO": {
+          "connection": "1zopC4zSlXIoIZO9:ins:in"
+        },
+        "1UASRKGVk58cwcWL": {
+          "connection": "1zopC4zSlXIoIZO9:ins:in"
+        },
+        "DU6ufqaw9NBgbQWI": {
+          "connection": "1zopC4zSlXIoIZO9:ins:in"
+        },
+        "H1CROC76Yfjc7eJS": {
+          "connection": "1zopC4zSlXIoIZO9:ins:in"
+        },
+        "prtafW7008OVaAo9": {
+          "connection": "1zopC4zSlXIoIZO9:ins:in"
         }
       },
       "inputs": {
@@ -526,48 +478,6 @@
       }
     },
     {
-      "type": "split-boolean",
-      "position": {
-        "x": -196.31501831501805,
-        "y": -45.5952380952383
-      },
-      "id": "wDAKrvfQ6qFz6cd2",
-      "inputs": {
-        "input": {
-          "connection": "A3yWkBrgUo5srjzA:outputs:li2LbkRiKwgVfTbL"
-        }
-      },
-      "outs": {
-        "true": {
-          "connection": "EzxTKNzSpyeCA9fv:ins:in"
-        },
-        "false": {
-          "connection": "f6VJJtExDnWsIRzr:ins:in"
-        }
-      }
-    },
-    {
-      "type": "split-boolean",
-      "position": {
-        "x": -199.90476190476102,
-        "y": -423.66666666666697
-      },
-      "id": "t4fH2EbAUnEyoD2h",
-      "inputs": {
-        "input": {
-          "connection": "A3yWkBrgUo5srjzA:outputs:li2LbkRiKwgVfTbL"
-        }
-      },
-      "outs": {
-        "false": {
-          "connection": "QtcGLMo5AnRofz1W:ins:in"
-        },
-        "true": {
-          "connection": "6QSY4eeibSBZtOR7:ins:in"
-        }
-      }
-    },
-    {
       "type": "file",
       "position": {
         "x": 70.76190476190527,
@@ -585,27 +495,6 @@
       "outs": {
         "out": {
           "connection": "6eNEzW2tgWvC5nbk:ins:in"
-        }
-      }
-    },
-    {
-      "type": "split-boolean",
-      "position": {
-        "x": -165.85714285714312,
-        "y": 328.23809523809484
-      },
-      "id": "JdzZ2e8RKAiNG6e1",
-      "inputs": {
-        "input": {
-          "connection": "A3yWkBrgUo5srjzA:outputs:li2LbkRiKwgVfTbL"
-        }
-      },
-      "outs": {
-        "true": {
-          "connection": "b5uGLP9lYbMEVGCp:ins:in"
-        },
-        "false": {
-          "connection": "t0nSuC8cF1yAKo7B:ins:in"
         }
       }
     },
@@ -650,11 +539,95 @@
           "connection": "6eNEzW2tgWvC5nbk:ins:in"
         }
       }
+    },
+    {
+      "type": "module-enabled",
+      "position": {
+        "x": -232.58333333333348,
+        "y": 326.33333333333326
+      },
+      "id": "1zopC4zSlXIoIZO9",
+      "inputs": {
+        "module": {
+          "value": "jb2a_patreon"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "b5uGLP9lYbMEVGCp:ins:in"
+        },
+        "false": {
+          "connection": "t0nSuC8cF1yAKo7B:ins:in"
+        }
+      }
+    },
+    {
+      "type": "module-enabled",
+      "position": {
+        "x": -214.25,
+        "y": -42.41666666666663
+      },
+      "id": "QwXAkONfvFjZ6KN4",
+      "inputs": {
+        "module": {
+          "value": "jb2a_patreon"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "EzxTKNzSpyeCA9fv:ins:in"
+        },
+        "false": {
+          "connection": "f6VJJtExDnWsIRzr:ins:in"
+        }
+      }
+    },
+    {
+      "type": "module-enabled",
+      "position": {
+        "x": -229.25,
+        "y": -387.41666666666663
+      },
+      "id": "TxcDhvJCcGPz25WR",
+      "inputs": {
+        "module": {
+          "value": "jb2a_patreon"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "6QSY4eeibSBZtOR7:ins:in"
+        },
+        "false": {
+          "connection": "QtcGLMo5AnRofz1W:ins:in"
+        }
+      }
+    },
+    {
+      "type": "module-enabled",
+      "position": {
+        "x": 1990.75,
+        "y": -24.91666666666663
+      },
+      "id": "5zCSWzQgzzNBbL6G",
+      "inputs": {
+        "module": {
+          "value": "jb2a_patreon"
+        }
+      },
+      "outs": {
+        "false": {
+          "connection": "pPMzOAN2WhxUdrnX:ins:in"
+        },
+        "true": {
+          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
+        }
+      }
     }
   ],
   "name": "Clumsy",
   "description": "<p>Written by @Chasarooni</p>",
   "folder": "Conditions",
-  "id": "2VRr7OxerNmxkjJr",
-  "tags": ["action-posted", "pf2e", "conditions"]
+  "id": "nVDEwiLMjZeBn0vc",
+  "tags": ["action-posted", "pf2e", "conditions", "PF2e Trove"]
 }

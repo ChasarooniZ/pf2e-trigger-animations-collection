@@ -1,14 +1,14 @@
 {
   "name": "Handler: Attack Roll",
-  "folder": "System",
+  "folder": "Handlers",
   "priority": 0,
   "description": "<p>Created by @Chasarooni</p>",
   "nodes": [
     {
       "id": "5Yy2lI6uhThGLmVb",
       "position": {
-        "x": 526.7142857142857,
-        "y": 186.8571428571429
+        "x": 215.21428571428567,
+        "y": 188.6071428571429
       },
       "type": "animation-event",
       "custom": {
@@ -31,7 +31,7 @@
       },
       "outs": {
         "out": {
-          "connection": "s4paa0j2yEYGCTLw:ins:in"
+          "connection": "niHakw2FVnHb5kTZ:ins:in"
         }
       },
       "inputs": {
@@ -88,7 +88,7 @@
           "connection": "5Yy2lI6uhThGLmVb:outputs:actor"
         },
         "item": {
-          "connection": "5Yy2lI6uhThGLmVb:outputs:item"
+          "connection": "niHakw2FVnHb5kTZ:outputs:cVoi0vGSYMkcIScZ"
         }
       }
     },
@@ -129,7 +129,7 @@
       },
       "inputs": {
         "input": {
-          "connection": "5Yy2lI6uhThGLmVb:outputs:item"
+          "connection": "niHakw2FVnHb5kTZ:outputs:cVoi0vGSYMkcIScZ"
         }
       },
       "outs": {
@@ -231,7 +231,59 @@
           "connection": "5rxwWUI3s4DYirVB:ins:in"
         }
       }
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 501,
+        "y": 188
+      },
+      "id": "niHakw2FVnHb5kTZ",
+      "custom": {
+        "inputs": {
+          "I1VCbaVNmjwS6o68": {
+            "id": "I1VCbaVNmjwS6o68",
+            "label": "Item",
+            "slug": "input",
+            "isArray": false,
+            "type": "item"
+          },
+          "9B9zD9txRIAdfnRh": {
+            "id": "9B9zD9txRIAdfnRh",
+            "label": "Sources",
+            "slug": "input",
+            "isArray": false,
+            "type": "target"
+          }
+        },
+        "outputs": {
+          "cVoi0vGSYMkcIScZ": {
+            "id": "cVoi0vGSYMkcIScZ",
+            "label": "Item",
+            "slug": "output",
+            "isArray": false,
+            "type": "item"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst item = inputs[0];\nconst source = inputs[1];\nconst actor = source?.actor;\nlet value = item;\nif (item.type !== 'strike' && actor) {\n  const strike = actor.system.actions.find(a => a?.item?.rule?.item?.slug === item?.slug);\n  if (strike?.item) {\n    value = strike?.item;\n  }\n}\nreturn [{type: \"item\", value: value}];"
+        },
+        "9B9zD9txRIAdfnRh": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:sources"
+        },
+        "I1VCbaVNmjwS6o68": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "s4paa0j2yEYGCTLw:ins:in"
+        }
+      }
     }
   ],
-  "id": "w5XxEcHAsKe5TnZr"
+  "id": "s3RK8IXBszugaKZm",
+  "tags": ["PF2e Trove", "handlers"]
 }

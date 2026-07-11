@@ -4,8 +4,8 @@
     {
       "id": "ZOy2yUQRDp3DXNGr",
       "position": {
-        "x": -268.888836822488,
-        "y": -87.09248272311606
+        "x": -1060.888836822488,
+        "y": -131.09248272311606
       },
       "type": "animation-event",
       "outs": {
@@ -22,8 +22,8 @@
     {
       "type": "effect",
       "position": {
-        "x": 307.2220002505236,
-        "y": -90.11113931300474
+        "x": -540.7779997494763,
+        "y": -124.11113931300474
       },
       "id": "DIKQm9cpxx67j5yf",
       "outs": {
@@ -46,8 +46,8 @@
     {
       "type": "location",
       "position": {
-        "x": 615.5637106805508,
-        "y": -86.91249521805128
+        "x": -232.43628931944886,
+        "y": -120.91249521805128
       },
       "id": "6eNEzW2tgWvC5nbk",
       "inputs": {
@@ -71,8 +71,8 @@
     {
       "type": "file",
       "position": {
-        "x": 1231.6535221330043,
-        "y": -2.484767284632312
+        "x": 1693.3678078472897,
+        "y": -22.48476728463254
       },
       "id": "466KV11HVbxJ3Oih",
       "inputs": {
@@ -80,7 +80,7 @@
           "connection": "DIKQm9cpxx67j5yf:outputs:effect"
         },
         "file": {
-          "connection": "xfhOlgJ68CXaVPYJ:outputs:eBlWpNGHMMckCkRc"
+          "connection": "moNAXSniGzIybC1e:outputs:oyxxbOAZvNxvfJdA"
         }
       },
       "outs": {
@@ -97,8 +97,8 @@
         }
       },
       "position": {
-        "x": 57.66646031984942,
-        "y": -77.4053363219316
+        "x": -790.3335396801504,
+        "y": -111.4053363219316
       },
       "id": "wjDV7ApiwKUADuEn",
       "custom": {
@@ -138,8 +138,8 @@
     {
       "type": "scale",
       "position": {
-        "x": 856.2564102564103,
-        "y": -87.60000000000002
+        "x": 8.256410256410618,
+        "y": -121.60000000000002
       },
       "id": "fOQmLPBTOTwEancN",
       "inputs": {
@@ -152,95 +152,16 @@
       },
       "outs": {
         "out": {
-          "connection": "xfhOlgJ68CXaVPYJ:ins:in"
+          "connection": "yiSu2ooQzIswwQEF:ins:in"
         }
       },
       "state": "object"
     },
     {
-      "type": "execute-script",
-      "state": "script",
-      "inputs": {
-        "WswVjxhXBsm9lHG3": {
-          "connection": "rjsZapkpjy0j53kl:outputs:li2LbkRiKwgVfTbL"
-        },
-        "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst patreon = inputs[0]\nconst type = inputs[1];\nconst files = {\n  'acid': patreon ? \"jb2a.liquid.splash.green\" : 'jb2a.liquid.splash.blue',\n  'bleed': patreon ? \"jb2a.liquid.splash.red\" : 'jb2a.liquid.splash.blue',  \n  'bludgeoning': \"jb2a.impact.ground_crack.orange.01\",  \n  'cold': \"jb2a.impact_themed.ice_shard.blue\",  \n  'electricity': \"jb2a.impact.012.blue\",  \n  'fire': \"jb2a.shield_themed.below.fire.01.orange\",  \n  'force': \"jb2a.cast_shape.circle.single01.blue\",  \n  'mental': \"jb2a.template_circle.out_pulse.02.burst.bluewhite\",  \n  'piercing': patreon ? \"jb2a.spike_trap.10x10ft.top.no_base.normal.01\" : \"jb2a.spike_trap.10x10ft.top.holes.normal.01.01\",  \n  'poison': patreon ? \"jb2a.sleep.cloud.02.green\" : \"jb2a.sleep.cloud.02.pink\",  \n  'slashing': patreon ? \"jb2a.claws.400px.bright_orange\" : \"jb2a.claws.400px.red\",  \n  'sonic': \"jb2a.soundwave.02.blue\",  \n  'spirit': patreon ? \"jb2a.spirit_guardians.blue.no_ring\" : \"jb2a.spirit_guardians.blueyellow.ring\",  \n  'vitality': \"jb2a.divine_smite.caster.reversed.blueyellow\",  \n  'void': patreon ? \"jb2a.divine_smite.caster.reversed.dark_purple\" : \"jb2a.divine_smite.caster.reversed.blueyellow\",\n}\nconsole.log({f: files[type]})\nreturn [{type: \"text\", value: files[type]}];"
-        },
-        "fsZchPU67Lzw6YQq": {
-          "connection": "wjDV7ApiwKUADuEn:outputs:ZiOwfa4syZ0oDbQA"
-        }
-      },
-      "position": {
-        "x": 985.6984126984121,
-        "y": -306.2944444444447
-      },
-      "id": "xfhOlgJ68CXaVPYJ",
-      "custom": {
-        "inputs": {
-          "WswVjxhXBsm9lHG3": {
-            "id": "WswVjxhXBsm9lHG3",
-            "label": "JB2A Patreon",
-            "slug": "input",
-            "isArray": false,
-            "type": "boolean"
-          },
-          "fsZchPU67Lzw6YQq": {
-            "id": "fsZchPU67Lzw6YQq",
-            "label": "Damage Type",
-            "slug": "input",
-            "isArray": false,
-            "type": "text"
-          }
-        },
-        "outputs": {
-          "eBlWpNGHMMckCkRc": {
-            "id": "eBlWpNGHMMckCkRc",
-            "label": "File",
-            "slug": "output",
-            "isArray": false,
-            "type": "text"
-          }
-        }
-      },
-      "outs": {
-        "out": {
-          "connection": "466KV11HVbxJ3Oih:ins:in"
-        }
-      }
-    },
-    {
-      "type": "get-setting",
-      "position": {
-        "x": 835.9206349206347,
-        "y": -559.3333333333333
-      },
-      "id": "rjsZapkpjy0j53kl",
-      "custom": {
-        "outputs": {
-          "li2LbkRiKwgVfTbL": {
-            "id": "li2LbkRiKwgVfTbL",
-            "label": "JB2A Patreon",
-            "slug": "output",
-            "isArray": false,
-            "type": "boolean"
-          }
-        }
-      },
-      "inputs": {
-        "key": {
-          "value": "module-active.jb2a-patreon"
-        },
-        "module": {
-          "value": "pf2e-trigger-animations-trove"
-        }
-      }
-    },
-    {
       "type": "style",
       "position": {
-        "x": 1456.6214896214892,
-        "y": -90.5
+        "x": 1992.6214896214892,
+        "y": -110.5
       },
       "id": "FW8Uf6Sqkj6MFxFt",
       "inputs": {
@@ -264,19 +185,19 @@
       "type": "execute-script",
       "state": "script",
       "inputs": {
-        "WswVjxhXBsm9lHG3": {
-          "connection": "rjsZapkpjy0j53kl:outputs:li2LbkRiKwgVfTbL"
-        },
         "script": {
           "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst patreon = inputs[0]\nconst type = inputs[1];\nconst filters = {\n  'acid': patreon ? {} : {\"hue\": -100},\n  'bleed': patreon ? {} : {\"hue\": 145},\n  'mental': patreon ? {} : {\"saturate\": 0.8, \"hue\": 20}, \n  'poison': patreon ? {} : {\"hue\": 180},\n  'sonic': {\"hue\": -50},  \n  'spirit': patreon ? {} : {\"hue\": 155}, \n  'void': patreon ? {} : {\"hue\": -165},\n}\n\nreturn [{type: \"text\", value: JSON.stringify(filters?.[type] || {})}];"
         },
         "fsZchPU67Lzw6YQq": {
           "connection": "wjDV7ApiwKUADuEn:outputs:ZiOwfa4syZ0oDbQA"
+        },
+        "WswVjxhXBsm9lHG3": {
+          "connection": "tEioGdUq0AQPXU9Y:outputs:YlqVeyCg1FVh4kAl"
         }
       },
       "position": {
-        "x": 1303.3650793650788,
-        "y": -426.88888888888914
+        "x": 1660.0793650793644,
+        "y": -200.74603174603203
       },
       "id": "XodgblzxCASuQwMY",
       "custom": {
@@ -317,26 +238,22 @@
       "state": "script",
       "inputs": {
         "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst patreon = inputs[0]\nconst type = inputs[1];\nconst files = { \n  'fire': {fadeIn: 500, fadeOut: 250, duration: 2400  },  \n  'poison': {fadeIn: 500, fadeOut: 250, duration: 2400,  \"opacity\": 0.8}, \n   'spirit': {fadeIn: 500, fadeOut: 250, duration: 2400  }\n}\n\nconsole.log([\n  {type: \"number\", value: files[type]?.fadeIn || 0},\n  {type: \"number\", value: files[type]?.fadeOut || 0},\n  {type: \"number\", value: files[type]?.duration || 0},\n  {type: \"number\", value: files[type]?.opacity || 1},\n])\n\nreturn [\n  {type: \"number\", value: files[type]?.fadeIn || 0},\n  {type: \"number\", value: files[type]?.fadeOut || 0},\n  {type: \"number\", value: files[type]?.duration || 0},\n  {type: \"number\", value: files[type]?.opacity || 1},\n];"
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst type = inputs[0];\nconst files = { \n  'fire': {fadeIn: 500, fadeOut: 250, duration: 2400  },  \n  'poison': {fadeIn: 500, fadeOut: 250, duration: 2400,  \"opacity\": 0.8}, \n   'spirit': {fadeIn: 500, fadeOut: 250, duration: 2400  }\n}\n\nreturn [\n  {type: \"number\", value: files[type]?.fadeIn || 0},\n  {type: \"number\", value: files[type]?.fadeOut || 0},\n  {type: \"number\", value: files[type]?.duration || 0},\n  {type: \"number\", value: files[type]?.opacity || -1},\n];"
         },
         "WswVjxhXBsm9lHG3": {
           "connection": "rjsZapkpjy0j53kl:outputs:li2LbkRiKwgVfTbL"
+        },
+        "fsZchPU67Lzw6YQq": {
+          "connection": "wjDV7ApiwKUADuEn:outputs:ZiOwfa4syZ0oDbQA"
         }
       },
       "position": {
-        "x": 1630.1706349206345,
-        "y": -282.6388888888889
+        "x": 2236.1706349206343,
+        "y": -108.88888888888891
       },
       "id": "cYxQUeRcAXhKZtrZ",
       "custom": {
         "inputs": {
-          "WswVjxhXBsm9lHG3": {
-            "id": "WswVjxhXBsm9lHG3",
-            "label": "JB2A Patreon",
-            "slug": "input",
-            "isArray": false,
-            "type": "boolean"
-          },
           "fsZchPU67Lzw6YQq": {
             "id": "fsZchPU67Lzw6YQq",
             "label": "Damage Type",
@@ -385,8 +302,8 @@
     {
       "type": "visibility",
       "position": {
-        "x": 2094.1770451770444,
-        "y": -140.27777777777771
+        "x": 2630.1770451770444,
+        "y": -160.27777777777771
       },
       "id": "Nrbbayr5LI09Phi2",
       "inputs": {
@@ -418,8 +335,8 @@
     {
       "type": "timing",
       "position": {
-        "x": 2427.1651404151394,
-        "y": -144.36984126984152
+        "x": 2963.1651404151394,
+        "y": -164.36984126984157
       },
       "id": "ZfsVK0yS1fp1CllC",
       "inputs": {
@@ -439,8 +356,8 @@
     {
       "type": "play",
       "position": {
-        "x": 2767.9836829836827,
-        "y": -143.03030303030312
+        "x": 3303.9836829836827,
+        "y": -163.03030303030312
       },
       "id": "SW6ZeNxbHQVg27Dj",
       "inputs": {
@@ -448,11 +365,170 @@
           "value": true
         }
       }
+    },
+    {
+      "type": "module-enabled",
+      "position": {
+        "x": 277.14682539682417,
+        "y": -95.44047619047683
+      },
+      "id": "yiSu2ooQzIswwQEF",
+      "inputs": {
+        "module": {
+          "value": "jb2a_patreon"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "sPJbaJGl9uepoh77:ins:in"
+        },
+        "false": {
+          "connection": "Deak3l3h2Ighou3H:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 919.2445054945049,
+        "y": -149.38571428571453
+      },
+      "id": "tEioGdUq0AQPXU9Y",
+      "custom": {
+        "inputs": {
+          "tz6HOU2iweheooZy": {
+            "id": "tz6HOU2iweheooZy",
+            "label": "Patreon",
+            "slug": "input",
+            "isArray": false,
+            "type": "text"
+          },
+          "NPvbsArYIqQcB8om": {
+            "id": "NPvbsArYIqQcB8om",
+            "label": "Free",
+            "slug": "input",
+            "isArray": false,
+            "type": "text"
+          }
+        },
+        "outputs": {
+          "YlqVeyCg1FVh4kAl": {
+            "id": "YlqVeyCg1FVh4kAl",
+            "label": "JB2A Patreon",
+            "slug": "output",
+            "isArray": false,
+            "type": "boolean"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst value = !!inputs[0]\nreturn [{type: \"number\", value: value}];"
+        },
+        "tz6HOU2iweheooZy": {
+          "connection": "sPJbaJGl9uepoh77:outputs:result"
+        },
+        "NPvbsArYIqQcB8om": {
+          "connection": "Deak3l3h2Ighou3H:outputs:result"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "moNAXSniGzIybC1e:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 1312.6730769230767,
+        "y": -143.2428571428572
+      },
+      "id": "moNAXSniGzIybC1e",
+      "custom": {
+        "inputs": {
+          "FEsP4pnGZvhO0ela": {
+            "id": "FEsP4pnGZvhO0ela",
+            "label": "JB2A Patreon",
+            "slug": "input",
+            "isArray": false,
+            "type": "boolean"
+          },
+          "FW2QjsaxqRn9HUk5": {
+            "id": "FW2QjsaxqRn9HUk5",
+            "label": "Damage Type",
+            "slug": "input",
+            "isArray": false,
+            "type": "text"
+          }
+        },
+        "outputs": {
+          "oyxxbOAZvNxvfJdA": {
+            "id": "oyxxbOAZvNxvfJdA",
+            "label": "File",
+            "slug": "output",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst patreon = inputs[0]\nconst type = inputs[1];\nconst files = {\n  'acid': patreon ? \"jb2a.liquid.splash.green\" : 'jb2a.liquid.splash.blue',\n  'bleed': patreon ? \"jb2a.liquid.splash.red\" : 'jb2a.liquid.splash.blue',  \n  'bludgeoning': \"jb2a.impact.ground_crack.orange.01\",  \n  'cold': \"jb2a.impact_themed.ice_shard.blue\",  \n  'electricity': \"jb2a.impact.012.blue\",  \n  'fire': \"jb2a.shield_themed.below.fire.01.orange\",  \n  'force': \"jb2a.cast_shape.circle.single01.blue\",  \n  'mental': \"jb2a.template_circle.out_pulse.02.burst.bluewhite\",  \n  'piercing': patreon ? \"jb2a.spike_trap.10x10ft.top.no_base.normal.01\" : \"jb2a.spike_trap.10x10ft.top.holes.normal.01.01\",  \n  'poison': patreon ? \"jb2a.sleep.cloud.02.green\" : \"jb2a.sleep.cloud.02.pink\",  \n  'slashing': patreon ? \"jb2a.claws.400px.bright_orange\" : \"jb2a.claws.400px.red\",  \n  'sonic': \"jb2a.soundwave.02.blue\",  \n  'spirit': patreon ? \"jb2a.spirit_guardians.blue.no_ring\" : \"jb2a.spirit_guardians.blueyellow.ring\",  \n  'vitality': \"jb2a.divine_smite.caster.reversed.blueyellow\",  \n  'void': patreon ? \"jb2a.divine_smite.caster.reversed.dark_purple\" : \"jb2a.divine_smite.caster.reversed.blueyellow\",\n}\nreturn [{type: \"text\", value: files[type]}];"
+        },
+        "FEsP4pnGZvhO0ela": {
+          "connection": "tEioGdUq0AQPXU9Y:outputs:YlqVeyCg1FVh4kAl"
+        },
+        "FW2QjsaxqRn9HUk5": {
+          "connection": "wjDV7ApiwKUADuEn:outputs:ZiOwfa4syZ0oDbQA"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "466KV11HVbxJ3Oih:ins:in"
+        }
+      }
+    },
+    {
+      "type": "format-text",
+      "position": {
+        "x": 577.923076923077,
+        "y": -185.59999999999985
+      },
+      "id": "sPJbaJGl9uepoh77",
+      "inputs": {
+        "plain": {
+          "value": "patreon"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "tEioGdUq0AQPXU9Y:ins:in"
+        }
+      }
+    },
+    {
+      "type": "format-text",
+      "position": {
+        "x": 565.9230769230769,
+        "y": -45.60000000000002
+      },
+      "id": "Deak3l3h2Ighou3H",
+      "inputs": {
+        "plain": {
+          "value": "free"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "tEioGdUq0AQPXU9Y:ins:in"
+        }
+      }
     }
   ],
   "name": "Persistent Damage",
   "description": "<p>Written by @Chasarooni</p>",
   "folder": "Conditions",
-  "id": "0EIsKzWv7liC6aeY",
+  "id": "7vHsOWghHft39iIK",
   "tags": ["action-posted", "PF2e Trove", "pf2e", "conditions"]
 }

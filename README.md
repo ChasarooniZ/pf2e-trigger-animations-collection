@@ -38,10 +38,6 @@ The following are triggers specific to Trigger Animation Trove, for all other tr
   - **Medium** - ~3 animations / ~3 sfx + Persistent Templates allowed (as long its not a ton)
     - _This is the aim for the majority of animations_
   - **High** - Medium but with Persistent Effects allowed
-- **Relevant Game Settings**
-  _Predicate parts of your animations off of these to add full compatibility_
-  - **Module Ownership**
-    - `module-active.jb2a-patreon` - Checks if the user has JB2a Patreon installed and active
 
 _The following is WIP_
 
