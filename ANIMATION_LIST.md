@@ -22,6 +22,7 @@
   - [PF2e](#pf2e)
     - [Class Features](#class-features)
       - [Barbarian](#barbarian)
+  - [Rogue](#rogue)
     - [Spells](#spells)
       - [Cantrips](#cantrips)
       - [Focus Spells](#focus-spells)
@@ -50,6 +51,8 @@
         - [Group](#group)
         - [Base](#base)
     - [Equipment](#equipment)
+      - [Consumables](#consumables)
+        - [Potions](#potions)
       - [Weapons](#weapons-1)
         - [Reload](#reload)
     - [Creatures](#creatures)
@@ -87,6 +90,10 @@
 #### Barbarian
 
 - Rage 🔊🆓 (✍🏼 @Chasarooni)
+
+## Rogue
+
+- Sneak Attack 🔇🆓 (✍🏼 @Chasarooni)
 
 ### Spells
 
@@ -193,6 +200,13 @@
 - Greatpick 🔊🆓 (✍🏼 @Chasarooni)
 
 ### Equipment
+
+#### Consumables
+
+##### Potions
+
+- Healing Potion 🔊🆓 (✍🏼 @Chasarooni)
+- Sanguine Mutagen 🔊🆓 (✍🏼 @Chasarooni)
 
 #### Weapons
 
