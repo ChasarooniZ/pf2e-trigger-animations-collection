@@ -154,6 +154,11 @@ export function getAllJsonFiles(dir) {
   return files;
 }
 
+const lowerCaseThenUpperCaseRE = /([a-z])([A-Z])/g;
+const nonWordCharacterRE = /[^\w\s-]/g;
+const nonWordCharacterHyphenOrSpaceRE = /[^\w\s-]/g;
+const upperOrWordBoundariedLowerRE = /([A-Z]|\b[a-z])/g;
+
 export function sluggify(text2, { camel = null } = {}) {
   if (typeof text2 != "string")
     return (console.warn("Non-string argument passed to `sluggify`"), "");
@@ -180,6 +185,5 @@ export function sluggify(text2, { camel = null } = {}) {
         )
         .replace(/\s+/g, "");
     default:
-      throw ErrorPF2e("I don't think that's a real camel.");
   }
 }

@@ -129,9 +129,6 @@
         "effect": {
           "connection": "k2EyvBjc4UCZZenQ:outputs:effect"
         },
-        "attachTo": {
-          "value": true
-        },
         "location": {
           "connection": "XfTnSRk2zSwx2ukx:outputs:entry"
         },
@@ -145,6 +142,9 @@
           }
         },
         "gridUnits": {
+          "value": true
+        },
+        "cacheLocation": {
           "value": true
         }
       },
@@ -777,7 +777,7 @@
       "type": "any"
     }
   },
-  "tags": ["template", "pf2e", "spells", "cantrip"],
+  "tags": ["template", "pf2e", "spells", "cantrip", "PF2e Trove"],
   "description": "<p><em>Created by @Chasarooni</em></p>",
-  "id": "iVXpWhJ0yFZKQu1I"
+  "id": "1CToMipjRSFhIkKq"
 }

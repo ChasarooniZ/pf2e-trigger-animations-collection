@@ -1,5 +1,5 @@
 {
-  "name": "Group: Polearms",
+  "name": "Weapon Group: Polearms",
   "folder": "Weapons",
   "priority": -100,
   "tags": ["attack-roll"],

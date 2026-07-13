@@ -1,5 +1,5 @@
 {
-  "name": "Group: Shield",
+  "name": "Weapon Group: Shield",
   "folder": "Attacks",
   "priority": -100,
   "tags": ["attack-roll", "PF2e Trove", "pf2e", "attacks", "weapon"],

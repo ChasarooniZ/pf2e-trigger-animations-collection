@@ -1,6 +1,6 @@
 {
   "name": "Handler: Healing",
-  "folder": "System",
+  "folder": "Handlers",
   "priority": 0,
   "description": "<p>Created by @Chasarooni</p>",
   "nodes": [
@@ -77,6 +77,12 @@
         },
         "item": {
           "connection": "N23TsYK70MCRp0GB:outputs:item"
+        },
+        "AyZl2gL5TnoS2FWE": {
+          "connection": "Lvam1Xzk0lTyxFPM:outputs:result"
+        },
+        "aXLZUy18M6pBJTDq": {
+          "value": "healing"
         }
       }
     },
@@ -123,5 +129,6 @@
       }
     }
   ],
-  "id": "lCcq3MNKUB5z4yeb"
+  "id": "SghJqU20kOcTozV2",
+  "tags": ["PF2e Trove", "handlers"]
 }

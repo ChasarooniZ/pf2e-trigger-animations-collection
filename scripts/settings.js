@@ -17,5 +17,5 @@ export function setupSettings() {
     config: false,
     type: Array,
     default: [],
-  })
+  });
 }

@@ -1,6 +1,6 @@
 {
   "name": "Handler: Damage Taken",
-  "folder": "System",
+  "folder": "Handlers",
   "priority": 0,
   "description": "<p>Created by @Chasarooni</p>",
   "nodes": [
@@ -77,6 +77,12 @@
         },
         "item": {
           "connection": "N23TsYK70MCRp0GB:outputs:item"
+        },
+        "jGZbenD3GmX9yLtO": {
+          "connection": "Lvam1Xzk0lTyxFPM:outputs:result"
+        },
+        "fhTGoVVrLH1bEPs8": {
+          "value": "healing"
         }
       }
     },
@@ -123,5 +129,6 @@
       }
     }
   ],
-  "id": "xwG6Pjz0d57WpGjn"
+  "id": "sOfYZ7TiKyOhOLM2",
+  "tags": ["PF2e Trove", "handlers"]
 }

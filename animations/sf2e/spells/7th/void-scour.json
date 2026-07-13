@@ -2,7 +2,7 @@
   "name": "Void Scour",
   "folder": "Spells",
   "priority": 0,
-  "tags": ["template"],
+  "tags": ["template", "PF2e Trove", "sf2e", "spells", "7th"],
   "nodes": [
     {
       "id": "cQ4T2clnTJ2z70XX",
@@ -123,6 +123,9 @@
         },
         "location": {
           "connection": "cQ4T2clnTJ2z70XX:outputs:MWUBRl5UO1EKczQU"
+        },
+        "cacheLocation": {
+          "value": true
         }
       },
       "position": {
@@ -139,7 +142,7 @@
     {
       "type": "play",
       "position": {
-        "x": 2565.922854432698,
+        "x": 2581.6371401469837,
         "y": 289.4999563694
       },
       "id": "stsDzcixyehs1bhi",
@@ -277,6 +280,13 @@
       }
     }
   ],
-  "id": "wkO4F0mJrPWpPz4T",
-  "description": "<p>Created by @Chasarooni</p>"
+  "id": "3hRgKmlJNbZ04Md7",
+  "description": "<p>Created by @Chasarooni</p>",
+  "variables": {
+    "cQ4T2clnTJ2z70XX:outputs:MWUBRl5UO1EKczQU": {
+      "isArray": false,
+      "label": "Template",
+      "type": "region"
+    }
+  }
 }

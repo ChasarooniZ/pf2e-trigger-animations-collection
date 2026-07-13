@@ -1,8 +1,24 @@
 ## Unreleased
 
-- **New Animations**
-  - Persistent Damage, Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Group: Polearms, Claw, Blinded, Clumsy, Confused, Controlled, Dazzled, Deafened, Doomed, Drained, Dying, Encumbered, Enfeebled, Fascinated, Fatigued, Fleeing, Frightened, Grabbed, Immobilized, Off-Guard, Paralyzed, Petrified, Prone, Quickened, Sickened, Slowed, Stunned, Stupefied, Unconscious, Wounded, Group: Bombs, Group: Bows, Group: Crossbows, Rage, Weapon Group: Shield, Reload: Crossbow (Group), Reload: Pepperbox, Reload: Slide Pistol, Change Shape, Sneak Attack, Sanguine Mutagen, Healing Potion (@Chasarooni)
-  - Fireball (@ChazPls)
+- **New**
+  - Modify `Trigger Animations` attack template to use the proper prefix
+  - ~~`attack`~~ -> `trove-attack`
+  - ~~`damage`~~ -> `trove-damage`
+
+## 0.4.0
+
+- **New**
+  - _going to include what particular animations are in each release now so I can think about it less_
+  - **Animations**
+    - Persistent Damage, Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Weapon Group: Polearms, Claw, Blinded, Clumsy, Confused, Controlled, Dazzled, Deafened, Doomed, Drained, Dying, Encumbered, Enfeebled, Fascinated, Fatigued, Fleeing, Frightened, Grabbed, Immobilized, Off-Guard, Paralyzed, Petrified, Prone, Quickened, Sickened, Slowed, Stunned, Stupefied, Unconscious, Wounded, Weapon Group: Bombs, Weapon Group: Bows, Weapon Group: Crossbows, Rage, Weapon Group: Shield, Reload: Crossbow (Weapon Group), Reload: Pepperbox, Reload: Slide Pistol, Change Shape, Sneak Attack, Sanguine Mutagen, Healing Potion, Harm, Heal, Weapon Group: Hammer (@Chasarooni)
+    - Fireball (@ChazPls)
+- **Updated**
+  - **Animations**
+    - Fireball (@Chasarooni)
+  - Updated to `Trigger Animations` version `0.5.0`
+  - Fixed logic in `Ask to Enable New Animations` (thanks @MrVauxs)
+  - Stole release script to grab changelog info from `Trigger Animations` (thanks @MrVauxs)
+  - Updated animations that improperly setup templates without using `scaleToObject` or `stretchTo`
 
 ## 0.3.3
 

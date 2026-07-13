@@ -79,6 +79,10 @@ jobs:
       - name: Extract Version From Tag
         id: get_version
         uses: battila7/get-version-action@v2
+
+      - name: Extract Changelog
+        id: changelog
+        run: node .github/scripts/extract-changelog.mjs ${{ steps.get-version.outputs.v }} "## " "CHANGELOG.md"
       - name: Combine Trigger Files
         run: node ./macros/combine-animations.mjs
 
@@ -138,4 +142,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           artifacts: "./module.json, ./module.zip"
           tag: ${{ github.event.release.tag_name }}
-          body: ${{ github.event.release.body }}
+          body: ${{ steps.changelog.outputs.changelog }}

@@ -6,7 +6,7 @@
     "build": "node build.mjs",
     "watch": "node build.mjs --watch",
     "combine": "node macros/combine-animations.mjs",
-    "clean": "npm run clean:jsons && npm run clean:final && npm run prettier",
+    "clean": "npm run clean:jsons && npm run clean:final && npm run prettier && npm run test",
     "prettier": "npx prettier . --write",
     "clean:jsons": "node macros/clean-jsons.mjs",
     "clean:final": "node macros/clear-final-animation.mjs",

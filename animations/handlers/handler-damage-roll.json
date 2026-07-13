@@ -102,6 +102,12 @@
         },
         "name": {
           "connection": "5Yy2lI6uhThGLmVb:outputs:3nv0Vq5R77zwNwI5"
+        },
+        "pUZ8vdRipbzDOXLX": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:3nv0Vq5R77zwNwI5"
+        },
+        "JTz7KQjHdNtzgtUQ": {
+          "value": "damage-roll"
         }
       },
       "outs": {
@@ -328,7 +334,7 @@
       "id": "F1k0h5q3qyPaLKOs"
     }
   ],
-  "id": "wjYAO2U6AxngFVUB",
+  "id": "9O5AxVGqfSJZkwH5",
   "tags": ["PF2e Trove", "handlers"],
   "variables": {
     "5Yy2lI6uhThGLmVb:outputs:zlri3FyTeHzt34RB": {
@@ -361,5 +367,6 @@
       "label": "Options",
       "type": "text"
     }
-  }
+  },
+  "folder": "Handlers"
 }

@@ -7,8 +7,8 @@
     {
       "id": "5Yy2lI6uhThGLmVb",
       "position": {
-        "x": 215.21428571428567,
-        "y": 188.6071428571429
+        "x": 226.21428571428567,
+        "y": 194.6071428571429
       },
       "type": "animation-event",
       "custom": {
@@ -43,8 +43,8 @@
     {
       "type": "execute-animation",
       "position": {
-        "x": 1601,
-        "y": 194
+        "x": 1392.25,
+        "y": 190.25
       },
       "id": "5rxwWUI3s4DYirVB",
       "custom": {
@@ -75,9 +75,6 @@
         "5E6lWUteSYs0PMsw": {
           "connection": "5Yy2lI6uhThGLmVb:outputs:ZrHkSL40BzrijFjr"
         },
-        "options": {
-          "connection": "5Yy2lI6uhThGLmVb:outputs:options"
-        },
         "targets": {
           "connection": "5Yy2lI6uhThGLmVb:outputs:targets"
         },
@@ -89,6 +86,15 @@
         },
         "item": {
           "connection": "niHakw2FVnHb5kTZ:outputs:cVoi0vGSYMkcIScZ"
+        },
+        "WQCFbZtIfBoHj0Fw": {
+          "connection": "kZwUhq5O0rWeJQYk:outputs:result"
+        },
+        "wKKhTOXTFmf9zlVp": {
+          "value": "attack"
+        },
+        "options": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:options"
         }
       }
     },
@@ -196,38 +202,6 @@
       },
       "outs": {
         "out": {
-          "connection": "Yjf8RdS5CwzjJeVN:ins:in"
-        }
-      }
-    },
-    {
-      "type": "execute-script",
-      "position": {
-        "x": 1366.923076923077,
-        "y": 191.39999999999998
-      },
-      "id": "Yjf8RdS5CwzjJeVN",
-      "custom": {
-        "inputs": {
-          "2iHRa8eZl09gayKE": {
-            "id": "2iHRa8eZl09gayKE",
-            "label": "Names",
-            "slug": "input",
-            "isArray": true,
-            "type": "text"
-          }
-        }
-      },
-      "inputs": {
-        "2iHRa8eZl09gayKE": {
-          "connection": "kZwUhq5O0rWeJQYk:outputs:result"
-        },
-        "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nreturn [];"
-        }
-      },
-      "outs": {
-        "out": {
           "connection": "5rxwWUI3s4DYirVB:ins:in"
         }
       }
@@ -284,6 +258,6 @@
       }
     }
   ],
-  "id": "s3RK8IXBszugaKZm",
+  "id": "zd8VD1RfEBiqRIGY",
   "tags": ["PF2e Trove", "handlers"]
 }

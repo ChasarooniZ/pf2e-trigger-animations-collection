@@ -4,7 +4,8 @@ export async function askToAddNewAnimationsDialog() {
   const askedAnimationsSet = new Set(
     game.settings.get(MODULE_ID, "animations-asked-to-enable"),
   );
-  const triggerData = triggerAnimations.api.db.flags["trigger-animations"].data;
+  const triggerData =
+    triggerAnimations?.api?.db?.flags?.["trigger-animations"]?.data;
   const enabledSet = new Set(triggerData?.enabled);
 
   const list = await getNewAnimationData(askedAnimationsSet, enabledSet);
@@ -81,13 +82,4 @@ async function getNewAnimationData(askedAnimationsSet, enabledSet) {
     (a) => !enabledSet.has(a.id) && !askedAnimationsSet.has(a.id),
   );
   return newAnimations;
-}
-
-export function waitForTriggerAnimations(callback) {
-  var interval = setInterval(function () {
-    if (typeof triggerAnimations !== undefined) {
-      clearInterval(interval);
-      callback();
-    }
-  }, 1000);
 }

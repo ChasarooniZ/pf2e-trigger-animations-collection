@@ -1,7 +1,4 @@
-import {
-  askToAddNewAnimationsDialog,
-  waitForTriggerAnimations,
-} from "./enableNewAnimations.js";
+import { askToAddNewAnimationsDialog } from "./enableNewAnimations.js";
 import { setupSettings } from "./settings.js";
 
 export const MODULE_ID = "pf2e-trigger-animations-trove";
@@ -10,6 +7,13 @@ const triggerEngineTriggersPath = `modules/${MODULE_ID}/triggers.json`;
 
 Hooks.once("triggerEngine.registerTriggers", (registerTriggers) => {
   registerTriggers("trigger-engine", "pf2e-trigger", triggerEngineTriggersPath);
+});
+
+Hooks.once("triggerAnimations.ready", (api) => {
+  if (game.user.isGM) {
+    askToAddNewAnimationsDialog();
+  }
+  // modifyTriggerAnimationTemplates();
 });
 
 Hooks.once("init", async function () {
@@ -23,10 +27,6 @@ Hooks.once("ready", async function () {
   ) {
     reminderActivateAllTriggers();
   }
-
-  if (game.user.isGM) {
-    waitForTriggerAnimations(askToAddNewAnimationsDialog);
-  }
 });
 
 function reminderActivateAllTriggers() {
@@ -35,3 +35,10 @@ function reminderActivateAllTriggers() {
     { permanent: true, localize: true },
   );
 }
+
+// function modifyTriggerAnimationTemplates() {
+//   triggerAnimations.api.templates.attack.prefixes = [
+//     "trove-attack",
+//     "trove-damage",
+//   ];
+// }

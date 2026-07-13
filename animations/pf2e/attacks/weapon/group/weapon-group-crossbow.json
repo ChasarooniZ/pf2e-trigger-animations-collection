@@ -1,5 +1,5 @@
 {
-  "name": "Group: Crossbow",
+  "name": "Weapon Group: Crossbow",
   "folder": "Weapons",
   "priority": -100,
   "tags": ["attack-roll"],

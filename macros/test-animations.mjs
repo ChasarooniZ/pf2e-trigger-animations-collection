@@ -1,5 +1,4 @@
 import * as fs from "fs";
-import * as path from "path";
 import { getAllJsonFiles, sluggify } from "./helpers.mjs";
 
 const PATH_START = "animations";
@@ -26,7 +25,8 @@ function validateFileName({ path, name }) {
   const fileName = path
     .slice(path.indexOf(PATH_START) + PATH_START_BOOST)
     .split("\\")
-    [-1].slice(0, -5);
+    .at(-1)
+    .slice(0, -5);
   const slug = sluggify(name);
   if (slug !== fileName) {
     console.error(`- Invalid File name '${fileName}.json' should be 'slug'`);
@@ -37,13 +37,13 @@ function validateFileName({ path, name }) {
 function validateNodes(data) {
   const errors = [];
   for (const node of data.nodes) {
-    if (node.type === "file" && inputs?.file?.value?.includes("/")) {
+    if (node.type === "file" && node?.inputs?.file?.value?.includes("/")) {
       console.error(
-        `- Non Sequencer DB Value '${inputs?.file?.value}' in ${data.name}`,
+        `- Non Sequencer DB Value '${node?.inputs?.file?.value}' in ${data.name}`,
       );
       errors.push({
         id: data.name,
-        error: `Non Sequencer DB Value '${inputs?.file?.value}'`,
+        error: `Non Sequencer DB Value '${node?.inputs?.file?.value}'`,
       });
     }
   }
@@ -67,7 +67,7 @@ function testAnimations(animationsDir = "./animations") {
       const content = fs.readFileSync(filePath, "utf8");
       const data = JSON.parse(content);
       if (
-        validateFileName({
+        !validateFileName({
           path: filePath,
           name: data.name,
         })

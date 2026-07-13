@@ -1,6 +1,6 @@
 {
   "name": "Handler: Damage Negated",
-  "folder": "System",
+  "folder": "Handlers",
   "priority": 0,
   "description": "<p>Created by @Chasarooni</p>",
   "nodes": [
@@ -77,6 +77,12 @@
         },
         "options": {
           "connection": "N23TsYK70MCRp0GB:outputs:options"
+        },
+        "ZObb2btVTSHuzaGu": {
+          "connection": "m28jOepELbdbj5AW:outputs:result"
+        },
+        "H21hnnAZ3fWdhmqW": {
+          "value": "negated"
         }
       }
     },
@@ -123,5 +129,6 @@
       }
     }
   ],
-  "id": "ou7RphnMW8Vh57yL"
+  "id": "tX3mCBIqEw4F94iE",
+  "tags": ["PF2e Trove", "handlers"]
 }
