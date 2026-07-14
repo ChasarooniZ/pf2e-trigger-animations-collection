@@ -36,7 +36,7 @@
       },
       "inputs": {
         "name": {
-          "value": []
+          "value": "attack:*"
         }
       }
     },

@@ -49,7 +49,7 @@
       },
       "inputs": {
         "name": {
-          "value": []
+          "value": "damage-roll:handler"
         }
       }
     },

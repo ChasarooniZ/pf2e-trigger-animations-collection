@@ -12,7 +12,7 @@
       "type": "animation-event",
       "inputs": {
         "name": {
-          "value": []
+          "value": "trove-attack:claw"
         }
       },
       "custom": {

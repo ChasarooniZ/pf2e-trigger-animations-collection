@@ -18,7 +18,7 @@
       },
       "inputs": {
         "name": {
-          "value": []
+          "value": "healing:*"
         }
       }
     },

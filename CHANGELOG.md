@@ -5,6 +5,10 @@
   - ~~`attack`~~ -> `trove-attack`
   - ~~`damage`~~ -> `trove-damage`
 
+## 0.5.1
+
+- Fixed issue that a rogue cleaning script caused breaking some animations (notably every handler 🤦‍♂️) to overwrite their trigger name with an empty array
+
 ## 0.5.0
 
 - **Animations**
