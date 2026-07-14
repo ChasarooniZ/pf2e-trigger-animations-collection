@@ -13,7 +13,7 @@
       "type": "animation-event",
       "inputs": {
         "name": {
-          "value": []
+          "value": "reload:pepperbox"
         }
       },
       "outs": {
@@ -258,5 +258,6 @@
       }
     }
   ],
-  "id": "1O6kO13UkElEChWV"
+  "id": "1O6kO13UkElEChWV",
+  "tags": ["PF2e Trove", "pf2e", "equipment", "weapons"]
 }
