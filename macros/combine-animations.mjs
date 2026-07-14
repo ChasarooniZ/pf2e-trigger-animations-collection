@@ -16,6 +16,7 @@ const SEGMENTS = {
 };
 const CATEGORIES = {
   attacks: "Attacks",
+  basic_actions: "Basic Actions",
   class_features: "Class Features",
   conditions: "Conditions",
   creature_actions: "Creature Actions",

@@ -22,14 +22,14 @@ export async function askToAddNewAnimationsDialog() {
       await enableAllDisabledAnimations(list);
       ui.notifications.info("These new animations have been enabled");
     }
+    triggerData?.enabled?.forEach((animID) => {
+      if (!askedAnimationsSet.has(animID)) {
+        askedAnimationsSet.add(animID);
+      }
+    });
+    const array = Array.from(askedAnimationsSet);
+    await game.settings.set(MODULE_ID, "animations-asked-to-enable", array);
   }
-  triggerData?.enabled?.forEach((animID) => {
-    if (!askedAnimationsSet.has(animID)) {
-      askedAnimationsSet.add(animID);
-    }
-  });
-  const array = Array.from(askedAnimationsSet);
-  await game.settings.set(MODULE_ID, "animations-asked-to-enable", array);
 }
 
 async function enableAllDisabledAnimations(list) {
@@ -78,8 +78,7 @@ async function getNewAnimationData(askedAnimationsSet, enabledSet) {
     folder: a.folder,
   }));
 
-  const newAnimations = animationsMapped.filter(
+  return animationsMapped.filter(
     (a) => !enabledSet.has(a.id) && !askedAnimationsSet.has(a.id),
   );
-  return newAnimations;
 }

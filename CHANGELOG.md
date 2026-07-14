@@ -5,6 +5,14 @@
   - ~~`attack`~~ -> `trove-attack`
   - ~~`damage`~~ -> `trove-damage`
 
+## 0.4.2
+
+- **Animations**
+  - **New**
+    - Raise a Shield, Atryl: Rune of Fire, Esvadir: Rune of Whetstones, Ranshu: Rune of Thunder (@Chasarooni)
+- **New**
+  - Automatically asks about enabling new `Triggers` thanks to (@MrVauxs)
+
 ## 0.4.1
 
 - Updated to `Trigger Animations` version `0.5.2`

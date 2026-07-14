@@ -18,4 +18,13 @@ export function setupSettings() {
     type: Array,
     default: [],
   });
+
+  game.settings.register(MODULE_ID, "triggers-asked-to-enable", {
+    name: "",
+    hint: "",
+    scope: "world",
+    config: false,
+    type: Array,
+    default: [],
+  });
 }
