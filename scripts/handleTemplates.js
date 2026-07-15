@@ -67,7 +67,8 @@ const templates = [
 
 function createAnimation({ templateString, ctx }) {
   let dataString = templateString;
-  const ids = dataString.match(ID_REGEX);
+  const ids = new Set(dataString.match(ID_REGEX));
+
   ids.forEach((id) => {
     dataString = dataString.replaceAll(id, rid());
   });
@@ -104,7 +105,8 @@ function buildTrigger({ ctx, nodes, variables = {} }) {
     folder: ctx.folder ?? "",
     priority: ctx.priority ?? 0,
     tags: ctx.tags ?? [],
-    description: `Generated from ${ctx.label} (${ctx.uuid}). Trigger: ${ctx.triggerNames.join(",")}`,
+    description: `<p>Generated from ${ctx.label} (${ctx.uuid}).</p>
+    <p><b>Trigger:<b> <code>${ctx.triggerNames.join(",")}</code></p>`,
     nodes,
     variables,
   };

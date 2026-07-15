@@ -1,5 +1,10 @@
 ## Unreleased
 
+## 0.6.1
+
+- **Update**
+  - Improved the Generated description of Trove Templates
+
 ## 0.6.0
 
 - **New**
