@@ -6,9 +6,6 @@
         "hint": "Enable this setting to disable that pop up",
         "message": "<b>[Trigger Animation Trove (PF2e)]<b> To have this module work as expected your must enable all trigger engine triggers in the Animations folder. <br><br> To get there go to <code>Game Settings</code> -> <code>Trigger Engine</code> -> <code>Register Triggers</code> -> <code>Animations</code> -> Click the folder Icon -> Enable all Triggers underneath that folder -> click the save button at the top. <br><br> This message will repeat on startup until you confirm you have completed this setup in this module's settings under Game Settings"
       }
-    },
-    "notifications": {
-      "loading-template": "Loading Template"
     }
   }
 }
