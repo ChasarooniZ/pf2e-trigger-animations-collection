@@ -1,5 +1,6 @@
 import { askToAddNewAnimationsDialog } from "./enableNewAnimations.js";
 import { askToEnableNewTriggersDialog } from "./enableNewTriggers.js";
+import { registerTriggerAnimationTemplates } from "./handleTemplates.js";
 import { setupSettings } from "./settings.js";
 
 export const MODULE_ID = "pf2e-trigger-animations-trove";
@@ -11,6 +12,7 @@ Hooks.once("triggerEngine.registerTriggers", (registerTriggers) => {
 });
 
 Hooks.once("triggerAnimations.ready", async (api) => {
+  registerTriggerAnimationTemplates();
   if (game.user.isGM) {
     await askToEnableNewTriggersDialog();
     askToAddNewAnimationsDialog();

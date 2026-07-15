@@ -1,9 +1,14 @@
 ## Unreleased
 
+## 0.6.0
+
 - **New**
-  - Modify `Trigger Animations` attack template to use the proper prefix
-  - ~~`attack`~~ -> `trove-attack`
-  - ~~`damage`~~ -> `trove-damage`
+  - Added the following `Trigger Animations` templates
+    - `Trove: Melee Attack`
+    - `Trove: Ranged Attack`
+    - `Trove: Effect Granted`
+    - `Trove: Template (Bursts & Emanations)`
+    - `Trove: Template (Cones & Lines)`
 
 ## 0.5.1
 
