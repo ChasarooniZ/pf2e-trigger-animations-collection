@@ -1,5 +1,10 @@
 ## Unreleased
 
+## 0.7.1
+
+- **Update**
+  - Modified `Attack Handler` to work for `Unarmed Strike`
+
 ## 0.7.0
 
 - **New**

@@ -242,7 +242,7 @@
       },
       "inputs": {
         "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst item = inputs[0];\nconst source = inputs[1];\nconst actor = source?.actor;\nlet value = item;\nif (item.type !== 'strike' && actor) {\n  const strike = actor.system.actions.find(a => a?.item?.rule?.item?.slug === item?.slug);\n  if (strike?.item) {\n    value = strike?.item;\n  }\n}\nreturn [{type: \"item\", value: value}];"
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst item = inputs[0];\nconst source = inputs[1];\nconst actor = source?.actor;\nlet value = item;\nif (item?.type && item?.type !== 'strike' && actor) {\n  const strike = actor?.system?.actions?.find(a => a?.item?.rule?.item?.slug === item?.slug);\n  if (strike?.item) {\n    value = strike?.item;\n  }\n}\nreturn [{type: \"item\", value: value}];"
         },
         "9B9zD9txRIAdfnRh": {
           "connection": "5Yy2lI6uhThGLmVb:outputs:sources"
