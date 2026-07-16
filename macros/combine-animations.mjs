@@ -12,6 +12,7 @@ const SEGMENTS = {
   ATTACK_TYPE: 2,
   FEATURE_CLASS: 2,
   EQUIPMENT_TYPE: 2,
+  ATTACK_CATEGORY: 3,
   FEAT_CLASS: 3,
 };
 const CATEGORIES = {
@@ -25,9 +26,15 @@ const CATEGORIES = {
   spells: "Spells",
   handlers: "Handlers",
 };
+const PRIORITY = {
+  GROUP: -100,
+  BASE_ITEM: -50,
+};
+
 const MODULE_TAG = "PF2e Trove";
-function getTagsAndCategory({ path, originalTags }) {
+function getTagsCategoryAndPriority({ path, originalTags, priority }) {
   const tags = new Set();
+  let newPriority = priority;
   const pathSegments = path
     .slice(path.indexOf(PATH_START) + PATH_START_BOOST)
     .split(/[\\/]/);
@@ -47,6 +54,14 @@ function getTagsAndCategory({ path, originalTags }) {
   switch (category) {
     case "attacks":
       tags.add(pathSegments[SEGMENTS.ATTACK_TYPE]);
+      const attackCategory = pathSegments?.[ATTACK_CATEGORY];
+      if (attackCategory) {
+        if (attackCategory === "group") {
+          newPriority = PRIORITY.GROUP;
+        } else if (attackCategory === "base") {
+          newPriority = PRIORITY.BASE_ITEM;
+        }
+      }
       break;
     case "class_features":
       tags.add(pathSegments[SEGMENTS.FEATURE_CLASS]);
@@ -70,7 +85,11 @@ function getTagsAndCategory({ path, originalTags }) {
       break;
   }
 
-  return { tags: Array.from(tags), category: categoryName };
+  return {
+    tags: Array.from(tags),
+    category: categoryName,
+    priority: newPriority,
+  };
 }
 
 function getTriggerTags(animation) {
@@ -156,14 +175,16 @@ function combineAnimations(animationsDir = "./animations", baseFile = null) {
     try {
       const content = fs.readFileSync(filePath, "utf8");
       const data = JSON.parse(content);
-      const { tags, category } = getTagsAndCategory({
+      const { tags, category, priority } = getTagsCategoryAndPriority({
         path: filePath,
         originalTags: data?.tags ?? [],
         triggerTags: getTriggerTags(data) ?? [],
+        priority: data?.priority,
       });
 
       data.tags = tags;
       data.folder = category;
+      data.priority = priority;
       // If the file itself is a animation object (has id, nodes, etc.)
       if (data.nodes && data.tags) {
         base.push(data);

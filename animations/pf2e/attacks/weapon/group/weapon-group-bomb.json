@@ -6,8 +6,8 @@
     {
       "id": "zwvWO50CXI44ObmF",
       "position": {
-        "x": 315.3333154823181,
-        "y": 194.66668701171875
+        "x": 149.33331548231814,
+        "y": 158.66668701171886
       },
       "type": "animation-event",
       "inputs": {
@@ -281,18 +281,25 @@
     {
       "type": "execute-script",
       "position": {
-        "x": 457.33333333333326,
-        "y": -116.00000000000023
+        "x": 399.3333333333336,
+        "y": 86
       },
       "id": "u5pt4SedW2srmM68",
       "custom": {
         "inputs": {
           "WLLSarSLq4q9lT6I": {
             "id": "WLLSarSLq4q9lT6I",
-            "label": "Text",
+            "label": "Options",
             "slug": "input",
             "isArray": true,
             "type": "text"
+          },
+          "Qk49zspQP2EaGLJl": {
+            "id": "Qk49zspQP2EaGLJl",
+            "label": "Item",
+            "slug": "input",
+            "isArray": false,
+            "type": "item"
           }
         },
         "outputs": {
@@ -310,7 +317,10 @@
           "connection": "zwvWO50CXI44ObmF:outputs:options"
         },
         "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst options = inputs[0];\nconst types = new Set([\"acid\", \"fire\", \"light\", \"sonic\", \"poison\", \"electricity\", \"cold\", \"earth\", \"void\", \"water\", \"vitality\"])\nconst type = options.find(op => types.has(op)) || 'default'\n\nreturn [{type: \"text\", value: type}];"
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst options = inputs[0];\nconst item = inputs[1];\nconst types = new Set([\"acid\", \"fire\", \"light\", \"sonic\", \"poison\", \"electricity\", \"cold\", \"earth\", \"void\", \"water\", \"vitality\"])\nconst type = options.find(op => types.has(op)) || types.intersection(item?.traits)?.first() || 'default'\nconsole.log({traits: item?.traits, type})\nreturn [{type: \"text\", value: type}];"
+        },
+        "Qk49zspQP2EaGLJl": {
+          "connection": "zwvWO50CXI44ObmF:outputs:item"
         }
       },
       "outs": {
@@ -1315,7 +1325,7 @@
       "id": "f5ZgryaIYdPl6eEu"
     }
   ],
-  "id": "fG0UdQKXe4T02bqa",
+  "id": "6etv6OUN39ESc0s1",
   "description": "<p><em>Example Animation from Trigger Animations by @MrVauxs.</em></p><p></p><p>Modified by @Chasarooni for use in Trigger Animation Trove</p>",
   "variables": {
     "u5pt4SedW2srmM68:outputs:Jjk6UZPsTxR5pJGA": {
@@ -1348,5 +1358,11 @@
       "label": "Missed",
       "type": "boolean"
     }
-  }
+  },
+  "tags": [
+    "PF2e Trove",
+    "pf2e",
+    "attacks",
+    "weapon"
+  ]
 }

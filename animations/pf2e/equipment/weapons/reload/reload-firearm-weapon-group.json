@@ -1,0 +1,358 @@
+{
+  "name": "Reload: Firearm (Weapon Group)",
+  "folder": "Equipment",
+  "priority": -100,
+  "description": "<p>Created by @Chasarooni</p>",
+  "nodes": [
+    {
+      "id": "g0I03xkXxHkscoUJ",
+      "position": {
+        "x": -18.14285714285711,
+        "y": 207.8571428571429
+      },
+      "type": "animation-event",
+      "inputs": {
+        "name": {
+          "value": "reload:firearm"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Cx6Yr3QzcGgQlX8i:ins:in"
+        }
+      },
+      "custom": {
+        "outputs": {
+          "FE9YaXw8coGFJIfA": {
+            "id": "FE9YaXw8coGFJIfA",
+            "label": "Slug",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "nvpm7WzguYLsbtdZ": {
+            "id": "nvpm7WzguYLsbtdZ",
+            "label": "Traits",
+            "slug": "path",
+            "isArray": true,
+            "type": "text"
+          },
+          "OIUr5nGyFzETvO3O": {
+            "id": "OIUr5nGyFzETvO3O",
+            "label": "Count",
+            "slug": "path",
+            "isArray": false,
+            "type": "number"
+          }
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 869.4627594627593,
+        "y": 205.50000000000017
+      },
+      "id": "GvONb7qWr07VO2lo",
+      "inputs": {
+        "name": {
+          "connection": "Cx6Yr3QzcGgQlX8i:outputs:ywq283M5rtzgAcz3"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "1oM2eRY1OHOR8FQB:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "GvONb7qWr07VO2lo:outputs:sound"
+        },
+        "location": {
+          "connection": "g0I03xkXxHkscoUJ:outputs:sources"
+        }
+      },
+      "position": {
+        "x": 1165.1785714285716,
+        "y": 211.73333333333346
+      },
+      "id": "1oM2eRY1OHOR8FQB",
+      "outs": {
+        "out": {
+          "connection": "ixib0UYBtWlSKnid:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "inputs": {
+        "input": {
+          "connection": "g0I03xkXxHkscoUJ:outputs:item"
+        }
+      },
+      "position": {
+        "x": 304.857142857143,
+        "y": 223.4357142857143
+      },
+      "id": "Cx6Yr3QzcGgQlX8i",
+      "custom": {
+        "outputs": {
+          "ywq283M5rtzgAcz3": {
+            "id": "ywq283M5rtzgAcz3",
+            "input": "slug",
+            "label": "Slug",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "m9N9zJMxaxJUpaBS": {
+            "id": "m9N9zJMxaxJUpaBS",
+            "input": "traits",
+            "label": "Traits",
+            "slug": "path",
+            "isArray": true,
+            "type": "text"
+          },
+          "PaRh4p0hPQ4Fv1wJ": {
+            "id": "PaRh4p0hPQ4Fv1wJ",
+            "input": "system.usage.hands",
+            "label": "Hands",
+            "slug": "path",
+            "isArray": true,
+            "type": "number"
+          }
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "hIKeOO3cbbnZQ3Zn:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 2309.351648351648,
+        "y": 215.09523809523824
+      },
+      "id": "KKe9CVOwO0N6EP8b",
+      "inputs": {
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "preset": {
+          "value": "troveSound"
+        },
+        "sound": {
+          "connection": "GvONb7qWr07VO2lo:outputs:sound"
+        }
+      },
+      "position": {
+        "x": 2023.1269841269834,
+        "y": 214.79761904761898
+      },
+      "id": "AOUXQllsvQnNSNcQ",
+      "outs": {
+        "out": {
+          "connection": "KKe9CVOwO0N6EP8b:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 540.0316717316592,
+        "y": 208.8663993645962
+      },
+      "id": "hIKeOO3cbbnZQ3Zn",
+      "custom": {
+        "inputs": {
+          "v5C0xZa0DDFfVVLm": {
+            "id": "v5C0xZa0DDFfVVLm",
+            "label": "Traits",
+            "slug": "input",
+            "isArray": true,
+            "type": "text"
+          },
+          "ZSHrWtD7n0Vlvqn2": {
+            "id": "ZSHrWtD7n0Vlvqn2",
+            "label": "Hands",
+            "slug": "input",
+            "isArray": false,
+            "type": "number"
+          }
+        },
+        "outputs": {
+          "3H5gTw1wlIFwJ8m0": {
+            "id": "3H5gTw1wlIFwJ8m0",
+            "label": "Weapon Type",
+            "slug": "output",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst traits = inputs[0];\nconst hands = inputs[1];\nlet type = 'pistol';\nif (traits.some(trait => trait?.startsWith(\"scatter\"))) {\n  type = \"shotgun\"\n} else if (hands === 2) {\n  type = \"rifle\"\n}\nreturn [{type: \"text\", value: type}];"
+        },
+        "v5C0xZa0DDFfVVLm": {
+          "connection": "Cx6Yr3QzcGgQlX8i:outputs:m9N9zJMxaxJUpaBS"
+        },
+        "ZSHrWtD7n0Vlvqn2": {
+          "connection": "Cx6Yr3QzcGgQlX8i:outputs:PaRh4p0hPQ4Fv1wJ"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "GvONb7qWr07VO2lo:ins:in"
+        }
+      }
+    },
+    {
+      "type": "split-text",
+      "position": {
+        "x": 1444.5594495094356,
+        "y": 223.21957396777105
+      },
+      "id": "ixib0UYBtWlSKnid",
+      "custom": {
+        "outs": {
+          "6knSYY4o8KHbi2Fa": {
+            "id": "6knSYY4o8KHbi2Fa",
+            "input": "pistol",
+            "label": "pistol",
+            "slug": "value"
+          },
+          "VpNpfEvtAmmIWiOE": {
+            "id": "VpNpfEvtAmmIWiOE",
+            "input": "rifle",
+            "label": "rifle",
+            "slug": "value"
+          },
+          "Mqh9jEKPv59mJGWF": {
+            "id": "Mqh9jEKPv59mJGWF",
+            "input": "shotgun",
+            "label": "shotgun",
+            "slug": "value"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "4H3K3BNvyPL4WfUe:outputs:entry"
+        }
+      },
+      "outs": {
+        "6knSYY4o8KHbi2Fa": {
+          "connection": "Rqv04XmDa3BgL4YN:ins:in"
+        },
+        "Mqh9jEKPv59mJGWF": {
+          "connection": "JFzVNwj9JztKD1ug:ins:in"
+        },
+        "VpNpfEvtAmmIWiOE": {
+          "connection": "qPVM6TKDQ8fcsVoc:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "hIKeOO3cbbnZQ3Zn:outputs:3H5gTw1wlIFwJ8m0"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1230.9642857142856,
+        "y": 155.47619047619065
+      },
+      "id": "4H3K3BNvyPL4WfUe"
+    },
+    {
+      "type": "snd-file",
+      "position": {
+        "x": 1723.3873626373625,
+        "y": 0.7261904761906521
+      },
+      "id": "Rqv04XmDa3BgL4YN",
+      "inputs": {
+        "sound": {
+          "connection": "GvONb7qWr07VO2lo:outputs:sound"
+        },
+        "file": {
+          "value": "ggg-sfx.equipment.weapons.firearm.flintlock_pistol.reload.01"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "AOUXQllsvQnNSNcQ:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-file",
+      "position": {
+        "x": 1724.6373626373625,
+        "y": 214.47619047619065
+      },
+      "id": "qPVM6TKDQ8fcsVoc",
+      "inputs": {
+        "sound": {
+          "connection": "GvONb7qWr07VO2lo:outputs:sound"
+        },
+        "file": {
+          "value": "ggg-sfx.equipment.weapons.firearm.musket.reload.01"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "AOUXQllsvQnNSNcQ:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-file",
+      "position": {
+        "x": 1724.6373626373625,
+        "y": 433.22619047619065
+      },
+      "id": "JFzVNwj9JztKD1ug",
+      "inputs": {
+        "sound": {
+          "connection": "GvONb7qWr07VO2lo:outputs:sound"
+        },
+        "file": {
+          "value": "ggg-sfx.equipment.weapons.firearm.arquebus.reload.01"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "AOUXQllsvQnNSNcQ:ins:in"
+        }
+      }
+    }
+  ],
+  "id": "bONShDZRQUXcg49R",
+  "tags": [
+    "PF2e Trove",
+    "pf2e",
+    "equipment",
+    "weapons"
+  ],
+  "variables": {
+    "hIKeOO3cbbnZQ3Zn:outputs:3H5gTw1wlIFwJ8m0": {
+      "isArray": false,
+      "label": "Weapon Type",
+      "type": "text"
+    }
+  }
+}

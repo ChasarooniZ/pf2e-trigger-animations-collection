@@ -204,6 +204,7 @@
 - Bomb 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Bow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Crossbow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
+- Firearm 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Hammer 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Polearm 🔊🆓 (✍🏼 @Chasarooni)
 - Shield 🔊🆓 (✍🏼 @Chasarooni)
@@ -231,6 +232,7 @@
 ##### Reload
 
 - Crossbow (Weapon Group) 🔊 (✍🏼 @Chasarooni)
+- Firearm (Weapon Group) 🔊 (✍🏼 @Chasarooni)
 - Pepperbox 🔊 (✍🏼 @Chasarooni)
 - Slide Pistol 🔊 (✍🏼 @Chasarooni)
 

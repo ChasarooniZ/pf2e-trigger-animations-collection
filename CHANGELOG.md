@@ -1,5 +1,15 @@
 ## Unreleased
 
+## 0.7.8
+
+- **Animations**
+  - **New**
+    - Weapon Group: Firearm, Reload: Firearm (Weapon Group) (@Chasarooni)
+  - **Updated**
+    - Weapon Group: Bomb (to handle NPC bombs) (@Chasarooni)
+- **Updated**
+  - Animation combiner will now automatically set weapons to their proper Priority so that specific weapons can override their base Weapon counterparts
+
 ## 0.7.6
 
 - Fixed lingering issue with `Attack Roll Handler`
