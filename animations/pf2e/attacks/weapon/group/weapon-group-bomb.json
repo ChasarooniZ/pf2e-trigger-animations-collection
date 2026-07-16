@@ -1104,7 +1104,9 @@
       },
       "id": "9N1P6bP6TLP9OhoR",
       "inputs": {
-        "preset": { "value": "troveSound" },
+        "preset": {
+          "value": "troveSound"
+        },
         "delayMin": {
           "value": 800
         },
@@ -1273,7 +1275,9 @@
     {
       "type": "snd-flow",
       "inputs": {
-      "preset": { "value": "troveSound" },
+        "preset": {
+          "value": "troveSound"
+        },
         "sound": {
           "connection": "U0J4Ln92UEyHDqzK:outputs:sound"
         }

@@ -394,7 +394,7 @@ export const TEMPLATES = {
         {
           type: "snd-flow",
           inputs: {
-      "preset": { "value": "troveSound" },
+            preset: { value: "troveSound" },
             sound: {
               connection: "97SXbZXscrpeD7WA:outputs:sound",
             },
@@ -871,7 +871,7 @@ export const TEMPLATES = {
         {
           type: "snd-flow",
           inputs: {
-      "preset": { "value": "troveSound" },
+            preset: { value: "troveSound" },
             sound: {
               connection: "97SXbZXscrpeD7WA:outputs:sound",
             },
@@ -1153,7 +1153,7 @@ export const TEMPLATES = {
         {
           type: "snd-flow",
           inputs: {
-      "preset": { "value": "troveSound" },
+            preset: { value: "troveSound" },
             sound: { connection: "SjuPUbNBG4hqTOZj:outputs:sound" },
           },
           position: { x: 3109.1944444444443, y: 160.1666666666668 },
@@ -1430,7 +1430,7 @@ export const TEMPLATES = {
         {
           type: "snd-flow",
           inputs: {
-      "preset": { "value": "troveSound" },
+            preset: { value: "troveSound" },
             sound: {
               connection: "Anm8jTC91Wwav5VE:outputs:sound",
             },
@@ -1781,7 +1781,7 @@ export const TEMPLATES = {
         {
           type: "snd-flow",
           inputs: {
-      "preset": { "value": "troveSound" },
+            preset: { value: "troveSound" },
             sound: {
               connection: "Anm8jTC91Wwav5VE:outputs:sound",
             },

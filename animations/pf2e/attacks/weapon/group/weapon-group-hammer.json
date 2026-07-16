@@ -86,6 +86,14 @@
             "slug": "path",
             "isArray": false,
             "type": "number"
+          },
+          "jtkIStGWFZ95KqOH": {
+            "id": "jtkIStGWFZ95KqOH",
+            "input": "system.runes.property",
+            "label": "Property Runes",
+            "slug": "path",
+            "isArray": true,
+            "type": "text"
           }
         }
       },
@@ -1284,10 +1292,10 @@
       "id": "srBShGXBxmWsDm3h",
       "inputs": {
         "entry": {
-          "value": "item:rune:property:returning"
+          "value": "returning"
         },
         "list": {
-          "connection": "vNIRR7Lchlh8DtTH:outputs:entry"
+          "connection": "JB2LjAvW1crS6MEZ:outputs:entry"
         }
       },
       "outs": {
@@ -1295,19 +1303,6 @@
           "connection": "zWnXDd7eEeREfbj8:ins:in"
         }
       }
-    },
-    {
-      "inputs": {
-        "entry": {
-          "connection": "zwvWO50CXI44ObmF:outputs:options"
-        }
-      },
-      "type": "__variable_getter__",
-      "position": {
-        "x": 4251.58333333333,
-        "y": 772.8214285714271
-      },
-      "id": "vNIRR7Lchlh8DtTH"
     },
     {
       "inputs": {
@@ -1386,7 +1381,6 @@
     {
       "type": "snd-flow",
       "inputs": {
-      "preset": { "value": "troveSound" },
         "sound": {
           "connection": "ngRzu4g8D05majo4:outputs:sound"
         },
@@ -1408,7 +1402,6 @@
     {
       "type": "snd-flow",
       "inputs": {
-      "preset": { "value": "troveSound" },
         "sound": {
           "connection": "I9X47LOec2KBGabm:outputs:sound"
         },
@@ -1430,7 +1423,6 @@
     {
       "type": "snd-flow",
       "inputs": {
-      "preset": { "value": "troveSound" },
         "sound": {
           "connection": "mGuBF1OhADzhyAjF:outputs:sound"
         }
@@ -1458,9 +1450,22 @@
         "y": -96.95238095238074
       },
       "id": "o0ve9AoPMa6meqBY"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:jtkIStGWFZ95KqOH"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 4190,
+        "y": 647.9220779220781
+      },
+      "id": "JB2LjAvW1crS6MEZ"
     }
   ],
-  "id": "JJ7c0dmkYDkNEW5Y",
+  "id": "wnttGln9mMv0Ficl",
   "description": "<p><em>Example Animation from Trigger Animations by @MrVauxs.</em></p><p><em>Modified by @Chasarooni for use in Trigger Animation Trove</em></p>",
   "variables": {
     "4gZJ8Gm9UjlhMc4G:outputs:source": {
@@ -1493,9 +1498,9 @@
       "label": "Name",
       "type": "text"
     },
-    "zwvWO50CXI44ObmF:outputs:options": {
+    "mpa5CCtLfa7bjI71:outputs:jtkIStGWFZ95KqOH": {
       "isArray": true,
-      "label": "Options",
+      "label": "Property Runes",
       "type": "text"
     }
   }

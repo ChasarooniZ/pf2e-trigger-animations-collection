@@ -210,7 +210,12 @@
 
 ##### Base
 
+- Boomerang 🔊🆓 (✍🏼 @Chasarooni)
+- Charkram 🔊🆓 (✍🏼 @Chasarooni)
+- Dart 🔊🆓 (✍🏼 @Chasarooni)
 - Greatpick 🔊🆓 (✍🏼 @Chasarooni)
+- Shuriken 🔊🆓 (✍🏼 @Chasarooni)
+- Tamchal Chakram 🔊🆓 (✍🏼 @Chasarooni)
 
 ### Equipment
 

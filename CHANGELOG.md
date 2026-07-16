@@ -2,6 +2,9 @@
 
 ## 0.7.5
 
+- **Animations**
+  - **New**
+    - Boomerang, Charkram, Dart, Shuriken, Tamchal Chakram (@Chasarooni)
 - **Updated**
   - `Attack Roll - Handler` - now accounts for NPC strikes
   - `Weapon Group: Hammer` - modified how returning property rune is checked

@@ -1229,7 +1229,9 @@
     {
       "type": "snd-flow",
       "inputs": {
-      "preset": { "value": "troveSound" },
+        "preset": {
+          "value": "troveSound"
+        },
         "sound": {
           "connection": "KynDgT7yLDVMTnff:outputs:sound"
         }
@@ -1248,7 +1250,9 @@
     {
       "type": "snd-flow",
       "inputs": {
-      "preset": { "value": "troveSound" },
+        "preset": {
+          "value": "troveSound"
+        },
         "sound": {
           "connection": "Dor64RnNfy08Fv8f:outputs:sound"
         }

@@ -225,7 +225,9 @@
     {
       "type": "snd-flow",
       "inputs": {
-      "preset": { "value": "troveSound" },
+        "preset": {
+          "value": "troveSound"
+        },
         "sound": {
           "connection": "VAxAqjM9D5eOqED3:outputs:sound"
         },
@@ -337,7 +339,9 @@
     {
       "type": "snd-flow",
       "inputs": {
-      "preset": { "value": "troveSound" },
+        "preset": {
+          "value": "troveSound"
+        },
         "waitUntilFinished": {
           "value": true
         },
