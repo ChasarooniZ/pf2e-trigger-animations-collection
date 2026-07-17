@@ -23,5 +23,5 @@ closes
 _you can check these after you submit the PR by just clicking them_
 
 - [ ] Includes Sound?
-- [ ] Has support for [JB2a](https://library.jb2a.com/) Free?
+- [ ] Has support for [JB2a](https://library.jb2a.org/) Free?
 - [ ] Has a Low Quality Mode (1 sound + 1 video) animation in it?
