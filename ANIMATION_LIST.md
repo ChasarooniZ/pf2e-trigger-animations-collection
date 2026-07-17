@@ -49,7 +49,8 @@
       - [Unarmed Strikes](#unarmed-strikes)
       - [Weapons](#weapons)
         - [Group](#group)
-        - [Base](#base)
+        - [Base Item](#base-item)
+        - [Specific](#specific)
     - [Equipment](#equipment)
       - [Consumables](#consumables)
         - [Potions](#potions)
@@ -79,7 +80,12 @@
       - [General Feats](#general-feats-1)
       - [Skill Feats](#skill-feats-1)
       - [Archetype Feats](#archetype-feats-1)
-    - [Attacks](#attacks)
+    - [Strikes](#strikes-1)
+      - [Unarmed Strikes](#unarmed-strikes-1)
+      - [Weapons](#weapons-2)
+        - [Group](#group-1)
+        - [Base Item](#base-item-1)
+        - [Specific](#specific-1)
     - [Equipment](#equipment-1)
     - [Creatures](#creatures-1)
 
@@ -209,7 +215,7 @@
 - Polearm 🔊🆓 (✍🏼 @Chasarooni)
 - Shield 🔊🆓 (✍🏼 @Chasarooni)
 
-##### Base
+##### Base Item
 
 - Boomerang 🔊🆓 (✍🏼 @Chasarooni)
 - Charkram 🔊🆓 (✍🏼 @Chasarooni)
@@ -217,6 +223,8 @@
 - Greatpick 🔊🆓 (✍🏼 @Chasarooni)
 - Shuriken 🔊🆓 (✍🏼 @Chasarooni)
 - Tamchal Chakram 🔊🆓 (✍🏼 @Chasarooni)
+
+##### Specific
 
 ### Equipment
 
@@ -286,7 +294,19 @@
 
 #### Archetype Feats
 
-### Attacks
+### Strikes
+
+#### Unarmed Strikes
+
+#### Weapons
+
+##### Group
+
+##### Base Item
+
+- Plasma Cannon 🔊🆓✅ (✍🏼 @Suldrun45)
+
+##### Specific
 
 ### Equipment
 

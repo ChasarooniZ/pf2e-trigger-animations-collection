@@ -1,5 +1,13 @@
 ## Unreleased
 
+## 0.7.8
+
+- **Animations**
+  - **New**
+    - Plasma Cannon (@Suldrun45)
+- **Updated**
+  - `Trove Effect` Templates is now correct (🐛 @RedB)
+
 ## 0.7.7
 
 - **Animations**
