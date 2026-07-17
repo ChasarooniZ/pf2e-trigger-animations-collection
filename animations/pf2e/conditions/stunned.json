@@ -72,8 +72,8 @@
     {
       "type": "persist",
       "position": {
-        "x": 2608.8888888888887,
-        "y": 47.88888888888903
+        "x": 2605.1746031746034,
+        "y": 129.03174603174625
       },
       "id": "icMdaJ1q3j1VHfPK",
       "inputs": {
@@ -88,6 +88,12 @@
         },
         "effect": {
           "connection": "ABAJCIw3G7MVsfps:outputs:effect"
+        },
+        "tieTo": {
+          "connection": "Rk8e96ye0h2EOeUn:outputs:70aosF6hawepmW0s"
+        },
+        "tieToDocs": {
+          "connection": "ictQRW7Z9AdiNNAX:outputs:sources"
         }
       },
       "outs": {
@@ -468,5 +474,6 @@
   "name": "Stunned",
   "description": "<p>Written by @Chasarooni</p>",
   "folder": "Conditions",
-  "id": "w8aGmWUuPArAJELj"
+  "id": "IBv2MCNFgFqcGBSU",
+  "tags": ["PF2e Trove", "pf2e", "conditions"]
 }
