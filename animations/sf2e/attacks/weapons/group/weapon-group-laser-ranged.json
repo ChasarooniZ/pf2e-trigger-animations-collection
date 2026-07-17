@@ -1,0 +1,440 @@
+{
+  "name": "Weapon Group: Laser (Ranged)",
+  "folder": "Attacks",
+  "priority": -100,
+  "tags": [
+    "sf2e",
+    "PF2e Trove",
+    "attack-roll",
+    "Weapons",
+    "Attacks"
+  ],
+  "description": "<p>Animation for Ranged weapons in the Laser weapon group</p><p>Made by @Sasane</p>",
+  "nodes": [
+    {
+      "id": "MlcHo26zsGQpjaOf",
+      "position": {
+        "x": 400,
+        "y": 200
+      },
+      "type": "animation-event",
+      "custom": {
+        "outputs": {
+          "7tPGkAF0zLpKrKuN": {
+            "id": "7tPGkAF0zLpKrKuN",
+            "label": "Outcome",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "name": {
+          "value": "trove-attack:laser"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "96wfssjNjN7nUzx7:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "position": {
+        "x": 397.9230769230769,
+        "y": 504.4
+      },
+      "id": "96wfssjNjN7nUzx7",
+      "custom": {
+        "outputs": {
+          "xbItm4K4JFumMpcr": {
+            "id": "xbItm4K4JFumMpcr",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "T69Ke1X63FEdFGpt": {
+            "id": "T69Ke1X63FEdFGpt",
+            "input": "name",
+            "label": "Name",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "lz0FmiRUntvLbLS2": {
+            "id": "lz0FmiRUntvLbLS2",
+            "input": "system.range",
+            "label": "Range",
+            "slug": "path",
+            "isArray": false,
+            "type": "number"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "MlcHo26zsGQpjaOf:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "FV3gBUyt2s5Gq6Zc:ins:in"
+        }
+      }
+    },
+    {
+      "type": "massloop",
+      "position": {
+        "x": 785.9230769230769,
+        "y": 152.39999999999998
+      },
+      "id": "u5g6xhQ4wioUHMJE",
+      "inputs": {
+        "sources": {
+          "connection": "MlcHo26zsGQpjaOf:outputs:sources"
+        },
+        "targets": {
+          "connection": "MlcHo26zsGQpjaOf:outputs:targets"
+        }
+      },
+      "outs": {
+        "outAfter": {
+          "connection": "Y728iRW30FGJkoSg:ins:in"
+        },
+        "out": {
+          "connection": "AvpYTXs3d840zxg5:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 1098.923076923077,
+        "y": 364.5
+      },
+      "id": "Y728iRW30FGJkoSg",
+      "inputs": {
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 1164.923076923077,
+        "y": 120.5
+      },
+      "id": "AvpYTXs3d840zxg5",
+      "inputs": {
+        "name": {
+          "connection": "96wfssjNjN7nUzx7:outputs:T69Ke1X63FEdFGpt"
+        },
+        "origin": {
+          "connection": "96wfssjNjN7nUzx7:outputs:xbItm4K4JFumMpcr"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "i05SzDAge3XLwR5T:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "position": {
+        "x": 1526.923076923077,
+        "y": 104.4
+      },
+      "id": "i05SzDAge3XLwR5T",
+      "inputs": {
+        "effect": {
+          "connection": "AvpYTXs3d840zxg5:outputs:effect"
+        },
+        "location": {
+          "connection": "vSsz7ZuO2XEaF1pK:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "q5LcXSC8tfKQLcKc:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "u5g6xhQ4wioUHMJE:outputs:source"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1379,
+        "y": 265
+      },
+      "id": "vSsz7ZuO2XEaF1pK"
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 1815.923076923077,
+        "y": 93.5
+      },
+      "id": "q5LcXSC8tfKQLcKc",
+      "inputs": {
+        "effect": {
+          "connection": "AvpYTXs3d840zxg5:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.lasershot.red"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "qBr915lBO38ZfxKq:ins:in"
+        }
+      }
+    },
+    {
+      "type": "aim",
+      "position": {
+        "x": 2458.923076923077,
+        "y": 116.40000000000003
+      },
+      "id": "xcoIH7VZy2KWPtb8",
+      "inputs": {
+        "towards": {
+          "connection": "OKWs2bGEkFogXff6:outputs:entry"
+        },
+        "effect": {
+          "connection": "AvpYTXs3d840zxg5:outputs:effect"
+        },
+        "missed": {
+          "connection": "qBr915lBO38ZfxKq:outputs:boolean"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "06eOpVMfAs6PlHYd:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "u5g6xhQ4wioUHMJE:outputs:target"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2281,
+        "y": 274
+      },
+      "id": "OKWs2bGEkFogXff6"
+    },
+    {
+      "type": "list-contains",
+      "position": {
+        "x": 2143,
+        "y": 118
+      },
+      "id": "qBr915lBO38ZfxKq",
+      "inputs": {
+        "list": {
+          "connection": "h3hfoSJAXUEumgc0:outputs:list"
+        },
+        "entry": {
+          "connection": "MlcHo26zsGQpjaOf:outputs:7tPGkAF0zLpKrKuN"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "xcoIH7VZy2KWPtb8:ins:in"
+        }
+      },
+      "state": "boolean"
+    },
+    {
+      "type": "list-value",
+      "position": {
+        "x": 1834,
+        "y": 296.75
+      },
+      "id": "h3hfoSJAXUEumgc0",
+      "inputs": {
+        "entry": {
+          "value": "failure,criticalFailure"
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 2818.423076923077,
+        "y": 120.49999999999994
+      },
+      "id": "06eOpVMfAs6PlHYd",
+      "inputs": {
+        "name": {
+          "connection": "96wfssjNjN7nUzx7:outputs:T69Ke1X63FEdFGpt"
+        },
+        "file": {
+          "value": "ggg-sfx.ranged.scifi.laser.lazgun.strike.single.01"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "dMfRjfzbZhvGBeKv:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "position": {
+        "x": 3109.173076923078,
+        "y": 83.90000000000012
+      },
+      "id": "dMfRjfzbZhvGBeKv",
+      "inputs": {
+        "sound": {
+          "connection": "06eOpVMfAs6PlHYd:outputs:sound"
+        },
+        "location": {
+          "connection": "rUOXyQjDS1VQPAH3:outputs:entry"
+        },
+        "moveTowards": {
+          "connection": "640u8S7fnE9Za1Rs:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "l4eMKVTSEKa3S54N:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "u5g6xhQ4wioUHMJE:outputs:target"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2955.2500000000005,
+        "y": 374.7500000000002
+      },
+      "id": "640u8S7fnE9Za1Rs"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "u5g6xhQ4wioUHMJE:outputs:source"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2950.250000000001,
+        "y": 284.75
+      },
+      "id": "rUOXyQjDS1VQPAH3"
+    },
+    {
+      "type": "snd-flow",
+      "position": {
+        "x": 3355.423076923078,
+        "y": 87.25000000000006
+      },
+      "id": "l4eMKVTSEKa3S54N",
+      "inputs": {
+        "sound": {
+          "connection": "06eOpVMfAs6PlHYd:outputs:sound"
+        },
+        "preset": {
+          "value": "troveSound"
+        },
+        "delayMin": {
+          "value": 1000
+        }
+      }
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 649,
+        "y": 681
+      },
+      "id": "FV3gBUyt2s5Gq6Zc",
+      "custom": {
+        "inputs": {
+          "rE9UiIFcXNTUJ3pJ": {
+            "id": "rE9UiIFcXNTUJ3pJ",
+            "label": "Range",
+            "slug": "input",
+            "isArray": false,
+            "type": "number"
+          }
+        },
+        "outputs": {
+          "tofLqn1xeAIuJDEJ": {
+            "id": "tofLqn1xeAIuJDEJ",
+            "label": "Is Range Weapon",
+            "slug": "output",
+            "isArray": false,
+            "type": "boolean"
+          }
+        }
+      },
+      "inputs": {
+        "CA3HW3GgV2PyYMvb": {
+          "connection": "96wfssjNjN7nUzx7:outputs:zKZuJ8b6RDLLxuwT"
+        },
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nlet range=inputs[0];\n\nreturn [{type: \"boolean\", value: (range ?? 0) > 0}];"
+        },
+        "rE9UiIFcXNTUJ3pJ": {
+          "connection": "96wfssjNjN7nUzx7:outputs:lz0FmiRUntvLbLS2"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "pYsHEXuZABH97cTd:ins:in"
+        }
+      }
+    },
+    {
+      "type": "split-boolean",
+      "position": {
+        "x": 1026,
+        "y": 683
+      },
+      "id": "pYsHEXuZABH97cTd",
+      "inputs": {
+        "input": {
+          "connection": "FV3gBUyt2s5Gq6Zc:outputs:tofLqn1xeAIuJDEJ"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "u5g6xhQ4wioUHMJE:ins:in"
+        }
+      }
+    }
+  ],
+  "id": "zDwV9WkdGZSZYMAV",
+  "variables": {
+    "u5g6xhQ4wioUHMJE:outputs:source": {
+      "isArray": false,
+      "label": "Source",
+      "type": "target"
+    },
+    "u5g6xhQ4wioUHMJE:outputs:target": {
+      "isArray": false,
+      "label": "Target",
+      "type": "target"
+    }
+  }
+}
