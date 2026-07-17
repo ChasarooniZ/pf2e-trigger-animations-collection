@@ -4,8 +4,8 @@
     {
       "type": "visibility",
       "position": {
-        "x": 1810.7643467643459,
-        "y": -255.3253968253968
+        "x": 1959.0976800976791,
+        "y": -275.32539682539675
       },
       "id": "Nrbbayr5LI09Phi2",
       "inputs": {
@@ -34,8 +34,8 @@
     {
       "type": "play",
       "position": {
-        "x": 2758.674880674881,
-        "y": -235.3131313131312
+        "x": 2872.008214008214,
+        "y": -250.3131313131313
       },
       "id": "SW6ZeNxbHQVg27Dj",
       "inputs": {
@@ -50,8 +50,8 @@
     {
       "type": "get-quality",
       "position": {
-        "x": 2173.920634920635,
-        "y": -233.10678210678205
+        "x": 2315.5873015873017,
+        "y": -258.1067821067821
       },
       "id": "H2COAV35MOZAqh7W",
       "outs": {
@@ -72,8 +72,8 @@
     {
       "type": "persist",
       "position": {
-        "x": 2486.2857142857147,
-        "y": -37.28571428571422
+        "x": 2599.6190476190477,
+        "y": -30.619047619047592
       },
       "id": "icMdaJ1q3j1VHfPK",
       "inputs": {
@@ -105,8 +105,8 @@
     {
       "type": "rotation",
       "position": {
-        "x": 1096.9206349206352,
-        "y": -275.57142857142827
+        "x": 1341.9206349206352,
+        "y": -272.23809523809496
       },
       "id": "3v5Py0kM4c1sAYDK",
       "inputs": {
@@ -164,8 +164,8 @@
     {
       "type": "file",
       "position": {
-        "x": 801.2053157814084,
-        "y": -239.90482778809792
+        "x": 936.2053157814083,
+        "y": -251.5714944547646
       },
       "id": "z69EAHOsKpcHHbbF",
       "inputs": {
@@ -227,8 +227,8 @@
     {
       "type": "location",
       "position": {
-        "x": 490.3888888888887,
-        "y": -270.7222222222222
+        "x": 418.72222222222206,
+        "y": -264.05555555555554
       },
       "id": "mTuB4BUNUWMvww5v",
       "inputs": {
@@ -241,15 +241,15 @@
       },
       "outs": {
         "out": {
-          "connection": "z69EAHOsKpcHHbbF:ins:in"
+          "connection": "7Qtv5w9Vn3SAeHh7:ins:in"
         }
       }
     },
     {
       "type": "scale",
       "position": {
-        "x": 1445.272283272283,
-        "y": -270.01269841269857
+        "x": 1646.9389499389495,
+        "y": -280.0126984126985
       },
       "id": "i2f6CpdhGS545nwN",
       "inputs": {
@@ -266,6 +266,72 @@
         }
       },
       "state": "object"
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 911.2053157814081,
+        "y": 73.42850554523523
+      },
+      "id": "zBB69bkeUoHgfHH9",
+      "inputs": {
+        "file": {
+          "value": "jb2a.markers.stun.purple.03"
+        },
+        "effect": {
+          "connection": "ABAJCIw3G7MVsfps:outputs:effect"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "hQ1W6vgJ9zYoNgni:ins:in"
+        }
+      }
+    },
+    {
+      "type": "style",
+      "position": {
+        "x": 1127.923076923076,
+        "y": 224.83333333333292
+      },
+      "id": "hQ1W6vgJ9zYoNgni",
+      "inputs": {
+        "effect": {
+          "connection": "ABAJCIw3G7MVsfps:outputs:effect"
+        },
+        "filterType": {
+          "value": "ColorMatrix"
+        },
+        "filterData": {
+          "value": "{\n  \"hue\":-100\n}"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "3v5Py0kM4c1sAYDK:ins:in"
+        }
+      }
+    },
+    {
+      "type": "module-enabled",
+      "position": {
+        "x": 634.0000000000002,
+        "y": -119.33333333333343
+      },
+      "id": "7Qtv5w9Vn3SAeHh7",
+      "inputs": {
+        "module": {
+          "value": "jb2a_patreon"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "z69EAHOsKpcHHbbF:ins:in"
+        },
+        "false": {
+          "connection": "zBB69bkeUoHgfHH9:ins:in"
+        }
+      }
     }
   ],
   "name": "Suppressed",
