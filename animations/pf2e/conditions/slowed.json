@@ -153,6 +153,9 @@
         },
         "tieTo": {
           "connection": "tlbI0Mlzizw96yV9:outputs:70aosF6hawepmW0s"
+        },
+        "effect": {
+          "connection": "45GEVcFc0qjFLtc4:outputs:effect"
         }
       },
       "outs": {
@@ -182,8 +185,8 @@
     {
       "type": "effect",
       "position": {
-        "x": 420.28571428571433,
-        "y": -56.714285714285666
+        "x": 374.28571428571433,
+        "y": -42.714285714285666
       },
       "id": "45GEVcFc0qjFLtc4",
       "outs": {
@@ -445,5 +448,6 @@
   "name": "Slowed",
   "description": "<p>Written by @Chasarooni</p>",
   "folder": "Conditions",
-  "id": "L5xrJregxufG2aCy"
+  "id": "YesbpDmJROYLfLht",
+  "tags": ["PF2e Trove", "pf2e", "conditions"]
 }
