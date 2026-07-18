@@ -134,6 +134,9 @@
         },
         "location": {
           "connection": "AZcl9DeuxqA75WL8:outputs:entry"
+        },
+        "local": {
+          "value": true
         }
       },
       "position": {
@@ -842,10 +845,34 @@
         }
       },
       "position": {
-        "x": 2598.047716453806,
-        "y": 1917.4645678730412
+        "x": 2422.047716453806,
+        "y": 2083.4645678730412
       },
       "id": "7DKbbI2zZNp5B9Mw",
+      "outs": {
+        "out": {
+          "connection": "ivYklLmWwVlN9EYi:ins:in"
+        }
+      }
+    },
+    {
+      "type": "style",
+      "position": {
+        "x": 2659.923076923077,
+        "y": 2123.5
+      },
+      "id": "ivYklLmWwVlN9EYi",
+      "inputs": {
+        "effect": {
+          "connection": "esOeRZNP2KJPqL7e:outputs:effect"
+        },
+        "filterType": {
+          "value": "ColorMatrix"
+        },
+        "filterData": {
+          "value": "{\n  \"hue\":180\n  \n}"
+        }
+      },
       "outs": {
         "out": {
           "connection": "KsTs0u8H4d87MuAH:ins:in"
@@ -853,7 +880,7 @@
       }
     }
   ],
-  "id": "nlCQtuF0dXihRfFQ",
+  "id": "TgDxwYrX02jQ75HU",
   "variables": {
     "MAfs4Gp8qyCUleDT:outputs:rweok2JFdqMJjbzW": {
       "isArray": false,
@@ -866,5 +893,6 @@
       "type": "target"
     }
   },
-  "description": "<p><em>Made by @Sasane</em></p>"
+  "description": "<p><em>Made by @Sasane</em></p>",
+  "tags": ["PF2e Trove", "sf2e", "attacks", "weapons"]
 }
