@@ -1,0 +1,971 @@
+{
+  "id": "3BkgR2quSaCjAYD4",
+  "name": "Weapon Group: Projectile (Ranged)",
+  "folder": "Attacks",
+  "priority": -100,
+  "description": "<p>Animation for Ranged Weapons in the Projectile weapon group</p><p>Created by @Sasane</p>",
+  "nodes": [
+    {
+      "id": "6Tfnym130Ng18O6j",
+      "position": {
+        "x": -1371.7777777777778,
+        "y": 99.77777777777794
+      },
+      "type": "animation-event",
+      "custom": {
+        "outputs": {
+          "Y5lot93EebZj9WDF": {
+            "id": "Y5lot93EebZj9WDF",
+            "label": "Outcome",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "name": {
+          "value": "trove-attack:projectile"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "vC0tmusdodzkjtPR:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 1262,
+        "y": 174.00000000000003
+      },
+      "id": "Tz3ck3quYyBa8sBN",
+      "inputs": {
+        "origin": {
+          "connection": "qfOtS29FEmvgyWlG:outputs:entry"
+        },
+        "name": {
+          "connection": "W9QsNM6sg9luSxhI:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "1gnY8DQW8OOgwDAO:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "position": {
+        "x": -1108.4840526840403,
+        "y": 115.08598158778454
+      },
+      "id": "vC0tmusdodzkjtPR",
+      "custom": {
+        "outputs": {
+          "FTMzuGYiczqVn5DZ": {
+            "id": "FTMzuGYiczqVn5DZ",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "SmDkZK6p4M5HeC3O": {
+            "id": "SmDkZK6p4M5HeC3O",
+            "input": "name",
+            "label": "Name",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "g1qRl2FjSf9xFqJn": {
+            "id": "g1qRl2FjSf9xFqJn",
+            "input": "system.usage.hands",
+            "label": "Hands",
+            "slug": "path",
+            "isArray": false,
+            "type": "number"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "6Tfnym130Ng18O6j:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "IEM8cXa2lciNdLbs:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "inputs": {
+        "effect": {
+          "connection": "Tz3ck3quYyBa8sBN:outputs:effect"
+        },
+        "attachTo": {
+          "value": true
+        },
+        "gridUnits": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        },
+        "bindScale": {
+          "value": false
+        },
+        "location": {
+          "connection": "AYOaRbs5DPynAszI:outputs:entry"
+        }
+      },
+      "position": {
+        "x": 1562.944537280197,
+        "y": 180.7147974908261
+      },
+      "id": "1gnY8DQW8OOgwDAO",
+      "outs": {
+        "out": {
+          "connection": "Kycz2Nhv6qzYqB1C:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "inputs": {
+        "effect": {
+          "connection": "Tz3ck3quYyBa8sBN:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.bullet.03.blue"
+        }
+      },
+      "position": {
+        "x": 2305.989519853765,
+        "y": 240.23820171843045
+      },
+      "id": "cXjGmf6GmVlA0FGP",
+      "outs": {
+        "out": {
+          "connection": "ZPcmqshmFUzbSwDp:ins:in"
+        }
+      }
+    },
+    {
+      "type": "aim",
+      "state": "stretchTo",
+      "inputs": {
+        "effect": {
+          "connection": "Tz3ck3quYyBa8sBN:outputs:effect"
+        },
+        "missed": {
+          "connection": "CQbSaF326Db9R0DV:outputs:boolean"
+        },
+        "towards": {
+          "connection": "4NdZalfVvIWJebEk:outputs:entry"
+        }
+      },
+      "position": {
+        "x": 3187.3744882978426,
+        "y": 76.30341440077967
+      },
+      "id": "YgGHh9LrpvSAdXVK",
+      "outs": {
+        "out": {
+          "connection": "vZWYTqWYXeVJ0vNZ:ins:in"
+        }
+      }
+    },
+    {
+      "type": "massloop",
+      "position": {
+        "x": -543.1227218582203,
+        "y": 101.61375672504948
+      },
+      "id": "XoyjnCYFCbO2KbVc",
+      "inputs": {
+        "sources": {
+          "connection": "6Tfnym130Ng18O6j:outputs:sources"
+        },
+        "targets": {
+          "connection": "6Tfnym130Ng18O6j:outputs:targets"
+        }
+      },
+      "outs": {
+        "outAfter": {
+          "connection": "6tI08prymdohPJvU:ins:in"
+        },
+        "out": {
+          "connection": "Jg8X10dLdmDiJfD1:ins:in"
+        }
+      }
+    },
+    {
+      "type": "list-contains",
+      "position": {
+        "x": 2801.725187172936,
+        "y": 93.95245484500657
+      },
+      "id": "CQbSaF326Db9R0DV",
+      "inputs": {
+        "list": {
+          "connection": "qKNLzkEYN2jOp52w:outputs:list"
+        },
+        "entry": {
+          "connection": "b7xp7220hRHOLZUY:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "YgGHh9LrpvSAdXVK:ins:in"
+        }
+      },
+      "state": "boolean"
+    },
+    {
+      "type": "list-value",
+      "position": {
+        "x": 2548.67072431448,
+        "y": -163.54102220194963
+      },
+      "id": "qKNLzkEYN2jOp52w",
+      "inputs": {
+        "entry": {
+          "value": "failure,criticalFailure"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "inputs": {
+        "effect": {
+          "connection": "Tz3ck3quYyBa8sBN:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.bullet.Snipe.orange"
+        }
+      },
+      "position": {
+        "x": 2303.191900806146,
+        "y": 54.107249337478265
+      },
+      "id": "YC7RhYcJZ0wGXNoX",
+      "outs": {
+        "out": {
+          "connection": "CQbSaF326Db9R0DV:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": -266.59270613729404,
+        "y": 75.57009785027014
+      },
+      "id": "Jg8X10dLdmDiJfD1",
+      "outs": {
+        "out": {
+          "connection": "jupK4b2ethVpxE3r:ins:in"
+        }
+      },
+      "inputs": {
+        "name": {
+          "connection": "2W8pMRF7yUCFCBoO:outputs:entry"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "Jg8X10dLdmDiJfD1:outputs:sound"
+        },
+        "location": {
+          "connection": "2048WYwhOWVTo8g1:outputs:entry"
+        },
+        "moveTowards": {
+          "connection": "Gf1smKh3ez3lLqNw:outputs:entry"
+        }
+      },
+      "position": {
+        "x": 358.84135979677103,
+        "y": 67.72009785027069
+      },
+      "id": "7znFPpDvpOUv8lYR",
+      "outs": {
+        "out": {
+          "connection": "YdJTGHCod8dLIbjz:ins:in"
+        }
+      }
+    },
+    {
+      "type": "module-enabled",
+      "position": {
+        "x": 2012.522373227784,
+        "y": 208.80422483439713
+      },
+      "id": "hEJeZ8HmvSVhickh",
+      "inputs": {
+        "module": {
+          "value": "jb2a_patreon"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "YC7RhYcJZ0wGXNoX:ins:in"
+        },
+        "false": {
+          "connection": "cXjGmf6GmVlA0FGP:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "preset": {
+          "value": "troveSound"
+        },
+        "sound": {
+          "connection": "Jg8X10dLdmDiJfD1:outputs:sound"
+        }
+      },
+      "position": {
+        "x": 40.74612170153341,
+        "y": 72.236764516937
+      },
+      "id": "jupK4b2ethVpxE3r",
+      "outs": {
+        "out": {
+          "connection": "7znFPpDvpOUv8lYR:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": -214.12087912087895,
+        "y": 382.4010989010992
+      },
+      "id": "6tI08prymdohPJvU",
+      "inputs": {
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "vC0tmusdodzkjtPR:outputs:FTMzuGYiczqVn5DZ"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1102.9560439560441,
+        "y": 294.6510989010993
+      },
+      "id": "qfOtS29FEmvgyWlG"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "vC0tmusdodzkjtPR:outputs:SmDkZK6p4M5HeC3O"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1098.2060439560441,
+        "y": 237.15109890109943
+      },
+      "id": "W9QsNM6sg9luSxhI"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "6Tfnym130Ng18O6j:outputs:Y5lot93EebZj9WDF"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2643.3092185592186,
+        "y": -91.7338217338214
+      },
+      "id": "b7xp7220hRHOLZUY"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "vC0tmusdodzkjtPR:outputs:SmDkZK6p4M5HeC3O"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": -432.1987179487178,
+        "y": 23.746336996337504
+      },
+      "id": "2W8pMRF7yUCFCBoO"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "XoyjnCYFCbO2KbVc:outputs:source"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 164.05128205128221,
+        "y": -23.753663003662723
+      },
+      "id": "2048WYwhOWVTo8g1"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "XoyjnCYFCbO2KbVc:outputs:target"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 165.30128205128221,
+        "y": 27.496336996337277
+      },
+      "id": "Gf1smKh3ez3lLqNw"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "XoyjnCYFCbO2KbVc:outputs:target"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3031.9722222222226,
+        "y": 171.38888888888908
+      },
+      "id": "4NdZalfVvIWJebEk"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "XoyjnCYFCbO2KbVc:outputs:source"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1431.3055555555557,
+        "y": 331.13888888888886
+      },
+      "id": "AYOaRbs5DPynAszI"
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": -866.6190476190477,
+        "y": 110.3690476190477
+      },
+      "id": "IEM8cXa2lciNdLbs",
+      "custom": {
+        "inputs": {
+          "ZSHrWtD7n0Vlvqn2": {
+            "id": "ZSHrWtD7n0Vlvqn2",
+            "label": "Hands",
+            "slug": "input",
+            "isArray": false,
+            "type": "number"
+          }
+        },
+        "outputs": {
+          "3H5gTw1wlIFwJ8m0": {
+            "id": "3H5gTw1wlIFwJ8m0",
+            "label": "Weapon Type",
+            "slug": "output",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "v5C0xZa0DDFfVVLm": {
+          "connection": "vC0tmusdodzkjtPR:outputs:hcfr3WZQfKa9mkGO"
+        },
+        "ZSHrWtD7n0Vlvqn2": {
+          "connection": "vC0tmusdodzkjtPR:outputs:g1qRl2FjSf9xFqJn"
+        },
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst hands = inputs[0];\nlet type = 'pistol';\nif (hands === 2) {\n  type = \"rifle\"\n}\nreturn [{type: \"text\", value: type}];"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "XoyjnCYFCbO2KbVc:ins:in"
+        }
+      }
+    },
+    {
+      "type": "split-text",
+      "position": {
+        "x": 1798.2484737484729,
+        "y": 180.7412698412699
+      },
+      "id": "Kycz2Nhv6qzYqB1C",
+      "custom": {
+        "outs": {
+          "6knSYY4o8KHbi2Fa": {
+            "id": "6knSYY4o8KHbi2Fa",
+            "input": "pistol",
+            "label": "pistol",
+            "slug": "value"
+          },
+          "VpNpfEvtAmmIWiOE": {
+            "id": "VpNpfEvtAmmIWiOE",
+            "input": "rifle",
+            "label": "rifle",
+            "slug": "value"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "cWvJGmPRQXkIqYLD:outputs:entry"
+        }
+      },
+      "outs": {
+        "VpNpfEvtAmmIWiOE": {
+          "connection": "hEJeZ8HmvSVhickh:ins:in"
+        },
+        "6knSYY4o8KHbi2Fa": {
+          "connection": "df679pC6Wgr9RFSk:ins:in"
+        },
+        "Mqh9jEKPv59mJGWF": {
+          "connection": "if2ecq15VMlBbbBE:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "IEM8cXa2lciNdLbs:outputs:3H5gTw1wlIFwJ8m0"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1614.575396825396,
+        "y": 139.09126984126988
+      },
+      "id": "cWvJGmPRQXkIqYLD"
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 2334.319902319901,
+        "y": -162.80158730158732
+      },
+      "id": "df679pC6Wgr9RFSk",
+      "inputs": {
+        "file": {
+          "value": "jb2a.bullet.01.orange"
+        },
+        "effect": {
+          "connection": "Tz3ck3quYyBa8sBN:outputs:effect"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "CQbSaF326Db9R0DV:ins:in"
+        }
+      }
+    },
+    {
+      "type": "split-text",
+      "position": {
+        "x": 616.6468253968233,
+        "y": 86.8769841269841
+      },
+      "id": "YdJTGHCod8dLIbjz",
+      "custom": {
+        "outs": {
+          "6knSYY4o8KHbi2Fa": {
+            "id": "6knSYY4o8KHbi2Fa",
+            "input": "pistol",
+            "label": "pistol",
+            "slug": "value"
+          },
+          "VpNpfEvtAmmIWiOE": {
+            "id": "VpNpfEvtAmmIWiOE",
+            "input": "rifle",
+            "label": "rifle",
+            "slug": "value"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "BxomTtZeHd6O9xOe:outputs:entry"
+        }
+      },
+      "outs": {
+        "6knSYY4o8KHbi2Fa": {
+          "connection": "jdfbh67u1OV91YQE:ins:in"
+        },
+        "Mqh9jEKPv59mJGWF": {
+          "connection": "GXLqttGiMycHmvSc:ins:in"
+        },
+        "VpNpfEvtAmmIWiOE": {
+          "connection": "rMDGtUMH5U7ojx0I:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "IEM8cXa2lciNdLbs:outputs:3H5gTw1wlIFwJ8m0"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 400.6468253968251,
+        "y": -32.65873015873012
+      },
+      "id": "BxomTtZeHd6O9xOe"
+    },
+    {
+      "type": "snd-file",
+      "inputs": {
+        "sound": {
+          "connection": "Jg8X10dLdmDiJfD1:outputs:sound"
+        },
+        "file": {
+          "value": "ggg-sfx.ranged.firearm.flintlock_pistol.strike.01"
+        }
+      },
+      "position": {
+        "x": 856.0753968253957,
+        "y": -129.73015873015856
+      },
+      "id": "jdfbh67u1OV91YQE",
+      "outs": {
+        "out": {
+          "connection": "Tz3ck3quYyBa8sBN:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-file",
+      "inputs": {
+        "sound": {
+          "connection": "Jg8X10dLdmDiJfD1:outputs:sound"
+        },
+        "file": {
+          "value": "ggg-sfx.ranged.firearm.rifle.strike.steampunk.01"
+        }
+      },
+      "position": {
+        "x": 888.075396825396,
+        "y": 166.55555555555543
+      },
+      "id": "rMDGtUMH5U7ojx0I",
+      "outs": {
+        "out": {
+          "connection": "Tz3ck3quYyBa8sBN:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 4366.238095238094,
+        "y": 77.49206349206338
+      },
+      "id": "LZKErR6nWVarbt4c",
+      "outs": {
+        "out": {
+          "connection": "s5VSmusjjkxH3Dwf:ins:in"
+        }
+      },
+      "inputs": {
+        "name": {
+          "connection": "7FFE2CsMiWrrG3ec:outputs:entry"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "LZKErR6nWVarbt4c:outputs:sound"
+        },
+        "location": {
+          "connection": "uZwtF9fgof0UtcCs:outputs:entry"
+        }
+      },
+      "position": {
+        "x": 4988.481684981683,
+        "y": -18.405555555555054
+      },
+      "id": "hJyvfeT4l1kjVMI1",
+      "outs": {
+        "out": {
+          "connection": "NyfG0QCGdOomDUgr:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "preset": {
+          "value": "troveSound"
+        },
+        "sound": {
+          "connection": "LZKErR6nWVarbt4c:outputs:sound"
+        }
+      },
+      "position": {
+        "x": 4651.815018315017,
+        "y": 80.39682539682536
+      },
+      "id": "s5VSmusjjkxH3Dwf",
+      "outs": {
+        "out": {
+          "connection": "hJyvfeT4l1kjVMI1:ins:in"
+        }
+      }
+    },
+    {
+      "type": "split-text",
+      "position": {
+        "x": 4102.001436296021,
+        "y": 79.32275929258685
+      },
+      "id": "YWlRDKK0mBKmKRYT",
+      "custom": {
+        "outs": {
+          "6knSYY4o8KHbi2Fa": {
+            "id": "6knSYY4o8KHbi2Fa",
+            "input": "pistol",
+            "label": "pistol",
+            "slug": "value"
+          },
+          "VpNpfEvtAmmIWiOE": {
+            "id": "VpNpfEvtAmmIWiOE",
+            "input": "rifle",
+            "label": "rifle",
+            "slug": "value"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "2wlaJ6mZM6XQeoad:outputs:entry"
+        }
+      },
+      "outs": {
+        "Mqh9jEKPv59mJGWF": {
+          "connection": "xarkgznckm5QdgFz:ins:in"
+        },
+        "6knSYY4o8KHbi2Fa": {
+          "connection": "LZKErR6nWVarbt4c:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-file",
+      "inputs": {
+        "sound": {
+          "connection": "LZKErR6nWVarbt4c:outputs:sound"
+        },
+        "file": {
+          "value": "ggg-sfx.ranged.firearm.flintlock_pistol.impact.01"
+        }
+      },
+      "position": {
+        "x": 5281.715722010308,
+        "y": -123.85581213598448
+      },
+      "id": "NyfG0QCGdOomDUgr"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "vC0tmusdodzkjtPR:outputs:SmDkZK6p4M5HeC3O"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 4191.190476190476,
+        "y": 7.908730158730236
+      },
+      "id": "7FFE2CsMiWrrG3ec"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "IEM8cXa2lciNdLbs:outputs:3H5gTw1wlIFwJ8m0"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3933.904761904761,
+        "y": -27.519841269840924
+      },
+      "id": "2wlaJ6mZM6XQeoad"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "XoyjnCYFCbO2KbVc:outputs:target"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 4781.333333333332,
+        "y": -50.84126984126965
+      },
+      "id": "uZwtF9fgof0UtcCs"
+    },
+    {
+      "type": "flow",
+      "inputs": {
+        "effect": {
+          "connection": "Tz3ck3quYyBa8sBN:outputs:effect"
+        },
+        "waitUntilFinished": {
+          "value": true
+        },
+        "delayMin": {
+          "value": 300
+        },
+        "waitDelayMin": {
+          "connection": "vZWYTqWYXeVJ0vNZ:outputs:ik5WRVFpdDzhJgFa"
+        }
+      },
+      "position": {
+        "x": 3805.619047619046,
+        "y": 83.69444444444446
+      },
+      "id": "RPEMtuuCwrOfTioz",
+      "outs": {
+        "out": {
+          "connection": "YWlRDKK0mBKmKRYT:ins:in"
+        }
+      }
+    },
+    {
+      "type": "style",
+      "inputs": {
+        "effect": {
+          "connection": "Tz3ck3quYyBa8sBN:outputs:effect"
+        },
+        "filterType": {
+          "value": "ColorMatrix"
+        },
+        "filterData": {
+          "value": "{\n  \"hue\": -165\n}"
+        }
+      },
+      "position": {
+        "x": 2528.7619047619046,
+        "y": 212.21825396825432
+      },
+      "id": "ZPcmqshmFUzbSwDp",
+      "outs": {
+        "out": {
+          "connection": "CQbSaF326Db9R0DV:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 3493.6730769230758,
+        "y": 76.76904761904768
+      },
+      "id": "vZWYTqWYXeVJ0vNZ",
+      "custom": {
+        "inputs": {
+          "lWSP70lifZDlQLAP": {
+            "id": "lWSP70lifZDlQLAP",
+            "label": "Weapon Type",
+            "slug": "input",
+            "isArray": false,
+            "type": "text"
+          }
+        },
+        "outputs": {
+          "ik5WRVFpdDzhJgFa": {
+            "id": "ik5WRVFpdDzhJgFa",
+            "label": "Wait",
+            "slug": "output",
+            "isArray": false,
+            "type": "number"
+          }
+        }
+      },
+      "inputs": {
+        "lWSP70lifZDlQLAP": {
+          "connection": "ckN2MrctC3Su6Pj8:outputs:entry"
+        },
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst type = inputs[0];\nlet wait = 0\nif (type === 'shotgun') {\n  wait = -2200;\n} else if (type === \"pistol\") {\n  wait = -400\n} else if (type === 'rifle') {\n  wait = -1100\n}\n\nreturn [{type: \"number\", value: wait}];"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "RPEMtuuCwrOfTioz:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "IEM8cXa2lciNdLbs:outputs:3H5gTw1wlIFwJ8m0"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3307.892857142856,
+        "y": -35.38095238095231
+      },
+      "id": "ckN2MrctC3Su6Pj8"
+    }
+  ],
+  "variables": {
+    "vC0tmusdodzkjtPR:outputs:SmDkZK6p4M5HeC3O": {
+      "isArray": false,
+      "label": "Name",
+      "type": "text"
+    },
+    "vC0tmusdodzkjtPR:outputs:FTMzuGYiczqVn5DZ": {
+      "isArray": false,
+      "label": "UUID",
+      "type": "text"
+    },
+    "6Tfnym130Ng18O6j:outputs:Y5lot93EebZj9WDF": {
+      "isArray": false,
+      "label": "Outcome",
+      "type": "text"
+    },
+    "XoyjnCYFCbO2KbVc:outputs:source": {
+      "isArray": false,
+      "label": "Source",
+      "type": "target"
+    },
+    "XoyjnCYFCbO2KbVc:outputs:target": {
+      "isArray": false,
+      "label": "Target",
+      "type": "target"
+    },
+    "IEM8cXa2lciNdLbs:outputs:3H5gTw1wlIFwJ8m0": {
+      "isArray": false,
+      "label": "Weapon Type",
+      "type": "text"
+    }
+  },
+  "tags": ["PF2e Trove", "attacks", "weapon", "sf2e"]
+}
