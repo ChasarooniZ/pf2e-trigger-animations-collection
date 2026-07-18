@@ -56,6 +56,7 @@
         - [Potions](#potions)
       - [Weapons](#weapons-1)
         - [Reload](#reload)
+      - [Worn](#worn)
     - [Creatures](#creatures)
   - [SF2e](#sf2e)
     - [Class Features](#class-features-1)
@@ -119,6 +120,7 @@
 #### Focus Spells
 
 - Hurtling Stone 🔊🆓 (✍🏼 @Chasarooni)
+- Lay on Hands 🔊🆓 (✍🏼 @Chasarooni)
 
 #### 1st Rank Spells
 
@@ -202,6 +204,7 @@
 #### Unarmed Strikes
 
 - Claw 🔇🆓 (✍🏼 @Chasarooni)
+- Fist 🔊🆓 (✍🏼 @Chasarooni)
 
 #### Weapons
 
@@ -214,6 +217,7 @@
 - Hammer 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Polearm 🔊🆓 (✍🏼 @Chasarooni)
 - Shield 🔊🆓 (✍🏼 @Chasarooni)
+- Sword 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 
 ##### Base Item
 
@@ -221,6 +225,7 @@
 - Charkram 🔊🆓 (✍🏼 @Chasarooni)
 - Dart 🔊🆓 (✍🏼 @Chasarooni)
 - Greatpick 🔊🆓 (✍🏼 @Chasarooni)
+- Gauntlet 🔊🆓 (✍🏼 @Chasarooni)
 - Shuriken 🔊🆓 (✍🏼 @Chasarooni)
 - Tamchal Chakram 🔊🆓 (✍🏼 @Chasarooni)
 
@@ -243,6 +248,10 @@
 - Firearm (Weapon Group) 🆓🔊 (✍🏼 @Chasarooni)
 - Pepperbox 🆓🔊 (✍🏼 @Chasarooni)
 - Slide Pistol 🆓🔊 (✍🏼 @Chasarooni)
+
+#### Worn
+
+- Healer's Glove 🔊🆓 (✍🏼 @Chasarooni)
 
 ### Creatures
 
@@ -285,6 +294,7 @@
 ### Conditions
 
 - Glitching 🔇🆓✅ (✍🏼 @Suldrun45)
+- Suppressed 🔇🆓✅ (✍🏼 @Suldrun45)
 
 ### Feats
 
