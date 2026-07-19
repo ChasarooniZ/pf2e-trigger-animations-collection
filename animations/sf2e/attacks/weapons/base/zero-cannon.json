@@ -1,0 +1,362 @@
+{
+  "name": "Zero Cannon",
+  "folder": "Attacks",
+  "priority": -50,
+  "nodes": [
+    {
+      "id": "uLphrB1QaNytPLUt",
+      "position": {
+        "x": 242.0000000000001,
+        "y": 165.9999999999999
+      },
+      "type": "animation-event",
+      "custom": {
+        "outputs": {
+          "tLTm9RUaFbe8JWAh": {
+            "id": "tLTm9RUaFbe8JWAh",
+            "label": "Template",
+            "slug": "path",
+            "isArray": false,
+            "type": "region"
+          }
+        }
+      },
+      "inputs": {
+        "name": {
+          "value": "trove-template:zero-cannon"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "fIbjlk5zGRaPqV0z:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "position": {
+        "x": 562,
+        "y": 180.9999999999999
+      },
+      "id": "fIbjlk5zGRaPqV0z",
+      "custom": {
+        "outputs": {
+          "hwl4zga3oclXUyxQ": {
+            "id": "hwl4zga3oclXUyxQ",
+            "input": "slug",
+            "label": "Slug",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "uLphrB1QaNytPLUt:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "RpiiHCiDgA7MVvJH:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-actor",
+      "position": {
+        "x": 859.9230769230769,
+        "y": 163.0666666666666
+      },
+      "id": "RpiiHCiDgA7MVvJH",
+      "custom": {
+        "outputs": {
+          "piTJxzAdn1k6XSce": {
+            "id": "piTJxzAdn1k6XSce",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "uLphrB1QaNytPLUt:outputs:actor"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "oTMt7p880sREElsz:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 1220.5897435897432,
+        "y": 10.333333333333485
+      },
+      "id": "oTMt7p880sREElsz",
+      "inputs": {
+        "origin": {
+          "connection": "RpiiHCiDgA7MVvJH:outputs:piTJxzAdn1k6XSce"
+        },
+        "name": {
+          "connection": "fIbjlk5zGRaPqV0z:outputs:hwl4zga3oclXUyxQ"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "HlmLI7SVAEqhEXsR:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "position": {
+        "x": 1701.3119658119658,
+        "y": -51.572222222222194
+      },
+      "id": "HlmLI7SVAEqhEXsR",
+      "inputs": {
+        "effect": {
+          "connection": "oTMt7p880sREElsz:outputs:effect"
+        },
+        "attachTo": {
+          "value": true
+        },
+        "gridUnits": {
+          "value": true
+        },
+        "offset": {
+          "value": {
+            "x": -3,
+            "y": 0
+          }
+        },
+        "local": {
+          "value": true
+        },
+        "location": {
+          "connection": "yymlaDXwOe4r4Lte:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "eNYo2XarRR8mQTeU:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 1981.7008547008543,
+        "y": -53.63888888888886
+      },
+      "id": "eNYo2XarRR8mQTeU",
+      "inputs": {
+        "effect": {
+          "connection": "oTMt7p880sREElsz:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.template_line.ice.01.blue.30ft"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "nTzf3mqPDlLVIMJD:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "position": {
+        "x": 2400.923076923077,
+        "y": -46.93333333333328
+      },
+      "id": "nTzf3mqPDlLVIMJD",
+      "inputs": {
+        "effect": {
+          "connection": "oTMt7p880sREElsz:outputs:effect"
+        },
+        "gridUnits": {
+          "value": true
+        },
+        "width": {
+          "value": 12
+        },
+        "height": {
+          "value": 1
+        }
+      },
+      "state": "size",
+      "outs": {
+        "out": {
+          "connection": "wItBeZetZHg6LDOw:ins:in"
+        }
+      }
+    },
+    {
+      "type": "aim",
+      "position": {
+        "x": 2784.923076923077,
+        "y": -32.60000000000002
+      },
+      "id": "wItBeZetZHg6LDOw",
+      "inputs": {
+        "effect": {
+          "connection": "oTMt7p880sREElsz:outputs:effect"
+        },
+        "attachTo": {
+          "value": true
+        },
+        "towards": {
+          "connection": "y5waSjMWzaYWBGsf:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "l1uSwKovBnabytgm:ins:in"
+        }
+      },
+      "state": "rotateTowards"
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 3950.7802197802193,
+        "y": -7.928571428571445
+      },
+      "id": "QqxcvymGvNXSHRER",
+      "inputs": {
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "position": {
+        "x": 3387.923076923077,
+        "y": -37.60000000000002
+      },
+      "id": "vPFe7JMkLuhkZ83T",
+      "inputs": {
+        "sound": {
+          "connection": "l1uSwKovBnabytgm:outputs:sound"
+        },
+        "location": {
+          "connection": "A46SoYvrC3KVaX68:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "rHzQpiHgIYmlOoRm:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "position": {
+        "x": 3633.923076923077,
+        "y": -26.5
+      },
+      "id": "rHzQpiHgIYmlOoRm",
+      "inputs": {
+        "sound": {
+          "connection": "l1uSwKovBnabytgm:outputs:sound"
+        },
+        "preset": {
+          "value": "troveSound"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "QqxcvymGvNXSHRER:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 3096.50641025641,
+        "y": -33.666666666666686
+      },
+      "id": "l1uSwKovBnabytgm",
+      "inputs": {
+        "name": {
+          "connection": "fIbjlk5zGRaPqV0z:outputs:hwl4zga3oclXUyxQ"
+        },
+        "file": {
+          "value": "ggg-sfx.magic.ice.freeze.01"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "vPFe7JMkLuhkZ83T:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "uLphrB1QaNytPLUt:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1558.253968253968,
+        "y": -136.88888888888883
+      },
+      "id": "yymlaDXwOe4r4Lte"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "uLphrB1QaNytPLUt:outputs:actor"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3231.142857142857,
+        "y": 118
+      },
+      "id": "A46SoYvrC3KVaX68"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "uLphrB1QaNytPLUt:outputs:tLTm9RUaFbe8JWAh"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2590.142857142857,
+        "y": -126.33333333333337
+      },
+      "id": "y5waSjMWzaYWBGsf"
+    }
+  ],
+  "id": "rPiMF5w1pa4IFwqo",
+  "variables": {
+    "uLphrB1QaNytPLUt:outputs:sources": {
+      "isArray": true,
+      "label": "Sources",
+      "type": "target"
+    },
+    "uLphrB1QaNytPLUt:outputs:actor": {
+      "isArray": false,
+      "label": "Actor",
+      "type": "target"
+    },
+    "uLphrB1QaNytPLUt:outputs:tLTm9RUaFbe8JWAh": {
+      "isArray": false,
+      "label": "Template",
+      "type": "region"
+    }
+  },
+  "description": "<p>Animations for the Zero Cannon</p><p>Made by @Sasane</p>",
+  "tags": ["PF2e Trove", "sf2e", "attacks", "weapons"]
+}
