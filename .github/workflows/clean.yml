@@ -1,38 +1,25 @@
-name: Clean
+name: Continuous Integration
 
 on:
   pull_request:
-    branches:
-      - main
-
-permissions:
-  contents: write
+    branches: [main]
 
 jobs:
-  animations:
-    name: Animation files
-
-    permissions:
-      pull-requests: read
-
+  prettier:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v7
-
-      - name: Get changed animations
-        id: changed-animations
-        uses: tj-actions/changed-files@v47
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          files: |
-            animations/**/*.json
+          # Make sure the actual branch is checked out when running on pull requests
+          ref: ${{ github.head_ref }}
+          # This is important to fetch the changes to the previous commit
+          fetch-depth: 0
 
-      - name: Install packages
-        if: steps.changed-animations.outputs.any_changed == 'true'
-        run: npm install
-
-      - name: Clean Format with Prettier
-        if: steps.changed-animations.outputs.any_changed == 'true'
-        run: |
-          npx prettier --write ${{ steps.changed-animations.outputs.all_changed_files }}
+      - name: Prettify code
+        uses: creyD/prettier_action@v4.6
+        with:
+          # This part is also where you can pass other options, for example:
+          prettier_options: --write **/*.{js,md}
+          only_changed: True
