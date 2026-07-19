@@ -212,7 +212,7 @@
       },
       "outs": {
         "out": {
-          "connection": "l1uSwKovBnabytgm:ins:in"
+          "connection": "UEZVLa6sBIv7oJgc:ins:in"
         }
       },
       "state": "rotateTowards"
@@ -220,8 +220,8 @@
     {
       "type": "play",
       "position": {
-        "x": 3586.7802197802193,
-        "y": 112.07142857142856
+        "x": 3868.7802197802193,
+        "y": 1054.0714285714284
       },
       "id": "QqxcvymGvNXSHRER",
       "inputs": {
@@ -247,28 +247,34 @@
       },
       "outs": {
         "out": {
-          "connection": "rHzQpiHgIYmlOoRm:ins:in"
+          "connection": "gSJvTEfBL7XXCQ6s:ins:in"
         }
       }
     },
     {
       "type": "snd-flow",
       "position": {
-        "x": 3273.923076923077,
-        "y": 111.5
+        "x": 3499.923076923077,
+        "y": 101.5
       },
       "id": "rHzQpiHgIYmlOoRm",
       "inputs": {
+        "preset": {
+          "value": "troveSound"
+        },
         "sound": {
           "connection": "l1uSwKovBnabytgm:outputs:sound"
         },
-        "preset": {
-          "value": "troveSound"
+        "waitUntilFinished": {
+          "value": true
+        },
+        "waitDelayMin": {
+          "value": -350
         }
       },
       "outs": {
         "out": {
-          "connection": "QqxcvymGvNXSHRER:ins:in"
+          "connection": "XwR3QqsVa1TsBFuX:ins:in"
         }
       }
     },
@@ -331,6 +337,322 @@
         "y": -44.33333333333337
       },
       "id": "y5waSjMWzaYWBGsf"
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 2658.50641025641,
+        "y": 606.3333333333334
+      },
+      "id": "XwR3QqsVa1TsBFuX",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.magic.fire.surge.flames.01.01"
+        },
+        "name": {
+          "connection": "fIbjlk5zGRaPqV0z:outputs:hwl4zga3oclXUyxQ"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "lzGSlc6haChz3FDP:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 2680.50641025641,
+        "y": 1082.3333333333335
+      },
+      "id": "0l72rnNhYHi3PEKd",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.magic.fire.surge.flames.01.01"
+        },
+        "name": {
+          "connection": "fIbjlk5zGRaPqV0z:outputs:hwl4zga3oclXUyxQ"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Tru83DozSH9LYJHh:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "position": {
+        "x": 3503.923076923077,
+        "y": 595.5
+      },
+      "id": "vyYX0qQ4LY8kcgKF",
+      "inputs": {
+        "preset": {
+          "value": "troveSound"
+        },
+        "sound": {
+          "connection": "XwR3QqsVa1TsBFuX:outputs:sound"
+        },
+        "waitUntilFinished": {
+          "value": true
+        },
+        "waitDelayMin": {
+          "value": -350
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "0l72rnNhYHi3PEKd:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "position": {
+        "x": 3509.923076923077,
+        "y": 1055.5
+      },
+      "id": "V1Ug7yuXz567tGSt",
+      "inputs": {
+        "preset": {
+          "value": "troveSound"
+        },
+        "waitUntilFinished": {
+          "value": true
+        },
+        "sound": {
+          "connection": "0l72rnNhYHi3PEKd:outputs:sound"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "QqxcvymGvNXSHRER:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "position": {
+        "x": 3023.923076923077,
+        "y": 604.4
+      },
+      "id": "lzGSlc6haChz3FDP",
+      "inputs": {
+        "location": {
+          "connection": "ldvmJzFxIPCjJV50:outputs:entry"
+        },
+        "sound": {
+          "connection": "XwR3QqsVa1TsBFuX:outputs:sound"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "anifw2plYcZOvuLn:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "position": {
+        "x": 3041.923076923077,
+        "y": 1066.4
+      },
+      "id": "Tru83DozSH9LYJHh",
+      "inputs": {
+        "location": {
+          "connection": "KJ6bmWynHZCZEvh8:outputs:entry"
+        },
+        "sound": {
+          "connection": "0l72rnNhYHi3PEKd:outputs:sound"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "ONYXukypmoQkbmni:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "uLphrB1QaNytPLUt:outputs:actor"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2848,
+        "y": 750
+      },
+      "id": "ldvmJzFxIPCjJV50"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "uLphrB1QaNytPLUt:outputs:actor"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2850,
+        "y": 1300
+      },
+      "id": "KJ6bmWynHZCZEvh8"
+    },
+    {
+      "type": "snd-timing",
+      "position": {
+        "x": 3248,
+        "y": 112
+      },
+      "id": "gSJvTEfBL7XXCQ6s",
+      "inputs": {
+        "sound": {
+          "connection": "l1uSwKovBnabytgm:outputs:sound"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "rHzQpiHgIYmlOoRm:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-timing",
+      "position": {
+        "x": 3270,
+        "y": 608
+      },
+      "id": "anifw2plYcZOvuLn",
+      "inputs": {
+        "sound": {
+          "connection": "XwR3QqsVa1TsBFuX:outputs:sound"
+        },
+        "startTime": {
+          "value": 300
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "vyYX0qQ4LY8kcgKF:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-timing",
+      "position": {
+        "x": 3276,
+        "y": 1064
+      },
+      "id": "ONYXukypmoQkbmni",
+      "inputs": {
+        "sound": {
+          "connection": "0l72rnNhYHi3PEKd:outputs:sound"
+        },
+        "startTime": {
+          "value": 300
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "V1Ug7yuXz567tGSt:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 2683.3635531135533,
+        "y": -249.66666666666663
+      },
+      "id": "B3JeNk9MzEnV32C3",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.magic.fire.surge.flames.01.01"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "LeFJFGo00Ya3FAIy:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "position": {
+        "x": 3026.208791208792,
+        "y": -230.45714285714283
+      },
+      "id": "LeFJFGo00Ya3FAIy",
+      "inputs": {
+        "location": {
+          "connection": "VtDJYXNAn5yjV1eB:outputs:entry"
+        },
+        "sound": {
+          "connection": "B3JeNk9MzEnV32C3:outputs:sound"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "O1pMvMYXr4Vs5tMl:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "position": {
+        "x": 3294.208791208792,
+        "y": -344.21428571428567
+      },
+      "id": "O1pMvMYXr4Vs5tMl",
+      "inputs": {
+        "preset": {
+          "value": "troveSound"
+        },
+        "sound": {
+          "connection": "B3JeNk9MzEnV32C3:outputs:sound"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "QqxcvymGvNXSHRER:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "uLphrB1QaNytPLUt:outputs:actor"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2855.4285714285716,
+        "y": -50.71428571428561
+      },
+      "id": "VtDJYXNAn5yjV1eB"
+    },
+    {
+      "type": "get-quality",
+      "position": {
+        "x": 2348.857142857143,
+        "y": -254.142857142857
+      },
+      "id": "UEZVLa6sBIv7oJgc",
+      "outs": {
+        "minimal": {
+          "connection": "B3JeNk9MzEnV32C3:ins:in"
+        },
+        "low": {
+          "connection": "l1uSwKovBnabytgm:ins:in"
+        },
+        "medium": {
+          "connection": "l1uSwKovBnabytgm:ins:in"
+        },
+        "high": {
+          "connection": "l1uSwKovBnabytgm:ins:in"
+        }
+      }
     }
   ],
   "id": "HkEFGFoBSLUNe2tE",
@@ -351,5 +673,6 @@
       "type": "region"
     }
   },
-  "description": "<p>Animations for the Flamethrower</p><p>Made by @Sasane</p>"
+  "description": "<p>Animations for the Flamethrower</p><p>Made by @Sasane</p>",
+  "tags": ["PF2e Trove", "sf2e", "attacks", "weapons"]
 }
