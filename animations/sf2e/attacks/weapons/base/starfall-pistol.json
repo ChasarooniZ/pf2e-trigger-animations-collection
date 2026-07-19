@@ -1,0 +1,464 @@
+{
+  "name": "Starfall Pistol",
+  "folder": "Attacks",
+  "priority": -50,
+  "nodes": [
+    {
+      "id": "uLphrB1QaNytPLUt",
+      "position": {
+        "x": 242.0000000000001,
+        "y": 165.9999999999999
+      },
+      "type": "animation-event",
+      "custom": {
+        "outputs": {
+          "tLTm9RUaFbe8JWAh": {
+            "id": "tLTm9RUaFbe8JWAh",
+            "label": "Template",
+            "slug": "path",
+            "isArray": false,
+            "type": "region"
+          }
+        }
+      },
+      "inputs": {
+        "name": {
+          "value": "trove-template:starfall-pistol"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "fIbjlk5zGRaPqV0z:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "position": {
+        "x": 562,
+        "y": 180.9999999999999
+      },
+      "id": "fIbjlk5zGRaPqV0z",
+      "custom": {
+        "outputs": {
+          "hwl4zga3oclXUyxQ": {
+            "id": "hwl4zga3oclXUyxQ",
+            "input": "slug",
+            "label": "Slug",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "uLphrB1QaNytPLUt:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "RpiiHCiDgA7MVvJH:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-actor",
+      "position": {
+        "x": 859.9230769230769,
+        "y": 163.0666666666666
+      },
+      "id": "RpiiHCiDgA7MVvJH",
+      "custom": {
+        "outputs": {
+          "piTJxzAdn1k6XSce": {
+            "id": "piTJxzAdn1k6XSce",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "uLphrB1QaNytPLUt:outputs:actor"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "oTMt7p880sREElsz:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 1220.5897435897432,
+        "y": 10.333333333333485
+      },
+      "id": "oTMt7p880sREElsz",
+      "inputs": {
+        "origin": {
+          "connection": "RpiiHCiDgA7MVvJH:outputs:piTJxzAdn1k6XSce"
+        },
+        "name": {
+          "connection": "fIbjlk5zGRaPqV0z:outputs:hwl4zga3oclXUyxQ"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "HlmLI7SVAEqhEXsR:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "position": {
+        "x": 1701.3119658119658,
+        "y": -51.572222222222194
+      },
+      "id": "HlmLI7SVAEqhEXsR",
+      "inputs": {
+        "effect": {
+          "connection": "oTMt7p880sREElsz:outputs:effect"
+        },
+        "attachTo": {
+          "value": true
+        },
+        "gridUnits": {
+          "value": true
+        },
+        "offset": {
+          "value": {
+            "x": -0.5,
+            "y": 0
+          }
+        },
+        "local": {
+          "value": true
+        },
+        "location": {
+          "connection": "yymlaDXwOe4r4Lte:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "o5HBukL0OdCHpZZH:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 2082.7008547008545,
+        "y": 268.3611111111111
+      },
+      "id": "eNYo2XarRR8mQTeU",
+      "inputs": {
+        "effect": {
+          "connection": "oTMt7p880sREElsz:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.ranged.beam.002.01.orange.60ft"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "oi4Bm4X0ECCDFM8h:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "position": {
+        "x": 2797.923076923077,
+        "y": -53.93333333333328
+      },
+      "id": "nTzf3mqPDlLVIMJD",
+      "inputs": {
+        "effect": {
+          "connection": "oTMt7p880sREElsz:outputs:effect"
+        },
+        "gridUnits": {
+          "value": true
+        },
+        "width": {
+          "value": 6
+        }
+      },
+      "state": "size",
+      "outs": {
+        "out": {
+          "connection": "wItBeZetZHg6LDOw:ins:in"
+        }
+      }
+    },
+    {
+      "type": "aim",
+      "position": {
+        "x": 3058.923076923077,
+        "y": -62.60000000000002
+      },
+      "id": "wItBeZetZHg6LDOw",
+      "inputs": {
+        "effect": {
+          "connection": "oTMt7p880sREElsz:outputs:effect"
+        },
+        "attachTo": {
+          "value": true
+        },
+        "towards": {
+          "connection": "y5waSjMWzaYWBGsf:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "yaguafMrCEEAmBZS:ins:in"
+        }
+      },
+      "state": "rotateTowards"
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 4442.780219780219,
+        "y": -35.928571428571445
+      },
+      "id": "QqxcvymGvNXSHRER",
+      "inputs": {
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "position": {
+        "x": 3887.923076923077,
+        "y": -49.60000000000002
+      },
+      "id": "vPFe7JMkLuhkZ83T",
+      "inputs": {
+        "sound": {
+          "connection": "l1uSwKovBnabytgm:outputs:sound"
+        },
+        "location": {
+          "connection": "A46SoYvrC3KVaX68:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "rHzQpiHgIYmlOoRm:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "position": {
+        "x": 4117.923076923077,
+        "y": -46.5
+      },
+      "id": "rHzQpiHgIYmlOoRm",
+      "inputs": {
+        "sound": {
+          "connection": "l1uSwKovBnabytgm:outputs:sound"
+        },
+        "preset": {
+          "value": "troveSound"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "QqxcvymGvNXSHRER:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 3572.50641025641,
+        "y": -63.66666666666674
+      },
+      "id": "l1uSwKovBnabytgm",
+      "inputs": {
+        "name": {
+          "connection": "fIbjlk5zGRaPqV0z:outputs:hwl4zga3oclXUyxQ"
+        },
+        "file": {
+          "value": "ggg-sfx.ranged.scifi.plasma.gun.strike.01.02"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "vPFe7JMkLuhkZ83T:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "uLphrB1QaNytPLUt:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1558.253968253968,
+        "y": -136.88888888888883
+      },
+      "id": "yymlaDXwOe4r4Lte"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "uLphrB1QaNytPLUt:outputs:actor"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3685.142857142857,
+        "y": 122
+      },
+      "id": "A46SoYvrC3KVaX68"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "uLphrB1QaNytPLUt:outputs:tLTm9RUaFbe8JWAh"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2920.142857142857,
+        "y": -178.33333333333337
+      },
+      "id": "y5waSjMWzaYWBGsf"
+    },
+    {
+      "type": "style",
+      "position": {
+        "x": 2327,
+        "y": 260
+      },
+      "id": "oi4Bm4X0ECCDFM8h",
+      "inputs": {
+        "filterType": {
+          "value": "ColorMatrix"
+        },
+        "effect": {
+          "connection": "oTMt7p880sREElsz:outputs:effect"
+        },
+        "filterData": {
+          "value": "{\n\"hue\":160  \n}"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "dkRygrIYUz3pumTx:ins:in"
+        }
+      }
+    },
+    {
+      "type": "timing",
+      "position": {
+        "x": 2547,
+        "y": -29
+      },
+      "id": "dkRygrIYUz3pumTx",
+      "inputs": {
+        "startTime": {
+          "value": 400
+        },
+        "effect": {
+          "connection": "oTMt7p880sREElsz:outputs:effect"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "nTzf3mqPDlLVIMJD:ins:in"
+        }
+      }
+    },
+    {
+      "type": "wait",
+      "position": {
+        "x": 3348,
+        "y": -47
+      },
+      "id": "yaguafMrCEEAmBZS",
+      "inputs": {
+        "min": {
+          "value": 500
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "l1uSwKovBnabytgm:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 2243.7008547008545,
+        "y": -12.638888888888914
+      },
+      "id": "uucRx0sfVXZtVcLv",
+      "inputs": {
+        "file": {
+          "value": "jb2a.ranged.beam.002.01.blue.60ft"
+        },
+        "effect": {
+          "connection": "oTMt7p880sREElsz:outputs:effect"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "dkRygrIYUz3pumTx:ins:in"
+        }
+      }
+    },
+    {
+      "type": "module-enabled",
+      "position": {
+        "x": 1923,
+        "y": 1
+      },
+      "id": "o5HBukL0OdCHpZZH",
+      "inputs": {
+        "module": {
+          "value": "jb2a_patreon"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "uucRx0sfVXZtVcLv:ins:in"
+        },
+        "false": {
+          "connection": "eNYo2XarRR8mQTeU:ins:in"
+        }
+      }
+    }
+  ],
+  "id": "eJHGMb2NHk0rIbLD",
+  "variables": {
+    "uLphrB1QaNytPLUt:outputs:sources": {
+      "isArray": true,
+      "label": "Sources",
+      "type": "target"
+    },
+    "uLphrB1QaNytPLUt:outputs:actor": {
+      "isArray": false,
+      "label": "Actor",
+      "type": "target"
+    },
+    "uLphrB1QaNytPLUt:outputs:tLTm9RUaFbe8JWAh": {
+      "isArray": false,
+      "label": "Template",
+      "type": "region"
+    }
+  },
+  "description": "<p>Animations for the Starfall Pistol</p><p>Made by @Sasane</p>",
+  "tags": ["PF2e Trove", "sf2e", "attacks", "weapons"]
+}
