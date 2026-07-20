@@ -1,5 +1,10 @@
 ## Unreleased
 
+## 0.8.12
+
+- **Updated**
+  - Added a backup method of acquiring the `Damage Roll` Trigger's targets if the user doesn't have `PF2e Toolbelt`
+
 ## 0.8.11
 
 - **Animations**
