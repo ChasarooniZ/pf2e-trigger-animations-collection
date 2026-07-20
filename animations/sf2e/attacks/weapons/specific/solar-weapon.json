@@ -1,0 +1,858 @@
+{
+  "name": "Solar Weapon",
+  "folder": "Attacks",
+  "priority": 0,
+  "tags": ["PF2e Trove", "sf2e", "attacks", "weapons"],
+  "description": "<p>Animations for the Solarian's Solar Weapon and Twin Solar Weapon</p><p>Made by @Sasane</p>",
+  "nodes": [
+    {
+      "id": "CNjNvNU0m6LOCx2e",
+      "position": {
+        "x": 400,
+        "y": 200
+      },
+      "type": "animation-event",
+      "inputs": {
+        "name": {
+          "value": "trove-attack:solar-weapon,trove-attack:twin-solar-weapon"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "ukLcLYLzaMT04fJ4:ins:in"
+        }
+      },
+      "custom": {
+        "outputs": {
+          "qvS7Aa1Dv5IVTTjg": {
+            "id": "qvS7Aa1Dv5IVTTjg",
+            "label": "Outcome",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "position": {
+        "x": 670.6785714285714,
+        "y": 236.78571428571422
+      },
+      "id": "ukLcLYLzaMT04fJ4",
+      "custom": {
+        "outputs": {
+          "llBqCSgDcVgqDnMB": {
+            "id": "llBqCSgDcVgqDnMB",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "227zMJuOkl7AU3Dd": {
+            "id": "227zMJuOkl7AU3Dd",
+            "input": "name",
+            "label": "Name",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "CNjNvNU0m6LOCx2e:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Zm2F3spYoVR8CMXG:ins:in"
+        }
+      }
+    },
+    {
+      "type": "massloop",
+      "position": {
+        "x": 779.9230769230769,
+        "y": 4.400000000000006
+      },
+      "id": "59DxE5yps3tZvxN0",
+      "inputs": {
+        "sources": {
+          "connection": "CNjNvNU0m6LOCx2e:outputs:sources"
+        },
+        "targets": {
+          "connection": "CNjNvNU0m6LOCx2e:outputs:targets"
+        }
+      },
+      "outs": {
+        "outAfter": {
+          "connection": "mODSkdma7YqrRX3Y:ins:in"
+        },
+        "out": {
+          "connection": "He7ekHOej09hIW6N:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 1085.3516483516485,
+        "y": 175.6428571428571
+      },
+      "id": "mODSkdma7YqrRX3Y",
+      "inputs": {
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 1189,
+        "y": -51
+      },
+      "id": "He7ekHOej09hIW6N",
+      "inputs": {
+        "name": {
+          "connection": "vQZV0l22zsG7JAQY:outputs:entry"
+        },
+        "origin": {
+          "connection": "WEUfeIZdp10vinI3:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "10S6OKpvAKhmAdbY:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "ukLcLYLzaMT04fJ4:outputs:227zMJuOkl7AU3Dd"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1056,
+        "y": 52
+      },
+      "id": "vQZV0l22zsG7JAQY"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "ukLcLYLzaMT04fJ4:outputs:llBqCSgDcVgqDnMB"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1077,
+        "y": 107
+      },
+      "id": "WEUfeIZdp10vinI3"
+    },
+    {
+      "type": "location",
+      "position": {
+        "x": 1552.923076923077,
+        "y": -86.6
+      },
+      "id": "10S6OKpvAKhmAdbY",
+      "inputs": {
+        "effect": {
+          "connection": "He7ekHOej09hIW6N:outputs:effect"
+        },
+        "location": {
+          "connection": "ZvFMfuQQgosCKpX2:outputs:entry"
+        },
+        "attachTo": {
+          "value": true
+        },
+        "gridUnits": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        },
+        "offset": {
+          "value": {
+            "x": -1.25,
+            "y": 0
+          }
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "TpphN7p7by9T8d9w:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "59DxE5yps3tZvxN0:outputs:source"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1395,
+        "y": 109
+      },
+      "id": "ZvFMfuQQgosCKpX2"
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 1848.923076923077,
+        "y": -252.02857142857144
+      },
+      "id": "49KMjmeoYAMf0FX7",
+      "custom": {
+        "inputs": {
+          "U9iX07yex7lfv3NE": {
+            "id": "U9iX07yex7lfv3NE",
+            "label": "Weapon Group",
+            "slug": "input",
+            "isArray": false,
+            "type": "text"
+          },
+          "zza4MJWpDYC4qA9q": {
+            "id": "zza4MJWpDYC4qA9q",
+            "label": "IsPhoton",
+            "slug": "input",
+            "isArray": false,
+            "type": "boolean"
+          }
+        },
+        "outputs": {
+          "1Kz7DUJ1R4RA58A0": {
+            "id": "1Kz7DUJ1R4RA58A0",
+            "label": "File",
+            "slug": "output",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "euFQvnBRXpH4ZRMw": {
+          "connection": "3w1n3YIN4lL8Acol:outputs:entry"
+        },
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst weapongroup = inputs[0];\nconst isPhoton = inputs[1];\nlet file = \"\";\nswitch (weapongroup){\n  case \"axe\":\n    file=\"jb2a.greataxe.melee.fire.\" + (isPhoton ? \"orange\" : \"dark_purple\");\n    break\n  case \"brawling\":\n    file=\"jb2a.unarmed_strike.magical.02.\" + (isPhoton ? \"orange\" : \"dark_purple\");\n    break\n  case \"club\":\n    file=\"jb2a.greatclub.fire.\" + (isPhoton ? \"orange\" : \"dark_purple\");\n    break\n  case \"flail\":\n    file=\"jb2a.club.melee.01.\" + (isPhoton ? \"orange\" : \"dark_orangepurple\") + \".4\";\n    break\n  case \"hammer\":\n    file=\"jb2a.maul.melee.fire.\" + (isPhoton ? \"orange\" : \"dark_purple\");\n    break\n  case \"knife\":\n    file=\"jb2a.dagger.melee.fire.\" + (isPhoton ? \"orange\" : \"dark_purple\");\n    break\n  case \"pick\":\n    file=\"jb2a.warhammer.melee.01.\" + (isPhoton ? \"orange\" : \"dark_orangepurple\") + \".4\";\n    break\n  case \"polearm\":\n    file=\"jb2a.halberd.melee.01.\" + (isPhoton ? \"orange\" : \"dark_orangepurple\") + \".4\";\n    break\n  case \"spear\":\n    file=\"jb2a.spear.melee.fire.\" + (isPhoton ? \"orange\" : \"dark_purple\");\n    break\n  case \"sword\":\n    file=\"jb2a.sword.melee.fire.\" + (isPhoton ? \"orange\" : \"purple\");\n    break\n}\nreturn [{type:\"text\", value: file}];"
+        },
+        "zza4MJWpDYC4qA9q": {
+          "connection": "0HG8FoShN94kS1Hp:outputs:entry"
+        },
+        "U9iX07yex7lfv3NE": {
+          "connection": "9pVkESulIMAmO1Ac:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "tSmUCKf6uG0ZfHyZ:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 2308.923076923077,
+        "y": -149.60000000000002
+      },
+      "id": "tSmUCKf6uG0ZfHyZ",
+      "inputs": {
+        "effect": {
+          "connection": "He7ekHOej09hIW6N:outputs:effect"
+        },
+        "file": {
+          "connection": "49KMjmeoYAMf0FX7:outputs:1Kz7DUJ1R4RA58A0"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "bAw0C3oe6RIbeMNj:ins:in"
+        }
+      }
+    },
+    {
+      "type": "list-contains",
+      "position": {
+        "x": 2682.923076923077,
+        "y": 289.4
+      },
+      "id": "fw1p83MfnuMpqU8Z",
+      "inputs": {
+        "list": {
+          "connection": "TQV3eXupOTsZTVB2:outputs:list"
+        },
+        "entry": {
+          "connection": "B3cxOgnUMeIj6GYT:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "bAw0C3oe6RIbeMNj:ins:in"
+        }
+      },
+      "state": "boolean"
+    },
+    {
+      "type": "list-value",
+      "position": {
+        "x": 2498,
+        "y": 186.75
+      },
+      "id": "TQV3eXupOTsZTVB2",
+      "inputs": {
+        "entry": {
+          "value": "failure,criticalFailure"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "CNjNvNU0m6LOCx2e:outputs:qvS7Aa1Dv5IVTTjg"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2547,
+        "y": 351
+      },
+      "id": "B3cxOgnUMeIj6GYT"
+    },
+    {
+      "type": "aim",
+      "position": {
+        "x": 2750.923076923077,
+        "y": -124.60000000000002
+      },
+      "id": "bAw0C3oe6RIbeMNj",
+      "inputs": {
+        "missed": {
+          "connection": "fw1p83MfnuMpqU8Z:outputs:boolean"
+        },
+        "effect": {
+          "connection": "He7ekHOej09hIW6N:outputs:effect"
+        },
+        "attachTo": {
+          "value": true
+        },
+        "towards": {
+          "connection": "F1kbHDwm1vmfJe2A:outputs:entry"
+        }
+      },
+      "state": "rotateTowards",
+      "outs": {
+        "out": {
+          "connection": "ciMzjnDUhWrio2aM:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "59DxE5yps3tZvxN0:outputs:target"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2598,
+        "y": 41
+      },
+      "id": "F1kbHDwm1vmfJe2A"
+    },
+    {
+      "type": "module-enabled",
+      "position": {
+        "x": 1771,
+        "y": 48
+      },
+      "id": "TpphN7p7by9T8d9w",
+      "inputs": {
+        "module": {
+          "value": "jb2a_patreon"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "49KMjmeoYAMf0FX7:ins:in"
+        },
+        "false": {
+          "connection": "T6tBt1r5Rma0TU3n:ins:in"
+        }
+      }
+    },
+    {
+      "type": "style",
+      "position": {
+        "x": 2311.923076923077,
+        "y": 294.5
+      },
+      "id": "EYpzl50y6GUZVmyQ",
+      "inputs": {
+        "effect": {
+          "connection": "He7ekHOej09hIW6N:outputs:effect"
+        },
+        "filterType": {
+          "value": "ColorMatrix"
+        },
+        "filterData": {
+          "connection": "T6tBt1r5Rma0TU3n:outputs:j3gkWnqQv9xgxxMJ"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "bAw0C3oe6RIbeMNj:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 2103.923076923077,
+        "y": 114.39999999999998
+      },
+      "id": "aOasmfnPImidp2qI",
+      "inputs": {
+        "effect": {
+          "connection": "He7ekHOej09hIW6N:outputs:effect"
+        },
+        "file": {
+          "connection": "T6tBt1r5Rma0TU3n:outputs:1Kz7DUJ1R4RA58A0"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "EYpzl50y6GUZVmyQ:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 3091.6730769230767,
+        "y": -141.35000000000002
+      },
+      "id": "ciMzjnDUhWrio2aM",
+      "custom": {
+        "inputs": {
+          "OZx3K8zlHtc85Zog": {
+            "id": "OZx3K8zlHtc85Zog",
+            "label": "Weapon Group",
+            "slug": "input",
+            "isArray": false,
+            "type": "text"
+          },
+          "zrGgN9le6DNu6qy3": {
+            "id": "zrGgN9le6DNu6qy3",
+            "label": "IsPhoton",
+            "slug": "input",
+            "isArray": false,
+            "type": "boolean"
+          }
+        },
+        "outputs": {
+          "BMOLmzzdyZHBL6kf": {
+            "id": "BMOLmzzdyZHBL6kf",
+            "label": "File",
+            "slug": "output",
+            "isArray": false,
+            "type": "text"
+          },
+          "5BHjrCdko7USEJdo": {
+            "id": "5BHjrCdko7USEJdo",
+            "label": "Delay",
+            "slug": "output",
+            "isArray": false,
+            "type": "number"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst weapongroup = inputs[0];\nconst isPhoton = inputs[1];\nconst file = isPhoton ? \"ggg-sfx.magic.fire.impact.flame.01.01\" :\"ggg-sfx.magic.occult.impact.general.02.01\";\nlet groupDelay=0;\nswitch (weapongroup){\n  case \"axe\":\n    groupDelay = 350;\n    break\n  case \"brawling\":\n    groupDelay = -200;\n    break\n  case \"club\":\n    groupDelay=0;\n    break\n  case \"flail\":\n    groupDelay=200;\n    break\n  case \"hammer\":\n    groupDelay=550;\n    break\n  case \"knife\":\n    groupDelay=0;\n    break\n  case \"pick\":\n    groupDelay=200;\n    break\n  case \"polearm\":\n    groupDelay=200;\n    break\n  case \"spear\":\n    groupDelay=0;\n    break\n  case \"sword\":\n    groupDelay=100;\n    break    \n}\nlet delay=1000 + (isPhoton ? -300: 0) + groupDelay;\nreturn [{type: \"text\", value: file}, {type:\"number\", value:delay}];"
+        },
+        "dxlFxTYbQtoERTUf": {
+          "connection": "sHyWap2XiYIBmXag:outputs:entry"
+        },
+        "OZx3K8zlHtc85Zog": {
+          "connection": "z7ZfxfCnduGhdN07:outputs:entry"
+        },
+        "zrGgN9le6DNu6qy3": {
+          "connection": "sHyWap2XiYIBmXag:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "L0ghZSo0PvskqN5s:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 3412.9230769230767,
+        "y": -131.75
+      },
+      "id": "L0ghZSo0PvskqN5s",
+      "inputs": {
+        "file": {
+          "connection": "ciMzjnDUhWrio2aM:outputs:BMOLmzzdyZHBL6kf"
+        },
+        "name": {
+          "connection": "QS6VE5jQ3iR5YfPN:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Q7VIYDbBF6RRpiqQ:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "ukLcLYLzaMT04fJ4:outputs:227zMJuOkl7AU3Dd"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3235.25,
+        "y": 20.75
+      },
+      "id": "QS6VE5jQ3iR5YfPN"
+    },
+    {
+      "type": "snd-location",
+      "position": {
+        "x": 3846.6730769230767,
+        "y": -185.09999999999997
+      },
+      "id": "Q7VIYDbBF6RRpiqQ",
+      "inputs": {
+        "sound": {
+          "connection": "L0ghZSo0PvskqN5s:outputs:sound"
+        },
+        "location": {
+          "connection": "zVADbZOct7pAbkYZ:outputs:entry"
+        },
+        "moveTowards": {
+          "connection": "ZprY3P5p0790W2MP:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "dGdoyxKIQ7LLY3xQ:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "59DxE5yps3tZvxN0:outputs:source"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3705.25,
+        "y": -31.75
+      },
+      "id": "zVADbZOct7pAbkYZ"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "59DxE5yps3tZvxN0:outputs:target"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3721.5,
+        "y": 64.5
+      },
+      "id": "ZprY3P5p0790W2MP"
+    },
+    {
+      "type": "snd-flow",
+      "position": {
+        "x": 4084.173076923077,
+        "y": -181.75
+      },
+      "id": "dGdoyxKIQ7LLY3xQ",
+      "inputs": {
+        "sound": {
+          "connection": "L0ghZSo0PvskqN5s:outputs:sound"
+        },
+        "preset": {
+          "value": "troveSound"
+        },
+        "delayMin": {
+          "connection": "ciMzjnDUhWrio2aM:outputs:5BHjrCdko7USEJdo"
+        }
+      }
+    },
+    {
+      "type": "list-contains",
+      "position": {
+        "x": 701.25,
+        "y": 543.75
+      },
+      "id": "Zm2F3spYoVR8CMXG",
+      "inputs": {
+        "list": {
+          "connection": "CNjNvNU0m6LOCx2e:outputs:options"
+        },
+        "entry": {
+          "value": "stellar-attunement:photon"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "iT0mhtzlqGRCKVNz:ins:in"
+        }
+      },
+      "state": "boolean"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "Zm2F3spYoVR8CMXG:outputs:boolean"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1671.8571428571427,
+        "y": -151.2857142857143
+      },
+      "id": "0HG8FoShN94kS1Hp"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "Zm2F3spYoVR8CMXG:outputs:boolean"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1767.8571428571427,
+        "y": 466.9999999999999
+      },
+      "id": "i8cb7hRnvPjNehOR"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "Zm2F3spYoVR8CMXG:outputs:boolean"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3053.2857142857138,
+        "y": 164.42857142857156
+      },
+      "id": "sHyWap2XiYIBmXag"
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 968.9230769230771,
+        "y": 443.9714285714284
+      },
+      "id": "iT0mhtzlqGRCKVNz",
+      "custom": {
+        "inputs": {
+          "euFQvnBRXpH4ZRMw": {
+            "id": "euFQvnBRXpH4ZRMw",
+            "label": "Roll Options",
+            "slug": "input",
+            "isArray": true,
+            "type": "text"
+          }
+        },
+        "outputs": {
+          "1Kz7DUJ1R4RA58A0": {
+            "id": "1Kz7DUJ1R4RA58A0",
+            "label": "Weapon Group",
+            "slug": "output",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst options = inputs[0];\nconst weapongroup = options.find(p => p.startsWith(\"item:group:\"))?.substring(11);\nreturn [{type:\"text\", value: weapongroup}];"
+        },
+        "euFQvnBRXpH4ZRMw": {
+          "connection": "v167lhlrfYUVjOqH:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "59DxE5yps3tZvxN0:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "CNjNvNU0m6LOCx2e:outputs:options"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 919.8571428571424,
+        "y": 673.8571428571427
+      },
+      "id": "v167lhlrfYUVjOqH"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "iT0mhtzlqGRCKVNz:outputs:1Kz7DUJ1R4RA58A0"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1643.8571428571422,
+        "y": -200.14285714285722
+      },
+      "id": "9pVkESulIMAmO1Ac"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "iT0mhtzlqGRCKVNz:outputs:1Kz7DUJ1R4RA58A0"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1761.8571428571422,
+        "y": 377.85714285714266
+      },
+      "id": "HfN1XFA6I9egdsHE"
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 1831.923076923077,
+        "y": 188.97142857142842
+      },
+      "id": "T6tBt1r5Rma0TU3n",
+      "custom": {
+        "inputs": {
+          "U9iX07yex7lfv3NE": {
+            "id": "U9iX07yex7lfv3NE",
+            "label": "Weapon Group",
+            "slug": "input",
+            "isArray": false,
+            "type": "text"
+          },
+          "zza4MJWpDYC4qA9q": {
+            "id": "zza4MJWpDYC4qA9q",
+            "label": "IsPhoton",
+            "slug": "input",
+            "isArray": false,
+            "type": "boolean"
+          }
+        },
+        "outputs": {
+          "1Kz7DUJ1R4RA58A0": {
+            "id": "1Kz7DUJ1R4RA58A0",
+            "label": "File",
+            "slug": "output",
+            "isArray": false,
+            "type": "text"
+          },
+          "j3gkWnqQv9xgxxMJ": {
+            "id": "j3gkWnqQv9xgxxMJ",
+            "label": "Filter",
+            "slug": "output",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst weapongroup = inputs[0];\nconst isPhoton = inputs[1];\nlet file = \"\";\nswitch (weapongroup){\n  case \"axe\":\n    file=\"jb2a.greataxe.melee.standard.white\";\n    break\n  case \"brawling\":\n    file=\"jb2a.unarmed_strike.magical.02.blue\";\n    break\n  case \"club\":\n    file=\"jb2a.greatclub.standard.white\";\n    break\n  case \"flail\":\n    file=\"jb2a.club.melee.01.white.4\";\n    break\n  case \"hammer\":\n    file=\"jb2a.maul.melee.standard.white\";\n    break\n  case \"knife\":\n    file=\"jb2a.dagger.melee.02.white\";\n    break\n  case \"pick\":\n    file=\"jb2a.warhammer.melee.01.white.4\";\n    break\n  case \"polearm\":\n    file=\"jb2a.halberd.melee.01.white.4\";\n    break\n  case \"spear\":\n    file=\"jb2a.spear.melee.01.white.2\";\n    break\n  case \"sword\":\n    file=\"jb2a.sword.melee.01.white.0\";\n    break\n}\nlet filter= '{\"hue\": -30, \"saturate\": 1}';\nif (!isPhoton)\n    filter = '{\"hue\": 180, \"saturate\": 1}';\nreturn [{type:\"text\", value: file}, {type: \"text\", value: filter}];"
+        },
+        "U9iX07yex7lfv3NE": {
+          "connection": "HfN1XFA6I9egdsHE:outputs:entry"
+        },
+        "zza4MJWpDYC4qA9q": {
+          "connection": "i8cb7hRnvPjNehOR:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "aOasmfnPImidp2qI:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "iT0mhtzlqGRCKVNz:outputs:1Kz7DUJ1R4RA58A0"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3029.1298701298692,
+        "y": 62.94805194805201
+      },
+      "id": "z7ZfxfCnduGhdN07"
+    }
+  ],
+  "id": "nh0MGn0JXH6ONRGy",
+  "variables": {
+    "59DxE5yps3tZvxN0:outputs:target": {
+      "isArray": false,
+      "label": "Target",
+      "type": "target"
+    },
+    "59DxE5yps3tZvxN0:outputs:source": {
+      "isArray": false,
+      "label": "Source",
+      "type": "target"
+    },
+    "ukLcLYLzaMT04fJ4:outputs:llBqCSgDcVgqDnMB": {
+      "isArray": false,
+      "label": "UUID",
+      "type": "text"
+    },
+    "ukLcLYLzaMT04fJ4:outputs:227zMJuOkl7AU3Dd": {
+      "isArray": false,
+      "label": "Name",
+      "type": "text"
+    },
+    "CNjNvNU0m6LOCx2e:outputs:qvS7Aa1Dv5IVTTjg": {
+      "isArray": false,
+      "label": "Outcome",
+      "type": "text"
+    },
+    "CNjNvNU0m6LOCx2e:outputs:options": {
+      "isArray": true,
+      "label": "Options",
+      "type": "text"
+    },
+    "Zm2F3spYoVR8CMXG:outputs:boolean": {
+      "isArray": false,
+      "label": "IsPhoton",
+      "type": "boolean"
+    },
+    "iT0mhtzlqGRCKVNz:outputs:1Kz7DUJ1R4RA58A0": {
+      "isArray": false,
+      "label": "Weapon Group",
+      "type": "text"
+    }
+  }
+}
