@@ -54,6 +54,7 @@
     ]
   },
   "esmodules": ["scripts/module.js"],
+  "styles": ["styles/style.css"],
   "languages": [
     {
       "lang": "en",
