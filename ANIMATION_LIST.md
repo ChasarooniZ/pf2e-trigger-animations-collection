@@ -331,6 +331,7 @@
 
 - Corrosive (Ranged) 🔊🆓✅ (✍🏼 @Suldrun45)
 - Cryo (Ranged) 🔊🆓✅ (✍🏼 @Suldrun45)
+- Grenade 🔊🆓✅ (✍🏼 @Suldrun45)
 - Laser (Ranged) 🔊🆓✅ (✍🏼 @Suldrun45)
 - Plasma (Ranged) 🔊🆓✅ (✍🏼 @Suldrun45)
 - Projectile (Area & Automatic) 🔊🆓✅ (✍🏼 @Suldrun45)

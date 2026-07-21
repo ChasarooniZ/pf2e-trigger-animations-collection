@@ -1,5 +1,13 @@
 ## Unreleased
 
+## 0.9.1
+
+- **Animations**
+  - **New**
+    - Weapon Group: Grenade (@Suldrun45)
+- **Updated**
+  - Actually included the styling fix for `Enable New Animations` _Sorry vauxs 🙏_(💻@Suldrun45)
+
 ## 0.9.0
 
 - **Animations**

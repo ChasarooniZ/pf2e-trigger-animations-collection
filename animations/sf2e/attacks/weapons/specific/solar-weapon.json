@@ -2,7 +2,6 @@
   "name": "Solar Weapon",
   "folder": "Attacks",
   "priority": 0,
-  "tags": ["PF2e Trove", "sf2e", "attacks", "weapons"],
   "description": "<p>Animations for the Solarian's Solar Weapon and Twin Solar Weapon</p><p>Made by @Sasane</p>",
   "nodes": [
     {
