@@ -1,0 +1,276 @@
+{
+  "name": "Motivating Ringtone (Effect)",
+  "folder": "Spells",
+  "priority": 0,
+  "tags": ["PF2e Trove", "sf2e", "Spells", "1st", "Effect"],
+  "description": "<p>Animation for the Spell Effect on the target token of Motivating Ringtone</p><p>Made by @Sasane</p>",
+  "nodes": [
+    {
+      "id": "m9OyOGn5WRhIC39e",
+      "position": {
+        "x": 400,
+        "y": 200
+      },
+      "type": "animation-event",
+      "inputs": {
+        "name": {
+          "value": "effect:spell-effect-motivating-ringtone"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "7ftBbZIQy4lGo5pH:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "position": {
+        "x": 696.9230769230769,
+        "y": 185.4
+      },
+      "id": "7ftBbZIQy4lGo5pH",
+      "custom": {
+        "outputs": {
+          "QrlbHdsbgfbWn6bJ": {
+            "id": "QrlbHdsbgfbWn6bJ",
+            "input": "name",
+            "label": "Name",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "YHQKi0YZkLrpyyhv": {
+            "id": "YHQKi0YZkLrpyyhv",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "m9OyOGn5WRhIC39e:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "xAKxGUvu0KG2RyhS:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 1014.9230769230769,
+        "y": 163.5
+      },
+      "id": "xAKxGUvu0KG2RyhS",
+      "inputs": {
+        "name": {
+          "connection": "7ftBbZIQy4lGo5pH:outputs:QrlbHdsbgfbWn6bJ"
+        },
+        "origin": {
+          "connection": "7ftBbZIQy4lGo5pH:outputs:YHQKi0YZkLrpyyhv"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "4VlNPPUrspoZbthO:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "position": {
+        "x": 1327.923076923077,
+        "y": 143.39999999999998
+      },
+      "id": "4VlNPPUrspoZbthO",
+      "inputs": {
+        "effect": {
+          "connection": "xAKxGUvu0KG2RyhS:outputs:effect"
+        },
+        "location": {
+          "connection": "m9OyOGn5WRhIC39e:outputs:sources"
+        },
+        "attachTo": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        },
+        "gridUnits": {
+          "value": true
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Q7WOREHvG2Bn1YTX:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 1581.923076923077,
+        "y": 141.39999999999998
+      },
+      "id": "Q7WOREHvG2Bn1YTX",
+      "inputs": {
+        "file": {
+          "value": "jb2a.markers.music_note.blue.01"
+        },
+        "effect": {
+          "connection": "xAKxGUvu0KG2RyhS:outputs:effect"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "z87HnnPKaGupZmXj:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "position": {
+        "x": 1851.923076923077,
+        "y": 127.39999999999998
+      },
+      "id": "z87HnnPKaGupZmXj",
+      "inputs": {
+        "effect": {
+          "connection": "xAKxGUvu0KG2RyhS:outputs:effect"
+        },
+        "objectScale": {
+          "value": 1.25
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "xB9o5whmJoU19Mnv:ins:in"
+        }
+      },
+      "state": "object"
+    },
+    {
+      "type": "rotation",
+      "position": {
+        "x": 2164.923076923077,
+        "y": 100.5
+      },
+      "id": "xB9o5whmJoU19Mnv",
+      "inputs": {
+        "randomRotation": {
+          "value": true
+        },
+        "effect": {
+          "connection": "xAKxGUvu0KG2RyhS:outputs:effect"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "ddX1tdqN7Jx9Qqch:ins:in"
+        }
+      }
+    },
+    {
+      "type": "visibility",
+      "position": {
+        "x": 2462.923076923077,
+        "y": 102.75
+      },
+      "id": "ddX1tdqN7Jx9Qqch",
+      "inputs": {
+        "effect": {
+          "connection": "xAKxGUvu0KG2RyhS:outputs:effect"
+        },
+        "fadeInDuration": {
+          "value": 250
+        },
+        "fadeOutDuration": {
+          "value": 500
+        },
+        "fadeInEase": {
+          "value": "easeOutCubic"
+        },
+        "fadeOutEase": {
+          "value": "easeInCubic"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "h6dJRmUjtgezqD29:ins:in"
+        }
+      }
+    },
+    {
+      "type": "get-quality",
+      "position": {
+        "x": 2839.173076923077,
+        "y": 107.74999999999994
+      },
+      "id": "h6dJRmUjtgezqD29",
+      "outs": {
+        "minimal": {
+          "connection": "aIo6sdkGZI2jyVGh:ins:in"
+        },
+        "low": {
+          "connection": "aIo6sdkGZI2jyVGh:ins:in"
+        },
+        "medium": {
+          "connection": "aIo6sdkGZI2jyVGh:ins:in"
+        },
+        "high": {
+          "connection": "UzmDEfXs0Y7PQYS3:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 3487.50641025641,
+        "y": 116.08333333333314
+      },
+      "id": "aIo6sdkGZI2jyVGh",
+      "inputs": {
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "type": "persist",
+      "position": {
+        "x": 3153.220695970696,
+        "y": 285.7023809523805
+      },
+      "id": "UzmDEfXs0Y7PQYS3",
+      "inputs": {
+        "persist": {
+          "value": true
+        },
+        "persistTokenPrototype": {
+          "value": true
+        },
+        "tieTo": {
+          "connection": "7ftBbZIQy4lGo5pH:outputs:YHQKi0YZkLrpyyhv"
+        },
+        "tieToDocs": {
+          "connection": "m9OyOGn5WRhIC39e:outputs:sources"
+        },
+        "effect": {
+          "connection": "xAKxGUvu0KG2RyhS:outputs:effect"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "aIo6sdkGZI2jyVGh:ins:in"
+        }
+      }
+    }
+  ],
+  "id": "JSMPghJjERMJ7emV"
+}
