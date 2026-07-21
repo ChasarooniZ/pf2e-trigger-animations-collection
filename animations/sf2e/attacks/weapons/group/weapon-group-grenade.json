@@ -388,9 +388,6 @@
       },
       "id": "C6Br76EGcQns461a",
       "outs": {
-        "minimal": {
-          "connection": "9Ny9laSD1AJY2y4E:ins:in"
-        },
         "low": {
           "connection": "gwoJVDU0SJcnKJrd:ins:in"
         },
@@ -399,6 +396,9 @@
         },
         "high": {
           "connection": "gwoJVDU0SJcnKJrd:ins:in"
+        },
+        "minimal": {
+          "connection": "VbeNothA9wpwoNIY:ins:in"
         }
       }
     },
