@@ -34,13 +34,13 @@ jobs:
       - name: Install packages
         if: steps.changed-animations.outputs.any_changed == 'true'
         run: npm install
-
-      - name: Check formatting with Prettier
-        if: steps.changed-animations.outputs.any_changed == 'true'
-        run: |
-          npx prettier --check ${{ steps.changed-animations.outputs.all_changed_files }}
       - name: Test animation files
         if: steps.changed-animations.outputs.any_changed == 'true'
         # env:
         #   MODIFIED_ANIMATIONS: ${{ steps.changed-animations.outputs.all_changed_files }}
         run: "node macros/test-animations.mjs" # -- ${MODIFIED_ANIMATIONS}
+
+      - name: Check formatting with Prettier
+        if: steps.changed-animations.outputs.any_changed == 'true'
+        run: |
+          npx prettier --check ${{ steps.changed-animations.outputs.all_changed_files }}
