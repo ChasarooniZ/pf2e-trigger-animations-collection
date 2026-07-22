@@ -15,20 +15,25 @@ _[Use Me to convert "Export Triggers" to individual files for a PR](https://chas
 - Sort your animation in the proper folder, creating a new one if there's no folder that fits the animation
 - Format the trigger as requested on submission (`Prettier` 2 spaces per line) which can be run from the project with `npm run prettier`
 
-## Sound Files
+## Node Guidlines
 
-- If a sound is somewhere on the canavs apply the `troveSound` `preset` to each sound in an `Animation Trigger`
+- **Sound**
+  - If a sound is somewhere on the canavs apply the `troveSound` `preset` to each sound in an `Animation Trigger`
+  - `Sound` node should have the name filled with the item or animation `name` or `slug`
+- **Effect**
+  - `origin` and `name` should be filled with the item or animation `name` or `slug` and the item `uuid` respectfully (unless it makes more sense for it to be a token's etc.)
 
 ## Animation Submission Guidelines
 
-**Methodology** _These are __animations__ and are intended to in general be solely animations, and not to interfere with the normal process of playing the game outside of showing animations_
+**Methodology** _These are **animations** and are intended to in general be solely animations, and not to interfere with the normal process of playing the game outside of showing animations_
+
 - **Acceptable Sources**
   - Currently the following are acceptable sources for animations/SFX
     - **[JB2A](https://www.patreon.com/JB2A)** (Note animations are built for the Patreon version primarily, but some may also have workarounds to support the free version)
     - **[GGG Asset Pack](https://github.com/ChasarooniZ/GGG-Sequencer-Sound-DB-Collection)**
     - **Future Vauxs Specific Asset Pack** (has yet to be released)
 - **Animation Qualities**
-  - **Minimal** - 1 animation ~ 1 sfx (or SFX only)
+  - **Minimal** - 1 animation ~ 1-2 sfx (or SFX only)
   - **Low** - Medium but with no persistent and possibly toned down a bit if it's a lot
   - **Medium** - ~3 animations / ~3 sfx + Persistent Templates allowed (as long its not a ton)
     - _This is the aim for the majority of animations_

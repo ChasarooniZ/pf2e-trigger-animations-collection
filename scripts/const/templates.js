@@ -1256,10 +1256,7 @@ export const TEMPLATES = {
       nodes: [
         {
           id: "cQ4T2clnTJ2z70XX",
-          position: {
-            x: 679.9999999999999,
-            y: 168.3333333333332,
-          },
+          position: { x: 400, y: 200 },
           type: "animation-event",
           custom: {
             outputs: {
@@ -1273,23 +1270,12 @@ export const TEMPLATES = {
               },
             },
           },
-          inputs: {
-            name: {
-              value: "placeholder-trigger-names",
-            },
-          },
-          outs: {
-            out: {
-              connection: "yrj2uPt3khcsH3UF:ins:in",
-            },
-          },
+          inputs: { name: { value: "placeholder-trigger-names" } },
+          outs: { out: { connection: "yrj2uPt3khcsH3UF:ins:in" } },
         },
         {
           type: "extract-item",
-          position: {
-            x: 944.5897421569691,
-            y: 179.2333559036254,
-          },
+          position: { x: 694.5897421569692, y: 194.23335590362547 },
           id: "yrj2uPt3khcsH3UF",
           custom: {
             outputs: {
@@ -1312,173 +1298,99 @@ export const TEMPLATES = {
             },
           },
           inputs: {
-            input: {
-              connection: "cQ4T2clnTJ2z70XX:outputs:item",
-            },
+            input: { connection: "cQ4T2clnTJ2z70XX:outputs:item" },
           },
-          outs: {
-            out: {
-              connection: "kMn5MlQ9xR1cqy46:ins:in",
-            },
-          },
+          outs: { out: { connection: "kMn5MlQ9xR1cqy46:ins:in" } },
         },
         {
           type: "effect",
-          position: {
-            x: 1198.5897249274692,
-            y: 161.1666765213012,
-          },
+          position: { x: 948.5897249274693, y: 176.16667652130127 },
           id: "kMn5MlQ9xR1cqy46",
           inputs: {
-            name: {
-              connection: "yrj2uPt3khcsH3UF:outputs:zZlfyqWnDi4qyRui",
-            },
+            name: { connection: "yrj2uPt3khcsH3UF:outputs:zZlfyqWnDi4qyRui" },
             origin: {
               connection: "yrj2uPt3khcsH3UF:outputs:YYCymq4nW7jlJYwU",
             },
           },
-          outs: {
-            out: {
-              connection: "fE0NZjyKJ9G7W7F6:ins:in",
-            },
-          },
+          outs: { out: { connection: "fE0NZjyKJ9G7W7F6:ins:in" } },
         },
         {
           type: "file",
           inputs: {
-            effect: {
-              connection: "kMn5MlQ9xR1cqy46:outputs:effect",
-            },
-            file: {
-              value: "jb2a.breath_weapons02.burst.cone.fire.orange.02",
-            },
+            effect: { connection: "kMn5MlQ9xR1cqy46:outputs:effect" },
+            file: { value: "jb2a.healing_generic.burst.bluewhite" },
           },
-          position: {
-            x: 1513.9999864274369,
-            y: 158.47224224938276,
-          },
+          position: { x: 1333.047605475056, y: 214.10716288430353 },
           id: "fE0NZjyKJ9G7W7F6",
-          outs: {
-            out: {
-              connection: "xs7iLq9hzxYOTYOc:ins:in",
-            },
-          },
+          outs: { out: { connection: "xs7iLq9hzxYOTYOc:ins:in" } },
         },
         {
           type: "location",
           state: "targets",
           inputs: {
-            effect: {
-              connection: "kMn5MlQ9xR1cqy46:outputs:effect",
-            },
+            effect: { connection: "kMn5MlQ9xR1cqy46:outputs:effect" },
             location: {
               connection: "cQ4T2clnTJ2z70XX:outputs:MWUBRl5UO1EKczQU",
             },
-            cacheLocation: {
-              value: true,
-            },
-            local: {
-              value: true,
-            },
-            gridUnits: {
-              value: true,
-            },
+            cacheLocation: { value: true },
           },
-          position: {
-            x: 1743.7777744880864,
-            y: 157.37228293948687,
-          },
+          position: { x: 1601.8095205198326, y: 209.48339405059824 },
           id: "xs7iLq9hzxYOTYOc",
-          outs: {
-            out: {
-              connection: "xeZGA9hv1nqQMcHt:ins:in",
-            },
-          },
+          outs: { out: { connection: "bHiknSSrgUd6sHKK:ins:in" } },
         },
         {
           type: "play",
-          position: {
-            x: 3396.831584591428,
-            y: 160.47217859162225,
-          },
+          position: { x: 3104.3871401469837, y: 214.24995636940002 },
           id: "stsDzcixyehs1bhi",
+          inputs: { preload: { value: true }, local: { value: true } },
+        },
+        {
+          type: "scale",
+          position: { x: 1827.5873222013208, y: 209.00006389617886 },
+          id: "bHiknSSrgUd6sHKK",
           inputs: {
-            preload: {
-              value: true,
-            },
-            local: {
-              value: true,
-            },
+            effect: { connection: "kMn5MlQ9xR1cqy46:outputs:effect" },
+            objectScale: { value: 1.1 },
           },
+          outs: { out: { connection: "Anm8jTC91Wwav5VE:ins:in" } },
+          state: "object",
         },
         {
           type: "sound",
-          position: {
-            x: 2276.589743589744,
-            y: 158.05555555555554,
-          },
+          position: { x: 2078.589743589744, y: 211.83333333333337 },
           id: "Anm8jTC91Wwav5VE",
           inputs: {
-            file: {
-              value: "ggg-sfx.magic.arcane.surge.wave.01",
-            },
-            name: {
-              connection: "yrj2uPt3khcsH3UF:outputs:zZlfyqWnDi4qyRui",
-            },
+            file: { value: "ggg-sfx.magic.occult.siphon.01.01" },
+            name: { connection: "yrj2uPt3khcsH3UF:outputs:zZlfyqWnDi4qyRui" },
           },
-          outs: {
-            out: {
-              connection: "R40kXsj8B9KW6tj1:ins:in",
-            },
-          },
+          outs: { out: { connection: "R40kXsj8B9KW6tj1:ins:in" } },
         },
         {
           type: "snd-location",
           state: "atLocation",
           inputs: {
-            sound: {
-              connection: "Anm8jTC91Wwav5VE:outputs:sound",
-            },
+            sound: { connection: "Anm8jTC91Wwav5VE:outputs:sound" },
             location: {
               connection: "R40kXsj8B9KW6tj1:outputs:tS3ScMUSZdNDGxqT",
             },
           },
-          position: {
-            x: 2879.75,
-            y: 160.56666666666678,
-          },
+          position: { x: 2621.75, y: 213.23333333333346 },
           id: "RD3nS87WGg1yDOj3",
-          outs: {
-            out: {
-              connection: "aUJ2EETQxRnbzPSm:ins:in",
-            },
-          },
+          outs: { out: { connection: "aUJ2EETQxRnbzPSm:ins:in" } },
         },
         {
           type: "snd-flow",
           inputs: {
             preset: { value: "troveSound" },
-            sound: {
-              connection: "Anm8jTC91Wwav5VE:outputs:sound",
-            },
+            sound: { connection: "Anm8jTC91Wwav5VE:outputs:sound" },
           },
-          position: {
-            x: 3109.1944444444443,
-            y: 160.1666666666668,
-          },
+          position: { x: 2836.75, y: 212.83333333333348 },
           id: "aUJ2EETQxRnbzPSm",
-          outs: {
-            out: {
-              connection: "stsDzcixyehs1bhi:ins:in",
-            },
-          },
+          outs: { out: { connection: "stsDzcixyehs1bhi:ins:in" } },
         },
         {
           type: "execute-script",
-          position: {
-            x: 2583.333333333333,
-            y: 157.22222222222217,
-          },
+          position: { x: 2357.7142857142853, y: 215.2857142857141 },
           id: "R40kXsj8B9KW6tj1",
           custom: {
             inputs: {
@@ -1505,69 +1417,17 @@ export const TEMPLATES = {
               value:
                 '/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: "number", value: x + y}];\n */\nconst template = inputs[0]\nreturn [{type: "point", value: template?.shapes?.[0]?.center}];',
             },
-            Fd9FyG9Lgg2AyIcQ: {
-              connection: "0kqP5lR3IHrVUjnZ:outputs:entry",
-            },
+            Fd9FyG9Lgg2AyIcQ: { connection: "0kqP5lR3IHrVUjnZ:outputs:entry" },
           },
-          outs: {
-            out: {
-              connection: "RD3nS87WGg1yDOj3:ins:in",
-            },
-          },
+          outs: { out: { connection: "RD3nS87WGg1yDOj3:ins:in" } },
         },
         {
           inputs: {
-            entry: {
-              connection: "cQ4T2clnTJ2z70XX:outputs:MWUBRl5UO1EKczQU",
-            },
+            entry: { connection: "cQ4T2clnTJ2z70XX:outputs:MWUBRl5UO1EKczQU" },
           },
           type: "__variable_getter__",
-          position: {
-            x: 2411.4444444444443,
-            y: 106.77777777777777,
-          },
+          position: { x: 2229, y: 345 },
           id: "0kqP5lR3IHrVUjnZ",
-        },
-        {
-          type: "aim",
-          state: "stretchTo",
-          inputs: {
-            effect: {
-              connection: "kMn5MlQ9xR1cqy46:outputs:effect",
-            },
-            towards: {
-              connection: "j4GJPyLtntQcZGOB:outputs:entry",
-            },
-            local: {
-              value: true,
-            },
-            gridUnits: {
-              value: true,
-            },
-          },
-          position: {
-            x: 1987,
-            y: 160.14999999999998,
-          },
-          id: "xeZGA9hv1nqQMcHt",
-          outs: {
-            out: {
-              connection: "Anm8jTC91Wwav5VE:ins:in",
-            },
-          },
-        },
-        {
-          inputs: {
-            entry: {
-              connection: "cQ4T2clnTJ2z70XX:outputs:MWUBRl5UO1EKczQU",
-            },
-          },
-          type: "__variable_getter__",
-          position: {
-            x: 1814.6190476190473,
-            y: 103.85714285714283,
-          },
-          id: "j4GJPyLtntQcZGOB",
         },
       ],
       variables: {

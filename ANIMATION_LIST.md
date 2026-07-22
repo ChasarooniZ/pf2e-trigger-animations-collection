@@ -124,6 +124,7 @@
 - Force Bolt 🔊🆓 (✍🏼 @Chasarooni)
 - Force Fang 🔊🆓 (✍🏼 @Chasarooni)
 - Hurtling Stone 🔊🆓 (✍🏼 @Chasarooni)
+- Ignition _TODO, Handle Psychic Yes + Melee somehow_ 🔊🆓 (✍🏼 @Chasarooni)
 - Lay on Hands 🔊🆓 (✍🏼 @Chasarooni)
 
 #### 1st Rank Spells
@@ -133,6 +134,8 @@
 - Heal 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### 2nd Rank Spells
+
+- Blazing Bolt 🔊🆓 (✍🏼 @Chasarooni)
 
 #### 3rd Rank Spells
 
@@ -146,7 +149,12 @@
 
 #### 7th Rank Spells
 
+- Fiery Body 🔊🆓✅ (✍🏼 @Chasarooni)
+- Volcanic Eruption 🔊🆓✅ (✍🏼 @Chasarooni)
+
 #### 8th Rank Spells
+
+- Dessicate 🔊🆓 (✍🏼 @Chasarooni)
 
 #### 9th Rank Spells
 
@@ -281,6 +289,8 @@
 #### Focus Spells
 
 #### 1st Rank Spells
+
+- Motivating Ringtone 🔊🆓✅ (✍🏼 @Suldrun45)
 
 #### 2nd Rank Spells
 
