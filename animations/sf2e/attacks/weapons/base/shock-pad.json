@@ -1,0 +1,717 @@
+{
+  "name": "Shock Pad",
+  "folder": "Attacks",
+  "priority": -50,
+  "nodes": [
+    {
+      "id": "zwvWO50CXI44ObmF",
+      "position": {
+        "x": -39.94446229545986,
+        "y": 213.83335367838527
+      },
+      "type": "animation-event",
+      "inputs": {
+        "name": {
+          "value": "trove-attack:shock-pad,trove-attack:polyglove"
+        }
+      },
+      "custom": {
+        "outputs": {
+          "9GG5oGEm2a9RAiZ5": {
+            "id": "9GG5oGEm2a9RAiZ5",
+            "input": "outcome",
+            "label": "Outcome",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "mpa5CCtLfa7bjI71:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 953.4443544889433,
+        "y": -44.962954993127255
+      },
+      "id": "9Ny9laSD1AJY2y4E",
+      "inputs": {
+        "name": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:sR6Cy5NKJKuZpmQg"
+        },
+        "origin": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:qHvhdFqXb77u8E8o"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "e9lcLUsF8nmzdJg7:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "position": {
+        "x": 224.44442878903112,
+        "y": 241.77778849941933
+      },
+      "id": "mpa5CCtLfa7bjI71",
+      "custom": {
+        "outputs": {
+          "qHvhdFqXb77u8E8o": {
+            "id": "qHvhdFqXb77u8E8o",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "sR6Cy5NKJKuZpmQg": {
+            "id": "sR6Cy5NKJKuZpmQg",
+            "input": "name",
+            "label": "Name",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "zwvWO50CXI44ObmF:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "4gZJ8Gm9UjlhMc4G:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 705.6297715278528,
+        "y": 192.32814035431147
+      },
+      "id": "kkkNTCli7BCyXs18",
+      "inputs": {
+        "preload": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "inputs": {
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "location": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:source"
+        },
+        "attachTo": {
+          "value": true
+        },
+        "offset": {
+          "connection": "5xu667xWYvuzp3J2:outputs:399AKY4XiQVOa9IK"
+        },
+        "gridUnits": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        }
+      },
+      "position": {
+        "x": 1267.5555584358076,
+        "y": -163.99815750230124
+      },
+      "id": "e9lcLUsF8nmzdJg7",
+      "outs": {
+        "out": {
+          "connection": "lRVwIbZCZuBcJqKe:ins:in"
+        }
+      }
+    },
+    {
+      "type": "aim",
+      "state": "rotateTowards",
+      "inputs": {
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "towards": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:target"
+        },
+        "missed": {
+          "connection": "2bt2cdnyg4ntLfaK:outputs:boolean"
+        },
+        "attachTo": {
+          "value": true
+        },
+        "offset": {
+          "value": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      },
+      "position": {
+        "x": 2271.03709675504,
+        "y": -149.97700090980823
+      },
+      "id": "mzztRWLWfGStDgf8",
+      "outs": {
+        "out": {
+          "connection": "ZVhMUop2EDM5rBUN:ins:in"
+        }
+      }
+    },
+    {
+      "type": "massloop",
+      "position": {
+        "x": 376.666870725962,
+        "y": 47.111119192239926
+      },
+      "id": "4gZJ8Gm9UjlhMc4G",
+      "inputs": {
+        "targets": {
+          "connection": "zwvWO50CXI44ObmF:outputs:targets"
+        },
+        "sources": {
+          "connection": "zwvWO50CXI44ObmF:outputs:sources"
+        }
+      },
+      "outs": {
+        "outAfter": {
+          "connection": "kkkNTCli7BCyXs18:ins:in"
+        },
+        "out": {
+          "connection": "5xu667xWYvuzp3J2:ins:in"
+        }
+      }
+    },
+    {
+      "type": "list-contains",
+      "position": {
+        "x": 1785.0901765825138,
+        "y": 38.14823001060927
+      },
+      "id": "2bt2cdnyg4ntLfaK",
+      "inputs": {
+        "entry": {
+          "connection": "zwvWO50CXI44ObmF:outputs:9GG5oGEm2a9RAiZ5"
+        },
+        "list": {
+          "connection": "Kfd0h5Nepcqvhmyb:outputs:list"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "cznO9B0NikdGjV0d:ins:in"
+        }
+      },
+      "state": "boolean"
+    },
+    {
+      "type": "list-value",
+      "position": {
+        "x": 1549.7142851526305,
+        "y": 61.90475296365332
+      },
+      "id": "Kfd0h5Nepcqvhmyb",
+      "inputs": {
+        "entry": {
+          "value": "failure,criticalFailure"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "position": {
+        "x": 2812.5714254489844,
+        "y": -152.76193197586826
+      },
+      "id": "7eJYxPPCfZY9S2YP",
+      "inputs": {
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "objectScale": {
+          "value": 4
+        }
+      },
+      "state": "object",
+      "outs": {
+        "out": {
+          "connection": "R4Qoc0icrWPOVoI7:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "inputs": {
+        "file": {
+          "value": "jb2a.melee_generic.creature_attack.fist.001.red"
+        },
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        }
+      },
+      "position": {
+        "x": 1511.2592711681045,
+        "y": -159.37951517945913
+      },
+      "id": "lRVwIbZCZuBcJqKe",
+      "outs": {
+        "out": {
+          "connection": "2bt2cdnyg4ntLfaK:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 3348.2087912087895,
+        "y": -148.40476190476215
+      },
+      "id": "b2yoL5y1k59ZJqBM",
+      "inputs": {
+        "name": {
+          "connection": "WGKhC9Yzdo4iAftr:outputs:entry"
+        },
+        "file": {
+          "value": "ggg-sfx.magic.electricity.cast.charge.01.01"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "pMArRCX6tlInQl76:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "b2yoL5y1k59ZJqBM:outputs:sound"
+        },
+        "moveTowards": {
+          "connection": "T6bMxgEhVXpAmTwO:outputs:entry"
+        },
+        "location": {
+          "connection": "UupTP6eRYhiK6wQj:outputs:entry"
+        }
+      },
+      "position": {
+        "x": 3696.9523809523794,
+        "y": -155.08809523809555
+      },
+      "id": "pMArRCX6tlInQl76",
+      "outs": {
+        "out": {
+          "connection": "JQt4VOHmSRdUwWoh:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "b2yoL5y1k59ZJqBM:outputs:sound"
+        },
+        "preset": {
+          "value": "troveSound"
+        }
+      },
+      "position": {
+        "x": 3927.2857142857133,
+        "y": -176.65476190476238
+      },
+      "id": "JQt4VOHmSRdUwWoh",
+      "outs": {
+        "out": {
+          "connection": "rM9ww6EywfdJSU7I:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:source"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3492.952380952381,
+        "y": -253.90476190476215
+      },
+      "id": "UupTP6eRYhiK6wQj"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:target"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3492.952380952381,
+        "y": -208.90476190476238
+      },
+      "id": "T6bMxgEhVXpAmTwO"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:sR6Cy5NKJKuZpmQg"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3186.476190476193,
+        "y": -266.39285714285734
+      },
+      "id": "WGKhC9Yzdo4iAftr"
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 682.8055555555558,
+        "y": -5.55555555555577
+      },
+      "id": "5xu667xWYvuzp3J2",
+      "custom": {
+        "inputs": {
+          "Gu41iNHzvLtFjPnQ": {
+            "id": "Gu41iNHzvLtFjPnQ",
+            "label": "Source",
+            "slug": "input",
+            "isArray": false,
+            "type": "target"
+          }
+        },
+        "outputs": {
+          "399AKY4XiQVOa9IK": {
+            "id": "399AKY4XiQVOa9IK",
+            "label": "Offset",
+            "slug": "output",
+            "isArray": false,
+            "type": "point"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst source = inputs[0];\nconst x = -(source?.token?.width ?? 1) - 0.25\nreturn [{type: \"point\", value: {x: x, y: 0}}];"
+        },
+        "Gu41iNHzvLtFjPnQ": {
+          "connection": "8L3UdKYw78DssTqG:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "9Ny9laSD1AJY2y4E:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:source"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 451.55555555555566,
+        "y": -49.02777777777783
+      },
+      "id": "8L3UdKYw78DssTqG"
+    },
+    {
+      "type": "style",
+      "inputs": {
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "filterType": {
+          "value": "ColorMatrix"
+        },
+        "filterData": {
+          "value": "{\n  \"hue\":-140\n  \n}"
+        }
+      },
+      "position": {
+        "x": 2056.1150793650786,
+        "y": -152.34920634920638
+      },
+      "id": "cznO9B0NikdGjV0d",
+      "outs": {
+        "out": {
+          "connection": "mzztRWLWfGStDgf8:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sprite",
+      "inputs": {
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "randomizeMirrorY": {
+          "value": true
+        }
+      },
+      "position": {
+        "x": 2566.916666666667,
+        "y": -148.94444444444446
+      },
+      "id": "ZVhMUop2EDM5rBUN",
+      "outs": {
+        "out": {
+          "connection": "7eJYxPPCfZY9S2YP:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 2098,
+        "y": 444.28571428571433
+      },
+      "id": "Ff3DTLAxwCCranNj",
+      "inputs": {
+        "name": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:sR6Cy5NKJKuZpmQg"
+        },
+        "origin": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:qHvhdFqXb77u8E8o"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "3PzzrYPrZfnRdI8L:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "state": "default",
+      "inputs": {
+        "effect": {
+          "connection": "Ff3DTLAxwCCranNj:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.impact.012.blue"
+        }
+      },
+      "position": {
+        "x": 2420,
+        "y": 446.4357142857144
+      },
+      "id": "3PzzrYPrZfnRdI8L",
+      "outs": {
+        "out": {
+          "connection": "B9G12sILfjwAYZg0:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "inputs": {
+        "effect": {
+          "connection": "3PzzrYPrZfnRdI8L:outputs:effect"
+        },
+        "location": {
+          "connection": "0HU37tjSKfFqw64a:outputs:entry"
+        }
+      },
+      "position": {
+        "x": 2682,
+        "y": 436.4357142857144
+      },
+      "id": "B9G12sILfjwAYZg0",
+      "outs": {
+        "out": {
+          "connection": "faPLmfB6zEmT1uYP:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:target"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2512,
+        "y": 662.2857142857143
+      },
+      "id": "0HU37tjSKfFqw64a"
+    },
+    {
+      "custom": {
+        "title": "On Target"
+      },
+      "type": "__gate_exit__",
+      "position": {
+        "x": 1802,
+        "y": 450.28571428571433
+      },
+      "id": "PfjQ1BuoiZH2X4hK",
+      "outs": {
+        "out": {
+          "connection": "Ff3DTLAxwCCranNj:ins:in"
+        }
+      }
+    },
+    {
+      "type": "get-quality",
+      "position": {
+        "x": 3092,
+        "y": -137.71428571428567
+      },
+      "id": "R4Qoc0icrWPOVoI7",
+      "outs": {
+        "minimal": {
+          "connection": "b2yoL5y1k59ZJqBM:ins:in"
+        },
+        "low": {
+          "connection": "DUyTSmuIGggW4Iwt:ins:in"
+        },
+        "medium": {
+          "connection": "DUyTSmuIGggW4Iwt:ins:in"
+        },
+        "high": {
+          "connection": "DUyTSmuIGggW4Iwt:ins:in"
+        }
+      }
+    },
+    {
+      "outs": {
+        "out": {
+          "connection": "PfjQ1BuoiZH2X4hK:ins:in"
+        }
+      },
+      "type": "__gate_entry__",
+      "position": {
+        "x": 3672.7802197802202,
+        "y": 267.3571428571429
+      },
+      "id": "ETCtoAQFuxJ0qCJl"
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "inputs": {
+        "effect": {
+          "connection": "B9G12sILfjwAYZg0:outputs:effect"
+        },
+        "objectScale": {
+          "value": 2.5
+        }
+      },
+      "position": {
+        "x": 2994,
+        "y": 424.4357142857144
+      },
+      "id": "faPLmfB6zEmT1uYP",
+      "outs": {
+        "out": {
+          "connection": "b2yoL5y1k59ZJqBM:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-timing",
+      "state": "milliseconds",
+      "inputs": {
+        "sound": {
+          "connection": "JQt4VOHmSRdUwWoh:outputs:sound"
+        },
+        "duration": {
+          "value": 1000
+        },
+        "startTime": {
+          "value": 2000
+        }
+      },
+      "position": {
+        "x": 4206,
+        "y": -173.5642857142857
+      },
+      "id": "rM9ww6EywfdJSU7I"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "2bt2cdnyg4ntLfaK:outputs:boolean"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3105.2857142857138,
+        "y": 218.1428571428571
+      },
+      "id": "kypqJQvyLoRU8rqy"
+    },
+    {
+      "type": "split-boolean",
+      "inputs": {
+        "input": {
+          "connection": "kypqJQvyLoRU8rqy:outputs:entry"
+        }
+      },
+      "position": {
+        "x": 3313.5714285714294,
+        "y": 115.25000000000011
+      },
+      "id": "DUyTSmuIGggW4Iwt",
+      "outs": {
+        "true": {
+          "connection": "b2yoL5y1k59ZJqBM:ins:in"
+        },
+        "false": {
+          "connection": "ETCtoAQFuxJ0qCJl:ins:in"
+        }
+      }
+    }
+  ],
+  "id": "RRvnYtkYe9hgt5f9",
+  "variables": {
+    "4gZJ8Gm9UjlhMc4G:outputs:target": {
+      "isArray": false,
+      "label": "Target",
+      "type": "target"
+    },
+    "4gZJ8Gm9UjlhMc4G:outputs:source": {
+      "isArray": false,
+      "label": "Source",
+      "type": "target"
+    },
+    "mpa5CCtLfa7bjI71:outputs:sR6Cy5NKJKuZpmQg": {
+      "isArray": false,
+      "label": "Name",
+      "type": "text"
+    },
+    "2bt2cdnyg4ntLfaK:outputs:boolean": {
+      "isArray": false,
+      "label": "Missed",
+      "type": "boolean"
+    }
+  },
+  "description": "<p>Animations for the Shock Pad and the Polyglove</p><p><em>Created by @MrVauxs., Modified by @Chasarooni, Modified by @Sasane</em></p>",
+  "tags": ["PF2e Trove", "attacks", "weapon", "sf2e"]
+}
