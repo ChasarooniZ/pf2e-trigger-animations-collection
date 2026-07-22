@@ -15,9 +15,13 @@ _[Use Me to convert "Export Triggers" to individual files for a PR](https://chas
 - Sort your animation in the proper folder, creating a new one if there's no folder that fits the animation
 - Format the trigger as requested on submission (`Prettier` 2 spaces per line) which can be run from the project with `npm run prettier`
 
-## Sound Files
+## Node Guidlines
 
-- If a sound is somewhere on the canavs apply the `troveSound` `preset` to each sound in an `Animation Trigger`
+- **Sound**
+  - If a sound is somewhere on the canavs apply the `troveSound` `preset` to each sound in an `Animation Trigger`
+  - `Sound` node should have the name filled with the item or animation `name` or `slug`
+- **Effect**
+  - `origin` and `name` should be filled with the item or animation `name` or `slug` and the item `uuid` respectfully (unless it makes more sense for it to be a token's etc.)
 
 ## Animation Submission Guidelines
 
@@ -28,7 +32,7 @@ _[Use Me to convert "Export Triggers" to individual files for a PR](https://chas
     - **[GGG Asset Pack](https://github.com/ChasarooniZ/GGG-Sequencer-Sound-DB-Collection)**
     - **Future Vauxs Specific Asset Pack** (has yet to be released)
 - **Animation Qualities**
-  - **Minimal** - 1 animation ~ 1 sfx (or SFX only)
+  - **Minimal** - 1 animation ~ 1-2 sfx (or SFX only)
   - **Low** - Medium but with no persistent and possibly toned down a bit if it's a lot
   - **Medium** - ~3 animations / ~3 sfx + Persistent Templates allowed (as long its not a ton)
     - _This is the aim for the majority of animations_
