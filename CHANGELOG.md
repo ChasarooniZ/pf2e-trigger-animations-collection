@@ -3,7 +3,7 @@
 - **Animations**
   - **New**
     - Chromatic Ray, Electrical Blast, Fangs, Frostbite, Haste, Ray of Frost, Shield, Slow (@ChasarooniZ)
-    - Disintegration Lash, Shock Pad, Skyfire Sword, Pulse Gauntlet, Zero Knife (@Suldrun45)
+    - Disintegration Lash, Shock Pad, Skyfire Sword, Pulse Gauntlet, Zero Knife, Aim, Black Hole, Big Bang, Supernova, Warp Reality (@Suldrun45)
   - **Updated**
     - Solar Weapon _Fix missing link in Solar Weapon and add an extra animation for non-potato computers_ (@Suldrun45)
 - **Updated**

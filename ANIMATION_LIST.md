@@ -59,7 +59,9 @@
       - [Worn](#worn)
     - [Creatures Actions](#creatures-actions)
   - [SF2e](#sf2e)
-    - [Class Features](#class-features-1)
+    - [Class Featuress](#class-featuress)
+      - [Operative](#operative)
+      - [Witchwarper](#witchwarper)
     - [Spells](#spells-1)
       - [Cantrips](#cantrips-1)
       - [Focus Spells](#focus-spells-1)
@@ -78,6 +80,7 @@
     - [Conditions](#conditions-1)
     - [Feats](#feats-1)
       - [Class Feats](#class-feats-1)
+      - [Solarian](#solarian)
       - [General Feats](#general-feats-1)
       - [Skill Feats](#skill-feats-1)
       - [Archetype Feats](#archetype-feats-1)
@@ -288,7 +291,15 @@
 
 ## SF2e
 
-### Class Features
+### Class Featuress
+
+#### Operative
+
+- Aim 🔊🆓✅ (✍🏼 @Suldrun45)
+
+#### Witchwarper
+
+- Warp Reality 🔊🆓✅ (✍🏼 @Suldrun45)
 
 ### Spells
 
@@ -332,6 +343,12 @@
 ### Feats
 
 #### Class Feats
+
+#### Solarian
+
+- Big Bang 🔊🆓✅ (✍🏼 @Suldrun45)
+- Black Hole 🔊🆓✅ (✍🏼 @Suldrun45)
+- Supernova 🔊🆓✅ (✍🏼 @Suldrun45)
 
 #### General Feats
 
