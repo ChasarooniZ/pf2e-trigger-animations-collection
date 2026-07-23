@@ -36,7 +36,7 @@
         "type": "module",
         "manifest": "https://raw.githubusercontent.com/MrVauxs/trigger-animations/latest/releases/module.json",
         "compatibility": {
-          "minimum": "0.6.3"
+          "minimum": "0.6.6"
         }
       }
     ],
@@ -47,7 +47,7 @@
         "type": "module",
         "reason": "For SFX for the animations",
         "compatibility": {
-          "minimum": "0.1.0"
+          "minimum": "0.1.1"
         },
         "manifest": "https://github.com/ChasarooniZ/GGG-Sequencer-Sound-DB-Collection/releases/latest/download/module.json"
       }
