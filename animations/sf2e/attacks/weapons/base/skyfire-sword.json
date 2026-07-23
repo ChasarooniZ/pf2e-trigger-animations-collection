@@ -2,7 +2,6 @@
   "name": "Skyfire Sword",
   "folder": "Attacks",
   "priority": 0,
-  "tags": ["PF2e Trove", "sf2e", "attacks", "weapons"],
   "description": "<p>Animations for the Skyfire Sword</p><p>Made by @Sasane</p>",
   "nodes": [
     {

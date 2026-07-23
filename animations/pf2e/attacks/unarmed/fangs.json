@@ -1,0 +1,55 @@
+{
+  "name": "Fangs",
+  "folder": "Attacks",
+  "priority": 0,
+  "description": "<p>Made by @Chasarooni</p><p><strong>Trigger: <code>trove-attack:fangs</code></strong></p><p></p><p>Calls <strong>Bite</strong> animation</p>",
+  "nodes": [
+    {
+      "id": "KjrfDxQaKcCZ8CIH",
+      "position": {
+        "x": 460,
+        "y": 201
+      },
+      "type": "animation-event",
+      "inputs": {
+        "name": {
+          "value": "trove-attack:fangs"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Q6BMJ1gO8oNTKTpO:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-animation",
+      "position": {
+        "x": 753.9230769230769,
+        "y": 175.4
+      },
+      "id": "Q6BMJ1gO8oNTKTpO",
+      "inputs": {
+        "name": {
+          "value": "trove-attack:bite"
+        },
+        "actor": {
+          "connection": "KjrfDxQaKcCZ8CIH:outputs:actor"
+        },
+        "sources": {
+          "connection": "KjrfDxQaKcCZ8CIH:outputs:sources"
+        },
+        "targets": {
+          "connection": "KjrfDxQaKcCZ8CIH:outputs:targets"
+        },
+        "item": {
+          "connection": "KjrfDxQaKcCZ8CIH:outputs:item"
+        },
+        "options": {
+          "connection": "KjrfDxQaKcCZ8CIH:outputs:options"
+        }
+      }
+    }
+  ],
+  "id": "5E1GYrxFlQxbOXE4"
+}

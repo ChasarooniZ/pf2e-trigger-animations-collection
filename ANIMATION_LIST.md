@@ -114,7 +114,9 @@
 
 - Buzzing Bites 🔊🆓 (✍🏼 @Chasarooni)
 - Electric Arc 🔊🆓✅ (✍🏼 @Chasarooni)
+- Frostbite 🔊🆓✅ (✍🏼 @Chasarooni)
 - Guidance 🔇🆓 (✍🏼 @Chasarooni)
+- Ray of Frost 🔊🆓✅ (✍🏼 @Chasarooni)
 - Scatter Scree 🔊🆓✅ (✍🏼 @Chasarooni)
 - Void Warp 🔊🆓✅ (✍🏼 @Chasarooni)
 
@@ -140,8 +142,12 @@
 #### 3rd Rank Spells
 
 - Fireball 🔊🆓✅ (✍🏼 @ChazPls, 🛠️ @Chasarooni)
+- Haste 🔊🆓✅ (✍🏼 @Chasarooni)
+- Slow 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### 4th Rank Spells
+
+- Chromatic Ray 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### 5th Rank Spells
 
@@ -221,8 +227,10 @@
 - Acid Missile 🔊🆓 (✍🏼 @Chasarooni)
 - Bite 🔇🆓 (✍🏼 @Chasarooni)
 - Claw 🔇🆓 (✍🏼 @Chasarooni)
-- Jaws 🔇🆓 (✍🏼 @Chasarooni)
+- Electrical Blast 🔇🆓 (✍🏼 @Chasarooni)
+- Fangs 🔇🆓 (✍🏼 @Chasarooni)
 - Fist 🔊🆓 (✍🏼 @Chasarooni)
+- Jaws 🔇🆓 (✍🏼 @Chasarooni)
 - Thunderbolt 🔊🆓 (✍🏼 @Chasarooni)
 
 #### Weapons
@@ -353,17 +361,22 @@
 ##### Base Item
 
 - Arc Emitter 🔊🆓✅ (✍🏼 @Suldrun45)
+- Disintegration Lash🔊🆓✅ (✍🏼 @Suldrun45)
 - Force Field 🔊🆓✅ (✍🏼 @Suldrun45)
 - Flamethrower 🔊🆓✅ (✍🏼 @Suldrun45)
 - Plasma Caster _Boost_ 🔊🆓✅ (✍🏼 @mechamaya)
 - Plasma Cannon 🔊🆓✅ (✍🏼 @Suldrun45)
+- Pulse Gauntlet 🔊🆓✅ (✍🏼 @Suldrun45)
 - Rotolaser 🔊🆓✅ (✍🏼 @Suldrun45)
 - Screamer 🔊🆓✅ (✍🏼 @Suldrun45)
+- Shock Pad🔊🆓✅ (✍🏼 @Suldrun45)
 - Singing Coil 🔊🆓✅ (✍🏼 @Suldrun45)
+- Skyfire Sword 🔊🆓✅ (✍🏼 @Suldrun45)
 - Solar Flare 🔊🆓✅ (✍🏼 @Suldrun45)
 - Solar Weapon 🔊🆓✅ (✍🏼 @Suldrun45)
 - Starfall Pistol 🔊🆓✅ (✍🏼 @Suldrun45)
 - Zero Cannon 🔊🆓✅ (✍🏼 @Suldrun45)
+- Zero Knife 🔊🆓✅ (✍🏼 @Suldrun45)
 
 ##### Specific
 
