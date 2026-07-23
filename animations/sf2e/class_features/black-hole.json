@@ -1,0 +1,306 @@
+{
+  "name": "Black Hole",
+  "folder": "Class Features",
+  "priority": 0,
+  "tags": ["PF2e Trove", "sf2e", "Class Features", "class", "Solarian"],
+  "nodes": [
+    {
+      "id": "8gxVDG8ksu0RUp2L",
+      "position": {
+        "x": 400,
+        "y": 200
+      },
+      "type": "animation-event",
+      "inputs": {
+        "name": {
+          "value": "action:black-hole"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "K6ukjsYEHYoMK4NX:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "inputs": {
+        "input": {
+          "connection": "8gxVDG8ksu0RUp2L:outputs:item"
+        }
+      },
+      "position": {
+        "x": 670,
+        "y": 208.14999999999998
+      },
+      "id": "K6ukjsYEHYoMK4NX",
+      "custom": {
+        "outputs": {
+          "DmIU4bDChzo7jnNC": {
+            "id": "DmIU4bDChzo7jnNC",
+            "input": "slug",
+            "label": "Slug",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "M5VFtOEt9BOnqCKM:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 1118,
+        "y": 210
+      },
+      "id": "5nkmEo5iL5XLTALV",
+      "inputs": {
+        "name": {
+          "connection": "K6ukjsYEHYoMK4NX:outputs:DmIU4bDChzo7jnNC"
+        },
+        "origin": {
+          "connection": "M5VFtOEt9BOnqCKM:outputs:wcmp7tXBBIGYaDym"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "4XN8LUZOfD18fqjk:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-actor",
+      "position": {
+        "x": 893.9230769230769,
+        "y": 209.4
+      },
+      "id": "M5VFtOEt9BOnqCKM",
+      "custom": {
+        "outputs": {
+          "wcmp7tXBBIGYaDym": {
+            "id": "wcmp7tXBBIGYaDym",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "8gxVDG8ksu0RUp2L:outputs:actor"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "5nkmEo5iL5XLTALV:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "state": "default",
+      "inputs": {
+        "effect": {
+          "connection": "5nkmEo5iL5XLTALV:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.celestial_bodies.black_hole.001.8x8.outward.complete.blue.0"
+        }
+      },
+      "position": {
+        "x": 1468,
+        "y": 209.14999999999998
+      },
+      "id": "4XN8LUZOfD18fqjk",
+      "outs": {
+        "out": {
+          "connection": "8AB1K17ndNmNg7Zg:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "inputs": {
+        "effect": {
+          "connection": "4XN8LUZOfD18fqjk:outputs:effect"
+        },
+        "location": {
+          "connection": "BfocbJ9XpKLyYCgN:outputs:entry"
+        },
+        "local": {
+          "value": true
+        },
+        "offset": {
+          "value": {
+            "x": 0,
+            "y": 0.5
+          }
+        },
+        "gridUnits": {
+          "value": true
+        }
+      },
+      "position": {
+        "x": 1729,
+        "y": 210.14999999999998
+      },
+      "id": "8AB1K17ndNmNg7Zg",
+      "outs": {
+        "out": {
+          "connection": "3u5r5YoUsmLgEXEo:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "8gxVDG8ksu0RUp2L:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1488.75,
+        "y": 446.5
+      },
+      "id": "BfocbJ9XpKLyYCgN"
+    },
+    {
+      "type": "scale",
+      "state": "size",
+      "inputs": {
+        "effect": {
+          "connection": "8AB1K17ndNmNg7Zg:outputs:effect"
+        },
+        "gridUnits": {
+          "value": true
+        },
+        "width": {
+          "value": 13
+        },
+        "height": {
+          "value": 13
+        }
+      },
+      "position": {
+        "x": 1996.5,
+        "y": 210.15000000000003
+      },
+      "id": "3u5r5YoUsmLgEXEo",
+      "outs": {
+        "out": {
+          "connection": "5kUPRD3tmAphmyiE:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 3131.423076923077,
+        "y": 222.25
+      },
+      "id": "IpNHckPMc6Puf6uS",
+      "inputs": {
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 2255.1730769230767,
+        "y": 209
+      },
+      "id": "5kUPRD3tmAphmyiE",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.magic.occult.siphon.01"
+        },
+        "name": {
+          "connection": "K6ukjsYEHYoMK4NX:outputs:DmIU4bDChzo7jnNC"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "B7FlJabDtErmDE3Y:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "5kUPRD3tmAphmyiE:outputs:sound"
+        },
+        "location": {
+          "connection": "LT5qZfQh78odPLQH:outputs:entry"
+        },
+        "gridUnits": {
+          "value": true
+        }
+      },
+      "position": {
+        "x": 2606,
+        "y": 216.15000000000003
+      },
+      "id": "B7FlJabDtErmDE3Y",
+      "outs": {
+        "out": {
+          "connection": "3dH67j0UhHFTOE1h:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "8gxVDG8ksu0RUp2L:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2421.5000000000005,
+        "y": 364.5
+      },
+      "id": "LT5qZfQh78odPLQH"
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "B7FlJabDtErmDE3Y:outputs:sound"
+        },
+        "preset": {
+          "value": "troveSound"
+        }
+      },
+      "position": {
+        "x": 2835.5000000000005,
+        "y": 212.75
+      },
+      "id": "3dH67j0UhHFTOE1h",
+      "outs": {
+        "out": {
+          "connection": "IpNHckPMc6Puf6uS:ins:in"
+        }
+      }
+    }
+  ],
+  "id": "JVpvrO8Z4B0ib6yu",
+  "variables": {
+    "8gxVDG8ksu0RUp2L:outputs:sources": {
+      "isArray": true,
+      "label": "Sources",
+      "type": "target"
+    }
+  },
+  "description": "<p>Made by @Sasane</p>"
+}
