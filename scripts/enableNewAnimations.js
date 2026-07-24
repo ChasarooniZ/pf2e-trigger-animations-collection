@@ -5,7 +5,7 @@ export async function askToAddNewAnimationsDialog() {
     game.settings.get(MODULE_ID, "animations-asked-to-enable"),
   );
   const triggerData =
-    triggerAnimations?.api?.db?.flags?.["trigger-animations"]?.data;
+    window.triggerAnimations?.api?.db?.flags?.["trigger-animations"]?.data;
   const enabledSet = new Set(triggerData?.enabled);
 
   const list = await getNewAnimationData(askedAnimationsSet, enabledSet);
@@ -34,14 +34,12 @@ export async function askToAddNewAnimationsDialog() {
 
 async function enableAllDisabledAnimations(list) {
   const idList = list.map((a) => a.id);
-  const triggerData = triggerAnimations.api.db.getFlag(
-    "trigger-animations",
-    "data",
-  );
+  const triggerData =
+    window.triggerAnimations.api.db.getFlag("trigger-animations", "data") || {};
   triggerData.enabled = [
     ...new Set((triggerData?.enabled ?? []).concat(idList)),
   ];
-  await triggerAnimations.api.db.setFlag(
+  await window.triggerAnimations.api.db.setFlag(
     "trigger-animations",
     "data",
     triggerData,
@@ -57,13 +55,16 @@ async function enableAnimationsDialog(list) {
       newAnimationsByFolder[folder].push({ id, name });
     }
   });
-  var animationsContent = "";
+  let animationsContent = "";
   for (const folder of Object.keys(newAnimationsByFolder)) {
     animationsContent += `<p><b>${folder}</b></p>${newAnimationsByFolder[folder].map((it) => it.name).join(" • ")}`;
   }
 
   const addNewAnimations = await foundry.applications.api.DialogV2.confirm({
-    window: { title: "Trigger Animation Trove - Enable New Animations" },
+    window: {
+      title: "Trigger Animation Trove - Enable New Animations",
+      icon: "fas fa-webhook",
+    },
     content: `<p>Do you want to enable the following new trigger animations?</p>${animationsContent}`,
     classes: ["trigger-animation-trove-animation-enable-dialog"],
   });
