@@ -1,808 +1,805 @@
 {
-	"name": "Garden of Healing",
-	"folder": "Spells",
-	"priority": 0,
-	"tags": [
-		"spell",
-		"pf2e"
-	],
-	"id": "PPgdzUvZ3gpmmICi",
-	"nodes": [
-		{
-			"id": "JQTFjmsn9dLVIdVu",
-			"position": {
-				"x": 0,
-				"y": 0
-			},
-			"type": "animation-event",
-			"inputs": {
-				"name": {
-					"value": "spell:garden-of-healing"
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "kDa9U4UqGWlG6g3O:ins:in"
-				}
-			}
-		},
-		{
-			"type": "extract-item",
-			"position": {
-				"x": 280,
-				"y": 20
-			},
-			"id": "kDa9U4UqGWlG6g3O",
-			"custom": {
-				"outputs": {
-					"t1OGMmjxWkI9X7H6": {
-						"id": "t1OGMmjxWkI9X7H6",
-						"input": "name",
-						"label": "Name",
-						"slug": "path",
-						"isArray": false,
-						"type": "text"
-					},
-					"nPFz46PDjqipVJIq": {
-						"id": "nPFz46PDjqipVJIq",
-						"input": "uuid",
-						"label": "UUID",
-						"slug": "path",
-						"isArray": false,
-						"type": "text"
-					}
-				}
-			},
-			"inputs": {
-				"input": {
-					"connection": "JQTFjmsn9dLVIdVu:outputs:item"
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "Gq7XbKm2Rp9Ln4Zt:ins:in"
-				}
-			}
-		},
-		{
-			"type": "get-quality",
-			"position": {
-				"x": 560,
-				"y": 0
-			},
-			"id": "Gq7XbKm2Rp9Ln4Zt",
-			"outs": {
-				"high": {
-					"connection": "GeCast7Kp2Rm9Lnq:ins:in"
-				},
-				"medium": {
-					"connection": "GeGrow5Rn3Km8Ztq:ins:in"
-				},
-				"low": {
-					"connection": "GeGrow5Rn3Km8Ztq:ins:in"
-				},
-				"minimal": {
-					"connection": "GeEman9Kp4Rn2Lmt:ins:in"
-				}
-			}
-		},
-		{
-			"type": "__gate_entry__",
-			"position": {
-				"x": 860,
-				"y": 260
-			},
-			"id": "GeCast7Kp2Rm9Lnq",
-			"outs": {
-				"out": {
-					"connection": "GxCast4Wn8Rk2Lmt:ins:in"
-				}
-			}
-		},
-		{
-			"type": "__gate_entry__",
-			"position": {
-				"x": 860,
-				"y": 40
-			},
-			"id": "GeGrow5Rn3Km8Ztq",
-			"outs": {
-				"out": {
-					"connection": "GxGrow2Lm7Wq4Rkd:ins:in"
-				}
-			}
-		},
-		{
-			"type": "__gate_entry__",
-			"position": {
-				"x": 860,
-				"y": -180
-			},
-			"id": "GeEman9Kp4Rn2Lmt",
-			"outs": {
-				"out": {
-					"connection": "GxEman6Wq3Rk8Lnd:ins:in"
-				}
-			}
-		},
-		{
-			"custom": {
-				"title": "Cast"
-			},
-			"type": "__gate_exit__",
-			"position": {
-				"x": 0,
-				"y": 640
-			},
-			"id": "GxCast4Wn8Rk2Lmt",
-			"outs": {
-				"out": {
-					"connection": "Cs1Ou4Nd8Rk2Lm7b:ins:in"
-				}
-			}
-		},
-		{
-			"type": "sound",
-			"position": {
-				"x": 280,
-				"y": 640
-			},
-			"id": "Cs1Ou4Nd8Rk2Lm7b",
-			"inputs": {
-				"file": {
-					"value": "ggg-sfx.magic.primal.cast.general.03.01"
-				},
-				"name": {
-					"connection": "VgcName01Kp9Rn2L:outputs:entry"
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "Cl2Oc5At7Rm4Kn9d:ins:in"
-				}
-			}
-		},
-		{
-			"type": "snd-location",
-			"state": "atLocation",
-			"position": {
-				"x": 560,
-				"y": 640
-			},
-			"id": "Cl2Oc5At7Rm4Kn9d",
-			"inputs": {
-				"sound": {
-					"connection": "Cs1Ou4Nd8Rk2Lm7b:outputs:sound"
-				},
-				"location": {
-					"connection": "VgcSrc001Lm7Kn3D:outputs:entry"
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "Cf3Lo6Wq2Rk5Nm8t:ins:in"
-				}
-			}
-		},
-		{
-			"type": "snd-flow",
-			"position": {
-				"x": 840,
-				"y": 640
-			},
-			"id": "Cf3Lo6Wq2Rk5Nm8t",
-			"inputs": {
-				"sound": {
-					"connection": "Cs1Ou4Nd8Rk2Lm7b:outputs:sound"
-				},
-				"preset": {
-					"value": "troveSound"
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "Ca8Ef3WqLm7Xn5Pd:ins:in"
-				}
-			}
-		},
-		{
-			"type": "effect",
-			"position": {
-				"x": 1120,
-				"y": 640
-			},
-			"id": "Ca8Ef3WqLm7Xn5Pd",
-			"inputs": {
-				"name": {
-					"connection": "VgcName02Rn7Km4L:outputs:entry"
-				},
-				"origin": {
-					"connection": "VgcUuid01Wq4Rm8T:outputs:entry"
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "Cb2Loc9Rn4Km8Ztq:ins:in"
-				}
-			}
-		},
-		{
-			"type": "location",
-			"state": "targets",
-			"position": {
-				"x": 1400,
-				"y": 640
-			},
-			"id": "Cb2Loc9Rn4Km8Ztq",
-			"inputs": {
-				"effect": {
-					"connection": "Ca8Ef3WqLm7Xn5Pd:outputs:effect"
-				},
-				"location": {
-					"connection": "VgcSrc002Wq3Rm8T:outputs:entry"
-				},
-				"attachTo": {
-					"value": true
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "Cc5Fi3Le7Wn2Xp9d:ins:in"
-				}
-			}
-		},
-		{
-			"type": "file",
-			"position": {
-				"x": 1680,
-				"y": 640
-			},
-			"id": "Cc5Fi3Le7Wn2Xp9d",
-			"inputs": {
-				"effect": {
-					"connection": "Ca8Ef3WqLm7Xn5Pd:outputs:effect"
-				},
-				"file": {
-					"value": "jb2a.cast_generic.earth.01.browngreen"
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "Cd6Sc2Al8Ke4Wm3n:ins:in"
-				}
-			}
-		},
-		{
-			"type": "scale",
-			"state": "object",
-			"position": {
-				"x": 1960,
-				"y": 640
-			},
-			"id": "Cd6Sc2Al8Ke4Wm3n",
-			"inputs": {
-				"effect": {
-					"connection": "Ca8Ef3WqLm7Xn5Pd:outputs:effect"
-				},
-				"objectScale": {
-					"value": 3
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "Cy7La4Er2Wn9Km5d:ins:in"
-				}
-			}
-		},
-		{
-			"type": "layer",
-			"position": {
-				"x": 2240,
-				"y": 640
-			},
-			"id": "Cy7La4Er2Wn9Km5d",
-			"inputs": {
-				"effect": {
-					"connection": "Ca8Ef3WqLm7Xn5Pd:outputs:effect"
-				},
-				"belowTokens": {
-					"value": true
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "Cf9Fl2Wa5Ke8Rm3t:ins:in"
-				}
-			}
-		},
-		{
-			"type": "flow",
-			"position": {
-				"x": 2520,
-				"y": 640
-			},
-			"id": "Cf9Fl2Wa5Ke8Rm3t",
-			"inputs": {
-				"effect": {
-					"connection": "Ca8Ef3WqLm7Xn5Pd:outputs:effect"
-				},
-				"waitUntilFinished": {
-					"value": true
-				},
-				"waitDelayMin": {
-					"value": -650
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "GeCsGr3Lm9Rk5Nwt:ins:in"
-				}
-			}
-		},
-		{
-			"type": "__gate_entry__",
-			"position": {
-				"x": 2800,
-				"y": 640
-			},
-			"id": "GeCsGr3Lm9Rk5Nwt",
-			"outs": {
-				"out": {
-					"connection": "GxGrow2Lm7Wq4Rkd:ins:in"
-				}
-			}
-		},
-		{
-			"inputs": {
-				"entry": {
-					"connection": "kDa9U4UqGWlG6g3O:outputs:t1OGMmjxWkI9X7H6"
-				}
-			},
-			"type": "__variable_getter__",
-			"position": {
-				"x": 290,
-				"y": 593
-			},
-			"id": "VgcName01Kp9Rn2L"
-		},
-		{
-			"inputs": {
-				"entry": {
-					"connection": "JQTFjmsn9dLVIdVu:outputs:sources"
-				}
-			},
-			"type": "__variable_getter__",
-			"position": {
-				"x": 570,
-				"y": 593
-			},
-			"id": "VgcSrc001Lm7Kn3D"
-		},
-		{
-			"inputs": {
-				"entry": {
-					"connection": "kDa9U4UqGWlG6g3O:outputs:nPFz46PDjqipVJIq"
-				}
-			},
-			"type": "__variable_getter__",
-			"position": {
-				"x": 1130,
-				"y": 593
-			},
-			"id": "VgcUuid01Wq4Rm8T"
-		},
-		{
-			"custom": {
-				"title": "Growth SFX"
-			},
-			"type": "__gate_exit__",
-			"position": {
-				"x": 0,
-				"y": 1280
-			},
-			"id": "GxGrow2Lm7Wq4Rkd",
-			"outs": {
-				"out": {
-					"connection": "So3Un5Dq8Rk2Lm7b:ins:in"
-				}
-			}
-		},
-		{
-			"type": "sound",
-			"position": {
-				"x": 280,
-				"y": 1280
-			},
-			"id": "So3Un5Dq8Rk2Lm7b",
-			"inputs": {
-				"file": {
-					"value": "ggg-sfx.magic.primal.growth.01.01"
-				},
-				"name": {
-					"connection": "VgsName01Rn5Km2P:outputs:entry"
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "Sv4Ol9Um2Ek7Rn3t:ins:in"
-				}
-			}
-		},
-		{
-			"type": "snd-volume",
-			"position": {
-				"x": 560,
-				"y": 1280
-			},
-			"id": "Sv4Ol9Um2Ek7Rn3t",
-			"inputs": {
-				"sound": {
-					"connection": "So3Un5Dq8Rk2Lm7b:outputs:sound"
-				},
-				"volume": {
-					"value": 0.5
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "Sl6Oc3At7Lm2Kn9d:ins:in"
-				}
-			}
-		},
-		{
-			"type": "snd-location",
-			"state": "atLocation",
-			"position": {
-				"x": 840,
-				"y": 1280
-			},
-			"id": "Sl6Oc3At7Lm2Kn9d",
-			"inputs": {
-				"sound": {
-					"connection": "So3Un5Dq8Rk2Lm7b:outputs:sound"
-				},
-				"location": {
-					"connection": "VgsSrc001Wm8Rk4L:outputs:entry"
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "Sf2Lo8Wq5Rk3Nm7t:ins:in"
-				}
-			}
-		},
-		{
-			"type": "snd-flow",
-			"position": {
-				"x": 1120,
-				"y": 1280
-			},
-			"id": "Sf2Lo8Wq5Rk3Nm7t",
-			"inputs": {
-				"sound": {
-					"connection": "So3Un5Dq8Rk2Lm7b:outputs:sound"
-				},
-				"preset": {
-					"value": "troveSound"
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "GeGrEm7Kn2Rm4Lqd:ins:in"
-				}
-			}
-		},
-		{
-			"type": "__gate_entry__",
-			"position": {
-				"x": 1400,
-				"y": 1280
-			},
-			"id": "GeGrEm7Kn2Rm4Lqd",
-			"outs": {
-				"out": {
-					"connection": "GxEman6Wq3Rk8Lnd:ins:in"
-				}
-			}
-		},
-		{
-			"inputs": {
-				"entry": {
-					"connection": "kDa9U4UqGWlG6g3O:outputs:t1OGMmjxWkI9X7H6"
-				}
-			},
-			"type": "__variable_getter__",
-			"position": {
-				"x": 290,
-				"y": 1233
-			},
-			"id": "VgsName01Rn5Km2P"
-		},
-		{
-			"inputs": {
-				"entry": {
-					"connection": "JQTFjmsn9dLVIdVu:outputs:sources"
-				}
-			},
-			"type": "__variable_getter__",
-			"position": {
-				"x": 850,
-				"y": 1233
-			},
-			"id": "VgsSrc001Wm8Rk4L"
-		},
-		{
-			"custom": {
-				"title": "Emanation"
-			},
-			"type": "__gate_exit__",
-			"position": {
-				"x": 0,
-				"y": 1920
-			},
-			"id": "GxEman6Wq3Rk8Lnd",
-			"outs": {
-				"out": {
-					"connection": "avXiOqkVCJTBJahe:ins:in"
-				}
-			}
-		},
-		{
-			"type": "effect",
-			"position": {
-				"x": 280,
-				"y": 1920
-			},
-			"id": "avXiOqkVCJTBJahe",
-			"inputs": {
-				"name": {
-					"connection": "VgeName01Kn3Rm7Q:outputs:entry"
-				},
-				"origin": {
-					"connection": "VgeUuid01Lp5Wn9R:outputs:entry"
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "UpkDyr7OSJoRu1XX:ins:in"
-				}
-			}
-		},
-		{
-			"type": "location",
-			"state": "targets",
-			"position": {
-				"x": 560,
-				"y": 1920
-			},
-			"id": "UpkDyr7OSJoRu1XX",
-			"inputs": {
-				"effect": {
-					"connection": "avXiOqkVCJTBJahe:outputs:effect"
-				},
-				"location": {
-					"connection": "VgeSrc001Rk2Lm6T:outputs:entry"
-				},
-				"attachTo": {
-					"value": true
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "Me9Nb4Ld2Kq7Rm3x:ins:in"
-				}
-			}
-		},
-		{
-			"type": "module-enabled",
-			"position": {
-				"x": 840,
-				"y": 1920
-			},
-			"id": "Me9Nb4Ld2Kq7Rm3x",
-			"inputs": {
-				"module": {
-					"value": "jb2a_patreon"
-				}
-			},
-			"outs": {
-				"true": {
-					"connection": "JoLoaeTOdoe5c3ve:ins:in"
-				},
-				"false": {
-					"connection": "Ff5Re3Em8Kn2Lp9d:ins:in"
-				}
-			}
-		},
-		{
-			"type": "file",
-			"position": {
-				"x": 1120,
-				"y": 1830
-			},
-			"id": "JoLoaeTOdoe5c3ve",
-			"inputs": {
-				"effect": {
-					"connection": "avXiOqkVCJTBJahe:outputs:effect"
-				},
-				"file": {
-					"value": "jb2a.plant_growth.04.round.2x2.complete.greenwhite"
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "VLB5LzxoiGFfWd3h:ins:in"
-				}
-			}
-		},
-		{
-			"type": "file",
-			"position": {
-				"x": 1120,
-				"y": 2180
-			},
-			"id": "Ff5Re3Em8Kn2Lp9d",
-			"inputs": {
-				"effect": {
-					"connection": "avXiOqkVCJTBJahe:outputs:effect"
-				},
-				"file": {
-					"value": "jb2a.plant_growth.03.round.2x2.complete.greenyellow"
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "VLB5LzxoiGFfWd3h:ins:in"
-				}
-			}
-		},
-		{
-			"type": "scale",
-			"state": "size",
-			"position": {
-				"x": 1400,
-				"y": 1920
-			},
-			"id": "VLB5LzxoiGFfWd3h",
-			"inputs": {
-				"effect": {
-					"connection": "avXiOqkVCJTBJahe:outputs:effect"
-				},
-				"width": {
-					"value": 5
-				},
-				"height": {
-					"value": 5
-				},
-				"gridUnits": {
-					"value": true
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "AQLKHu7qnQTupqzi:ins:in"
-				}
-			}
-		},
-		{
-			"type": "layer",
-			"position": {
-				"x": 1680,
-				"y": 1920
-			},
-			"id": "AQLKHu7qnQTupqzi",
-			"inputs": {
-				"effect": {
-					"connection": "avXiOqkVCJTBJahe:outputs:effect"
-				},
-				"belowTokens": {
-					"value": true
-				}
-			},
-			"outs": {
-				"out": {
-					"connection": "MeR3pzh84KpLMcNf:ins:in"
-				}
-			}
-		},
-		{
-			"type": "play",
-			"position": {
-				"x": 1960,
-				"y": 1920
-			},
-			"id": "MeR3pzh84KpLMcNf",
-			"inputs": {
-				"preload": {
-					"value": true
-				},
-				"local": {
-					"value": true
-				}
-			}
-		},
-		{
-			"inputs": {
-				"entry": {
-					"connection": "kDa9U4UqGWlG6g3O:outputs:t1OGMmjxWkI9X7H6"
-				}
-			},
-			"type": "__variable_getter__",
-			"position": {
-				"x": 290,
-				"y": 1873
-			},
-			"id": "VgeName01Kn3Rm7Q"
-		},
-		{
-			"inputs": {
-				"entry": {
-					"connection": "kDa9U4UqGWlG6g3O:outputs:nPFz46PDjqipVJIq"
-				}
-			},
-			"type": "__variable_getter__",
-			"position": {
-				"x": 400,
-				"y": 1873
-			},
-			"id": "VgeUuid01Lp5Wn9R"
-		},
-		{
-			"inputs": {
-				"entry": {
-					"connection": "JQTFjmsn9dLVIdVu:outputs:sources"
-				}
-			},
-			"type": "__variable_getter__",
-			"position": {
-				"x": 570,
-				"y": 1873
-			},
-			"id": "VgeSrc001Rk2Lm6T"
-		},
-		{
-			"inputs": {
-				"entry": {
-					"connection": "kDa9U4UqGWlG6g3O:outputs:t1OGMmjxWkI9X7H6"
-				}
-			},
-			"type": "__variable_getter__",
-			"position": {
-				"x": 1240,
-				"y": 593
-			},
-			"id": "VgcName02Rn7Km4L"
-		},
-		{
-			"inputs": {
-				"entry": {
-					"connection": "JQTFjmsn9dLVIdVu:outputs:sources"
-				}
-			},
-			"type": "__variable_getter__",
-			"position": {
-				"x": 1410,
-				"y": 593
-			},
-			"id": "VgcSrc002Wq3Rm8T"
-		}
-	],
-	"variables": {
-		"JQTFjmsn9dLVIdVu:outputs:sources": {
-			"isArray": true,
-			"label": "Sources",
-			"type": "target"
-		},
-		"kDa9U4UqGWlG6g3O:outputs:t1OGMmjxWkI9X7H6": {
-			"isArray": false,
-			"label": "Name",
-			"type": "text"
-		},
-		"kDa9U4UqGWlG6g3O:outputs:nPFz46PDjqipVJIq": {
-			"isArray": false,
-			"label": "UUID",
-			"type": "text"
-		}
-	},
-	"description": "<p><em>Created by @Chazpls</em>\n<strong>Trigger: trove-spell:garden-of-healing</strong></p>"
+  "name": "Garden of Healing",
+  "folder": "Spells",
+  "priority": 0,
+  "tags": ["spell", "pf2e"],
+  "id": "PPgdzUvZ3gpmmICi",
+  "nodes": [
+    {
+      "id": "JQTFjmsn9dLVIdVu",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "type": "animation-event",
+      "inputs": {
+        "name": {
+          "value": "spell:garden-of-healing"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "kDa9U4UqGWlG6g3O:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "position": {
+        "x": 280,
+        "y": 20
+      },
+      "id": "kDa9U4UqGWlG6g3O",
+      "custom": {
+        "outputs": {
+          "t1OGMmjxWkI9X7H6": {
+            "id": "t1OGMmjxWkI9X7H6",
+            "input": "name",
+            "label": "Name",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "nPFz46PDjqipVJIq": {
+            "id": "nPFz46PDjqipVJIq",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "JQTFjmsn9dLVIdVu:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Gq7XbKm2Rp9Ln4Zt:ins:in"
+        }
+      }
+    },
+    {
+      "type": "get-quality",
+      "position": {
+        "x": 560,
+        "y": 0
+      },
+      "id": "Gq7XbKm2Rp9Ln4Zt",
+      "outs": {
+        "high": {
+          "connection": "GeCast7Kp2Rm9Lnq:ins:in"
+        },
+        "medium": {
+          "connection": "GeGrow5Rn3Km8Ztq:ins:in"
+        },
+        "low": {
+          "connection": "GeGrow5Rn3Km8Ztq:ins:in"
+        },
+        "minimal": {
+          "connection": "GeEman9Kp4Rn2Lmt:ins:in"
+        }
+      }
+    },
+    {
+      "type": "__gate_entry__",
+      "position": {
+        "x": 860,
+        "y": 260
+      },
+      "id": "GeCast7Kp2Rm9Lnq",
+      "outs": {
+        "out": {
+          "connection": "GxCast4Wn8Rk2Lmt:ins:in"
+        }
+      }
+    },
+    {
+      "type": "__gate_entry__",
+      "position": {
+        "x": 860,
+        "y": 40
+      },
+      "id": "GeGrow5Rn3Km8Ztq",
+      "outs": {
+        "out": {
+          "connection": "GxGrow2Lm7Wq4Rkd:ins:in"
+        }
+      }
+    },
+    {
+      "type": "__gate_entry__",
+      "position": {
+        "x": 860,
+        "y": -180
+      },
+      "id": "GeEman9Kp4Rn2Lmt",
+      "outs": {
+        "out": {
+          "connection": "GxEman6Wq3Rk8Lnd:ins:in"
+        }
+      }
+    },
+    {
+      "custom": {
+        "title": "Cast"
+      },
+      "type": "__gate_exit__",
+      "position": {
+        "x": 0,
+        "y": 640
+      },
+      "id": "GxCast4Wn8Rk2Lmt",
+      "outs": {
+        "out": {
+          "connection": "Cs1Ou4Nd8Rk2Lm7b:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 280,
+        "y": 640
+      },
+      "id": "Cs1Ou4Nd8Rk2Lm7b",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.magic.primal.cast.general.03.01"
+        },
+        "name": {
+          "connection": "VgcName01Kp9Rn2L:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Cl2Oc5At7Rm4Kn9d:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "position": {
+        "x": 560,
+        "y": 640
+      },
+      "id": "Cl2Oc5At7Rm4Kn9d",
+      "inputs": {
+        "sound": {
+          "connection": "Cs1Ou4Nd8Rk2Lm7b:outputs:sound"
+        },
+        "location": {
+          "connection": "VgcSrc001Lm7Kn3D:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Cf3Lo6Wq2Rk5Nm8t:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "position": {
+        "x": 840,
+        "y": 640
+      },
+      "id": "Cf3Lo6Wq2Rk5Nm8t",
+      "inputs": {
+        "sound": {
+          "connection": "Cs1Ou4Nd8Rk2Lm7b:outputs:sound"
+        },
+        "preset": {
+          "value": "troveSound"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Ca8Ef3WqLm7Xn5Pd:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 1120,
+        "y": 640
+      },
+      "id": "Ca8Ef3WqLm7Xn5Pd",
+      "inputs": {
+        "name": {
+          "connection": "VgcName02Rn7Km4L:outputs:entry"
+        },
+        "origin": {
+          "connection": "VgcUuid01Wq4Rm8T:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Cb2Loc9Rn4Km8Ztq:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "position": {
+        "x": 1400,
+        "y": 640
+      },
+      "id": "Cb2Loc9Rn4Km8Ztq",
+      "inputs": {
+        "effect": {
+          "connection": "Ca8Ef3WqLm7Xn5Pd:outputs:effect"
+        },
+        "location": {
+          "connection": "VgcSrc002Wq3Rm8T:outputs:entry"
+        },
+        "attachTo": {
+          "value": true
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Cc5Fi3Le7Wn2Xp9d:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 1680,
+        "y": 640
+      },
+      "id": "Cc5Fi3Le7Wn2Xp9d",
+      "inputs": {
+        "effect": {
+          "connection": "Ca8Ef3WqLm7Xn5Pd:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.cast_generic.earth.01.browngreen"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Cd6Sc2Al8Ke4Wm3n:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "position": {
+        "x": 1960,
+        "y": 640
+      },
+      "id": "Cd6Sc2Al8Ke4Wm3n",
+      "inputs": {
+        "effect": {
+          "connection": "Ca8Ef3WqLm7Xn5Pd:outputs:effect"
+        },
+        "objectScale": {
+          "value": 3
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Cy7La4Er2Wn9Km5d:ins:in"
+        }
+      }
+    },
+    {
+      "type": "layer",
+      "position": {
+        "x": 2240,
+        "y": 640
+      },
+      "id": "Cy7La4Er2Wn9Km5d",
+      "inputs": {
+        "effect": {
+          "connection": "Ca8Ef3WqLm7Xn5Pd:outputs:effect"
+        },
+        "belowTokens": {
+          "value": true
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Cf9Fl2Wa5Ke8Rm3t:ins:in"
+        }
+      }
+    },
+    {
+      "type": "flow",
+      "position": {
+        "x": 2520,
+        "y": 640
+      },
+      "id": "Cf9Fl2Wa5Ke8Rm3t",
+      "inputs": {
+        "effect": {
+          "connection": "Ca8Ef3WqLm7Xn5Pd:outputs:effect"
+        },
+        "waitUntilFinished": {
+          "value": true
+        },
+        "waitDelayMin": {
+          "value": -650
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "GeCsGr3Lm9Rk5Nwt:ins:in"
+        }
+      }
+    },
+    {
+      "type": "__gate_entry__",
+      "position": {
+        "x": 2800,
+        "y": 640
+      },
+      "id": "GeCsGr3Lm9Rk5Nwt",
+      "outs": {
+        "out": {
+          "connection": "GxGrow2Lm7Wq4Rkd:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "kDa9U4UqGWlG6g3O:outputs:t1OGMmjxWkI9X7H6"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 290,
+        "y": 593
+      },
+      "id": "VgcName01Kp9Rn2L"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "JQTFjmsn9dLVIdVu:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 570,
+        "y": 593
+      },
+      "id": "VgcSrc001Lm7Kn3D"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "kDa9U4UqGWlG6g3O:outputs:nPFz46PDjqipVJIq"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1130,
+        "y": 593
+      },
+      "id": "VgcUuid01Wq4Rm8T"
+    },
+    {
+      "custom": {
+        "title": "Growth SFX"
+      },
+      "type": "__gate_exit__",
+      "position": {
+        "x": 0,
+        "y": 1280
+      },
+      "id": "GxGrow2Lm7Wq4Rkd",
+      "outs": {
+        "out": {
+          "connection": "So3Un5Dq8Rk2Lm7b:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 280,
+        "y": 1280
+      },
+      "id": "So3Un5Dq8Rk2Lm7b",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.magic.primal.growth.01.01"
+        },
+        "name": {
+          "connection": "VgsName01Rn5Km2P:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Sv4Ol9Um2Ek7Rn3t:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-volume",
+      "position": {
+        "x": 560,
+        "y": 1280
+      },
+      "id": "Sv4Ol9Um2Ek7Rn3t",
+      "inputs": {
+        "sound": {
+          "connection": "So3Un5Dq8Rk2Lm7b:outputs:sound"
+        },
+        "volume": {
+          "value": 0.5
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Sl6Oc3At7Lm2Kn9d:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "position": {
+        "x": 840,
+        "y": 1280
+      },
+      "id": "Sl6Oc3At7Lm2Kn9d",
+      "inputs": {
+        "sound": {
+          "connection": "So3Un5Dq8Rk2Lm7b:outputs:sound"
+        },
+        "location": {
+          "connection": "VgsSrc001Wm8Rk4L:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Sf2Lo8Wq5Rk3Nm7t:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "position": {
+        "x": 1120,
+        "y": 1280
+      },
+      "id": "Sf2Lo8Wq5Rk3Nm7t",
+      "inputs": {
+        "sound": {
+          "connection": "So3Un5Dq8Rk2Lm7b:outputs:sound"
+        },
+        "preset": {
+          "value": "troveSound"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "GeGrEm7Kn2Rm4Lqd:ins:in"
+        }
+      }
+    },
+    {
+      "type": "__gate_entry__",
+      "position": {
+        "x": 1400,
+        "y": 1280
+      },
+      "id": "GeGrEm7Kn2Rm4Lqd",
+      "outs": {
+        "out": {
+          "connection": "GxEman6Wq3Rk8Lnd:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "kDa9U4UqGWlG6g3O:outputs:t1OGMmjxWkI9X7H6"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 290,
+        "y": 1233
+      },
+      "id": "VgsName01Rn5Km2P"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "JQTFjmsn9dLVIdVu:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 850,
+        "y": 1233
+      },
+      "id": "VgsSrc001Wm8Rk4L"
+    },
+    {
+      "custom": {
+        "title": "Emanation"
+      },
+      "type": "__gate_exit__",
+      "position": {
+        "x": 0,
+        "y": 1920
+      },
+      "id": "GxEman6Wq3Rk8Lnd",
+      "outs": {
+        "out": {
+          "connection": "avXiOqkVCJTBJahe:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 280,
+        "y": 1920
+      },
+      "id": "avXiOqkVCJTBJahe",
+      "inputs": {
+        "name": {
+          "connection": "VgeName01Kn3Rm7Q:outputs:entry"
+        },
+        "origin": {
+          "connection": "VgeUuid01Lp5Wn9R:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "UpkDyr7OSJoRu1XX:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "position": {
+        "x": 560,
+        "y": 1920
+      },
+      "id": "UpkDyr7OSJoRu1XX",
+      "inputs": {
+        "effect": {
+          "connection": "avXiOqkVCJTBJahe:outputs:effect"
+        },
+        "location": {
+          "connection": "VgeSrc001Rk2Lm6T:outputs:entry"
+        },
+        "attachTo": {
+          "value": true
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Me9Nb4Ld2Kq7Rm3x:ins:in"
+        }
+      }
+    },
+    {
+      "type": "module-enabled",
+      "position": {
+        "x": 840,
+        "y": 1920
+      },
+      "id": "Me9Nb4Ld2Kq7Rm3x",
+      "inputs": {
+        "module": {
+          "value": "jb2a_patreon"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "JoLoaeTOdoe5c3ve:ins:in"
+        },
+        "false": {
+          "connection": "Ff5Re3Em8Kn2Lp9d:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 1120,
+        "y": 1830
+      },
+      "id": "JoLoaeTOdoe5c3ve",
+      "inputs": {
+        "effect": {
+          "connection": "avXiOqkVCJTBJahe:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.plant_growth.04.round.2x2.complete.greenwhite"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "VLB5LzxoiGFfWd3h:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 1120,
+        "y": 2180
+      },
+      "id": "Ff5Re3Em8Kn2Lp9d",
+      "inputs": {
+        "effect": {
+          "connection": "avXiOqkVCJTBJahe:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.plant_growth.03.round.2x2.complete.greenyellow"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "VLB5LzxoiGFfWd3h:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "size",
+      "position": {
+        "x": 1400,
+        "y": 1920
+      },
+      "id": "VLB5LzxoiGFfWd3h",
+      "inputs": {
+        "effect": {
+          "connection": "avXiOqkVCJTBJahe:outputs:effect"
+        },
+        "width": {
+          "value": 5
+        },
+        "height": {
+          "value": 5
+        },
+        "gridUnits": {
+          "value": true
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "AQLKHu7qnQTupqzi:ins:in"
+        }
+      }
+    },
+    {
+      "type": "layer",
+      "position": {
+        "x": 1680,
+        "y": 1920
+      },
+      "id": "AQLKHu7qnQTupqzi",
+      "inputs": {
+        "effect": {
+          "connection": "avXiOqkVCJTBJahe:outputs:effect"
+        },
+        "belowTokens": {
+          "value": true
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "MeR3pzh84KpLMcNf:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 1960,
+        "y": 1920
+      },
+      "id": "MeR3pzh84KpLMcNf",
+      "inputs": {
+        "preload": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "kDa9U4UqGWlG6g3O:outputs:t1OGMmjxWkI9X7H6"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 290,
+        "y": 1873
+      },
+      "id": "VgeName01Kn3Rm7Q"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "kDa9U4UqGWlG6g3O:outputs:nPFz46PDjqipVJIq"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 400,
+        "y": 1873
+      },
+      "id": "VgeUuid01Lp5Wn9R"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "JQTFjmsn9dLVIdVu:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 570,
+        "y": 1873
+      },
+      "id": "VgeSrc001Rk2Lm6T"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "kDa9U4UqGWlG6g3O:outputs:t1OGMmjxWkI9X7H6"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1240,
+        "y": 593
+      },
+      "id": "VgcName02Rn7Km4L"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "JQTFjmsn9dLVIdVu:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1410,
+        "y": 593
+      },
+      "id": "VgcSrc002Wq3Rm8T"
+    }
+  ],
+  "variables": {
+    "JQTFjmsn9dLVIdVu:outputs:sources": {
+      "isArray": true,
+      "label": "Sources",
+      "type": "target"
+    },
+    "kDa9U4UqGWlG6g3O:outputs:t1OGMmjxWkI9X7H6": {
+      "isArray": false,
+      "label": "Name",
+      "type": "text"
+    },
+    "kDa9U4UqGWlG6g3O:outputs:nPFz46PDjqipVJIq": {
+      "isArray": false,
+      "label": "UUID",
+      "type": "text"
+    }
+  },
+  "description": "<p><em>Created by @Chazpls</em>\n<strong>Trigger: trove-spell:garden-of-healing</strong></p>"
 }
