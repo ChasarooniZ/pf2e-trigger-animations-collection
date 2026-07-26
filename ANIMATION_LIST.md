@@ -136,7 +136,6 @@
 
 - Force Barrage 🔊🆓 (✍🏼 @Chasarooni)
 - Garden of Healing 🔊🆓✅ (✍🏼 @ChazPls)
-- Garden of Healing (Heal) 🔊💲✅ (✍🏼 @ChazPls)
 - Harm 🔊🆓✅ (✍🏼 @Chasarooni)
 - Heal 🔊🆓✅ (✍🏼 @Chasarooni)
 

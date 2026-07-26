@@ -14,12 +14,12 @@
       "type": "animation-event",
       "inputs": {
         "name": {
-          "value": "spell:garden-of-healing"
+          "value": "spell:garden-of-healing, trove-healing:garden-of-healing, effect:spell-effect-garden-of-healing"
         }
       },
       "outs": {
         "out": {
-          "connection": "kDa9U4UqGWlG6g3O:ins:in"
+          "connection": "LcHeal9Bn4Rm2Kpq:ins:in"
         }
       }
     },
@@ -47,6 +47,14 @@
             "slug": "path",
             "isArray": false,
             "type": "text"
+          },
+          "sLugOut01Km9Rn2P": {
+            "id": "sLugOut01Km9Rn2P",
+            "input": "slug",
+            "label": "Slug",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
           }
         }
       },
@@ -57,14 +65,14 @@
       },
       "outs": {
         "out": {
-          "connection": "Gq7XbKm2Rp9Ln4Zt:ins:in"
+          "connection": "TmCalm8Bn4Rm2Kpq:ins:in"
         }
       }
     },
     {
       "type": "get-quality",
       "position": {
-        "x": 560,
+        "x": 840,
         "y": 0
       },
       "id": "Gq7XbKm2Rp9Ln4Zt",
@@ -86,7 +94,7 @@
     {
       "type": "__gate_entry__",
       "position": {
-        "x": 860,
+        "x": 1120,
         "y": 260
       },
       "id": "GeCast7Kp2Rm9Lnq",
@@ -99,7 +107,7 @@
     {
       "type": "__gate_entry__",
       "position": {
-        "x": 860,
+        "x": 1120,
         "y": 40
       },
       "id": "GeGrow5Rn3Km8Ztq",
@@ -112,7 +120,7 @@
     {
       "type": "__gate_entry__",
       "position": {
-        "x": 860,
+        "x": 1120,
         "y": -180
       },
       "id": "GeEman9Kp4Rn2Lmt",
@@ -636,7 +644,7 @@
       "type": "file",
       "position": {
         "x": 1120,
-        "y": 2180
+        "y": 2380
       },
       "id": "Ff5Re3Em8Kn2Lp9d",
       "inputs": {
@@ -649,7 +657,7 @@
       },
       "outs": {
         "out": {
-          "connection": "VLB5LzxoiGFfWd3h:ins:in"
+          "connection": "ScEmanFree10Km2R:ins:in"
         }
       }
     },
@@ -658,7 +666,7 @@
       "state": "size",
       "position": {
         "x": 1400,
-        "y": 1920
+        "y": 1830
       },
       "id": "VLB5LzxoiGFfWd3h",
       "inputs": {
@@ -685,7 +693,7 @@
       "type": "layer",
       "position": {
         "x": 1680,
-        "y": 1920
+        "y": 2100
       },
       "id": "AQLKHu7qnQTupqzi",
       "inputs": {
@@ -706,7 +714,7 @@
       "type": "play",
       "position": {
         "x": 1960,
-        "y": 1920
+        "y": 2100
       },
       "id": "MeR3pzh84KpLMcNf",
       "inputs": {
@@ -782,6 +790,1077 @@
         "y": 593
       },
       "id": "VgcSrc002Wq3Rm8T"
+    },
+    {
+      "type": "list-contains",
+      "position": {
+        "x": 280,
+        "y": -200
+      },
+      "id": "LcHeal9Bn4Rm2Kpq",
+      "inputs": {
+        "list": {
+          "connection": "JQTFjmsn9dLVIdVu:outputs:options"
+        },
+        "entry": {
+          "value": "animation-name:trove-healing:garden-of-healing"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "GeHeal9Kp2Rm4Lnt:ins:in"
+        },
+        "false": {
+          "connection": "kDa9U4UqGWlG6g3O:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "position": {
+        "x": 280,
+        "y": 2820
+      },
+      "id": "8aRUhR4IWrXPvhsB",
+      "custom": {
+        "outputs": {
+          "EZAmggQBwBAD3UdR": {
+            "id": "EZAmggQBwBAD3UdR",
+            "input": "name",
+            "label": "Name",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "BcbfnoGMbJmTPSIA": {
+            "id": "BcbfnoGMbJmTPSIA",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "VghItem01Kn4Rm8Q:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "O2qGFq562dfOB1rc:ins:in"
+        }
+      }
+    },
+    {
+      "type": "massloop",
+      "position": {
+        "x": 560,
+        "y": 2800
+      },
+      "id": "O2qGFq562dfOB1rc",
+      "inputs": {
+        "targets": {
+          "connection": "VghTgt001Lm6Rn2P:outputs:entry"
+        },
+        "sources": {
+          "connection": "VghSrc001Wm3Rk7L:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "ddLEG62Hkd9Gf2le:ins:in"
+        },
+        "outAfter": {
+          "connection": "Ih7yfJs1ON43xKmT:ins:in"
+        }
+      }
+    },
+    {
+      "type": "get-quality",
+      "position": {
+        "x": 840,
+        "y": 3000
+      },
+      "id": "ddLEG62Hkd9Gf2le",
+      "outs": {
+        "high": {
+          "connection": "MeHealBolt9Kp2Rn:ins:in"
+        },
+        "medium": {
+          "connection": "MeHealBolt9Kp2Rn:ins:in"
+        },
+        "low": {
+          "connection": "MeHealBolt9Kp2Rn:ins:in"
+        },
+        "minimal": {
+          "connection": "GeBlom5Rn2Km7Ztq:ins:in"
+        }
+      }
+    },
+    {
+      "type": "__gate_entry__",
+      "position": {
+        "x": 1680,
+        "y": 3100
+      },
+      "id": "GeBolt3Km9Rn2Lpq",
+      "outs": {
+        "out": {
+          "connection": "GxBolt7Wn4Rk8Lmd:ins:in"
+        }
+      }
+    },
+    {
+      "type": "__gate_entry__",
+      "position": {
+        "x": 1680,
+        "y": 2920
+      },
+      "id": "GeBlom5Rn2Km7Ztq",
+      "outs": {
+        "out": {
+          "connection": "GxBlom8Lm3Wq6Rkd:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 1960,
+        "y": 3000
+      },
+      "id": "Ih7yfJs1ON43xKmT",
+      "inputs": {
+        "preload": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "custom": {
+        "title": "Bolt"
+      },
+      "type": "__gate_exit__",
+      "position": {
+        "x": 0,
+        "y": 3440
+      },
+      "id": "GxBolt7Wn4Rk8Lmd",
+      "outs": {
+        "out": {
+          "connection": "9Wvgfygw2wMqZcUD:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 280,
+        "y": 3440
+      },
+      "id": "9Wvgfygw2wMqZcUD",
+      "inputs": {
+        "name": {
+          "connection": "VgbName01Kp3Rn9L:outputs:entry"
+        },
+        "origin": {
+          "connection": "VgbUuid01Wq7Rm4T:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "nGqi7w4e4pxskC1I:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "position": {
+        "x": 560,
+        "y": 3440
+      },
+      "id": "nGqi7w4e4pxskC1I",
+      "inputs": {
+        "effect": {
+          "connection": "9Wvgfygw2wMqZcUD:outputs:effect"
+        },
+        "location": {
+          "connection": "VgbSrc001Lm2Kn8D:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "OhbVrpoiVgRV5IfL:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 840,
+        "y": 3440
+      },
+      "id": "OhbVrpoiVgRV5IfL",
+      "inputs": {
+        "effect": {
+          "connection": "9Wvgfygw2wMqZcUD:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.bullet.01.green"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "BlrDp37eCZ32JgdP:ins:in"
+        }
+      }
+    },
+    {
+      "type": "aim",
+      "state": "stretchTo",
+      "position": {
+        "x": 1120,
+        "y": 3440
+      },
+      "id": "BlrDp37eCZ32JgdP",
+      "inputs": {
+        "effect": {
+          "connection": "9Wvgfygw2wMqZcUD:outputs:effect"
+        },
+        "towards": {
+          "connection": "VgbTgt001Rn6Km3P:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "GeBoBl4Kn7Rm2Lqd:ins:in"
+        }
+      }
+    },
+    {
+      "type": "__gate_entry__",
+      "position": {
+        "x": 1400,
+        "y": 3440
+      },
+      "id": "GeBoBl4Kn7Rm2Lqd",
+      "outs": {
+        "out": {
+          "connection": "GxBlom8Lm3Wq6Rkd:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "8aRUhR4IWrXPvhsB:outputs:EZAmggQBwBAD3UdR"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 290,
+        "y": 3393
+      },
+      "id": "VgbName01Kp3Rn9L"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "8aRUhR4IWrXPvhsB:outputs:BcbfnoGMbJmTPSIA"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 400,
+        "y": 3393
+      },
+      "id": "VgbUuid01Wq7Rm4T"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "O2qGFq562dfOB1rc:outputs:source"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 570,
+        "y": 3393
+      },
+      "id": "VgbSrc001Lm2Kn8D"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "O2qGFq562dfOB1rc:outputs:target"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1130,
+        "y": 3393
+      },
+      "id": "VgbTgt001Rn6Km3P"
+    },
+    {
+      "custom": {
+        "title": "Bloom"
+      },
+      "type": "__gate_exit__",
+      "position": {
+        "x": 0,
+        "y": 4080
+      },
+      "id": "GxBlom8Lm3Wq6Rkd",
+      "outs": {
+        "out": {
+          "connection": "ecQoXsf2o3gyrDO1:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 280,
+        "y": 4080
+      },
+      "id": "ecQoXsf2o3gyrDO1",
+      "inputs": {
+        "name": {
+          "connection": "VgmName01Kn8Rm5Q:outputs:entry"
+        },
+        "origin": {
+          "connection": "VgmUuid01Lp2Wn7R:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "oCLrZ3aWZkSBvrjn:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "position": {
+        "x": 560,
+        "y": 4080
+      },
+      "id": "oCLrZ3aWZkSBvrjn",
+      "inputs": {
+        "effect": {
+          "connection": "ecQoXsf2o3gyrDO1:outputs:effect"
+        },
+        "location": {
+          "connection": "VgmTgt001Rk9Lm4T:outputs:entry"
+        },
+        "attachTo": {
+          "value": true
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "dkyayq7YYDsBS9UY:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 840,
+        "y": 4080
+      },
+      "id": "dkyayq7YYDsBS9UY",
+      "inputs": {
+        "effect": {
+          "connection": "ecQoXsf2o3gyrDO1:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.healing_generic.400px.green"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "iqh4gVJjrsMnTvnR:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "position": {
+        "x": 1120,
+        "y": 4080
+      },
+      "id": "iqh4gVJjrsMnTvnR",
+      "inputs": {
+        "effect": {
+          "connection": "ecQoXsf2o3gyrDO1:outputs:effect"
+        },
+        "objectScale": {
+          "value": 1.5
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "JkqH3MB9n7IWUSmT:ins:in"
+        }
+      }
+    },
+    {
+      "type": "flow",
+      "position": {
+        "x": 1400,
+        "y": 4080
+      },
+      "id": "JkqH3MB9n7IWUSmT",
+      "inputs": {
+        "effect": {
+          "connection": "ecQoXsf2o3gyrDO1:outputs:effect"
+        },
+        "delayMin": {
+          "value": 300
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "GeBlSf6Wq2Rk9Lnt:ins:in"
+        }
+      }
+    },
+    {
+      "type": "__gate_entry__",
+      "position": {
+        "x": 1680,
+        "y": 4080
+      },
+      "id": "GeBlSf6Wq2Rk9Lnt",
+      "outs": {
+        "out": {
+          "connection": "GxHsfx2Lm8Rn4Kpd:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "8aRUhR4IWrXPvhsB:outputs:EZAmggQBwBAD3UdR"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 290,
+        "y": 4033
+      },
+      "id": "VgmName01Kn8Rm5Q"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "8aRUhR4IWrXPvhsB:outputs:BcbfnoGMbJmTPSIA"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 400,
+        "y": 4033
+      },
+      "id": "VgmUuid01Lp2Wn7R"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "O2qGFq562dfOB1rc:outputs:target"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 570,
+        "y": 4033
+      },
+      "id": "VgmTgt001Rk9Lm4T"
+    },
+    {
+      "custom": {
+        "title": "Heal SFX"
+      },
+      "type": "__gate_exit__",
+      "position": {
+        "x": 0,
+        "y": 4720
+      },
+      "id": "GxHsfx2Lm8Rn4Kpd",
+      "outs": {
+        "out": {
+          "connection": "Hs4Ou7Nd2Rk9Lm3b:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 280,
+        "y": 4720
+      },
+      "id": "Hs4Ou7Nd2Rk9Lm3b",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.magic.divine.healing.01.01"
+        },
+        "name": {
+          "connection": "VgfName01Rn3Km8P:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Ht9Im2Ng4Ke7Rp5w:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-timing",
+      "state": "milliseconds",
+      "position": {
+        "x": 560,
+        "y": 4720
+      },
+      "id": "Ht9Im2Ng4Ke7Rp5w",
+      "inputs": {
+        "sound": {
+          "connection": "Hs4Ou7Nd2Rk9Lm3b:outputs:sound"
+        },
+        "endTime": {
+          "value": 2600
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Hv5Ol8Um3Ek2Rn6t:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-volume",
+      "position": {
+        "x": 840,
+        "y": 4720
+      },
+      "id": "Hv5Ol8Um3Ek2Rn6t",
+      "inputs": {
+        "sound": {
+          "connection": "Hs4Ou7Nd2Rk9Lm3b:outputs:sound"
+        },
+        "fadeOutDuration": {
+          "value": 700
+        },
+        "fadeOutDelay": {
+          "value": 0
+        },
+        "fadeOutEase": {
+          "value": "easeOutQuad"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Hl6Oc2At8Rm4Kn7d:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "position": {
+        "x": 1120,
+        "y": 4720
+      },
+      "id": "Hl6Oc2At8Rm4Kn7d",
+      "inputs": {
+        "sound": {
+          "connection": "Hs4Ou7Nd2Rk9Lm3b:outputs:sound"
+        },
+        "location": {
+          "connection": "VgfTgt001Wm5Rk2L:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Hf3Lo9Wq2Rk5Nm8t:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "position": {
+        "x": 1400,
+        "y": 4720
+      },
+      "id": "Hf3Lo9Wq2Rk5Nm8t",
+      "inputs": {
+        "sound": {
+          "connection": "Hs4Ou7Nd2Rk9Lm3b:outputs:sound"
+        },
+        "preset": {
+          "value": "troveSound"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "8aRUhR4IWrXPvhsB:outputs:EZAmggQBwBAD3UdR"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 290,
+        "y": 4673
+      },
+      "id": "VgfName01Rn3Km8P"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "O2qGFq562dfOB1rc:outputs:target"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1130,
+        "y": 4673
+      },
+      "id": "VgfTgt001Wm5Rk2L"
+    },
+    {
+      "type": "__gate_entry__",
+      "position": {
+        "x": 560,
+        "y": -200
+      },
+      "id": "GeHeal9Kp2Rm4Lnt",
+      "outs": {
+        "out": {
+          "connection": "GxHeal3Wn7Rk5Lmd:ins:in"
+        }
+      }
+    },
+    {
+      "custom": {
+        "title": "Heal"
+      },
+      "type": "__gate_exit__",
+      "position": {
+        "x": 0,
+        "y": 2800
+      },
+      "id": "GxHeal3Wn7Rk5Lmd",
+      "outs": {
+        "out": {
+          "connection": "8aRUhR4IWrXPvhsB:ins:in"
+        }
+      }
+    },
+    {
+      "type": "__variable_getter__",
+      "position": {
+        "x": 100,
+        "y": 2740
+      },
+      "id": "VghItem01Kn4Rm8Q",
+      "inputs": {
+        "entry": {
+          "connection": "JQTFjmsn9dLVIdVu:outputs:item"
+        }
+      }
+    },
+    {
+      "type": "__variable_getter__",
+      "position": {
+        "x": 380,
+        "y": 2740
+      },
+      "id": "VghTgt001Lm6Rn2P",
+      "inputs": {
+        "entry": {
+          "connection": "JQTFjmsn9dLVIdVu:outputs:targets"
+        }
+      }
+    },
+    {
+      "type": "__variable_getter__",
+      "position": {
+        "x": 560,
+        "y": 2740
+      },
+      "id": "VghSrc001Wm3Rk7L",
+      "inputs": {
+        "entry": {
+          "connection": "JQTFjmsn9dLVIdVu:outputs:sources"
+        }
+      }
+    },
+    {
+      "type": "texts-match",
+      "position": {
+        "x": 560,
+        "y": 20
+      },
+      "id": "TmCalm8Bn4Rm2Kpq",
+      "inputs": {
+        "a": {
+          "value": "spell-effect-garden-of-healing"
+        },
+        "b": {
+          "connection": "kDa9U4UqGWlG6g3O:outputs:sLugOut01Km9Rn2P"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "GeCalm4Kp8Rn2Lnt:ins:in"
+        },
+        "false": {
+          "connection": "Gq7XbKm2Rp9Ln4Zt:ins:in"
+        }
+      }
+    },
+    {
+      "type": "__gate_entry__",
+      "position": {
+        "x": 840,
+        "y": -240
+      },
+      "id": "GeCalm4Kp8Rn2Lnt",
+      "outs": {
+        "out": {
+          "connection": "GxCalm7Wn3Rk5Lmd:ins:in"
+        }
+      }
+    },
+    {
+      "custom": {
+        "title": "Calm"
+      },
+      "type": "__gate_exit__",
+      "position": {
+        "x": 0,
+        "y": 5360
+      },
+      "id": "GxCalm7Wn3Rk5Lmd",
+      "outs": {
+        "out": {
+          "connection": "CeCalm1Ef4Xn9Pdq:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 280,
+        "y": 5360
+      },
+      "id": "CeCalm1Ef4Xn9Pdq",
+      "inputs": {
+        "name": {
+          "connection": "VgcCalm01Nm4Rk8L:outputs:entry"
+        },
+        "origin": {
+          "connection": "VgcCalm02Uu7Wm3T:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "ClCalm2Loc8Km3Zt:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "position": {
+        "x": 560,
+        "y": 5360
+      },
+      "id": "ClCalm2Loc8Km3Zt",
+      "inputs": {
+        "effect": {
+          "connection": "CeCalm1Ef4Xn9Pdq:outputs:effect"
+        },
+        "location": {
+          "connection": "VgcCalm03Sr5Kn2P:outputs:entry"
+        },
+        "attachTo": {
+          "value": true
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "MeCalm7Mod8Kp2Rn:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "position": {
+        "x": 1680,
+        "y": 5270
+      },
+      "id": "CsCalm4Sc8Ke4Wm3",
+      "inputs": {
+        "effect": {
+          "connection": "CeCalm1Ef4Xn9Pdq:outputs:effect"
+        },
+        "objectScale": {
+          "value": 2
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "CyCalm6Pl4KpLMcN:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 1960,
+        "y": 5500
+      },
+      "id": "CyCalm6Pl4KpLMcN",
+      "inputs": {
+        "preload": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "type": "__variable_getter__",
+      "position": {
+        "x": 100,
+        "y": 6440
+      },
+      "id": "VgcCalm01Nm4Rk8L",
+      "inputs": {
+        "entry": {
+          "connection": "kDa9U4UqGWlG6g3O:outputs:t1OGMmjxWkI9X7H6"
+        }
+      }
+    },
+    {
+      "type": "__variable_getter__",
+      "position": {
+        "x": 220,
+        "y": 6440
+      },
+      "id": "VgcCalm02Uu7Wm3T",
+      "inputs": {
+        "entry": {
+          "connection": "kDa9U4UqGWlG6g3O:outputs:nPFz46PDjqipVJIq"
+        }
+      }
+    },
+    {
+      "type": "__variable_getter__",
+      "position": {
+        "x": 380,
+        "y": 6440
+      },
+      "id": "VgcCalm03Sr5Kn2P",
+      "inputs": {
+        "entry": {
+          "connection": "JQTFjmsn9dLVIdVu:outputs:sources"
+        }
+      }
+    },
+    {
+      "type": "module-enabled",
+      "position": {
+        "x": 840,
+        "y": 5360
+      },
+      "id": "MeCalm7Mod8Kp2Rn",
+      "inputs": {
+        "module": {
+          "value": "jb2a_patreon"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "CfCalmPFi9Wn3Km4:ins:in"
+        },
+        "false": {
+          "connection": "CfCalmFFi8Rk2Lp5:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 1120,
+        "y": 5270
+      },
+      "id": "CfCalmPFi9Wn3Km4",
+      "inputs": {
+        "effect": {
+          "connection": "CeCalm1Ef4Xn9Pdq:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.condition.boon.02.008.refraction"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "StCalmPHu6Km4Rn7:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 1120,
+        "y": 5860
+      },
+      "id": "CfCalmFFi8Rk2Lp5",
+      "inputs": {
+        "effect": {
+          "connection": "CeCalm1Ef4Xn9Pdq:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.magic_signs.rune.abjuration.intro.blue"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "StCalmFHu5Wn8Lq3:ins:in"
+        }
+      }
+    },
+    {
+      "type": "style",
+      "position": {
+        "x": 1400,
+        "y": 5270
+      },
+      "id": "StCalmPHu6Km4Rn7",
+      "inputs": {
+        "effect": {
+          "connection": "CeCalm1Ef4Xn9Pdq:outputs:effect"
+        },
+        "tint": {
+          "value": "#a8ef7a"
+        },
+        "blendMode": {
+          "value": "add"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "CsCalm4Sc8Ke4Wm3:ins:in"
+        }
+      }
+    },
+    {
+      "type": "style",
+      "position": {
+        "x": 1400,
+        "y": 5860
+      },
+      "id": "StCalmFHu5Wn8Lq3",
+      "inputs": {
+        "effect": {
+          "connection": "CeCalm1Ef4Xn9Pdq:outputs:effect"
+        },
+        "filterType": {
+          "value": "ColorMatrix"
+        },
+        "filterData": {
+          "value": "{\"hue\": -120}"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "CsCalmFSc9Wn3Lm5:ins:in"
+        }
+      }
+    },
+    {
+      "type": "module-enabled",
+      "position": {
+        "x": 1120,
+        "y": 3000
+      },
+      "id": "MeHealBolt9Kp2Rn",
+      "inputs": {
+        "module": {
+          "value": "jb2a_patreon"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "GeBolt3Km9Rn2Lpq:ins:in"
+        },
+        "false": {
+          "connection": "GeBlom5Rn2Km7Ztq:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "size",
+      "position": {
+        "x": 1400,
+        "y": 2380
+      },
+      "id": "ScEmanFree10Km2R",
+      "inputs": {
+        "effect": {
+          "connection": "avXiOqkVCJTBJahe:outputs:effect"
+        },
+        "width": {
+          "value": 10
+        },
+        "height": {
+          "value": 10
+        },
+        "gridUnits": {
+          "value": true
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "AQLKHu7qnQTupqzi:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "position": {
+        "x": 1680,
+        "y": 5860
+      },
+      "id": "CsCalmFSc9Wn3Lm5",
+      "inputs": {
+        "effect": {
+          "connection": "CeCalm1Ef4Xn9Pdq:outputs:effect"
+        },
+        "objectScale": {
+          "value": 1.5
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "CyCalm6Pl4KpLMcN:ins:in"
+        }
+      }
     }
   ],
   "variables": {
@@ -799,7 +1878,42 @@
       "isArray": false,
       "label": "UUID",
       "type": "text"
+    },
+    "8aRUhR4IWrXPvhsB:outputs:EZAmggQBwBAD3UdR": {
+      "isArray": false,
+      "label": "Name",
+      "type": "text"
+    },
+    "8aRUhR4IWrXPvhsB:outputs:BcbfnoGMbJmTPSIA": {
+      "isArray": false,
+      "label": "UUID",
+      "type": "text"
+    },
+    "O2qGFq562dfOB1rc:outputs:source": {
+      "isArray": false,
+      "label": "Source",
+      "type": "target"
+    },
+    "O2qGFq562dfOB1rc:outputs:target": {
+      "isArray": false,
+      "label": "Target",
+      "type": "target"
+    },
+    "JQTFjmsn9dLVIdVu:outputs:item": {
+      "isArray": false,
+      "label": "Item",
+      "type": "item"
+    },
+    "JQTFjmsn9dLVIdVu:outputs:targets": {
+      "isArray": true,
+      "label": "Targets",
+      "type": "target"
+    },
+    "kDa9U4UqGWlG6g3O:outputs:sLugOut01Km9Rn2P": {
+      "isArray": false,
+      "label": "Slug",
+      "type": "text"
     }
   },
-  "description": "<p><em>Created by @Chazpls</em>\n<strong>Trigger: trove-spell:garden-of-healing</strong></p>"
+  "description": "<p>Garden of Healing — on cast, verdant growth blooms around the caster (with an earthen cast flourish at high quality). When an ally in the garden takes damage, a green bolt streaks to them and blooms with a short divine healing chime. When the lingering calm effect is applied, a soft abjuration rune (free, hue-shifted toward green) or a green-tinted boon refraction (Patreon) settles on the token.</p><p><strong>Keywords:</strong> garden-of-healing</p><p><em>Single blueprint, three dispatch names: <code>spell:garden-of-healing</code> (Spell Message), <code>trove-healing:garden-of-healing</code> (Handler: Healing), and <code>effect:spell-effect-garden-of-healing</code> (Effect Granted). Branched via healing <code>animation-name</code> and effect item slug. Calm path runs at all quality tiers; no SFX.</em></p>"
 }
