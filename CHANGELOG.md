@@ -1,5 +1,7 @@
 ## Unreleased
 
+## 0.9.3
+
 - **Animations**
   - **New**
     - Chromatic Ray, Electrical Blast, Fangs, Frostbite, Haste, Ray of Frost, Shield, Slow (@ChasarooniZ)
@@ -8,9 +10,11 @@
     - Solar Weapon _Fix missing link in Solar Weapon and add an extra animation for non-potato computers_ (@Suldrun45)
 - **Updated**
   - `Damage Roll` trigger now properly checks if damage slugs are enabled before calling animations for them
+  - Fixed a bug causing the `Enable All Triggers` dialog to not work properly on a new world (🐛 @Suldrun45, @Dio)
+  - Updated `Enable All Triggers` dialog to also include `Trigger Animation` triggers
   - Updated to `Trigger Animations` version `0.6.6`
-  - Increased minimum `GGG` version to `0.0.22`
-    - _Adds clock animations_
+  - Increased minimum `GGG` version to `0.0.23`
+    - _Adds clock animations + Crafting SFX_
 
 ## 0.9.2
 

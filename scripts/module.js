@@ -16,7 +16,6 @@ Hooks.once("triggerAnimations.ready", async (api) => {
   if (game.user.isGM) {
     if (!window?.troveAnimationsAsked) {
       window.troveAnimationsAsked = true;
-      await askToEnableNewTriggersDialog();
       askToAddNewAnimationsDialog();
     }
   }
@@ -29,6 +28,9 @@ Hooks.once("init", async function () {
 
 Hooks.once("ready", async function () {
   registerPresets();
+  if (game.user.isGM) {
+    setTimeout(askToEnableNewTriggersDialog, 2000);
+  }
 });
 // function modifyTriggerAnimationTemplates() {
 //   triggerAnimations.api.templates.attack.prefixes = [
