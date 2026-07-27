@@ -3,7 +3,7 @@
   "folder": "Spells",
   "priority": 0,
   "id": "244d736d6335b49e",
-  "description": "<p>Created by @ChazPls</p><p><strong>Trigger: <code>effect:spell-effect-bless,update:spell-effect-bless</code></strong></p><p>Caster grant: minimal SFX+boon; low aura+SFX; med/high aura+SFX+boon. Allies: boon only (<code>flags.pf2e.aura</code>). Sustain badge update replays aura at new radius.</p>",
+  "description": "<p>Created by @ChazPls</p><p><strong>Trigger: <code>effect:spell-effect-bless,update:spell-effect-bless</code></strong></p><p>Caster grant: minimal SFX+boon; low aura+SFX; med/high aura+SFX+boon. Allies always get boon only (<code>flags.pf2e.aura</code>). Sustain badge update replays aura at new radius.</p>",
   "nodes": [
     {
       "id": "105995ab94e8d4f3",
@@ -347,7 +347,7 @@
           "connection": "4f5355ee7babd26d:ins:in"
         },
         "false": {
-          "connection": "c3c68a68c6ddd6b6:ins:in"
+          "connection": "eeb52a8dc98c7f99:ins:in"
         }
       }
     },
@@ -370,28 +370,6 @@
         },
         "high": {
           "connection": "e760b93c5efda4a3:ins:in"
-        }
-      }
-    },
-    {
-      "id": "c3c68a68c6ddd6b6",
-      "type": "get-quality",
-      "position": {
-        "x": 660,
-        "y": 1420
-      },
-      "outs": {
-        "minimal": {
-          "connection": "eeb52a8dc98c7f99:ins:in"
-        },
-        "low": {
-          "connection": "eeb52a8dc98c7f99:ins:in"
-        },
-        "medium": {
-          "connection": "eeb52a8dc98c7f99:ins:in"
-        },
-        "high": {
-          "connection": "eeb52a8dc98c7f99:ins:in"
         }
       }
     },
@@ -671,7 +649,7 @@
       "id": "a1b2c3d4e5f60718",
       "type": "visibility",
       "position": {
-        "x": 1360,
+        "x": 1500,
         "y": 1900
       },
       "inputs": {
@@ -692,7 +670,7 @@
       "id": "567f3d8567b2cb17",
       "type": "layer",
       "position": {
-        "x": 1500,
+        "x": 1780,
         "y": 1900
       },
       "inputs": {
@@ -713,7 +691,7 @@
       "id": "1f531c617e338385",
       "type": "__gate_entry__",
       "position": {
-        "x": 1780,
+        "x": 2060,
         "y": 1900
       },
       "outs": {
@@ -902,7 +880,7 @@
       "id": "b2c3d4e5f6071829",
       "type": "visibility",
       "position": {
-        "x": 1360,
+        "x": 1500,
         "y": 2500
       },
       "inputs": {
@@ -923,7 +901,7 @@
       "id": "5438c61923721957",
       "type": "layer",
       "position": {
-        "x": 1500,
+        "x": 1780,
         "y": 2500
       },
       "inputs": {
@@ -944,7 +922,7 @@
       "id": "c5621dc831a94b0d",
       "type": "__gate_entry__",
       "position": {
-        "x": 1780,
+        "x": 2060,
         "y": 2500
       },
       "outs": {
