@@ -11,35 +11,34 @@ Hooks.once("triggerEngine.registerTriggers", (registerTriggers) => {
   registerTriggers("trigger-engine", "pf2e-trigger", triggerEngineTriggersPath);
 });
 
-Hooks.once("triggerAnimations.ready", async (api) => {
-  registerTriggerAnimationTemplates();
-  if (game.user.isGM) {
-    if (!window?.troveAnimationsAsked) {
-      window.troveAnimationsAsked = true;
-      askToAddNewAnimationsDialog();
-    }
-  }
-  // modifyTriggerAnimationTemplates();
-});
-
-Hook.once("triggerEngine.ready", async () => {
-  if (game.user.isGM) {
-    const version = game?.modules?.get("trigger-engine")?.version;
-    if (
-      version !== "1.22.1" &&
-      !foundry.utils.isNewerVersion(version, "1.22.1")
-    ) {
-      ui.notifications.warning(
-        "[Trigger Animation Trove] Update to at least Trigger Engine '1.22.1'",
-      );
-      return;
-    }
-    askToEnableNewTriggersDialog();
-  }
-});
-
 Hooks.once("init", async function () {
   setupSettings();
+  Hooks.once("triggerAnimations.ready", async (api) => {
+    registerTriggerAnimationTemplates();
+    if (game.user.isGM) {
+      if (!window?.troveAnimationsAsked) {
+        window.troveAnimationsAsked = true;
+        askToAddNewAnimationsDialog();
+      }
+    }
+    // modifyTriggerAnimationTemplates();
+  });
+
+  Hooks.once("triggerEngine.ready", async () => {
+    if (game.user.isGM) {
+      const version = game?.modules?.get("trigger-engine")?.version;
+      if (
+        version !== "1.22.1" &&
+        !foundry.utils.isNewerVersion(version, "1.22.1")
+      ) {
+        ui.notifications.warning(
+          "[Trigger Animation Trove] Update to at least Trigger Engine '1.22.1'",
+        );
+        return;
+      }
+      askToEnableNewTriggersDialog();
+    }
+  });
 });
 
 Hooks.once("ready", async function () {
