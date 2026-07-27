@@ -29,7 +29,9 @@ function validateFileName({ path, name }) {
     .slice(0, -5);
   const slug = sluggify(name);
   if (slug !== fileName) {
-    console.error(`- Invalid File name '${fileName}.json' should be 'slug'`);
+    console.error(
+      `- Invalid File name '${fileName}.json' should be '${slug}.json'`,
+    );
   }
   return slug === fileName;
 }
