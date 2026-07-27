@@ -126,6 +126,7 @@
 #### Focus Spells
 
 - Cackle 🔊🆓 (✍🏼 @Chasarooni)
+- Earth's Bile 🔊🆓✅ (✍🏼 @ChazPls)
 - Force Bolt 🔊🆓 (✍🏼 @Chasarooni)
 - Force Fang 🔊🆓 (✍🏼 @Chasarooni)
 - Hurtling Stone 🔊🆓 (✍🏼 @Chasarooni)
