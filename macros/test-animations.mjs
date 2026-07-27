@@ -24,7 +24,7 @@ const CATEGORIES = {
 function validateFileName({ path, name }) {
   const fileName = path
     .slice(path.indexOf(PATH_START) + PATH_START_BOOST)
-    .split("\\")
+    .split(/[\\|/]/)
     .at(-1)
     .slice(0, -5);
   const slug = sluggify(name);
@@ -94,4 +94,6 @@ function testAnimations(animationsDir = "./animations") {
 
 const animationsDir = process.argv[2] || "./animations";
 
-console.error(testAnimations(animationsDir));
+const errors = testAnimations(animationsDir);
+console.error(errors);
+throw new Error("An error with the formatting was found");

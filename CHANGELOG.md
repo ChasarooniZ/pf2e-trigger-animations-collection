@@ -11,6 +11,7 @@
 - **Updated**
   - Used newly introduced trigger engine feature to delay the `Enable All Triggers` dialogue till it can be properly called (requires `1.22.1`)
   - `Trove Attack: Handler` added special case to handle base `Unarmed Attack`
+  - Updated `Test Animations` to actually run properly
 
 ## 0.9.3
 
