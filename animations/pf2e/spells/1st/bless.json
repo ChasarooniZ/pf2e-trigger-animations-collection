@@ -3,7 +3,7 @@
   "folder": "Spells",
   "priority": 0,
   "id": "244d736d6335b49e",
-  "description": "<p>Created by @ChazPls</p><p><strong>Trigger: <code>effect:spell-effect-bless,update:spell-effect-bless</code></strong></p><p>Caster grant: minimal SFX+boon; low aura+SFX; med/high aura+SFX+boon. Allies always get boon only (<code>flags.pf2e.aura</code>). Sustain badge update replays aura at new radius.</p>",
+  "description": "<p>Created by @ChazPls</p><p><strong>Trigger: <code>effect:spell-effect-bless,update:spell-effect-bless</code></strong></p>",
   "nodes": [
     {
       "id": "105995ab94e8d4f3",
