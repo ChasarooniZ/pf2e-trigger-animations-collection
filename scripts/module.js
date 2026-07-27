@@ -26,16 +26,6 @@ Hooks.once("init", async function () {
 
   Hooks.once("triggerEngine.ready", async () => {
     if (game.user.isGM) {
-      const version = game?.modules?.get("trigger-engine")?.version;
-      if (
-        version !== "1.22.1" &&
-        !foundry.utils.isNewerVersion(version, "1.22.1")
-      ) {
-        ui.notifications.warning(
-          "[Trigger Animation Trove] Update to at least Trigger Engine '1.22.1'",
-        );
-        return;
-      }
       askToEnableNewTriggersDialog();
     }
   });
