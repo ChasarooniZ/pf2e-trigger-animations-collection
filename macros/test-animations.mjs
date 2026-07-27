@@ -97,5 +97,7 @@ function testAnimations(animationsDir = "./animations") {
 const animationsDir = process.argv[2] || "./animations";
 
 const errors = testAnimations(animationsDir);
-console.error(errors);
-throw new Error("An error with the formatting was found");
+if (errors.length > 0) {
+  console.error(errors);
+  throw new Error("An error with the formatting was found");
+}
