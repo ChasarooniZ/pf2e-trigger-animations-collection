@@ -134,6 +134,7 @@
 
 #### 1st Rank Spells
 
+- Bless 🔊🆓✅ (✍🏼 @ChazPls)
 - Force Barrage 🔊🆓 (✍🏼 @Chasarooni)
 - Harm 🔊🆓✅ (✍🏼 @Chasarooni)
 - Heal 🔊🆓✅ (✍🏼 @Chasarooni)
