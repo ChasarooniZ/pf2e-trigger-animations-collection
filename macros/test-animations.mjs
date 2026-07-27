@@ -69,11 +69,15 @@ function testAnimations(animationsDir = "./animations") {
       if (
         !validateFileName({
           path: filePath,
-          name: data.name,
+          name: data?.name,
         })
       ) {
         errors.push({ id: filePath, error: "Invalid File name" });
       }
+      if (Array.isArray(data)) {
+        errors.push({ id: filePath, error: "This is an Array not an Object" });
+      }
+
       const nodeErrors = validateNodes(data);
       if (nodeErrors.length > 0) {
         errors.push(...nodeErrors);
