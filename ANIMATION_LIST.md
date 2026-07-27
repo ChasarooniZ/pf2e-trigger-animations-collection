@@ -135,6 +135,7 @@
 #### 1st Rank Spells
 
 - Force Barrage 🔊🆓 (✍🏼 @Chasarooni)
+- Garden of Healing 🔊🆓✅ (✍🏼 @ChazPls)
 - Harm 🔊🆓✅ (✍🏼 @Chasarooni)
 - Heal 🔊🆓✅ (✍🏼 @Chasarooni)
 
