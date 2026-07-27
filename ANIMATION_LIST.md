@@ -42,6 +42,7 @@
     - [Feats](#feats)
       - [Ancestry Feats](#ancestry-feats)
       - [Class Feats](#class-feats)
+      - [Shared](#shared)
       - [General Feats](#general-feats)
       - [Skill Feats](#skill-feats)
       - [Archetype Feats](#archetype-feats)
@@ -129,15 +130,15 @@
 - Earth's Bile 🔊🆓✅ (✍🏼 @ChazPls)
 - Force Bolt 🔊🆓 (✍🏼 @Chasarooni)
 - Force Fang 🔊🆓 (✍🏼 @Chasarooni)
+- Garden of Healing 🔊🆓✅ (✍🏼 @ChazPls, 🛠️ @Chasarooni)
 - Hurtling Stone 🔊🆓 (✍🏼 @Chasarooni)
 - Ignition _TODO, Handle Psychic Yes + Melee somehow_ 🔊🆓 (✍🏼 @Chasarooni)
 - Lay on Hands 🔊🆓 (✍🏼 @Chasarooni)
 
 #### 1st Rank Spells
 
-- Bless 🔊🆓✅ (✍🏼 @ChazPls)
+- Bless 🔊🆓✅ (✍🏼 @ChazPls, 🛠️ @Chasarooni)
 - Force Barrage 🔊🆓 (✍🏼 @Chasarooni)
-- Garden of Healing 🔊🆓✅ (✍🏼 @ChazPls)
 - Harm 🔊🆓✅ (✍🏼 @Chasarooni)
 - Heal 🔊🆓✅ (✍🏼 @Chasarooni)
 
@@ -220,6 +221,10 @@
 
 #### Class Feats
 
+#### Shared
+
+- Whirlwind Strike 🔊🆓 (✍🏼 @Chasarooni)
+
 #### General Feats
 
 #### Skill Feats
@@ -238,6 +243,7 @@
 - Fist 🔊🆓 (✍🏼 @Chasarooni)
 - Jaws 🔇🆓 (✍🏼 @Chasarooni)
 - Thunderbolt 🔊🆓 (✍🏼 @Chasarooni)
+- Unarmed Attack 🔊🆓 (✍🏼 @Chasarooni)
 
 #### Weapons
 
@@ -248,6 +254,7 @@
 - Crossbow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Firearm 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Hammer 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
+- Knife 🔊🆓 (✍🏼 @Chasarooni)
 - Polearm 🔊🆓 (✍🏼 @Chasarooni)
 - Shield 🔊🆓 (✍🏼 @Chasarooni)
 - Sling 🔊🆓 (✍🏼 @Chasarooni)

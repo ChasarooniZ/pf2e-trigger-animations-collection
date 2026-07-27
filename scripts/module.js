@@ -22,15 +22,28 @@ Hooks.once("triggerAnimations.ready", async (api) => {
   // modifyTriggerAnimationTemplates();
 });
 
+Hook.once("triggerEngine.ready", async () => {
+  if (game.user.isGM) {
+    const version = game?.modules?.get("trigger-engine")?.version;
+    if (
+      version !== "1.22.1" &&
+      !foundry.utils.isNewerVersion(version, "1.22.1")
+    ) {
+      ui.notifications.warning(
+        "[Trigger Animation Trove] Update to at least Trigger Engine '1.22.1'",
+      );
+      return;
+    }
+    askToEnableNewTriggersDialog();
+  }
+});
+
 Hooks.once("init", async function () {
   setupSettings();
 });
 
 Hooks.once("ready", async function () {
   registerPresets();
-  if (game.user.isGM) {
-    setTimeout(askToEnableNewTriggersDialog, 2000);
-  }
 });
 // function modifyTriggerAnimationTemplates() {
 //   triggerAnimations.api.templates.attack.prefixes = [

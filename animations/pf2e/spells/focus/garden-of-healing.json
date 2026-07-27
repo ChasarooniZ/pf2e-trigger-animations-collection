@@ -2,8 +2,6 @@
   "name": "Garden of Healing",
   "folder": "Spells",
   "priority": 0,
-  "tags": ["spell", "pf2e"],
-  "id": "PPgdzUvZ3gpmmICi",
   "nodes": [
     {
       "id": "JQTFjmsn9dLVIdVu",
@@ -611,11 +609,11 @@
         }
       },
       "outs": {
-        "true": {
-          "connection": "JoLoaeTOdoe5c3ve:ins:in"
-        },
         "false": {
           "connection": "Ff5Re3Em8Kn2Lp9d:ins:in"
+        },
+        "true": {
+          "connection": "JoLoaeTOdoe5c3ve:ins:in"
         }
       }
     },
@@ -636,7 +634,7 @@
       },
       "outs": {
         "out": {
-          "connection": "VLB5LzxoiGFfWd3h:ins:in"
+          "connection": "1JYUvuA9xh0KH6hJ:ins:in"
         }
       }
     },
@@ -657,7 +655,7 @@
       },
       "outs": {
         "out": {
-          "connection": "ScEmanFree10Km2R:ins:in"
+          "connection": "KDZ7tR2q1VaZ1OzD:ins:in"
         }
       }
     },
@@ -665,8 +663,8 @@
       "type": "scale",
       "state": "size",
       "position": {
-        "x": 1400,
-        "y": 1830
+        "x": 1659.9999999999998,
+        "y": 1826.6666666666667
       },
       "id": "VLB5LzxoiGFfWd3h",
       "inputs": {
@@ -674,10 +672,10 @@
           "connection": "avXiOqkVCJTBJahe:outputs:effect"
         },
         "width": {
-          "value": 5
+          "connection": "1JYUvuA9xh0KH6hJ:outputs:dhY2zUf869u0lglr"
         },
         "height": {
-          "value": 5
+          "connection": "1JYUvuA9xh0KH6hJ:outputs:dhY2zUf869u0lglr"
         },
         "gridUnits": {
           "value": true
@@ -692,8 +690,8 @@
     {
       "type": "layer",
       "position": {
-        "x": 1680,
-        "y": 2100
+        "x": 1939.9999999999998,
+        "y": 2096.666666666667
       },
       "id": "AQLKHu7qnQTupqzi",
       "inputs": {
@@ -713,8 +711,8 @@
     {
       "type": "play",
       "position": {
-        "x": 1960,
-        "y": 2100
+        "x": 2220,
+        "y": 2096.666666666667
       },
       "id": "MeR3pzh84KpLMcNf",
       "inputs": {
@@ -1816,8 +1814,8 @@
       "type": "scale",
       "state": "size",
       "position": {
-        "x": 1400,
-        "y": 2380
+        "x": 1659.9999999999998,
+        "y": 2376.666666666667
       },
       "id": "ScEmanFree10Km2R",
       "inputs": {
@@ -1825,10 +1823,10 @@
           "connection": "avXiOqkVCJTBJahe:outputs:effect"
         },
         "width": {
-          "value": 10
+          "connection": "KDZ7tR2q1VaZ1OzD:outputs:dhY2zUf869u0lglr"
         },
         "height": {
-          "value": 10
+          "connection": "KDZ7tR2q1VaZ1OzD:outputs:dhY2zUf869u0lglr"
         },
         "gridUnits": {
           "value": true
@@ -1861,6 +1859,114 @@
           "connection": "CyCalm6Pl4KpLMcN:ins:in"
         }
       }
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 1347.2564102564102,
+        "y": 1824.4
+      },
+      "id": "1JYUvuA9xh0KH6hJ",
+      "custom": {
+        "inputs": {
+          "fGg4AC1DePnwcFKX": {
+            "id": "fGg4AC1DePnwcFKX",
+            "label": "Source",
+            "slug": "input",
+            "isArray": false,
+            "type": "target"
+          }
+        },
+        "outputs": {
+          "dhY2zUf869u0lglr": {
+            "id": "dhY2zUf869u0lglr",
+            "label": "Scale",
+            "slug": "output",
+            "isArray": false,
+            "type": "number"
+          }
+        }
+      },
+      "inputs": {
+        "fGg4AC1DePnwcFKX": {
+          "connection": "ceF8zakCswxK6VXe:outputs:entry"
+        },
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst tokenWidth = ((inputs[0]?.token ?? inputs[0]?.actor?.token)?.width ?? 1);\nconst size = (tokenWidth / 2 + (2)) * 2;\nreturn [{type: \"number\", value: size}];"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "VLB5LzxoiGFfWd3h:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "JQTFjmsn9dLVIdVu:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1166.9999999999995,
+        "y": 1763.7500000000002
+      },
+      "id": "ceF8zakCswxK6VXe"
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 1377.2564102564102,
+        "y": 2372.7333333333336
+      },
+      "id": "KDZ7tR2q1VaZ1OzD",
+      "custom": {
+        "inputs": {
+          "fGg4AC1DePnwcFKX": {
+            "id": "fGg4AC1DePnwcFKX",
+            "label": "Source",
+            "slug": "input",
+            "isArray": false,
+            "type": "target"
+          }
+        },
+        "outputs": {
+          "dhY2zUf869u0lglr": {
+            "id": "dhY2zUf869u0lglr",
+            "label": "Scale",
+            "slug": "output",
+            "isArray": false,
+            "type": "number"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst tokenWidth = ((inputs[0]?.token ?? inputs[0]?.actor?.token)?.width ?? 1);\nconst size = (tokenWidth / 2 + (2)) * 2;\nreturn [{type: \"number\", value: size * 2}];"
+        },
+        "fGg4AC1DePnwcFKX": {
+          "connection": "YZeKaCGqnhSdZoUY:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "ScEmanFree10Km2R:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "JQTFjmsn9dLVIdVu:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1210.412698412698,
+        "y": 2333.11507936508
+      },
+      "id": "YZeKaCGqnhSdZoUY"
     }
   ],
   "variables": {
@@ -1915,5 +2021,6 @@
       "type": "text"
     }
   },
-  "description": "<p>Garden of Healing — on cast, verdant growth blooms around the caster (with an earthen cast flourish at high quality). When an ally in the garden takes damage, a green bolt streaks to them and blooms with a short divine healing chime. When the lingering calm effect is applied, a soft abjuration rune (free, hue-shifted toward green) or a green-tinted boon refraction (Patreon) settles on the token.</p><p><strong>Keywords:</strong> garden-of-healing</p><p><em>Single blueprint, three dispatch names: <code>spell:garden-of-healing</code> (Spell Message), <code>trove-healing:garden-of-healing</code> (Handler: Healing), and <code>effect:spell-effect-garden-of-healing</code> (Effect Granted). Branched via healing <code>animation-name</code> and effect item slug. Calm path runs at all quality tiers; no SFX.</em></p>"
+  "description": "<p>Garden of Healing — on cast, verdant growth blooms around the caster (with an earthen cast flourish at high quality). When an ally in the garden takes damage, a green bolt streaks to them and blooms with a short divine healing chime. When the lingering calm effect is applied, a soft abjuration rune (free, hue-shifted toward green) or a green-tinted boon refraction (Patreon) settles on the token.</p><p><strong>Keywords:</strong> garden-of-healing</p><p><em>Single blueprint, three dispatch names: <code>spell:garden-of-healing</code> (Spell Message), <code>trove-healing:garden-of-healing</code> (Handler: Healing), and <code>effect:spell-effect-garden-of-healing</code> (Effect Granted). Branched via healing <code>animation-name</code> and effect item slug. Calm path runs at all quality tiers; no SFX.</em></p>",
+  "id": "5Cz8EFwc5t06Sy99"
 }

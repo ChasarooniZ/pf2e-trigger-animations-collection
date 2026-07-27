@@ -83,6 +83,13 @@
             "label": "Badge",
             "slug": "input",
             "type": "number"
+          },
+          "KrYESx7AV5uV9urs": {
+            "id": "KrYESx7AV5uV9urs",
+            "label": "Source",
+            "slug": "input",
+            "isArray": false,
+            "type": "target"
           }
         },
         "outputs": {
@@ -96,10 +103,13 @@
       },
       "inputs": {
         "script": {
-          "value": "const badge = Number(inputs[0]) || 1;\nconst size = 5 + 5 * badge;\nreturn [{ type: \"number\", value: size }];"
+          "value": "const badge = Number(inputs[0]) ?? 1;\nconst sizeInFt = 5 + (badge * 10);\nconst tokenWidth = ((inputs[1]?.token ?? inputs[1]?.actor?.token)?.width ?? 1);\nconst size = (tokenWidth / 2 + (sizeInFt / 5)) * 2;\nreturn [{ type: \"number\", value: size * 1.3 }];"
         },
         "daefd32469135af8": {
           "connection": "48a2d7d08c8cb775:outputs:f9501d45df26d4f8"
+        },
+        "KrYESx7AV5uV9urs": {
+          "connection": "105995ab94e8d4f3:outputs:sources"
         }
       },
       "outs": {
@@ -112,8 +122,8 @@
       "type": "__variable_getter__",
       "id": "5639b2b8816d8e8c",
       "position": {
-        "x": 1020,
-        "y": 153
+        "x": 846.25,
+        "y": 141.75
       },
       "inputs": {
         "entry": {

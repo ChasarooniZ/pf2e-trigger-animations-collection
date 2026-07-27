@@ -1,5 +1,17 @@
 ## Unreleased
 
+## 0.9.4
+
+- **Animations**
+  - **New**
+    - Garden of Healing, Bless, Earth's Bile (@ChazPls)
+    - Forbidding Ward, Unarmed Attack, Weapon Group: Knife, Whirlwind Strike (@ChasarooniZ)
+  - **Updated**
+    - Garden of Healing, Bless (@ChasarooniZ)
+- **Updated**
+  - Used newly introduced trigger engine feature to delay the `Enable All Triggers` dialogue till it can be properly called (requires `1.22.1`)
+  - `Trove Attack: Handler` added special case to handle base `Unarmed Attack`
+
 ## 0.9.3
 
 - **Animations**

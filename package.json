@@ -12,7 +12,8 @@
     "clean:final": "node macros/clear-final-animation.mjs",
     "test": "node macros/test-animations.mjs",
     "link": "node link.mjs",
-    "update:contributors": "node macros/update-contributors.mjs"
+    "update:contributors": "node macros/update-contributors.mjs",
+    "final": "npm run clean && npm run update:contributors"
   },
   "author": "Chasarooni",
   "license": "Apache-2.0",
