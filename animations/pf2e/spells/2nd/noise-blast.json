@@ -2,7 +2,6 @@
   "name": "Noise Blast",
   "folder": "Spells",
   "priority": 0,
-  "tags": ["PF2e Trove", "pf2e", "Spells", "2nd"],
   "description": "<p>Made by @Sasane</p>",
   "nodes": [
     {

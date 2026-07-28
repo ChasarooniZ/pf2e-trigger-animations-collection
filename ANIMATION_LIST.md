@@ -117,11 +117,13 @@
 #### Cantrips
 
 - Buzzing Bites 🔊🆓 (✍🏼 @Chasarooni)
+- Detect Magic 🔊🆓✅ (✍🏼 @Suldrun45)
 - Electric Arc 🔊🆓✅ (✍🏼 @Chasarooni)
 - Frostbite 🔊🆓✅ (✍🏼 @Chasarooni)
 - Guidance 🔇🆓 (✍🏼 @Chasarooni)
 - Ray of Frost 🔊🆓✅ (✍🏼 @Chasarooni)
 - Scatter Scree 🔊🆓✅ (✍🏼 @Chasarooni)
+- Tangle Vine 🔊🆓✅ (✍🏼 @Suldrun45)
 - Void Warp 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### Focus Spells
@@ -145,20 +147,27 @@
 #### 2nd Rank Spells
 
 - Blazing Bolt 🔊🆓 (✍🏼 @Chasarooni)
+- Entangling Vine 🔊🆓✅ (✍🏼 @Suldrun45)
+- Noise Blast 🔊🆓✅ (✍🏼 @Suldrun45)
+- Revealing Light 🔊🆓✅ (✍🏼 @Suldrun45)
 
 #### 3rd Rank Spells
 
 - Fireball 🔊🆓✅ (✍🏼 @ChazPls, 🛠️ @Chasarooni)
 - Haste 🔊🆓✅ (✍🏼 @Chasarooni)
+- Lightning Bolt 🔊🆓✅ (✍🏼 @Chasarooni)
 - Slow 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### 4th Rank Spells
 
 - Chromatic Ray 🔊🆓✅ (✍🏼 @Chasarooni)
+- Divine Wrath 🔊🆓✅ (✍🏼 @Suldrun45, 🛠️ @Chasarooni)
 
 #### 5th Rank Spells
 
 #### 6th Rank Spells
+
+- Chain Lighting 🔊🆓✅ (✍🏼 @Suldrun45)
 
 #### 7th Rank Spells
 

@@ -1,10 +1,15 @@
 ## Unreleased
+
+## 0.9.5
+
 - **Animations**
   - **New**
     - Lighting Bolt (@ChasarooniZ)
+    - Chain Lightning, Revealing Light, Detect Magic, Divine Wrath, Entangling Flora, Tangle Vine, Noise Blast (@Suldrun45)
+  - **Updated**
+    - Divine Wrath (@ChasarooniZ)
 - **Updated**
   - Fixed the Template for `Trove: Template (Line / Burst)`
-
 
 ## 0.9.4
 
