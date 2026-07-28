@@ -10,6 +10,7 @@ _[Use Me to convert "Export Triggers" to individual files for a PR](https://chas
 - Your trigger's file name must be a sluggified version of the animation name (you can do the following in the fvtt console to get it `game.pf2e.system.sluggify("Name Here")`)
 - Each trigger must apply to 1 source (with some exceptions in specific cases IE legacy vs OGL versions). If the animations would be the same use the call animation node to call the source animation
 - You must follow the quality guidelines below using the `Quality` node to section off your animation (This is explicitly strictly enforced for anything with persistent animations or those with exceptionally taxing animations)
+- Animations files that are patreon only should have a `Jb2a Free` backup option, it doesn't have to be great, but one should exist
 - Your description should include a description of anything extra the animation does (IE if the animation moves a token etc.)
 - There should be no functional components (IE effects added, damage applied etc.) to any animations with the exception of those like the case described above
 - Sort your animation in the proper folder, creating a new one if there's no folder that fits the animation
@@ -29,7 +30,7 @@ _[Use Me to convert "Export Triggers" to individual files for a PR](https://chas
 
 - **Acceptable Sources**
   - Currently the following are acceptable sources for animations/SFX
-    - **[JB2A](https://www.patreon.com/JB2A)** (Note animations are built for the Patreon version primarily, but some may also have workarounds to support the free version)
+    - **[JB2A](https://www.patreon.com/JB2A)** (Note animations are built for the Patreon version primarily, but there generally will be some form of Jb2a Free version)
     - **[GGG Asset Pack](https://github.com/ChasarooniZ/GGG-Sequencer-Sound-DB-Collection)**
     - **Future Vauxs Specific Asset Pack** (has yet to be released)
 - **Animation Qualities**
