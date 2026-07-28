@@ -1,4 +1,10 @@
 ## Unreleased
+- **Animations**
+  - **New**
+    - Lighting Bolt (@ChasarooniZ)
+- **Updated**
+  - Fixed the Template for `Trove: Template (Line / Burst)`
+
 
 ## 0.9.4
 

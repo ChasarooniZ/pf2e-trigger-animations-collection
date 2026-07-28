@@ -1441,16 +1441,13 @@ export const TEMPLATES = {
     CONES_LINES: JSON.stringify({
       nodes: [
         {
-          id: "cQ4T2clnTJ2z70XX",
-          position: {
-            x: 749.9999999999999,
-            y: 171.66666666666657,
-          },
+          id: "buq3tU2pxIiR5IWz",
+          position: { x: 749.9999999999999, y: 171.66666666666657 },
           type: "animation-event",
           custom: {
             outputs: {
-              MWUBRl5UO1EKczQU: {
-                id: "MWUBRl5UO1EKczQU",
+              yA5gipDgx9QRRKU1: {
+                id: "yA5gipDgx9QRRKU1",
                 input: "template",
                 label: "Template",
                 slug: "path",
@@ -1459,36 +1456,25 @@ export const TEMPLATES = {
               },
             },
           },
-          inputs: {
-            name: {
-              value: "placeholder-trigger-names",
-            },
-          },
-          outs: {
-            out: {
-              connection: "yrj2uPt3khcsH3UF:ins:in",
-            },
-          },
+          inputs: { name: { value: "placeholder-trigger-names" } },
+          outs: { out: { connection: "R4V7ygO4mrXtDYAz:ins:in" } },
         },
         {
           type: "extract-item",
-          position: {
-            x: 1014.5897421569691,
-            y: 182.56668923695878,
-          },
-          id: "yrj2uPt3khcsH3UF",
+          position: { x: 1014.5897421569691, y: 182.56668923695878 },
+          id: "R4V7ygO4mrXtDYAz",
           custom: {
             outputs: {
-              zZlfyqWnDi4qyRui: {
-                id: "zZlfyqWnDi4qyRui",
+              mCVSZGGWLUr7J0QM: {
+                id: "mCVSZGGWLUr7J0QM",
                 input: "name",
                 label: "Name",
                 slug: "path",
                 isArray: false,
                 type: "text",
               },
-              YYCymq4nW7jlJYwU: {
-                id: "YYCymq4nW7jlJYwU",
+              "1vzDKaAlabAPOfQo": {
+                id: "1vzDKaAlabAPOfQo",
                 input: "uuid",
                 label: "UUID",
                 slug: "path",
@@ -1498,203 +1484,91 @@ export const TEMPLATES = {
             },
           },
           inputs: {
-            input: {
-              connection: "cQ4T2clnTJ2z70XX:outputs:item",
-            },
+            input: { connection: "buq3tU2pxIiR5IWz:outputs:item" },
           },
-          outs: {
-            out: {
-              connection: "kMn5MlQ9xR1cqy46:ins:in",
-            },
-          },
+          outs: { out: { connection: "liv4jrzZJXZpVSL2:ins:in" } },
         },
         {
           type: "effect",
-          position: {
-            x: 1268.5897249274692,
-            y: 164.50000985463458,
-          },
-          id: "kMn5MlQ9xR1cqy46",
+          position: { x: 1268.5897249274692, y: 164.50000985463458 },
+          id: "liv4jrzZJXZpVSL2",
           inputs: {
-            name: {
-              connection: "yrj2uPt3khcsH3UF:outputs:zZlfyqWnDi4qyRui",
-            },
+            name: { connection: "R4V7ygO4mrXtDYAz:outputs:mCVSZGGWLUr7J0QM" },
             origin: {
-              connection: "yrj2uPt3khcsH3UF:outputs:YYCymq4nW7jlJYwU",
+              connection: "R4V7ygO4mrXtDYAz:outputs:1vzDKaAlabAPOfQo",
             },
           },
-          outs: {
-            out: {
-              connection: "fE0NZjyKJ9G7W7F6:ins:in",
-            },
-          },
+          outs: { out: { connection: "fnsvNB7lWSl3vZSq:ins:in" } },
         },
         {
           type: "file",
           inputs: {
-            effect: {
-              connection: "kMn5MlQ9xR1cqy46:outputs:effect",
-            },
-            file: {
-              value: "jb2a.template_circle.out_pulse.02.burst.bluewhite",
-            },
+            effect: { connection: "liv4jrzZJXZpVSL2:outputs:effect" },
+            file: { value: "jb2a.lightning_bolt.narrow.blue" },
           },
-          position: {
-            x: 1583.9999864274369,
-            y: 161.80557558271613,
-          },
-          id: "fE0NZjyKJ9G7W7F6",
-          outs: {
-            out: {
-              connection: "xs7iLq9hzxYOTYOc:ins:in",
-            },
-          },
+          position: { x: 1583.9999864274369, y: 161.80557558271613 },
+          id: "fnsvNB7lWSl3vZSq",
+          outs: { out: { connection: "f8dyGCIfQr2TxSfX:ins:in" } },
         },
         {
           type: "location",
           state: "targets",
           inputs: {
-            effect: {
-              connection: "kMn5MlQ9xR1cqy46:outputs:effect",
-            },
-            location: {
-              connection: "cQ4T2clnTJ2z70XX:outputs:MWUBRl5UO1EKczQU",
-            },
-            cacheLocation: {
-              value: true,
-            },
+            effect: { connection: "liv4jrzZJXZpVSL2:outputs:effect" },
+            cacheLocation: { value: true },
+            location: { connection: "gqkQYUecKZvGqCuT:outputs:entry" },
           },
-          position: {
-            x: 1813.7777744880864,
-            y: 160.70561627282024,
-          },
-          id: "xs7iLq9hzxYOTYOc",
-          outs: {
-            out: {
-              connection: "bHiknSSrgUd6sHKK:ins:in",
-            },
-          },
+          position: { x: 1813.7777744880864, y: 160.70561627282024 },
+          id: "f8dyGCIfQr2TxSfX",
+          outs: { out: { connection: "hAY3LzLlYK4Q73P5:ins:in" } },
         },
         {
           type: "play",
-          position: {
-            x: 3396.831584591428,
-            y: 160.47217859162225,
-          },
-          id: "stsDzcixyehs1bhi",
-          inputs: {
-            preload: {
-              value: true,
-            },
-            local: {
-              value: true,
-            },
-          },
-        },
-        {
-          type: "scale",
-          position: {
-            x: 2039.5555761695744,
-            y: 158.0000638961787,
-          },
-          id: "bHiknSSrgUd6sHKK",
-          inputs: {
-            effect: {
-              connection: "kMn5MlQ9xR1cqy46:outputs:effect",
-            },
-            objectScale: {
-              value: 1.1,
-            },
-            scaleInScale: {
-              value: 0.9,
-            },
-            scaleInDuration: {
-              value: 750,
-            },
-            scaleInEase: {
-              value: "easeOutCubic",
-            },
-          },
-          outs: {
-            out: {
-              connection: "Anm8jTC91Wwav5VE:ins:in",
-            },
-          },
-          state: "object",
+          position: { x: 3750.081584591428, y: 158.4721785916223 },
+          id: "ExE2lGwaMB8rpUZ4",
+          inputs: { preload: { value: true }, local: { value: true } },
         },
         {
           type: "sound",
-          position: {
-            x: 2276.589743589744,
-            y: 158.05555555555554,
-          },
-          id: "Anm8jTC91Wwav5VE",
+          position: { x: 2629.839743589744, y: 156.0555555555556 },
+          id: "7BMsQhHOs2zfFjwI",
           inputs: {
-            file: {
-              value: "ggg-sfx.magic.arcane.surge.wave.01",
-            },
-            name: {
-              connection: "yrj2uPt3khcsH3UF:outputs:zZlfyqWnDi4qyRui",
-            },
+            file: { value: "ggg-sfx.magic.electricity.cast.charge.01" },
+            name: { connection: "R4V7ygO4mrXtDYAz:outputs:mCVSZGGWLUr7J0QM" },
           },
-          outs: {
-            out: {
-              connection: "R40kXsj8B9KW6tj1:ins:in",
-            },
-          },
+          outs: { out: { connection: "N4e5N90bDsN8QIrB:ins:in" } },
         },
         {
           type: "snd-location",
           state: "atLocation",
           inputs: {
-            sound: {
-              connection: "Anm8jTC91Wwav5VE:outputs:sound",
-            },
+            sound: { connection: "7BMsQhHOs2zfFjwI:outputs:sound" },
             location: {
-              connection: "R40kXsj8B9KW6tj1:outputs:tS3ScMUSZdNDGxqT",
+              connection: "N4e5N90bDsN8QIrB:outputs:YxpfFAOQggVwCsO8",
             },
           },
-          position: {
-            x: 2879.75,
-            y: 160.56666666666678,
-          },
-          id: "RD3nS87WGg1yDOj3",
-          outs: {
-            out: {
-              connection: "aUJ2EETQxRnbzPSm:ins:in",
-            },
-          },
+          position: { x: 3233, y: 158.56666666666683 },
+          id: "k5yMLOhMnvJQdRui",
+          outs: { out: { connection: "TFhTKK0Le4SFT2iG:ins:in" } },
         },
         {
           type: "snd-flow",
           inputs: {
             preset: { value: "troveSound" },
-            sound: {
-              connection: "Anm8jTC91Wwav5VE:outputs:sound",
-            },
+            sound: { connection: "7BMsQhHOs2zfFjwI:outputs:sound" },
           },
-          position: {
-            x: 3109.1944444444443,
-            y: 160.1666666666668,
-          },
-          id: "aUJ2EETQxRnbzPSm",
-          outs: {
-            out: {
-              connection: "stsDzcixyehs1bhi:ins:in",
-            },
-          },
+          position: { x: 3462.4444444444443, y: 158.16666666666686 },
+          id: "TFhTKK0Le4SFT2iG",
+          outs: { out: { connection: "ExE2lGwaMB8rpUZ4:ins:in" } },
         },
         {
           type: "execute-script",
-          position: {
-            x: 2583.333333333333,
-            y: 157.22222222222217,
-          },
-          id: "R40kXsj8B9KW6tj1",
+          position: { x: 2936.583333333333, y: 155.22222222222223 },
+          id: "N4e5N90bDsN8QIrB",
           custom: {
             inputs: {
-              Fd9FyG9Lgg2AyIcQ: {
-                id: "Fd9FyG9Lgg2AyIcQ",
+              qjU48Lj8nx9ds3i9: {
+                id: "qjU48Lj8nx9ds3i9",
                 label: "Template",
                 slug: "input",
                 isArray: false,
@@ -1702,8 +1576,8 @@ export const TEMPLATES = {
               },
             },
             outputs: {
-              tS3ScMUSZdNDGxqT: {
-                id: "tS3ScMUSZdNDGxqT",
+              YxpfFAOQggVwCsO8: {
+                id: "YxpfFAOQggVwCsO8",
                 label: "Point",
                 slug: "output",
                 isArray: false,
@@ -1716,32 +1590,57 @@ export const TEMPLATES = {
               value:
                 '/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: "number", value: x + y}];\n */\nconst template = inputs[0]\nreturn [{type: "point", value: template?.shapes?.[0]?.center}];',
             },
-            Fd9FyG9Lgg2AyIcQ: {
-              connection: "0kqP5lR3IHrVUjnZ:outputs:entry",
-            },
+            qjU48Lj8nx9ds3i9: { connection: "M6jOJTalL2br81jH:outputs:entry" },
           },
-          outs: {
-            out: {
-              connection: "RD3nS87WGg1yDOj3:ins:in",
-            },
-          },
+          outs: { out: { connection: "k5yMLOhMnvJQdRui:ins:in" } },
         },
         {
           inputs: {
-            entry: {
-              connection: "cQ4T2clnTJ2z70XX:outputs:MWUBRl5UO1EKczQU",
-            },
+            entry: { connection: "buq3tU2pxIiR5IWz:outputs:yA5gipDgx9QRRKU1" },
           },
           type: "__variable_getter__",
-          position: {
-            x: 2411.4444444444443,
-            y: 106.77777777777777,
+          position: { x: 2764.6944444444443, y: 104.77777777777783 },
+          id: "M6jOJTalL2br81jH",
+        },
+        {
+          type: "aim",
+          position: { x: 2051.3978243978245, y: 162.288888888889 },
+          id: "hAY3LzLlYK4Q73P5",
+          inputs: {
+            effect: { connection: "liv4jrzZJXZpVSL2:outputs:effect" },
+            towards: { connection: "G3IRIVBXB7Mvf6rV:outputs:entry" },
           },
-          id: "0kqP5lR3IHrVUjnZ",
+          outs: { out: { connection: "rj7X0Sf0wWMmwWB8:ins:in" } },
+        },
+        {
+          inputs: {
+            entry: { connection: "buq3tU2pxIiR5IWz:outputs:yA5gipDgx9QRRKU1" },
+          },
+          type: "__variable_getter__",
+          position: { x: 1912.2222222222222, y: 116.43434343434362 },
+          id: "G3IRIVBXB7Mvf6rV",
+        },
+        {
+          inputs: {
+            entry: { connection: "buq3tU2pxIiR5IWz:outputs:yA5gipDgx9QRRKU1" },
+          },
+          type: "__variable_getter__",
+          position: { x: 1633.333333333333, y: 116.43434343434356 },
+          id: "gqkQYUecKZvGqCuT",
+        },
+        {
+          type: "flow",
+          position: { x: 2350.0341880341884, y: 162.26767676767702 },
+          id: "rj7X0Sf0wWMmwWB8",
+          inputs: {
+            effect: { connection: "liv4jrzZJXZpVSL2:outputs:effect" },
+            delayMin: { value: 2400 },
+          },
+          outs: { out: { connection: "7BMsQhHOs2zfFjwI:ins:in" } },
         },
       ],
       variables: {
-        "cQ4T2clnTJ2z70XX:outputs:MWUBRl5UO1EKczQU": {
+        "buq3tU2pxIiR5IWz:outputs:yA5gipDgx9QRRKU1": {
           isArray: false,
           label: "Template",
           type: "region",
