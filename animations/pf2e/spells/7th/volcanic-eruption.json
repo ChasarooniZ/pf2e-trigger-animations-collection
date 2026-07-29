@@ -24,7 +24,7 @@
       },
       "inputs": {
         "name": {
-          "value": "template:volcanic-eruption"
+          "value": "trove-template:volcanic-eruption"
         }
       },
       "outs": {

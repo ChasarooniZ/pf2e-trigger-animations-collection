@@ -23,7 +23,7 @@
       },
       "inputs": {
         "name": {
-          "value": "template:deitys-strike"
+          "value": "trove-template:deitys-strike"
         }
       },
       "outs": {
