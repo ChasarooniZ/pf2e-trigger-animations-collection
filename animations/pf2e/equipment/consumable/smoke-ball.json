@@ -3,13 +3,6 @@
   "name": "Smoke Ball",
   "folder": "Equipment",
   "priority": 0,
-  "tags": [
-    "template",
-    "PF2e Trove",
-    "pf2e",
-    "equipment",
-    "consumable"
-  ],
   "description": "<p>Created by @RedB<br>Trigger: trove-template:smoke-ball-lesser,trove-template:smoke-ball-greater</p>",
   "nodes": [
     {

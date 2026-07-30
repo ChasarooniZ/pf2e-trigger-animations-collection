@@ -2,10 +2,6 @@
   "name": "Garden of Healing",
   "folder": "Spells",
   "priority": 0,
-  "tags": [
-    "spell",
-    "pf2e"
-  ],
   "nodes": [
     {
       "id": "JQTFjmsn9dLVIdVu",
