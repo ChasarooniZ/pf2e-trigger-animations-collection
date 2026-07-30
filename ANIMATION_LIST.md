@@ -54,6 +54,7 @@
         - [Specific](#specific)
     - [Equipment](#equipment)
       - [Consumables](#consumables)
+      - [Misc](#misc)
         - [Potions](#potions)
       - [Weapons](#weapons-1)
         - [Reload](#reload)
@@ -285,6 +286,10 @@
 ### Equipment
 
 #### Consumables
+
+#### Misc
+
+- Smoke Ball (Lesser & Greater) 🔊🆓 (✍🏼 @RedB)
 
 ##### Potions
 

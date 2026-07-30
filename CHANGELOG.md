@@ -1,9 +1,12 @@
 ## Unreleased
 
 - **Animations**
+  - **New**
+    - Smoke Ball (@RedB 🎉 First Time contributor!)
   - **Updated**
     - Weapon Group: Shields, Deity's Strike, Volcanic Eruption, Buzzing Bites _fixed trigger name being outdated_ (@ChasarooniZ)
 - **Updated**
+  - Updated to `Trigger Animations` version `0.7.0`
   - `Melee Template` - Use anchor instead of offset so we don't need to account for token size
   - `Test Animations` script now tests if the animations triggers are valid
 

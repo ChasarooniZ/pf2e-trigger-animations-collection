@@ -36,7 +36,7 @@
         "type": "module",
         "manifest": "https://raw.githubusercontent.com/MrVauxs/trigger-animations/latest/releases/module.json",
         "compatibility": {
-          "minimum": "0.6.6"
+          "minimum": "0.7.0"
         }
       },
       {
