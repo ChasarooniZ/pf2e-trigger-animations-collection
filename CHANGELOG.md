@@ -1,5 +1,12 @@
 ## Unreleased
 
+- **Animations**
+  - **Updated**
+    - Weapon Group: Shields, Deity's Strike, Volcanic Eruption, Buzzing Bites _fixed trigger name being outdated_ (@ChasarooniZ)
+- **Updated**
+  - `Melee Template` - Use anchor instead of offset so we don't need to account for token size
+  - `Test Animations` script now tests if the animations triggers are valid
+
 ## 0.9.5
 
 - **Animations**

@@ -21,6 +21,25 @@ const CATEGORIES = {
   items: "Items",
   spells: "Spells",
 };
+
+const VALID_TRIGGERS = [
+  "trove-attack:",
+  "trove-template:",
+  "effect:",
+  "condition:",
+  "trove-check:",
+  "action:",
+  "trove-damage:",
+  "trove-healing:",
+  "trove-persistent:",
+  "trove-negated:",
+  "update:",
+  "damage-roll:",
+  "damage-roll-addon:",
+  "reload:",
+  "spell:",
+];
+
 function validateFileName({ path, name }) {
   const fileName = path
     .slice(path.indexOf(PATH_START) + PATH_START_BOOST)
@@ -36,6 +55,23 @@ function validateFileName({ path, name }) {
   return slug === fileName;
 }
 
+function validateAnimationTrigger(triggersText, id) {
+  const triggers = triggersText.split(", ");
+  const issues = [];
+  for (const trigger of triggers) {
+    const isValid = VALID_TRIGGERS.some((t) => trigger?.startsWith(t));
+    if (!isValid) {
+      console.error(`- Invalid trigger '${trigger}' in ${id}`);
+      issues.push({
+        id: id,
+        error: `Invalid trigger '${trigger}' in ${id}`,
+      });
+    }
+  }
+
+  return issues;
+}
+
 function validateNodes(data) {
   const errors = [];
   for (const node of data.nodes) {
@@ -47,6 +83,18 @@ function validateNodes(data) {
         id: data.name,
         error: `Non Sequencer DB Value '${node?.inputs?.file?.value}'`,
       });
+    }
+    if (
+      node.type === "animation-event" &&
+      !data?.name?.startsWith("Handler:")
+    ) {
+      const issues = validateAnimationTrigger(
+        node?.inputs?.name.value ?? "",
+        data.name,
+      );
+      if (issues.length > 0) {
+        errors.push(...issues);
+      }
     }
   }
   return errors;
@@ -99,5 +147,5 @@ const animationsDir = process.argv[2] || "./animations";
 const errors = testAnimations(animationsDir);
 if (errors.length > 0) {
   console.error(errors);
-  throw new Error("An error with the formatting was found");
+  throw new Error("An error with the the animations was found");
 }
