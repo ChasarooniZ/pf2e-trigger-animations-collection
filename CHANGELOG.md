@@ -4,15 +4,18 @@
   - **New**
     - Smoke Ball (@RedB 🎉 First Time contributor!)
     - Divine Lance, Terrifying Cry (@ChasarooniZ)
+    - Darkness, Gust of Wind, Mist, Howling Blizzard (@Suldrun45)
   - **Updated**
     - Weapon Group: Shields, Deity's Strike, Volcanic Eruption, Buzzing Bites _fixed trigger name being outdated_ (@ChasarooniZ)
     - Unconscious, Dessicate, Whirlwind Strike, Ignition, Grapple, Tumble Through, Cackle _Fixed anchor errors_ (@ChasarooniZ)
     - Fist, Greatpick, Claw, Weapon Group: Hammer, Gauntlet, Weapon Group: Shield, Weapon Group: Knife, Weapon Group: Polearm, Weapon Group: Sword, Weapon Group: Spear, Unarmed Attack, Tumble Through, Grapple, Terrifying Cry _Migrated from custom execute script to using anchor_ (@ChasarooniZ)
     - Weapon Group: Bow _Added impact sound_ (@ChasarooniZ)
     - Deity's Strike _Combined animations, added a casting animation_ (@ChasarooniZ)
+- **New**
+  - `Trove Template: Cone` - Split this out from `Cone & Line` and included logic to allow you to pretty simply play 2 copies of an effect when it is built for 5e cones as opposed to pf2e cones
 - **Updated**
   - Updated to `Trigger Animations` version `0.7.0`
-  - `Melee Template` - Use anchor instead of offset so we don't need to account for token size
+  - `Trove Template: Melee` - Use anchor instead of offset so we don't need to account for token size
   - `Handler: Attack Roll` - Handles shields as well now
   - `Test Animations` script now tests if the animations triggers are valid
 

@@ -40,25 +40,37 @@ const templates = [
     },
   },
   {
-    id: "trove-template-bursts-emanations",
-    label: "Trove: Template (Bursts & Emanations)",
+    id: "trove-template-burst-emanation",
+    label: "Trove: Template (Burst & Emanation)",
     hint: "Effect on the template compatible with Trigger Animation Trove (PF2e / SF2e).",
     prefixes: ["template"],
     build: (ctx) => {
       return createAnimation({
-        templateString: TEMPLATES.TEMPLATES.BURSTS_EMANATIONS,
+        templateString: TEMPLATES.TEMPLATES.BURST_EMANATION,
         ctx,
       });
     },
   },
   {
-    id: "trove-template-cones-lines",
-    label: "Trove: Template (Cones & Lines)",
+    id: "trove-template-cone",
+    label: "Trove: Template (Cone)",
     hint: "Effect on the template compatible with Trigger Animation Trove (PF2e / SF2e).",
     prefixes: ["template"],
     build: (ctx) => {
       return createAnimation({
-        templateString: TEMPLATES.TEMPLATES.CONES_LINES,
+        templateString: TEMPLATES.TEMPLATES.CONE,
+        ctx,
+      });
+    },
+  },
+  {
+    id: "trove-template-line",
+    label: "Trove: Template (Line)",
+    hint: "Effect on the template compatible with Trigger Animation Trove (PF2e / SF2e).",
+    prefixes: ["template"],
+    build: (ctx) => {
+      return createAnimation({
+        templateString: TEMPLATES.TEMPLATES.LINE,
         ctx,
       });
     },

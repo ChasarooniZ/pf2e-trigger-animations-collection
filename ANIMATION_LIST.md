@@ -118,7 +118,8 @@
 #### Cantrips
 
 - Buzzing Bites 🔊🆓 (✍🏼 @Chasarooni)
-- Detect Magic 🔊🆓✅ (✍🏼 @Suldrun45)
+- Detect Magic 🔊🆓✅ (✍🏼 @Suldrun45)\
+- Divine Lance 🔊🆓 (✍🏼 @Chasarooni)
 - Electric Arc 🔊🆓✅ (✍🏼 @Chasarooni)
 - Frostbite 🔊🆓✅ (✍🏼 @Chasarooni)
 - Guidance 🔇🆓 (✍🏼 @Chasarooni)
@@ -142,13 +143,16 @@
 
 - Bless 🔊🆓✅ (✍🏼 @ChazPls, 🛠️ @Chasarooni)
 - Force Barrage 🔊🆓 (✍🏼 @Chasarooni)
+- Gust of Wind 🔊🆓✅ (✍🏼 @Suldrun45)
 - Harm 🔊🆓✅ (✍🏼 @Chasarooni)
 - Heal 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### 2nd Rank Spells
 
 - Blazing Bolt 🔊🆓 (✍🏼 @Chasarooni)
+- Darkness 🔊🆓✅ (✍🏼 @Suldrun45)
 - Entangling Vine 🔊🆓✅ (✍🏼 @Suldrun45)
+- Mist 🔊🆓✅ (✍🏼 @Suldrun45)
 - Noise Blast 🔊🆓✅ (✍🏼 @Suldrun45)
 - Revealing Light 🔊🆓✅ (✍🏼 @Suldrun45)
 
@@ -165,6 +169,8 @@
 - Divine Wrath 🔊🆓✅ (✍🏼 @Suldrun45, 🛠️ @Chasarooni)
 
 #### 5th Rank Spells
+
+- Howling Blizzard 🔊🆓✅ (✍🏼 @Suldrun45)
 
 #### 6th Rank Spells
 
@@ -312,6 +318,7 @@
 ### Creatures Actions
 
 - Conductive Downpour 🔊🆓 (✍🏼 @Chasarooni)
+- Terrifying Cry 🔊🆓 (✍🏼 @Chasarooni)
 
 ## SF2e
 
