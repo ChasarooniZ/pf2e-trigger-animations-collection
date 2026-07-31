@@ -1,5 +1,5 @@
 {
-  "id": "X4tGtt851COimo2h",
+  "id": "WneYfPwP7lcvnYQY",
   "name": "Fist",
   "folder": "Attacks",
   "priority": 0,
@@ -51,7 +51,7 @@
       },
       "outs": {
         "out": {
-          "connection": "KtY37PY1uDO6XerM:ins:in"
+          "connection": "H7oqYevcZWIKGOPj:ins:in"
         }
       }
     },
@@ -114,13 +114,10 @@
         },
         "location": {
           "connection": "Jng98wPRe717xQ5D:outputs:entry"
-        },
-        "offset": {
-          "connection": "KtY37PY1uDO6XerM:outputs:RqS5ALNqa9ANIZ4K"
         }
       },
       "position": {
-        "x": 1918.944537280197,
+        "x": 1572.944537280197,
         "y": 173.96479749082607
       },
       "id": "H7oqYevcZWIKGOPj",
@@ -154,7 +151,7 @@
         }
       },
       "position": {
-        "x": 2992.818932742287,
+        "x": 2646.818932742287,
         "y": 268.4145255118906
       },
       "id": "pFBEmmDu9cwunENJ",
@@ -191,7 +188,7 @@
     {
       "type": "list-contains",
       "position": {
-        "x": 2749.5505839983325,
+        "x": 2403.5505839983325,
         "y": 510.8254707180224
       },
       "id": "FSrD0dG1TdocJe0B",
@@ -213,7 +210,7 @@
     {
       "type": "list-value",
       "position": {
-        "x": 2480.2461211398777,
+        "x": 2134.2461211398777,
         "y": 527.7962793853518
       },
       "id": "nLb1h2Kz40khHmkH",
@@ -226,7 +223,7 @@
     {
       "type": "scale",
       "position": {
-        "x": 3285.686594769565,
+        "x": 2939.686594769565,
         "y": 266.2962611124972
       },
       "id": "zuahXyGB81d0Bm0f",
@@ -259,8 +256,8 @@
         }
       },
       "position": {
-        "x": 2458.9101547744003,
-        "y": 246.13502711525592
+        "x": 2112.9101547744003,
+        "y": 246.13502711525598
       },
       "id": "eBGJFcHEwPsyLhYU",
       "outs": {
@@ -272,7 +269,7 @@
     {
       "type": "sound",
       "position": {
-        "x": 3556.312055767467,
+        "x": 3210.312055767467,
         "y": 253.14152642169847
       },
       "id": "wtx2k5Bbnnw8hRZM",
@@ -305,51 +302,10 @@
         }
       },
       "position": {
-        "x": 4157.238185193597,
+        "x": 3811.238185193597,
         "y": 252.35501848519095
       },
       "id": "BkiG1MQQAwGNCGbq"
-    },
-    {
-      "type": "execute-script",
-      "position": {
-        "x": 1595.0382462436587,
-        "y": 165.98200261217505
-      },
-      "id": "KtY37PY1uDO6XerM",
-      "custom": {
-        "inputs": {
-          "BuSP9m3B5Y16Xlo0": {
-            "id": "BuSP9m3B5Y16Xlo0",
-            "label": "Source",
-            "slug": "input",
-            "isArray": false,
-            "type": "target"
-          }
-        },
-        "outputs": {
-          "RqS5ALNqa9ANIZ4K": {
-            "id": "RqS5ALNqa9ANIZ4K",
-            "label": "Offset",
-            "slug": "output",
-            "isArray": false,
-            "type": "point"
-          }
-        }
-      },
-      "inputs": {
-        "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst source = inputs[0];\nconst x = -Math.max(source?.token?.width ?? 1, 1) - 0.5\nreturn [{type: \"point\", value: {x: x, y: 0}}];"
-        },
-        "BuSP9m3B5Y16Xlo0": {
-          "connection": "dOn3y5JPnMiARbyH:outputs:source"
-        }
-      },
-      "outs": {
-        "out": {
-          "connection": "H7oqYevcZWIKGOPj:ins:in"
-        }
-      }
     },
     {
       "type": "snd-flow",
@@ -365,8 +321,8 @@
         }
       },
       "position": {
-        "x": 3863.650883606295,
-        "y": 249.80819308836527
+        "x": 3517.650883606295,
+        "y": 249.80819308836521
       },
       "id": "zByWvxGeGs3JTnjX",
       "outs": {
@@ -422,7 +378,7 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 2579.7060439560437,
+        "x": 2233.7060439560437,
         "y": 609.0677655677658
       },
       "id": "NeNW7lcaLBIdpBbS"
@@ -435,8 +391,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 3390.7060439560437,
-        "y": 201.31776556776578
+        "x": 3044.7060439560437,
+        "y": 201.31776556776572
       },
       "id": "sW4mLlJy3BzP2kFa"
     },
@@ -448,7 +404,7 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 3986.956043956044,
+        "x": 3640.956043956044,
         "y": 153.8177655677656
       },
       "id": "4cHAtCCNA8dWdhBQ"
@@ -461,7 +417,7 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 3988.2060439560446,
+        "x": 3642.2060439560446,
         "y": 205.0677655677656
       },
       "id": "YPlyzppMgdXIAsFc"
@@ -474,7 +430,7 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 1720,
+        "x": 1374,
         "y": 98.75
       },
       "id": "Jng98wPRe717xQ5D"
@@ -487,7 +443,7 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 2798,
+        "x": 2452,
         "y": 211
       },
       "id": "W4ljo8rSjVaAlSOo"
@@ -500,10 +456,22 @@
         },
         "randomizeMirrorY": {
           "value": true
+        },
+        "anchor": {
+          "value": {
+            "x": 0.4,
+            "y": 0.5
+          }
+        },
+        "spriteAnchor": {
+          "value": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       "position": {
-        "x": 2194,
+        "x": 1848,
         "y": 177.25
       },
       "id": "62fefWzFHJ1RvJ9P",

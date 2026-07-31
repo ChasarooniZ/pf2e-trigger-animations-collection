@@ -1,5 +1,5 @@
 {
-  "id": "4OB5uhUjQSo4gNm3",
+  "id": "r3db5ilrhLwgiUoQ",
   "name": "Desiccate",
   "folder": "Spells",
   "priority": 0,
@@ -914,6 +914,12 @@
         },
         "anchorX": {
           "value": 0.25
+        },
+        "anchor": {
+          "value": {
+            "x": 0.25,
+            "y": 0.5
+          }
         }
       },
       "position": {

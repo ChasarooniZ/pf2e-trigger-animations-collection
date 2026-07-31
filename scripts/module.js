@@ -70,4 +70,12 @@ function registerPresets() {
       .scaleOut(0.5, 1500, { ease: "easeInQuad" })
       .scaleIn(0.5, 750, { ease: "easeOutBack" });
   });
+
+  // Sequencer.Presets.add(
+  //   "trovePF2eConeHelper",
+  //   (effect, args) => {
+  //     return effect.spriteRotation(22.5).repeats(2);
+  //   },
+  //   true,
+  // );
 }

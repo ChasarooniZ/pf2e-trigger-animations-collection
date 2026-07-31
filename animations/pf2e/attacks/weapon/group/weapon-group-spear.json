@@ -36,8 +36,8 @@
     {
       "type": "effect",
       "position": {
-        "x": 1144.7776878222767,
-        "y": 507.370378340206
+        "x": 1019.7776878222769,
+        "y": 352.37037834020623
       },
       "id": "9Ny9laSD1AJY2y4E",
       "inputs": {
@@ -125,9 +125,6 @@
         },
         "attachTo": {
           "value": true
-        },
-        "offset": {
-          "connection": "CMvtIUd4LgkUyc0n:outputs:399AKY4XiQVOa9IK"
         },
         "gridUnits": {
           "value": true
@@ -444,6 +441,12 @@
         },
         "effect": {
           "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "anchor": {
+          "value": {
+            "x": 0.4,
+            "y": 0.5
+          }
         }
       },
       "position": {
@@ -469,8 +472,8 @@
         }
       },
       "position": {
-        "x": 460.9285714285717,
-        "y": 2.6071428571430033
+        "x": 535.9285714285718,
+        "y": 80.94047619047649
       },
       "id": "Nww4R435leaSeHIV",
       "outs": {
@@ -478,7 +481,7 @@
           "connection": "ZGvTGHh9y5LlsW87:ins:in"
         },
         "false": {
-          "connection": "CMvtIUd4LgkUyc0n:ins:in"
+          "connection": "9Ny9laSD1AJY2y4E:ins:in"
         }
       }
     },
@@ -490,8 +493,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 1035.3412698412699,
-        "y": 541.6428571428572
+        "x": 890.3412698412703,
+        "y": 416.6428571428577
       },
       "id": "gdX9TCDcuZrOvs5U"
     },
@@ -503,8 +506,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 1011.0555555555553,
-        "y": 607.357142857143
+        "x": 886.0555555555555,
+        "y": 452.35714285714323
       },
       "id": "ibnmc0LZ3CWeTk84"
     },
@@ -1314,63 +1317,9 @@
         "y": 509.7182539682544
       },
       "id": "2LTRfRfUxnJ9OEBM"
-    },
-    {
-      "type": "execute-script",
-      "position": {
-        "x": 866.5555555555554,
-        "y": 388.99999999999994
-      },
-      "id": "CMvtIUd4LgkUyc0n",
-      "custom": {
-        "inputs": {
-          "Gu41iNHzvLtFjPnQ": {
-            "id": "Gu41iNHzvLtFjPnQ",
-            "label": "Source",
-            "slug": "input",
-            "isArray": false,
-            "type": "target"
-          }
-        },
-        "outputs": {
-          "399AKY4XiQVOa9IK": {
-            "id": "399AKY4XiQVOa9IK",
-            "label": "Offset",
-            "slug": "output",
-            "isArray": false,
-            "type": "point"
-          }
-        }
-      },
-      "inputs": {
-        "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst source = inputs[0];\nconst x = -(source?.token?.width ?? 1) - 0.25\nreturn [{type: \"point\", value: {x: x, y: 0}}];"
-        },
-        "Gu41iNHzvLtFjPnQ": {
-          "connection": "lmiw0qssf1KCu8Af:outputs:entry"
-        }
-      },
-      "outs": {
-        "out": {
-          "connection": "9Ny9laSD1AJY2y4E:ins:in"
-        }
-      }
-    },
-    {
-      "inputs": {
-        "entry": {
-          "connection": "4gZJ8Gm9UjlhMc4G:outputs:source"
-        }
-      },
-      "type": "__variable_getter__",
-      "position": {
-        "x": 750.9999999999999,
-        "y": 476.77777777777777
-      },
-      "id": "lmiw0qssf1KCu8Af"
     }
   ],
-  "id": "85uR8JgkjlrGyVRC",
+  "id": "q5SmOLHfEQxc7NZX",
   "description": "<p><em>Made by @Chasarooni</em></p>",
   "variables": {
     "4gZJ8Gm9UjlhMc4G:outputs:target": {

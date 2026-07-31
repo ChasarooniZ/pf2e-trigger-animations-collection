@@ -394,6 +394,12 @@
         },
         "spriteAnchorX": {
           "value": 1
+        },
+        "spriteAnchor": {
+          "value": {
+            "x": 1,
+            "y": 0.5
+          }
         }
       },
       "outs": {
@@ -403,7 +409,7 @@
       }
     }
   ],
-  "id": "lGUuXaf0PWYQKe40",
+  "id": "BQslnCgLAMGKcECV",
   "variables": {
     "e6cyMQktgwIDFaPF:outputs:sources": {
       "isArray": true,

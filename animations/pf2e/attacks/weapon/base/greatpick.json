@@ -131,7 +131,7 @@
         },
         "offset": {
           "value": {
-            "x": -2,
+            "x": 0,
             "y": 0
           }
         },
@@ -284,9 +284,6 @@
         "effect": {
           "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
         },
-        "considerTokenScale": {
-          "value": true
-        },
         "objectScale": {
           "value": 4
         }
@@ -329,6 +326,12 @@
         },
         "effect": {
           "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "anchor": {
+          "value": {
+            "x": 0.4,
+            "y": 0.5
+          }
         }
       },
       "outs": {
@@ -405,7 +408,7 @@
     }
   ],
   "description": "<p><em>Made by @Chasarooni</em></p>",
-  "id": "NoYCa5o7Y7gg35mk",
+  "id": "EJNPQtoRMOYgRE5T",
   "variables": {
     "4gZJ8Gm9UjlhMc4G:outputs:source": {
       "isArray": false,

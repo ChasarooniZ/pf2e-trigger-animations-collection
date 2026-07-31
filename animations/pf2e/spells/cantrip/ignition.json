@@ -1,5 +1,5 @@
 {
-  "id": "58SSlKhHMZGh7V94",
+  "id": "1loML9aIjBm0TYMU",
   "name": "Ignition",
   "folder": "Spells",
   "priority": 0,
@@ -539,6 +539,12 @@
         },
         "anchorY": {
           "value": 0.7000000000000001
+        },
+        "anchor": {
+          "value": {
+            "x": 0.5,
+            "y": 0.7
+          }
         }
       },
       "outs": {

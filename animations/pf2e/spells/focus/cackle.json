@@ -156,11 +156,17 @@
         },
         "randomizeMirrorX": {
           "value": true
+        },
+        "anchor": {
+          "value": {
+            "x": 0.5,
+            "y": 0.75
+          }
         }
       },
       "position": {
-        "x": 1967.25,
-        "y": 171.74999999999994
+        "x": 1953.25,
+        "y": 168.74999999999994
       },
       "id": "veR3rVnUi63N2pJi",
       "outs": {
@@ -322,8 +328,8 @@
         }
       },
       "position": {
-        "x": 2184.75,
-        "y": 162.62222222222215
+        "x": 2192.75,
+        "y": 169.62222222222215
       },
       "id": "ozUkEnQljDkmTQiF",
       "outs": {
@@ -333,7 +339,7 @@
       }
     }
   ],
-  "id": "9yr9q1D5fZdFPhcd",
+  "id": "zaKDwGHo5mcZQnuk",
   "variables": {
     "tOhH2mCcLDuGI7u7:outputs:sources": {
       "isArray": true,

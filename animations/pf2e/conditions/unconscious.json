@@ -263,6 +263,18 @@
         },
         "effect": {
           "connection": "DIKQm9cpxx67j5yf:outputs:effect"
+        },
+        "offset": {
+          "value": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "anchor": {
+          "value": {
+            "x": 0.5,
+            "y": 0.7
+          }
         }
       },
       "outs": {
@@ -275,5 +287,5 @@
   "name": "Unconscious",
   "description": "<p>Written by @Chasarooni</p>",
   "folder": "Conditions",
-  "id": "qw0hrIu52KvarCok"
+  "id": "hoq5DdBBSU1IzNL2"
 }

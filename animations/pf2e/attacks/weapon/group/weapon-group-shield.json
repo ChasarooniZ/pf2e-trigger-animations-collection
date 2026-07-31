@@ -126,12 +126,9 @@
         "location": {
           "connection": "4gZJ8Gm9UjlhMc4G:outputs:source"
         },
-        "attachTo": {
-          "value": true
-        },
         "offset": {
           "value": {
-            "x": -1.25,
+            "x": 0,
             "y": 0
           }
         },
@@ -140,6 +137,9 @@
         },
         "local": {
           "value": true
+        },
+        "bindScale": {
+          "value": false
         }
       },
       "position": {
@@ -299,6 +299,9 @@
       "inputs": {
         "file": {
           "connection": "h0p6mid1HU99KQJ9:outputs:RgX9zjQqGgUUnOA7"
+        },
+        "name": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:sR6Cy5NKJKuZpmQg"
         }
       },
       "outs": {
@@ -402,6 +405,12 @@
         },
         "randomizeMirrorY": {
           "value": true
+        },
+        "anchor": {
+          "value": {
+            "x": 0.4,
+            "y": 0.5
+          }
         }
       },
       "outs": {
@@ -411,6 +420,6 @@
       }
     }
   ],
-  "id": "222jCYl1pe3fui2Y",
+  "id": "4is7ISRe623rFaVH",
   "description": "<p><em>Made by @Chasarooni</em></p>"
 }

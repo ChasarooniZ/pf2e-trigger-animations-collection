@@ -1,5 +1,5 @@
 {
-  "id": "aJXi6zV0Ur3VhzD8",
+  "id": "9naF9cqXKVsZH96p",
   "name": "Unarmed Attack",
   "folder": "Attacks",
   "priority": 0,
@@ -8,8 +8,8 @@
     {
       "id": "OCXGxorSdFz1Fa5q",
       "position": {
-        "x": 400,
-        "y": 200
+        "x": 736.25,
+        "y": 196.25
       },
       "type": "animation-event",
       "custom": {
@@ -37,8 +37,8 @@
     {
       "type": "effect",
       "position": {
-        "x": 1262,
-        "y": 174.00000000000003
+        "x": 1598.25,
+        "y": 170.25
       },
       "id": "6l4POrkxNdUr7NMb",
       "inputs": {
@@ -51,7 +51,7 @@
       },
       "outs": {
         "out": {
-          "connection": "KtY37PY1uDO6XerM:ins:in"
+          "connection": "H7oqYevcZWIKGOPj:ins:in"
         }
       }
     },
@@ -76,9 +76,6 @@
         },
         "location": {
           "connection": "Jng98wPRe717xQ5D:outputs:entry"
-        },
-        "offset": {
-          "connection": "KtY37PY1uDO6XerM:outputs:RqS5ALNqa9ANIZ4K"
         }
       },
       "position": {
@@ -129,8 +126,8 @@
     {
       "type": "massloop",
       "position": {
-        "x": 910.8772781417796,
-        "y": 199.61375672504948
+        "x": 1247.1272781417797,
+        "y": 195.86375672504948
       },
       "id": "dOn3y5JPnMiARbyH",
       "inputs": {
@@ -273,47 +270,6 @@
       "id": "BkiG1MQQAwGNCGbq"
     },
     {
-      "type": "execute-script",
-      "position": {
-        "x": 1595.0382462436587,
-        "y": 165.98200261217505
-      },
-      "id": "KtY37PY1uDO6XerM",
-      "custom": {
-        "inputs": {
-          "BuSP9m3B5Y16Xlo0": {
-            "id": "BuSP9m3B5Y16Xlo0",
-            "label": "Source",
-            "slug": "input",
-            "isArray": false,
-            "type": "target"
-          }
-        },
-        "outputs": {
-          "RqS5ALNqa9ANIZ4K": {
-            "id": "RqS5ALNqa9ANIZ4K",
-            "label": "Offset",
-            "slug": "output",
-            "isArray": false,
-            "type": "point"
-          }
-        }
-      },
-      "inputs": {
-        "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst source = inputs[0];\nconst x = -(source?.token?.width ?? 1)* 1.5\n\nreturn [{type: \"point\", value: {x: x, y: 0}}];"
-        },
-        "BuSP9m3B5Y16Xlo0": {
-          "connection": "dOn3y5JPnMiARbyH:outputs:source"
-        }
-      },
-      "outs": {
-        "out": {
-          "connection": "H7oqYevcZWIKGOPj:ins:in"
-        }
-      }
-    },
-    {
       "type": "snd-flow",
       "inputs": {
         "sound": {
@@ -340,8 +296,8 @@
     {
       "type": "play",
       "position": {
-        "x": 1247.879120879121,
-        "y": 464.4010989010992
+        "x": 1584.129120879121,
+        "y": 460.6510989010992
       },
       "id": "OHHBd7pHzRIE0U1R",
       "inputs": {
@@ -423,6 +379,12 @@
         },
         "randomizeMirrorY": {
           "value": true
+        },
+        "anchor": {
+          "value": {
+            "x": 0.4,
+            "y": 0.5
+          }
         }
       },
       "position": {
@@ -439,8 +401,8 @@
     {
       "type": "extract-actor",
       "position": {
-        "x": 649.9230769230769,
-        "y": 205.39999999999998
+        "x": 986.1730769230769,
+        "y": 201.64999999999998
       },
       "id": "2mypZgw0e9EL85Wz",
       "custom": {
@@ -474,8 +436,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 1079,
-        "y": 157.75
+        "x": 1415.25,
+        "y": 154
       },
       "id": "sweIrTIP68BIJbSB"
     }

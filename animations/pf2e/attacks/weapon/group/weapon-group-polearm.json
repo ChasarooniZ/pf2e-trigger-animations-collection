@@ -1,13 +1,13 @@
 {
-  "name": "Weapon Group: Polearms",
+  "name": "Weapon Group: Polearm",
   "folder": "Attacks",
   "priority": -100,
   "nodes": [
     {
       "id": "zwvWO50CXI44ObmF",
       "position": {
-        "x": 315.3333154823181,
-        "y": 194.66668701171875
+        "x": -124.66668451768192,
+        "y": -124.33331298828125
       },
       "type": "animation-event",
       "inputs": {
@@ -57,8 +57,8 @@
     {
       "type": "extract-item",
       "position": {
-        "x": 559.9999843445869,
-        "y": 244.00001072164162
+        "x": 125.99998434458689,
+        "y": -105.99998927835838
       },
       "id": "mpa5CCtLfa7bjI71",
       "custom": {
@@ -96,7 +96,7 @@
       },
       "outs": {
         "out": {
-          "connection": "4gZJ8Gm9UjlhMc4G:ins:in"
+          "connection": "O6CdlUGUG4fVIrRY:ins:in"
         }
       }
     },
@@ -131,7 +131,7 @@
         },
         "offset": {
           "value": {
-            "x": -1.25,
+            "x": 0,
             "y": 0
           }
         },
@@ -140,6 +140,9 @@
         },
         "local": {
           "value": true
+        },
+        "bindScale": {
+          "value": false
         }
       },
       "position": {
@@ -149,7 +152,7 @@
       "id": "e9lcLUsF8nmzdJg7",
       "outs": {
         "out": {
-          "connection": "O6CdlUGUG4fVIrRY:ins:in"
+          "connection": "HrjxmdV9fn6KEOE0:ins:in"
         }
       }
     },
@@ -278,9 +281,6 @@
         "effect": {
           "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
         },
-        "considerTokenScale": {
-          "value": true
-        },
         "objectScale": {
           "value": 4
         }
@@ -295,8 +295,8 @@
     {
       "type": "execute-script",
       "position": {
-        "x": 1466.1668353055115,
-        "y": -324.49990077630594
+        "x": 374.16683530551154,
+        "y": -106.49990077630594
       },
       "id": "O6CdlUGUG4fVIrRY",
       "custom": {
@@ -329,7 +329,7 @@
       },
       "outs": {
         "out": {
-          "connection": "HrjxmdV9fn6KEOE0:ins:in"
+          "connection": "h0p6mid1HU99KQJ9:ins:in"
         }
       }
     },
@@ -357,7 +357,7 @@
     {
       "type": "execute-script",
       "position": {
-        "x": 2807.3888888888887,
+        "x": 403.3888888888887,
         "y": 38.22222222222206
       },
       "id": "h0p6mid1HU99KQJ9",
@@ -391,7 +391,7 @@
       },
       "outs": {
         "out": {
-          "connection": "wewKUsT5boOGrmqF:ins:in"
+          "connection": "4gZJ8Gm9UjlhMc4G:ins:in"
         }
       }
     },
@@ -447,6 +447,12 @@
         },
         "effect": {
           "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "anchor": {
+          "value": {
+            "x": 0.4,
+            "y": 0.5
+          }
         }
       },
       "position": {
@@ -456,12 +462,12 @@
       "id": "Fz0nLrjlQGjPdMVh",
       "outs": {
         "out": {
-          "connection": "h0p6mid1HU99KQJ9:ins:in"
+          "connection": "wewKUsT5boOGrmqF:ins:in"
         }
       }
     }
   ],
-  "id": "tvcwKL2NOKKiuh0Q",
+  "id": "btwo1foQAkSwssIW",
   "description": "<p><em>Made by @Chasarooni</em></p>",
   "variables": {
     "mpa5CCtLfa7bjI71:outputs:QPWf9ZnV9bidhNIQ": {

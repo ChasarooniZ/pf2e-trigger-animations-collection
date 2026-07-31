@@ -12,7 +12,7 @@
       "type": "animation-event",
       "inputs": {
         "name": {
-          "value": "trove-attack:claw"
+          "value": "trove-attack:claw, trove-attack:body-essence-claw"
         }
       },
       "custom": {
@@ -131,7 +131,7 @@
         },
         "offset": {
           "value": {
-            "x": -1.25,
+            "x": 0,
             "y": 0
           }
         },
@@ -305,10 +305,13 @@
         },
         "effect": {
           "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "anchorX": {
+          "value": 0.2
         }
       }
     }
   ],
-  "id": "FNNhT3JHWTCnHtC1",
+  "id": "ZEEJ7aNwRQYkNpP8",
   "description": "<p><em>Made by @Chasarooni</em></p>"
 }

@@ -36,8 +36,8 @@
     {
       "type": "effect",
       "position": {
-        "x": 981.7776878222768,
-        "y": -11.629621659793969
+        "x": 1817.4443544889436,
+        "y": -21.629621659793884
       },
       "id": "9Ny9laSD1AJY2y4E",
       "inputs": {
@@ -120,8 +120,8 @@
         }
       },
       "position": {
-        "x": 1267.5555584358076,
-        "y": -163.99815750230124
+        "x": 2103.2222251024746,
+        "y": -173.99815750230107
       },
       "id": "e9lcLUsF8nmzdJg7",
       "outs": {
@@ -141,8 +141,8 @@
         }
       },
       "position": {
-        "x": 1496.5926746274013,
-        "y": -168.26844370296433
+        "x": 2332.2593412940682,
+        "y": -178.2684437029642
       },
       "id": "HrjxmdV9fn6KEOE0",
       "outs": {
@@ -166,13 +166,13 @@
         }
       },
       "position": {
-        "x": 2023.465668183612,
-        "y": 42.45157051876333
+        "x": 2859.132334850279,
+        "y": 32.45157051876345
       },
       "id": "mzztRWLWfGStDgf8",
       "outs": {
         "out": {
-          "connection": "gwoJVDU0SJcnKJrd:ins:in"
+          "connection": "4VZUAoqh2cSldy0n:ins:in"
         }
       }
     },
@@ -192,19 +192,19 @@
         }
       },
       "outs": {
-        "out": {
-          "connection": "9Ny9laSD1AJY2y4E:ins:in"
-        },
         "outAfter": {
           "connection": "kkkNTCli7BCyXs18:ins:in"
+        },
+        "out": {
+          "connection": "gwoJVDU0SJcnKJrd:ins:in"
         }
       }
     },
     {
       "type": "list-contains",
       "position": {
-        "x": 1749.2806329087025,
-        "y": -6.137475745046345
+        "x": 2584.9472995753695,
+        "y": -16.13747574504623
       },
       "id": "2bt2cdnyg4ntLfaK",
       "inputs": {
@@ -225,8 +225,8 @@
     {
       "type": "list-value",
       "position": {
-        "x": 1505.9046807058999,
-        "y": 18.95236015319847
+        "x": 2341.571347372567,
+        "y": 8.952360153198583
       },
       "id": "Kfd0h5Nepcqvhmyb",
       "inputs": {
@@ -238,13 +238,16 @@
     {
       "type": "sound",
       "position": {
-        "x": 2387.3397435897436,
-        "y": 53.41666666666674
+        "x": 992.3397435897441,
+        "y": -24.916666666666515
       },
       "id": "gwoJVDU0SJcnKJrd",
       "inputs": {
         "file": {
           "value": "ggg-sfx.ranged.bow.strike.general.01"
+        },
+        "name": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:sR6Cy5NKJKuZpmQg"
         }
       },
       "outs": {
@@ -268,8 +271,8 @@
         }
       },
       "position": {
-        "x": 2699.916666666666,
-        "y": 58.31666666666683
+        "x": 1304.9166666666665,
+        "y": -20.016666666666424
       },
       "id": "arSAxn0KkOsvWOK8",
       "outs": {
@@ -289,12 +292,100 @@
         }
       },
       "position": {
-        "x": 2930,
-        "y": 29.25
+        "x": 1533.333333333334,
+        "y": -22.4166666666664
       },
-      "id": "yrOgHdbmGxQF5uAv"
+      "id": "yrOgHdbmGxQF5uAv",
+      "outs": {
+        "out": {
+          "connection": "9Ny9laSD1AJY2y4E:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 3488.4945887445892,
+        "y": 43.3582251082251
+      },
+      "id": "eAO9M4PYNRhPeIdJ",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.ranged.bow.impact.01"
+        },
+        "name": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:sR6Cy5NKJKuZpmQg"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Wf5VMOmCrezras1g:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "eAO9M4PYNRhPeIdJ:outputs:sound"
+        },
+        "location": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:target"
+        }
+      },
+      "position": {
+        "x": 3801.071511821511,
+        "y": 48.25822510822519
+      },
+      "id": "Wf5VMOmCrezras1g",
+      "outs": {
+        "out": {
+          "connection": "WUrH4YUZw2OHEGKi:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "preset": {
+          "value": "troveSound"
+        },
+        "sound": {
+          "connection": "eAO9M4PYNRhPeIdJ:outputs:sound"
+        }
+      },
+      "position": {
+        "x": 4029.488178488179,
+        "y": 45.85822510822521
+      },
+      "id": "WUrH4YUZw2OHEGKi"
+    },
+    {
+      "type": "flow",
+      "inputs": {
+        "effect": {
+          "connection": "mzztRWLWfGStDgf8:outputs:effect"
+        },
+        "waitUntilFinished": {
+          "value": true
+        },
+        "waitDelayMin": {
+          "value": -1400
+        }
+      },
+      "position": {
+        "x": 3161.0660173160177,
+        "y": 30.17965367965381
+      },
+      "id": "4VZUAoqh2cSldy0n",
+      "outs": {
+        "out": {
+          "connection": "eAO9M4PYNRhPeIdJ:ins:in"
+        }
+      }
     }
   ],
-  "id": "rQzNeQxt8ni9tH91",
+  "id": "hOJJFvXtdqfCeue8",
   "description": "<p><em>Example Animation from Trigger Animations by @MrVauxs.</em></p><p></p><p>Modified by @Chasarooni for use in Trigger Animation Trove</p>"
 }
