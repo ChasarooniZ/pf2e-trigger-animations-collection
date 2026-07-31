@@ -180,7 +180,7 @@
         },
         "offset": {
           "value": {
-            "x": -1.25,
+            "x": 0,
             "y": 0
           }
         }
@@ -351,7 +351,7 @@
       "state": "rotateTowards",
       "outs": {
         "out": {
-          "connection": "ciMzjnDUhWrio2aM:ins:in"
+          "connection": "7uQZ4f2tij2Nk1XG:ins:in"
         }
       }
     },
@@ -437,7 +437,7 @@
     {
       "type": "execute-script",
       "position": {
-        "x": 3090.00641025641,
+        "x": 3678.00641025641,
         "y": -233.01666666666677
       },
       "id": "ciMzjnDUhWrio2aM",
@@ -498,7 +498,7 @@
     {
       "type": "sound",
       "position": {
-        "x": 3758.9230769230767,
+        "x": 4346.923076923076,
         "y": -199.75
       },
       "id": "L0ghZSo0PvskqN5s",
@@ -524,7 +524,7 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 3655.25,
+        "x": 4243.25,
         "y": -297.25
       },
       "id": "QS6VE5jQ3iR5YfPN"
@@ -532,8 +532,8 @@
     {
       "type": "snd-location",
       "position": {
-        "x": 4192.673076923076,
-        "y": -253.09999999999997
+        "x": 4780.673076923076,
+        "y": -253.0999999999999
       },
       "id": "Q7VIYDbBF6RRpiqQ",
       "inputs": {
@@ -561,7 +561,7 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 4051.25,
+        "x": 4639.25,
         "y": -99.75
       },
       "id": "zVADbZOct7pAbkYZ"
@@ -574,7 +574,7 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 4067.5,
+        "x": 4655.5,
         "y": -3.5
       },
       "id": "ZprY3P5p0790W2MP"
@@ -582,7 +582,7 @@
     {
       "type": "snd-flow",
       "position": {
-        "x": 4430.173076923077,
+        "x": 5018.173076923077,
         "y": -249.75
       },
       "id": "dGdoyxKIQ7LLY3xQ",
@@ -654,8 +654,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 2918.2857142857138,
-        "y": -220.5714285714285
+        "x": 3506.2857142857138,
+        "y": -220.57142857142844
       },
       "id": "sHyWap2XiYIBmXag"
     },
@@ -805,16 +805,16 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 2894.1298701298692,
-        "y": -262.05194805194793
+        "x": 3482.1298701298692,
+        "y": -262.0519480519479
       },
       "id": "z7ZfxfCnduGhdN07"
     },
     {
       "type": "effect",
       "position": {
-        "x": 1856.666666666666,
-        "y": 781.6666666666663
+        "x": 2320.666666666666,
+        "y": 609.6666666666663
       },
       "id": "IXwcRo5EQame2zwF",
       "inputs": {
@@ -834,8 +834,8 @@
     {
       "type": "split-boolean",
       "position": {
-        "x": 2223.333333333333,
-        "y": 781.6666666666662
+        "x": 2687.333333333333,
+        "y": 609.6666666666662
       },
       "id": "aAqjDmOa4r9W25tT",
       "inputs": {
@@ -860,8 +860,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 2060,
-        "y": 963.3333333333329
+        "x": 2524,
+        "y": 791.3333333333329
       },
       "id": "JV8Kyqbec1cOmxU4"
     },
@@ -877,8 +877,8 @@
         }
       },
       "position": {
-        "x": 2500.6666666666665,
-        "y": 604.4833333333329
+        "x": 2964.6666666666665,
+        "y": 432.4833333333329
       },
       "id": "NxDgVESePGfoInHZ",
       "outs": {
@@ -899,8 +899,8 @@
         }
       },
       "position": {
-        "x": 2492.333333333333,
-        "y": 871.1499999999995
+        "x": 2956.333333333333,
+        "y": 699.1499999999995
       },
       "id": "E997PqshIUxNyteh",
       "outs": {
@@ -912,8 +912,8 @@
     {
       "type": "get-quality",
       "position": {
-        "x": 3418,
-        "y": -216.00000000000017
+        "x": 4006,
+        "y": -216.00000000000023
       },
       "id": "gHp45TQ8mWrwsXOD",
       "outs": {
@@ -934,7 +934,7 @@
     {
       "type": "split-boolean",
       "position": {
-        "x": 3767.333333333333,
+        "x": 4355.333333333333,
         "y": 14.33333333333286
       },
       "id": "fBx15ZSL3bvyD2B0",
@@ -960,7 +960,7 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 3561.666666666666,
+        "x": 4149.666666666666,
         "y": 70.6666666666664
       },
       "id": "iPTDGzQPziOxDiZQ"
@@ -971,8 +971,8 @@
       },
       "type": "__gate_exit__",
       "position": {
-        "x": 1586.6666666666665,
-        "y": 786.6666666666664
+        "x": 2050.6666666666665,
+        "y": 614.6666666666664
       },
       "id": "G4JQJEHlRVSlcDs3",
       "outs": {
@@ -989,8 +989,8 @@
       },
       "type": "__gate_entry__",
       "position": {
-        "x": 4155.589743589744,
-        "y": 240.83333333333326
+        "x": 4649.589743589744,
+        "y": 172.83333333333326
       },
       "id": "3xBdUeJEx0Lhil4R"
     },
@@ -1002,8 +1002,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 1693,
-        "y": 889
+        "x": 2157,
+        "y": 717
       },
       "id": "tUBAPrq4s6kt42Lb"
     },
@@ -1015,8 +1015,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 1694,
-        "y": 940
+        "x": 2158,
+        "y": 768
       },
       "id": "epTRlWHH8mxUAz4i"
     },
@@ -1038,8 +1038,8 @@
         }
       },
       "position": {
-        "x": 2864,
-        "y": 725.5785714285716
+        "x": 3328,
+        "y": 553.5785714285716
       },
       "id": "hG4hV6ukNtrJXvd1",
       "outs": {
@@ -1056,8 +1056,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 2729.923076923077,
-        "y": 966.4000000000001
+        "x": 3193.923076923077,
+        "y": 794.4000000000001
       },
       "id": "f8GB0sVUHB1oK6Ex"
     },
@@ -1073,8 +1073,8 @@
         }
       },
       "position": {
-        "x": 3126.923076923077,
-        "y": 731.5500000000001
+        "x": 3590.923076923077,
+        "y": 559.5500000000001
       },
       "id": "HJZfs8H1d1LrFKuM",
       "outs": {
@@ -1094,8 +1094,8 @@
         }
       },
       "position": {
-        "x": 3479.0659340659345,
-        "y": 721.507142857143
+        "x": 3943.0659340659345,
+        "y": 549.507142857143
       },
       "id": "TC5TsEZlnrlmmq6V",
       "outs": {
@@ -1112,7 +1112,7 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 4266.780219780219,
+        "x": 4854.780219780219,
         "y": 110.97142857142876
       },
       "id": "9qKXxcy1Plz9gCrr"
@@ -1125,10 +1125,56 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 3357.3516483516482,
-        "y": 1024.1142857142859
+        "x": 3821.3516483516482,
+        "y": 852.1142857142859
       },
       "id": "AJSxoMZDEsTTv7xj"
+    },
+    {
+      "type": "sprite",
+      "inputs": {
+        "effect": {
+          "connection": "bAw0C3oe6RIbeMNj:outputs:effect"
+        },
+        "anchor": {
+          "value": {
+            "x": 0.4,
+            "y": 0.5
+          }
+        }
+      },
+      "position": {
+        "x": 3139,
+        "y": -149.17857142857167
+      },
+      "id": "7uQZ4f2tij2Nk1XG",
+      "outs": {
+        "out": {
+          "connection": "IymE90srb0AvbgVb:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "inputs": {
+        "effect": {
+          "connection": "7uQZ4f2tij2Nk1XG:outputs:effect"
+        },
+        "objectScale": {
+          "value": 4
+        }
+      },
+      "position": {
+        "x": 3397,
+        "y": -155.85000000000002
+      },
+      "id": "IymE90srb0AvbgVb",
+      "outs": {
+        "out": {
+          "connection": "ciMzjnDUhWrio2aM:ins:in"
+        }
+      }
     }
   ],
   "id": "nh0MGn0JXH6ONRGy",
@@ -1183,5 +1229,6 @@
       "label": "Delay",
       "type": "number"
     }
-  }
+  },
+  "tags": ["PF2e Trove", "sf2e", "attacks", "weapons"]
 }
