@@ -1,5 +1,7 @@
 ## Unreleased
 
+## 0.9.6
+
 - **Animations**
   - **New**
     - Smoke Ball (@RedB 🎉 First Time contributor!)
