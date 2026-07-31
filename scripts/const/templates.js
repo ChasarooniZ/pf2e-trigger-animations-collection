@@ -1196,7 +1196,7 @@ export const TEMPLATES = {
               },
             },
           },
-          inputs: { name: { value: "trove-template:rejuvenating-flames" } },
+          inputs: { name: { value: "placeholder-trigger-names" } },
           outs: { out: { connection: "wBGkG6oAYAEvxK9E:ins:in" } },
         },
         {
