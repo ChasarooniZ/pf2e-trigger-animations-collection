@@ -279,53 +279,7 @@
       },
       "outs": {
         "out": {
-          "connection": "YLQQTqFCPl4VLlW7:ins:in"
-        }
-      }
-    },
-    {
-      "type": "file",
-      "state": "default",
-      "inputs": {
-        "effect": {
-          "connection": "11KobMwpGNkwxjMY:outputs:effect"
-        },
-        "file": {
-          "value": "jb2a.fog_cloud.01.white"
-        }
-      },
-      "position": {
-        "x": 1257.333333333333,
-        "y": 954.483333333333
-      },
-      "id": "jlZBm9izpuxHeygr",
-      "outs": {
-        "out": {
-          "connection": "EcMDr9lQgfopcY8F:ins:in"
-        }
-      }
-    },
-    {
-      "type": "style",
-      "inputs": {
-        "filterData": {
-          "value": "{\n}"
-        },
-        "effect": {
-          "connection": "jlZBm9izpuxHeygr:outputs:effect"
-        },
-        "tint": {
-          "value": "#d1d129"
-        }
-      },
-      "position": {
-        "x": 1522.9999999999995,
-        "y": 944.9166666666665
-      },
-      "id": "EcMDr9lQgfopcY8F",
-      "outs": {
-        "out": {
-          "connection": "HQVPKnRwIba8iQ6P:ins:in"
+          "connection": "bZBUxEErh0i2v988:ins:in"
         }
       }
     },
@@ -346,7 +300,7 @@
           "connection": "VUR2ZTEht2pGPmqj:outputs:entry"
         },
         "effect": {
-          "connection": "11KobMwpGNkwxjMY:outputs:effect"
+          "connection": "vv6JmNmmRPVWIQBU:outputs:effect"
         }
       },
       "position": {
@@ -377,7 +331,7 @@
           "value": 0.2
         },
         "objectScale": {
-          "value": 1.1
+          "value": 1.3
         }
       },
       "position": {
@@ -674,42 +628,45 @@
       }
     },
     {
-      "type": "module-enabled",
-      "position": {
-        "x": 1205.9999999999995,
-        "y": 578
-      },
-      "id": "YLQQTqFCPl4VLlW7",
-      "inputs": {
-        "module": {
-          "value": "jb2a_patreon"
-        }
-      },
-      "outs": {
-        "true": {
-          "connection": "bZBUxEErh0i2v988:ins:in"
-        },
-        "false": {
-          "connection": "jlZBm9izpuxHeygr:ins:in"
-        }
-      }
-    },
-    {
       "type": "file",
       "state": "default",
       "inputs": {
         "file": {
-          "value": "jb2a.fog_cloud.02.green02"
+          "value": "jb2a.template_circle.smoke.001.complete.800px.001.greenpurple"
         },
         "effect": {
           "connection": "11KobMwpGNkwxjMY:outputs:effect"
         }
       },
       "position": {
-        "x": 1491.333333333333,
-        "y": 597.483333333333
+        "x": 1271.333333333333,
+        "y": 713.1976190476187
       },
       "id": "bZBUxEErh0i2v988",
+      "outs": {
+        "out": {
+          "connection": "vv6JmNmmRPVWIQBU:ins:in"
+        }
+      }
+    },
+    {
+      "type": "style",
+      "inputs": {
+        "effect": {
+          "connection": "bZBUxEErh0i2v988:outputs:effect"
+        },
+        "filterType": {
+          "value": "ColorMatrix"
+        },
+        "filterData": {
+          "value": "{\n\"hue\":-40\n}"
+        }
+      },
+      "position": {
+        "x": 1519.7142857142856,
+        "y": 721.1071428571428
+      },
+      "id": "vv6JmNmmRPVWIQBU",
       "outs": {
         "out": {
           "connection": "HQVPKnRwIba8iQ6P:ins:in"
