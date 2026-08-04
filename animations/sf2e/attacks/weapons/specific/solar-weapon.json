@@ -235,6 +235,13 @@
             "slug": "output",
             "isArray": false,
             "type": "text"
+          },
+          "JtmUyVpJEcCw8Qd7": {
+            "id": "JtmUyVpJEcCw8Qd7",
+            "label": "ColorMatrix",
+            "slug": "output",
+            "isArray": false,
+            "type": "boolean"
           }
         }
       },
@@ -243,7 +250,7 @@
           "connection": "3w1n3YIN4lL8Acol:outputs:entry"
         },
         "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst weapongroup = inputs[0];\nconst isPhoton = inputs[1];\nlet file = \"\";\nswitch (weapongroup){\n  case \"axe\":\n    file=\"jb2a.greataxe.melee.fire.\" + (isPhoton ? \"orange\" : \"dark_purple\");\n    break\n  case \"brawling\":\n    file=\"jb2a.unarmed_strike.magical.02.\" + (isPhoton ? \"orange\" : \"dark_purple\");\n    break\n  case \"club\":\n    file=\"jb2a.greatclub.fire.\" + (isPhoton ? \"orange\" : \"dark_purple\");\n    break\n  case \"flail\":\n    file=\"jb2a.club.melee.01.\" + (isPhoton ? \"orange\" : \"dark_orangepurple\") + \".4\";\n    break\n  case \"hammer\":\n    file=\"jb2a.maul.melee.fire.\" + (isPhoton ? \"orange\" : \"dark_purple\");\n    break\n  case \"knife\":\n    file=\"jb2a.dagger.melee.fire.\" + (isPhoton ? \"orange\" : \"dark_purple\");\n    break\n  case \"pick\":\n    file=\"jb2a.warhammer.melee.01.\" + (isPhoton ? \"orange\" : \"dark_orangepurple\") + \".4\";\n    break\n  case \"polearm\":\n    file=\"jb2a.halberd.melee.01.\" + (isPhoton ? \"orange\" : \"dark_orangepurple\") + \".4\";\n    break\n  case \"spear\":\n    file=\"jb2a.spear.melee.fire.\" + (isPhoton ? \"orange\" : \"dark_purple\");\n    break\n  case \"sword\":\n    file=\"jb2a.sword.melee.fire.\" + (isPhoton ? \"orange\" : \"purple\");\n    break\n}\nreturn [{type:\"text\", value: file}];"
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst weapongroup = inputs[0];\nconst isPhoton = inputs[1];\nlet file = \"\";\nlet needsColorMatrix = false;\nswitch (weapongroup){\n  case \"axe\":\n    file=\"jb2a.greataxe.melee.fire.\" + (isPhoton ? \"orange\" : \"dark_purple\");\n    break\n  case \"brawling\":\n    file=\"jb2a.unarmed_strike.magical.02.\" + (isPhoton ? \"orange\" : \"dark_purple\");\n    break\n  case \"club\":\n    file=\"jb2a.greatclub.fire.\" + (isPhoton ? \"orange\" : \"dark_purple\");\n    break\n  case \"flail\":\n    file=\"jb2a.melee_attack.01.flail.01.0\";\n    needsColorMatrix=true;\n    break\n  case \"hammer\":\n    file=\"jb2a.maul.melee.fire.\" + (isPhoton ? \"orange\" : \"dark_purple\");\n    break\n  case \"knife\":\n    file=\"jb2a.dagger.melee.fire.\" + (isPhoton ? \"orange\" : \"dark_purple\");\n    break\n  case \"pick\":\n    file=\"jb2a.warhammer.melee.01.\" + (isPhoton ? \"orange\" : \"dark_orangepurple\") + \".4\";\n    break\n  case \"polearm\":\n    file=\"jb2a.halberd.melee.01.\" + (isPhoton ? \"orange\" : \"dark_orangepurple\") + \".4\";\n    break\n  case \"spear\":\n    file=\"jb2a.spear.melee.fire.\" + (isPhoton ? \"orange\" : \"dark_purple\");\n    break\n  case \"sword\":\n    file=\"jb2a.sword.melee.fire.\" + (isPhoton ? \"orange\" : \"purple\");\n    break\n}\nreturn [{type:\"text\", value: file}, {type:\"boolean\", value: needsColorMatrix}];"
         },
         "zza4MJWpDYC4qA9q": {
           "connection": "0HG8FoShN94kS1Hp:outputs:entry"
@@ -254,7 +261,7 @@
       },
       "outs": {
         "out": {
-          "connection": "tSmUCKf6uG0ZfHyZ:ins:in"
+          "connection": "cpgrcUOgsEUnsTlf:ins:in"
         }
       }
     },
@@ -477,7 +484,7 @@
       },
       "inputs": {
         "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst weapongroup = inputs[0];\nconst isPhoton = inputs[1];\nconst file = isPhoton ? \"ggg-sfx.magic.fire.impact.flame.01.01\" :\"ggg-sfx.magic.occult.impact.general.02.01\";\nlet groupDelay=0;\nswitch (weapongroup){\n  case \"axe\":\n    groupDelay = 350;\n    break\n  case \"brawling\":\n    groupDelay = -200;\n    break\n  case \"club\":\n    groupDelay=0;\n    break\n  case \"flail\":\n    groupDelay=200;\n    break\n  case \"hammer\":\n    groupDelay=550;\n    break\n  case \"knife\":\n    groupDelay=0;\n    break\n  case \"pick\":\n    groupDelay=200;\n    break\n  case \"polearm\":\n    groupDelay=200;\n    break\n  case \"spear\":\n    groupDelay=0;\n    break\n  case \"sword\":\n    groupDelay=100;\n    break    \n}\nlet delay=1000 + (isPhoton ? -300: 0) + groupDelay;\nreturn [{type: \"text\", value: file}, {type:\"number\", value:delay}];"
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst weapongroup = inputs[0];\nconst isPhoton = inputs[1];\nconst file = isPhoton ? \"ggg-sfx.magic.fire.impact.flame.01.01\" :\"ggg-sfx.magic.occult.impact.general.02.01\";\nlet groupDelay=0;\nswitch (weapongroup){\n  case \"axe\":\n    groupDelay = 350;\n    break\n  case \"brawling\":\n    groupDelay = -200;\n    break\n  case \"club\":\n    groupDelay=0;\n    break\n  case \"flail\":\n    groupDelay=-250;\n    break\n  case \"hammer\":\n    groupDelay=550;\n    break\n  case \"knife\":\n    groupDelay=0;\n    break\n  case \"pick\":\n    groupDelay=200;\n    break\n  case \"polearm\":\n    groupDelay=200;\n    break\n  case \"spear\":\n    groupDelay=0;\n    break\n  case \"sword\":\n    groupDelay=100;\n    break    \n}\nlet delay=1000 + (isPhoton ? -300: 0) + groupDelay;\nreturn [{type: \"text\", value: file}, {type:\"number\", value:delay}];"
         },
         "dxlFxTYbQtoERTUf": {
           "connection": "sHyWap2XiYIBmXag:outputs:entry"
@@ -782,7 +789,7 @@
       },
       "inputs": {
         "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst weapongroup = inputs[0];\nconst isPhoton = inputs[1];\nlet file = \"\";\nswitch (weapongroup){\n  case \"axe\":\n    file=\"jb2a.greataxe.melee.standard.white\";\n    break\n  case \"brawling\":\n    file=\"jb2a.unarmed_strike.magical.02.blue\";\n    break\n  case \"club\":\n    file=\"jb2a.greatclub.standard.white\";\n    break\n  case \"flail\":\n    file=\"jb2a.club.melee.01.white.4\";\n    break\n  case \"hammer\":\n    file=\"jb2a.maul.melee.standard.white\";\n    break\n  case \"knife\":\n    file=\"jb2a.dagger.melee.02.white\";\n    break\n  case \"pick\":\n    file=\"jb2a.warhammer.melee.01.white.4\";\n    break\n  case \"polearm\":\n    file=\"jb2a.halberd.melee.01.white.4\";\n    break\n  case \"spear\":\n    file=\"jb2a.spear.melee.01.white.2\";\n    break\n  case \"sword\":\n    file=\"jb2a.sword.melee.01.white.0\";\n    break\n}\nlet filter= '{\"hue\": -30, \"saturate\": 1}';\nif (!isPhoton)\n    filter = '{\"hue\": 180, \"saturate\": 1}';\nreturn [{type:\"text\", value: file}, {type: \"text\", value: filter}];"
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst weapongroup = inputs[0];\nconst isPhoton = inputs[1];\nlet file = \"\";\nswitch (weapongroup){\n  case \"axe\":\n    file=\"jb2a.greataxe.melee.standard.white\";\n    break\n  case \"brawling\":\n    file=\"jb2a.unarmed_strike.magical.02.blue\";\n    break\n  case \"club\":\n    file=\"jb2a.greatclub.standard.white\";\n    break\n  case \"flail\":\n    file=\"jb2a.melee_attack.01.flail.01.0\";\n    break\n  case \"hammer\":\n    file=\"jb2a.maul.melee.standard.white\";\n    break\n  case \"knife\":\n    file=\"jb2a.dagger.melee.02.white\";\n    break\n  case \"pick\":\n    file=\"jb2a.warhammer.melee.01.white.4\";\n    break\n  case \"polearm\":\n    file=\"jb2a.halberd.melee.01.white.4\";\n    break\n  case \"spear\":\n    file=\"jb2a.spear.melee.01.white.2\";\n    break\n  case \"sword\":\n    file=\"jb2a.sword.melee.01.white.0\";\n    break\n}\nlet filter= '{\"hue\": -30, \"saturate\": 1}';\nif (!isPhoton)\n    filter = '{\"hue\": 180, \"saturate\": 1}';\nreturn [{type:\"text\", value: file}, {type: \"text\", value: filter}];"
         },
         "U9iX07yex7lfv3NE": {
           "connection": "HfN1XFA6I9egdsHE:outputs:entry"
@@ -1177,7 +1184,7 @@
       }
     }
   ],
-  "id": "nh0MGn0JXH6ONRGy",
+  "id": "mNQgan9bXe7MfUWW",
   "variables": {
     "59DxE5yps3tZvxN0:outputs:target": {
       "isArray": false,
