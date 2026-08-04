@@ -1,5 +1,18 @@
 ## Unreleased
 
+- **Animations**
+  - **New**
+    - Stinking Cloud, Lightning Storm, Toxic Cloud (@Suldrun45)
+  - **Updated**
+    - Solar Weapon, Shock Pad, Pulse Gauntlet, Disintegration Lash, Zero Knife, Skyfire Sword _to use Anchor and Scale nodes_ (@Suldrun45)
+- **New**
+- **Updated**
+  - `Reload` Trigger now has proper targets
+  - Updated `GGG` to version `0.1.3`
+    - _New Spells SFX_
+  - Updated `Trigger Engine` to version `1.25.0`
+  - Updated `Trigger Animations` to version `0.7.1`
+
 ## 0.9.6
 
 - **Animations**

@@ -162,6 +162,7 @@
 - Haste 🔊🆓✅ (✍🏼 @Chasarooni)
 - Lightning Bolt 🔊🆓✅ (✍🏼 @Chasarooni)
 - Slow 🔊🆓✅ (✍🏼 @Chasarooni)
+- Stinking Cloud 🔊🆓✅ (✍🏼 @Suldrun45)
 
 #### 4th Rank Spells
 
@@ -171,6 +172,8 @@
 #### 5th Rank Spells
 
 - Howling Blizzard 🔊🆓✅ (✍🏼 @Suldrun45)
+- Lightning Storm 🔊🆓✅ (✍🏼 @Suldrun45)
+- Toxic Cloud 🔊🆓✅ (✍🏼 @Suldrun45)
 
 #### 6th Rank Spells
 

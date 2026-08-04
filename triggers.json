@@ -424,14 +424,13 @@
     "name": "Reload",
     "folder": "Animations",
     "priority": 0,
-    "id": "saiamYPn64gd1P9y",
+    "id": "TRgkfq3bmarPP6Vx",
     "nodes": [
       {
         "type": "execute-animation",
-        "position": { "x": 2204.6907624506157, "y": -88.2944162426453 },
+        "position": { "x": 2473.0240957839487, "y": -84.96108290931198 },
         "id": "PEXiYyM5Qoo77FZK",
         "inputs": {
-          "targets": { "connection": "iLQqpDvy8aS7XhpM:outputs:targets" },
           "actor": {
             "connection": "mosxx1pPt8nuHzjX:outputs:Xk3O4efifslHIdqZ"
           },
@@ -464,7 +463,8 @@
           "DmgYiD7Z1PcrJ53Q": {
             "connection": "FxR5QChVGKXuHlVk:outputs:TmZxRcmok2WAWBDU"
           },
-          "user": { "connection": "3k4ztAKqYFQdGH3l:outputs:vdIDlUEvPNvlTYqm" }
+          "user": { "connection": "3k4ztAKqYFQdGH3l:outputs:vdIDlUEvPNvlTYqm" },
+          "targets": { "connection": "xh0UevTkdltGQCTs:outputs:targets" }
         },
         "custom": {
           "inputs": {
@@ -537,11 +537,6 @@
           "input": { "connection": "ZxdKeHGJd1pmBBiS:outputs:TdOzBdcKWTlrReUL" }
         },
         "outs": { "out": { "connection": "Oib6d57AsodU4FR0:ins:in" } }
-      },
-      {
-        "type": "scene-targets",
-        "position": { "x": 1164.5912393034155, "y": 210.21036443470786 },
-        "id": "iLQqpDvy8aS7XhpM"
       },
       {
         "type": "hook-called-event",
@@ -654,7 +649,7 @@
         "state": "plain",
         "position": { "x": 1200.7777777777776, "y": 19.70555555555552 },
         "id": "Oib6d57AsodU4FR0",
-        "outs": { "out": { "connection": "3k4ztAKqYFQdGH3l:ins:in" } },
+        "outs": { "out": { "connection": "xh0UevTkdltGQCTs:ins:in" } },
         "custom": {
           "inputs": {
             "jhufYqifVCmc1Tb7": {
@@ -706,7 +701,7 @@
       },
       {
         "type": "execute-script",
-        "position": { "x": 1579.9166666666667, "y": -32.41666666666663 },
+        "position": { "x": 1878.25, "y": -37.97222222222223 },
         "id": "3k4ztAKqYFQdGH3l",
         "custom": {
           "inputs": {
@@ -747,7 +742,7 @@
       },
       {
         "type": "if-truthy",
-        "position": { "x": 1962.6944444444443, "y": -53.80555555555554 },
+        "position": { "x": 2231.0277777777774, "y": -50.47222222222223 },
         "id": "xrvH72V5520NEj1v",
         "custom": {
           "inputs": {
@@ -781,7 +776,7 @@
           }
         },
         "type": "__gate_exit__",
-        "position": { "x": 1303.666666666667, "y": -183.66666666666663 },
+        "position": { "x": 1572.0000000000002, "y": -180.33333333333331 },
         "id": "JgPqKdyOdsKAWadY",
         "outs": { "out": { "connection": "3k4ztAKqYFQdGH3l:ins:in" } }
       },
@@ -799,13 +794,25 @@
         },
         "outs": { "out": { "connection": "JgPqKdyOdsKAWadY:ins:in" } },
         "type": "__gate_entry__",
-        "position": { "x": 2501.339743589744, "y": -92.41666666666663 },
+        "position": { "x": 2769.673076923077, "y": -89.08333333333331 },
         "id": "u7BIFKFJ9s6EaqSm",
         "inputs": {
           "33Bq3ZkWNl8HA0Rt": {
             "connection": "3k4ztAKqYFQdGH3l:outputs:xJZ5nTq9eYhparwk"
           }
         }
+      },
+      {
+        "type": "user-targets",
+        "position": { "x": 1523.7777777777778, "y": 4 },
+        "id": "xh0UevTkdltGQCTs",
+        "inputs": { "user": { "connection": "tQfRQiqTYrYxeLaz:outputs:user" } },
+        "outs": { "out": { "connection": "3k4ztAKqYFQdGH3l:ins:in" } }
+      },
+      {
+        "type": "user-value",
+        "position": { "x": 1248.4444444444443, "y": -68.44444444444457 },
+        "id": "tQfRQiqTYrYxeLaz"
       }
     ]
   },
