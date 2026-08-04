@@ -36,8 +36,8 @@
     {
       "type": "effect",
       "position": {
-        "x": 953.4443544889433,
-        "y": -44.962954993127255
+        "x": 859.4443544889433,
+        "y": -45.962954993127255
       },
       "id": "9Ny9laSD1AJY2y4E",
       "inputs": {
@@ -121,9 +121,6 @@
         "attachTo": {
           "value": true
         },
-        "offset": {
-          "connection": "5xu667xWYvuzp3J2:outputs:399AKY4XiQVOa9IK"
-        },
         "gridUnits": {
           "value": true
         },
@@ -196,7 +193,7 @@
           "connection": "kkkNTCli7BCyXs18:ins:in"
         },
         "out": {
-          "connection": "5xu667xWYvuzp3J2:ins:in"
+          "connection": "9Ny9laSD1AJY2y4E:ins:in"
         }
       }
     },
@@ -385,47 +382,6 @@
       "id": "WGKhC9Yzdo4iAftr"
     },
     {
-      "type": "execute-script",
-      "position": {
-        "x": 682.8055555555558,
-        "y": -5.55555555555577
-      },
-      "id": "5xu667xWYvuzp3J2",
-      "custom": {
-        "inputs": {
-          "Gu41iNHzvLtFjPnQ": {
-            "id": "Gu41iNHzvLtFjPnQ",
-            "label": "Source",
-            "slug": "input",
-            "isArray": false,
-            "type": "target"
-          }
-        },
-        "outputs": {
-          "399AKY4XiQVOa9IK": {
-            "id": "399AKY4XiQVOa9IK",
-            "label": "Offset",
-            "slug": "output",
-            "isArray": false,
-            "type": "point"
-          }
-        }
-      },
-      "inputs": {
-        "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst source = inputs[0];\nconst x = -(source?.token?.width ?? 1) - 0.25\nreturn [{type: \"point\", value: {x: x, y: 0}}];"
-        },
-        "Gu41iNHzvLtFjPnQ": {
-          "connection": "8L3UdKYw78DssTqG:outputs:entry"
-        }
-      },
-      "outs": {
-        "out": {
-          "connection": "9Ny9laSD1AJY2y4E:ins:in"
-        }
-      }
-    },
-    {
       "inputs": {
         "entry": {
           "connection": "4gZJ8Gm9UjlhMc4G:outputs:source"
@@ -470,6 +426,12 @@
         },
         "randomizeMirrorY": {
           "value": true
+        },
+        "anchor": {
+          "value": {
+            "x": 0.4,
+            "y": 0.5
+          }
         }
       },
       "position": {
@@ -712,5 +674,6 @@
       "type": "boolean"
     }
   },
-  "description": "<p>Animations for the Shock Pad and the Polyglove</p><p><em>Created by @MrVauxs., Modified by @Chasarooni, Modified by @Sasane</em></p>"
+  "description": "<p>Animations for the Shock Pad and the Polyglove</p><p><em>Created by @MrVauxs., Modified by @Chasarooni, Modified by @Sasane</em></p>",
+  "tags": ["PF2e Trove", "sf2e", "attacks", "weapons"]
 }

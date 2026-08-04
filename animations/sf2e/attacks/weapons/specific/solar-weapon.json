@@ -1162,27 +1162,6 @@
       }
     },
     {
-      "type": "split-boolean",
-      "position": {
-        "x": 2230,
-        "y": -279.99999999999983
-      },
-      "id": "cpgrcUOgsEUnsTlf",
-      "inputs": {
-        "input": {
-          "connection": "49KMjmeoYAMf0FX7:outputs:JtmUyVpJEcCw8Qd7"
-        }
-      },
-      "outs": {
-        "false": {
-          "connection": "tSmUCKf6uG0ZfHyZ:ins:in"
-        },
-        "true": {
-          "connection": "T6tBt1r5Rma0TU3n:ins:in"
-        }
-      }
-    },
-    {
       "type": "scale",
       "state": "object",
       "inputs": {

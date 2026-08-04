@@ -1,7 +1,7 @@
 {
   "name": "Zero Knife",
   "folder": "Attacks",
-  "priority": 0,
+  "priority": -50,
   "description": "<p>Made by @Sasane</p>",
   "nodes": [
     {
@@ -215,13 +215,13 @@
         }
       },
       "position": {
-        "x": 2239.666666666666,
-        "y": 164.8166666666665
+        "x": 2233.666666666666,
+        "y": 166.8166666666665
       },
       "id": "1mX6MwfLd29qgbTJ",
       "outs": {
         "out": {
-          "connection": "TLussZjIq6PLXRfg:ins:in"
+          "connection": "riWxVjxMoyCiY1m3:ins:in"
         }
       }
     },
@@ -233,28 +233,31 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 2533.8888888888887,
-        "y": 34.33333333333326
+        "x": 3147.8888888888887,
+        "y": 32.33333333333326
       },
       "id": "cUpjTAT9omJ7E7XD"
     },
     {
       "type": "aim",
-      "state": "stretchTo",
+      "state": "rotateTowards",
       "inputs": {
-        "effect": {
-          "connection": "1mX6MwfLd29qgbTJ:outputs:effect"
-        },
         "towards": {
           "connection": "cUpjTAT9omJ7E7XD:outputs:entry"
         },
         "missed": {
           "connection": "TLussZjIq6PLXRfg:outputs:boolean"
+        },
+        "effect": {
+          "connection": "8CQYBPazcJo0CnaG:outputs:effect"
+        },
+        "attachTo": {
+          "value": true
         }
       },
       "position": {
-        "x": 2754.6666666666665,
-        "y": 186.14999999999998
+        "x": 3368.6666666666665,
+        "y": 184.14999999999998
       },
       "id": "F8l88Wd8f4V3EmzM",
       "outs": {
@@ -266,8 +269,8 @@
     {
       "type": "list-contains",
       "position": {
-        "x": 2479,
-        "y": 167
+        "x": 3093,
+        "y": 165
       },
       "id": "TLussZjIq6PLXRfg",
       "inputs": {
@@ -306,16 +309,16 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 2285,
-        "y": -53
+        "x": 2899,
+        "y": -55
       },
       "id": "JrDf4Zk81mssROs3"
     },
     {
       "type": "list-value",
       "position": {
-        "x": 2239,
-        "y": 45
+        "x": 2853,
+        "y": 43
       },
       "id": "YAh9Do5j0prfrVB4",
       "inputs": {
@@ -327,8 +330,8 @@
     {
       "type": "sound",
       "position": {
-        "x": 3772.25641025641,
-        "y": 165.83333333333331
+        "x": 4386.25641025641,
+        "y": 163.83333333333331
       },
       "id": "q4H5uyRQfcwDKZxa",
       "inputs": {
@@ -360,8 +363,8 @@
         }
       },
       "position": {
-        "x": 4138.333333333333,
-        "y": 164.4833333333333
+        "x": 4752.333333333333,
+        "y": 162.4833333333333
       },
       "id": "BaFIOoJDGfTwpCgv",
       "outs": {
@@ -381,8 +384,8 @@
         }
       },
       "position": {
-        "x": 4414.333333333333,
-        "y": 165.58333333333331
+        "x": 5028.333333333333,
+        "y": 163.58333333333331
       },
       "id": "uOIazaRtyOzP6WAy"
     },
@@ -394,8 +397,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 3995.333333333333,
-        "y": 72.33333333333326
+        "x": 4609.333333333333,
+        "y": 70.33333333333326
       },
       "id": "oR4jd3Pfch6KuVXw"
     },
@@ -407,8 +410,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 3620.333333333332,
-        "y": 106.33333333333309
+        "x": 4234.333333333332,
+        "y": 104.33333333333314
       },
       "id": "qIXSz7ZvPKRKIyBz"
     },
@@ -540,8 +543,8 @@
     {
       "type": "get-quality",
       "position": {
-        "x": 3490.333333333333,
-        "y": 166.33333333333297
+        "x": 4104.333333333333,
+        "y": 164.33333333333297
       },
       "id": "RKj2EtgqsvIeF5oX",
       "outs": {
@@ -567,16 +570,16 @@
       },
       "type": "__gate_entry__",
       "position": {
-        "x": 3914.25641025641,
-        "y": 362.1666666666663
+        "x": 4528.25641025641,
+        "y": 360.1666666666663
       },
       "id": "sxChsxAIYeFpepyh"
     },
     {
       "type": "split-boolean",
       "position": {
-        "x": 3700.3333333333326,
-        "y": 359.66666666666623
+        "x": 4314.333333333333,
+        "y": 357.66666666666623
       },
       "id": "JyIvtcXRgQMmYZW7",
       "inputs": {
@@ -601,8 +604,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 3566.999999999999,
-        "y": 447.99999999999943
+        "x": 4180.999999999999,
+        "y": 445.99999999999943
       },
       "id": "6lfLKriNA1JB6lnF"
     },
@@ -638,13 +641,59 @@
         }
       },
       "position": {
-        "x": 3096,
-        "y": 168.25
+        "x": 3710,
+        "y": 166.25
       },
       "id": "SysYq2XgWvqaOW2f",
       "outs": {
         "out": {
           "connection": "RKj2EtgqsvIeF5oX:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "inputs": {
+        "effect": {
+          "connection": "riWxVjxMoyCiY1m3:outputs:effect"
+        },
+        "objectScale": {
+          "value": 4
+        }
+      },
+      "position": {
+        "x": 2773,
+        "y": 170.1500000000001
+      },
+      "id": "8CQYBPazcJo0CnaG",
+      "outs": {
+        "out": {
+          "connection": "TLussZjIq6PLXRfg:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sprite",
+      "inputs": {
+        "effect": {
+          "connection": "1mX6MwfLd29qgbTJ:outputs:effect"
+        },
+        "anchor": {
+          "value": {
+            "x": 0.4,
+            "y": 0.5
+          }
+        }
+      },
+      "position": {
+        "x": 2487,
+        "y": 164.2500000000001
+      },
+      "id": "riWxVjxMoyCiY1m3",
+      "outs": {
+        "out": {
+          "connection": "8CQYBPazcJo0CnaG:ins:in"
         }
       }
     }
@@ -676,5 +725,6 @@
       "label": "Missed",
       "type": "boolean"
     }
-  }
+  },
+  "tags": ["PF2e Trove", "sf2e", "attacks", "weapons"]
 }
