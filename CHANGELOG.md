@@ -5,6 +5,7 @@
     - Stinking Cloud, Lightning Storm, Toxic Cloud (@Suldrun45)
   - **Updated**
     - Solar Weapon, Shock Pad, Pulse Gauntlet, Disintegration Lash, Zero Knife, Skyfire Sword _to use Anchor and Scale nodes_ (@Suldrun45)
+    - Aim _uses built in targets_ (@Suldrun45)
 - **New**
 - **Updated**
   - `Reload` Trigger now has proper targets
