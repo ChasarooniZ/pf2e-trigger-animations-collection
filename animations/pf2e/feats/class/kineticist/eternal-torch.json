@@ -1,0 +1,198 @@
+{
+  "id": "gG7SmNawM75EKT5B",
+  "name": "Eternal Torch",
+  "folder": "Feats",
+  "priority": 0,
+  "description": "<p>made by @RunicLibrarian</p><p>trigger: action:eternal-torch</p>",
+  "nodes": [
+    {
+      "id": "04CgBHLM8Vn2TGTt",
+      "type": "animation-event",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "inputs": {
+        "name": {
+          "value": "action:eternal-torch"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "U7zYD9tm3NveEHzw:ins:in"
+        }
+      }
+    },
+    {
+      "id": "U7zYD9tm3NveEHzw",
+      "type": "extract-item",
+      "position": {
+        "x": 280,
+        "y": 0
+      },
+      "custom": {
+        "outputs": {
+          "yKgUtnRcFFpHpojN": {
+            "id": "yKgUtnRcFFpHpojN",
+            "input": "name",
+            "label": "Name",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "9ycFKYLLpvKgZfJC": {
+            "id": "9ycFKYLLpvKgZfJC",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "04CgBHLM8Vn2TGTt:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "fjAJKTaYEFskZZQ7:ins:in"
+        }
+      }
+    },
+    {
+      "id": "fjAJKTaYEFskZZQ7",
+      "type": "effect",
+      "position": {
+        "x": 560,
+        "y": 0
+      },
+      "inputs": {
+        "name": {
+          "connection": "U7zYD9tm3NveEHzw:outputs:yKgUtnRcFFpHpojN"
+        },
+        "origin": {
+          "connection": "U7zYD9tm3NveEHzw:outputs:9ycFKYLLpvKgZfJC"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "BgazOKMYTjtr9omd:ins:in"
+        }
+      }
+    },
+    {
+      "id": "BgazOKMYTjtr9omd",
+      "type": "file",
+      "position": {
+        "x": 840,
+        "y": 0
+      },
+      "inputs": {
+        "effect": {
+          "connection": "fjAJKTaYEFskZZQ7:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.cast_generic.fire.01.orange.0"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "hby4eRrsexPmbB4U:ins:in"
+        }
+      }
+    },
+    {
+      "id": "hby4eRrsexPmbB4U",
+      "type": "location",
+      "state": "targets",
+      "position": {
+        "x": 1120,
+        "y": 0
+      },
+      "inputs": {
+        "effect": {
+          "connection": "fjAJKTaYEFskZZQ7:outputs:effect"
+        },
+        "location": {
+          "connection": "04CgBHLM8Vn2TGTt:outputs:sources"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "UV06VePvBxdfAbv2:ins:in"
+        }
+      }
+    },
+    {
+      "id": "fL8TWxC5ioU66Y06",
+      "type": "play",
+      "position": {
+        "x": 2141.333217750216,
+        "y": 27.333357946455322
+      },
+      "inputs": {
+        "preload": {
+          "value": true
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 1342.666404361939,
+        "y": 15.000050095729279
+      },
+      "id": "UV06VePvBxdfAbv2",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.magic.fire.torch.01.01"
+        },
+        "name": {
+          "connection": "U7zYD9tm3NveEHzw:outputs:yKgUtnRcFFpHpojN"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "SCUQJ2Z4UHa0MmYu:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "position": {
+        "x": 1629.2562068924003,
+        "y": 7.399987204675028
+      },
+      "id": "SCUQJ2Z4UHa0MmYu",
+      "inputs": {
+        "location": {
+          "connection": "04CgBHLM8Vn2TGTt:outputs:sources"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Z4paDvnWnaf1bIHb:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "position": {
+        "x": 1875.2561886541407,
+        "y": 6.833331089696458
+      },
+      "id": "Z4paDvnWnaf1bIHb",
+      "outs": {
+        "out": {
+          "connection": "fL8TWxC5ioU66Y06:ins:in"
+        }
+      }
+    }
+  ],
+  "tags": [
+    "pf2e",
+    "kineticist"
+  ]
+}
