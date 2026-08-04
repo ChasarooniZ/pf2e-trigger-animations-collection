@@ -1,7 +1,7 @@
 {
   "name": "Disintegration Lash",
   "folder": "Attacks",
-  "priority": 0,
+  "priority": -50,
   "description": "<p>Made by @Sasane</p>",
   "nodes": [
     {
@@ -225,7 +225,7 @@
       "id": "MjkqHNyGXjevfVCT",
       "outs": {
         "out": {
-          "connection": "SqJg28yYa1XUcxpX:ins:in"
+          "connection": "iSmPzK6XNSzGsIwF:ins:in"
         }
       }
     },
@@ -245,8 +245,8 @@
     {
       "type": "list-contains",
       "position": {
-        "x": 2439.923076923077,
-        "y": 47.39999999999998
+        "x": 2941.5897435897436,
+        "y": 50.73333333333329
       },
       "id": "SqJg28yYa1XUcxpX",
       "inputs": {
@@ -272,16 +272,16 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 2198,
-        "y": -40
+        "x": 2699.6666666666665,
+        "y": -36.666666666666686
       },
       "id": "QxMdWLLTR51CRDqG"
     },
     {
       "type": "list-value",
       "position": {
-        "x": 2113,
-        "y": -123
+        "x": 2614.6666666666665,
+        "y": -119.66666666666669
       },
       "id": "bUXul3hlWI7CoxKw",
       "inputs": {
@@ -293,8 +293,8 @@
     {
       "type": "aim",
       "position": {
-        "x": 2698.923076923077,
-        "y": 29.399999999999977
+        "x": 3200.5897435897436,
+        "y": 32.73333333333329
       },
       "id": "XR5UFXEepEfuOF8l",
       "inputs": {
@@ -305,14 +305,15 @@
           "connection": "RW8MxRZ3yYTwNEiO:outputs:entry"
         },
         "effect": {
-          "connection": "MjkqHNyGXjevfVCT:outputs:effect"
+          "connection": "MFGYxTO7dOB4WNv1:outputs:effect"
         }
       },
       "outs": {
         "out": {
           "connection": "fmdQBZfLnKUNNNmn:ins:in"
         }
-      }
+      },
+      "state": "rotateTowards"
     },
     {
       "inputs": {
@@ -322,16 +323,16 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 2548,
-        "y": 202
+        "x": 3049.6666666666665,
+        "y": 205.33333333333331
       },
       "id": "RW8MxRZ3yYTwNEiO"
     },
     {
       "type": "get-quality",
       "position": {
-        "x": 3009.923076923077,
-        "y": 20.5
+        "x": 3511.5897435897436,
+        "y": 23.833333333333314
       },
       "id": "fmdQBZfLnKUNNNmn",
       "outs": {
@@ -352,8 +353,8 @@
     {
       "type": "sound",
       "position": {
-        "x": 3446.923076923077,
-        "y": 4.5
+        "x": 3948.5897435897436,
+        "y": 7.833333333333314
       },
       "id": "55oppfI47yPmSU7z",
       "inputs": {
@@ -373,8 +374,8 @@
     {
       "type": "split-boolean",
       "position": {
-        "x": 3232,
-        "y": 185
+        "x": 3733.6666666666665,
+        "y": 188.33333333333331
       },
       "id": "r6gdfWxp9NZK9USn",
       "inputs": {
@@ -399,8 +400,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 3063,
-        "y": 316
+        "x": 3564.6666666666665,
+        "y": 319.3333333333333
       },
       "id": "VzUmQ9AnXxQkPIFx"
     },
@@ -412,8 +413,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 3307,
-        "y": 116
+        "x": 3808.6666666666665,
+        "y": 119.33333333333331
       },
       "id": "c4eF2usUehphHFA5"
     },
@@ -441,8 +442,8 @@
       },
       "type": "__gate_entry__",
       "position": {
-        "x": 3450.923076923077,
-        "y": 281.5
+        "x": 3952.5897435897436,
+        "y": 284.8333333333333
       },
       "id": "RhZxOCW1Bm3sKeff"
     },
@@ -458,8 +459,8 @@
         }
       },
       "position": {
-        "x": 3785,
-        "y": 17.149999999999977
+        "x": 4286.666666666666,
+        "y": 20.48333333333329
       },
       "id": "wTkJJxImzoxv0puS",
       "outs": {
@@ -476,8 +477,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 3641,
-        "y": 172
+        "x": 4142.666666666666,
+        "y": 175.33333333333331
       },
       "id": "cPQUrvcm7aNwRabf"
     },
@@ -492,8 +493,8 @@
         }
       },
       "position": {
-        "x": 4027,
-        "y": 17.25
+        "x": 4528.666666666666,
+        "y": 20.583333333333314
       },
       "id": "q8ZnBmg0zMKj6XWx"
     },
@@ -619,10 +620,15 @@
         }
       },
       "position": {
-        "x": 4357.5,
-        "y": 566.65
+        "x": 4355.833333333334,
+        "y": 551.6499999999997
       },
-      "id": "GnfelA4bgc6WhiNq"
+      "id": "GnfelA4bgc6WhiNq",
+      "outs": {
+        "out": {
+          "connection": "55oppfI47yPmSU7z:ins:in"
+        }
+      }
     },
     {
       "type": "style",
@@ -645,6 +651,52 @@
       "outs": {
         "out": {
           "connection": "Q2uiBg8U4saBOX13:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sprite",
+      "inputs": {
+        "effect": {
+          "connection": "MjkqHNyGXjevfVCT:outputs:effect"
+        },
+        "anchor": {
+          "value": {
+            "x": 0.4,
+            "y": 0.5
+          }
+        }
+      },
+      "position": {
+        "x": 2393.3333333333335,
+        "y": 58.91666666666663
+      },
+      "id": "iSmPzK6XNSzGsIwF",
+      "outs": {
+        "out": {
+          "connection": "MFGYxTO7dOB4WNv1:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "inputs": {
+        "effect": {
+          "connection": "iSmPzK6XNSzGsIwF:outputs:effect"
+        },
+        "objectScale": {
+          "value": 4
+        }
+      },
+      "position": {
+        "x": 2647.333333333333,
+        "y": 97.81666666666666
+      },
+      "id": "MFGYxTO7dOB4WNv1",
+      "outs": {
+        "out": {
+          "connection": "SqJg28yYa1XUcxpX:ins:in"
         }
       }
     }
@@ -681,5 +733,6 @@
       "label": "Missed",
       "type": "boolean"
     }
-  }
+  },
+  "tags": ["PF2e Trove", "sf2e", "attacks", "weapons"]
 }
