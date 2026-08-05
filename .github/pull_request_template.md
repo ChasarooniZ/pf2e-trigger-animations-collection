@@ -10,6 +10,7 @@ _Note you don't need to literally check these off, just confirm you followed the
 - **Quality Support.** The animation is set to **Local** for its play, and is setup such that it adheres to the general quality guidelines?
 - **Prettier.** Did you either run yarn prettier or checkout the website to format it mentioned in the [Contribution guide](https://github.com/ChasarooniZ/pf2e-trigger-animations-collection?tab=contributing-ov-file)
 - **Animation List Update.** Update `ANIMATIONS_LIST.md` to include what animation you added (see other examples and the legend at the top to see how)
+
 ## Video of it in use
 
 Paste a video of it working here [ShareX](https://getsharex.com/) is an easy way to record this

@@ -21,6 +21,7 @@
   - [PF2e](#pf2e)
     - [Class Features](#class-features)
       - [Barbarian](#barbarian)
+      - [Kineticist](#kineticist)
       - [Rogue](#rogue)
       - [Runesmith](#runesmith)
     - [Spells](#spells)
@@ -42,6 +43,7 @@
     - [Feats](#feats)
       - [Ancestry Feats](#ancestry-feats)
       - [Class Feats](#class-feats)
+        - [Kineticist](#kineticist-1)
       - [Shared](#shared)
       - [General Feats](#general-feats)
       - [Skill Feats](#skill-feats)
@@ -103,6 +105,10 @@
 
 - Rage 🔊🆓 (✍🏼 @Chasarooni)
 
+#### Kineticist
+
+- Elemental Blast 🔊🆓 (✍🏼 @Chasarooni)
+
 #### Rogue
 
 - Sneak Attack 🔇🆓 (✍🏼 @Chasarooni)
@@ -118,7 +124,7 @@
 #### Cantrips
 
 - Buzzing Bites 🔊🆓 (✍🏼 @Chasarooni)
-- Detect Magic 🔊🆓✅ (✍🏼 @Suldrun45)\
+- Detect Magic 🔊🆓✅ (✍🏼 @Suldrun45)
 - Divine Lance 🔊🆓 (✍🏼 @Chasarooni)
 - Electric Arc 🔊🆓✅ (✍🏼 @Chasarooni)
 - Frostbite 🔊🆓✅ (✍🏼 @Chasarooni)
@@ -239,6 +245,16 @@
 - Change Shape 🔇🆓 (✍🏼 @Chasarooni)
 
 #### Class Feats
+
+##### Kineticist
+
+- Air Cushion 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Armor In Earth 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Deflecting Wave 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
+- Four Winds 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Geologic Attunement 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Hail of Spinters 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Scorching Column 🔊🆓✅ (✍🏼 @RunicLibrarian)
 
 #### Shared
 

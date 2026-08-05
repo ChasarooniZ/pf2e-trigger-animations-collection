@@ -481,8 +481,5 @@
       "label": "UUID",
       "type": "text"
     }
-  },
-  "tags": [
-    "pf2e"
-  ]
+  }
 }

@@ -1,9 +1,12 @@
 ## Unreleased
 
+## 0.9.7
+
 - **Animations**
   - **New**
     - Stinking Cloud, Lightning Storm, Toxic Cloud (@Suldrun45)
     - Sigil, Quandary, Elemental Blast (@ChasarooniZ)
+    - Air Cushion, Armor In Earth, Deflecting Wave Four Winds, Geologic Attunement, Hail of Spinters, Scorching Column (@RunicLibrarian 🎉`First Time Contributor)
   - **Updated**
     - Solar Weapon, Shock Pad, Pulse Gauntlet, Disintegration Lash, Zero Knife, Skyfire Sword _to use Anchor and Scale nodes_ (@Suldrun45)
     - Aim _uses built in targets_ (@Suldrun45)
@@ -20,6 +23,7 @@
   - Updated `GGG` to version `0.1.3`
     - _New Spells SFX_
   - Updated `Trigger Engine` to version `1.25.0`
+    - *greatly improved performance*
   - Updated `Trigger Animations` to version `0.7.1`
 
 ## 0.9.6

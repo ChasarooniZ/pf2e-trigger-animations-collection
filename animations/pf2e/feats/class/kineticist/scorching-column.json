@@ -937,8 +937,5 @@
       "type": "target"
     }
   },
-  "description": "<p>created by @RunicLibrarian</p><p>trigger: trove-template:scorching-column</p>",
-  "tags": [
-    "pf2e"
-  ]
+  "description": "<p>created by @RunicLibrarian</p><p>trigger: trove-template:scorching-column</p>"
 }
