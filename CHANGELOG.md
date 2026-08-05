@@ -3,12 +3,15 @@
 - **Animations**
   - **New**
     - Stinking Cloud, Lightning Storm, Toxic Cloud (@Suldrun45)
+    - Sigil, Quandary, Elemental Blast (@ChasarooniZ)
   - **Updated**
     - Solar Weapon, Shock Pad, Pulse Gauntlet, Disintegration Lash, Zero Knife, Skyfire Sword _to use Anchor and Scale nodes_ (@Suldrun45)
     - Aim _uses built in targets_ (@Suldrun45)
 - **New**
+  - `Turn Start Condition` - Specific condition to play an animation based on what conditions are active on the start of turn _to be added to animations later_
 - **Updated**
-  - `Reload` Trigger now has proper targets
+  - `Reload` & `Update Roll Option` Trigger now has proper targets
+  - `Handler Attack` - Removed log from handler
   - Updated `GGG` to version `0.1.3`
     - _New Spells SFX_
   - Updated `Trigger Engine` to version `1.25.0`

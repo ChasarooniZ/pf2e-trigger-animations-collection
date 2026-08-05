@@ -252,7 +252,7 @@
       },
       "outs": {
         "out": {
-          "connection": "GXIX4IyeklnvMhS9:ins:in"
+          "connection": "kZwUhq5O0rWeJQYk:ins:in"
         }
       }
     },
@@ -362,66 +362,11 @@
           "connection": "5Yy2lI6uhThGLmVb:outputs:ovMBNPEPnEjbEwll"
         }
       }
-    },
-    {
-      "type": "console-log",
-      "position": {
-        "x": 910.25,
-        "y": 495
-      },
-      "id": "GXIX4IyeklnvMhS9",
-      "custom": {
-        "inputs": {
-          "RQVnknctRJoR0TU7": {
-            "id": "RQVnknctRJoR0TU7",
-            "isArray": false,
-            "label": "Item",
-            "slug": "input",
-            "type": "item"
-          },
-          "sMQzqUvr7KvRfeqw": {
-            "id": "sMQzqUvr7KvRfeqw",
-            "isArray": false,
-            "label": "Slug",
-            "slug": "input",
-            "type": "text"
-          },
-          "lVJVqh21ZvHlDPoQ": {
-            "id": "lVJVqh21ZvHlDPoQ",
-            "isArray": false,
-            "label": "Weapon Group",
-            "slug": "input",
-            "type": "text"
-          },
-          "Gs6yvDiDoTJUvuE1": {
-            "id": "Gs6yvDiDoTJUvuE1",
-            "isArray": false,
-            "label": "Base Item",
-            "slug": "input",
-            "type": "text"
-          }
-        }
-      },
-      "inputs": {
-        "RQVnknctRJoR0TU7": {
-          "connection": "Dgsjbu22A3ZFjr1n:outputs:cVoi0vGSYMkcIScZ"
-        },
-        "sMQzqUvr7KvRfeqw": {
-          "connection": "Dgsjbu22A3ZFjr1n:outputs:NsHmnmXRMTj8JIpd"
-        },
-        "lVJVqh21ZvHlDPoQ": {
-          "connection": "Dgsjbu22A3ZFjr1n:outputs:qSiHTLfq5PVuMZXj"
-        },
-        "Gs6yvDiDoTJUvuE1": {
-          "connection": "Dgsjbu22A3ZFjr1n:outputs:VXAt9vtWvVwpt3k6"
-        }
-      },
-      "outs": {
-        "out": {
-          "connection": "kZwUhq5O0rWeJQYk:ins:in"
-        }
-      }
     }
   ],
-  "id": "C56zu7y3FrDGuKD2"
+  "id": "tqGW4953p73IkETM",
+  "tags": [
+    "PF2e Trove",
+    "handlers"
+  ]
 }
