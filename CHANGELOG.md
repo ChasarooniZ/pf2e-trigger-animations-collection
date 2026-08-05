@@ -7,11 +7,12 @@
   - **Updated**
     - Solar Weapon, Shock Pad, Pulse Gauntlet, Disintegration Lash, Zero Knife, Skyfire Sword _to use Anchor and Scale nodes_ (@Suldrun45)
     - Aim _uses built in targets_ (@Suldrun45)
+    - Handler: Attack _Removed log from handler_ (@ChasarooniZ)
+    - Handler: Damage, Handler: Negated _Added support for Deflecting Wave_ (@ChasarooniZ)
 - **New**
   - `Turn Start Condition` - Specific condition to play an animation based on what conditions are active on the start of turn _to be added to animations later_
 - **Updated**
   - `Reload` & `Update Roll Option` Trigger now has proper targets
-  - `Handler Attack` - Removed log from handler
   - **Updated PR requirements**
     - Update `ANIMATION_LIST.md` to include your new animation
     - Create + link a Subissue under the appropriate categories see the pinned Mega Issue for more details
