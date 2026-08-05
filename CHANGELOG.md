@@ -12,7 +12,10 @@
 - **Updated**
   - `Reload` & `Update Roll Option` Trigger now has proper targets
   - `Handler Attack` - Removed log from handler
-  - Updated PR requirements
+  - **Updated PR requirements**
+    - Update `ANIMATION_LIST.md` to include your new animation
+    - Create + link a Subissue under the appropriate categories see the pinned Mega Issue for more details
+    - Run Yarn Prettier on your file in some way so that it passes the check (see contributing.md for a way to do that via the web browser)
   - Updated `GGG` to version `0.1.3`
     - _New Spells SFX_
   - Updated `Trigger Engine` to version `1.25.0`
