@@ -9,6 +9,7 @@ _Note you don't need to literally check these off, just confirm you followed the
 - **Repo Folder.** It's in the correct github folder?
 - **Format.** All links to Sounds or Animations use the Sequencer DB format and follow formatting the guidelines in the readme?
 - **Quality Support.** The animation is set to **Local** for its play, and is setup such that it adheres to the general quality guidelines?
+- **Animation List Update.** Update `ANIMATIONS_LIST.md` to include what animation you added (see other examples and the legend at the top to see how)
 
 ## Video of it in use
 
@@ -16,7 +17,7 @@ Paste a video of it working here [ShareX](https://getsharex.com/) is an easy way
 
 ### Link Animation issue this closes
 
-closes
+closes #<replace with issue number>
 
 ## Actually Check these (for my logging purposes)
 

@@ -2,6 +2,7 @@
   "name": "Elemental Blast",
   "folder": "Class Features",
   "priority": 0,
+  "description": "<p>Created by @Chasaooni</p>",
   "nodes": [
     {
       "id": "uiiIjJhTAmgZWGpc",
@@ -1774,7 +1775,6 @@
     }
   ],
   "id": "GAu2zI6kMSPTNXoH",
-  "description": "<p>Created by @Chasarooni</p>",
   "variables": {
     "7EX9N1VV6RH1czit:outputs:50h6oSeDNrppZZqg": {
       "isArray": false,

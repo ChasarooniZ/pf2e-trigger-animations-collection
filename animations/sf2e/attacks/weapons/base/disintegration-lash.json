@@ -733,6 +733,5 @@
       "label": "Missed",
       "type": "boolean"
     }
-  },
-  "tags": ["PF2e Trove", "sf2e", "attacks", "weapons"]
+  }
 }

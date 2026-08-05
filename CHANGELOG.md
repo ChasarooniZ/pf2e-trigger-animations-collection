@@ -12,6 +12,7 @@
 - **Updated**
   - `Reload` & `Update Roll Option` Trigger now has proper targets
   - `Handler Attack` - Removed log from handler
+  - Updated PR requirements
   - Updated `GGG` to version `0.1.3`
     - _New Spells SFX_
   - Updated `Trigger Engine` to version `1.25.0`

@@ -1018,6 +1018,5 @@
       "label": "Delay",
       "type": "number"
     }
-  },
-  "tags": ["PF2e Trove", "sf2e", "attacks", "weapons"]
+  }
 }
