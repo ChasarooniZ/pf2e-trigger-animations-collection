@@ -1,5 +1,31 @@
 ## Unreleased
 
+## 0.9.7
+
+- **Animations**
+  - **New**
+    - Stinking Cloud, Lightning Storm, Toxic Cloud (@Suldrun45)
+    - Sigil, Quandary, Elemental Blast (@ChasarooniZ)
+    - Air Cushion, Armor In Earth, Deflecting Wave Four Winds, Geologic Attunement, Hail of Spinters, Scorching Column (@RunicLibrarian 🎉`First Time Contributor)
+  - **Updated**
+    - Solar Weapon, Shock Pad, Pulse Gauntlet, Disintegration Lash, Zero Knife, Skyfire Sword _to use Anchor and Scale nodes_ (@Suldrun45)
+    - Aim _uses built in targets_ (@Suldrun45)
+    - Handler: Attack _Removed log from handler_ (@ChasarooniZ)
+    - Handler: Damage, Handler: Negated _Added support for Deflecting Wave_ (@ChasarooniZ)
+- **New**
+  - `Turn Start Condition` - Specific condition to play an animation based on what conditions are active on the start of turn _to be added to animations later_
+- **Updated**
+  - `Reload` & `Update Roll Option` Trigger now has proper targets
+  - **Updated PR requirements**
+    - Update `ANIMATION_LIST.md` to include your new animation
+    - Create + link a Subissue under the appropriate categories see the pinned Mega Issue for more details
+    - Run Yarn Prettier on your file in some way so that it passes the check (see contributing.md for a way to do that via the web browser)
+  - Updated `GGG` to version `0.1.3`
+    - _New Spells SFX_
+  - Updated `Trigger Engine` to version `1.25.0`
+    - *greatly improved performance*
+  - Updated `Trigger Animations` to version `0.7.1`
+
 ## 0.9.6
 
 - **Animations**
