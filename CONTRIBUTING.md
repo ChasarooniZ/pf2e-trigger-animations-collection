@@ -42,7 +42,7 @@ _[Use Me to convert "Export Triggers" to individual files for a PR](https://chas
   - **High** - Medium but with Persistent Effects allowed
     _The following is WIP_
 
-- **Priority of Animations**
+- **Priority of Animations** _this is done automatically on the backend_
   - 0 - **Default**
   - **Weapons**
     - -100 - **Group** `Firearm`
