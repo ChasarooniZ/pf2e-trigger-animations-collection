@@ -1,22 +1,22 @@
 name: "Animation Bug Report"
 description: "For submitting issues with existing animations"
 body:
-- type: "input"
-  attributes:
-    label: "What Animation has the issue?"
-    value: " "
-  validations:
-    required: true
-- type: "textarea"
-  attributes:
-    label: "Description"
-    description: "Give a concise description of the problem"
-    value: " "
-  validations:
-    required: true
-- type: "checkboxes"
-  attributes:
-    label: "Up to date"
-    description: "You are on the most up to date version of Trigger Animation Trove, and it's required dependencies"
-  validations:
-    required: false
+  - type: "input"
+    attributes:
+      label: "What Animation has the issue?"
+      value: " "
+    validations:
+      required: true
+  - type: "textarea"
+    attributes:
+      label: "Description"
+      description: "Give a concise description of the problem"
+      value: " "
+    validations:
+      required: true
+  - type: "checkboxes"
+    attributes:
+      label: "Up to date"
+      description: "You are on the most up to date version of Trigger Animation Trove, and it's required dependencies"
+    validations:
+      required: false

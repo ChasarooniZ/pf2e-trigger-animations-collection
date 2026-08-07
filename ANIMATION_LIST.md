@@ -252,12 +252,12 @@
 - Armor In Earth 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Deflecting Wave 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
 - Four Winds 🔊🆓✅ (✍🏼 @RunicLibrarian)
-- Fresh Produce 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Fresh Produce 🔊🆓✅ (✍🏼 @Dio)
 - Geologic Attunement 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Hail of Spinters 🔊🆓✅ (✍🏼 @RunicLibrarian)
-- Ocean's Balm 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Ocean's Balm 🔊🆓✅ (✍🏼 @Dio)
 - Scorching Column 🔊🆓✅ (✍🏼 @RunicLibrarian)
-- Torrent in the Blood 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Torrent in the Blood 🔊🆓✅ (✍🏼 @Dio)
 
 #### Shared
 
