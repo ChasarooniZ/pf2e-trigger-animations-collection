@@ -1,6 +1,6 @@
 name: "Animation Bug Report"
 description: "For submitting issues with existing animations"
-fields:
+body:
 - type: "input"
   attributes:
     label: "What Animation has the issue?"
