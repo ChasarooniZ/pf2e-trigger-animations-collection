@@ -136,6 +136,7 @@
 
 #### Focus Spells
 
+- Boost Eidolon 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Cackle 🔊🆓 (✍🏼 @Chasarooni)
 - Earth's Bile 🔊🆓✅ (✍🏼 @ChazPls)
 - Force Bolt 🔊🆓 (✍🏼 @Chasarooni)
