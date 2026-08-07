@@ -24,6 +24,7 @@ _[Use Me to convert "Export Triggers" to individual files for a PR](https://chas
   - `Sound` node should have the name filled with the item or animation `name` or `slug`
 - **Effect**
   - `origin` and `name` should be filled with the item or animation `name` or `slug` and the item `uuid` respectfully (unless it makes more sense for it to be a token's etc.)
+  - You must use actual nodes, `EZ Ranged` and others of that nature do not allow the finegrain control to be appropriate submissions for this collection
 
 ## Animation Submission Guidelines
 
