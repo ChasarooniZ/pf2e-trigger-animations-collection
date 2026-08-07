@@ -5,7 +5,7 @@
 - **Animations**
   - **New**
     - Fresh Produce, Ocean's Balm, Torrent in the Blood (@Dio)
-  - **Updated** - Gust of Wind _fixed incorrect template setup_ (@ChasarooniZ) - Fresh Produce, Ocean's Balm, Torrent in the Blood*Fixed category for these* (🪓 @Dio)
+  - **Updated** - Gust of Wind _fixed incorrect template setup_ (@ChasarooniZ) - Fresh Produce, Ocean's Balm, Torrent in the Blood _Fixed category for these_ (🪓 @Dio)
 - **Updated**
   - Added clarifier to what triggers are from Trove
   - Updated all handlers to support new `Animation Name` field
