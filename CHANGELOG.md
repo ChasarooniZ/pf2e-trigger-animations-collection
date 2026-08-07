@@ -1,10 +1,18 @@
 ## Unreleased
 
+## 0.10.0
+
 - **Animations**
   - **New**
     - Fresh Produce, Ocean's Balm, Torrent in the Blood (@Dio)
-  - **Updated**
-    - Gust of Wind _fixed incorrect template setup_ (@ChasarooniZ)
+  - **Updated** - Gust of Wind _fixed incorrect template setup_ (@ChasarooniZ) - Fresh Produce, Ocean's Balm, Torrent in the Blood*Fixed category for these* (🪓 @Dio)
+- **Updated**
+  - Added clarifier to what triggers are from Trove
+  - Updated all handlers to support new `Animation Name` field
+  - Fixed bug with `Turn Start` trigger not including a slug
+  - Updated all triggers to support `trigger-name:uuid`
+  - Updated `Trigger Animations` to version `0.8.3`
+  - Updated `Trigger Engine` to version `1.26.0`
 
 ## 0.9.7
 
@@ -12,7 +20,7 @@
   - **New**
     - Stinking Cloud, Lightning Storm, Toxic Cloud (@Suldrun45)
     - Sigil, Quandary, Elemental Blast (@ChasarooniZ)
-    - Air Cushion, Armor In Earth, Deflecting Wave Four Winds, Geologic Attunement, Hail of Spinters, Scorching Column (@RunicLibrarian 🎉`First Time Contributor)
+    - Air Cushion, Armor In Earth, Deflecting Wave Four Winds, Geologic Attunement, Hail of Splinters, Scorching Column (@RunicLibrarian 🎉`First Time Contributor)
   - **Updated**
     - Solar Weapon, Shock Pad, Pulse Gauntlet, Disintegration Lash, Zero Knife, Skyfire Sword _to use Anchor and Scale nodes_ (@Suldrun45)
     - Aim _uses built in targets_ (@Suldrun45)

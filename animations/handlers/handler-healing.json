@@ -13,42 +13,12 @@
       "type": "animation-event",
       "outs": {
         "out": {
-          "connection": "1UXBWlChTbbpgI8X:ins:in"
+          "connection": "qUoHauAABRPfkIMW:ins:in"
         }
       },
       "inputs": {
         "name": {
           "value": "healing:*"
-        }
-      }
-    },
-    {
-      "type": "extract-item",
-      "position": {
-        "x": 709.4444444444445,
-        "y": 113.33333333333331
-      },
-      "id": "1UXBWlChTbbpgI8X",
-      "custom": {
-        "outputs": {
-          "RNE8lD7qDcKIiDni": {
-            "id": "RNE8lD7qDcKIiDni",
-            "input": "slug",
-            "label": "Slug",
-            "slug": "path",
-            "isArray": false,
-            "type": "text"
-          }
-        }
-      },
-      "inputs": {
-        "input": {
-          "connection": "N23TsYK70MCRp0GB:outputs:item"
-        }
-      },
-      "outs": {
-        "out": {
-          "connection": "Lvam1Xzk0lTyxFPM:ins:in"
         }
       }
     },
@@ -60,9 +30,6 @@
       },
       "id": "PymqPg7le7St7ZUw",
       "inputs": {
-        "name": {
-          "connection": "Lvam1Xzk0lTyxFPM:outputs:result"
-        },
         "actor": {
           "connection": "N23TsYK70MCRp0GB:outputs:actor"
         },
@@ -83,43 +50,45 @@
         },
         "aXLZUy18M6pBJTDq": {
           "value": "healing"
+        },
+        "name": {
+          "connection": "qUoHauAABRPfkIMW:outputs:cL3tFzixiC1o0Q3n"
         }
       }
     },
     {
-      "type": "format-text",
+      "type": "execute-script",
       "position": {
-        "x": 932.7776889910061,
-        "y": 111.33327229817706
+        "x": 782,
+        "y": 214
       },
-      "id": "Lvam1Xzk0lTyxFPM",
+      "id": "qUoHauAABRPfkIMW",
       "custom": {
         "inputs": {
-          "5YEY3kuRaXjzEXq8": {
-            "id": "5YEY3kuRaXjzEXq8",
-            "input": "slug",
-            "label": "slug",
-            "slug": "variable",
+          "24cqO5b5MZXtyqWq": {
+            "id": "24cqO5b5MZXtyqWq",
+            "label": "Name",
+            "slug": "input",
+            "isArray": false,
             "type": "text"
-          },
-          "wzRgUtsTgpqgizLY": {
-            "id": "wzRgUtsTgpqgizLY",
-            "input": "type",
-            "label": "type",
-            "slug": "variable",
+          }
+        },
+        "outputs": {
+          "cL3tFzixiC1o0Q3n": {
+            "id": "cL3tFzixiC1o0Q3n",
+            "label": "Trove Name",
+            "slug": "output",
+            "isArray": false,
             "type": "text"
           }
         }
       },
       "inputs": {
-        "plain": {
-          "value": "@type:@slug"
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nreturn [{type: \"text\", value: inputs[0].replaceAll(\"healing:\", \"trove-healing:\")}];"
         },
-        "5YEY3kuRaXjzEXq8": {
-          "connection": "1UXBWlChTbbpgI8X:outputs:RNE8lD7qDcKIiDni"
-        },
-        "wzRgUtsTgpqgizLY": {
-          "value": "trove-healing"
+        "24cqO5b5MZXtyqWq": {
+          "connection": "N23TsYK70MCRp0GB:outputs:matchedName"
         }
       },
       "outs": {
@@ -129,5 +98,5 @@
       }
     }
   ],
-  "id": "SghJqU20kOcTozV2"
+  "id": "kNAFYUOAT0EvWBUy"
 }

@@ -13,42 +13,12 @@
       "type": "animation-event",
       "outs": {
         "out": {
-          "connection": "asRJQi5WlQnMRFaZ:ins:in"
+          "connection": "i5HXO2cfainG3eGy:ins:in"
         }
       },
       "inputs": {
         "name": {
           "value": "negated:*"
-        }
-      }
-    },
-    {
-      "type": "extract-item",
-      "position": {
-        "x": 729.9999999999995,
-        "y": 95.99999999999994
-      },
-      "id": "asRJQi5WlQnMRFaZ",
-      "custom": {
-        "outputs": {
-          "RNE8lD7qDcKIiDni": {
-            "id": "RNE8lD7qDcKIiDni",
-            "input": "slug",
-            "label": "Slug",
-            "slug": "path",
-            "isArray": false,
-            "type": "text"
-          }
-        }
-      },
-      "inputs": {
-        "input": {
-          "connection": "N23TsYK70MCRp0GB:outputs:item"
-        }
-      },
-      "outs": {
-        "out": {
-          "connection": "m28jOepELbdbj5AW:ins:in"
         }
       }
     },
@@ -60,9 +30,6 @@
       },
       "id": "2FLcmEB1aHORVE6z",
       "inputs": {
-        "name": {
-          "connection": "m28jOepELbdbj5AW:outputs:result"
-        },
         "actor": {
           "connection": "N23TsYK70MCRp0GB:outputs:actor"
         },
@@ -83,48 +50,9 @@
         },
         "H21hnnAZ3fWdhmqW": {
           "value": "negated"
-        }
-      }
-    },
-    {
-      "type": "format-text",
-      "position": {
-        "x": 961.3332445465612,
-        "y": 101.9999389648437
-      },
-      "id": "m28jOepELbdbj5AW",
-      "custom": {
-        "inputs": {
-          "5YEY3kuRaXjzEXq8": {
-            "id": "5YEY3kuRaXjzEXq8",
-            "input": "slug",
-            "label": "slug",
-            "slug": "variable",
-            "type": "text"
-          },
-          "wzRgUtsTgpqgizLY": {
-            "id": "wzRgUtsTgpqgizLY",
-            "input": "type",
-            "label": "type",
-            "slug": "variable",
-            "type": "text"
-          }
-        }
-      },
-      "inputs": {
-        "plain": {
-          "value": "@type:@slug"
         },
-        "5YEY3kuRaXjzEXq8": {
-          "connection": "asRJQi5WlQnMRFaZ:outputs:RNE8lD7qDcKIiDni"
-        },
-        "wzRgUtsTgpqgizLY": {
-          "value": "trove-negated"
-        }
-      },
-      "outs": {
-        "out": {
-          "connection": "ae7ETL2qRchRq5rS:ins:in"
+        "name": {
+          "connection": "i5HXO2cfainG3eGy:outputs:cL3tFzixiC1o0Q3n"
         }
       }
     },
@@ -331,9 +259,50 @@
         "y": 1192.0833333333335
       },
       "id": "CBKPdlM6RQ3rHxAE"
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 844,
+        "y": 193
+      },
+      "id": "i5HXO2cfainG3eGy",
+      "custom": {
+        "inputs": {
+          "24cqO5b5MZXtyqWq": {
+            "id": "24cqO5b5MZXtyqWq",
+            "label": "Name",
+            "slug": "input",
+            "isArray": false,
+            "type": "text"
+          }
+        },
+        "outputs": {
+          "cL3tFzixiC1o0Q3n": {
+            "id": "cL3tFzixiC1o0Q3n",
+            "label": "Trove Name",
+            "slug": "output",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nreturn [{type: \"text\", value: inputs[0].replaceAll(\"negated:\", \"trove-negated:\")}];"
+        },
+        "24cqO5b5MZXtyqWq": {
+          "connection": "N23TsYK70MCRp0GB:outputs:matchedName"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "ae7ETL2qRchRq5rS:ins:in"
+        }
+      }
     }
   ],
-  "id": "owu17UuPgEGh4RrI",
+  "id": "sBKP9JTLCbabN3KR",
   "variables": {
     "ae7ETL2qRchRq5rS:outputs:qAHtAkORnGS2mXAo": {
       "isArray": true,

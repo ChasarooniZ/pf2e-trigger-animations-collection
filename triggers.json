@@ -1,10 +1,10 @@
 [
   {
-    "name": "Damage Roll",
+    "name": "[Trove] Damage Roll",
     "folder": "Animations",
     "priority": 0,
     "tags": ["pf2e", "sf2e"],
-    "id": "bQTU95RJtyat8SVF",
+    "id": "q9khDsYP21ybOto3",
     "nodes": [
       {
         "type": "execute-animation",
@@ -207,7 +207,7 @@
             "connection": "NVw98hipCZjZu9I0:outputs:6ssDORYrtuDo5mk4"
           },
           "script": {
-            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst msg = inputs[0];\n\nconst isDamageRoll = msg?.isDamageRoll;\nconst item = msg?.item;\nconst token = msg?.token;\nconst rollOptions = msg?.flags?.pf2e?.context?.options;\nconst outcome = msg?.flags?.pf2e?.context?.outcome;\nconst isReroll = msg?.isReroll;\nconst dmgSlugs = msg?.flags?.pf2e?.dice?.filter((d) => d?.enabled)?.map((d) => d?.slug);\nconst modSlugs = msg?.flags?.pf2e?.modifiers?.filter((d) => d?.enabled)?.map((d) => d?.slug);\nconst slugs = [item?.slug, dmgSlugs, modSlugs]?.flat();\nconst animationList = slugs?.map((slug) => `damage-roll:${slug}`);\n\nconst animationName = animationList?.join(\", \");\nconst toolbeltTargets = msg?.flags?.[\"pf2e-toolbelt\"]?.targetHelper?.targets.map(uuid => canvas.tokens.placeables.find(t => t?.document?.uuid === uuid))\nlet targets = toolbeltTargets?.length > 0 ? toolbeltTargets : (msg?.target ? [msg?.target] : [])\nif (targets?.length <= 0) {\n  targets = Array.from(msg?.author?.targets ?? 0);\n}\n\nreturn [\n  { type: \"item\", value: item },\n  { type: \"text\", isArray: true, value: rollOptions },\n  { type: \"outcome\", value: outcome },\n  { type: \"boolean\", value: isReroll },\n  { type: \"text\", value: animationName },\n  { type: \"target\", value: token },\n  { type: \"target\", isArray: true, value: targets },\n  { type: \"text\", isArray: true, value: slugs}\n];"
+            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst msg = inputs[0];\n\nconst isDamageRoll = msg?.isDamageRoll;\nconst item = msg?.item;\nconst token = msg?.token;\nconst rollOptions = msg?.flags?.pf2e?.context?.options;\nconst outcome = msg?.flags?.pf2e?.context?.outcome;\nconst isReroll = msg?.isReroll;\nconst dmgSlugs = msg?.flags?.pf2e?.dice?.filter((d) => d?.enabled)?.map((d) => d?.slug);\nconst modSlugs = msg?.flags?.pf2e?.modifiers?.filter((d) => d?.enabled)?.map((d) => d?.slug);\nconst slugs = [item?.slug, dmgSlugs, modSlugs, item?.uuid]?.flat();\nconst animationList = slugs?.map((slug) => `damage-roll:${slug}`);\n\nconst animationName = animationList?.join(\", \");\nconst toolbeltTargets = msg?.flags?.[\"pf2e-toolbelt\"]?.targetHelper?.targets.map(uuid => canvas.tokens.placeables.find(t => t?.document?.uuid === uuid))\nlet targets = toolbeltTargets?.length > 0 ? toolbeltTargets : (msg?.target ? [msg?.target] : [])\nif (targets?.length <= 0) {\n  targets = Array.from(msg?.author?.targets ?? 0);\n}\n\nreturn [\n  { type: \"item\", value: item },\n  { type: \"text\", isArray: true, value: rollOptions },\n  { type: \"outcome\", value: outcome },\n  { type: \"boolean\", value: isReroll },\n  { type: \"text\", value: animationName },\n  { type: \"target\", value: token },\n  { type: \"target\", isArray: true, value: targets },\n  { type: \"text\", isArray: true, value: slugs}\n];"
           },
           "XBZEuuLO5U2NgWUj": {
             "connection": "GT4ukBFeZBihKFGW:outputs:targets"
@@ -227,10 +227,10 @@
     ]
   },
   {
-    "name": "Effect / Condition Badge Update",
+    "name": "[Trove] Effect / Condition Badge Update",
     "folder": "Animations",
     "priority": 0,
-    "id": "i5k5nisEifIYTP9H",
+    "id": "Yuk4s0i4d7Lpwtnn",
     "nodes": [
       {
         "type": "execute-animation",
@@ -280,6 +280,14 @@
               "slug": "path",
               "isArray": false,
               "type": "target"
+            },
+            "f9YhUDpEXtNAhUqu": {
+              "id": "f9YhUDpEXtNAhUqu",
+              "input": "uuid",
+              "label": "UUID",
+              "slug": "path",
+              "isArray": false,
+              "type": "text"
             }
           }
         },
@@ -407,24 +415,34 @@
               "label": "type",
               "slug": "variable",
               "type": "text"
+            },
+            "Mbe75MHEkrmtk2dU": {
+              "id": "Mbe75MHEkrmtk2dU",
+              "input": "uuid",
+              "label": "uuid",
+              "slug": "variable",
+              "type": "text"
             }
           }
         },
         "inputs": {
           "jhufYqifVCmc1Tb7": { "value": "update" },
-          "plain": { "value": "@type:@slug" },
+          "plain": { "value": "@type:@slug, @type:@uuid" },
           "EhOg8swVOvjZDDqY": {
             "connection": "mosxx1pPt8nuHzjX:outputs:E85qTXVg1K7pfp77"
+          },
+          "Mbe75MHEkrmtk2dU": {
+            "connection": "mosxx1pPt8nuHzjX:outputs:f9YhUDpEXtNAhUqu"
           }
         }
       }
     ]
   },
   {
-    "name": "Reload",
+    "name": "[Trove] Reload",
     "folder": "Animations",
     "priority": 0,
-    "id": "TRgkfq3bmarPP6Vx",
+    "id": "KJ16ixdoL50OzVrV",
     "nodes": [
       {
         "type": "execute-animation",
@@ -527,6 +545,14 @@
               "id": "pEmJcO5BSDfhQjh9",
               "input": "system.baseItem",
               "label": "Base Item",
+              "slug": "path",
+              "isArray": false,
+              "type": "text"
+            },
+            "ifdU1f5gdGvEHXGw": {
+              "id": "ifdU1f5gdGvEHXGw",
+              "input": "uuid",
+              "label": "UUID",
               "slug": "path",
               "isArray": false,
               "type": "text"
@@ -679,12 +705,19 @@
               "label": "c",
               "slug": "variable",
               "type": "text"
+            },
+            "aCgqGeoFQsKoJPOo": {
+              "id": "aCgqGeoFQsKoJPOo",
+              "input": "d",
+              "label": "d",
+              "slug": "variable",
+              "type": "text"
             }
           }
         },
         "inputs": {
           "jhufYqifVCmc1Tb7": { "value": "reload" },
-          "plain": { "value": "@type:@a, @type:@b, @type:@c" },
+          "plain": { "value": "@type:@a, @type:@b, @type:@c,  @type:@d" },
           "EhOg8swVOvjZDDqY": {
             "connection": "mosxx1pPt8nuHzjX:outputs:E85qTXVg1K7pfp77"
           },
@@ -696,6 +729,9 @@
           },
           "87REV4l93b9vXCst": {
             "connection": "mosxx1pPt8nuHzjX:outputs:E85qTXVg1K7pfp77"
+          },
+          "aCgqGeoFQsKoJPOo": {
+            "connection": "mosxx1pPt8nuHzjX:outputs:ifdU1f5gdGvEHXGw"
           }
         }
       },
@@ -817,10 +853,10 @@
     ]
   },
   {
-    "name": "Roll Option Update",
+    "name": "[Trove] Roll Option Update",
     "folder": "Animations",
     "priority": 0,
-    "id": "zHt1DbfwZRhPtFMI",
+    "id": "Fo8QMCHCNXj1jvYS",
     "nodes": [
       {
         "type": "execute-animation",
@@ -884,6 +920,14 @@
               "slug": "path",
               "isArray": false,
               "type": "target"
+            },
+            "hD7WPMGRAKjpunKH": {
+              "id": "hD7WPMGRAKjpunKH",
+              "input": "uuid",
+              "label": "UUID",
+              "slug": "path",
+              "isArray": false,
+              "type": "text"
             }
           }
         },
@@ -1009,17 +1053,29 @@
               "label": "selection",
               "slug": "variable",
               "type": "text"
+            },
+            "3u0FAV8CcRJyGScq": {
+              "id": "3u0FAV8CcRJyGScq",
+              "input": "uuid",
+              "label": "uuid",
+              "slug": "variable",
+              "type": "text"
             }
           }
         },
         "inputs": {
           "jhufYqifVCmc1Tb7": { "value": "update" },
-          "plain": { "value": "@type:@slug, @type:@slug:@selection" },
+          "plain": {
+            "value": "@type:@slug, @type:@slug:@selection, @type:@uuid, @type:@uuid:@selection"
+          },
           "E72omLIlMSDCGG1w": {
             "connection": "FxR5QChVGKXuHlVk:outputs:t0XEao7zOBDbsfI2"
           },
           "EhOg8swVOvjZDDqY": {
             "connection": "mosxx1pPt8nuHzjX:outputs:E85qTXVg1K7pfp77"
+          },
+          "3u0FAV8CcRJyGScq": {
+            "connection": "mosxx1pPt8nuHzjX:outputs:hD7WPMGRAKjpunKH"
           }
         }
       },
@@ -1038,7 +1094,7 @@
     ]
   },
   {
-    "name": "Skill Checks Actions",
+    "name": "[Trove] Skill Checks Actions",
     "folder": "Animations",
     "priority": 0,
     "tags": ["pf2e", "sf2e"],
@@ -1126,11 +1182,11 @@
     ]
   },
   {
-    "name": "Spell Message",
+    "name": "[Trove] Spell Message",
     "folder": "Animations",
     "priority": 0,
     "tags": ["pf2e", "sf2e"],
-    "id": "mIkeWLVb7VokwJ31",
+    "id": "LxlFxAsjOfBMiOII",
     "nodes": [
       {
         "type": "execute-animation",
@@ -1270,6 +1326,13 @@
               "slug": "output",
               "isArray": true,
               "type": "text"
+            },
+            "RVeNBLxZTj7V4rnP": {
+              "id": "RVeNBLxZTj7V4rnP",
+              "label": "uuid",
+              "slug": "output",
+              "isArray": false,
+              "type": "text"
             }
           }
         },
@@ -1278,7 +1341,7 @@
             "connection": "NVw98hipCZjZu9I0:outputs:6ssDORYrtuDo5mk4"
           },
           "script": {
-            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst msg = inputs[0];\n\nconst isDamageRoll = msg?.isDamageRoll;\nconst item = msg?.item;\nconst token = msg?.token;\nconst rollOptions = [msg?.flags?.pf2e?.origin?.rollOptions, Object.keys(msg?.actor?.rollOptions?.all)].flat();\nconst slug = msg?.item?.slug ?? game?.pf2e?.system?.sluggify(msg?.item?.name)\n\nconst toolbeltTargets = msg?.flags?.[\"pf2e-toolbelt\"]?.targetHelper?.targets.map(uuid => canvas.tokens.placeables.find(t => t?.document?.uuid === uuid))\nlet targets = toolbeltTargets?.length > 0 ? toolbeltTargets : (msg?.target ? [msg?.target] : [])\nif (targets?.length <= 0) {\n  targets = Array.from(msg?.author?.targets ?? 0);\n}\n\n\nreturn [\n  { type: \"text\", value: slug },\n  { type: \"target\", value: token },\n  { type: \"target\", isArray: true, value: targets },\n  { type: \"item\", value: item },\n  { type: \"text\", isArray: true, value: rollOptions },\n];"
+            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst msg = inputs[0];\n\nconst isDamageRoll = msg?.isDamageRoll;\nconst item = msg?.item;\nconst token = msg?.token;\nconst rollOptions = [msg?.flags?.pf2e?.origin?.rollOptions, Object.keys(msg?.actor?.rollOptions?.all)].flat();\nconst slug = msg?.item?.slug ?? game?.pf2e?.system?.sluggify(msg?.item?.name)\nconst uuid = msg?.item?.uuid;\n\nconst toolbeltTargets = msg?.flags?.[\"pf2e-toolbelt\"]?.targetHelper?.targets.map(uuid => canvas.tokens.placeables.find(t => t?.document?.uuid === uuid))\nlet targets = toolbeltTargets?.length > 0 ? toolbeltTargets : (msg?.target ? [msg?.target] : [])\nif (targets?.length <= 0) {\n  targets = Array.from(msg?.author?.targets ?? 0);\n}\n\n\nreturn [\n  { type: \"text\", value: slug },\n  { type: \"target\", value: token },\n  { type: \"target\", isArray: true, value: targets },\n  { type: \"item\", value: item },\n  { type: \"text\", isArray: true, value: rollOptions },\n  { type: \"text\", value: uuid },\n];"
           }
         },
         "outs": { "out": { "connection": "kopaP7iWiPBibSrv:ins:in" } }
@@ -1311,6 +1374,13 @@
               "label": "b",
               "slug": "variable",
               "type": "text"
+            },
+            "bub1AOPpVGz9AkkF": {
+              "id": "bub1AOPpVGz9AkkF",
+              "input": "c",
+              "label": "c",
+              "slug": "variable",
+              "type": "text"
             }
           }
         },
@@ -1319,17 +1389,20 @@
           "lv9XTTitQYmpHlEX": {
             "connection": "SD3dS8jXMDz7XxE3:outputs:Ue6LY90NJ8Hyz24k"
           },
-          "plain": { "value": "@a:@b" }
+          "plain": { "value": "@a:@b, @a:@c" },
+          "bub1AOPpVGz9AkkF": {
+            "connection": "SD3dS8jXMDz7XxE3:outputs:RVeNBLxZTj7V4rnP"
+          }
         },
         "outs": { "out": { "connection": "zJiAEHL0uEXPz5FL:ins:in" } }
       }
     ]
   },
   {
-    "name": "Turn Start Condition",
+    "name": "[Trove] Turn Start Condition",
     "folder": "Animations",
     "priority": 0,
-    "id": "9SLexnnMtDhBihgq",
+    "id": "O6w1hBzSwmAbnP5s",
     "nodes": [
       {
         "type": "turn-start-event",
@@ -1544,6 +1617,14 @@
               "slug": "path",
               "isArray": false,
               "type": "text"
+            },
+            "AGnRbCkryYJMn9km": {
+              "id": "AGnRbCkryYJMn9km",
+              "input": "uuid",
+              "label": "UUID",
+              "slug": "path",
+              "isArray": false,
+              "type": "text"
             }
           }
         },
@@ -1564,6 +1645,13 @@
               "label": "slug",
               "slug": "variable",
               "type": "text"
+            },
+            "mqy71zSBl2JPxrqO": {
+              "id": "mqy71zSBl2JPxrqO",
+              "input": "uuid",
+              "label": "uuid",
+              "slug": "variable",
+              "type": "text"
             }
           }
         },
@@ -1571,7 +1659,10 @@
           "k4R1MXu1H5zmgE51": {
             "connection": "cCWtF2qW77tjM8nb:outputs:ViQl8r0BOP4PTQ5c"
           },
-          "plain": { "value": "turn-start:slug" }
+          "plain": { "value": "turn-start:@slug, turn-start:@uuid" },
+          "mqy71zSBl2JPxrqO": {
+            "connection": "cCWtF2qW77tjM8nb:outputs:AGnRbCkryYJMn9km"
+          }
         },
         "outs": { "out": { "connection": "zX8zYdGkfz6Ahnkh:ins:in" } }
       }
