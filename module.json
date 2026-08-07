@@ -36,14 +36,14 @@
         "type": "module",
         "manifest": "https://raw.githubusercontent.com/MrVauxs/trigger-animations/latest/releases/module.json",
         "compatibility": {
-          "minimum": "0.7.1"
+          "minimum": "0.8.3"
         }
       },
       {
         "id": "trigger-engine",
         "type": "module",
         "compatibility": {
-          "minimum": "1.25.0"
+          "minimum": "1.26.0"
         }
       },
       {
