@@ -4,14 +4,14 @@ body:
 - type: "input"
   attributes:
     label: "What Animation has the issue?"
-    value: ""
+    value: " "
   validations:
     required: true
 - type: "textarea"
   attributes:
     label: "Description"
     description: "Give a concise description of the problem"
-    value: ""
+    value: " "
   validations:
     required: true
 - type: "checkboxes"
