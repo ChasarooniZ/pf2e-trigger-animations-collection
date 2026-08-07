@@ -121,11 +121,11 @@
         "attachTo": {
           "value": true
         },
-        "location": {
-          "connection": "ffZ6cVjbHRbwLtJw:outputs:entry"
-        },
         "effect": {
           "connection": "U5SraId2ep8549lh:outputs:effect"
+        },
+        "location": {
+          "connection": "VUR2ZTEht2pGPmqj:outputs:entry"
         }
       },
       "position": {
@@ -334,26 +334,13 @@
     {
       "inputs": {
         "entry": {
-          "connection": "tCRJV1ymT33RPewW:outputs:sources"
-        }
-      },
-      "type": "__variable_getter__",
-      "position": {
-        "x": 1397.333333333333,
-        "y": 496.33333333333337
-      },
-      "id": "ffZ6cVjbHRbwLtJw"
-    },
-    {
-      "inputs": {
-        "entry": {
           "connection": "tCRJV1ymT33RPewW:outputs:C7V3kM5DiAAcOSJY"
         }
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 1453.6666666666663,
-        "y": 641
+        "x": 1396.6666666666663,
+        "y": 460
       },
       "id": "VUR2ZTEht2pGPmqj"
     },
@@ -384,7 +371,7 @@
       "id": "sDafrXKKxBviWCny"
     }
   ],
-  "id": "IPqoXEUmmsHcyyak",
+  "id": "UwmJxTa7XObsvO1U",
   "variables": {
     "tCRJV1ymT33RPewW:outputs:C7V3kM5DiAAcOSJY": {
       "isArray": false,

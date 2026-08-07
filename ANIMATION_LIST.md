@@ -149,7 +149,7 @@
 
 - Bless 🔊🆓✅ (✍🏼 @ChazPls, 🛠️ @Chasarooni)
 - Force Barrage 🔊🆓 (✍🏼 @Chasarooni)
-- Gust of Wind 🔊🆓✅ (✍🏼 @Suldrun45)
+- Gust of Wind 🔊🆓✅ (✍🏼 @Suldrun45, 🛠️ @Chasarooni)
 - Harm 🔊🆓✅ (✍🏼 @Chasarooni)
 - Heal 🔊🆓✅ (✍🏼 @Chasarooni)
 
@@ -252,9 +252,12 @@
 - Armor In Earth 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Deflecting Wave 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
 - Four Winds 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Fresh Produce 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Geologic Attunement 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Hail of Spinters 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Ocean's Balm 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Scorching Column 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Torrent in the Blood 🔊🆓✅ (✍🏼 @RunicLibrarian)
 
 #### Shared
 

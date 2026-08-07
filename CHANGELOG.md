@@ -1,5 +1,11 @@
 ## Unreleased
 
+- **Animations**
+  - **New**
+    - Fresh Produce, Ocean's Balm, Torrent in the Blood (@Dio)
+  - **Updated**
+    - Gust of Wind _fixed incorrect template setup_ (@ChasarooniZ)
+
 ## 0.9.7
 
 - **Animations**
@@ -23,7 +29,7 @@
   - Updated `GGG` to version `0.1.3`
     - _New Spells SFX_
   - Updated `Trigger Engine` to version `1.25.0`
-    - *greatly improved performance*
+    - _greatly improved performance_
   - Updated `Trigger Animations` to version `0.7.1`
 
 ## 0.9.6

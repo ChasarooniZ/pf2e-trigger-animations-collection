@@ -144,6 +144,7 @@ jobs:
           artifacts: "./module.json, ./module.zip"
           tag: ${{ github.event.release.tag_name }}
           body: ${{ steps.changelog.outputs.changelog }}
+
       - name: Publish FoundryVTT Package
         env:
           PACKAGE_TOKEN: ${{ secrets.FVTT_API_TOKEN }}
