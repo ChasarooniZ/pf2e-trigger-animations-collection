@@ -59,7 +59,7 @@
         "id": "ggg",
         "name": "GGG: Sequencer Sound DB Collection",
         "type": "module",
-        "reason": "For SFX for the animations",
+        "reason": "For SFX + animations for the animations",
         "compatibility": {
           "minimum": "0.1.3"
         },
