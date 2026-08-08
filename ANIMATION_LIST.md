@@ -144,6 +144,7 @@
 - Hurtling Stone 🔊🆓 (✍🏼 @Chasarooni)
 - Ignition _TODO, Handle Psychic Yes + Melee somehow_ 🔊🆓 (✍🏼 @Chasarooni)
 - Lay on Hands 🔊🆓 (✍🏼 @Chasarooni)
+- Lifelink Surge 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 
 #### 1st Rank Spells
 
