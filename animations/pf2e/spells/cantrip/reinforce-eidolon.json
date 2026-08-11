@@ -178,18 +178,19 @@
       },
       "id": "M9c8GpgNBy0v8ANM",
       "inputs": {
-        "scale": {
-          "value": 0.3
-        },
         "effect": {
           "connection": "4pdhM4dSC6vDLbvX:outputs:effect"
+        },
+        "objectScale": {
+          "value": 2
         }
       },
       "outs": {
         "out": {
           "connection": "0zyPaODCwAw2Wkko:ins:in"
         }
-      }
+      },
+      "state": "object"
     },
     {
       "type": "scale",
@@ -199,18 +200,19 @@
       },
       "id": "n9ArdUq5aUHxIlUi",
       "inputs": {
-        "scale": {
-          "value": 0.3
-        },
         "effect": {
           "connection": "ShhiGIVpsuIjI0LH:outputs:effect"
+        },
+        "objectScale": {
+          "value": 1.1
         }
       },
       "outs": {
         "out": {
           "connection": "MfKnThvv5Fnm8gUq:ins:in"
         }
-      }
+      },
+      "state": "object"
     },
     {
       "type": "flow",
@@ -442,23 +444,24 @@
     {
       "type": "scale",
       "position": {
-        "x": 221.69336219336253,
-        "y": 1376.0844155844163
+        "x": 208.83621933621998,
+        "y": 1368.9415584415592
       },
       "id": "71VvzNXPFz6izrWZ",
       "inputs": {
-        "scale": {
-          "value": 0.5
-        },
         "effect": {
           "connection": "KUge73x18FiZxeSe:outputs:effect"
+        },
+        "objectScale": {
+          "value": 2
         }
       },
       "outs": {
         "out": {
           "connection": "rwmC3H0R3CLv4nfZ:ins:in"
         }
-      }
+      },
+      "state": "object"
     },
     {
       "type": "flow",
@@ -545,18 +548,19 @@
       },
       "id": "2v7jexGFH7Nt9ceY",
       "inputs": {
-        "scale": {
-          "value": 0.5
-        },
         "effect": {
           "connection": "WTVTuHbbaiPCRMEj:outputs:effect"
+        },
+        "objectScale": {
+          "value": 2
         }
       },
       "outs": {
         "out": {
           "connection": "usCwFxiYLZkgB4Fz:ins:in"
         }
-      }
+      },
+      "state": "object"
     },
     {
       "type": "flow",
