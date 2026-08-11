@@ -1,5 +1,4 @@
 {
-  "id": "FOt2JPZV772GgX9D",
   "name": "Fresh Produce",
   "folder": "Feats",
   "priority": 0,
@@ -8,8 +7,8 @@
     {
       "id": "9g1ZKc3QAUf8e0p2",
       "position": {
-        "x": -227.77777777777771,
-        "y": 216.11111111111114
+        "x": -529.0277777777778,
+        "y": 217.36111111111114
       },
       "type": "animation-event",
       "inputs": {
@@ -352,8 +351,8 @@
     {
       "type": "texts-match",
       "position": {
-        "x": 321.33333333333485,
-        "y": 63.80555555555543
+        "x": 20.08333333333485,
+        "y": 65.05555555555543
       },
       "id": "mWqh2J08Io3zydMK",
       "inputs": {
@@ -365,11 +364,11 @@
         }
       },
       "outs": {
-        "true": {
-          "connection": "SqlDBejJBqQtJ3Dy:ins:in"
-        },
         "false": {
           "connection": "UOV9QqPnjhE1irhO:ins:in"
+        },
+        "true": {
+          "connection": "6txJLCV2O09vOsq5:ins:in"
         }
       }
     },
@@ -381,8 +380,8 @@
         }
       },
       "position": {
-        "x": 57.2222222222224,
-        "y": 134.4722222222224
+        "x": -244.0277777777776,
+        "y": 135.7222222222224
       },
       "id": "nyJ68Qlgstf4aEc1",
       "custom": {
@@ -406,8 +405,8 @@
     {
       "type": "sound",
       "position": {
-        "x": 668.1095848595855,
-        "y": -300.79761904761904
+        "x": 918.1095848595855,
+        "y": -342.79761904761904
       },
       "id": "SqlDBejJBqQtJ3Dy",
       "inputs": {
@@ -433,8 +432,8 @@
         }
       },
       "position": {
-        "x": 984.2142857142853,
-        "y": -495.6357142857146
+        "x": 1234.2142857142853,
+        "y": -537.6357142857147
       },
       "id": "KzMmpU0aRg7qXbUg",
       "outs": {
@@ -454,8 +453,8 @@
         }
       },
       "position": {
-        "x": 1220.035714285714,
-        "y": -521.7857142857142
+        "x": 1470.035714285714,
+        "y": -563.7857142857143
       },
       "id": "KJoahSGRyFBvgwHr",
       "outs": {
@@ -468,8 +467,8 @@
       "id": "vRnRf81HitysJmE4",
       "type": "file",
       "position": {
-        "x": 1969.8888888888887,
-        "y": -515.666666666667
+        "x": 2219.8888888888887,
+        "y": -557.6666666666671
       },
       "inputs": {
         "file": {
@@ -490,8 +489,8 @@
       "type": "location",
       "state": "targets",
       "position": {
-        "x": 2659.47619047619,
-        "y": -646.5476190476195
+        "x": 2909.47619047619,
+        "y": -688.5476190476194
       },
       "inputs": {
         "effect": {
@@ -513,8 +512,8 @@
     {
       "type": "scale",
       "position": {
-        "x": 2333.0108225108224,
-        "y": -622.9989177489176
+        "x": 2583.0108225108224,
+        "y": -664.9989177489175
       },
       "id": "BO1WIe6gBXLrfRFE",
       "inputs": {
@@ -540,8 +539,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 2470,
-        "y": -691.3333333333335
+        "x": 2720,
+        "y": -733.3333333333336
       },
       "id": "bMLiwfpHJwe7WlTh"
     },
@@ -553,8 +552,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 814.2499999999991,
-        "y": -505.05555555555543
+        "x": 1064.249999999999,
+        "y": -547.0555555555553
       },
       "id": "MuroaitFalAfYLwf"
     },
@@ -577,8 +576,8 @@
     {
       "type": "effect",
       "position": {
-        "x": 1601.145299145299,
-        "y": -502.80158730158746
+        "x": 1851.145299145299,
+        "y": -544.8015873015876
       },
       "id": "Rfuo4q3ghQJTVTbL",
       "outs": {
@@ -595,8 +594,8 @@
       },
       "type": "__gate_entry__",
       "position": {
-        "x": 2938.5270562770547,
-        "y": -549.9256854256857
+        "x": 3188.5270562770547,
+        "y": -591.9256854256856
       },
       "id": "iiLDMkMqqi6nQpEj"
     },
@@ -625,6 +624,41 @@
         "y": -128.19841269841254
       },
       "id": "AjZNfmjO6JHsdBKM"
+    },
+    {
+      "type": "get-quality",
+      "position": {
+        "x": 418.8214285714271,
+        "y": -244.10714285714266
+      },
+      "id": "6txJLCV2O09vOsq5",
+      "outs": {
+        "medium": {
+          "connection": "SqlDBejJBqQtJ3Dy:ins:in"
+        },
+        "high": {
+          "connection": "SqlDBejJBqQtJ3Dy:ins:in"
+        },
+        "minimal": {
+          "connection": "z8TeT4yRpXqhan4U:ins:in"
+        },
+        "low": {
+          "connection": "z8TeT4yRpXqhan4U:ins:in"
+        }
+      }
+    },
+    {
+      "outs": {
+        "out": {
+          "connection": "qlJ7uLxlkM7alH7h:ins:in"
+        }
+      },
+      "type": "__gate_entry__",
+      "position": {
+        "x": 645.5714285714275,
+        "y": -405.85714285714266
+      },
+      "id": "z8TeT4yRpXqhan4U"
     }
   ],
   "variables": {
@@ -639,11 +673,6 @@
       "type": "target"
     }
   },
-  "tags": [
-    "PF2e Trove",
-    "pf2e",
-    "feats",
-    "class",
-    "kineticist"
-  ]
+  "tags": ["PF2e Trove", "pf2e", "feats", "class", "kineticist"],
+  "id": "8q7ZMwJtHnQoHRVJ"
 }
