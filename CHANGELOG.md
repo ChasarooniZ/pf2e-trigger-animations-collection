@@ -1,5 +1,11 @@
 ## Unreleased
 
+- **Animations**
+  - **New**
+    - Elixir of Life, Needle Darts _couldn't find way to handle different materials :(_ (@ChasarooniZ)
+  - **Updated**
+    - Fresh Produce, Healing Potion _fixed general issues with these animation_ (@ChasarooniZ)
+
 ## 0.10.0
 
 - **Animations**
