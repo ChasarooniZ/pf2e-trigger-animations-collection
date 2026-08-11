@@ -123,6 +123,7 @@
 
 #### Cantrips
 
+- Boost Eidolon 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Buzzing Bites 🔊🆓 (✍🏼 @Chasarooni)
 - Detect Magic 🔊🆓✅ (✍🏼 @Suldrun45)
 - Divine Lance 🔊🆓 (✍🏼 @Chasarooni)
@@ -130,6 +131,7 @@
 - Frostbite 🔊🆓✅ (✍🏼 @Chasarooni)
 - Guidance 🔇🆓 (✍🏼 @Chasarooni)
 - Ray of Frost 🔊🆓✅ (✍🏼 @Chasarooni)
+- Reinforce Eidolon 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Scatter Scree 🔊🆓✅ (✍🏼 @Chasarooni)
 - Tangle Vine 🔊🆓✅ (✍🏼 @Suldrun45)
 - Void Warp 🔊🆓✅ (✍🏼 @Chasarooni)
@@ -144,6 +146,7 @@
 - Hurtling Stone 🔊🆓 (✍🏼 @Chasarooni)
 - Ignition _TODO, Handle Psychic Yes + Melee somehow_ 🔊🆓 (✍🏼 @Chasarooni)
 - Lay on Hands 🔊🆓 (✍🏼 @Chasarooni)
+- Lifelink Surge 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 
 #### 1st Rank Spells
 
