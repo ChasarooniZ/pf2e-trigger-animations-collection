@@ -251,6 +251,7 @@
 
 ##### Kineticist
 
+- Aerial Boomerang 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Air Cushion 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Armor In Earth 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Deflecting Wave 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
