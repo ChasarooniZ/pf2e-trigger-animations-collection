@@ -260,6 +260,7 @@
 - Hail of Spinters 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Ocean's Balm 🔊🆓✅ (✍🏼 @Dio)
 - Scorching Column 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Tidal Hands 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Torrent in the Blood 🔊🆓✅ (✍🏼 @Dio)
 
 #### Shared
