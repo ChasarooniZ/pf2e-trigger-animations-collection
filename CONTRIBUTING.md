@@ -15,6 +15,7 @@ _[Use Me to convert "Export Triggers" to individual files for a PR](https://chas
 - There should be no functional components (IE effects added, damage applied etc.) to any animations with the exception of those like the case described above
 - Sort your animation in the proper folder, creating a new one if there's no folder that fits the animation
 - Format the trigger as requested on submission (`Prettier` 2 spaces per line) which can be run from the project with `npm run prettier`
+  - Additionally you could try this [formatting website](https://prettier.io/playground#N4Igxg9gdgLgprEAuEIA0IIAcYEtoDOyoAhgE5kQDuACuQkSiQDZUkCeRGARmSWAGs4MAMokAtnAAyuKHGQAzFgTgYI3AFZwwMAOp8syEFjJwVZAG7yefQcJFZ+sgObIYZAK6qQK8bjee3nAAHlhwZLiSsCwA8mF8MBBkNBAEuHjQRggAJuggIfGRCDAsACrhUOS4ZorK3mlQzsxwAIoeEPC1zCoYGgTBIi7NbR3ySErd3gCO7fA0lFiMICQEALRycNmbee4kuMwuAMIQ4uIkRizMeQ1NcACCMO643B5z4TJyXT0gABYw4sxdD90mZHGA4CIGOlcBZ0uwjGACFwQBYvABJKBbWAiMARHB3TEiGDsZpfbwmVJwfQkQwoExmcJWPI5GIKD5jEDMBR5WTmGDzEjOM5kjCOMjmIx9TKiiKwXS4bIwH7IAAcAAYMKYZrhTAKhedxnUMCVuPLFcqkAAmDAeFSlEjcRgTb5wcTcTZbbJSEiNDyCuAAMSSZ0eLgurwgIAAvlGgA)
 
 ## Node Guidlines
 
@@ -23,6 +24,7 @@ _[Use Me to convert "Export Triggers" to individual files for a PR](https://chas
   - `Sound` node should have the name filled with the item or animation `name` or `slug`
 - **Effect**
   - `origin` and `name` should be filled with the item or animation `name` or `slug` and the item `uuid` respectfully (unless it makes more sense for it to be a token's etc.)
+  - You must use actual nodes, `EZ Ranged` and others of that nature do not allow the finegrain control to be appropriate submissions for this collection
 
 ## Animation Submission Guidelines
 
@@ -41,7 +43,7 @@ _[Use Me to convert "Export Triggers" to individual files for a PR](https://chas
   - **High** - Medium but with Persistent Effects allowed
     _The following is WIP_
 
-- **Priority of Animations**
+- **Priority of Animations** _this is done automatically on the backend_
   - 0 - **Default**
   - **Weapons**
     - -100 - **Group** `Firearm`

@@ -1,10 +1,10 @@
 [
   {
-    "name": "Damage Roll",
+    "name": "[Trove] Damage Roll",
     "folder": "Animations",
     "priority": 0,
     "tags": ["pf2e", "sf2e"],
-    "id": "bQTU95RJtyat8SVF",
+    "id": "q9khDsYP21ybOto3",
     "nodes": [
       {
         "type": "execute-animation",
@@ -207,7 +207,7 @@
             "connection": "NVw98hipCZjZu9I0:outputs:6ssDORYrtuDo5mk4"
           },
           "script": {
-            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst msg = inputs[0];\n\nconst isDamageRoll = msg?.isDamageRoll;\nconst item = msg?.item;\nconst token = msg?.token;\nconst rollOptions = msg?.flags?.pf2e?.context?.options;\nconst outcome = msg?.flags?.pf2e?.context?.outcome;\nconst isReroll = msg?.isReroll;\nconst dmgSlugs = msg?.flags?.pf2e?.dice?.filter((d) => d?.enabled)?.map((d) => d?.slug);\nconst modSlugs = msg?.flags?.pf2e?.modifiers?.filter((d) => d?.enabled)?.map((d) => d?.slug);\nconst slugs = [item?.slug, dmgSlugs, modSlugs]?.flat();\nconst animationList = slugs?.map((slug) => `damage-roll:${slug}`);\n\nconst animationName = animationList?.join(\", \");\nconst toolbeltTargets = msg?.flags?.[\"pf2e-toolbelt\"]?.targetHelper?.targets.map(uuid => canvas.tokens.placeables.find(t => t?.document?.uuid === uuid))\nlet targets = toolbeltTargets?.length > 0 ? toolbeltTargets : (msg?.target ? [msg?.target] : [])\nif (targets?.length <= 0) {\n  targets = Array.from(msg?.author?.targets ?? 0);\n}\n\nreturn [\n  { type: \"item\", value: item },\n  { type: \"text\", isArray: true, value: rollOptions },\n  { type: \"outcome\", value: outcome },\n  { type: \"boolean\", value: isReroll },\n  { type: \"text\", value: animationName },\n  { type: \"target\", value: token },\n  { type: \"target\", isArray: true, value: targets },\n  { type: \"text\", isArray: true, value: slugs}\n];"
+            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst msg = inputs[0];\n\nconst isDamageRoll = msg?.isDamageRoll;\nconst item = msg?.item;\nconst token = msg?.token;\nconst rollOptions = msg?.flags?.pf2e?.context?.options;\nconst outcome = msg?.flags?.pf2e?.context?.outcome;\nconst isReroll = msg?.isReroll;\nconst dmgSlugs = msg?.flags?.pf2e?.dice?.filter((d) => d?.enabled)?.map((d) => d?.slug);\nconst modSlugs = msg?.flags?.pf2e?.modifiers?.filter((d) => d?.enabled)?.map((d) => d?.slug);\nconst slugs = [item?.slug, dmgSlugs, modSlugs, item?.uuid]?.flat();\nconst animationList = slugs?.map((slug) => `damage-roll:${slug}`);\n\nconst animationName = animationList?.join(\", \");\nconst toolbeltTargets = msg?.flags?.[\"pf2e-toolbelt\"]?.targetHelper?.targets.map(uuid => canvas.tokens.placeables.find(t => t?.document?.uuid === uuid))\nlet targets = toolbeltTargets?.length > 0 ? toolbeltTargets : (msg?.target ? [msg?.target] : [])\nif (targets?.length <= 0) {\n  targets = Array.from(msg?.author?.targets ?? 0);\n}\n\nreturn [\n  { type: \"item\", value: item },\n  { type: \"text\", isArray: true, value: rollOptions },\n  { type: \"outcome\", value: outcome },\n  { type: \"boolean\", value: isReroll },\n  { type: \"text\", value: animationName },\n  { type: \"target\", value: token },\n  { type: \"target\", isArray: true, value: targets },\n  { type: \"text\", isArray: true, value: slugs}\n];"
           },
           "XBZEuuLO5U2NgWUj": {
             "connection": "GT4ukBFeZBihKFGW:outputs:targets"
@@ -227,10 +227,10 @@
     ]
   },
   {
-    "name": "Effect / Condition Badge Update",
+    "name": "[Trove] Effect / Condition Badge Update",
     "folder": "Animations",
     "priority": 0,
-    "id": "i5k5nisEifIYTP9H",
+    "id": "Yuk4s0i4d7Lpwtnn",
     "nodes": [
       {
         "type": "execute-animation",
@@ -280,6 +280,14 @@
               "slug": "path",
               "isArray": false,
               "type": "target"
+            },
+            "f9YhUDpEXtNAhUqu": {
+              "id": "f9YhUDpEXtNAhUqu",
+              "input": "uuid",
+              "label": "UUID",
+              "slug": "path",
+              "isArray": false,
+              "type": "text"
             }
           }
         },
@@ -407,24 +415,34 @@
               "label": "type",
               "slug": "variable",
               "type": "text"
+            },
+            "Mbe75MHEkrmtk2dU": {
+              "id": "Mbe75MHEkrmtk2dU",
+              "input": "uuid",
+              "label": "uuid",
+              "slug": "variable",
+              "type": "text"
             }
           }
         },
         "inputs": {
           "jhufYqifVCmc1Tb7": { "value": "update" },
-          "plain": { "value": "@type:@slug" },
+          "plain": { "value": "@type:@slug, @type:@uuid" },
           "EhOg8swVOvjZDDqY": {
             "connection": "mosxx1pPt8nuHzjX:outputs:E85qTXVg1K7pfp77"
+          },
+          "Mbe75MHEkrmtk2dU": {
+            "connection": "mosxx1pPt8nuHzjX:outputs:f9YhUDpEXtNAhUqu"
           }
         }
       }
     ]
   },
   {
-    "name": "Reload",
+    "name": "[Trove] Reload",
     "folder": "Animations",
     "priority": 0,
-    "id": "TRgkfq3bmarPP6Vx",
+    "id": "KJ16ixdoL50OzVrV",
     "nodes": [
       {
         "type": "execute-animation",
@@ -527,6 +545,14 @@
               "id": "pEmJcO5BSDfhQjh9",
               "input": "system.baseItem",
               "label": "Base Item",
+              "slug": "path",
+              "isArray": false,
+              "type": "text"
+            },
+            "ifdU1f5gdGvEHXGw": {
+              "id": "ifdU1f5gdGvEHXGw",
+              "input": "uuid",
+              "label": "UUID",
               "slug": "path",
               "isArray": false,
               "type": "text"
@@ -679,12 +705,19 @@
               "label": "c",
               "slug": "variable",
               "type": "text"
+            },
+            "aCgqGeoFQsKoJPOo": {
+              "id": "aCgqGeoFQsKoJPOo",
+              "input": "d",
+              "label": "d",
+              "slug": "variable",
+              "type": "text"
             }
           }
         },
         "inputs": {
           "jhufYqifVCmc1Tb7": { "value": "reload" },
-          "plain": { "value": "@type:@a, @type:@b, @type:@c" },
+          "plain": { "value": "@type:@a, @type:@b, @type:@c,  @type:@d" },
           "EhOg8swVOvjZDDqY": {
             "connection": "mosxx1pPt8nuHzjX:outputs:E85qTXVg1K7pfp77"
           },
@@ -696,6 +729,9 @@
           },
           "87REV4l93b9vXCst": {
             "connection": "mosxx1pPt8nuHzjX:outputs:E85qTXVg1K7pfp77"
+          },
+          "aCgqGeoFQsKoJPOo": {
+            "connection": "mosxx1pPt8nuHzjX:outputs:ifdU1f5gdGvEHXGw"
           }
         }
       },
@@ -817,17 +853,16 @@
     ]
   },
   {
-    "name": "Roll Option Update",
+    "name": "[Trove] Roll Option Update",
     "folder": "Animations",
     "priority": 0,
-    "id": "nc27dfLOikdNxk1W",
+    "id": "Fo8QMCHCNXj1jvYS",
     "nodes": [
       {
         "type": "execute-animation",
         "position": { "x": 1927.1907624506157, "y": 148.2055837573547 },
         "id": "PEXiYyM5Qoo77FZK",
         "inputs": {
-          "targets": { "connection": "iLQqpDvy8aS7XhpM:outputs:targets" },
           "actor": {
             "connection": "mosxx1pPt8nuHzjX:outputs:Xk3O4efifslHIdqZ"
           },
@@ -841,7 +876,8 @@
           "kW9rlifvGk20yyJP": {
             "connection": "FxR5QChVGKXuHlVk:outputs:t0XEao7zOBDbsfI2"
           },
-          "name": { "connection": "Oib6d57AsodU4FR0:outputs:result" }
+          "name": { "connection": "Oib6d57AsodU4FR0:outputs:result" },
+          "targets": { "connection": "FPcJKIikmmk6AH0X:outputs:targets" }
         },
         "custom": {
           "inputs": {
@@ -857,7 +893,7 @@
       },
       {
         "type": "extract-item",
-        "position": { "x": 473.6667067754819, "y": 143.0000304635575 },
+        "position": { "x": 186.66670677548188, "y": 157.0000304635575 },
         "id": "mosxx1pPt8nuHzjX",
         "custom": {
           "outputs": {
@@ -884,6 +920,14 @@
               "slug": "path",
               "isArray": false,
               "type": "target"
+            },
+            "hD7WPMGRAKjpunKH": {
+              "id": "hD7WPMGRAKjpunKH",
+              "input": "uuid",
+              "label": "UUID",
+              "slug": "path",
+              "isArray": false,
+              "type": "text"
             }
           }
         },
@@ -893,13 +937,8 @@
         "outs": { "out": { "connection": "FxR5QChVGKXuHlVk:ins:in" } }
       },
       {
-        "type": "scene-targets",
-        "position": { "x": 834.3055250177011, "y": 348.3056025299461 },
-        "id": "iLQqpDvy8aS7XhpM"
-      },
-      {
         "type": "hook-called-event",
-        "position": { "x": 197.5555555555555, "y": 30.99999999999997 },
+        "position": { "x": -89.44444444444457, "y": 45 },
         "id": "ZxdKeHGJd1pmBBiS",
         "custom": {
           "outputs": {
@@ -931,7 +970,7 @@
       },
       {
         "type": "execute-script",
-        "position": { "x": 845.267676767676, "y": 7.936868686868536 },
+        "position": { "x": 558.267676767676, "y": 21.936868686868536 },
         "id": "FxR5QChVGKXuHlVk",
         "custom": {
           "inputs": {
@@ -982,9 +1021,9 @@
         "inputs": {
           "input": { "connection": "FxR5QChVGKXuHlVk:outputs:V6VZsM2Ki074RVD6" }
         },
-        "position": { "x": 1356.6414141414134, "y": 97.73232323232327 },
+        "position": { "x": 1069.6414141414134, "y": 111.73232323232327 },
         "id": "D7runevSoOuUnOJh",
-        "outs": { "true": { "connection": "Oib6d57AsodU4FR0:ins:in" } }
+        "outs": { "true": { "connection": "FPcJKIikmmk6AH0X:ins:in" } }
       },
       {
         "type": "format-text",
@@ -1014,24 +1053,48 @@
               "label": "selection",
               "slug": "variable",
               "type": "text"
+            },
+            "3u0FAV8CcRJyGScq": {
+              "id": "3u0FAV8CcRJyGScq",
+              "input": "uuid",
+              "label": "uuid",
+              "slug": "variable",
+              "type": "text"
             }
           }
         },
         "inputs": {
           "jhufYqifVCmc1Tb7": { "value": "update" },
-          "plain": { "value": "@type:@slug, @type:@slug:@selection" },
+          "plain": {
+            "value": "@type:@slug, @type:@slug:@selection, @type:@uuid, @type:@uuid:@selection"
+          },
           "E72omLIlMSDCGG1w": {
             "connection": "FxR5QChVGKXuHlVk:outputs:t0XEao7zOBDbsfI2"
           },
           "EhOg8swVOvjZDDqY": {
             "connection": "mosxx1pPt8nuHzjX:outputs:E85qTXVg1K7pfp77"
+          },
+          "3u0FAV8CcRJyGScq": {
+            "connection": "mosxx1pPt8nuHzjX:outputs:hD7WPMGRAKjpunKH"
           }
         }
+      },
+      {
+        "type": "user-targets",
+        "position": { "x": 1342, "y": 134 },
+        "id": "FPcJKIikmmk6AH0X",
+        "inputs": { "user": { "connection": "GnAfGaMR0wnb8k1t:outputs:user" } },
+        "outs": { "out": { "connection": "Oib6d57AsodU4FR0:ins:in" } }
+      },
+      {
+        "type": "user-value",
+        "position": { "x": 1039, "y": 207 },
+        "id": "GnAfGaMR0wnb8k1t"
       }
     ]
   },
   {
-    "name": "Skill Checks Actions",
+    "name": "[Trove] Skill Checks Actions",
     "folder": "Animations",
     "priority": 0,
     "tags": ["pf2e", "sf2e"],
@@ -1119,11 +1182,11 @@
     ]
   },
   {
-    "name": "Spell Message",
+    "name": "[Trove] Spell Message",
     "folder": "Animations",
     "priority": 0,
     "tags": ["pf2e", "sf2e"],
-    "id": "mIkeWLVb7VokwJ31",
+    "id": "LxlFxAsjOfBMiOII",
     "nodes": [
       {
         "type": "execute-animation",
@@ -1263,6 +1326,13 @@
               "slug": "output",
               "isArray": true,
               "type": "text"
+            },
+            "RVeNBLxZTj7V4rnP": {
+              "id": "RVeNBLxZTj7V4rnP",
+              "label": "uuid",
+              "slug": "output",
+              "isArray": false,
+              "type": "text"
             }
           }
         },
@@ -1271,7 +1341,7 @@
             "connection": "NVw98hipCZjZu9I0:outputs:6ssDORYrtuDo5mk4"
           },
           "script": {
-            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst msg = inputs[0];\n\nconst isDamageRoll = msg?.isDamageRoll;\nconst item = msg?.item;\nconst token = msg?.token;\nconst rollOptions = [msg?.flags?.pf2e?.origin?.rollOptions, Object.keys(msg?.actor?.rollOptions?.all)].flat();\nconst slug = msg?.item?.slug ?? game?.pf2e?.system?.sluggify(msg?.item?.name)\n\nconst toolbeltTargets = msg?.flags?.[\"pf2e-toolbelt\"]?.targetHelper?.targets.map(uuid => canvas.tokens.placeables.find(t => t?.document?.uuid === uuid))\nlet targets = toolbeltTargets?.length > 0 ? toolbeltTargets : (msg?.target ? [msg?.target] : [])\nif (targets?.length <= 0) {\n  targets = Array.from(msg?.author?.targets ?? 0);\n}\n\n\nreturn [\n  { type: \"text\", value: slug },\n  { type: \"target\", value: token },\n  { type: \"target\", isArray: true, value: targets },\n  { type: \"item\", value: item },\n  { type: \"text\", isArray: true, value: rollOptions },\n];"
+            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst msg = inputs[0];\n\nconst isDamageRoll = msg?.isDamageRoll;\nconst item = msg?.item;\nconst token = msg?.token;\nconst rollOptions = [msg?.flags?.pf2e?.origin?.rollOptions, Object.keys(msg?.actor?.rollOptions?.all)].flat();\nconst slug = msg?.item?.slug ?? game?.pf2e?.system?.sluggify(msg?.item?.name)\nconst uuid = msg?.item?.uuid;\n\nconst toolbeltTargets = msg?.flags?.[\"pf2e-toolbelt\"]?.targetHelper?.targets.map(uuid => canvas.tokens.placeables.find(t => t?.document?.uuid === uuid))\nlet targets = toolbeltTargets?.length > 0 ? toolbeltTargets : (msg?.target ? [msg?.target] : [])\nif (targets?.length <= 0) {\n  targets = Array.from(msg?.author?.targets ?? 0);\n}\n\n\nreturn [\n  { type: \"text\", value: slug },\n  { type: \"target\", value: token },\n  { type: \"target\", isArray: true, value: targets },\n  { type: \"item\", value: item },\n  { type: \"text\", isArray: true, value: rollOptions },\n  { type: \"text\", value: uuid },\n];"
           }
         },
         "outs": { "out": { "connection": "kopaP7iWiPBibSrv:ins:in" } }
@@ -1304,6 +1374,13 @@
               "label": "b",
               "slug": "variable",
               "type": "text"
+            },
+            "bub1AOPpVGz9AkkF": {
+              "id": "bub1AOPpVGz9AkkF",
+              "input": "c",
+              "label": "c",
+              "slug": "variable",
+              "type": "text"
             }
           }
         },
@@ -1312,9 +1389,282 @@
           "lv9XTTitQYmpHlEX": {
             "connection": "SD3dS8jXMDz7XxE3:outputs:Ue6LY90NJ8Hyz24k"
           },
-          "plain": { "value": "@a:@b" }
+          "plain": { "value": "@a:@b, @a:@c" },
+          "bub1AOPpVGz9AkkF": {
+            "connection": "SD3dS8jXMDz7XxE3:outputs:RVeNBLxZTj7V4rnP"
+          }
         },
         "outs": { "out": { "connection": "zJiAEHL0uEXPz5FL:ins:in" } }
+      }
+    ]
+  },
+  {
+    "name": "[Trove] Turn Start Condition",
+    "folder": "Animations",
+    "priority": 0,
+    "id": "O6w1hBzSwmAbnP5s",
+    "nodes": [
+      {
+        "type": "turn-start-event",
+        "position": { "x": 439, "y": 143 },
+        "id": "Fh0nzojoi2Uv6jGK",
+        "outs": { "out": { "connection": "U7joOP2JgSI6ARWc:ins:in" } }
+      },
+      {
+        "type": "execute-animation",
+        "position": { "x": 2194.333333333333, "y": 174.44444444444434 },
+        "id": "zX8zYdGkfz6Ahnkh",
+        "inputs": {
+          "actor": {
+            "connection": "U7joOP2JgSI6ARWc:outputs:477LDwMurO5eHE8w"
+          },
+          "sources": { "connection": "Fh0nzojoi2Uv6jGK:outputs:combatant" },
+          "vVet6dp7Qh5Kqu6Y": {
+            "connection": "Fh0nzojoi2Uv6jGK:outputs:round"
+          },
+          "Nc4KwVr7W9iqqOLn": { "value": "turn-start" },
+          "tTUh7rHYZmo5Ib9g": {
+            "connection": "Fh0nzojoi2Uv6jGK:outputs:round"
+          },
+          "options": {
+            "connection": "U7joOP2JgSI6ARWc:outputs:PHfyTcubs03o3JBv"
+          },
+          "name": { "connection": "czc0iX80e4nw2OtK:outputs:result" }
+        },
+        "custom": {
+          "inputs": {
+            "Nc4KwVr7W9iqqOLn": {
+              "id": "Nc4KwVr7W9iqqOLn",
+              "label": "Trigger",
+              "slug": "input",
+              "isArray": false,
+              "type": "text"
+            },
+            "tTUh7rHYZmo5Ib9g": {
+              "id": "tTUh7rHYZmo5Ib9g",
+              "label": "Round",
+              "slug": "input",
+              "isArray": false,
+              "type": "number"
+            }
+          }
+        },
+        "outs": { "out": { "connection": "i1GlCtBHQxtPhEN0:ins:in" } }
+      },
+      {
+        "type": "execute-script",
+        "position": { "x": 709.9230769230769, "y": 146.39999999999998 },
+        "id": "U7joOP2JgSI6ARWc",
+        "custom": {
+          "inputs": {
+            "A3ycsyacWC7ys7md": {
+              "id": "A3ycsyacWC7ys7md",
+              "label": "Combatant",
+              "slug": "input",
+              "isArray": false,
+              "type": "target"
+            }
+          },
+          "outputs": {
+            "477LDwMurO5eHE8w": {
+              "id": "477LDwMurO5eHE8w",
+              "label": "Actor",
+              "slug": "output",
+              "isArray": false,
+              "type": "target"
+            },
+            "JarE3lDeFyQVMddr": {
+              "id": "JarE3lDeFyQVMddr",
+              "label": "Conditions",
+              "slug": "output",
+              "isArray": true,
+              "type": "item"
+            },
+            "PHfyTcubs03o3JBv": {
+              "id": "PHfyTcubs03o3JBv",
+              "label": "Options",
+              "slug": "output",
+              "isArray": true,
+              "type": "text"
+            }
+          }
+        },
+        "inputs": {
+          "A3ycsyacWC7ys7md": {
+            "connection": "Fh0nzojoi2Uv6jGK:outputs:combatant"
+          },
+          "script": {
+            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst combatant = inputs[0];\nconst token = combatant?.token;\nconst actor = combatant?.actor;\nconst {condition} = actor?.items?.documentsByType;\nconst rollOptions = Object.keys(actor?.rollOptions?.all)\nreturn [\n  {type: \"target\", value: actor},\n  {type: \"item\", isArray: true, value: condition},\n  {type: \"text\", isArray: true, value: rollOptions},\n];"
+          }
+        },
+        "outs": { "out": { "connection": "gUs1XY3PGRnsSeaP:ins:in" } }
+      },
+      {
+        "type": "execute-script",
+        "position": { "x": 1032.7359307359307, "y": 178.95093795093806 },
+        "id": "gUs1XY3PGRnsSeaP",
+        "custom": {
+          "inputs": {
+            "s7L84KtcoqoWsB34": {
+              "id": "s7L84KtcoqoWsB34",
+              "label": "Count",
+              "slug": "input",
+              "isArray": false,
+              "type": "number"
+            },
+            "XUrHWoXKlvjAgWlZ": {
+              "id": "XUrHWoXKlvjAgWlZ",
+              "label": "Conditions",
+              "slug": "input",
+              "isArray": true,
+              "type": "item"
+            }
+          },
+          "outputs": {
+            "hltUkBmOJjriwNaN": {
+              "id": "hltUkBmOJjriwNaN",
+              "label": "Condition",
+              "slug": "output",
+              "isArray": false,
+              "type": "item"
+            },
+            "ORuxgoPfXx6rtj6O": {
+              "id": "ORuxgoPfXx6rtj6O",
+              "label": "count",
+              "slug": "output",
+              "isArray": false,
+              "type": "number"
+            }
+          }
+        },
+        "inputs": {
+          "script": {
+            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nlet cnt = inputs[0] ?? 0;\nconst conditions = inputs[1] ?? [];\nconst condition = conditions?.[cnt];\n\ncnt++;\nreturn [{type: \"item\", value: condition}, {type: \"number\", value: cnt}];"
+          },
+          "s7L84KtcoqoWsB34": {
+            "connection": "4jSfLuhP74i5BQhl:outputs:m5FByxydJfzGS7XW"
+          },
+          "XUrHWoXKlvjAgWlZ": {
+            "connection": "U7joOP2JgSI6ARWc:outputs:JarE3lDeFyQVMddr"
+          }
+        },
+        "outs": { "out": { "connection": "XfW11RagFd1nmIlv:ins:in" } }
+      },
+      {
+        "type": "if-truthy",
+        "position": { "x": 1377.4761904761904, "y": 171.5952380952382 },
+        "id": "XfW11RagFd1nmIlv",
+        "custom": {
+          "inputs": {
+            "RHCJhIDQ9JLzIbGu": {
+              "id": "RHCJhIDQ9JLzIbGu",
+              "label": "Condition",
+              "slug": "condition",
+              "isArray": false,
+              "type": "item"
+            }
+          }
+        },
+        "inputs": {
+          "1sCTd5HhysoyKkAf": {
+            "connection": "gUs1XY3PGRnsSeaP:outputs:vdIDlUEvPNvlTYqm"
+          },
+          "RHCJhIDQ9JLzIbGu": {
+            "connection": "gUs1XY3PGRnsSeaP:outputs:hltUkBmOJjriwNaN"
+          }
+        },
+        "outs": { "true": { "connection": "cCWtF2qW77tjM8nb:ins:in" } }
+      },
+      {
+        "custom": {
+          "title": "Condition",
+          "outputs": {
+            "m5FByxydJfzGS7XW": {
+              "id": "m5FByxydJfzGS7XW",
+              "label": "count",
+              "slug": "entry",
+              "isArray": false,
+              "type": "number"
+            }
+          }
+        },
+        "type": "__gate_exit__",
+        "position": { "x": 750, "y": -70 },
+        "id": "4jSfLuhP74i5BQhl",
+        "outs": { "out": { "connection": "gUs1XY3PGRnsSeaP:ins:in" } }
+      },
+      {
+        "outs": { "out": { "connection": "4jSfLuhP74i5BQhl:ins:in" } },
+        "type": "__gate_entry__",
+        "position": { "x": 2506.545454545454, "y": 52.274170274170274 },
+        "id": "i1GlCtBHQxtPhEN0",
+        "inputs": {
+          "m5FByxydJfzGS7XW": {
+            "connection": "gUs1XY3PGRnsSeaP:outputs:ORuxgoPfXx6rtj6O"
+          }
+        }
+      },
+      {
+        "type": "extract-item",
+        "position": { "x": 1603.740537240537, "y": 178.4072150072149 },
+        "id": "cCWtF2qW77tjM8nb",
+        "custom": {
+          "outputs": {
+            "ViQl8r0BOP4PTQ5c": {
+              "id": "ViQl8r0BOP4PTQ5c",
+              "input": "slug",
+              "label": "Slug",
+              "slug": "path",
+              "isArray": false,
+              "type": "text"
+            },
+            "AGnRbCkryYJMn9km": {
+              "id": "AGnRbCkryYJMn9km",
+              "input": "uuid",
+              "label": "UUID",
+              "slug": "path",
+              "isArray": false,
+              "type": "text"
+            }
+          }
+        },
+        "inputs": {
+          "input": { "connection": "gUs1XY3PGRnsSeaP:outputs:hltUkBmOJjriwNaN" }
+        },
+        "outs": { "out": { "connection": "czc0iX80e4nw2OtK:ins:in" } }
+      },
+      {
+        "type": "format-text",
+        "position": { "x": 1866.4841269841268, "y": 176.45165945165928 },
+        "id": "czc0iX80e4nw2OtK",
+        "custom": {
+          "inputs": {
+            "k4R1MXu1H5zmgE51": {
+              "id": "k4R1MXu1H5zmgE51",
+              "input": "slug",
+              "label": "slug",
+              "slug": "variable",
+              "type": "text"
+            },
+            "mqy71zSBl2JPxrqO": {
+              "id": "mqy71zSBl2JPxrqO",
+              "input": "uuid",
+              "label": "uuid",
+              "slug": "variable",
+              "type": "text"
+            }
+          }
+        },
+        "inputs": {
+          "k4R1MXu1H5zmgE51": {
+            "connection": "cCWtF2qW77tjM8nb:outputs:ViQl8r0BOP4PTQ5c"
+          },
+          "plain": { "value": "turn-start:@slug, turn-start:@uuid" },
+          "mqy71zSBl2JPxrqO": {
+            "connection": "cCWtF2qW77tjM8nb:outputs:AGnRbCkryYJMn9km"
+          }
+        },
+        "outs": { "out": { "connection": "zX8zYdGkfz6Ahnkh:ins:in" } }
       }
     ]
   }

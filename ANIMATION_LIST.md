@@ -21,6 +21,7 @@
   - [PF2e](#pf2e)
     - [Class Features](#class-features)
       - [Barbarian](#barbarian)
+      - [Kineticist](#kineticist)
       - [Rogue](#rogue)
       - [Runesmith](#runesmith)
     - [Spells](#spells)
@@ -42,6 +43,7 @@
     - [Feats](#feats)
       - [Ancestry Feats](#ancestry-feats)
       - [Class Feats](#class-feats)
+        - [Kineticist](#kineticist-1)
       - [Shared](#shared)
       - [General Feats](#general-feats)
       - [Skill Feats](#skill-feats)
@@ -103,6 +105,10 @@
 
 - Rage 🔊🆓 (✍🏼 @Chasarooni)
 
+#### Kineticist
+
+- Elemental Blast 🔊🆓 (✍🏼 @Chasarooni)
+
 #### Rogue
 
 - Sneak Attack 🔇🆓 (✍🏼 @Chasarooni)
@@ -117,13 +123,15 @@
 
 #### Cantrips
 
+- Boost Eidolon 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Buzzing Bites 🔊🆓 (✍🏼 @Chasarooni)
-- Detect Magic 🔊🆓✅ (✍🏼 @Suldrun45)\
+- Detect Magic 🔊🆓✅ (✍🏼 @Suldrun45)
 - Divine Lance 🔊🆓 (✍🏼 @Chasarooni)
 - Electric Arc 🔊🆓✅ (✍🏼 @Chasarooni)
 - Frostbite 🔊🆓✅ (✍🏼 @Chasarooni)
 - Guidance 🔇🆓 (✍🏼 @Chasarooni)
 - Ray of Frost 🔊🆓✅ (✍🏼 @Chasarooni)
+- Reinforce Eidolon 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Scatter Scree 🔊🆓✅ (✍🏼 @Chasarooni)
 - Tangle Vine 🔊🆓✅ (✍🏼 @Suldrun45)
 - Void Warp 🔊🆓✅ (✍🏼 @Chasarooni)
@@ -138,12 +146,13 @@
 - Hurtling Stone 🔊🆓 (✍🏼 @Chasarooni)
 - Ignition _TODO, Handle Psychic Yes + Melee somehow_ 🔊🆓 (✍🏼 @Chasarooni)
 - Lay on Hands 🔊🆓 (✍🏼 @Chasarooni)
+- Lifelink Surge 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 
 #### 1st Rank Spells
 
 - Bless 🔊🆓✅ (✍🏼 @ChazPls, 🛠️ @Chasarooni)
 - Force Barrage 🔊🆓 (✍🏼 @Chasarooni)
-- Gust of Wind 🔊🆓✅ (✍🏼 @Suldrun45)
+- Gust of Wind 🔊🆓✅ (✍🏼 @Suldrun45, 🛠️ @Chasarooni)
 - Harm 🔊🆓✅ (✍🏼 @Chasarooni)
 - Heal 🔊🆓✅ (✍🏼 @Chasarooni)
 
@@ -239,6 +248,19 @@
 - Change Shape 🔇🆓 (✍🏼 @Chasarooni)
 
 #### Class Feats
+
+##### Kineticist
+
+- Air Cushion 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Armor In Earth 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Deflecting Wave 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
+- Four Winds 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Fresh Produce 🔊🆓✅ (✍🏼 @Dio, 🛠️ @ChasarooniZ)
+- Geologic Attunement 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Hail of Spinters 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Ocean's Balm 🔊🆓✅ (✍🏼 @Dio)
+- Scorching Column 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Torrent in the Blood 🔊🆓✅ (✍🏼 @Dio)
 
 #### Shared
 
