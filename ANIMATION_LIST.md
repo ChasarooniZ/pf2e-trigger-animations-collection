@@ -255,12 +255,12 @@
 - Armor In Earth 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Deflecting Wave 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
 - Four Winds 🔊🆓✅ (✍🏼 @RunicLibrarian)
-- Fresh Produce 🔊🆓✅ (✍🏼 @Dio, 🛠️ @ChasarooniZ)
+- Fresh Produce 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo, 🛠️ @ChasarooniZ)
 - Geologic Attunement 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Hail of Spinters 🔊🆓✅ (✍🏼 @RunicLibrarian)
-- Ocean's Balm 🔊🆓✅ (✍🏼 @Dio)
+- Ocean's Balm 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Scorching Column 🔊🆓✅ (✍🏼 @RunicLibrarian)
-- Torrent in the Blood 🔊🆓✅ (✍🏼 @Dio)
+- Torrent in the Blood 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 
 #### Shared
 
@@ -290,12 +290,16 @@
 
 ##### Group
 
+- Brawling 🔊🆓 (✍🏼 @Chasarooni)
 - Bomb 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Bow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Crossbow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
+- Dart 🔊🆓 (✍🏼 @Chasarooni)
 - Firearm 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
+- Flail 🔊🆓 (✍🏼 @Chasarooni)
 - Hammer 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Knife 🔊🆓 (✍🏼 @Chasarooni)
+- Pick 🔊🆓 (✍🏼 @Chasarooni)
 - Polearm 🔊🆓 (✍🏼 @Chasarooni)
 - Shield 🔊🆓 (✍🏼 @Chasarooni)
 - Sling 🔊🆓 (✍🏼 @Chasarooni)
@@ -306,7 +310,6 @@
 
 - Boomerang 🔊🆓 (✍🏼 @Chasarooni)
 - Charkram 🔊🆓 (✍🏼 @Chasarooni)
-- Dart 🔊🆓 (✍🏼 @Chasarooni)
 - Greatpick 🔊🆓 (✍🏼 @Chasarooni)
 - Gauntlet 🔊🆓 (✍🏼 @Chasarooni)
 - Shuriken 🔊🆓 (✍🏼 @Chasarooni)
