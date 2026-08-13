@@ -258,6 +258,7 @@
 - Fresh Produce 🔊🆓✅ (✍🏼 @Dio, 🛠️ @ChasarooniZ)
 - Geologic Attunement 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Hail of Spinters 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Hardwood Armor 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Ocean's Balm 🔊🆓✅ (✍🏼 @Dio)
 - Scorching Column 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Tidal Hands 🔊🆓✅ (✍🏼 @RunicLibrarian)
