@@ -1,5 +1,7 @@
 ## Unreleased
 
+## 0.10.1
+
 - **Animations**
   - **New**
     - Elixir of Life, Weapon Group: Brawling, Weapon Group: Dart, Weapon Group: Flail, Weapon Group: Pick, Needle Darts _couldn't find way to handle different materials :(_ (@ChasarooniZ)
