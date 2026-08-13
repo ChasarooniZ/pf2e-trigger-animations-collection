@@ -65,8 +65,8 @@
       "id": "fjAJKTaYEFskZZQ7",
       "type": "effect",
       "position": {
-        "x": 560,
-        "y": 0
+        "x": 567.500075737895,
+        "y": 8.333320368227305
       },
       "inputs": {
         "name": {
@@ -86,20 +86,20 @@
       "id": "BgazOKMYTjtr9omd",
       "type": "file",
       "position": {
-        "x": 840,
-        "y": 0
+        "x": 863.9999982206577,
+        "y": -4.000030397841726
       },
       "inputs": {
+        "file": {
+          "value": "jb2a.flaming_sphere.200px.orange.01"
+        },
         "effect": {
           "connection": "fjAJKTaYEFskZZQ7:outputs:effect"
-        },
-        "file": {
-          "value": "jb2a.cast_generic.fire.01.orange.0"
         }
       },
       "outs": {
         "out": {
-          "connection": "hby4eRrsexPmbB4U:ins:in"
+          "connection": "CbFMUvqQjgTk9VSu:ins:in"
         }
       }
     },
@@ -108,15 +108,24 @@
       "type": "location",
       "state": "targets",
       "position": {
-        "x": 1120,
-        "y": 0
+        "x": 1123.3333737763037,
+        "y": 25.99996870414219
       },
       "inputs": {
         "effect": {
-          "connection": "fjAJKTaYEFskZZQ7:outputs:effect"
+          "connection": "CbFMUvqQjgTk9VSu:outputs:effect"
+        },
+        "attachTo": {
+          "value": true
         },
         "location": {
-          "connection": "04CgBHLM8Vn2TGTt:outputs:sources"
+          "connection": "04CgBHLM8Vn2TGTt:outputs:targets"
+        },
+        "align": {
+          "value": "top"
+        },
+        "edge": {
+          "value": "outer"
         }
       },
       "outs": {
@@ -166,11 +175,6 @@
         "y": 7.399987204675028
       },
       "id": "SCUQJ2Z4UHa0MmYu",
-      "inputs": {
-        "location": {
-          "connection": "04CgBHLM8Vn2TGTt:outputs:sources"
-        }
-      },
       "outs": {
         "out": {
           "connection": "Z4paDvnWnaf1bIHb:ins:in"
@@ -189,10 +193,29 @@
           "connection": "fL8TWxC5ioU66Y06:ins:in"
         }
       }
+    },
+    {
+      "type": "scale",
+      "state": "factor",
+      "inputs": {
+        "effect": {
+          "connection": "BgazOKMYTjtr9omd:outputs:effect"
+        },
+        "scale": {
+          "value": 0.2
+        }
+      },
+      "position": {
+        "x": 829.6664717267308,
+        "y": 181.73332977295695
+      },
+      "id": "CbFMUvqQjgTk9VSu",
+      "outs": {
+        "out": {
+          "connection": "hby4eRrsexPmbB4U:ins:in"
+        }
+      }
     }
   ],
-  "tags": [
-    "pf2e",
-    "kineticist"
-  ]
+  "tags": ["pf2e", "kineticist", "feat", "class"]
 }
