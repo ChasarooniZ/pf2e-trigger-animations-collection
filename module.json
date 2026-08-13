@@ -36,14 +36,14 @@
         "type": "module",
         "manifest": "https://raw.githubusercontent.com/MrVauxs/trigger-animations/latest/releases/module.json",
         "compatibility": {
-          "minimum": "0.7.1"
+          "minimum": "0.8.5"
         }
       },
       {
         "id": "trigger-engine",
         "type": "module",
         "compatibility": {
-          "minimum": "1.25.0"
+          "minimum": "1.28.0"
         }
       },
       {
@@ -59,9 +59,9 @@
         "id": "ggg",
         "name": "GGG: Sequencer Sound DB Collection",
         "type": "module",
-        "reason": "For SFX for the animations",
+        "reason": "For SFX + animations for the animations",
         "compatibility": {
-          "minimum": "0.1.3"
+          "minimum": "0.1.4"
         },
         "manifest": "https://github.com/ChasarooniZ/GGG-Sequencer-Sound-DB-Collection/releases/latest/download/module.json"
       }

@@ -7,8 +7,8 @@
     {
       "id": "5Yy2lI6uhThGLmVb",
       "position": {
-        "x": 239.21428571428567,
-        "y": 207.6071428571429
+        "x": -60.785714285714334,
+        "y": 136.3571428571429
       },
       "type": "animation-event",
       "custom": {
@@ -36,15 +36,15 @@
       },
       "outs": {
         "out": {
-          "connection": "luQNXLjfCcy1dp1X:ins:in"
+          "connection": "GgB17LuiJ6pmQv6p:ins:in"
         }
       }
     },
     {
       "type": "execute-animation",
       "position": {
-        "x": 1514.25,
-        "y": 203.25
+        "x": 1772.2499999999998,
+        "y": 205.25
       },
       "id": "5rxwWUI3s4DYirVB",
       "custom": {
@@ -101,8 +101,8 @@
     {
       "type": "format-text",
       "position": {
-        "x": 1038.7067948867584,
-        "y": 211.00735547283603
+        "x": 1296.7067948867582,
+        "y": 213.00735547283603
       },
       "id": "kZwUhq5O0rWeJQYk",
       "custom": {
@@ -134,12 +134,19 @@
             "label": "d",
             "slug": "variable",
             "type": "text"
+          },
+          "Cz4od6K2fcjZimH8": {
+            "id": "Cz4od6K2fcjZimH8",
+            "input": "e",
+            "label": "e",
+            "slug": "variable",
+            "type": "text"
           }
         }
       },
       "inputs": {
         "plain": {
-          "value": "@d:@a, @d:@b, @d:@c"
+          "value": "@d:@a, @d:@b, @d:@c, @d:@e"
         },
         "GlX9MkjYhY7mVwUt": {
           "value": "trove-attack"
@@ -152,6 +159,9 @@
         },
         "qgMvFU3Q8VuKnd2H": {
           "connection": "Dgsjbu22A3ZFjr1n:outputs:VXAt9vtWvVwpt3k6"
+        },
+        "Cz4od6K2fcjZimH8": {
+          "connection": "Dgsjbu22A3ZFjr1n:outputs:xSXl1r8b32DPHb1A"
         }
       },
       "outs": {
@@ -180,7 +190,7 @@
           "connection": "Dgsjbu22A3ZFjr1n:ins:in"
         },
         "true": {
-          "connection": "RC7BXy8SqkcQJBOT:ins:in"
+          "connection": "fHoeus26dfD38eFy:ins:in"
         }
       }
     },
@@ -236,12 +246,19 @@
             "slug": "output",
             "isArray": false,
             "type": "text"
+          },
+          "xSXl1r8b32DPHb1A": {
+            "id": "xSXl1r8b32DPHb1A",
+            "label": "UUID",
+            "slug": "output",
+            "isArray": false,
+            "type": "text"
           }
         }
       },
       "inputs": {
         "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst item = inputs[0];\nconst source = inputs[1];\nconst actor = source?.actor;\nlet value = item;\nif (item?.type && item?.type !== \"strike\" && actor) {\n  if (item?.linkedWeapon) {\n    value = item.linkedWeapon\n  } else {\n    const strike = actor?.system?.actions?.find(a => a?.item?.rule?.item?.slug === item?.slug);\n    if (strike?.item) {\n      value = strike?.item;\n    }\n  }\n}\n\n// Handle NPC strike\nconst slug = value?.slug ||  game?.pf2e?.system?.sluggify(value.name);\nconst group = value?.system?.group ?? value?.group ?? value?.type;\nconst base = value?.system?.baseItem ?? value?.baseType;\n\n\nreturn [{type: \"item\", value: value}, {type: \"text\", value: slug}, {type: \"text\", value: group}, {type: \"text\", value: base}];"
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst item = inputs[0];\nconst source = inputs[1];\nconst actor = source?.actor;\nlet value = item;\nif (item?.type && item?.type !== \"strike\" && actor) {\n  if (item?.linkedWeapon) {\n    value = item.linkedWeapon\n  } else {\n    const strike = actor?.system?.actions?.find(a => a?.item?.rule?.item?.slug === item?.slug);\n    if (strike?.item) {\n      value = strike?.item;\n    }\n  }\n}\n\n// Handle NPC strike\nconst slug = value?.slug ||  game?.pf2e?.system?.sluggify(value.name);\nconst group = value?.system?.group ?? value?.group ?? value?.type;\nconst base = value?.system?.baseItem ?? value?.baseType;\nconst uuid = value?.uuid;\n\n\nreturn [{type: \"item\", value: value}, {type: \"text\", value: slug}, {type: \"text\", value: group}, {type: \"text\", value: base}, {type: \"text\", value: uuid}];"
         },
         "I1VCbaVNmjwS6o68": {
           "connection": "5Yy2lI6uhThGLmVb:outputs:item"
@@ -252,15 +269,15 @@
       },
       "outs": {
         "out": {
-          "connection": "GXIX4IyeklnvMhS9:ins:in"
+          "connection": "kZwUhq5O0rWeJQYk:ins:in"
         }
       }
     },
     {
       "type": "format-text",
       "position": {
-        "x": 953.7067948867584,
-        "y": -160.99264452716397
+        "x": 1122.4567948867584,
+        "y": -170.99264452716397
       },
       "id": "RC7BXy8SqkcQJBOT",
       "custom": {
@@ -285,12 +302,19 @@
             "label": "d",
             "slug": "variable",
             "type": "text"
+          },
+          "Q4Yu3KeaUXqX5wfM": {
+            "id": "Q4Yu3KeaUXqX5wfM",
+            "input": "e",
+            "label": "e",
+            "slug": "variable",
+            "type": "text"
           }
         }
       },
       "inputs": {
         "plain": {
-          "value": "@d:@a, @d:@b"
+          "value": "@d:@a, @d:@b, @d:@e"
         },
         "GlX9MkjYhY7mVwUt": {
           "value": "trove-attack"
@@ -300,6 +324,9 @@
         },
         "pKouzzHfVABGrRtd": {
           "value": "brawling"
+        },
+        "Q4Yu3KeaUXqX5wfM": {
+          "connection": "fHoeus26dfD38eFy:outputs:V76tebMNBlunZuFr"
         }
       },
       "outs": {
@@ -364,64 +391,76 @@
       }
     },
     {
-      "type": "console-log",
+      "type": "extract-item",
       "position": {
-        "x": 910.25,
-        "y": 495
+        "x": 861.3928571428571,
+        "y": -130.32142857142856
       },
-      "id": "GXIX4IyeklnvMhS9",
+      "id": "fHoeus26dfD38eFy",
       "custom": {
-        "inputs": {
-          "RQVnknctRJoR0TU7": {
-            "id": "RQVnknctRJoR0TU7",
+        "outputs": {
+          "V76tebMNBlunZuFr": {
+            "id": "V76tebMNBlunZuFr",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
             "isArray": false,
-            "label": "Item",
-            "slug": "input",
-            "type": "item"
-          },
-          "sMQzqUvr7KvRfeqw": {
-            "id": "sMQzqUvr7KvRfeqw",
-            "isArray": false,
-            "label": "Slug",
-            "slug": "input",
-            "type": "text"
-          },
-          "lVJVqh21ZvHlDPoQ": {
-            "id": "lVJVqh21ZvHlDPoQ",
-            "isArray": false,
-            "label": "Weapon Group",
-            "slug": "input",
-            "type": "text"
-          },
-          "Gs6yvDiDoTJUvuE1": {
-            "id": "Gs6yvDiDoTJUvuE1",
-            "isArray": false,
-            "label": "Base Item",
-            "slug": "input",
             "type": "text"
           }
         }
       },
       "inputs": {
-        "RQVnknctRJoR0TU7": {
-          "connection": "Dgsjbu22A3ZFjr1n:outputs:cVoi0vGSYMkcIScZ"
-        },
-        "sMQzqUvr7KvRfeqw": {
-          "connection": "Dgsjbu22A3ZFjr1n:outputs:NsHmnmXRMTj8JIpd"
-        },
-        "lVJVqh21ZvHlDPoQ": {
-          "connection": "Dgsjbu22A3ZFjr1n:outputs:qSiHTLfq5PVuMZXj"
-        },
-        "Gs6yvDiDoTJUvuE1": {
-          "connection": "Dgsjbu22A3ZFjr1n:outputs:VXAt9vtWvVwpt3k6"
+        "input": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:item"
         }
       },
       "outs": {
         "out": {
-          "connection": "kZwUhq5O0rWeJQYk:ins:in"
+          "connection": "RC7BXy8SqkcQJBOT:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 192.6428571428571,
+        "y": 139.67857142857144
+      },
+      "id": "GgB17LuiJ6pmQv6p",
+      "custom": {
+        "inputs": {
+          "24cqO5b5MZXtyqWq": {
+            "id": "24cqO5b5MZXtyqWq",
+            "label": "Name",
+            "slug": "input",
+            "isArray": false,
+            "type": "text"
+          }
+        },
+        "outputs": {
+          "cL3tFzixiC1o0Q3n": {
+            "id": "cL3tFzixiC1o0Q3n",
+            "label": "Trove Name",
+            "slug": "output",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nreturn [{type: \"text\", value: inputs[0].replaceAll(\"attack:\", \"trove-attack:\")}];"
+        },
+        "24cqO5b5MZXtyqWq": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:matchedName"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "luQNXLjfCcy1dp1X:ins:in"
         }
       }
     }
   ],
-  "id": "C56zu7y3FrDGuKD2"
+  "id": "5L53OHSokPcHvDnD"
 }

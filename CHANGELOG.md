@@ -1,16 +1,61 @@
 ## Unreleased
 
+## 0.10.1
+
+- **Animations**
+  - **New**
+    - Elixir of Life, Weapon Group: Brawling, Weapon Group: Dart, Weapon Group: Flail, Weapon Group: Pick, Needle Darts _couldn't find way to handle different materials :(_ (@ChasarooniZ)
+    - Lifelink Surge, Reinforce Eidolon, Boost Eidolon (@Dio)
+    - Tidal Surge, Hardwood Armor, Aerial Boomerang (@RunicLibrarian)
+  - **Updated**
+    - Fresh Produce, Healing Potion _fixed general issues with these animation_ (@ChasarooniZ)
+- **Updated**
+  - Updated `Trigger Animations` to version `0.8.5`
+    - _fixed bug with action not having targets_
+  - Updated `GGG` to version `0.1.4`
+    - _Adds new animations_
+  - Updated `Trigger Engine` to version `1.28.0`
+
+## 0.10.0
+
+- **Animations**
+  - **New**
+    - Fresh Produce, Ocean's Balm, Torrent in the Blood (@Dio 🎉 First time animation contributor)
+  - **Updated**
+    - Gust of Wind _fixed incorrect template setup_ (@ChasarooniZ)
+    - Fresh Produce, Ocean's Balm, Torrent in the Blood _Fixed category for these_ (🪓 @Dio)
+- **Updated**
+  - Added clarifier to what triggers are from Trove
+  - Updated all handlers to support new `Animation Name` field
+  - Fixed bug with `Turn Start` trigger not including a slug
+  - Updated all triggers to support `trigger-name:uuid`
+  - Updated `Trigger Animations` to version `0.8.3`
+  - Updated `Trigger Engine` to version `1.26.0`
+
+## 0.9.7
+
 - **Animations**
   - **New**
     - Stinking Cloud, Lightning Storm, Toxic Cloud (@Suldrun45)
+    - Sigil, Quandary, Elemental Blast (@ChasarooniZ)
+    - Air Cushion, Armor In Earth, Deflecting Wave Four Winds, Geologic Attunement, Hail of Splinters, Scorching Column (@RunicLibrarian 🎉`First Time Contributor)
   - **Updated**
     - Solar Weapon, Shock Pad, Pulse Gauntlet, Disintegration Lash, Zero Knife, Skyfire Sword _to use Anchor and Scale nodes_ (@Suldrun45)
+    - Aim _uses built in targets_ (@Suldrun45)
+    - Handler: Attack _Removed log from handler_ (@ChasarooniZ)
+    - Handler: Damage, Handler: Negated _Added support for Deflecting Wave_ (@ChasarooniZ)
 - **New**
+  - `Turn Start Condition` - Specific condition to play an animation based on what conditions are active on the start of turn _to be added to animations later_
 - **Updated**
-  - `Reload` Trigger now has proper targets
+  - `Reload` & `Update Roll Option` Trigger now has proper targets
+  - **Updated PR requirements**
+    - Update `ANIMATION_LIST.md` to include your new animation
+    - Create + link a Subissue under the appropriate categories see the pinned Mega Issue for more details
+    - Run Yarn Prettier on your file in some way so that it passes the check (see contributing.md for a way to do that via the web browser)
   - Updated `GGG` to version `0.1.3`
     - _New Spells SFX_
   - Updated `Trigger Engine` to version `1.25.0`
+    - _greatly improved performance_
   - Updated `Trigger Animations` to version `0.7.1`
 
 ## 0.9.6

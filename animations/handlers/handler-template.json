@@ -6,8 +6,8 @@
     {
       "id": "scQ8zJQQYHCSSgDm",
       "position": {
-        "x": 400,
-        "y": 200
+        "x": 139,
+        "y": 210
       },
       "type": "animation-event",
       "custom": {
@@ -35,8 +35,8 @@
     {
       "type": "execute-animation",
       "position": {
-        "x": 1259.4444444444443,
-        "y": 195.33333333333331
+        "x": 1444.4444444444443,
+        "y": 194.33333333333331
       },
       "id": "eH4142vTpQCspmMG",
       "inputs": {
@@ -77,8 +77,8 @@
     {
       "type": "format-text",
       "position": {
-        "x": 935,
-        "y": 213
+        "x": 1018,
+        "y": 208
       },
       "id": "sNQ0iL4YRcqvkw4B",
       "custom": {
@@ -110,12 +110,19 @@
             "label": "d",
             "slug": "variable",
             "type": "text"
+          },
+          "10nlUJbxZWTSZIGF": {
+            "id": "10nlUJbxZWTSZIGF",
+            "input": "e",
+            "label": "e",
+            "slug": "variable",
+            "type": "text"
           }
         }
       },
       "inputs": {
         "plain": {
-          "value": "@d:@a, @d:@b, @d:@c"
+          "value": "@d:@a, @d:@b, @d:@c, @e"
         },
         "GlX9MkjYhY7mVwUt": {
           "value": "trove-template"
@@ -128,19 +135,22 @@
         },
         "qgMvFU3Q8VuKnd2H": {
           "connection": "N4FgMIeH4LehevQt:outputs:VXAt9vtWvVwpt3k6"
+        },
+        "10nlUJbxZWTSZIGF": {
+          "connection": "ie5giUMESzRPbKTu:outputs:cL3tFzixiC1o0Q3n"
         }
       },
       "outs": {
         "out": {
-          "connection": "eH4142vTpQCspmMG:ins:in"
+          "connection": "DbiBDv5nzTF9gTV0:ins:in"
         }
       }
     },
     {
       "type": "execute-script",
       "position": {
-        "x": 665.2932051132416,
-        "y": 200.99264452716397
+        "x": 404.2932051132416,
+        "y": 210.99264452716397
       },
       "id": "N4FgMIeH4LehevQt",
       "custom": {
@@ -204,10 +214,80 @@
       },
       "outs": {
         "out": {
+          "connection": "ie5giUMESzRPbKTu:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 680,
+        "y": 314
+      },
+      "id": "ie5giUMESzRPbKTu",
+      "custom": {
+        "inputs": {
+          "24cqO5b5MZXtyqWq": {
+            "id": "24cqO5b5MZXtyqWq",
+            "label": "Name",
+            "slug": "input",
+            "isArray": false,
+            "type": "text"
+          }
+        },
+        "outputs": {
+          "cL3tFzixiC1o0Q3n": {
+            "id": "cL3tFzixiC1o0Q3n",
+            "label": "Trove Name",
+            "slug": "output",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nreturn [{type: \"text\", value: inputs[0].replaceAll(\"template:\", \"trove-template:\")}];"
+        },
+        "24cqO5b5MZXtyqWq": {
+          "connection": "scQ8zJQQYHCSSgDm:outputs:matchedName"
+        }
+      },
+      "outs": {
+        "out": {
           "connection": "sNQ0iL4YRcqvkw4B:ins:in"
+        }
+      }
+    },
+    {
+      "type": "console-log",
+      "position": {
+        "x": 1217.5,
+        "y": 43
+      },
+      "id": "DbiBDv5nzTF9gTV0",
+      "custom": {
+        "inputs": {
+          "KJK4MeFlUHj9pwM4": {
+            "id": "KJK4MeFlUHj9pwM4",
+            "isArray": false,
+            "label": "Formatted",
+            "slug": "input",
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "KJK4MeFlUHj9pwM4": {
+          "connection": "sNQ0iL4YRcqvkw4B:outputs:result"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "eH4142vTpQCspmMG:ins:in"
         }
       }
     }
   ],
-  "id": "BlbInXjH5f83gWxu"
+  "id": "wyOhHLO884pm0NqT"
 }

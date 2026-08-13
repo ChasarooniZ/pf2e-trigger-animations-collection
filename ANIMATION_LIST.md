@@ -21,6 +21,7 @@
   - [PF2e](#pf2e)
     - [Class Features](#class-features)
       - [Barbarian](#barbarian)
+      - [Kineticist](#kineticist)
       - [Rogue](#rogue)
       - [Runesmith](#runesmith)
     - [Spells](#spells)
@@ -42,6 +43,7 @@
     - [Feats](#feats)
       - [Ancestry Feats](#ancestry-feats)
       - [Class Feats](#class-feats)
+        - [Kineticist](#kineticist-1)
       - [Shared](#shared)
       - [General Feats](#general-feats)
       - [Skill Feats](#skill-feats)
@@ -103,6 +105,10 @@
 
 - Rage 🔊🆓 (✍🏼 @Chasarooni)
 
+#### Kineticist
+
+- Elemental Blast 🔊🆓 (✍🏼 @Chasarooni)
+
 #### Rogue
 
 - Sneak Attack 🔇🆓 (✍🏼 @Chasarooni)
@@ -117,13 +123,16 @@
 
 #### Cantrips
 
+- Boost Eidolon 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Buzzing Bites 🔊🆓 (✍🏼 @Chasarooni)
-- Detect Magic 🔊🆓✅ (✍🏼 @Suldrun45)\
+- Detect Magic 🔊🆓✅ (✍🏼 @Suldrun45)
 - Divine Lance 🔊🆓 (✍🏼 @Chasarooni)
 - Electric Arc 🔊🆓✅ (✍🏼 @Chasarooni)
 - Frostbite 🔊🆓✅ (✍🏼 @Chasarooni)
 - Guidance 🔇🆓 (✍🏼 @Chasarooni)
+- Needle Darts 🔊🆓✅ (✍🏼 @Chasarooni)
 - Ray of Frost 🔊🆓✅ (✍🏼 @Chasarooni)
+- Reinforce Eidolon 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Scatter Scree 🔊🆓✅ (✍🏼 @Chasarooni)
 - Tangle Vine 🔊🆓✅ (✍🏼 @Suldrun45)
 - Void Warp 🔊🆓✅ (✍🏼 @Chasarooni)
@@ -138,12 +147,13 @@
 - Hurtling Stone 🔊🆓 (✍🏼 @Chasarooni)
 - Ignition _TODO, Handle Psychic Yes + Melee somehow_ 🔊🆓 (✍🏼 @Chasarooni)
 - Lay on Hands 🔊🆓 (✍🏼 @Chasarooni)
+- Lifelink Surge 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 
 #### 1st Rank Spells
 
 - Bless 🔊🆓✅ (✍🏼 @ChazPls, 🛠️ @Chasarooni)
 - Force Barrage 🔊🆓 (✍🏼 @Chasarooni)
-- Gust of Wind 🔊🆓✅ (✍🏼 @Suldrun45)
+- Gust of Wind 🔊🆓✅ (✍🏼 @Suldrun45, 🛠️ @Chasarooni)
 - Harm 🔊🆓✅ (✍🏼 @Chasarooni)
 - Heal 🔊🆓✅ (✍🏼 @Chasarooni)
 
@@ -240,6 +250,22 @@
 
 #### Class Feats
 
+##### Kineticist
+
+- Aerial Boomerang 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Air Cushion 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Armor In Earth 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Deflecting Wave 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
+- Four Winds 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Fresh Produce 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo, 🛠️ @ChasarooniZ)
+- Geologic Attunement 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Hail of Spinters 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Hardwood Armor 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Ocean's Balm 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
+- Scorching Column 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Tidal Hands 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
+- Torrent in the Blood 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
+
 #### Shared
 
 - Whirlwind Strike 🔊🆓 (✍🏼 @Chasarooni)
@@ -268,12 +294,16 @@
 
 ##### Group
 
+- Brawling 🔊🆓 (✍🏼 @Chasarooni)
 - Bomb 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Bow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Crossbow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
+- Dart 🔊🆓 (✍🏼 @Chasarooni)
 - Firearm 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
+- Flail 🔊🆓 (✍🏼 @Chasarooni)
 - Hammer 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Knife 🔊🆓 (✍🏼 @Chasarooni)
+- Pick 🔊🆓 (✍🏼 @Chasarooni)
 - Polearm 🔊🆓 (✍🏼 @Chasarooni)
 - Shield 🔊🆓 (✍🏼 @Chasarooni)
 - Sling 🔊🆓 (✍🏼 @Chasarooni)
@@ -284,7 +314,6 @@
 
 - Boomerang 🔊🆓 (✍🏼 @Chasarooni)
 - Charkram 🔊🆓 (✍🏼 @Chasarooni)
-- Dart 🔊🆓 (✍🏼 @Chasarooni)
 - Greatpick 🔊🆓 (✍🏼 @Chasarooni)
 - Gauntlet 🔊🆓 (✍🏼 @Chasarooni)
 - Shuriken 🔊🆓 (✍🏼 @Chasarooni)
@@ -302,6 +331,7 @@
 
 ##### Potions
 
+- Elixer of Life 🔊🆓 (✍🏼 @Chasarooni)
 - Healing Potion 🔊🆓 (✍🏼 @Chasarooni)
 - Sanguine Mutagen 🔊🆓 (✍🏼 @Chasarooni)
 
