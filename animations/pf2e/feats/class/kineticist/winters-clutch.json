@@ -961,10 +961,5 @@
     }
   },
   "description": "<p>Created by @RunicLibrarian</p><p>trigger:trove-template:winters-clutch</p>",
-  "tags": [
-    "PF2e Trove",
-    "pf2e",
-    "kineticist",
-    "feats"
-  ]
+  "tags": ["PF2e Trove", "pf2e", "kineticist", "feats"]
 }
