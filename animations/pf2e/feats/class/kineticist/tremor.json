@@ -143,7 +143,7 @@
       "id": "UbrDUPtrcRfmdWhm",
       "outs": {
         "out": {
-          "connection": "cBxk6EcqgGolropR:ins:in"
+          "connection": "c8NCRID78hdRHIvS:ins:in"
         }
       }
     },
@@ -158,8 +158,8 @@
         }
       },
       "position": {
-        "x": 2098.4286688347584,
-        "y": 1163.6550440635174
+        "x": 2112.7143820613405,
+        "y": 1162.7026340752855
       },
       "id": "cBxk6EcqgGolropR",
       "outs": {
@@ -294,7 +294,7 @@
     },
     {
       "custom": {
-        "title": "Fireball"
+        "title": "GroundCrack"
       },
       "type": "__gate_exit__",
       "outs": {
@@ -443,13 +443,13 @@
         }
       },
       "position": {
-        "x": 1925.9680560512056,
-        "y": 417.92761060638475
+        "x": 1879.3014509730872,
+        "y": 413.1657350513817
       },
       "id": "0dsracCMw786rMBm",
       "outs": {
         "out": {
-          "connection": "pQm3nRt8wXyZ2bCd:ins:in"
+          "connection": "PuUyIUa5pQfASJNb:ins:in"
         }
       }
     },
@@ -468,8 +468,8 @@
         }
       },
       "position": {
-        "x": 2206.777777777778,
-        "y": 424.7777777777778
+        "x": 2347.7300901513363,
+        "y": 406.68251115984094
       },
       "id": "pQm3nRt8wXyZ2bCd",
       "outs": {
@@ -513,8 +513,8 @@
         }
       },
       "position": {
-        "x": 2865.476203613513,
-        "y": 406.7181717348228
+        "x": 2890.2383390544524,
+        "y": 401.9562961798197
       },
       "id": "9j6Qh2s6S8i9asmK",
       "outs": {
@@ -947,6 +947,57 @@
         },
         "false": {
           "connection": "uAaBARoCNEB8si8J:ins:in"
+        }
+      }
+    },
+    {
+      "type": "layer",
+      "inputs": {
+        "effect": {
+          "connection": "UbrDUPtrcRfmdWhm:outputs:effect"
+        },
+        "belowTokens": {
+          "value": true
+        },
+        "belowTiles": {
+          "value": true
+        },
+        "zIndex": {
+          "value": 1
+        }
+      },
+      "position": {
+        "x": 2075.3330271487507,
+        "y": 1458.3450927212803
+      },
+      "id": "c8NCRID78hdRHIvS",
+      "outs": {
+        "out": {
+          "connection": "cBxk6EcqgGolropR:ins:in"
+        }
+      }
+    },
+    {
+      "type": "layer",
+      "position": {
+        "x": 2121.9227963430208,
+        "y": 483.5477070295349
+      },
+      "id": "PuUyIUa5pQfASJNb",
+      "inputs": {
+        "belowTokens": {
+          "value": true
+        },
+        "belowTiles": {
+          "value": true
+        },
+        "effect": {
+          "connection": "0dsracCMw786rMBm:outputs:effect"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "pQm3nRt8wXyZ2bCd:ins:in"
         }
       }
     }
