@@ -123,12 +123,14 @@
 
 #### Cantrips
 
+- Boost Eidolon 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Buzzing Bites 🔊🆓 (✍🏼 @Chasarooni)
 - Detect Magic 🔊🆓✅ (✍🏼 @Suldrun45)
 - Divine Lance 🔊🆓 (✍🏼 @Chasarooni)
 - Electric Arc 🔊🆓✅ (✍🏼 @Chasarooni)
 - Frostbite 🔊🆓✅ (✍🏼 @Chasarooni)
 - Guidance 🔇🆓 (✍🏼 @Chasarooni)
+- Needle Darts 🔊🆓✅ (✍🏼 @Chasarooni)
 - Ray of Frost 🔊🆓✅ (✍🏼 @Chasarooni)
 - Reinforce Eidolon 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Scatter Scree 🔊🆓✅ (✍🏼 @Chasarooni)
@@ -145,6 +147,7 @@
 - Hurtling Stone 🔊🆓 (✍🏼 @Chasarooni)
 - Ignition _TODO, Handle Psychic Yes + Melee somehow_ 🔊🆓 (✍🏼 @Chasarooni)
 - Lay on Hands 🔊🆓 (✍🏼 @Chasarooni)
+- Lifelink Surge 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 
 #### 1st Rank Spells
 
@@ -249,16 +252,19 @@
 
 ##### Kineticist
 
+- Aerial Boomerang 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Air Cushion 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Armor In Earth 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Deflecting Wave 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
 - Four Winds 🔊🆓✅ (✍🏼 @RunicLibrarian)
-- Fresh Produce 🔊🆓✅ (✍🏼 @Dio)
+- Fresh Produce 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo, 🛠️ @ChasarooniZ)
 - Geologic Attunement 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Hail of Spinters 🔊🆓✅ (✍🏼 @RunicLibrarian)
-- Ocean's Balm 🔊🆓✅ (✍🏼 @Dio)
+- Hardwood Armor 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Ocean's Balm 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Scorching Column 🔊🆓✅ (✍🏼 @RunicLibrarian)
-- Torrent in the Blood 🔊🆓✅ (✍🏼 @Dio)
+- Tidal Hands 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
+- Torrent in the Blood 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 
 #### Shared
 
@@ -288,12 +294,16 @@
 
 ##### Group
 
+- Brawling 🔊🆓 (✍🏼 @Chasarooni)
 - Bomb 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Bow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Crossbow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
+- Dart 🔊🆓 (✍🏼 @Chasarooni)
 - Firearm 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
+- Flail 🔊🆓 (✍🏼 @Chasarooni)
 - Hammer 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Knife 🔊🆓 (✍🏼 @Chasarooni)
+- Pick 🔊🆓 (✍🏼 @Chasarooni)
 - Polearm 🔊🆓 (✍🏼 @Chasarooni)
 - Shield 🔊🆓 (✍🏼 @Chasarooni)
 - Sling 🔊🆓 (✍🏼 @Chasarooni)
@@ -304,7 +314,6 @@
 
 - Boomerang 🔊🆓 (✍🏼 @Chasarooni)
 - Charkram 🔊🆓 (✍🏼 @Chasarooni)
-- Dart 🔊🆓 (✍🏼 @Chasarooni)
 - Greatpick 🔊🆓 (✍🏼 @Chasarooni)
 - Gauntlet 🔊🆓 (✍🏼 @Chasarooni)
 - Shuriken 🔊🆓 (✍🏼 @Chasarooni)
@@ -322,6 +331,7 @@
 
 ##### Potions
 
+- Elixer of Life 🔊🆓 (✍🏼 @Chasarooni)
 - Healing Potion 🔊🆓 (✍🏼 @Chasarooni)
 - Sanguine Mutagen 🔊🆓 (✍🏼 @Chasarooni)
 
