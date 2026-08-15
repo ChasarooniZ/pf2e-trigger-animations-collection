@@ -255,6 +255,7 @@
 - Aerial Boomerang 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Air Cushion 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Armor In Earth 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Blazing Wave 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Deflecting Wave 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
 - Four Winds 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Fresh Produce 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo, 🛠️ @ChasarooniZ)
