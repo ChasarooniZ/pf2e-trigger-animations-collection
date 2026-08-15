@@ -1,49 +1,60 @@
 {
-  "id": "gG7SmNawM75EKT5B",
   "name": "Eternal Torch",
   "folder": "Feats",
   "priority": 0,
-  "description": "<p>made by @RunicLibrarian</p><p>trigger: action:eternal-torch</p>",
   "nodes": [
     {
-      "id": "04CgBHLM8Vn2TGTt",
-      "type": "animation-event",
+      "id": "cmlqRAbNU6Qhyhgz",
       "position": {
-        "x": 0,
-        "y": 0
+        "x": 286.66669160794214,
+        "y": 203.9999998707567
       },
+      "type": "animation-event",
       "inputs": {
         "name": {
-          "value": "effect"
+          "value": "effect:effect-eternal-torch"
         }
       },
       "outs": {
         "out": {
-          "connection": "U7zYD9tm3NveEHzw:ins:in"
+          "connection": "RXGgrusPFssap4Jg:ins:in"
         }
       }
     },
     {
-      "id": "U7zYD9tm3NveEHzw",
+      "type": "effect",
+      "position": {
+        "x": 764.5897323560308,
+        "y": 277.8333832156985
+      },
+      "id": "14pfkjbW1HJj3E54",
+      "inputs": {
+        "name": {
+          "connection": "RXGgrusPFssap4Jg:outputs:EwCWjbhEVx8Vce1c"
+        },
+        "origin": {
+          "connection": "RXGgrusPFssap4Jg:outputs:EwCWjbhEVx8Vce1c"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "LInulq9CbfjyIbQM:ins:in"
+        }
+      }
+    },
+    {
       "type": "extract-item",
       "position": {
-        "x": 280,
-        "y": 0
+        "x": 534.3809508804201,
+        "y": 279.99999020426543
       },
+      "id": "RXGgrusPFssap4Jg",
       "custom": {
         "outputs": {
-          "yKgUtnRcFFpHpojN": {
-            "id": "yKgUtnRcFFpHpojN",
-            "input": "name",
-            "label": "Name",
-            "slug": "path",
-            "isArray": false,
-            "type": "text"
-          },
-          "9ycFKYLLpvKgZfJC": {
-            "id": "9ycFKYLLpvKgZfJC",
-            "input": "uuid",
-            "label": "UUID",
+          "EwCWjbhEVx8Vce1c": {
+            "id": "EwCWjbhEVx8Vce1c",
+            "input": "slug",
+            "label": "Slug",
             "slug": "path",
             "isArray": false,
             "type": "text"
@@ -52,74 +63,183 @@
       },
       "inputs": {
         "input": {
-          "connection": "04CgBHLM8Vn2TGTt:outputs:item"
+          "connection": "cmlqRAbNU6Qhyhgz:outputs:item"
         }
       },
       "outs": {
         "out": {
-          "connection": "fjAJKTaYEFskZZQ7:ins:in"
+          "connection": "14pfkjbW1HJj3E54:ins:in"
         }
       }
     },
     {
-      "id": "fjAJKTaYEFskZZQ7",
-      "type": "effect",
-      "position": {
-        "x": 567.500075737895,
-        "y": 8.333320368227305
-      },
-      "inputs": {
-        "name": {
-          "connection": "U7zYD9tm3NveEHzw:outputs:yKgUtnRcFFpHpojN"
-        },
-        "origin": {
-          "connection": "U7zYD9tm3NveEHzw:outputs:9ycFKYLLpvKgZfJC"
-        }
-      },
-      "outs": {
-        "out": {
-          "connection": "BgazOKMYTjtr9omd:ins:in"
-        }
-      }
-    },
-    {
-      "id": "BgazOKMYTjtr9omd",
       "type": "file",
-      "position": {
-        "x": 863.9999982206577,
-        "y": -4.000030397841726
-      },
       "inputs": {
-        "file": {
-          "value": "jb2a.cast_generic.fire.01.orange.0"
-        },
         "effect": {
-          "connection": "fjAJKTaYEFskZZQ7:outputs:effect"
+          "connection": "14pfkjbW1HJj3E54:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.flaming_sphere.200px.orange.01"
         }
       },
+      "position": {
+        "x": 1055.3334350585938,
+        "y": 278.25000839526194
+      },
+      "id": "LInulq9CbfjyIbQM",
       "outs": {
         "out": {
-          "connection": "CbFMUvqQjgTk9VSu:ins:in"
+          "connection": "Hxv6UeeaL6Bs3tbn:ins:in"
         }
       }
     },
     {
-      "id": "hby4eRrsexPmbB4U",
       "type": "location",
       "state": "targets",
-      "position": {
-        "x": 1123.3333737763037,
-        "y": 25.99996870414219
-      },
       "inputs": {
         "effect": {
-          "connection": "CbFMUvqQjgTk9VSu:outputs:effect"
+          "connection": "14pfkjbW1HJj3E54:outputs:effect"
+        },
+        "location": {
+          "connection": "cmlqRAbNU6Qhyhgz:outputs:sources"
+        },
+        "attachTo": {
+          "value": true
+        },
+        "edge": {
+          "value": "outer"
+        },
+        "align": {
+          "value": "top"
+        }
+      },
+      "position": {
+        "x": 1282.000121823179,
+        "y": 280.8166949394264
+      },
+      "id": "Hxv6UeeaL6Bs3tbn",
+      "outs": {
+        "out": {
+          "connection": "UoDyN2Txpgum1GSs:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "inputs": {
+        "effect": {
+          "connection": "14pfkjbW1HJj3E54:outputs:effect"
+        },
+        "objectScale": {
+          "value": 0.3
+        }
+      },
+      "position": {
+        "x": 1512.8333740234375,
+        "y": 278.73335153493144
+      },
+      "id": "UoDyN2Txpgum1GSs",
+      "outs": {
+        "out": {
+          "connection": "gquw2AbUqDcgBa8R:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 3155.4947199605467,
+        "y": 316.674642325677
+      },
+      "id": "dIE6ApJMYrwjC4Bq",
+      "inputs": {
+        "preload": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "type": "persist",
+      "inputs": {
+        "effect": {
+          "connection": "14pfkjbW1HJj3E54:outputs:effect"
+        },
+        "persistTokenPrototype": {
+          "value": true
+        },
+        "tieToDocs": {
+          "connection": "cmlqRAbNU6Qhyhgz:outputs:item"
+        }
+      },
+      "position": {
+        "x": 1771.3334147135415,
+        "y": 281.58335192266145
+      },
+      "id": "gquw2AbUqDcgBa8R",
+      "outs": {
+        "out": {
+          "connection": "uLvbNklF1UfEEWiH:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 842.8095238095236,
+        "y": 864.7738095238094
+      },
+      "id": "fyNID8B3mrdIs91H",
+      "inputs": {
+        "origin": {
+          "connection": "RXGgrusPFssap4Jg:outputs:EwCWjbhEVx8Vce1c"
+        },
+        "name": {
+          "connection": "RXGgrusPFssap4Jg:outputs:EwCWjbhEVx8Vce1c"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "LTQXe3T9AAxjPBnQ:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "inputs": {
+        "effect": {
+          "connection": "fyNID8B3mrdIs91H:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.flaming_sphere.200px.orange.01"
+        }
+      },
+      "position": {
+        "x": 1133.5532265120864,
+        "y": 865.1904347033728
+      },
+      "id": "LTQXe3T9AAxjPBnQ",
+      "outs": {
+        "out": {
+          "connection": "2pzfDsMkV3nfjhV8:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "inputs": {
+        "effect": {
+          "connection": "fyNID8B3mrdIs91H:outputs:effect"
         },
         "attachTo": {
           "value": true
         },
         "location": {
-          "connection": "04CgBHLM8Vn2TGTt:outputs:targets"
+          "connection": "cmlqRAbNU6Qhyhgz:outputs:sources"
         },
         "align": {
           "value": "top"
@@ -128,94 +248,244 @@
           "value": "outer"
         }
       },
+      "position": {
+        "x": 1356.8865395003677,
+        "y": 865.0904343156428
+      },
+      "id": "2pzfDsMkV3nfjhV8",
       "outs": {
         "out": {
-          "connection": "UV06VePvBxdfAbv2:ins:in"
+          "connection": "bZJyjBFNE4kaEOfG:ins:in"
         }
       }
     },
     {
-      "id": "fL8TWxC5ioU66Y06",
-      "type": "play",
-      "position": {
-        "x": 2141.333217750216,
-        "y": 27.333357946455322
-      },
+      "type": "scale",
+      "state": "object",
       "inputs": {
-        "preload": {
+        "effect": {
+          "connection": "fyNID8B3mrdIs91H:outputs:effect"
+        },
+        "objectScale": {
+          "value": 0.3
+        }
+      },
+      "position": {
+        "x": 1591.0531654769302,
+        "y": 865.6737778430423
+      },
+      "id": "bZJyjBFNE4kaEOfG",
+      "outs": {
+        "out": {
+          "connection": "9378rEs1h7V6OLRG:ins:in"
+        }
+      }
+    },
+    {
+      "type": "persist",
+      "inputs": {
+        "persistTokenPrototype": {
           "value": true
+        },
+        "effect": {
+          "connection": "fyNID8B3mrdIs91H:outputs:effect"
+        },
+        "tieToDocs": {
+          "connection": "cmlqRAbNU6Qhyhgz:outputs:sources"
+        },
+        "extraEndDuration": {
+          "value": 500
+        },
+        "persist": {
+          "value": true
+        },
+        "tieTo": {
+          "connection": "v11jnAaRGkpDFeRO:outputs:O9O6Pt0iNXcPB0VM"
+        }
+      },
+      "position": {
+        "x": 2417.9206349206343,
+        "y": 854.7738095238093
+      },
+      "id": "kgW41SDIhfdBPRF7",
+      "outs": {
+        "out": {
+          "connection": "dIE6ApJMYrwjC4Bq:ins:in"
+        }
+      }
+    },
+    {
+      "custom": {
+        "title": "Persistence"
+      },
+      "type": "__gate_exit__",
+      "position": {
+        "x": 561.1428571428564,
+        "y": 864.7738095238095
+      },
+      "id": "0c0hMclmv7IVq3x0",
+      "outs": {
+        "out": {
+          "connection": "fyNID8B3mrdIs91H:ins:in"
+        }
+      }
+    },
+    {
+      "outs": {
+        "out": {
+          "connection": "0c0hMclmv7IVq3x0:ins:in"
+        }
+      },
+      "type": "__gate_entry__",
+      "position": {
+        "x": 2799.113556338612,
+        "y": 461.1190867725456
+      },
+      "id": "LwpqtkK0V7tI3YBx"
+    },
+    {
+      "type": "flow",
+      "position": {
+        "x": 1833.923076923077,
+        "y": 863.5
+      },
+      "id": "9378rEs1h7V6OLRG",
+      "inputs": {
+        "effect": {
+          "connection": "fyNID8B3mrdIs91H:outputs:effect"
+        },
+        "delayMin": {
+          "value": 4000
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "RmHJAW1EEwvnW4h4:ins:in"
+        }
+      }
+    },
+    {
+      "type": "visibility",
+      "position": {
+        "x": 2113.3675213675215,
+        "y": 858.1666666666666
+      },
+      "id": "RmHJAW1EEwvnW4h4",
+      "inputs": {
+        "effect": {
+          "connection": "fyNID8B3mrdIs91H:outputs:effect"
+        },
+        "fadeOutDuration": {
+          "value": 500
+        },
+        "fadeOutEase": {
+          "value": "easeInCubic"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "v11jnAaRGkpDFeRO:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "inputs": {
+        "input": {
+          "connection": "cmlqRAbNU6Qhyhgz:outputs:item"
+        }
+      },
+      "position": {
+        "x": 2235.666666666667,
+        "y": 754.8166666666666
+      },
+      "id": "v11jnAaRGkpDFeRO",
+      "custom": {
+        "outputs": {
+          "O9O6Pt0iNXcPB0VM": {
+            "id": "O9O6Pt0iNXcPB0VM",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "kgW41SDIhfdBPRF7:ins:in"
+        }
+      }
+    },
+    {
+      "type": "get-quality",
+      "position": {
+        "x": 2845.6665654294975,
+        "y": 264.0000003592064
+      },
+      "id": "zTDoLC7ywGHhhKjn",
+      "outs": {
+        "minimal": {
+          "connection": "dIE6ApJMYrwjC4Bq:ins:in"
+        },
+        "medium": {
+          "connection": "dIE6ApJMYrwjC4Bq:ins:in"
+        },
+        "low": {
+          "connection": "dIE6ApJMYrwjC4Bq:ins:in"
+        },
+        "high": {
+          "connection": "LwpqtkK0V7tI3YBx:ins:in"
         }
       }
     },
     {
       "type": "sound",
       "position": {
-        "x": 1342.666404361939,
-        "y": 15.000050095729279
+        "x": 2026.5896124929845,
+        "y": 276.8333230075525
       },
-      "id": "UV06VePvBxdfAbv2",
+      "id": "uLvbNklF1UfEEWiH",
       "inputs": {
         "file": {
           "value": "ggg-sfx.magic.fire.torch.01.01"
-        },
-        "name": {
-          "connection": "U7zYD9tm3NveEHzw:outputs:yKgUtnRcFFpHpojN"
         }
       },
       "outs": {
         "out": {
-          "connection": "SCUQJ2Z4UHa0MmYu:ins:in"
+          "connection": "lOy5uBNOukR4mWS1:ins:in"
         }
       }
     },
     {
       "type": "snd-location",
       "position": {
-        "x": 1629.2562068924003,
-        "y": 7.399987204675028
+        "x": 2306.5895917339903,
+        "y": 263.4000100591824
       },
-      "id": "SCUQJ2Z4UHa0MmYu",
+      "id": "lOy5uBNOukR4mWS1",
       "outs": {
         "out": {
-          "connection": "Z4paDvnWnaf1bIHb:ins:in"
+          "connection": "nXkVf7MmCLtLWJiY:ins:in"
         }
       }
     },
     {
       "type": "snd-flow",
       "position": {
-        "x": 1875.2561886541407,
-        "y": 6.833331089696458
+        "x": 2532.589574978516,
+        "y": 256.8333236062298
       },
-      "id": "Z4paDvnWnaf1bIHb",
+      "id": "nXkVf7MmCLtLWJiY",
       "outs": {
         "out": {
-          "connection": "fL8TWxC5ioU66Y06:ins:in"
-        }
-      }
-    },
-    {
-      "type": "scale",
-      "state": "factor",
-      "inputs": {
-        "effect": {
-          "connection": "BgazOKMYTjtr9omd:outputs:effect"
-        },
-        "scale": {
-          "value": 0.5
-        }
-      },
-      "position": {
-        "x": 829.6664717267308,
-        "y": 181.73332977295695
-      },
-      "id": "CbFMUvqQjgTk9VSu",
-      "outs": {
-        "out": {
-          "connection": "hby4eRrsexPmbB4U:ins:in"
+          "connection": "zTDoLC7ywGHhhKjn:ins:in"
         }
       }
     }
   ],
-  "tags": ["pf2e", "kineticist"]
+  "id": "XHR4DdBLmjQXmRHS",
+  "description": "<p>Created by @RunicLibrarian</p><p>trigger: effect:effect-eternal-torch</p>",
+  "tags": ["PF2e Trove", "pf2e", "feats", "kineticist"]
 }
