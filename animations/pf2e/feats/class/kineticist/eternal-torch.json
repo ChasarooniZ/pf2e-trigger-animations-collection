@@ -14,7 +14,7 @@
       },
       "inputs": {
         "name": {
-          "value": "action:eternal-torch"
+          "value": "effect"
         }
       },
       "outs": {
@@ -91,7 +91,7 @@
       },
       "inputs": {
         "file": {
-          "value": "jb2a.flaming_sphere.200px.orange.01"
+          "value": "jb2a.cast_generic.fire.01.orange.0"
         },
         "effect": {
           "connection": "fjAJKTaYEFskZZQ7:outputs:effect"
@@ -202,7 +202,7 @@
           "connection": "BgazOKMYTjtr9omd:outputs:effect"
         },
         "scale": {
-          "value": 0.2
+          "value": 0.5
         }
       },
       "position": {
@@ -217,5 +217,5 @@
       }
     }
   ],
-  "tags": ["pf2e", "kineticist", "feat", "class"]
+  "tags": ["pf2e", "kineticist"]
 }
