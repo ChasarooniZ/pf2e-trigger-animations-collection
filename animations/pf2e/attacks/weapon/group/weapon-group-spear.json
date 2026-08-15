@@ -237,11 +237,11 @@
       },
       "id": "2bt2cdnyg4ntLfaK",
       "inputs": {
-        "entry": {
-          "connection": "zwvWO50CXI44ObmF:outputs:9GG5oGEm2a9RAiZ5"
-        },
         "list": {
           "connection": "Kfd0h5Nepcqvhmyb:outputs:list"
+        },
+        "entry": {
+          "connection": "1cdYhidhZsZTUYMe:outputs:entry"
         }
       },
       "outs": {
@@ -595,6 +595,9 @@
       "inputs": {
         "list": {
           "connection": "0H0pYn5XE6QVGVwQ:outputs:list"
+        },
+        "entry": {
+          "connection": "lOD7SgeljRmdKHPe:outputs:entry"
         }
       },
       "outs": {
@@ -1087,6 +1090,9 @@
       "inputs": {
         "list": {
           "connection": "wvXW8TwpSSEka9T1:outputs:list"
+        },
+        "entry": {
+          "connection": "XZAc926N5iiPUlFy:outputs:entry"
         }
       },
       "outs": {
@@ -1317,9 +1323,48 @@
         "y": 509.7182539682544
       },
       "id": "2LTRfRfUxnJ9OEBM"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "zwvWO50CXI44ObmF:outputs:9GG5oGEm2a9RAiZ5"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1828,
+        "y": 860.75
+      },
+      "id": "1cdYhidhZsZTUYMe"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "zwvWO50CXI44ObmF:outputs:9GG5oGEm2a9RAiZ5"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 5823,
+        "y": 346.75
+      },
+      "id": "XZAc926N5iiPUlFy"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "zwvWO50CXI44ObmF:outputs:9GG5oGEm2a9RAiZ5"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2635.9999999999986,
+        "y": -409.3333333333335
+      },
+      "id": "lOD7SgeljRmdKHPe"
     }
   ],
-  "id": "q5SmOLHfEQxc7NZX",
+  "id": "MSMkH2HtfWeL0J7B",
   "description": "<p><em>Made by @Chasarooni</em></p>",
   "variables": {
     "4gZJ8Gm9UjlhMc4G:outputs:target": {
@@ -1340,6 +1385,11 @@
     "mpa5CCtLfa7bjI71:outputs:sR6Cy5NKJKuZpmQg": {
       "isArray": false,
       "label": "Name",
+      "type": "text"
+    },
+    "zwvWO50CXI44ObmF:outputs:9GG5oGEm2a9RAiZ5": {
+      "isArray": false,
+      "label": "Outcome",
       "type": "text"
     }
   }

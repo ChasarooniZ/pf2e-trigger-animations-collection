@@ -1,5 +1,5 @@
 {
-  "id": "tP5DQYGxZNHO1dd9",
+  "id": "uc5FRKQf2aLfYquG",
   "name": "Fresh Produce",
   "folder": "Feats",
   "priority": 0,
@@ -26,8 +26,8 @@
     {
       "type": "effect",
       "position": {
-        "x": 4201.811965811966,
-        "y": 38.087301587301454
+        "x": 4537.811965811966,
+        "y": 40.087301587301454
       },
       "id": "730Q5qyLXTA0A046",
       "inputs": {
@@ -93,8 +93,8 @@
         }
       },
       "position": {
-        "x": 4613.142857142857,
-        "y": 6.710317460317583
+        "x": 4949.142857142857,
+        "y": 8.710317460317583
       },
       "id": "roniyY2xepNk3A27",
       "outs": {
@@ -121,8 +121,8 @@
         }
       },
       "position": {
-        "x": 5237.349206349207,
-        "y": -78.11984126984134
+        "x": 5573.349206349207,
+        "y": -76.11984126984134
       },
       "id": "X2PNcFHpZFRNeTqW",
       "outs": {
@@ -146,8 +146,8 @@
         }
       },
       "position": {
-        "x": 5546.492063492064,
-        "y": 4.578571428571422
+        "x": 5882.492063492064,
+        "y": 6.578571428571422
       },
       "id": "Y9iNqwBAF30uNRur",
       "outs": {
@@ -159,8 +159,8 @@
     {
       "type": "visibility",
       "position": {
-        "x": 5887.645299145299,
-        "y": 187.8928571428571
+        "x": 6223.645299145299,
+        "y": 189.8928571428571
       },
       "id": "SYPuBDtqoO4FEqIJ",
       "inputs": {
@@ -242,8 +242,8 @@
     {
       "type": "play",
       "position": {
-        "x": 4249.351648351649,
-        "y": 545.1190476190476
+        "x": 4585.351648351649,
+        "y": 547.1190476190476
       },
       "id": "GpJ3Us0lQo8ctnWY",
       "inputs": {
@@ -258,8 +258,8 @@
     {
       "type": "timing",
       "position": {
-        "x": 4870.015873015873,
-        "y": -21.492063492063608
+        "x": 5206.015873015873,
+        "y": -19.492063492063608
       },
       "id": "je9F5mtSkXEf6LkM",
       "inputs": {
@@ -383,7 +383,7 @@
       },
       "outs": {
         "out": {
-          "connection": "bVcDQdM1mo1ygtbd:ins:in"
+          "connection": "BhHHFo7UCE9H6rCt:ins:in"
         }
       }
     },
@@ -411,8 +411,8 @@
     {
       "type": "massloop",
       "position": {
-        "x": 3780.2281746031763,
-        "y": 150.015873015873
+        "x": 4116.228174603177,
+        "y": 152.015873015873
       },
       "id": "bVcDQdM1mo1ygtbd",
       "inputs": {
@@ -420,7 +420,7 @@
           "connection": "9g1ZKc3QAUf8e0p2:outputs:sources"
         },
         "targets": {
-          "connection": "9g1ZKc3QAUf8e0p2:outputs:targets"
+          "connection": "BhHHFo7UCE9H6rCt:outputs:VNULXp3UbogqEEOi"
         }
       },
       "outs": {
@@ -440,10 +440,90 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 3020.105158730161,
-        "y": -137.5515873015869
+        "x": 2859.19606782107,
+        "y": -131.18795093795052
       },
       "id": "8tctUDZiOPaxK1vN"
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 3776.121212121213,
+        "y": 128.8484848484851
+      },
+      "id": "BhHHFo7UCE9H6rCt",
+      "custom": {
+        "inputs": {
+          "a52qlQb5QruHXB9w": {
+            "id": "a52qlQb5QruHXB9w",
+            "label": "Source",
+            "slug": "input",
+            "isArray": false,
+            "type": "target"
+          },
+          "IpTVZdnR9NoXBhrY": {
+            "id": "IpTVZdnR9NoXBhrY",
+            "label": "Targets",
+            "slug": "input",
+            "isArray": true,
+            "type": "target"
+          }
+        },
+        "outputs": {
+          "VNULXp3UbogqEEOi": {
+            "id": "VNULXp3UbogqEEOi",
+            "label": "Targets",
+            "slug": "output",
+            "isArray": true,
+            "type": "target"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst source = inputs[0];\nconst targets = inputs[1];\nconsole.log({out: targets?.length ? targets : [source]})\n\n\nreturn [{type: \"target\", isArray: true, value: targets?.length ? targets : [source]}];"
+        },
+        "impPp8gc8foTnqYy": {
+          "connection": "kVruwMxAC4b2Pkk2:outputs:entry"
+        },
+        "IpTVZdnR9NoXBhrY": {
+          "connection": "kVruwMxAC4b2Pkk2:outputs:entry"
+        },
+        "a52qlQb5QruHXB9w": {
+          "connection": "CBKoNZWxzMFzIf69:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "bVcDQdM1mo1ygtbd:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "9g1ZKc3QAUf8e0p2:outputs:targets"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3552.7272727272725,
+        "y": 138.2954545454545
+      },
+      "id": "kVruwMxAC4b2Pkk2"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "9g1ZKc3QAUf8e0p2:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3551.4545454545455,
+        "y": 96.47727272727269
+      },
+      "id": "CBKoNZWxzMFzIf69"
     }
   ],
   "variables": {
@@ -456,6 +536,11 @@
       "isArray": false,
       "label": "Name",
       "type": "text"
+    },
+    "9g1ZKc3QAUf8e0p2:outputs:targets": {
+      "isArray": true,
+      "label": "Targets",
+      "type": "target"
     }
   }
 }

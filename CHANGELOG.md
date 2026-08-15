@@ -1,5 +1,21 @@
 ## Unreleased
 
+## 0.10.1
+
+- **Animations**
+  - **New**
+    - Elixir of Life, Weapon Group: Brawling, Weapon Group: Dart, Weapon Group: Flail, Weapon Group: Pick, Needle Darts _couldn't find way to handle different materials :(_ (@ChasarooniZ)
+    - Lifelink Surge, Reinforce Eidolon, Boost Eidolon (@Dio)
+    - Tidal Surge, Hardwood Armor, Aerial Boomerang (@RunicLibrarian)
+  - **Updated**
+    - Fresh Produce, Healing Potion _fixed general issues with these animation_ (@ChasarooniZ)
+- **Updated**
+  - Updated `Trigger Animations` to version `0.8.5`
+    - _fixed bug with action not having targets_
+  - Updated `GGG` to version `0.1.4`
+    - _Adds new animations_
+  - Updated `Trigger Engine` to version `1.28.0`
+
 ## 0.10.0
 
 - **Animations**
