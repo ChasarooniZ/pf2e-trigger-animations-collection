@@ -261,6 +261,7 @@
 - Geologic Attunement 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Hail of Spinters 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Hardwood Armor 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Living Bonfire 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Ocean's Balm 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Scorching Column 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Tidal Hands 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
