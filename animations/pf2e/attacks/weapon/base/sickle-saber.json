@@ -1,0 +1,55 @@
+{
+  "name": "Sickle-Saber",
+  "folder": "Attacks",
+  "priority": 0,
+  "description": "<p>Created by @Chasarooni</p>",
+  "nodes": [
+    {
+      "id": "XXVFrVuM84oenvvV",
+      "position": {
+        "x": 397,
+        "y": 193
+      },
+      "type": "animation-event",
+      "inputs": {
+        "name": {
+          "value": "trove-attack:sickle-saber"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "kMxSV9PWL7zaj0KU:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-animation",
+      "position": {
+        "x": 708.9230769230769,
+        "y": 187.39999999999998
+      },
+      "id": "kMxSV9PWL7zaj0KU",
+      "inputs": {
+        "name": {
+          "value": "trove-attack:sickle"
+        },
+        "actor": {
+          "connection": "XXVFrVuM84oenvvV:outputs:actor"
+        },
+        "sources": {
+          "connection": "XXVFrVuM84oenvvV:outputs:sources"
+        },
+        "targets": {
+          "connection": "XXVFrVuM84oenvvV:outputs:targets"
+        },
+        "item": {
+          "connection": "XXVFrVuM84oenvvV:outputs:item"
+        },
+        "options": {
+          "connection": "XXVFrVuM84oenvvV:outputs:options"
+        }
+      }
+    }
+  ],
+  "id": "OfXzwwiRnzjQUMd5"
+}
