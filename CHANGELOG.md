@@ -3,7 +3,7 @@
 - **Animations**
   - **New**
     - Weapon Group: Axe, Weapon Group: Club, Battle Axe, Bo Staff, Butterfly Sword, Falchion, Fighting Stick, Frying Pan, Halberd, Katana, Lion Scythe, Nodachi, Rapier, Scimitar, Scythe, Sickle Saber, Sickle, Staff (@ChasarooniZ 🎉💯 100th animation contributed)
-    - Eternal Torch, Tremor, Magnetic Pions, Blazing Wave, Magnetic Field, Living Bonfire, Rain of Rust, Ravel of Thorns, Winter's Clutch, Lightning Dash (@RunicLibrarian)
+    - Eternal Torch, Tremor, Magnetic Pions, Blazing Wave, Magnetic Field, Living Bonfire, Rain of Rust, Ravel of Thorns, Winter's Clutch, Lightning Dash, Lava Leap (@RunicLibrarian)
   - **Updated**
     - Weapon Group: Shield _Added ranged weapon attack option_ (@ChasarooniZ)
     - Boost Eidolon, Reinforce Eidolon, Lifelink Surge _Fixed issue with effect not being attached to the target_ (@Dio 🪓)
@@ -14,6 +14,7 @@
     - Rain of Rust _Fixed Color, fixed timing, masked the actual rust in circle FX, Tied Persistence to include Med quality as it's a persistent region_ (@ChasarooniZ)
     - Winter's Clutch _Updated animation to better match the description, added fade in and out for the persistent effect, Tied Persistence to include Med quality as it's a persistent region_ (@ChasarooniZ)
     - Lightning Dash _Fixed Timing, Added on Token Effect, added BG sfx over whole thing for on token effect, added an actual dash_
+    - Lava Leap _Removed Casting, Fixed just wrong SFX, Added a movement to it, added a jump up effect_ (@ChasarooniZ)
 - **Updated**
   - Updated `GGG` to version `0.1.5`
     - _Adds new weapon sfx_
