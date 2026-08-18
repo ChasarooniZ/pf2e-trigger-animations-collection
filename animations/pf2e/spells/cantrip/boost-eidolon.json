@@ -1,5 +1,5 @@
 {
-  "id": "d4jUZzeNFhFONFiQ",
+  "id": "LazKrtm1tWH5F4qS",
   "name": "Boost Eidolon",
   "folder": "Spells",
   "priority": 0,
@@ -551,6 +551,9 @@
         },
         "location": {
           "connection": "AY6LhRcln5JJlnOC:outputs:entry"
+        },
+        "attachTo": {
+          "value": true
         }
       },
       "outs": {
@@ -985,5 +988,6 @@
       "label": "Sources",
       "type": "target"
     }
-  }
+  },
+  "tags": ["PF2e Trove", "pf2e", "spells", "cantrip"]
 }
