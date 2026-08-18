@@ -1,5 +1,5 @@
 {
-  "id": "q3JohXRA9uQnpGhv",
+  "id": "3SeyOxyQ5YDjno4i",
   "name": "Lifelink Surge",
   "folder": "Spells",
   "priority": 0,
@@ -519,6 +519,9 @@
         },
         "location": {
           "connection": "2XloY9UQIFYdMKFt:outputs:entry"
+        },
+        "attachTo": {
+          "value": true
         }
       },
       "outs": {
@@ -945,5 +948,6 @@
       "label": "Sources",
       "type": "target"
     }
-  }
+  },
+  "tags": ["PF2e Trove", "pf2e", "spells", "focus"]
 }
