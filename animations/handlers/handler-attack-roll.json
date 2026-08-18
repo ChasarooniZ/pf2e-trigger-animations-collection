@@ -152,16 +152,16 @@
           "value": "trove-attack"
         },
         "aessLq9h6kaS3HjI": {
-          "connection": "Dgsjbu22A3ZFjr1n:outputs:NsHmnmXRMTj8JIpd"
+          "connection": "Dgsjbu22A3ZFjr1n:outputs:xSXl1r8b32DPHb1A"
         },
         "pKouzzHfVABGrRtd": {
-          "connection": "Dgsjbu22A3ZFjr1n:outputs:qSiHTLfq5PVuMZXj"
+          "connection": "Dgsjbu22A3ZFjr1n:outputs:NsHmnmXRMTj8JIpd"
         },
         "qgMvFU3Q8VuKnd2H": {
           "connection": "Dgsjbu22A3ZFjr1n:outputs:VXAt9vtWvVwpt3k6"
         },
         "Cz4od6K2fcjZimH8": {
-          "connection": "Dgsjbu22A3ZFjr1n:outputs:xSXl1r8b32DPHb1A"
+          "connection": "Dgsjbu22A3ZFjr1n:outputs:qSiHTLfq5PVuMZXj"
         }
       },
       "outs": {
@@ -462,5 +462,9 @@
       }
     }
   ],
-  "id": "5L53OHSokPcHvDnD"
+  "id": "Bmw7ZDblRcBkFJoP",
+  "tags": [
+    "PF2e Trove",
+    "handlers"
+  ]
 }

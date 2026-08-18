@@ -1,0 +1,535 @@
+{
+  "name": "Halberd",
+  "folder": "Attacks",
+  "priority": 0,
+  "nodes": [
+    {
+      "id": "zwvWO50CXI44ObmF",
+      "position": {
+        "x": -394.6666845176819,
+        "y": 233.00002034505212
+      },
+      "type": "animation-event",
+      "inputs": {
+        "name": {
+          "value": "trove-attack:halberd"
+        }
+      },
+      "custom": {
+        "outputs": {
+          "9GG5oGEm2a9RAiZ5": {
+            "id": "9GG5oGEm2a9RAiZ5",
+            "input": "outcome",
+            "label": "Outcome",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "mpa5CCtLfa7bjI71:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 310.6943544889432,
+        "y": 23.37037834020623
+      },
+      "id": "9Ny9laSD1AJY2y4E",
+      "inputs": {
+        "name": {
+          "connection": "5z4IpIe65qoF2sPh:outputs:entry"
+        },
+        "origin": {
+          "connection": "HxbD62F2OBYESNrn:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "e9lcLUsF8nmzdJg7:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "position": {
+        "x": -136.2500156554131,
+        "y": 293.5833440549751
+      },
+      "id": "mpa5CCtLfa7bjI71",
+      "custom": {
+        "outputs": {
+          "qHvhdFqXb77u8E8o": {
+            "id": "qHvhdFqXb77u8E8o",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "sR6Cy5NKJKuZpmQg": {
+            "id": "sR6Cy5NKJKuZpmQg",
+            "input": "name",
+            "label": "Name",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "zwvWO50CXI44ObmF:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "4gZJ8Gm9UjlhMc4G:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 293.9631048611859,
+        "y": 176.77258479875593
+      },
+      "id": "kkkNTCli7BCyXs18",
+      "inputs": {
+        "preload": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "inputs": {
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "gridUnits": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        },
+        "bindScale": {
+          "value": false
+        },
+        "location": {
+          "connection": "v4Zf5G3HfnhUVcBO:outputs:entry"
+        }
+      },
+      "position": {
+        "x": 636.8888917691406,
+        "y": -0.9981575023010691
+      },
+      "id": "e9lcLUsF8nmzdJg7",
+      "outs": {
+        "out": {
+          "connection": "cfYOp2IN6y10bned:ins:in"
+        }
+      }
+    },
+    {
+      "type": "aim",
+      "state": "rotateTowards",
+      "inputs": {
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "missed": {
+          "connection": "2bt2cdnyg4ntLfaK:outputs:boolean"
+        },
+        "attachTo": {
+          "value": true
+        },
+        "offset": {
+          "value": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "towards": {
+          "connection": "AeYTXTLRJqUh7b3e:outputs:entry"
+        }
+      },
+      "position": {
+        "x": 1707.846620564564,
+        "y": 152.7849038520967
+      },
+      "id": "mzztRWLWfGStDgf8",
+      "outs": {
+        "out": {
+          "connection": "7eJYxPPCfZY9S2YP:ins:in"
+        }
+      }
+    },
+    {
+      "type": "massloop",
+      "position": {
+        "x": -39.999795940704416,
+        "y": 93.22223030335113
+      },
+      "id": "4gZJ8Gm9UjlhMc4G",
+      "inputs": {
+        "targets": {
+          "connection": "zwvWO50CXI44ObmF:outputs:targets"
+        },
+        "sources": {
+          "connection": "zwvWO50CXI44ObmF:outputs:sources"
+        }
+      },
+      "outs": {
+        "outAfter": {
+          "connection": "kkkNTCli7BCyXs18:ins:in"
+        },
+        "out": {
+          "connection": "9Ny9laSD1AJY2y4E:ins:in"
+        }
+      }
+    },
+    {
+      "type": "list-contains",
+      "position": {
+        "x": 1473.3282718206092,
+        "y": 363.1958490582284
+      },
+      "id": "2bt2cdnyg4ntLfaK",
+      "inputs": {
+        "list": {
+          "connection": "Kfd0h5Nepcqvhmyb:outputs:list"
+        },
+        "entry": {
+          "connection": "MjAHLKJej3eeXwm2:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "mzztRWLWfGStDgf8:ins:in"
+        }
+      },
+      "state": "boolean"
+    },
+    {
+      "type": "list-value",
+      "position": {
+        "x": 1236.5238089621548,
+        "y": 392.666657725558
+      },
+      "id": "Kfd0h5Nepcqvhmyb",
+      "inputs": {
+        "entry": {
+          "value": "failure,criticalFailure"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "position": {
+        "x": 2000.7142825918422,
+        "y": 150.6666394527033
+      },
+      "id": "7eJYxPPCfZY9S2YP",
+      "inputs": {
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "objectScale": {
+          "value": 4
+        }
+      },
+      "state": "object",
+      "outs": {
+        "out": {
+          "connection": "DQ1fT2RqjeD5RIpm:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "inputs": {
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.halberd.melee.01.white"
+        }
+      },
+      "position": {
+        "x": 1039.8306997395343,
+        "y": 78.96969116974776
+      },
+      "id": "cfYOp2IN6y10bned",
+      "outs": {
+        "out": {
+          "connection": "2bt2cdnyg4ntLfaK:ins:in"
+        }
+      },
+      "state": "default"
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 2488.923076923078,
+        "y": 142.34523809523807
+      },
+      "id": "mGuBF1OhADzhyAjF",
+      "outs": {
+        "out": {
+          "connection": "3t3APsFcapGeCZAU:ins:in"
+        }
+      },
+      "inputs": {
+        "name": {
+          "connection": "o0ve9AoPMa6meqBY:outputs:entry"
+        }
+      }
+    },
+    {
+      "type": "snd-file",
+      "position": {
+        "x": 3057.9945054945074,
+        "y": 149.91666666666697
+      },
+      "id": "i5YpkyFNKf4TWy3I",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.melee.axe.slash.flesh.01"
+        },
+        "sound": {
+          "connection": "mGuBF1OhADzhyAjF:outputs:sound"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "um5pmnVsTSnZw4b6:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "mGuBF1OhADzhyAjF:outputs:sound"
+        },
+        "location": {
+          "connection": "8OIFaW6pYK3qh378:outputs:entry"
+        },
+        "moveTowards": {
+          "connection": "7mchn69BDFBCdpFZ:outputs:entry"
+        }
+      },
+      "position": {
+        "x": 3287.821428571431,
+        "y": 146.28095238095284
+      },
+      "id": "um5pmnVsTSnZw4b6"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:source"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3148.214285714287,
+        "y": 68.52380952380963
+      },
+      "id": "8OIFaW6pYK3qh378"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:source"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 461.9404761904766,
+        "y": -44.5119047619047
+      },
+      "id": "v4Zf5G3HfnhUVcBO"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:target"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1561.9880952380954,
+        "y": 246.39285714285734
+      },
+      "id": "AeYTXTLRJqUh7b3e"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:sR6Cy5NKJKuZpmQg"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 133.48015873015947,
+        "y": 3.126984126984439
+      },
+      "id": "5z4IpIe65qoF2sPh"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:qHvhdFqXb77u8E8o"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 134.74999999999955,
+        "y": 43.126984126984325
+      },
+      "id": "HxbD62F2OBYESNrn"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "zwvWO50CXI44ObmF:outputs:9GG5oGEm2a9RAiZ5"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1327.988095238095,
+        "y": 464.571428571428
+      },
+      "id": "MjAHLKJej3eeXwm2"
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "mGuBF1OhADzhyAjF:outputs:sound"
+        },
+        "preset": {
+          "value": "troveSound"
+        },
+        "delayMin": {
+          "value": 900
+        }
+      },
+      "position": {
+        "x": 2769.0119047619055,
+        "y": 146.01190476190482
+      },
+      "id": "3t3APsFcapGeCZAU",
+      "outs": {
+        "out": {
+          "connection": "i5YpkyFNKf4TWy3I:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:sR6Cy5NKJKuZpmQg"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2107.543650793651,
+        "y": 93.04761904761926
+      },
+      "id": "o0ve9AoPMa6meqBY"
+    },
+    {
+      "type": "sprite",
+      "inputs": {
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "randomizeMirrorY": {
+          "value": true
+        },
+        "anchorX": {
+          "value": 1
+        },
+        "spriteAnchorX": {
+          "value": 1
+        },
+        "anchor": {
+          "value": {
+            "x": 0.35,
+            "y": 0.5
+          }
+        }
+      },
+      "position": {
+        "x": 2248.6666666666683,
+        "y": 149.25000000000045
+      },
+      "id": "DQ1fT2RqjeD5RIpm",
+      "outs": {
+        "out": {
+          "connection": "mGuBF1OhADzhyAjF:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:target"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3155.2146464646476,
+        "y": 107.88383838383857
+      },
+      "id": "7mchn69BDFBCdpFZ"
+    }
+  ],
+  "id": "MZFyiqly2F2KqZ6h",
+  "description": "<p><em>Example Animation from Trigger Animations by @MrVauxs.</em></p><p><em>Modified by @Chasarooni for use in Trigger Animation Trove</em></p>",
+  "variables": {
+    "4gZJ8Gm9UjlhMc4G:outputs:source": {
+      "isArray": false,
+      "label": "Source",
+      "type": "target"
+    },
+    "zwvWO50CXI44ObmF:outputs:9GG5oGEm2a9RAiZ5": {
+      "isArray": false,
+      "label": "Outcome",
+      "type": "text"
+    },
+    "4gZJ8Gm9UjlhMc4G:outputs:target": {
+      "isArray": false,
+      "label": "Target",
+      "type": "target"
+    },
+    "mpa5CCtLfa7bjI71:outputs:qHvhdFqXb77u8E8o": {
+      "isArray": false,
+      "label": "UUID",
+      "type": "text"
+    },
+    "mpa5CCtLfa7bjI71:outputs:sR6Cy5NKJKuZpmQg": {
+      "isArray": false,
+      "label": "Name",
+      "type": "text"
+    }
+  },
+  "tags": [
+    "PF2e Trove",
+    "pf2e",
+    "attacks",
+    "weapon"
+  ]
+}

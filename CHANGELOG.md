@@ -1,5 +1,14 @@
 ## Unreleased
 
+- **Animations**
+  - **New**
+    - Weapon Group: Axe, Weapon Group: Club, Battle Axe, Bo Staff, Butterfly Sword, Falchion, Fighting Stick, Frying Pan, Halberd, Katana, Lion Scythe, Nodachi, Rapier, Scimitar, Scythe, Sickle Saber, Sickle, Staff (@ChasarooniZ)
+  - **Updated**
+    - Weapon Group: Shield _Added ranged weapon attack option_ (@ChasarooniZ)
+- **Updated**
+  - Updated `GGG` to version `0.1.5`
+    - _Adds new weapon sfx_
+
 ## 0.10.1
 
 - **Animations**
