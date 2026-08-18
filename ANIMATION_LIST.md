@@ -263,6 +263,7 @@
 - Geologic Attunement 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Hail of Spinters 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Hardwood Armor 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Lightning Dash 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Living Bonfire 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Magnetic Field 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Magnetic Pinions 🔊🆓✅ (✍🏼 @RunicLibrarian)
