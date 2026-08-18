@@ -267,7 +267,7 @@
 - Scorching Column 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Tidal Hands 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
 - Torrent in the Blood 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
-- Tremor 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Tremor 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
 
 #### Shared
 

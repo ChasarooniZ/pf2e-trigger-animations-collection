@@ -1,5 +1,4 @@
 {
-  "id": "EuAUvoPL729hcxfB",
   "name": "Magnetic Pinions",
   "folder": "Feats",
   "priority": 0,
@@ -8,8 +7,8 @@
     {
       "id": "Lf9pNUru1V6hDS49",
       "position": {
-        "x": 400,
-        "y": 200
+        "x": -96,
+        "y": 218
       },
       "type": "animation-event",
       "custom": {
@@ -37,8 +36,8 @@
     {
       "type": "effect",
       "position": {
-        "x": 1262,
-        "y": 174.00000000000003
+        "x": 766,
+        "y": 192
       },
       "id": "r1qJAvtjOl1sOldt",
       "inputs": {
@@ -58,8 +57,8 @@
     {
       "type": "extract-item",
       "position": {
-        "x": 666.6270584270708,
-        "y": 211.9748704766734
+        "x": 170.62705842707078,
+        "y": 229.9748704766734
       },
       "id": "9FrzDxElrxAJB8Mb",
       "custom": {
@@ -117,13 +116,13 @@
         }
       },
       "position": {
-        "x": 1562.944537280197,
-        "y": 180.7147974908261
+        "x": 1066.944537280197,
+        "y": 198.71479749082607
       },
       "id": "kscCdRFD6slMIfLB",
       "outs": {
         "out": {
-          "connection": "kXpfkoXYDOQ3BiaY:ins:in"
+          "connection": "FDMh9UrFoJLpeR9O:ins:in"
         }
       }
     },
@@ -155,8 +154,8 @@
     {
       "type": "massloop",
       "position": {
-        "x": 910.8772781417796,
-        "y": 199.61375672504948
+        "x": 414.8772781417796,
+        "y": 217.61375672504948
       },
       "id": "zdKXV5IN3KiRP0t5",
       "inputs": {
@@ -306,8 +305,8 @@
     {
       "type": "play",
       "position": {
-        "x": 1247.879120879121,
-        "y": 464.4010989010992
+        "x": 751.879120879121,
+        "y": 482.4010989010992
       },
       "id": "qfXLLBW5cTeEIruQ",
       "inputs": {
@@ -327,8 +326,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 1062.9560439560441,
-        "y": 146.65109890109932
+        "x": 566.9560439560441,
+        "y": 164.65109890109932
       },
       "id": "POkpclXz2S2GZHC1"
     },
@@ -340,8 +339,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 1060.2060439560441,
-        "y": 100.15109890109937
+        "x": 564.2060439560441,
+        "y": 118.15109890109943
       },
       "id": "pimgcKxiIqkfbqn2"
     },
@@ -418,8 +417,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 1431.3055555555557,
-        "y": 331.13888888888886
+        "x": 935.3055555555557,
+        "y": 349.13888888888886
       },
       "id": "70KnMrhtrxyQEQxf"
     },
@@ -444,6 +443,30 @@
       "outs": {
         "out": {
           "connection": "N3epyfJbekKOSIhO:ins:in"
+        }
+      }
+    },
+    {
+      "type": "style",
+      "position": {
+        "x": 1337.9230769230771,
+        "y": 186.08333333333323
+      },
+      "id": "FDMh9UrFoJLpeR9O",
+      "inputs": {
+        "filterData": {
+          "value": "{\n  \"saturate\": -0.7\n}"
+        },
+        "filterType": {
+          "value": "ColorMatrix"
+        },
+        "effect": {
+          "connection": "r1qJAvtjOl1sOldt:outputs:effect"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "kXpfkoXYDOQ3BiaY:ins:in"
         }
       }
     }
@@ -475,5 +498,11 @@
       "type": "target"
     }
   },
-  "tags": ["PF2e Trove", "pf2e", "kineticist", "feats"]
+  "tags": [
+    "PF2e Trove",
+    "pf2e",
+    "kineticist",
+    "feats"
+  ],
+  "id": "CEG61yGmYvSRaEaJ"
 }
