@@ -1,5 +1,5 @@
 {
-  "id": "70PzNiWzaLMscakl",
+  "id": "SzMp37pN9ujkSk4e",
   "name": "Reinforce Eidolon",
   "folder": "Spells",
   "priority": 0,
@@ -519,6 +519,9 @@
         },
         "location": {
           "connection": "2XloY9UQIFYdMKFt:outputs:entry"
+        },
+        "attachTo": {
+          "value": true
         }
       },
       "outs": {
@@ -918,5 +921,6 @@
       "label": "Sources",
       "type": "target"
     }
-  }
+  },
+  "tags": ["PF2e Trove", "pf2e", "spells", "cantrip"]
 }
