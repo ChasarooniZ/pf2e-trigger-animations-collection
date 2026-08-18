@@ -267,7 +267,7 @@
 - Magnetic Field 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Magnetic Pinions 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Ocean's Balm 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
-- Rain of Rust 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Rain of Rust 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
 - Scorching Column 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Tidal Hands 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
 - Torrent in the Blood 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
