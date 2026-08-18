@@ -3,13 +3,14 @@
 - **Animations**
   - **New**
     - Weapon Group: Axe, Weapon Group: Club, Battle Axe, Bo Staff, Butterfly Sword, Falchion, Fighting Stick, Frying Pan, Halberd, Katana, Lion Scythe, Nodachi, Rapier, Scimitar, Scythe, Sickle Saber, Sickle, Staff (@ChasarooniZ 🎉💯 100th animation contributed)
-    - Eternal Torch, Tremor, Magnetic Pions, Blazing Wave (@RunicLibrarian)
+    - Eternal Torch, Tremor, Magnetic Pions, Blazing Wave, Magnetic Field, Living Bonfire (@RunicLibrarian)
   - **Updated**
     - Weapon Group: Shield _Added ranged weapon attack option_ (@ChasarooniZ)
     - Boost Eidolon, Reinforce Eidolon, Lifelink Surge _Fixed issue with effect not being attached to the target_ (@Dio 🪓)
     - Magnetic Pions _Adjusted Saturation_ (@ChasarooniZ)
     - Tremor _removed casting animation, made animation snappier, added persistent template FX for High and Med_ (@ChasarooniZ)
     - Blazing Wave _Uses cone template so it fills the whole thing_ (@ChasarooniZ)
+    - Living Bonfire _Fixed duration, fixed lack of fade in or out, Tied Persistence to include Med quality as it's a persistent region, fixed the broken sound location macro_ (@ChasarooniZ)
 - **Updated**
   - Updated `GGG` to version `0.1.5`
     - _Adds new weapon sfx_
