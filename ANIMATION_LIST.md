@@ -269,9 +269,11 @@
 - Ocean's Balm 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Ravel of Thorns 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Rain of Rust 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Rain of Rust 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
 - Scorching Column 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Tidal Hands 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
 - Torrent in the Blood 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
+- Winter's Clutch 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
 - Tremor 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
 
 #### Shared
