@@ -17,7 +17,7 @@ _[Use Me to convert "Export Triggers" to individual files for a PR](https://chas
 - Format the trigger as requested on submission (`Prettier` 2 spaces per line) which can be run from the project with `npm run prettier`
   - Additionally you could try this [formatting website](https://prettier.io/playground#N4Igxg9gdgLgprEAuEIA0IIAcYEtoDOyoAhgE5kQDuACuQkSiQDZUkCeRGARmSWAGs4MAMokAtnAAyuKHGQAzFgTgYI3AFZwwMAOp8syEFjJwVZAG7yefQcJFZ+sgObIYZAK6qQK8bjee3nAAHlhwZLiSsCwA8mF8MBBkNBAEuHjQRggAJuggIfGRCDAsACrhUOS4ZorK3mlQzsxwAIoeEPC1zCoYGgTBIi7NbR3ySErd3gCO7fA0lFiMICQEALRycNmbee4kuMwuAMIQ4uIkRizMeQ1NcACCMO643B5z4TJyXT0gABYw4sxdD90mZHGA4CIGOlcBZ0uwjGACFwQBYvABJKBbWAiMARHB3TEiGDsZpfbwmVJwfQkQwoExmcJWPI5GIKD5jEDMBR5WTmGDzEjOM5kjCOMjmIx9TKiiKwXS4bIwH7IAAcAAYMKYZrhTAKhedxnUMCVuPLFcqkAAmDAeFSlEjcRgTb5wcTcTZbbJSEiNDyCuAAMSSZ0eLgurwgIAAvlGgA)
 
-## Node Guidlines
+## Node Guidelines
 
 - **Sound**
   - If a sound is somewhere on the canavs apply the `troveSound` `preset` to each sound in an `Animation Trigger`
