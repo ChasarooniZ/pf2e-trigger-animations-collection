@@ -2,7 +2,7 @@
 
 - **Animations**
   - **New**
-    - Weapon Group: Axe, Weapon Group: Club, Battle Axe, Bo Staff, Butterfly Sword, Falchion, Fighting Stick, Frying Pan, Halberd, Katana, Lion Scythe, Nodachi, Rapier, Scimitar, Scythe, Sickle Saber, Sickle, Staff (@ChasarooniZ)
+    - Weapon Group: Axe, Weapon Group: Club, Battle Axe, Bo Staff, Butterfly Sword, Falchion, Fighting Stick, Frying Pan, Halberd, Katana, Lion Scythe, Nodachi, Rapier, Scimitar, Scythe, Sickle Saber, Sickle, Staff (@ChasarooniZ 🎉💯 100th animation contributed)
   - **Updated**
     - Weapon Group: Shield _Added ranged weapon attack option_ (@ChasarooniZ)
 - **Updated**
