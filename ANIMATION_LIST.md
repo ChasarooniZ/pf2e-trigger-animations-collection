@@ -255,6 +255,7 @@
 - Aerial Boomerang 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Air Cushion 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Armor In Earth 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Blazing Wave 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Deflecting Wave 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
 - Eternal Torch 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Four Winds 🔊🆓✅ (✍🏼 @RunicLibrarian)
