@@ -255,17 +255,22 @@
 - Aerial Boomerang 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Air Cushion 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Armor In Earth 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Blazing Wave 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Deflecting Wave 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
+- Eternal Torch 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Four Winds 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Fresh Produce 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo, 🛠️ @ChasarooniZ)
 - Geologic Attunement 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Hail of Spinters 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Hardwood Armor 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Living Bonfire 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Magnetic Field 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Magnetic Pinions 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Ocean's Balm 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Scorching Column 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Tidal Hands 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
 - Torrent in the Blood 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
+- Tremor 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
 
 #### Shared
 
@@ -295,10 +300,12 @@
 
 ##### Group
 
+- Axe 🔊🆓 (✍🏼 @Chasarooni)
 - Brawling 🔊🆓 (✍🏼 @Chasarooni)
 - Bomb 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Bow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Crossbow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
+- Club 🔊🆓 (✍🏼 @Chasarooni)
 - Dart 🔊🆓 (✍🏼 @Chasarooni)
 - Firearm 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Flail 🔊🆓 (✍🏼 @Chasarooni)
@@ -313,11 +320,27 @@
 
 ##### Base Item
 
+- Battle Axe 🔊🆓 (✍🏼 @Chasarooni)
+- Bo Staff 🔊🆓 (✍🏼 @Chasarooni)
 - Boomerang 🔊🆓 (✍🏼 @Chasarooni)
+- Butterfly Sword 🔊🆓 (✍🏼 @Chasarooni)
 - Charkram 🔊🆓 (✍🏼 @Chasarooni)
+- Falchion 🔊🆓 (✍🏼 @Chasarooni)
+- Fighting Stick 🔊🆓 (✍🏼 @Chasarooni)
+- Frying Pan 🔊🆓 (✍🏼 @Chasarooni)
 - Greatpick 🔊🆓 (✍🏼 @Chasarooni)
 - Gauntlet 🔊🆓 (✍🏼 @Chasarooni)
+- Halberd 🔊🆓 (✍🏼 @Chasarooni)
+- Katana 🔊🆓 (✍🏼 @Chasarooni)
+- Lion Scythe 🔊🆓 (✍🏼 @Chasarooni)
+- Nodachi 🔊🆓 (✍🏼 @Chasarooni)
+- Rapier 🔊🆓 (✍🏼 @Chasarooni)
+- Scimitar 🔊🆓 (✍🏼 @Chasarooni)
+- Scythe 🔊🆓 (✍🏼 @Chasarooni)
+- Sickle 🔊🆓 (✍🏼 @Chasarooni)
+- Sickle Saber 🔊🆓 (✍🏼 @Chasarooni)
 - Shuriken 🔊🆓 (✍🏼 @Chasarooni)
+- Staff 🔊🆓 (✍🏼 @Chasarooni)
 - Tamchal Chakram 🔊🆓 (✍🏼 @Chasarooni)
 
 ##### Specific
