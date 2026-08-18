@@ -263,6 +263,7 @@
 - Geologic Attunement 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Hail of Spinters 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Hardwood Armor 🔊🆓✅ (✍🏼 @RunicLibrarian)
+- Living Bonfire 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Magnetic Field 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Magnetic Pinions 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Ocean's Balm 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
