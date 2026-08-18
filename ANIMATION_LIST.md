@@ -294,10 +294,12 @@
 
 ##### Group
 
+- Axe 🔊🆓 (✍🏼 @Chasarooni)
 - Brawling 🔊🆓 (✍🏼 @Chasarooni)
 - Bomb 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Bow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Crossbow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
+- Club 🔊🆓 (✍🏼 @Chasarooni)
 - Dart 🔊🆓 (✍🏼 @Chasarooni)
 - Firearm 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Flail 🔊🆓 (✍🏼 @Chasarooni)
@@ -312,11 +314,27 @@
 
 ##### Base Item
 
+- Battle Axe 🔊🆓 (✍🏼 @Chasarooni)
+- Bo Staff 🔊🆓 (✍🏼 @Chasarooni)
 - Boomerang 🔊🆓 (✍🏼 @Chasarooni)
+- Butterfly Sword 🔊🆓 (✍🏼 @Chasarooni)
 - Charkram 🔊🆓 (✍🏼 @Chasarooni)
+- Falchion 🔊🆓 (✍🏼 @Chasarooni)
+- Fighting Stick 🔊🆓 (✍🏼 @Chasarooni)
+- Frying Pan 🔊🆓 (✍🏼 @Chasarooni)
 - Greatpick 🔊🆓 (✍🏼 @Chasarooni)
 - Gauntlet 🔊🆓 (✍🏼 @Chasarooni)
+- Halberd 🔊🆓 (✍🏼 @Chasarooni)
+- Katana 🔊🆓 (✍🏼 @Chasarooni)
+- Lion Scythe 🔊🆓 (✍🏼 @Chasarooni)
+- Nodachi 🔊🆓 (✍🏼 @Chasarooni)
+- Rapier 🔊🆓 (✍🏼 @Chasarooni)
+- Scimitar 🔊🆓 (✍🏼 @Chasarooni)
+- Scythe 🔊🆓 (✍🏼 @Chasarooni)
+- Sickle 🔊🆓 (✍🏼 @Chasarooni)
+- Sickle Saber 🔊🆓 (✍🏼 @Chasarooni)
 - Shuriken 🔊🆓 (✍🏼 @Chasarooni)
+- Staff 🔊🆓 (✍🏼 @Chasarooni)
 - Tamchal Chakram 🔊🆓 (✍🏼 @Chasarooni)
 
 ##### Specific
