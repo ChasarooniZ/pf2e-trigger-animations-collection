@@ -256,6 +256,7 @@
 - Air Cushion 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Armor In Earth 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Deflecting Wave 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
+- Eternal Torch 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Four Winds 🔊🆓✅ (✍🏼 @RunicLibrarian)
 - Fresh Produce 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo, 🛠️ @ChasarooniZ)
 - Geologic Attunement 🔊🆓✅ (✍🏼 @RunicLibrarian)
