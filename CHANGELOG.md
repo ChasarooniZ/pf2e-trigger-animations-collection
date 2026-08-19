@@ -10,6 +10,7 @@
   - Updated `GGG` to version `0.1.6`
     - _Added new animations_
   - Updated `Trigger Animations` to version `0.8.6`
+    - _allow negative for loops_
   - Updated `Trigger Engine` to version `1.29.0`
 
 ## 0.10.2
