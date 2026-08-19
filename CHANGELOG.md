@@ -1,5 +1,9 @@
 ## Unreleased
 
+- **Animations**
+  - **Updated**
+    - Ignition _added a melee variant, fixed up timing_ (@ChasarooniZ)
+
 ## 0.10.3
 
 - **Animations**
