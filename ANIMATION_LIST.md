@@ -43,6 +43,7 @@
     - [Feats](#feats)
       - [Ancestry Feats](#ancestry-feats)
       - [Class Feats](#class-feats)
+        - [Fighter](#fighter)
         - [Kineticist](#kineticist-1)
       - [Shared](#shared)
       - [General Feats](#general-feats)
@@ -249,6 +250,10 @@
 - Change Shape 🔇🆓 (✍🏼 @Chasarooni)
 
 #### Class Feats
+
+##### Fighter
+
+- Vicious Swing 🔊🆓 (✍🏼 @Chasarooni)
 
 ##### Kineticist
 

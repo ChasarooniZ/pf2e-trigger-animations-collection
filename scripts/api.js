@@ -1,5 +1,5 @@
-import { askToEnableNewTriggersDialog } from "./enableNewTriggers";
-import { getEmanationWidth } from "./helper";
+import { askToEnableNewTriggersDialog } from "./enableNewTriggers.js";
+import { getEmanationWidth } from "./helper.js";
 
 export function setupAPI() {
   window.triggerAnimationsTrove = {

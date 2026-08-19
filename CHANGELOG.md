@@ -1,5 +1,17 @@
 ## Unreleased
 
+## 0.10.3
+
+- **Animations**
+  - **New**
+    - Vicious Swing (@ChasarooniZ)
+- **Updated**
+  - Fixed bug causing the `Damage Taken`, `Healing`, and `Negated` triggers to fail (🐛 @Dio)
+  - Updated `GGG` to version `0.1.6`
+    - _Added new animations_
+  - Updated `Trigger Animations` to version `0.8.6`
+  - Updated `Trigger Engine` to version `1.29.0`
+
 ## 0.10.2
 
 - **Animations**

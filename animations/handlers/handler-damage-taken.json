@@ -13,7 +13,7 @@
       "type": "animation-event",
       "outs": {
         "out": {
-          "connection": "TIGsNUZvi1ZumUO4:ins:in"
+          "connection": "7iLr1h4Zg335PHkX:ins:in"
         }
       },
       "inputs": {
@@ -52,7 +52,7 @@
           "value": "healing"
         },
         "name": {
-          "connection": "TIGsNUZvi1ZumUO4:outputs:cL3tFzixiC1o0Q3n"
+          "connection": "KEnF8NuDmmh2N4ec:outputs:result"
         }
       }
     },
@@ -248,38 +248,87 @@
       "id": "fOrCDrRbNI1cIRdg"
     },
     {
-      "type": "execute-script",
+      "type": "extract-item",
       "position": {
-        "x": 746,
-        "y": 159
+        "x": 512,
+        "y": 206
       },
-      "id": "TIGsNUZvi1ZumUO4",
+      "id": "7iLr1h4Zg335PHkX",
       "custom": {
-        "inputs": {
-          "24cqO5b5MZXtyqWq": {
-            "id": "24cqO5b5MZXtyqWq",
-            "label": "Name",
-            "slug": "input",
+        "outputs": {
+          "mfXkQZLvL8vVsvGU": {
+            "id": "mfXkQZLvL8vVsvGU",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
             "isArray": false,
             "type": "text"
-          }
-        },
-        "outputs": {
-          "cL3tFzixiC1o0Q3n": {
-            "id": "cL3tFzixiC1o0Q3n",
-            "label": "Trove Name",
-            "slug": "output",
+          },
+          "mpQTCqstHMcoTysN": {
+            "id": "mpQTCqstHMcoTysN",
+            "input": "slug",
+            "label": "Slug",
+            "slug": "path",
             "isArray": false,
             "type": "text"
           }
         }
       },
       "inputs": {
-        "24cqO5b5MZXtyqWq": {
-          "connection": "N23TsYK70MCRp0GB:outputs:matchedName"
+        "input": {
+          "connection": "N23TsYK70MCRp0GB:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "KEnF8NuDmmh2N4ec:ins:in"
+        }
+      }
+    },
+    {
+      "type": "format-text",
+      "position": {
+        "x": 780.9230769230769,
+        "y": 182.39999999999998
+      },
+      "id": "KEnF8NuDmmh2N4ec",
+      "custom": {
+        "inputs": {
+          "rDs2t20CFG1T7ZPw": {
+            "id": "rDs2t20CFG1T7ZPw",
+            "input": "a",
+            "label": "a",
+            "slug": "variable",
+            "type": "text"
+          },
+          "q4xmVTW8YWHOzaQW": {
+            "id": "q4xmVTW8YWHOzaQW",
+            "input": "b",
+            "label": "b",
+            "slug": "variable",
+            "type": "text"
+          },
+          "PSj7WWYAv4RWUIj5": {
+            "id": "PSj7WWYAv4RWUIj5",
+            "input": "c",
+            "label": "c",
+            "slug": "variable",
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "rDs2t20CFG1T7ZPw": {
+          "value": "trove-damage"
         },
-        "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nreturn [{type: \"text\", value: inputs[0].replaceAll(\"damage:\", \"trove-damage:\")}];"
+        "plain": {
+          "value": "@a:@b, @a:@c"
+        },
+        "q4xmVTW8YWHOzaQW": {
+          "connection": "7iLr1h4Zg335PHkX:outputs:mfXkQZLvL8vVsvGU"
+        },
+        "PSj7WWYAv4RWUIj5": {
+          "connection": "7iLr1h4Zg335PHkX:outputs:mpQTCqstHMcoTysN"
         }
       },
       "outs": {
@@ -289,7 +338,7 @@
       }
     }
   ],
-  "id": "MZMX6693qbvLr732",
+  "id": "u8LPannNzdWC8cXw",
   "variables": {
     "uEaD4wFzMQtOxhE9:outputs:qAHtAkORnGS2mXAo": {
       "isArray": true,

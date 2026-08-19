@@ -205,7 +205,7 @@
           "connection": "OCLOUKutnX5VoaA4:ins:in"
         },
         "false": {
-          "connection": "zBHb5mwjGfTfbgX8:ins:in"
+          "connection": "T1gMwAPQsQnSMLP5:ins:in"
         }
       }
     },
@@ -231,7 +231,7 @@
       "id": "OCLOUKutnX5VoaA4",
       "outs": {
         "out": {
-          "connection": "zBHb5mwjGfTfbgX8:ins:in"
+          "connection": "T1gMwAPQsQnSMLP5:ins:in"
         }
       },
       "inputs": {
@@ -332,9 +332,79 @@
         "y": 120.25
       },
       "id": "F1k0h5q3qyPaLKOs"
+    },
+    {
+      "type": "list-contains",
+      "position": {
+        "x": 1440.2698412698414,
+        "y": 597.5198412698413
+      },
+      "id": "T1gMwAPQsQnSMLP5",
+      "inputs": {
+        "entry": {
+          "value": "vicious-swing"
+        },
+        "list": {
+          "connection": "HTpqVerQ7x8gkLzV:outputs:entry"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "NstprrB3FxPwVylT:ins:in"
+        },
+        "false": {
+          "connection": "zBHb5mwjGfTfbgX8:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-animation",
+      "position": {
+        "x": 1432.859584859585,
+        "y": 748.9674603174606
+      },
+      "id": "NstprrB3FxPwVylT",
+      "outs": {
+        "out": {
+          "connection": "zBHb5mwjGfTfbgX8:ins:in"
+        }
+      },
+      "inputs": {
+        "name": {
+          "value": "damage-roll-addon:vicious-swing"
+        },
+        "actor": {
+          "connection": "gFvckgjPabWLgQen:outputs:entry"
+        },
+        "sources": {
+          "connection": "RmlohGLmWigUtqxX:outputs:entry"
+        },
+        "targets": {
+          "connection": "RRKZmvXrJ4OrhOdv:outputs:entry"
+        },
+        "item": {
+          "connection": "hEyXulkulzzf4epS:outputs:entry"
+        },
+        "options": {
+          "connection": "wVEQW0lsN3WWKELr:outputs:entry"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:zlri3FyTeHzt34RB"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1325.714285714286,
+        "y": 651.1785714285712
+      },
+      "id": "HTpqVerQ7x8gkLzV"
     }
   ],
-  "id": "BxMw1LwcYobMcnkv",
+  "id": "hA195dSh0DqXqUd4",
   "variables": {
     "5Yy2lI6uhThGLmVb:outputs:zlri3FyTeHzt34RB": {
       "isArray": true,
