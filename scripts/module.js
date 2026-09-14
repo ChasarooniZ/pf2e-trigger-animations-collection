@@ -1,5 +1,5 @@
 import { askToAddNewAnimationsDialog } from "./enableNewAnimations.js";
-import { askToEnableNewTriggersDialog } from "./enableNewTriggers.js";
+import { addRequiredAnimationTriggers } from "./enableNewTriggers.js";
 import { registerTriggerAnimationTemplates } from "./handleTemplates.js";
 import { setupSettings } from "./settings.js";
 
@@ -26,7 +26,7 @@ Hooks.once("init", async function () {
 
   Hooks.once("triggerEngine.ready", async () => {
     if (game.user.isGM) {
-      askToEnableNewTriggersDialog();
+      addRequiredAnimationTriggers();
     }
   });
 });

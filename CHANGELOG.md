@@ -1,17 +1,25 @@
 ## Unreleased
 
+- **Animations**
+  - Solar Weapon *fixed issue caused by git merge issue* (@Suldrun)
+- **Update**
+  - Fixed longstanding bug with message related triggers (`Damage Roll` & `Spell Message`) causing them to trigger animations once per *user* (@MrVauxs)
+  - Fixed issue where triggers triggered animations multiple times
+  - Updated `Trigger Animation` to version `0.9.7`
+  - Updated `Trigger Engine` to version `1.33.0`
+
 ## 0.10.4
 
 - **Animations**
   - **New**
     - Whip, Dance of Burning War, Vicious Swing, Stoked Flame Stance, Ironblood Stance, Qi Rush, Inner Upheaval (@ChasarooniZ)
   - **Updated**
-    - Ignition _added a melee variant, fixed up timing_ (@ChasarooniZ)
+    - Ignition *added a melee variant, fixed up timing* (@ChasarooniZ)
 - **Update**
   - Add `Attack Roll` special handling for `Fist`
   - Updated all animations so that sounds (in general) to play even if no token exists
   - Updated `GGG` to version `0.1.7`
-    - _Added new spell sounds_
+    - *Added new spell sounds*
   - Updated `Trigger Animations` to version `0.9.1`
   - Updated `Trigger Engine` to version `1.31.1`
 
@@ -23,9 +31,9 @@
 - **Updated**
   - Fixed bug causing the `Damage Taken`, `Healing`, and `Negated` triggers to fail (🐛 @Dio)
   - Updated `GGG` to version `0.1.6`
-    - _Added new animations_
+    - *Added new animations*
   - Updated `Trigger Animations` to version `0.8.6`
-    - _allow negative for loops_
+    - *allow negative for loops*
   - Updated `Trigger Engine` to version `1.29.0`
 
 ## 0.10.2
@@ -35,34 +43,34 @@
     - Weapon Group: Axe, Weapon Group: Club, Battle Axe, Bo Staff, Butterfly Sword, Falchion, Fighting Stick, Frying Pan, Halberd, Katana, Lion Scythe, Nodachi, Rapier, Scimitar, Scythe, Sickle Saber, Sickle, Staff (@ChasarooniZ 🎉💯 100th animation contributed)
     - Eternal Torch, Tremor, Magnetic Pions, Blazing Wave, Magnetic Field, Living Bonfire, Rain of Rust, Ravel of Thorns, Winter's Clutch, Lightning Dash, Lava Leap (@RunicLibrarian)
   - **Updated**
-    - Weapon Group: Shield _Added ranged weapon attack option_ (@ChasarooniZ)
-    - Boost Eidolon, Reinforce Eidolon, Lifelink Surge _Fixed issue with effect not being attached to the target_ (@Dio 🪓)
-    - Magnetic Pions _Adjusted Saturation_ (@ChasarooniZ)
-    - Tremor _removed casting animation, made animation snappier, added persistent template FX for High and Med_ (@ChasarooniZ)
-    - Blazing Wave _Uses cone template so it fills the whole thing_ (@ChasarooniZ)
-    - Living Bonfire _Fixed duration, fixed lack of fade in or out, Tied Persistence to include Med quality as it's a persistent region, fixed the broken sound location macro_ (@ChasarooniZ)
-    - Rain of Rust _Fixed Color, fixed timing, masked the actual rust in circle FX, Tied Persistence to include Med quality as it's a persistent region_ (@ChasarooniZ)
-    - Winter's Clutch _Updated animation to better match the description, added fade in and out for the persistent effect, Tied Persistence to include Med quality as it's a persistent region_ (@ChasarooniZ)
-    - Lightning Dash _Fixed Timing, Added on Token Effect, added BG sfx over whole thing for on token effect, added an actual dash_
-    - Lava Leap _Removed Casting, Fixed just wrong SFX, Added a movement to it, added a jump up effect_ (@ChasarooniZ)
+    - Weapon Group: Shield *Added ranged weapon attack option* (@ChasarooniZ)
+    - Boost Eidolon, Reinforce Eidolon, Lifelink Surge *Fixed issue with effect not being attached to the target* (@Dio 🪓)
+    - Magnetic Pions *Adjusted Saturation* (@ChasarooniZ)
+    - Tremor *removed casting animation, made animation snappier, added persistent template FX for High and Med* (@ChasarooniZ)
+    - Blazing Wave *Uses cone template so it fills the whole thing* (@ChasarooniZ)
+    - Living Bonfire *Fixed duration, fixed lack of fade in or out, Tied Persistence to include Med quality as it's a persistent region, fixed the broken sound location macro* (@ChasarooniZ)
+    - Rain of Rust *Fixed Color, fixed timing, masked the actual rust in circle FX, Tied Persistence to include Med quality as it's a persistent region* (@ChasarooniZ)
+    - Winter's Clutch *Updated animation to better match the description, added fade in and out for the persistent effect, Tied Persistence to include Med quality as it's a persistent region* (@ChasarooniZ)
+    - Lightning Dash *Fixed Timing, Added on Token Effect, added BG sfx over whole thing for on token effect, added an actual dash*
+    - Lava Leap *Removed Casting, Fixed just wrong SFX, Added a movement to it, added a jump up effect* (@ChasarooniZ)
 - **Updated**
   - Updated `GGG` to version `0.1.5`
-    - _Adds new weapon sfx_
+    - *Adds new weapon sfx*
 
 ## 0.10.1
 
 - **Animations**
   - **New**
-    - Elixir of Life, Weapon Group: Brawling, Weapon Group: Dart, Weapon Group: Flail, Weapon Group: Pick, Needle Darts _couldn't find way to handle different materials :(_ (@ChasarooniZ)
+    - Elixir of Life, Weapon Group: Brawling, Weapon Group: Dart, Weapon Group: Flail, Weapon Group: Pick, Needle Darts *couldn't find way to handle different materials :(* (@ChasarooniZ)
     - Lifelink Surge, Reinforce Eidolon, Boost Eidolon (@Dio)
     - Tidal Surge, Hardwood Armor, Aerial Boomerang (@RunicLibrarian)
   - **Updated**
-    - Fresh Produce, Healing Potion _fixed general issues with these animation_ (@ChasarooniZ)
+    - Fresh Produce, Healing Potion *fixed general issues with these animation* (@ChasarooniZ)
 - **Updated**
   - Updated `Trigger Animations` to version `0.8.5`
-    - _fixed bug with action not having targets_
+    - *fixed bug with action not having targets*
   - Updated `GGG` to version `0.1.4`
-    - _Adds new animations_
+    - *Adds new animations*
   - Updated `Trigger Engine` to version `1.28.0`
 
 ## 0.10.0
@@ -71,8 +79,8 @@
   - **New**
     - Fresh Produce, Ocean's Balm, Torrent in the Blood (@Dio 🎉 First time animation contributor)
   - **Updated**
-    - Gust of Wind _fixed incorrect template setup_ (@ChasarooniZ)
-    - Fresh Produce, Ocean's Balm, Torrent in the Blood _Fixed category for these_ (🪓 @Dio)
+    - Gust of Wind *fixed incorrect template setup* (@ChasarooniZ)
+    - Fresh Produce, Ocean's Balm, Torrent in the Blood *Fixed category for these* (🪓 @Dio)
 - **Updated**
   - Added clarifier to what triggers are from Trove
   - Updated all handlers to support new `Animation Name` field
@@ -89,12 +97,12 @@
     - Sigil, Quandary, Elemental Blast (@ChasarooniZ)
     - Air Cushion, Armor In Earth, Deflecting Wave Four Winds, Geologic Attunement, Hail of Splinters, Scorching Column (@RunicLibrarian 🎉`First Time Contributor)
   - **Updated**
-    - Solar Weapon, Shock Pad, Pulse Gauntlet, Disintegration Lash, Zero Knife, Skyfire Sword _to use Anchor and Scale nodes_ (@Suldrun45)
-    - Aim _uses built in targets_ (@Suldrun45)
-    - Handler: Attack _Removed log from handler_ (@ChasarooniZ)
-    - Handler: Damage, Handler: Negated _Added support for Deflecting Wave_ (@ChasarooniZ)
+    - Solar Weapon, Shock Pad, Pulse Gauntlet, Disintegration Lash, Zero Knife, Skyfire Sword *to use Anchor and Scale nodes* (@Suldrun45)
+    - Aim *uses built in targets* (@Suldrun45)
+    - Handler: Attack *Removed log from handler* (@ChasarooniZ)
+    - Handler: Damage, Handler: Negated *Added support for Deflecting Wave* (@ChasarooniZ)
 - **New**
-  - `Turn Start Condition` - Specific condition to play an animation based on what conditions are active on the start of turn _to be added to animations later_
+  - `Turn Start Condition` - Specific condition to play an animation based on what conditions are active on the start of turn *to be added to animations later*
 - **Updated**
   - `Reload` & `Update Roll Option` Trigger now has proper targets
   - **Updated PR requirements**
@@ -102,9 +110,9 @@
     - Create + link a Subissue under the appropriate categories see the pinned Mega Issue for more details
     - Run Yarn Prettier on your file in some way so that it passes the check (see contributing.md for a way to do that via the web browser)
   - Updated `GGG` to version `0.1.3`
-    - _New Spells SFX_
+    - *New Spells SFX*
   - Updated `Trigger Engine` to version `1.25.0`
-    - _greatly improved performance_
+    - *greatly improved performance*
   - Updated `Trigger Animations` to version `0.7.1`
 
 ## 0.9.6
@@ -115,11 +123,11 @@
     - Divine Lance, Terrifying Cry (@ChasarooniZ)
     - Darkness, Gust of Wind, Mist, Howling Blizzard (@Suldrun45)
   - **Updated**
-    - Weapon Group: Shields, Deity's Strike, Volcanic Eruption, Buzzing Bites _fixed trigger name being outdated_ (@ChasarooniZ)
-    - Unconscious, Dessicate, Whirlwind Strike, Ignition, Grapple, Tumble Through, Cackle _Fixed anchor errors_ (@ChasarooniZ)
-    - Fist, Greatpick, Claw, Weapon Group: Hammer, Gauntlet, Weapon Group: Shield, Weapon Group: Knife, Weapon Group: Polearm, Weapon Group: Sword, Weapon Group: Spear, Unarmed Attack, Tumble Through, Grapple, Terrifying Cry _Migrated from custom execute script to using anchor_ (@ChasarooniZ)
-    - Weapon Group: Bow _Added impact sound_ (@ChasarooniZ)
-    - Deity's Strike _Combined animations, added a casting animation_ (@ChasarooniZ)
+    - Weapon Group: Shields, Deity's Strike, Volcanic Eruption, Buzzing Bites *fixed trigger name being outdated* (@ChasarooniZ)
+    - Unconscious, Dessicate, Whirlwind Strike, Ignition, Grapple, Tumble Through, Cackle *Fixed anchor errors* (@ChasarooniZ)
+    - Fist, Greatpick, Claw, Weapon Group: Hammer, Gauntlet, Weapon Group: Shield, Weapon Group: Knife, Weapon Group: Polearm, Weapon Group: Sword, Weapon Group: Spear, Unarmed Attack, Tumble Through, Grapple, Terrifying Cry *Migrated from custom execute script to using anchor* (@ChasarooniZ)
+    - Weapon Group: Bow *Added impact sound* (@ChasarooniZ)
+    - Deity's Strike *Combined animations, added a casting animation* (@ChasarooniZ)
 - **New**
   - `Trove Template: Cone` - Split this out from `Cone & Line` and included logic to allow you to pretty simply play 2 copies of an effect when it is built for 5e cones as opposed to pf2e cones
 - **Updated**
@@ -160,14 +168,14 @@
     - Chromatic Ray, Electrical Blast, Fangs, Frostbite, Haste, Ray of Frost, Shield, Slow (@ChasarooniZ)
     - Disintegration Lash, Shock Pad, Skyfire Sword, Pulse Gauntlet, Zero Knife, Aim, Black Hole, Big Bang, Supernova, Warp Reality (@Suldrun45)
   - **Updated**
-    - Solar Weapon _Fix missing link in Solar Weapon and add an extra animation for non-potato computers_ (@Suldrun45)
+    - Solar Weapon *Fix missing link in Solar Weapon and add an extra animation for non-potato computers* (@Suldrun45)
 - **Updated**
   - `Damage Roll` trigger now properly checks if damage slugs are enabled before calling animations for them
   - Fixed a bug causing the `Enable All Triggers` dialog to not work properly on a new world (🐛 @Suldrun45, @Dio)
   - Updated `Enable All Triggers` dialog to also include `Trigger Animation` triggers
   - Updated to `Trigger Animations` version `0.6.6`
   - Increased minimum `GGG` version to `0.0.23`
-    - _Adds clock animations + Crafting SFX_
+    - *Adds clock animations + Crafting SFX*
 
 ## 0.9.2
 
@@ -184,7 +192,7 @@
   - **New**
     - Weapon Group: Grenade (@Suldrun45)
 - **Updated**
-  - Actually included the styling fix for `Enable New Animations` _Sorry vauxs 🙏_(💻@Suldrun45)
+  - Actually included the styling fix for `Enable New Animations` *Sorry vauxs 🙏*(💻@Suldrun45)
 
 ## 0.9.0
 
@@ -201,10 +209,10 @@
   - **New**
     - Weapon Group: Sling (@ChasarooniZ)
     - Arc Emitter, Force Field, Screamer, Singing Coil, Starfall Pistol, Zero Cannon, (@Suldrun45)
-    - Plasma Caster _(with Boost)_ (@mechamaya 🎉 First Time contribution!)
+    - Plasma Caster *(with Boost)* (@mechamaya 🎉 First Time contribution!)
   - **Updated**
-    - Flamethrower _Update to chain sound so it sounds better, also added min quality sfx option_ (@Suldrun45)
-    - Lay on Hands _Fixed issue with condition causing the sound to double play_ (@ChasarooniZ)
+    - Flamethrower *Update to chain sound so it sounds better, also added min quality sfx option* (@Suldrun45)
+    - Lay on Hands *Fixed issue with condition causing the sound to double play* (@ChasarooniZ)
 - **New**
   - Added a button to the menu to force check to enable animations that aren't enabled
 - **Updated**
@@ -226,7 +234,7 @@
     - Zero Cannon, Starfall Pistol, Singing Coil, Screamer, Arc Emitter, Force Field (@Suldrun45)
     - Plasma Caster (with Boost) (@mechmaya)
   - **Updated**
-    - Electric Arc _removed console logs_ (@Suldrun45)
+    - Electric Arc *removed console logs* (@Suldrun45)
 - **Updated**
   - Fixed issues with animations and templates that failed to have both `preload` and `local` on their `Play` nodes
 
@@ -237,7 +245,7 @@
     - Grapple, Tumble Through, Renewed Vigor, Electric Arc (@ChasarooniZ)
     - Flamethrower, Rotolaser, Weapon Group: Corrosive (Ranged), Weapon Group: Cryo (Ranged), Weapon Group: Plasma (Ranged), Weapon Group: Projectile (Area & Automatic), Weapon Group: Sonic (Ranged), Weapon Group: Sniper (Ranged), Weapon Group: Shock (Ranged), Weapon Group: Projectile (Ranged) (@Suldrun45)
   - **Updated**
-    - Plasma Cannon _Add filter to free version_ (@Suldrun45)
+    - Plasma Cannon *Add filter to free version* (@Suldrun45)
 - **Updated**
   - Updated to `Trigger Animations` version `0.6.3`
 
@@ -249,7 +257,7 @@
     - Weapon Group: Swords (@MrVauxs modified by @ChasarooniZ)
     - Suppressed (@Suldrun45)
   - **Updated**
-    - Claw, Weapon Group: Hammer, Weapon Group: Polearms, Weapon Group: Hammer, Greatpick _Added Randomize Mirror Y for melee attacks_ (@ChasarooniZ)
+    - Claw, Weapon Group: Hammer, Weapon Group: Polearms, Weapon Group: Hammer, Greatpick *Added Randomize Mirror Y for melee attacks* (@ChasarooniZ)
 - **Updated**
   - Fixed the `Skill Check Actions` trigger which wasn't working
 
@@ -257,7 +265,7 @@
 
 - **Animations**
   - **Updated**
-    - Reload: Firearm (Weapon Group), Reload: Crossbow (Weapon Group), Reload: Pepperbox, Reload: Slide Pistol _Added visual to these animations_ (@Chasarooni)
+    - Reload: Firearm (Weapon Group), Reload: Crossbow (Weapon Group), Reload: Pepperbox, Reload: Slide Pistol *Added visual to these animations* (@Chasarooni)
 - **Updated**
   - Made `troveIconTop` Preset better visually
 
@@ -267,14 +275,14 @@
   - **New**
     - Weapon Group: Laser, Condition: Glitching (@Suldrun45)
   - **Updated**
-    - Slowed, Stunned _Fixed Persistence_ (@Suldrun45)
+    - Slowed, Stunned *Fixed Persistence* (@Suldrun45)
 - **New**
   - **Preset**
-    - `troveIconTop` - Shows a still frame icon on top of token for a few seconds _more details on the README_
+    - `troveIconTop` - Shows a still frame icon on top of token for a few seconds *more details on the README*
 - **Updated**
   - Added safeguard against double calling the start animations
   - Increased minimum `GGG` version to `0.0.21`
-    - _Adds more Air SFX + Reload Icon_
+    - *Adds more Air SFX + Reload Icon*
 
 ## 0.8.6
 
@@ -284,9 +292,9 @@
 
 - **Updated**
   - Increased minimum `GGG` version to `0.0.19`
-    - _A Metric ton of Sci Fi SFX for our SF2e Players_
+    - *A Metric ton of Sci Fi SFX for our SF2e Players*
   - Updated to `Trigger Animations` version `0.6.1`
-    - _Support for SF2e Weapon Groups, and Base Items out of the box as well as NPC Strike Support_
+    - *Support for SF2e Weapon Groups, and Base Items out of the box as well as NPC Strike Support*
 
 ## 0.8.4
 
@@ -310,7 +318,7 @@
 - **New**
   - Added a new handler `Handler: Template` for the SF2e System
     - All submitted animations with a `template:` trigger should use the `trove-template:` trigger
-    - _This is so that SF2e can support attack additives for their area weapons_
+    - *This is so that SF2e can support attack additives for their area weapons*
 - **Updated**
   - Updated all animations with trigger `template:` to new `trove-template:`
 
@@ -442,7 +450,7 @@
 ## 0.4.0
 
 - **New**
-  - _going to include what particular animations are in each release now so I can think about it less_
+  - *going to include what particular animations are in each release now so I can think about it less*
   - **Animations**
     - Persistent Damage, Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Weapon Group: Polearms, Claw, Blinded, Clumsy, Confused, Controlled, Dazzled, Deafened, Doomed, Drained, Dying, Encumbered, Enfeebled, Fascinated, Fatigued, Fleeing, Frightened, Grabbed, Immobilized, Off-Guard, Paralyzed, Petrified, Prone, Quickened, Sickened, Slowed, Stunned, Stupefied, Unconscious, Wounded, Weapon Group: Bombs, Weapon Group: Bows, Weapon Group: Crossbows, Rage, Weapon Group: Shield, Reload: Crossbow (Weapon Group), Reload: Pepperbox, Reload: Slide Pistol, Change Shape, Sneak Attack, Sanguine Mutagen, Healing Potion, Harm, Heal, Weapon Group: Hammer (@Chasarooni)
     - Fireball (@ChazPls)

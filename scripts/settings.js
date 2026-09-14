@@ -1,5 +1,5 @@
 import { askToAddNewAnimationsDialog } from "./enableNewAnimations.js";
-import { askToEnableNewTriggersDialog } from "./enableNewTriggers.js";
+import { addRequiredAnimationTriggers } from "./enableNewTriggers.js";
 import { MODULE_ID } from "./module.js";
 
 export function setupSettings() {
