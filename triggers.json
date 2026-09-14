@@ -145,7 +145,7 @@
             "connection": "NVw98hipCZjZu9I0:outputs:6ssDORYrtuDo5mk4"
           },
           "script": {
-            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst msg = inputs[0];\n\nconst isValid = msg.isDamageRoll && msg?.isAuthor();\n\nreturn [\n  { type: \"boolean\", value: isValid },\n];"
+            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst msg = inputs[0];\n\nconst isValid = msg.isDamageRoll && msg?.isAuthor;\n\nreturn [\n  { type: \"boolean\", value: isValid },\n];"
           }
         },
         "outs": {
@@ -1616,7 +1616,7 @@
             "connection": "NVw98hipCZjZu9I0:outputs:6ssDORYrtuDo5mk4"
           },
           "script": {
-            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst msg = inputs[0];\n\nreturn [\n  { type: \"boolean\", value: \n    msg?.item?.type === 'spell'\n    && !msg?.isRoll\n    && !msg?.flags?.pf2e?.appliedDamage\n    && msg?.token && msg?.isAuthor()\n  },\n];"
+            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst msg = inputs[0];\n\nreturn [\n  { type: \"boolean\", value: \n    msg?.item?.type === 'spell'\n    && !msg?.isRoll\n    && !msg?.flags?.pf2e?.appliedDamage\n    && msg?.token && msg?.isAuthor\n  },\n];"
           }
         },
         "outs": {

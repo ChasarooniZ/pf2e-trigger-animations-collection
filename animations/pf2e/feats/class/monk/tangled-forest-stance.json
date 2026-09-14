@@ -738,6 +738,9 @@
       "inputs": {
         "a": {
           "value": "trove-attack:lashing-branch"
+        },
+        "b": {
+          "connection": "sZroJSC6CS2Iz7ln:outputs:matchedName"
         }
       },
       "outs": {
