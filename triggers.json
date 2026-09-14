@@ -3,10 +3,7 @@
     "name": "[Trove] Damage Roll",
     "folder": "Animations",
     "priority": 0,
-    "tags": [
-      "pf2e",
-      "sf2e"
-    ],
+    "tags": ["pf2e", "sf2e"],
     "id": "VZFbs7YT8IXp8QGT",
     "nodes": [
       {
@@ -1388,10 +1385,7 @@
     "name": "[Trove] Skill Checks Actions",
     "folder": "Animations",
     "priority": 0,
-    "tags": [
-      "pf2e",
-      "sf2e"
-    ],
+    "tags": ["pf2e", "sf2e"],
     "id": "N1RJ2suJncrKHmYW",
     "nodes": [
       {
@@ -1512,10 +1506,7 @@
     "name": "[Trove] Spell Message",
     "folder": "Animations",
     "priority": 0,
-    "tags": [
-      "pf2e",
-      "sf2e"
-    ],
+    "tags": ["pf2e", "sf2e"],
     "id": "U9C33Uv0DfEvQp6r",
     "nodes": [
       {

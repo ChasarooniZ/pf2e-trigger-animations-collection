@@ -289,7 +289,8 @@
 ##### Monk
 
 - Ironblood Stance 🔊🆓 (✍🏼 @Chasarooni)
-- Stoked Flame Staance 🔊🆓 (✍🏼 @Chasarooni)
+- Tangled Forest Stance 🔊🆓 (✍🏼 @Chasarooni)
+- Stoked Flame Stance 🔊🆓 (✍🏼 @Chasarooni)
 
 ##### Shared
 
@@ -396,6 +397,8 @@
 
 - Conductive Downpour 🔊🆓 (✍🏼 @Chasarooni)
 - Dance of Burning War 🔊🆓 (✍🏼 @Chasarooni)
+- Kaiju Ray 🔊🆓 (✍🏼 @Chasarooni)
+- Sonic Missile 🔊🆓 (✍🏼 @Chasarooni)
 - Terrifying Cry 🔊🆓 (✍🏼 @Chasarooni)
 
 ## SF2e
