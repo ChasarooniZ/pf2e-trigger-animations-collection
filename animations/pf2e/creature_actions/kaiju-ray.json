@@ -1,0 +1,353 @@
+{
+  "id": "2iIq2RMuhJsHmbF2",
+  "name": "Kaiju Ray",
+  "folder": "Creature Actions",
+  "priority": 0,
+  "description": "<p>Generated from Kaiju Ray (Scene.QCdVtJeJpF0So6Da.Token.8nPfyLfW5mgH1tuX.Actor.AhmcR2K0qqnyMwye.Item.rWhNJr9egSsmPSBG).</p><p><strong>Trigger: <code>trove-template:kaiju-ray</code></strong></p>",
+  "nodes": [
+    {
+      "id": "wjeGuWIdwXhVFcEa",
+      "position": {
+        "x": 749.9999999999999,
+        "y": 171.66666666666657
+      },
+      "type": "animation-event",
+      "custom": {
+        "outputs": {
+          "cjm12RAzArIAm2HX": {
+            "id": "cjm12RAzArIAm2HX",
+            "input": "template",
+            "label": "Template",
+            "slug": "path",
+            "isArray": false,
+            "type": "region"
+          }
+        }
+      },
+      "inputs": {
+        "name": {
+          "value": "trove-template:kaiju-ray"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "jGb6TmzZx742lYel:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "position": {
+        "x": 1014.5897421569691,
+        "y": 182.56668923695878
+      },
+      "id": "jGb6TmzZx742lYel",
+      "custom": {
+        "outputs": {
+          "v3pw2aGBvpPs6CQa": {
+            "id": "v3pw2aGBvpPs6CQa",
+            "input": "name",
+            "label": "Name",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "YuapYq0i9pHpjlCh": {
+            "id": "YuapYq0i9pHpjlCh",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "wjeGuWIdwXhVFcEa:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "ZZfQWkXlxDecvxD3:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 1268.5897249274692,
+        "y": 164.50000985463458
+      },
+      "id": "ZZfQWkXlxDecvxD3",
+      "inputs": {
+        "name": {
+          "connection": "jGb6TmzZx742lYel:outputs:v3pw2aGBvpPs6CQa"
+        },
+        "origin": {
+          "connection": "jGb6TmzZx742lYel:outputs:YuapYq0i9pHpjlCh"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "cKBYEE0gLQouHyQd:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "inputs": {
+        "effect": {
+          "connection": "ZZfQWkXlxDecvxD3:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.ranged.beam.002.01.orange.60ft"
+        }
+      },
+      "position": {
+        "x": 1583.9999864274369,
+        "y": 161.80557558271613
+      },
+      "id": "cKBYEE0gLQouHyQd",
+      "outs": {
+        "out": {
+          "connection": "WElwQmkDxMMIVLkx:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "inputs": {
+        "effect": {
+          "connection": "ZZfQWkXlxDecvxD3:outputs:effect"
+        },
+        "cacheLocation": {
+          "value": true
+        },
+        "location": {
+          "connection": "Y82IQV3NZKWE4ja2:outputs:entry"
+        }
+      },
+      "position": {
+        "x": 1813.7777744880864,
+        "y": 160.70561627282024
+      },
+      "id": "WElwQmkDxMMIVLkx",
+      "outs": {
+        "out": {
+          "connection": "Zuid2KaGthDd3kud:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 3750.081584591428,
+        "y": 158.4721785916223
+      },
+      "id": "qdxGLBpMRw2WX8wB",
+      "inputs": {
+        "preload": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 2629.839743589744,
+        "y": 156.0555555555556
+      },
+      "id": "55UoPn9az5Aylhtl",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.magic.occult.cast.beam.01"
+        },
+        "name": {
+          "connection": "jGb6TmzZx742lYel:outputs:v3pw2aGBvpPs6CQa"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "X6e0PuLtiK8eDDuY:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "55UoPn9az5Aylhtl:outputs:sound"
+        },
+        "location": {
+          "connection": "X6e0PuLtiK8eDDuY:outputs:uZGMwPdqI0U3jLIS"
+        }
+      },
+      "position": {
+        "x": 3233,
+        "y": 158.56666666666683
+      },
+      "id": "KuUi0bBK6ofhiuRe",
+      "outs": {
+        "out": {
+          "connection": "OWmPEcXkbpeHWzjD:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "preset": {
+          "value": "troveSound"
+        },
+        "sound": {
+          "connection": "55UoPn9az5Aylhtl:outputs:sound"
+        },
+        "delayMin": {
+          "value": 600
+        }
+      },
+      "position": {
+        "x": 3462.4444444444443,
+        "y": 158.16666666666686
+      },
+      "id": "OWmPEcXkbpeHWzjD",
+      "outs": {
+        "out": {
+          "connection": "qdxGLBpMRw2WX8wB:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 2936.583333333333,
+        "y": 155.22222222222223
+      },
+      "id": "X6e0PuLtiK8eDDuY",
+      "custom": {
+        "inputs": {
+          "2OzxDBCCNRixWBYI": {
+            "id": "2OzxDBCCNRixWBYI",
+            "label": "Template",
+            "slug": "input",
+            "isArray": false,
+            "type": "any"
+          }
+        },
+        "outputs": {
+          "uZGMwPdqI0U3jLIS": {
+            "id": "uZGMwPdqI0U3jLIS",
+            "label": "Point",
+            "slug": "output",
+            "isArray": false,
+            "type": "point"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst template = inputs[0]\nreturn [{type: \"point\", value: template?.shapes?.[0]?.center}];"
+        },
+        "2OzxDBCCNRixWBYI": {
+          "connection": "BrcfgPeXTQUr1c9Z:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "KuUi0bBK6ofhiuRe:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "wjeGuWIdwXhVFcEa:outputs:cjm12RAzArIAm2HX"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2764.6944444444443,
+        "y": 104.77777777777783
+      },
+      "id": "BrcfgPeXTQUr1c9Z"
+    },
+    {
+      "type": "aim",
+      "position": {
+        "x": 2051.3978243978245,
+        "y": 162.288888888889
+      },
+      "id": "Zuid2KaGthDd3kud",
+      "inputs": {
+        "effect": {
+          "connection": "ZZfQWkXlxDecvxD3:outputs:effect"
+        },
+        "towards": {
+          "connection": "YykGCUk6pqkTIrmP:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "7GvFOLBfQL3nTLUU:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "wjeGuWIdwXhVFcEa:outputs:cjm12RAzArIAm2HX"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1912.2222222222222,
+        "y": 116.43434343434362
+      },
+      "id": "YykGCUk6pqkTIrmP"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "wjeGuWIdwXhVFcEa:outputs:cjm12RAzArIAm2HX"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1633.333333333333,
+        "y": 116.43434343434356
+      },
+      "id": "Y82IQV3NZKWE4ja2"
+    },
+    {
+      "type": "flow",
+      "position": {
+        "x": 2350.0341880341884,
+        "y": 162.26767676767702
+      },
+      "id": "7GvFOLBfQL3nTLUU",
+      "inputs": {
+        "effect": {
+          "connection": "ZZfQWkXlxDecvxD3:outputs:effect"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "55UoPn9az5Aylhtl:ins:in"
+        }
+      }
+    }
+  ],
+  "variables": {
+    "wjeGuWIdwXhVFcEa:outputs:cjm12RAzArIAm2HX": {
+      "isArray": false,
+      "label": "Template",
+      "type": "region"
+    }
+  }
+}
