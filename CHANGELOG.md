@@ -1,5 +1,9 @@
 ## Unreleased
 
+- **Animations**
+  - **New**
+  - **Updated**
+    - Torrent in the Blood _fixed issue with animation_ (@ChasarooniZ)
 - **Update**
   - Updated `Trove Cone Template` to fix error with it and simplify implementation
   - Updated `Template Handler` to remove remaining console log and fix issue with it printing an object as a trigger

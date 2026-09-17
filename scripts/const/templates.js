@@ -1586,7 +1586,7 @@ export const TEMPLATES = {
           label: "2nd Cone?",
           type: "boolean",
         },
-      },s
+      },
     }),
     LINE: JSON.stringify({
       nodes: [
