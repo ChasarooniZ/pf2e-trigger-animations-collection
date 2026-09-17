@@ -142,7 +142,7 @@
       },
       "outs": {
         "out": {
-          "connection": "DbiBDv5nzTF9gTV0:ins:in"
+          "connection": "eH4142vTpQCspmMG:ins:in"
         }
       }
     },
@@ -203,7 +203,7 @@
       },
       "inputs": {
         "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst item = inputs[0];\nconst source = inputs[1];\nconst actor = source?.actor;\nlet value = item;\nif (item?.type && item?.type !== \"strike\" && actor) {\n  if (item?.linkedWeapon) {\n    value = item.linkedWeapon\n  } else {\n    const strike = actor?.system?.actions?.find(a => a?.item?.rule?.item?.slug === item?.slug);\n    if (strike?.item) {\n      value = strike?.item;\n    }\n  }\n}\n\n// Handle NPC strike\nconst slug = value?.slug ||  game?.pf2e?.system?.sluggify(value.name);\nconst group = value?.system?.group ?? value?.group;\nconst base = value?.system?.baseItem ?? value?.baseType;\n\n\nreturn [{type: \"item\", value: value}, {type: \"text\", value: slug}, {type: \"text\", value: group}, {type: \"text\", value: base}];"
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst item = inputs[0];\nconst source = inputs[1];\nconst actor = source?.actor;\nlet value = item;\nif (item?.type && item?.type !== \"strike\" && actor) {\n  if (item?.linkedWeapon) {\n    value = item.linkedWeapon\n  } else {\n    const strike = actor?.system?.actions?.find(a => a?.item?.rule?.item?.slug === item?.slug);\n    if (strike?.item) {\n      value = strike?.item;\n    }\n  }\n}\n\n// Handle NPC strike\nconst slug = value?.slug ||  game?.pf2e?.system?.sluggify(value.name);\nconst group = value?.system?.group ?? value?.group;\nconst base = value?.system?.baseItem ?? value?.baseType;\n\n\nreturn [{type: \"item\", value: value}, {type: \"text\", value: slug}, {type: \"text\", value: typeof group === 'string' ? group : ''}, {type: \"text\", value: base}];"
         },
         "9B9zD9txRIAdfnRh": {
           "connection": "scQ8zJQQYHCSSgDm:outputs:actor"
@@ -258,36 +258,7 @@
           "connection": "sNQ0iL4YRcqvkw4B:ins:in"
         }
       }
-    },
-    {
-      "type": "console-log",
-      "position": {
-        "x": 1217.5,
-        "y": 43
-      },
-      "id": "DbiBDv5nzTF9gTV0",
-      "custom": {
-        "inputs": {
-          "KJK4MeFlUHj9pwM4": {
-            "id": "KJK4MeFlUHj9pwM4",
-            "isArray": false,
-            "label": "Formatted",
-            "slug": "input",
-            "type": "text"
-          }
-        }
-      },
-      "inputs": {
-        "KJK4MeFlUHj9pwM4": {
-          "connection": "sNQ0iL4YRcqvkw4B:outputs:result"
-        }
-      },
-      "outs": {
-        "out": {
-          "connection": "eH4142vTpQCspmMG:ins:in"
-        }
-      }
     }
   ],
-  "id": "wyOhHLO884pm0NqT"
+  "id": "LMQgD61E4DLHgnLv"
 }
