@@ -52,6 +52,7 @@
       - [Archetype Feats](#archetype-feats)
     - [Strikes](#strikes)
       - [Unarmed Strikes](#unarmed-strikes)
+      - [Creature Strikes](#creature-strikes)
       - [Weapons](#weapons)
         - [Group](#group)
         - [Base Item](#base-item)
@@ -138,6 +139,7 @@
 - Reinforce Eidolon 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Scatter Scree 🔊🆓✅ (✍🏼 @Chasarooni)
 - Tangle Vine 🔊🆓✅ (✍🏼 @Suldrun45)
+- Telekinetic Hand 🔊🆓✅ (✍🏼 @Chasarooni)
 - Void Warp 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### Focus Spells
@@ -307,15 +309,20 @@
 
 #### Unarmed Strikes
 
-- Acid Missile 🔊🆓 (✍🏼 @Chasarooni)
 - Bite 🔇🆓 (✍🏼 @Chasarooni)
 - Claw 🔇🆓 (✍🏼 @Chasarooni)
-- Electrical Blast 🔇🆓 (✍🏼 @Chasarooni)
 - Fangs 🔇🆓 (✍🏼 @Chasarooni)
 - Fist 🔊🆓 (✍🏼 @Chasarooni)
 - Jaws 🔇🆓 (✍🏼 @Chasarooni)
-- Thunderbolt 🔊🆓 (✍🏼 @Chasarooni)
 - Unarmed Attack 🔊🆓 (✍🏼 @Chasarooni)
+
+#### Creature Strikes
+
+- Acid Missile 🔊🆓 (✍🏼 @Chasarooni)
+- Electrical Blast 🔇🆓 (✍🏼 @Chasarooni)
+- Solid Refrain 🔊🆓✅ (✍🏼 @Chasarooni)
+- Thunderbolt 🔊🆓 (✍🏼 @Chasarooni)
+- Wind Gust 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### Weapons
 
@@ -401,6 +408,7 @@
 - Kaiju Ray 🔊🆓 (✍🏼 @Chasarooni)
 - Sonic Missile 🔊🆓 (✍🏼 @Chasarooni)
 - Terrifying Cry 🔊🆓 (✍🏼 @Chasarooni)
+- Volcanic Breath 🔊🆓✅ (✍🏼 @Chasarooni)
 
 ## SF2e
 

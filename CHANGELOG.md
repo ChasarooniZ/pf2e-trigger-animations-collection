@@ -1,8 +1,11 @@
 ## Unreleased
 
+## 0.11.0
+
 - **Animations**
   - **New**
     - Daze (@Dio)
+    - Telekinetic Hand, Wind Gust, Solid Refrain, Volcanic Breath (@ChasarooniZ)
   - **Updated**
     - Torrent in the Blood _fixed issue with animation_ (@ChasarooniZ)
 - **New**
