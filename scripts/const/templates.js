@@ -4,7 +4,10 @@ export const TEMPLATES = {
       nodes: [
         {
           id: "8wTEhq8YlQlBHz5w",
-          position: { x: 776.6666666666667, y: 205 },
+          position: {
+            x: 0,
+            y: 205,
+          },
           type: "animation-event",
           custom: {
             outputs: {
@@ -17,22 +20,44 @@ export const TEMPLATES = {
               },
             },
           },
-          inputs: { name: { value: "placeholder-trigger-names" } },
-          outs: { out: { connection: "rovM5Um9QTKwvnmr:ins:in" } },
+          inputs: {
+            name: {
+              value: "placeholder-trigger-names",
+            },
+          },
+          outs: {
+            out: {
+              connection: "rovM5Um9QTKwvnmr:ins:in",
+            },
+          },
         },
         {
           type: "effect",
-          position: { x: 1638.6666666666667, y: 179 },
+          position: {
+            x: 862,
+            y: 179,
+          },
           id: "NkLAZY3xuHhbK1va",
           inputs: {
-            origin: { connection: "R7arc5sxTgZrTWxR:outputs:entry" },
-            name: { connection: "CaVXFXqPTjvZEKDS:outputs:entry" },
+            origin: {
+              connection: "R7arc5sxTgZrTWxR:outputs:entry",
+            },
+            name: {
+              connection: "CaVXFXqPTjvZEKDS:outputs:entry",
+            },
           },
-          outs: { out: { connection: "v09wSWnCDrF3MjXs:ins:in" } },
+          outs: {
+            out: {
+              connection: "v09wSWnCDrF3MjXs:ins:in",
+            },
+          },
         },
         {
           type: "extract-item",
-          position: { x: 1043.2937250937375, y: 216.9748704766734 },
+          position: {
+            x: 266.6270584270708,
+            y: 216.9748704766734,
+          },
           id: "rovM5Um9QTKwvnmr",
           custom: {
             outputs: {
@@ -55,220 +80,433 @@ export const TEMPLATES = {
             },
           },
           inputs: {
-            input: { connection: "8wTEhq8YlQlBHz5w:outputs:item" },
+            input: {
+              connection: "8wTEhq8YlQlBHz5w:outputs:item",
+            },
           },
-          outs: { out: { connection: "YexGxJsBKGIWEQTx:ins:in" } },
+          outs: {
+            out: {
+              connection: "YexGxJsBKGIWEQTx:ins:in",
+            },
+          },
         },
         {
           type: "location",
           state: "targets",
           inputs: {
-            effect: { connection: "NkLAZY3xuHhbK1va:outputs:effect" },
-            gridUnits: { value: true },
-            local: { value: true },
-            bindScale: { value: false },
-            location: { connection: "fH6JJnJ0Gr8cUe6v:outputs:entry" },
+            effect: {
+              connection: "NkLAZY3xuHhbK1va:outputs:effect",
+            },
+            gridUnits: {
+              value: true,
+            },
+            local: {
+              value: true,
+            },
+            bindScale: {
+              value: false,
+            },
+            location: {
+              connection: "fH6JJnJ0Gr8cUe6v:outputs:entry",
+            },
           },
-          position: { x: 1938.944537280197, y: 172.7147974908261 },
+          position: {
+            x: 1162.2778706135302,
+            y: 172.7147974908261,
+          },
           id: "v09wSWnCDrF3MjXs",
-          outs: { out: { connection: "AaVVeHGGI1FkzXM3:ins:in" } },
+          outs: {
+            out: {
+              connection: "AaVVeHGGI1FkzXM3:ins:in",
+            },
+          },
         },
         {
           type: "file",
           inputs: {
-            effect: { connection: "NkLAZY3xuHhbK1va:outputs:effect" },
-            file: { value: "jb2a.melee_attack.02.hammer.02" },
+            effect: {
+              connection: "NkLAZY3xuHhbK1va:outputs:effect",
+            },
+            file: {
+              value: "jb2a.melee_attack.02.hammer.02",
+            },
           },
-          position: { x: 2482.7672976315434, y: 345.17074140096986 },
+          position: {
+            x: 1706.1006309648767,
+            y: 345.17074140096986,
+          },
           id: "IfSNHkoJoogWicjG",
-          outs: { out: { connection: "axEYaKIdAAqdI0bZ:ins:in" } },
+          outs: {
+            out: {
+              connection: "axEYaKIdAAqdI0bZ:ins:in",
+            },
+          },
         },
         {
           type: "aim",
           state: "rotateTowards",
           inputs: {
-            effect: { connection: "NkLAZY3xuHhbK1va:outputs:effect" },
-            missed: { connection: "axEYaKIdAAqdI0bZ:outputs:boolean" },
-            attachTo: { value: true },
-            offset: { value: { x: 0, y: 0 } },
-            towards: { connection: "5s1QHqqPNkPWrGPF:outputs:entry" },
+            effect: {
+              connection: "NkLAZY3xuHhbK1va:outputs:effect",
+            },
+            missed: {
+              connection: "axEYaKIdAAqdI0bZ:outputs:boolean",
+            },
+            attachTo: {
+              value: true,
+            },
+            offset: {
+              value: {
+                x: 0,
+                y: 0,
+              },
+            },
+            towards: {
+              connection: "5s1QHqqPNkPWrGPF:outputs:entry",
+            },
           },
-          position: { x: 2992.818932742287, y: 268.4145255118906 },
+          position: {
+            x: 2216.15226607562,
+            y: 268.4145255118906,
+          },
           id: "jC26f0rfZh7mzKmk",
-          outs: { out: { connection: "XgVGLBrLzXfDUMHm:ins:in" } },
+          outs: {
+            out: {
+              connection: "XgVGLBrLzXfDUMHm:ins:in",
+            },
+          },
         },
         {
           type: "massloop",
-          position: { x: 1287.5439448084462, y: 204.61375672504948 },
+          position: {
+            x: 510.87727814177947,
+            y: 204.61375672504948,
+          },
           id: "YexGxJsBKGIWEQTx",
           inputs: {
-            sources: { connection: "8wTEhq8YlQlBHz5w:outputs:sources" },
-            targets: { connection: "8wTEhq8YlQlBHz5w:outputs:targets" },
+            sources: {
+              connection: "8wTEhq8YlQlBHz5w:outputs:sources",
+            },
+            targets: {
+              connection: "8wTEhq8YlQlBHz5w:outputs:targets",
+            },
           },
           outs: {
-            out: { connection: "NkLAZY3xuHhbK1va:ins:in" },
-            outAfter: { connection: "Ym0mBKXartUQFfo6:ins:in" },
+            out: {
+              connection: "NkLAZY3xuHhbK1va:ins:in",
+            },
+            outAfter: {
+              connection: "Ym0mBKXartUQFfo6:ins:in",
+            },
           },
         },
         {
           type: "list-contains",
-          position: { x: 2749.5505839983325, y: 510.8254707180224 },
+          position: {
+            x: 1972.8839173316658,
+            y: 510.8254707180224,
+          },
           id: "axEYaKIdAAqdI0bZ",
           inputs: {
-            list: { connection: "mTOJ6B7TJPjBQIiM:outputs:list" },
-            entry: { connection: "lHMKkkylgxmWplyi:outputs:entry" },
+            list: {
+              connection: "mTOJ6B7TJPjBQIiM:outputs:list",
+            },
+            entry: {
+              connection: "lHMKkkylgxmWplyi:outputs:entry",
+            },
           },
-          outs: { out: { connection: "jC26f0rfZh7mzKmk:ins:in" } },
+          outs: {
+            out: {
+              connection: "jC26f0rfZh7mzKmk:ins:in",
+            },
+          },
           state: "boolean",
         },
         {
           type: "list-value",
-          position: { x: 2480.2461211398777, y: 527.7962793853518 },
+          position: {
+            x: 1703.579454473211,
+            y: 527.7962793853518,
+          },
           id: "mTOJ6B7TJPjBQIiM",
-          inputs: { entry: { value: "failure,criticalFailure" } },
+          inputs: {
+            entry: {
+              value: "failure,criticalFailure",
+            },
+          },
         },
         {
           type: "scale",
-          position: { x: 3285.686594769565, y: 266.2962611124972 },
+          position: {
+            x: 2509.019928102898,
+            y: 266.2962611124972,
+          },
           id: "XgVGLBrLzXfDUMHm",
           inputs: {
-            effect: { connection: "NkLAZY3xuHhbK1va:outputs:effect" },
-            considerTokenScale: { value: true },
-            objectScale: { value: 4 },
+            effect: {
+              connection: "NkLAZY3xuHhbK1va:outputs:effect",
+            },
+            considerTokenScale: {
+              value: true,
+            },
+            objectScale: {
+              value: 4,
+            },
           },
           state: "object",
-          outs: { out: { connection: "JtJf29da99o1XRT0:ins:in" } },
+          outs: {
+            out: {
+              connection: "JtJf29da99o1XRT0:ins:in",
+            },
+          },
         },
         {
           type: "file",
           inputs: {
-            effect: { connection: "NkLAZY3xuHhbK1va:outputs:effect" },
-            file: { value: "jb2a.melee_attack.02.hammer.01" },
+            effect: {
+              connection: "NkLAZY3xuHhbK1va:outputs:effect",
+            },
+            file: {
+              value: "jb2a.melee_attack.02.hammer.01",
+            },
           },
-          position: { x: 2504.9101547744003, y: 142.13502711525592 },
+          position: {
+            x: 1728.2434881077336,
+            y: 142.13502711525592,
+          },
           id: "TzKwbDIPyj9I1mtK",
-          outs: { out: { connection: "axEYaKIdAAqdI0bZ:ins:in" } },
+          outs: {
+            out: {
+              connection: "axEYaKIdAAqdI0bZ:ins:in",
+            },
+          },
         },
         {
           type: "sound",
-          position: { x: 3764.6453891008, y: 269.8081930883651 },
+          position: {
+            x: 2987.9787224341335,
+            y: 269.8081930883651,
+          },
           id: "PIHuQ9JqU3jU9pFn",
-          outs: { out: { connection: "cpmszTokwCu7umXl:ins:in" } },
+          outs: {
+            out: {
+              connection: "cpmszTokwCu7umXl:ins:in",
+            },
+          },
           inputs: {
-            file: { value: "ggg-sfx.melee.bludgeoning.strike.one-hand.01" },
-            name: { connection: "OVXBEp6GUMSvvoJd:outputs:entry" },
+            file: {
+              value: "ggg-sfx.melee.bludgeoning.strike.one-hand.01",
+            },
+            name: {
+              connection: "OVXBEp6GUMSvvoJd:outputs:entry",
+            },
           },
         },
         {
           type: "snd-location",
           state: "atLocation",
           inputs: {
-            sound: { connection: "PIHuQ9JqU3jU9pFn:outputs:sound" },
-            location: { connection: "fbm2LzFz8CkMIFj0:outputs:entry" },
-            moveTowards: { connection: "w3pm41EWFDdIvWDa:outputs:entry" },
+            sound: {
+              connection: "PIHuQ9JqU3jU9pFn:outputs:sound",
+            },
+            location: {
+              connection: "fbm2LzFz8CkMIFj0:outputs:entry",
+            },
+            moveTowards: {
+              connection: "w3pm41EWFDdIvWDa:outputs:entry",
+            },
           },
-          position: { x: 4345.793740749154, y: 256.24390737407987 },
+          position: {
+            x: 3569.1270740824866,
+            y: 256.24390737407987,
+          },
           id: "XWX7h631k8nJJLXn",
         },
         {
           type: "module-enabled",
-          position: { x: 2163.883484338895, y: 303.9748597550318 },
+          position: {
+            x: 1387.2168176722282,
+            y: 303.9748597550318,
+          },
           id: "AaVVeHGGI1FkzXM3",
-          inputs: { module: { value: "jb2a_patreon" } },
+          inputs: {
+            module: {
+              value: "jb2a_patreon",
+            },
+          },
           outs: {
-            true: { connection: "TzKwbDIPyj9I1mtK:ins:in" },
-            false: { connection: "IfSNHkoJoogWicjG:ins:in" },
+            true: {
+              connection: "TzKwbDIPyj9I1mtK:ins:in",
+            },
+            false: {
+              connection: "IfSNHkoJoogWicjG:ins:in",
+            },
           },
         },
         {
           type: "snd-flow",
           inputs: {
-            preset: { value: "troveSound" },
-            sound: { connection: "PIHuQ9JqU3jU9pFn:outputs:sound" },
+            preset: {
+              value: "troveSound",
+            },
+            sound: {
+              connection: "PIHuQ9JqU3jU9pFn:outputs:sound",
+            },
           },
-          position: { x: 4071.9842169396284, y: 266.4748597550319 },
+          position: {
+            x: 3295.317550272962,
+            y: 266.4748597550319,
+          },
           id: "cpmszTokwCu7umXl",
-          outs: { out: { connection: "XWX7h631k8nJJLXn:ins:in" } },
+          outs: {
+            out: {
+              connection: "XWX7h631k8nJJLXn:ins:in",
+            },
+          },
         },
         {
           type: "play",
-          position: { x: 1624.5457875457878, y: 469.4010989010992 },
+          position: {
+            x: 847.879120879121,
+            y: 469.4010989010992,
+          },
           id: "Ym0mBKXartUQFfo6",
-          inputs: { preload: { value: true }, local: { value: true } },
+          inputs: {
+            preload: {
+              value: true,
+            },
+            local: {
+              value: true,
+            },
+          },
         },
         {
           inputs: {
-            entry: { connection: "rovM5Um9QTKwvnmr:outputs:lylXn7hFsJOv3Mgi" },
+            entry: {
+              connection: "rovM5Um9QTKwvnmr:outputs:lylXn7hFsJOv3Mgi",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 1439.6227106227109, y: 151.65109890109932 },
+          position: {
+            x: 662.9560439560441,
+            y: 151.65109890109932,
+          },
           id: "R7arc5sxTgZrTWxR",
         },
         {
           inputs: {
-            entry: { connection: "rovM5Um9QTKwvnmr:outputs:vzqXlHQsYSrIYLDu" },
+            entry: {
+              connection: "rovM5Um9QTKwvnmr:outputs:vzqXlHQsYSrIYLDu",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 1436.8727106227109, y: 105.15109890109932 },
+          position: {
+            x: 660.2060439560441,
+            y: 105.15109890109932,
+          },
           id: "CaVXFXqPTjvZEKDS",
         },
         {
           inputs: {
-            entry: { connection: "8wTEhq8YlQlBHz5w:outputs:5vNzigzyUsahAVwG" },
+            entry: {
+              connection: "8wTEhq8YlQlBHz5w:outputs:5vNzigzyUsahAVwG",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 2579.7060439560437, y: 609.0677655677658 },
+          position: {
+            x: 1803.039377289377,
+            y: 609.0677655677658,
+          },
           id: "lHMKkkylgxmWplyi",
         },
         {
           inputs: {
-            entry: { connection: "rovM5Um9QTKwvnmr:outputs:vzqXlHQsYSrIYLDu" },
+            entry: {
+              connection: "rovM5Um9QTKwvnmr:outputs:vzqXlHQsYSrIYLDu",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 3599.0393772893767, y: 217.98443223443246 },
+          position: {
+            x: 2822.3727106227097,
+            y: 217.98443223443246,
+          },
           id: "OVXBEp6GUMSvvoJd",
         },
         {
           inputs: {
-            entry: { connection: "YexGxJsBKGIWEQTx:outputs:source" },
+            entry: {
+              connection: "YexGxJsBKGIWEQTx:outputs:source",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 4195.289377289377, y: 170.48443223443223 },
+          position: {
+            x: 3418.6227106227097,
+            y: 170.48443223443223,
+          },
           id: "fbm2LzFz8CkMIFj0",
         },
         {
           inputs: {
-            entry: { connection: "YexGxJsBKGIWEQTx:outputs:target" },
+            entry: {
+              connection: "YexGxJsBKGIWEQTx:outputs:target",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 4196.5393772893785, y: 221.73443223443223 },
+          position: {
+            x: 3419.8727106227116,
+            y: 221.73443223443223,
+          },
           id: "w3pm41EWFDdIvWDa",
         },
         {
           inputs: {
-            entry: { connection: "YexGxJsBKGIWEQTx:outputs:source" },
+            entry: {
+              connection: "YexGxJsBKGIWEQTx:outputs:source",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 1765, y: 115 },
+          position: {
+            x: 988.3333333333333,
+            y: 115,
+          },
           id: "fH6JJnJ0Gr8cUe6v",
         },
         {
           inputs: {
-            entry: { connection: "YexGxJsBKGIWEQTx:outputs:target" },
+            entry: {
+              connection: "YexGxJsBKGIWEQTx:outputs:target",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 2853, y: 355 },
+          position: {
+            x: 2076.333333333333,
+            y: 355,
+          },
           id: "5s1QHqqPNkPWrGPF",
         },
         {
           type: "sprite",
           inputs: {
-            effect: { connection: "NkLAZY3xuHhbK1va:outputs:effect" },
-            anchor: { value: { x: 0.4, y: 0.5 } },
+            effect: {
+              connection: "NkLAZY3xuHhbK1va:outputs:effect",
+            },
+            anchor: {
+              value: {
+                x: 0.4,
+                y: 0.5,
+              },
+            },
           },
-          position: { x: 3527.6666666666665, y: 267.58333333333337 },
+          position: {
+            x: 2751,
+            y: 267.58333333333337,
+          },
           id: "JtJf29da99o1XRT0",
-          outs: { out: { connection: "PIHuQ9JqU3jU9pFn:ins:in" } },
+          outs: {
+            out: {
+              connection: "PIHuQ9JqU3jU9pFn:ins:in",
+            },
+          },
         },
       ],
       variables: {
@@ -304,7 +542,7 @@ export const TEMPLATES = {
         {
           id: "sD5QLr9chLwsgYP0",
           position: {
-            x: 400,
+            x: 0,
             y: 200,
           },
           type: "animation-event",
@@ -333,7 +571,7 @@ export const TEMPLATES = {
         {
           type: "effect",
           position: {
-            x: 1262,
+            x: 862,
             y: 174.00000000000003,
           },
           id: "TL6Kk0Guclu1NlBV",
@@ -354,7 +592,7 @@ export const TEMPLATES = {
         {
           type: "extract-item",
           position: {
-            x: 666.6270584270708,
+            x: 266.6270584270708,
             y: 211.9748704766734,
           },
           id: "BICKtjzghPrfTlag",
@@ -413,7 +651,7 @@ export const TEMPLATES = {
             },
           },
           position: {
-            x: 1562.944537280197,
+            x: 1162.944537280197,
             y: 180.7147974908261,
           },
           id: "frVQ1YLrlHRC7cgZ",
@@ -434,7 +672,7 @@ export const TEMPLATES = {
             },
           },
           position: {
-            x: 2114.9895198537656,
+            x: 1714.9895198537656,
             y: 370.72629695652535,
           },
           id: "NYLUOwTBE86sbAAN",
@@ -459,7 +697,7 @@ export const TEMPLATES = {
             },
           },
           position: {
-            x: 2631.7078216311756,
+            x: 2231.7078216311756,
             y: 217.30341440077945,
           },
           id: "yu0XYNgzYqBCfSWA",
@@ -472,7 +710,7 @@ export const TEMPLATES = {
         {
           type: "massloop",
           position: {
-            x: 910.8772781417796,
+            x: 510.8772781417796,
             y: 199.61375672504948,
           },
           id: "4EhKePoFthjKy3cs",
@@ -496,7 +734,7 @@ export const TEMPLATES = {
         {
           type: "list-contains",
           position: {
-            x: 2381.7728062205547,
+            x: 1981.7728062205547,
             y: 536.3810262735778,
           },
           id: "omRRQdzdSOZWwuhL",
@@ -518,7 +756,7 @@ export const TEMPLATES = {
         {
           type: "list-value",
           position: {
-            x: 2112.4683433621,
+            x: 1712.4683433620999,
             y: 553.3518349409073,
           },
           id: "uDOziod19pariep8",
@@ -539,7 +777,7 @@ export const TEMPLATES = {
             },
           },
           position: {
-            x: 2137.1323769966225,
+            x: 1737.1323769966225,
             y: 167.6905826708114,
           },
           id: "iyqWsmhi545zAExD",
@@ -552,7 +790,7 @@ export const TEMPLATES = {
         {
           type: "sound",
           position: {
-            x: 2957.7406271960385,
+            x: 2557.7406271960385,
             y: 204.57009785026992,
           },
           id: "97SXbZXscrpeD7WA",
@@ -585,7 +823,7 @@ export const TEMPLATES = {
             },
           },
           position: {
-            x: 3538.8889788443907,
+            x: 3138.8889788443907,
             y: 191.00581213598468,
           },
           id: "ODMkXdITR36KIePK",
@@ -593,7 +831,7 @@ export const TEMPLATES = {
         {
           type: "module-enabled",
           position: {
-            x: 1796.1057065611171,
+            x: 1396.1057065611171,
             y: 329.5304153105873,
           },
           id: "YHgqJBEw4ewjlVbn",
@@ -614,13 +852,15 @@ export const TEMPLATES = {
         {
           type: "snd-flow",
           inputs: {
-            preset: { value: "troveSound" },
+            preset: {
+              value: "troveSound",
+            },
             sound: {
               connection: "97SXbZXscrpeD7WA:outputs:sound",
             },
           },
           position: {
-            x: 3265.079455034866,
+            x: 2865.079455034866,
             y: 201.23676451693672,
           },
           id: "etvO5APwEvxn3FVb",
@@ -633,7 +873,7 @@ export const TEMPLATES = {
         {
           type: "play",
           position: {
-            x: 1247.879120879121,
+            x: 847.879120879121,
             y: 464.4010989010992,
           },
           id: "61SLPk5LsvmqYweA",
@@ -654,7 +894,7 @@ export const TEMPLATES = {
           },
           type: "__variable_getter__",
           position: {
-            x: 1062.9560439560441,
+            x: 662.9560439560441,
             y: 146.65109890109932,
           },
           id: "LpJwIxyivaGp48CE",
@@ -667,7 +907,7 @@ export const TEMPLATES = {
           },
           type: "__variable_getter__",
           position: {
-            x: 1060.2060439560441,
+            x: 660.2060439560441,
             y: 100.15109890109937,
           },
           id: "t3n1vzU9Sonva5Mc",
@@ -680,7 +920,7 @@ export const TEMPLATES = {
           },
           type: "__variable_getter__",
           position: {
-            x: 2211.928266178266,
+            x: 1811.9282661782659,
             y: 634.6233211233214,
           },
           id: "eVHmrAaG4xUHGddD",
@@ -693,7 +933,7 @@ export const TEMPLATES = {
           },
           type: "__variable_getter__",
           position: {
-            x: 2792.1346153846152,
+            x: 2392.1346153846152,
             y: 152.74633699633722,
           },
           id: "v0KHPwdKpnShQbRb",
@@ -706,7 +946,7 @@ export const TEMPLATES = {
           },
           type: "__variable_getter__",
           position: {
-            x: 3388.3846153846157,
+            x: 2988.3846153846157,
             y: 105.24633699633705,
           },
           id: "LrDNrzgvrkwQwaAZ",
@@ -719,7 +959,7 @@ export const TEMPLATES = {
           },
           type: "__variable_getter__",
           position: {
-            x: 3389.6346153846157,
+            x: 2989.6346153846157,
             y: 156.49633699633705,
           },
           id: "8ccAMi6y0gAlcfEi",
@@ -732,7 +972,7 @@ export const TEMPLATES = {
           },
           type: "__variable_getter__",
           position: {
-            x: 2476.3055555555557,
+            x: 2076.3055555555557,
             y: 312.38888888888886,
           },
           id: "uIm1VuMI8DQXndrY",
@@ -745,7 +985,7 @@ export const TEMPLATES = {
           },
           type: "__variable_getter__",
           position: {
-            x: 1431.3055555555557,
+            x: 1031.3055555555557,
             y: 331.13888888888886,
           },
           id: "ulCo0tE3TtIj0s6j",
@@ -785,29 +1025,54 @@ export const TEMPLATES = {
       nodes: [
         {
           id: "RWkTDI8KX9daXKmq",
-          position: { x: 400, y: 200 },
+          position: {
+            x: 0,
+            y: 200,
+          },
           type: "animation-event",
-          inputs: { name: { value: "placeholder-trigger-names" } },
-          outs: { out: { connection: "fF2EUOdVTJSYteiy:ins:in" } },
+          inputs: {
+            name: {
+              value: "placeholder-trigger-names",
+            },
+          },
+          outs: {
+            out: {
+              connection: "fF2EUOdVTJSYteiy:ins:in",
+            },
+          },
         },
         {
           type: "effect",
-          position: { x: 903.7802197802198, y: 207.6428571428571 },
+          position: {
+            x: 503.7802197802198,
+            y: 207.6428571428571,
+          },
           id: "quYK1EhOWo7l6wYA",
           inputs: {
-            name: { connection: "fF2EUOdVTJSYteiy:outputs:CeT1iScTWZn5MvJb" },
+            name: {
+              connection: "fF2EUOdVTJSYteiy:outputs:CeT1iScTWZn5MvJb",
+            },
             origin: {
               connection: "fF2EUOdVTJSYteiy:outputs:TvRpMNEZ8cCGgRkf",
             },
           },
-          outs: { out: { connection: "EH2cKNR2bjgxpZ74:ins:in" } },
+          outs: {
+            out: {
+              connection: "EH2cKNR2bjgxpZ74:ins:in",
+            },
+          },
         },
         {
           type: "extract-item",
           inputs: {
-            input: { connection: "RWkTDI8KX9daXKmq:outputs:item" },
+            input: {
+              connection: "RWkTDI8KX9daXKmq:outputs:item",
+            },
           },
-          position: { x: 671, y: 221.14999999999998 },
+          position: {
+            x: 271,
+            y: 221.14999999999998,
+          },
           id: "fF2EUOdVTJSYteiy",
           custom: {
             outputs: {
@@ -829,143 +1094,275 @@ export const TEMPLATES = {
               },
             },
           },
-          outs: { out: { connection: "quYK1EhOWo7l6wYA:ins:in" } },
+          outs: {
+            out: {
+              connection: "quYK1EhOWo7l6wYA:ins:in",
+            },
+          },
         },
         {
           type: "file",
           inputs: {
-            effect: { connection: "quYK1EhOWo7l6wYA:outputs:effect" },
-            file: { value: "jb2a.markers.music_note.blue.01" },
+            effect: {
+              connection: "quYK1EhOWo7l6wYA:outputs:effect",
+            },
+            file: {
+              value: "jb2a.markers.music_note.blue.01",
+            },
           },
-          position: { x: 1188.1428571428573, y: 203.5357142857144 },
+          position: {
+            x: 788.1428571428573,
+            y: 203.5357142857144,
+          },
           id: "EH2cKNR2bjgxpZ74",
-          outs: { out: { connection: "XejUIp8hRREr9wu4:ins:in" } },
+          outs: {
+            out: {
+              connection: "XejUIp8hRREr9wu4:ins:in",
+            },
+          },
         },
         {
           type: "scale",
           state: "object",
           inputs: {
-            effect: { connection: "quYK1EhOWo7l6wYA:outputs:effect" },
-            objectScale: { value: 2 },
+            effect: {
+              connection: "quYK1EhOWo7l6wYA:outputs:effect",
+            },
+            objectScale: {
+              value: 2,
+            },
           },
-          position: { x: 1403.857142857143, y: 205.7214285714286 },
+          position: {
+            x: 1003.8571428571429,
+            y: 205.7214285714286,
+          },
           id: "XejUIp8hRREr9wu4",
-          outs: { out: { connection: "38E0ukS2mMSLevKw:ins:in" } },
+          outs: {
+            out: {
+              connection: "38E0ukS2mMSLevKw:ins:in",
+            },
+          },
         },
         {
           type: "location",
           state: "targets",
           inputs: {
-            effect: { connection: "quYK1EhOWo7l6wYA:outputs:effect" },
-            location: { connection: "o0rDA0wJYwrg5gWM:outputs:entry" },
-            attachTo: { value: true },
+            effect: {
+              connection: "quYK1EhOWo7l6wYA:outputs:effect",
+            },
+            location: {
+              connection: "o0rDA0wJYwrg5gWM:outputs:entry",
+            },
+            attachTo: {
+              value: true,
+            },
           },
-          position: { x: 1639.5714285714284, y: 198.57857142857142 },
+          position: {
+            x: 1239.5714285714284,
+            y: 198.57857142857142,
+          },
           id: "38E0ukS2mMSLevKw",
-          outs: { out: { connection: "KhBfP4xNtsh37VeJ:ins:in" } },
+          outs: {
+            out: {
+              connection: "KhBfP4xNtsh37VeJ:ins:in",
+            },
+          },
         },
         {
           inputs: {
-            entry: { connection: "RWkTDI8KX9daXKmq:outputs:sources" },
+            entry: {
+              connection: "RWkTDI8KX9daXKmq:outputs:sources",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 1507, y: 152.4285714285714 },
+          position: {
+            x: 1107,
+            y: 152.4285714285714,
+          },
           id: "o0rDA0wJYwrg5gWM",
         },
         {
           type: "get-quality",
-          position: { x: 2155.208791208791, y: 194.2142857142856 },
+          position: {
+            x: 1755.208791208791,
+            y: 194.2142857142856,
+          },
           id: "TNEciIEV7qF0b0rb",
           outs: {
-            high: { connection: "1t29JfFb2lRwQqTu:ins:in" },
-            medium: { connection: "VXcMKxYVnVYA7ES4:ins:in" },
-            minimal: { connection: "VXcMKxYVnVYA7ES4:ins:in" },
-            low: { connection: "VXcMKxYVnVYA7ES4:ins:in" },
+            high: {
+              connection: "1t29JfFb2lRwQqTu:ins:in",
+            },
+            medium: {
+              connection: "VXcMKxYVnVYA7ES4:ins:in",
+            },
+            minimal: {
+              connection: "VXcMKxYVnVYA7ES4:ins:in",
+            },
+            low: {
+              connection: "VXcMKxYVnVYA7ES4:ins:in",
+            },
           },
         },
         {
           type: "persist",
           inputs: {
-            effect: { connection: "quYK1EhOWo7l6wYA:outputs:effect" },
+            effect: {
+              connection: "quYK1EhOWo7l6wYA:outputs:effect",
+            },
             tieTo: {
               connection: "fF2EUOdVTJSYteiy:outputs:TvRpMNEZ8cCGgRkf",
             },
-            tieToDocs: { connection: "SlKaLTZXP3h139rF:outputs:entry" },
-            extraEndDuration: { value: 250 },
+            tieToDocs: {
+              connection: "SlKaLTZXP3h139rF:outputs:entry",
+            },
+            extraEndDuration: {
+              value: 250,
+            },
           },
-          position: { x: 2395.2857142857138, y: 314.25000000000006 },
+          position: {
+            x: 1995.2857142857138,
+            y: 314.25000000000006,
+          },
           id: "1t29JfFb2lRwQqTu",
-          outs: { out: { connection: "VXcMKxYVnVYA7ES4:ins:in" } },
+          outs: {
+            out: {
+              connection: "VXcMKxYVnVYA7ES4:ins:in",
+            },
+          },
         },
         {
           inputs: {
-            entry: { connection: "RWkTDI8KX9daXKmq:outputs:sources" },
+            entry: {
+              connection: "RWkTDI8KX9daXKmq:outputs:sources",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 2219.857142857143, y: 138.85714285714278 },
+          position: {
+            x: 1819.8571428571431,
+            y: 138.85714285714278,
+          },
           id: "SlKaLTZXP3h139rF",
         },
         {
           type: "visibility",
-          position: { x: 1861.9945054945053, y: 194.74999999999994 },
+          position: {
+            x: 1461.9945054945053,
+            y: 194.74999999999994,
+          },
           id: "KhBfP4xNtsh37VeJ",
           inputs: {
-            effect: { connection: "quYK1EhOWo7l6wYA:outputs:effect" },
-            fadeOutDuration: { value: 250 },
-            fadeInDuration: { value: 250 },
+            effect: {
+              connection: "quYK1EhOWo7l6wYA:outputs:effect",
+            },
+            fadeOutDuration: {
+              value: 250,
+            },
+            fadeInDuration: {
+              value: 250,
+            },
           },
-          outs: { out: { connection: "TNEciIEV7qF0b0rb:ins:in" } },
+          outs: {
+            out: {
+              connection: "TNEciIEV7qF0b0rb:ins:in",
+            },
+          },
         },
         {
           type: "sound",
-          position: { x: 2731.9945054945056, y: 192.24999999999994 },
+          position: {
+            x: 2331.9945054945056,
+            y: 192.24999999999994,
+          },
           id: "VXcMKxYVnVYA7ES4",
           inputs: {
-            file: { value: "ggg-sfx.magic.arcane.buff.general.03" },
-            name: { connection: "rhFLaERbRr2L6JbS:outputs:entry" },
+            file: {
+              value: "ggg-sfx.magic.arcane.buff.general.03",
+            },
+            name: {
+              connection: "rhFLaERbRr2L6JbS:outputs:entry",
+            },
           },
-          outs: { out: { connection: "1APOi7zogh1cmtj1:ins:in" } },
+          outs: {
+            out: {
+              connection: "1APOi7zogh1cmtj1:ins:in",
+            },
+          },
         },
         {
           inputs: {
-            entry: { connection: "fF2EUOdVTJSYteiy:outputs:CeT1iScTWZn5MvJb" },
+            entry: {
+              connection: "fF2EUOdVTJSYteiy:outputs:CeT1iScTWZn5MvJb",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 2570.5714285714284, y: 143.24999999999994 },
+          position: {
+            x: 2170.5714285714284,
+            y: 143.24999999999994,
+          },
           id: "rhFLaERbRr2L6JbS",
         },
         {
           type: "snd-location",
           state: "atLocation",
           inputs: {
-            sound: { connection: "VXcMKxYVnVYA7ES4:outputs:sound" },
-            location: { connection: "4HEadgLNOrDYGYsW:outputs:entry" },
+            sound: {
+              connection: "VXcMKxYVnVYA7ES4:outputs:sound",
+            },
+            location: {
+              connection: "4HEadgLNOrDYGYsW:outputs:entry",
+            },
           },
-          position: { x: 3030.8214285714284, y: 193.39999999999998 },
+          position: {
+            x: 2630.8214285714284,
+            y: 193.39999999999998,
+          },
           id: "1APOi7zogh1cmtj1",
-          outs: { out: { connection: "bicl81oqFkM3yZc2:ins:in" } },
+          outs: {
+            out: {
+              connection: "bicl81oqFkM3yZc2:ins:in",
+            },
+          },
         },
         {
           inputs: {
-            entry: { connection: "RWkTDI8KX9daXKmq:outputs:sources" },
+            entry: {
+              connection: "RWkTDI8KX9daXKmq:outputs:sources",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 2875.5714285714284, y: 137.24999999999994 },
+          position: {
+            x: 2475.5714285714284,
+            y: 137.24999999999994,
+          },
           id: "4HEadgLNOrDYGYsW",
         },
         {
           type: "snd-flow",
           inputs: {
-            sound: { connection: "VXcMKxYVnVYA7ES4:outputs:sound" },
-            preset: { value: "troveSound" },
+            sound: {
+              connection: "VXcMKxYVnVYA7ES4:outputs:sound",
+            },
+            preset: {
+              value: "troveSound",
+            },
           },
-          position: { x: 3265.8214285714284, y: 192.9999999999999 },
+          position: {
+            x: 2865.8214285714284,
+            y: 192.9999999999999,
+          },
           id: "bicl81oqFkM3yZc2",
-          outs: { out: { connection: "PgvfXwA2HtuQCXdg:ins:in" } },
+          outs: {
+            out: {
+              connection: "PgvfXwA2HtuQCXdg:ins:in",
+            },
+          },
         },
         {
           type: "play",
-          position: { x: 3549.8278388278386, y: 195.50000000000006 },
+          position: {
+            x: 3149.8278388278386,
+            y: 195.50000000000006,
+          },
           id: "PgvfXwA2HtuQCXdg",
           inputs: {
             preload: {
@@ -996,27 +1393,54 @@ export const TEMPLATES = {
       nodes: [
         {
           id: "4tBJGISpCfMWS66X",
-          position: { x: -3076.857142857143, y: 206.28571428571365 },
+          position: {
+            x: 3076.857142857143,
+            y: 206.28571428571365,
+          },
           type: "animation-event",
-          inputs: { name: { value: "placeholder-trigger-names" } },
-          outs: { out: { connection: "hKxoCifZlHGTfs7q:ins:in" } },
+          inputs: {
+            name: {
+              value: "placeholder-trigger-names",
+            },
+          },
+          outs: {
+            out: {
+              connection: "hKxoCifZlHGTfs7q:ins:in",
+            },
+          },
         },
         {
           type: "effect",
-          position: { x: 945.7802197802198, y: 189.6428571428571 },
+          position: {
+            x: 7099.494505494506,
+            y: 189.6428571428571,
+          },
           id: "gVixIsQVmAcLcDi5",
           inputs: {
-            name: { connection: "nSkmkTWQHrwHue9o:outputs:entry" },
-            origin: { connection: "8j5vnnt9DYeNuubp:outputs:entry" },
+            name: {
+              connection: "nSkmkTWQHrwHue9o:outputs:entry",
+            },
+            origin: {
+              connection: "8j5vnnt9DYeNuubp:outputs:entry",
+            },
           },
-          outs: { out: { connection: "zzFDdCYhYDv3XhRO:ins:in" } },
+          outs: {
+            out: {
+              connection: "zzFDdCYhYDv3XhRO:ins:in",
+            },
+          },
         },
         {
           type: "extract-item",
           inputs: {
-            input: { connection: "4tBJGISpCfMWS66X:outputs:item" },
+            input: {
+              connection: "4tBJGISpCfMWS66X:outputs:item",
+            },
           },
-          position: { x: -2804.904761904763, y: 247.91190476190422 },
+          position: {
+            x: 3348.8095238095234,
+            y: 247.91190476190422,
+          },
           id: "hKxoCifZlHGTfs7q",
           custom: {
             outputs: {
@@ -1038,220 +1462,416 @@ export const TEMPLATES = {
               },
             },
           },
-          outs: { out: { connection: "H7mMrCDDpilsYLWT:ins:in" } },
+          outs: {
+            out: {
+              connection: "H7mMrCDDpilsYLWT:ins:in",
+            },
+          },
         },
         {
           type: "scale",
           state: "object",
           inputs: {
-            effect: { connection: "gVixIsQVmAcLcDi5:outputs:effect" },
-            objectScale: { value: 1.5 },
+            effect: {
+              connection: "gVixIsQVmAcLcDi5:outputs:effect",
+            },
+            objectScale: {
+              value: 1.5,
+            },
           },
-          position: { x: 1947.285714285714, y: 179.14999999999964 },
+          position: {
+            x: 8101,
+            y: 179.14999999999964,
+          },
           id: "0M9U6hdrZ1VRCpkn",
-          outs: { out: { connection: "xUQbSrxyrsQXZvHW:ins:in" } },
+          outs: {
+            out: {
+              connection: "xUQbSrxyrsQXZvHW:ins:in",
+            },
+          },
         },
         {
           type: "location",
           state: "targets",
           inputs: {
-            effect: { connection: "gVixIsQVmAcLcDi5:outputs:effect" },
-            attachTo: { value: true },
-            location: { connection: "JIun2ueu6n9Tfvd7:outputs:entry" },
+            effect: {
+              connection: "gVixIsQVmAcLcDi5:outputs:effect",
+            },
+            attachTo: {
+              value: true,
+            },
+            location: {
+              connection: "JIun2ueu6n9Tfvd7:outputs:entry",
+            },
           },
-          position: { x: 2183, y: 172.00714285714253 },
+          position: {
+            x: 8336.714285714286,
+            y: 172.00714285714253,
+          },
           id: "xUQbSrxyrsQXZvHW",
         },
         {
           type: "sound",
-          position: { x: -238.67216117216117, y: 191.91666666666652 },
+          position: {
+            x: 5915.042124542125,
+            y: 191.91666666666652,
+          },
           id: "oQtPIBlNrY0TAuoL",
           inputs: {
-            file: { value: "ggg-sfx.magic.arcane.cast.general.02" },
-            name: { connection: "mdUfkgFh5gcnju6W:outputs:entry" },
+            file: {
+              value: "ggg-sfx.magic.arcane.cast.general.02",
+            },
+            name: {
+              connection: "mdUfkgFh5gcnju6W:outputs:entry",
+            },
           },
-          outs: { out: { connection: "5UVNe71FW6ieh52C:ins:in" } },
+          outs: {
+            out: {
+              connection: "5UVNe71FW6ieh52C:ins:in",
+            },
+          },
         },
         {
           inputs: {
-            entry: { connection: "hKxoCifZlHGTfs7q:outputs:0O36ShxaMq7mdmfp" },
+            entry: {
+              connection: "hKxoCifZlHGTfs7q:outputs:0O36ShxaMq7mdmfp",
+            },
           },
           type: "__variable_getter__",
-          position: { x: -349.1428571428564, y: 280.10714285714243 },
+          position: {
+            x: 5804.571428571429,
+            y: 280.10714285714243,
+          },
           id: "mdUfkgFh5gcnju6W",
         },
         {
           type: "snd-location",
           state: "atLocation",
           inputs: {
-            sound: { connection: "oQtPIBlNrY0TAuoL:outputs:sound" },
-            location: { connection: "NVXncGpsG35aNu6Z:outputs:entry" },
-            exitOnEmpty: { value: "global" },
+            sound: {
+              connection: "oQtPIBlNrY0TAuoL:outputs:sound",
+            },
+            location: {
+              connection: "NVXncGpsG35aNu6Z:outputs:entry",
+            },
+            exitOnEmpty: {
+              value: "global",
+            },
           },
-          position: { x: 56.1547619047617, y: 195.0666666666666 },
+          position: {
+            x: 6209.869047619048,
+            y: 195.0666666666666,
+          },
           id: "5UVNe71FW6ieh52C",
-          outs: { out: { connection: "GSe9nUVgTDjclsF1:ins:in" } },
+          outs: {
+            out: {
+              connection: "GSe9nUVgTDjclsF1:ins:in",
+            },
+          },
         },
         {
           type: "snd-flow",
           inputs: {
-            sound: { connection: "oQtPIBlNrY0TAuoL:outputs:sound" },
-            preset: { value: "troveSound" },
+            sound: {
+              connection: "oQtPIBlNrY0TAuoL:outputs:sound",
+            },
+            preset: {
+              value: "troveSound",
+            },
           },
-          position: { x: 299.1547619047617, y: 192.66666666666652 },
+          position: {
+            x: 6452.869047619048,
+            y: 192.66666666666652,
+          },
           id: "GSe9nUVgTDjclsF1",
-          outs: { out: { connection: "UlMG5AveQzx1U8Ms:ins:in" } },
+          outs: {
+            out: {
+              connection: "UlMG5AveQzx1U8Ms:ins:in",
+            },
+          },
         },
         {
           type: "massloop",
-          position: { x: 601.8571428571427, y: 203.1428571428571 },
+          position: {
+            x: 6755.571428571429,
+            y: 203.1428571428571,
+          },
           id: "UlMG5AveQzx1U8Ms",
           inputs: {
-            targets: { connection: "mTFBHnzKnBeV2Qjm:outputs:entry" },
-            sources: { connection: "7xU7e6DNZVurEJFe:outputs:entry" },
+            targets: {
+              connection: "mTFBHnzKnBeV2Qjm:outputs:entry",
+            },
+            sources: {
+              connection: "7xU7e6DNZVurEJFe:outputs:entry",
+            },
           },
           outs: {
-            out: { connection: "gVixIsQVmAcLcDi5:ins:in" },
-            outAfter: { connection: "4osouwiFTLaHHJDM:ins:in" },
+            out: {
+              connection: "gVixIsQVmAcLcDi5:ins:in",
+            },
+            outAfter: {
+              connection: "4osouwiFTLaHHJDM:ins:in",
+            },
           },
         },
         {
           type: "play",
-          position: { x: 941.7802197802196, y: 413.92857142857133 },
+          position: {
+            x: 7095.494505494506,
+            y: 413.92857142857133,
+          },
           id: "4osouwiFTLaHHJDM",
-          inputs: { local: { value: true } },
+          inputs: {
+            local: {
+              value: true,
+            },
+          },
         },
         {
           type: "get-quality",
-          position: { x: -2535.1245421245417, y: 218.35714285714243 },
+          position: {
+            x: 3618.5897435897446,
+            y: 218.35714285714243,
+          },
           id: "H7mMrCDDpilsYLWT",
           outs: {
-            low: { connection: "ES8oKsgK9yiexhgr:ins:in" },
-            medium: { connection: "ES8oKsgK9yiexhgr:ins:in" },
-            high: { connection: "ES8oKsgK9yiexhgr:ins:in" },
-            minimal: { connection: "oQtPIBlNrY0TAuoL:ins:in" },
+            low: {
+              connection: "ES8oKsgK9yiexhgr:ins:in",
+            },
+            medium: {
+              connection: "ES8oKsgK9yiexhgr:ins:in",
+            },
+            high: {
+              connection: "ES8oKsgK9yiexhgr:ins:in",
+            },
+            minimal: {
+              connection: "oQtPIBlNrY0TAuoL:ins:in",
+            },
           },
         },
         {
           inputs: {
-            entry: { connection: "4tBJGISpCfMWS66X:outputs:sources" },
+            entry: {
+              connection: "4tBJGISpCfMWS66X:outputs:sources",
+            },
           },
           type: "__variable_getter__",
-          position: { x: -79.66666666666674, y: 131.09523809523785 },
+          position: {
+            x: 6074.047619047619,
+            y: 131.09523809523785,
+          },
           id: "NVXncGpsG35aNu6Z",
         },
         {
           inputs: {
-            entry: { connection: "UlMG5AveQzx1U8Ms:outputs:target" },
+            entry: {
+              connection: "UlMG5AveQzx1U8Ms:outputs:target",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 2042.7619047619044, y: 120.52380952380918 },
+          position: {
+            x: 8196.47619047619,
+            y: 120.52380952380918,
+          },
           id: "JIun2ueu6n9Tfvd7",
         },
         {
           type: "effect",
-          position: { x: -2260.190476190476, y: 290.66666666666623 },
+          position: {
+            x: 3893.52380952381,
+            y: 290.66666666666623,
+          },
           id: "ES8oKsgK9yiexhgr",
           inputs: {
-            origin: { connection: "z2EFNeufiuo3n9b7:outputs:entry" },
-            name: { connection: "J82NbTzlUo59CQWn:outputs:entry" },
+            origin: {
+              connection: "z2EFNeufiuo3n9b7:outputs:entry",
+            },
+            name: {
+              connection: "J82NbTzlUo59CQWn:outputs:entry",
+            },
           },
-          outs: { out: { connection: "nTF5XslHy1r93OyL:ins:in" } },
+          outs: {
+            out: {
+              connection: "nTF5XslHy1r93OyL:ins:in",
+            },
+          },
         },
         {
           type: "file",
           inputs: {
-            effect: { connection: "ES8oKsgK9yiexhgr:outputs:effect" },
+            effect: {
+              connection: "ES8oKsgK9yiexhgr:outputs:effect",
+            },
             file: {
               value: "jb2a.on_token_cast.initiate.001.instant.combined.blue.1",
             },
           },
-          position: { x: -1604.7802197802207, y: 278.03571428571394 },
+          position: {
+            x: 4548.934065934065,
+            y: 278.03571428571394,
+          },
           id: "MqlmEXvYfV5r7f3D",
-          outs: { out: { connection: "QWQcaiulCYpPWe34:ins:in" } },
+          outs: {
+            out: {
+              connection: "QWQcaiulCYpPWe34:ins:in",
+            },
+          },
         },
         {
           type: "scale",
           state: "object",
           inputs: {
-            effect: { connection: "ES8oKsgK9yiexhgr:outputs:effect" },
-            objectScale: { value: 1.5 },
+            effect: {
+              connection: "ES8oKsgK9yiexhgr:outputs:effect",
+            },
+            objectScale: {
+              value: 1.5,
+            },
           },
-          position: { x: -1350.4945054945067, y: 281.12619047618966 },
+          position: {
+            x: 4803.21978021978,
+            y: 281.12619047618966,
+          },
           id: "QWQcaiulCYpPWe34",
-          outs: { out: { connection: "9I0LwMT281lIAPws:ins:in" } },
+          outs: {
+            out: {
+              connection: "9I0LwMT281lIAPws:ins:in",
+            },
+          },
         },
         {
           type: "location",
           state: "targets",
           inputs: {
-            effect: { connection: "ES8oKsgK9yiexhgr:outputs:effect" },
-            attachTo: { value: true },
-            location: { connection: "HM3BEMOfccqm0f4D:outputs:entry" },
+            effect: {
+              connection: "ES8oKsgK9yiexhgr:outputs:effect",
+            },
+            attachTo: {
+              value: true,
+            },
+            location: {
+              connection: "HM3BEMOfccqm0f4D:outputs:entry",
+            },
           },
-          position: { x: -1087.6373626373638, y: 279.69761904761856 },
+          position: {
+            x: 5066.076923076922,
+            y: 279.69761904761856,
+          },
           id: "9I0LwMT281lIAPws",
-          outs: { out: { connection: "vGDiVg0hF3fPImfH:ins:in" } },
+          outs: {
+            out: {
+              connection: "vGDiVg0hF3fPImfH:ins:in",
+            },
+          },
         },
         {
           inputs: {
-            entry: { connection: "hKxoCifZlHGTfs7q:outputs:bjHi4atunFZHuJZ6" },
+            entry: {
+              connection: "hKxoCifZlHGTfs7q:outputs:bjHi4atunFZHuJZ6",
+            },
           },
           type: "__variable_getter__",
-          position: { x: -2435.9047619047615, y: 175.73412698412665 },
+          position: {
+            x: 3717.8095238095248,
+            y: 175.73412698412665,
+          },
           id: "z2EFNeufiuo3n9b7",
         },
         {
           inputs: {
-            entry: { connection: "hKxoCifZlHGTfs7q:outputs:0O36ShxaMq7mdmfp" },
+            entry: {
+              connection: "hKxoCifZlHGTfs7q:outputs:0O36ShxaMq7mdmfp",
+            },
           },
           type: "__variable_getter__",
-          position: { x: -2432.0158730158737, y: 125.7341269841267 },
+          position: {
+            x: 3721.6984126984125,
+            y: 125.7341269841267,
+          },
           id: "J82NbTzlUo59CQWn",
         },
         {
           inputs: {
-            entry: { connection: "4tBJGISpCfMWS66X:outputs:sources" },
+            entry: {
+              connection: "4tBJGISpCfMWS66X:outputs:sources",
+            },
           },
           type: "__variable_getter__",
-          position: { x: -1253.4285714285716, y: 207.33333333333275 },
+          position: {
+            x: 4900.285714285715,
+            y: 207.33333333333275,
+          },
           id: "HM3BEMOfccqm0f4D",
         },
         {
           type: "flow",
           inputs: {
-            effect: { connection: "9I0LwMT281lIAPws:outputs:effect" },
-            waitUntilFinished: { value: true },
-            waitDelayMin: { value: -2300 },
+            effect: {
+              connection: "9I0LwMT281lIAPws:outputs:effect",
+            },
+            waitUntilFinished: {
+              value: true,
+            },
+            waitDelayMin: {
+              value: -2300,
+            },
           },
-          position: { x: -797.9999999999998, y: 278.4404761904757 },
+          position: {
+            x: 5355.714285714286,
+            y: 278.4404761904757,
+          },
           id: "vGDiVg0hF3fPImfH",
-          outs: { out: { connection: "oQtPIBlNrY0TAuoL:ins:in" } },
+          outs: {
+            out: {
+              connection: "oQtPIBlNrY0TAuoL:ins:in",
+            },
+          },
         },
         {
           inputs: {
-            entry: { connection: "4tBJGISpCfMWS66X:outputs:targets" },
+            entry: {
+              connection: "4tBJGISpCfMWS66X:outputs:targets",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 438.1428571428562, y: 112.17857142857162 },
+          position: {
+            x: 6591.857142857142,
+            y: 112.17857142857162,
+          },
           id: "mTFBHnzKnBeV2Qjm",
         },
         {
           inputs: {
-            entry: { connection: "4tBJGISpCfMWS66X:outputs:sources" },
+            entry: {
+              connection: "4tBJGISpCfMWS66X:outputs:sources",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 432.7142857142848, y: 152.17857142857156 },
+          position: {
+            x: 6586.428571428571,
+            y: 152.17857142857156,
+          },
           id: "7xU7e6DNZVurEJFe",
         },
         {
           type: "module-enabled",
-          position: { x: -1960.1269841269843, y: 300.19047619047655 },
+          position: {
+            x: 4193.587301587302,
+            y: 300.19047619047655,
+          },
           id: "nTF5XslHy1r93OyL",
-          inputs: { module: { value: "jb2a_patreon" } },
+          inputs: {
+            module: {
+              value: "jb2a_patreon",
+            },
+          },
           outs: {
-            false: { connection: "toQoTkIheUYQE49i:ins:in" },
-            true: { connection: "MqlmEXvYfV5r7f3D:ins:in" },
+            false: {
+              connection: "toQoTkIheUYQE49i:ins:in",
+            },
+            true: {
+              connection: "MqlmEXvYfV5r7f3D:ins:in",
+            },
           },
         },
         {
@@ -1260,57 +1880,109 @@ export const TEMPLATES = {
             file: {
               value: "jb2a.on_token_cast.initiate.001.instant.part02.blue.0",
             },
-            effect: { connection: "ES8oKsgK9yiexhgr:outputs:effect" },
+            effect: {
+              connection: "ES8oKsgK9yiexhgr:outputs:effect",
+            },
           },
-          position: { x: -1602.8754578754583, y: 472.3214285714282 },
+          position: {
+            x: 4550.838827838828,
+            y: 472.3214285714282,
+          },
           id: "toQoTkIheUYQE49i",
-          outs: { out: { connection: "QWQcaiulCYpPWe34:ins:in" } },
+          outs: {
+            out: {
+              connection: "QWQcaiulCYpPWe34:ins:in",
+            },
+          },
         },
         {
           inputs: {
-            entry: { connection: "hKxoCifZlHGTfs7q:outputs:0O36ShxaMq7mdmfp" },
+            entry: {
+              connection: "hKxoCifZlHGTfs7q:outputs:0O36ShxaMq7mdmfp",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 778.2460317460313, y: 107.89682539682576 },
+          position: {
+            x: 6931.960317460318,
+            y: 107.89682539682576,
+          },
           id: "nSkmkTWQHrwHue9o",
         },
         {
           inputs: {
-            entry: { connection: "hKxoCifZlHGTfs7q:outputs:bjHi4atunFZHuJZ6" },
+            entry: {
+              connection: "hKxoCifZlHGTfs7q:outputs:bjHi4atunFZHuJZ6",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 776.0238095238092, y: 151.23015873015902 },
+          position: {
+            x: 6929.738095238095,
+            y: 151.23015873015902,
+          },
           id: "8j5vnnt9DYeNuubp",
         },
         {
           type: "file",
           inputs: {
-            file: { value: "jb2a.on_token_buff.001.002.blue" },
-            effect: { connection: "gVixIsQVmAcLcDi5:outputs:effect" },
+            file: {
+              value: "jb2a.on_token_buff.001.002.blue",
+            },
+            effect: {
+              connection: "gVixIsQVmAcLcDi5:outputs:effect",
+            },
           },
-          position: { x: 1599.1507936507915, y: 184.89285714285728 },
+          position: {
+            x: 7752.865079365078,
+            y: 184.89285714285728,
+          },
           id: "4SE9xaMQdGjJW3vA",
-          outs: { out: { connection: "0M9U6hdrZ1VRCpkn:ins:in" } },
+          outs: {
+            out: {
+              connection: "0M9U6hdrZ1VRCpkn:ins:in",
+            },
+          },
         },
         {
           type: "module-enabled",
-          position: { x: 1235.2326007325987, y: 202.76190476190578 },
+          position: {
+            x: 7388.946886446885,
+            y: 202.76190476190578,
+          },
           id: "zzFDdCYhYDv3XhRO",
-          inputs: { module: { value: "jb2a_patreon" } },
+          inputs: {
+            module: {
+              value: "jb2a_patreon",
+            },
+          },
           outs: {
-            false: { connection: "0l5W1JkvM4lvElGj:ins:in" },
-            true: { connection: "4SE9xaMQdGjJW3vA:ins:in" },
+            false: {
+              connection: "0l5W1JkvM4lvElGj:ins:in",
+            },
+            true: {
+              connection: "4SE9xaMQdGjJW3vA:ins:in",
+            },
           },
         },
         {
           type: "file",
           inputs: {
-            file: { value: "jb2a.on_token_buff.001.001.blue" },
-            effect: { connection: "gVixIsQVmAcLcDi5:outputs:effect" },
+            file: {
+              value: "jb2a.on_token_buff.001.001.blue",
+            },
+            effect: {
+              connection: "gVixIsQVmAcLcDi5:outputs:effect",
+            },
           },
-          position: { x: 1596.769841269839, y: 379.1785714285717 },
+          position: {
+            x: 7750.484126984125,
+            y: 379.1785714285717,
+          },
           id: "0l5W1JkvM4lvElGj",
-          outs: { out: { connection: "0M9U6hdrZ1VRCpkn:ins:in" } },
+          outs: {
+            out: {
+              connection: "0M9U6hdrZ1VRCpkn:ins:in",
+            },
+          },
         },
       ],
       variables: {
@@ -1345,17 +2017,33 @@ export const TEMPLATES = {
       nodes: [
         {
           id: "4tBJGISpCfMWS66X",
-          position: { x: -3076.857142857143, y: 206.28571428571365 },
+          position: {
+            x: 0,
+            y: 206.28571428571365,
+          },
           type: "animation-event",
-          inputs: { name: { value: "placeholder-trigger-names" } },
-          outs: { out: { connection: "hKxoCifZlHGTfs7q:ins:in" } },
+          inputs: {
+            name: {
+              value: "placeholder-trigger-names",
+            },
+          },
+          outs: {
+            out: {
+              connection: "hKxoCifZlHGTfs7q:ins:in",
+            },
+          },
         },
         {
           type: "extract-item",
           inputs: {
-            input: { connection: "4tBJGISpCfMWS66X:outputs:item" },
+            input: {
+              connection: "4tBJGISpCfMWS66X:outputs:item",
+            },
           },
-          position: { x: -2804.904761904763, y: 247.91190476190422 },
+          position: {
+            x: 271.9523809523803,
+            y: 247.91190476190422,
+          },
           id: "hKxoCifZlHGTfs7q",
           custom: {
             outputs: {
@@ -1377,143 +2065,278 @@ export const TEMPLATES = {
               },
             },
           },
-          outs: { out: { connection: "ES8oKsgK9yiexhgr:ins:in" } },
+          outs: {
+            out: {
+              connection: "ES8oKsgK9yiexhgr:ins:in",
+            },
+          },
         },
         {
           type: "sound",
-          position: { x: -636.6721611721614, y: 225.91666666666652 },
+          position: {
+            x: 2440.1849816849817,
+            y: 225.91666666666652,
+          },
           id: "oQtPIBlNrY0TAuoL",
           inputs: {
-            file: { value: "ggg-sfx.magic.arcane.cast.general.02" },
-            name: { connection: "mdUfkgFh5gcnju6W:outputs:entry" },
+            file: {
+              value: "ggg-sfx.magic.arcane.cast.general.02",
+            },
+            name: {
+              connection: "mdUfkgFh5gcnju6W:outputs:entry",
+            },
           },
-          outs: { out: { connection: "5UVNe71FW6ieh52C:ins:in" } },
+          outs: {
+            out: {
+              connection: "5UVNe71FW6ieh52C:ins:in",
+            },
+          },
         },
         {
           inputs: {
-            entry: { connection: "hKxoCifZlHGTfs7q:outputs:0O36ShxaMq7mdmfp" },
+            entry: {
+              connection: "hKxoCifZlHGTfs7q:outputs:0O36ShxaMq7mdmfp",
+            },
           },
           type: "__variable_getter__",
-          position: { x: -747.1428571428564, y: 314.10714285714243 },
+          position: {
+            x: 2329.7142857142867,
+            y: 314.10714285714243,
+          },
           id: "mdUfkgFh5gcnju6W",
         },
         {
           type: "snd-location",
           state: "atLocation",
           inputs: {
-            sound: { connection: "oQtPIBlNrY0TAuoL:outputs:sound" },
-            location: { connection: "NVXncGpsG35aNu6Z:outputs:entry" },
-            exitOnEmpty: { value: "global" },
+            sound: {
+              connection: "oQtPIBlNrY0TAuoL:outputs:sound",
+            },
+            location: {
+              connection: "NVXncGpsG35aNu6Z:outputs:entry",
+            },
+            exitOnEmpty: {
+              value: "global",
+            },
           },
-          position: { x: -341.8452380952383, y: 229.0666666666666 },
+          position: {
+            x: 2735.0119047619046,
+            y: 229.0666666666666,
+          },
           id: "5UVNe71FW6ieh52C",
-          outs: { out: { connection: "GSe9nUVgTDjclsF1:ins:in" } },
+          outs: {
+            out: {
+              connection: "GSe9nUVgTDjclsF1:ins:in",
+            },
+          },
         },
         {
           type: "snd-flow",
           inputs: {
-            sound: { connection: "oQtPIBlNrY0TAuoL:outputs:sound" },
-            preset: { value: "troveSound" },
+            sound: {
+              connection: "oQtPIBlNrY0TAuoL:outputs:sound",
+            },
+            preset: {
+              value: "troveSound",
+            },
           },
-          position: { x: -98.8452380952383, y: 226.66666666666652 },
+          position: {
+            x: 2978.0119047619046,
+            y: 226.66666666666652,
+          },
           id: "GSe9nUVgTDjclsF1",
+          outs: { out: { connection: "jlfLxKR9XVVlidzO:ins:in" } },
+        },
+        {
+          type: "play",
+          position: { x: 3200, y: 230.8333333333333 },
+          id: "jlfLxKR9XVVlidzO",
+          inputs: { local: { value: true } },
         },
         {
           inputs: {
-            entry: { connection: "4tBJGISpCfMWS66X:outputs:sources" },
+            entry: {
+              connection: "4tBJGISpCfMWS66X:outputs:sources",
+            },
           },
           type: "__variable_getter__",
-          position: { x: -477.66666666666674, y: 165.09523809523785 },
+          position: {
+            x: 2599.190476190476,
+            y: 165.09523809523785,
+          },
           id: "NVXncGpsG35aNu6Z",
         },
         {
           type: "effect",
-          position: { x: -2404.190476190476, y: 233.66666666666634 },
+          position: {
+            x: 672.666666666667,
+            y: 233.66666666666634,
+          },
           id: "ES8oKsgK9yiexhgr",
           inputs: {
-            origin: { connection: "z2EFNeufiuo3n9b7:outputs:entry" },
-            name: { connection: "J82NbTzlUo59CQWn:outputs:entry" },
+            origin: {
+              connection: "z2EFNeufiuo3n9b7:outputs:entry",
+            },
+            name: {
+              connection: "J82NbTzlUo59CQWn:outputs:entry",
+            },
           },
-          outs: { out: { connection: "nTF5XslHy1r93OyL:ins:in" } },
+          outs: {
+            out: {
+              connection: "nTF5XslHy1r93OyL:ins:in",
+            },
+          },
         },
         {
           type: "file",
           inputs: {
-            effect: { connection: "ES8oKsgK9yiexhgr:outputs:effect" },
+            effect: {
+              connection: "ES8oKsgK9yiexhgr:outputs:effect",
+            },
             file: {
               value: "jb2a.on_token_cast.initiate.001.instant.combined.blue.1",
             },
           },
-          position: { x: -1816.7802197802207, y: 226.035714285714 },
+          position: {
+            x: 1260.0769230769224,
+            y: 226.035714285714,
+          },
           id: "MqlmEXvYfV5r7f3D",
-          outs: { out: { connection: "QWQcaiulCYpPWe34:ins:in" } },
+          outs: {
+            out: {
+              connection: "QWQcaiulCYpPWe34:ins:in",
+            },
+          },
         },
         {
           type: "scale",
           state: "object",
           inputs: {
-            effect: { connection: "ES8oKsgK9yiexhgr:outputs:effect" },
-            objectScale: { value: 1.5 },
+            effect: {
+              connection: "ES8oKsgK9yiexhgr:outputs:effect",
+            },
+            objectScale: {
+              value: 1.5,
+            },
           },
-          position: { x: -1562.4945054945065, y: 229.12619047618966 },
+          position: {
+            x: 1514.3626373626366,
+            y: 229.12619047618966,
+          },
           id: "QWQcaiulCYpPWe34",
-          outs: { out: { connection: "9I0LwMT281lIAPws:ins:in" } },
+          outs: {
+            out: {
+              connection: "9I0LwMT281lIAPws:ins:in",
+            },
+          },
         },
         {
           type: "location",
           state: "targets",
           inputs: {
-            effect: { connection: "ES8oKsgK9yiexhgr:outputs:effect" },
-            attachTo: { value: true },
-            location: { connection: "HM3BEMOfccqm0f4D:outputs:entry" },
+            effect: {
+              connection: "ES8oKsgK9yiexhgr:outputs:effect",
+            },
+            attachTo: {
+              value: true,
+            },
+            location: {
+              connection: "HM3BEMOfccqm0f4D:outputs:entry",
+            },
           },
-          position: { x: -1299.6373626373638, y: 227.69761904761856 },
+          position: {
+            x: 1777.2197802197793,
+            y: 227.69761904761856,
+          },
           id: "9I0LwMT281lIAPws",
-          outs: { out: { connection: "vGDiVg0hF3fPImfH:ins:in" } },
+          outs: {
+            out: {
+              connection: "vGDiVg0hF3fPImfH:ins:in",
+            },
+          },
         },
         {
           inputs: {
-            entry: { connection: "hKxoCifZlHGTfs7q:outputs:bjHi4atunFZHuJZ6" },
+            entry: {
+              connection: "hKxoCifZlHGTfs7q:outputs:bjHi4atunFZHuJZ6",
+            },
           },
           type: "__variable_getter__",
-          position: { x: -2540.9047619047615, y: 324.7341269841268 },
+          position: {
+            x: 535.9523809523816,
+            y: 324.7341269841268,
+          },
           id: "z2EFNeufiuo3n9b7",
         },
         {
           inputs: {
-            entry: { connection: "hKxoCifZlHGTfs7q:outputs:0O36ShxaMq7mdmfp" },
+            entry: {
+              connection: "hKxoCifZlHGTfs7q:outputs:0O36ShxaMq7mdmfp",
+            },
           },
           type: "__variable_getter__",
-          position: { x: -2539.0158730158737, y: 283.7341269841269 },
+          position: {
+            x: 537.8412698412694,
+            y: 283.7341269841269,
+          },
           id: "J82NbTzlUo59CQWn",
         },
         {
           inputs: {
-            entry: { connection: "4tBJGISpCfMWS66X:outputs:sources" },
+            entry: {
+              connection: "4tBJGISpCfMWS66X:outputs:sources",
+            },
           },
           type: "__variable_getter__",
-          position: { x: -1465.4285714285716, y: 155.3333333333328 },
+          position: {
+            x: 1611.4285714285716,
+            y: 155.3333333333328,
+          },
           id: "HM3BEMOfccqm0f4D",
         },
         {
           type: "flow",
           inputs: {
-            effect: { connection: "9I0LwMT281lIAPws:outputs:effect" },
-            waitUntilFinished: { value: true },
-            waitDelayMin: { value: -2300 },
+            effect: {
+              connection: "9I0LwMT281lIAPws:outputs:effect",
+            },
+            waitUntilFinished: {
+              value: true,
+            },
+            waitDelayMin: {
+              value: -2300,
+            },
           },
-          position: { x: -1010, y: 226.4404761904757 },
+          position: {
+            x: 2066.857142857143,
+            y: 226.4404761904757,
+          },
           id: "vGDiVg0hF3fPImfH",
-          outs: { out: { connection: "oQtPIBlNrY0TAuoL:ins:in" } },
+          outs: {
+            out: {
+              connection: "oQtPIBlNrY0TAuoL:ins:in",
+            },
+          },
         },
         {
           type: "module-enabled",
-          position: { x: -2104.126984126984, y: 243.19047619047666 },
+          position: {
+            x: 972.730158730159,
+            y: 243.19047619047666,
+          },
           id: "nTF5XslHy1r93OyL",
-          inputs: { module: { value: "jb2a_patreon" } },
+          inputs: {
+            module: {
+              value: "jb2a_patreon",
+            },
+          },
           outs: {
-            false: { connection: "toQoTkIheUYQE49i:ins:in" },
-            true: { connection: "MqlmEXvYfV5r7f3D:ins:in" },
+            false: {
+              connection: "toQoTkIheUYQE49i:ins:in",
+            },
+            true: {
+              connection: "MqlmEXvYfV5r7f3D:ins:in",
+            },
           },
         },
         {
@@ -1522,11 +2345,20 @@ export const TEMPLATES = {
             file: {
               value: "jb2a.on_token_cast.initiate.001.instant.part02.blue.0",
             },
-            effect: { connection: "ES8oKsgK9yiexhgr:outputs:effect" },
+            effect: {
+              connection: "ES8oKsgK9yiexhgr:outputs:effect",
+            },
           },
-          position: { x: -1814.8754578754583, y: 420.3214285714282 },
+          position: {
+            x: 1261.9816849816848,
+            y: 420.3214285714282,
+          },
           id: "toQoTkIheUYQE49i",
-          outs: { out: { connection: "QWQcaiulCYpPWe34:ins:in" } },
+          outs: {
+            out: {
+              connection: "QWQcaiulCYpPWe34:ins:in",
+            },
+          },
         },
       ],
       variables: {
@@ -1558,7 +2390,10 @@ export const TEMPLATES = {
       nodes: [
         {
           id: "cQ4T2clnTJ2z70XX",
-          position: { x: 400, y: 200 },
+          position: {
+            x: 0,
+            y: 200,
+          },
           type: "animation-event",
           custom: {
             outputs: {
@@ -1572,12 +2407,23 @@ export const TEMPLATES = {
               },
             },
           },
-          inputs: { name: { value: "placeholder-trigger-names" } },
-          outs: { out: { connection: "yrj2uPt3khcsH3UF:ins:in" } },
+          inputs: {
+            name: {
+              value: "placeholder-trigger-names",
+            },
+          },
+          outs: {
+            out: {
+              connection: "yrj2uPt3khcsH3UF:ins:in",
+            },
+          },
         },
         {
           type: "extract-item",
-          position: { x: 694.5897421569692, y: 194.23335590362547 },
+          position: {
+            x: 294.58974215696924,
+            y: 194.23335590362547,
+          },
           id: "yrj2uPt3khcsH3UF",
           custom: {
             outputs: {
@@ -1600,99 +2446,191 @@ export const TEMPLATES = {
             },
           },
           inputs: {
-            input: { connection: "cQ4T2clnTJ2z70XX:outputs:item" },
+            input: {
+              connection: "cQ4T2clnTJ2z70XX:outputs:item",
+            },
           },
-          outs: { out: { connection: "kMn5MlQ9xR1cqy46:ins:in" } },
+          outs: {
+            out: {
+              connection: "kMn5MlQ9xR1cqy46:ins:in",
+            },
+          },
         },
         {
           type: "effect",
-          position: { x: 948.5897249274693, y: 176.16667652130127 },
+          position: {
+            x: 548.5897249274693,
+            y: 176.16667652130127,
+          },
           id: "kMn5MlQ9xR1cqy46",
           inputs: {
-            name: { connection: "yrj2uPt3khcsH3UF:outputs:zZlfyqWnDi4qyRui" },
+            name: {
+              connection: "yrj2uPt3khcsH3UF:outputs:zZlfyqWnDi4qyRui",
+            },
             origin: {
               connection: "yrj2uPt3khcsH3UF:outputs:YYCymq4nW7jlJYwU",
             },
           },
-          outs: { out: { connection: "fE0NZjyKJ9G7W7F6:ins:in" } },
+          outs: {
+            out: {
+              connection: "fE0NZjyKJ9G7W7F6:ins:in",
+            },
+          },
         },
         {
           type: "file",
           inputs: {
-            effect: { connection: "kMn5MlQ9xR1cqy46:outputs:effect" },
-            file: { value: "jb2a.healing_generic.burst.bluewhite" },
+            effect: {
+              connection: "kMn5MlQ9xR1cqy46:outputs:effect",
+            },
+            file: {
+              value: "jb2a.healing_generic.burst.bluewhite",
+            },
           },
-          position: { x: 1333.047605475056, y: 214.10716288430353 },
+          position: {
+            x: 933.0476054750559,
+            y: 214.10716288430353,
+          },
           id: "fE0NZjyKJ9G7W7F6",
-          outs: { out: { connection: "xs7iLq9hzxYOTYOc:ins:in" } },
+          outs: {
+            out: {
+              connection: "xs7iLq9hzxYOTYOc:ins:in",
+            },
+          },
         },
         {
           type: "location",
           state: "targets",
           inputs: {
-            effect: { connection: "kMn5MlQ9xR1cqy46:outputs:effect" },
+            effect: {
+              connection: "kMn5MlQ9xR1cqy46:outputs:effect",
+            },
             location: {
               connection: "cQ4T2clnTJ2z70XX:outputs:MWUBRl5UO1EKczQU",
             },
-            cacheLocation: { value: true },
+            cacheLocation: {
+              value: true,
+            },
           },
-          position: { x: 1601.8095205198326, y: 209.48339405059824 },
+          position: {
+            x: 1201.8095205198326,
+            y: 209.48339405059824,
+          },
           id: "xs7iLq9hzxYOTYOc",
-          outs: { out: { connection: "bHiknSSrgUd6sHKK:ins:in" } },
+          outs: {
+            out: {
+              connection: "bHiknSSrgUd6sHKK:ins:in",
+            },
+          },
         },
         {
           type: "play",
-          position: { x: 3104.3871401469837, y: 214.24995636940002 },
+          position: {
+            x: 2704.3871401469837,
+            y: 214.24995636940002,
+          },
           id: "stsDzcixyehs1bhi",
-          inputs: { preload: { value: true }, local: { value: true } },
+          inputs: {
+            preload: {
+              value: true,
+            },
+            local: {
+              value: true,
+            },
+          },
         },
         {
           type: "scale",
-          position: { x: 1827.5873222013208, y: 209.00006389617886 },
+          position: {
+            x: 1427.5873222013208,
+            y: 209.00006389617886,
+          },
           id: "bHiknSSrgUd6sHKK",
           inputs: {
-            effect: { connection: "kMn5MlQ9xR1cqy46:outputs:effect" },
-            objectScale: { value: 1.1 },
+            effect: {
+              connection: "kMn5MlQ9xR1cqy46:outputs:effect",
+            },
+            objectScale: {
+              value: 1.1,
+            },
           },
-          outs: { out: { connection: "Anm8jTC91Wwav5VE:ins:in" } },
+          outs: {
+            out: {
+              connection: "Anm8jTC91Wwav5VE:ins:in",
+            },
+          },
           state: "object",
         },
         {
           type: "sound",
-          position: { x: 2078.589743589744, y: 211.83333333333337 },
+          position: {
+            x: 1678.589743589744,
+            y: 211.83333333333337,
+          },
           id: "Anm8jTC91Wwav5VE",
           inputs: {
-            file: { value: "ggg-sfx.magic.occult.siphon.01.01" },
-            name: { connection: "yrj2uPt3khcsH3UF:outputs:zZlfyqWnDi4qyRui" },
+            file: {
+              value: "ggg-sfx.magic.occult.siphon.01.01",
+            },
+            name: {
+              connection: "yrj2uPt3khcsH3UF:outputs:zZlfyqWnDi4qyRui",
+            },
           },
-          outs: { out: { connection: "R40kXsj8B9KW6tj1:ins:in" } },
+          outs: {
+            out: {
+              connection: "R40kXsj8B9KW6tj1:ins:in",
+            },
+          },
         },
         {
           type: "snd-location",
           state: "atLocation",
           inputs: {
-            sound: { connection: "Anm8jTC91Wwav5VE:outputs:sound" },
+            sound: {
+              connection: "Anm8jTC91Wwav5VE:outputs:sound",
+            },
             location: {
               connection: "R40kXsj8B9KW6tj1:outputs:tS3ScMUSZdNDGxqT",
             },
           },
-          position: { x: 2621.75, y: 213.23333333333346 },
+          position: {
+            x: 2221.75,
+            y: 213.23333333333346,
+          },
           id: "RD3nS87WGg1yDOj3",
-          outs: { out: { connection: "aUJ2EETQxRnbzPSm:ins:in" } },
+          outs: {
+            out: {
+              connection: "aUJ2EETQxRnbzPSm:ins:in",
+            },
+          },
         },
         {
           type: "snd-flow",
           inputs: {
-            preset: { value: "troveSound" },
-            sound: { connection: "Anm8jTC91Wwav5VE:outputs:sound" },
+            preset: {
+              value: "troveSound",
+            },
+            sound: {
+              connection: "Anm8jTC91Wwav5VE:outputs:sound",
+            },
           },
-          position: { x: 2836.75, y: 212.83333333333348 },
+          position: {
+            x: 2436.75,
+            y: 212.83333333333348,
+          },
           id: "aUJ2EETQxRnbzPSm",
-          outs: { out: { connection: "stsDzcixyehs1bhi:ins:in" } },
+          outs: {
+            out: {
+              connection: "stsDzcixyehs1bhi:ins:in",
+            },
+          },
         },
         {
           type: "execute-script",
-          position: { x: 2357.7142857142853, y: 215.2857142857141 },
+          position: {
+            x: 1957.7142857142853,
+            y: 215.2857142857141,
+          },
           id: "R40kXsj8B9KW6tj1",
           custom: {
             inputs: {
@@ -1719,16 +2657,27 @@ export const TEMPLATES = {
               value:
                 '/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: "number", value: x + y}];\n */\nconst template = inputs[0]\nreturn [{type: "point", value: template?.shapes?.[0]?.center}];',
             },
-            Fd9FyG9Lgg2AyIcQ: { connection: "0kqP5lR3IHrVUjnZ:outputs:entry" },
+            Fd9FyG9Lgg2AyIcQ: {
+              connection: "0kqP5lR3IHrVUjnZ:outputs:entry",
+            },
           },
-          outs: { out: { connection: "RD3nS87WGg1yDOj3:ins:in" } },
+          outs: {
+            out: {
+              connection: "RD3nS87WGg1yDOj3:ins:in",
+            },
+          },
         },
         {
           inputs: {
-            entry: { connection: "cQ4T2clnTJ2z70XX:outputs:MWUBRl5UO1EKczQU" },
+            entry: {
+              connection: "cQ4T2clnTJ2z70XX:outputs:MWUBRl5UO1EKczQU",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 2229, y: 345 },
+          position: {
+            x: 1829,
+            y: 345,
+          },
           id: "0kqP5lR3IHrVUjnZ",
         },
       ],
@@ -1744,7 +2693,10 @@ export const TEMPLATES = {
       nodes: [
         {
           id: "PYO4aCkFrMjIYJ5a",
-          position: { x: 45.535714285714334, y: 195.77380952380946 },
+          position: {
+            x: 0,
+            y: 195.77380952380946,
+          },
           type: "animation-event",
           custom: {
             outputs: {
@@ -1759,13 +2711,22 @@ export const TEMPLATES = {
             },
           },
           inputs: {
-            name: { value: "placeholder-trigger-names" },
+            name: {
+              value: "placeholder-trigger-names",
+            },
           },
-          outs: { out: { connection: "mfGMdgzYC9o9ubF8:ins:in" } },
+          outs: {
+            out: {
+              connection: "mfGMdgzYC9o9ubF8:ins:in",
+            },
+          },
         },
         {
           type: "extract-item",
-          position: { x: 310.12545644268357, y: 206.67383209410167 },
+          position: {
+            x: 264.58974215696924,
+            y: 206.67383209410167,
+          },
           id: "mfGMdgzYC9o9ubF8",
           custom: {
             outputs: {
@@ -1788,84 +2749,169 @@ export const TEMPLATES = {
             },
           },
           inputs: {
-            input: { connection: "PYO4aCkFrMjIYJ5a:outputs:item" },
+            input: {
+              connection: "PYO4aCkFrMjIYJ5a:outputs:item",
+            },
           },
-          outs: { out: { connection: "7J2Qlu4EksMqdT8f:ins:in" } },
+          outs: {
+            out: {
+              connection: "7J2Qlu4EksMqdT8f:ins:in",
+            },
+          },
         },
         {
           type: "effect",
-          position: { x: 564.1254392131837, y: 188.60715271177747 },
+          position: {
+            x: 518.5897249274693,
+            y: 188.60715271177747,
+          },
           id: "7J2Qlu4EksMqdT8f",
           inputs: {
-            name: { connection: "SGjbm1HGG9ehUYRZ:outputs:entry" },
-            origin: { connection: "mUnjhlQlcDy4D9v6:outputs:entry" },
+            name: {
+              connection: "SGjbm1HGG9ehUYRZ:outputs:entry",
+            },
+            origin: {
+              connection: "mUnjhlQlcDy4D9v6:outputs:entry",
+            },
           },
-          outs: { out: { connection: "13EyApSCy9j9QMu3:ins:in" } },
+          outs: {
+            out: {
+              connection: "13EyApSCy9j9QMu3:ins:in",
+            },
+          },
         },
         {
           type: "file",
           inputs: {
-            effect: { connection: "7J2Qlu4EksMqdT8f:outputs:effect" },
-            file: { value: "jb2a.breath_weapons.fire.cone.orange.01" },
+            effect: {
+              connection: "7J2Qlu4EksMqdT8f:outputs:effect",
+            },
+            file: {
+              value: "jb2a.breath_weapons.fire.cone.orange.01",
+            },
           },
-          position: { x: 1293.9999864274369, y: 335.55557558271613 },
+          position: {
+            x: 1248.4642721417226,
+            y: 335.55557558271613,
+          },
           id: "nOV2yplyHvrgsZqM",
-          outs: { out: { connection: "mkPu8MpxhhL2iGfw:ins:in" } },
+          outs: {
+            out: {
+              connection: "mkPu8MpxhhL2iGfw:ins:in",
+            },
+          },
         },
         {
           type: "location",
           state: "targets",
           inputs: {
-            effect: { connection: "7J2Qlu4EksMqdT8f:outputs:effect" },
-            cacheLocation: { value: true },
-            location: { connection: "QCK834bLdIERbt5f:outputs:entry" },
+            effect: {
+              connection: "7J2Qlu4EksMqdT8f:outputs:effect",
+            },
+            cacheLocation: {
+              value: true,
+            },
+            location: {
+              connection: "QCK834bLdIERbt5f:outputs:entry",
+            },
           },
-          position: { x: 1591.7777744880864, y: 158.70561627282024 },
+          position: {
+            x: 1546.2420602023722,
+            y: 158.70561627282024,
+          },
           id: "mkPu8MpxhhL2iGfw",
-          outs: { out: { connection: "3SYHxrEOwxZxNQtG:ins:in" } },
+          outs: {
+            out: {
+              connection: "3SYHxrEOwxZxNQtG:ins:in",
+            },
+          },
         },
         {
           type: "play",
-          position: { x: 4715.081584591428, y: 144.13884525828894 },
+          position: {
+            x: 4669.545870305713,
+            y: 144.13884525828894,
+          },
           id: "1Yy8sdQFFNghIiNk",
-          inputs: { preload: { value: true }, local: { value: true } },
+          inputs: {
+            preload: {
+              value: true,
+            },
+            local: {
+              value: true,
+            },
+          },
         },
         {
           type: "sound",
-          position: { x: 3878.173076923077, y: 190.72222222222229 },
+          position: {
+            x: 3832.637362637363,
+            y: 190.72222222222229,
+          },
           id: "wloqa2XV10trOpR6",
           inputs: {
-            name: { connection: "DL4KWLjEaibRUalC:outputs:entry" },
-            file: { value: "ggg-sfx.magic.fire.cast.throw.04.slow" },
+            name: {
+              connection: "DL4KWLjEaibRUalC:outputs:entry",
+            },
+            file: {
+              value: "ggg-sfx.magic.fire.cast.throw.04.slow",
+            },
           },
-          outs: { out: { connection: "17CbDXsiBmWGmgVO:ins:in" } },
+          outs: {
+            out: {
+              connection: "17CbDXsiBmWGmgVO:ins:in",
+            },
+          },
         },
         {
           type: "snd-location",
           state: "atLocation",
           inputs: {
-            sound: { connection: "wloqa2XV10trOpR6:outputs:sound" },
+            sound: {
+              connection: "wloqa2XV10trOpR6:outputs:sound",
+            },
             location: {
               connection: "17CbDXsiBmWGmgVO:outputs:xHllS0AFFL4QrrBw",
             },
           },
-          position: { x: 4171.333333333333, y: 149.23333333333346 },
+          position: {
+            x: 4125.797619047618,
+            y: 149.23333333333346,
+          },
           id: "PSSrGMnezbhtYqk1",
-          outs: { out: { connection: "x3KX3X7pRXMwTRNN:ins:in" } },
+          outs: {
+            out: {
+              connection: "x3KX3X7pRXMwTRNN:ins:in",
+            },
+          },
         },
         {
           type: "snd-flow",
           inputs: {
-            preset: { value: "troveSound" },
-            sound: { connection: "wloqa2XV10trOpR6:outputs:sound" },
+            preset: {
+              value: "troveSound",
+            },
+            sound: {
+              connection: "wloqa2XV10trOpR6:outputs:sound",
+            },
           },
-          position: { x: 4400.777777777777, y: 148.83333333333337 },
+          position: {
+            x: 4355.242063492063,
+            y: 148.83333333333337,
+          },
           id: "x3KX3X7pRXMwTRNN",
-          outs: { out: { connection: "1Yy8sdQFFNghIiNk:ins:in" } },
+          outs: {
+            out: {
+              connection: "1Yy8sdQFFNghIiNk:ins:in",
+            },
+          },
         },
         {
           type: "execute-script",
-          position: { x: 3858.916666666666, y: 351.8888888888888 },
+          position: {
+            x: 3813.380952380952,
+            y: 351.8888888888888,
+          },
           id: "17CbDXsiBmWGmgVO",
           custom: {
             inputs: {
@@ -1896,78 +2942,135 @@ export const TEMPLATES = {
               connection: "GWYwpMw5V5LxmlJ1:outputs:entry",
             },
           },
-          outs: { out: { connection: "PSSrGMnezbhtYqk1:ins:in" } },
+          outs: {
+            out: {
+              connection: "PSSrGMnezbhtYqk1:ins:in",
+            },
+          },
         },
         {
           inputs: {
-            entry: { connection: "PYO4aCkFrMjIYJ5a:outputs:N5hHx5cEww8Dqwgq" },
+            entry: {
+              connection: "PYO4aCkFrMjIYJ5a:outputs:N5hHx5cEww8Dqwgq",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 3719.0277777777774, y: 437.44444444444446 },
+          position: {
+            x: 3673.492063492063,
+            y: 437.44444444444446,
+          },
           id: "GWYwpMw5V5LxmlJ1",
         },
         {
           type: "aim",
-          position: { x: 1829.3978243978245, y: 160.288888888889 },
+          position: {
+            x: 1783.8621101121103,
+            y: 160.288888888889,
+          },
           id: "3SYHxrEOwxZxNQtG",
           inputs: {
-            effect: { connection: "7J2Qlu4EksMqdT8f:outputs:effect" },
-            towards: { connection: "IhWonnfczr4vv3Q6:outputs:entry" },
+            effect: {
+              connection: "7J2Qlu4EksMqdT8f:outputs:effect",
+            },
+            towards: {
+              connection: "IhWonnfczr4vv3Q6:outputs:entry",
+            },
           },
-          outs: { out: { connection: "3VaJlsvrwzzfwEvh:ins:in" } },
+          outs: {
+            out: {
+              connection: "3VaJlsvrwzzfwEvh:ins:in",
+            },
+          },
         },
         {
           inputs: {
-            entry: { connection: "PYO4aCkFrMjIYJ5a:outputs:N5hHx5cEww8Dqwgq" },
+            entry: {
+              connection: "PYO4aCkFrMjIYJ5a:outputs:N5hHx5cEww8Dqwgq",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 1690.2222222222222, y: 114.43434343434365 },
+          position: {
+            x: 1644.686507936508,
+            y: 114.43434343434365,
+          },
           id: "IhWonnfczr4vv3Q6",
         },
         {
           inputs: {
-            entry: { connection: "PYO4aCkFrMjIYJ5a:outputs:N5hHx5cEww8Dqwgq" },
+            entry: {
+              connection: "PYO4aCkFrMjIYJ5a:outputs:N5hHx5cEww8Dqwgq",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 706.8690476190475, y: 138.54148629148642 },
+          position: {
+            x: 661.3333333333331,
+            y: 138.54148629148642,
+          },
           id: "QCK834bLdIERbt5f",
         },
         {
           type: "flow",
-          position: { x: 2128.0341880341884, y: 160.26767676767702 },
+          position: {
+            x: 2082.498473748474,
+            y: 160.26767676767702,
+          },
           id: "3VaJlsvrwzzfwEvh",
           inputs: {
-            effect: { connection: "7J2Qlu4EksMqdT8f:outputs:effect" },
+            effect: {
+              connection: "7J2Qlu4EksMqdT8f:outputs:effect",
+            },
           },
-          outs: { out: { connection: "Qbbc8kr0JZww4mof:ins:in" } },
+          outs: {
+            out: {
+              connection: "Qbbc8kr0JZww4mof:ins:in",
+            },
+          },
         },
         {
           inputs: {
-            entry: { connection: "mfGMdgzYC9o9ubF8:outputs:S6NAMFu7Md7Boj2V" },
+            entry: {
+              connection: "mfGMdgzYC9o9ubF8:outputs:S6NAMFu7Md7Boj2V",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 409.78571428571445, y: 122.107142857143 },
+          position: {
+            x: 364.2500000000001,
+            y: 122.107142857143,
+          },
           id: "SGjbm1HGG9ehUYRZ",
         },
         {
           inputs: {
-            entry: { connection: "mfGMdgzYC9o9ubF8:outputs:JOZ8POppQtWl9CyI" },
+            entry: {
+              connection: "mfGMdgzYC9o9ubF8:outputs:JOZ8POppQtWl9CyI",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 403.53571428571445, y: 168.35714285714295 },
+          position: {
+            x: 358.0000000000001,
+            y: 168.35714285714295,
+          },
           id: "mUnjhlQlcDy4D9v6",
         },
         {
           inputs: {
-            entry: { connection: "mfGMdgzYC9o9ubF8:outputs:S6NAMFu7Md7Boj2V" },
+            entry: {
+              connection: "mfGMdgzYC9o9ubF8:outputs:S6NAMFu7Md7Boj2V",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 3770, y: 282.75000000000006 },
+          position: {
+            x: 3724.464285714286,
+            y: 282.75000000000006,
+          },
           id: "DL4KWLjEaibRUalC",
         },
         {
           type: "if-truthy",
-          position: { x: 2395.7802197802193, y: 176.5428571428571 },
+          position: {
+            x: 2350.244505494505,
+            y: 176.5428571428571,
+          },
           id: "Qbbc8kr0JZww4mof",
           custom: {
             inputs: {
@@ -1980,21 +3083,40 @@ export const TEMPLATES = {
               },
             },
           },
-          inputs: { cx2rlPQjOk0otErl: { value: true } },
+          inputs: {
+            cx2rlPQjOk0otErl: {
+              value: true,
+            },
+          },
           outs: {
-            false: { connection: "wloqa2XV10trOpR6:ins:in" },
-            true: { connection: "yCDjTNbdEMhkCTjv:ins:in" },
+            false: {
+              connection: "wloqa2XV10trOpR6:ins:in",
+            },
+            true: {
+              connection: "yCDjTNbdEMhkCTjv:ins:in",
+            },
           },
         },
         {
           type: "get-quality",
-          position: { x: 2666.4945054945056, y: 310.2857142857143 },
+          position: {
+            x: 2620.9587912087914,
+            y: 310.2857142857143,
+          },
           id: "yCDjTNbdEMhkCTjv",
           outs: {
-            minimal: { connection: "wloqa2XV10trOpR6:ins:in" },
-            low: { connection: "7EWH93l8twNlVB3K:ins:in" },
-            medium: { connection: "7EWH93l8twNlVB3K:ins:in" },
-            high: { connection: "7EWH93l8twNlVB3K:ins:in" },
+            minimal: {
+              connection: "wloqa2XV10trOpR6:ins:in",
+            },
+            low: {
+              connection: "7EWH93l8twNlVB3K:ins:in",
+            },
+            medium: {
+              connection: "7EWH93l8twNlVB3K:ins:in",
+            },
+            high: {
+              connection: "7EWH93l8twNlVB3K:ins:in",
+            },
           },
         },
         {
@@ -2011,32 +3133,62 @@ export const TEMPLATES = {
             },
           },
           type: "__gate_exit__",
-          position: { x: 244.3571428571429, y: -102.60714285714278 },
+          position: {
+            x: 198.82142857142856,
+            y: -102.60714285714278,
+          },
           id: "jBvVK9vdJIc9E4qw",
-          outs: { out: { connection: "7J2Qlu4EksMqdT8f:ins:in" } },
+          outs: {
+            out: {
+              connection: "7J2Qlu4EksMqdT8f:ins:in",
+            },
+          },
         },
         {
-          outs: { out: { connection: "jBvVK9vdJIc9E4qw:ins:in" } },
+          outs: {
+            out: {
+              connection: "jBvVK9vdJIc9E4qw:ins:in",
+            },
+          },
           type: "__gate_entry__",
-          position: { x: 3810.0714285714284, y: 807.0357142857146 },
+          position: {
+            x: 3764.535714285714,
+            y: 807.0357142857146,
+          },
           id: "3YnS5IA1cjMcjCzq",
-          inputs: { KpZj65Aqn20LtCCI: { value: true } },
+          inputs: {
+            KpZj65Aqn20LtCCI: {
+              value: true,
+            },
+          },
         },
         {
           type: "rotation",
-          position: { x: 3180.2445054945056, y: 397.0357142857144 },
+          position: {
+            x: 3134.7087912087914,
+            y: 397.0357142857144,
+          },
           id: "gU2qef48XWEXzADY",
           inputs: {
             spriteRotation: {
               connection: "7EWH93l8twNlVB3K:outputs:Wo3pRHij38wXxxod",
             },
-            effect: { connection: "3VaJlsvrwzzfwEvh:outputs:effect" },
+            effect: {
+              connection: "3VaJlsvrwzzfwEvh:outputs:effect",
+            },
           },
-          outs: { out: { connection: "g2ebEKgjSybsBsZe:ins:in" } },
+          outs: {
+            out: {
+              connection: "g2ebEKgjSybsBsZe:ins:in",
+            },
+          },
         },
         {
           type: "execute-script",
-          position: { x: 2888.8214285714284, y: 389.53571428571456 },
+          position: {
+            x: 2843.285714285714,
+            y: 389.53571428571456,
+          },
           id: "7EWH93l8twNlVB3K",
           custom: {
             inputs: {
@@ -2063,21 +3215,35 @@ export const TEMPLATES = {
               value:
                 'const angleOffset = 22.5\nconst sign = !!inputs[0] ? -1 : 1;\nreturn [{type: "number", value: sign * angleOffset}];',
             },
-            xGLZmtOnJKaIaTIs: { connection: "hMehYflfrFaXBfgs:outputs:entry" },
+            xGLZmtOnJKaIaTIs: {
+              connection: "hMehYflfrFaXBfgs:outputs:entry",
+            },
           },
-          outs: { out: { connection: "gU2qef48XWEXzADY:ins:in" } },
+          outs: {
+            out: {
+              connection: "gU2qef48XWEXzADY:ins:in",
+            },
+          },
         },
         {
           inputs: {
-            entry: { connection: "jBvVK9vdJIc9E4qw:outputs:KpZj65Aqn20LtCCI" },
+            entry: {
+              connection: "jBvVK9vdJIc9E4qw:outputs:KpZj65Aqn20LtCCI",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 2749.571428571429, y: 476.7857142857145 },
+          position: {
+            x: 2704.0357142857147,
+            y: 476.7857142857145,
+          },
           id: "hMehYflfrFaXBfgs",
         },
         {
           type: "if-truthy",
-          position: { x: 3535.8214285714294, y: 579.5357142857147 },
+          position: {
+            x: 3490.285714285715,
+            y: 579.5357142857147,
+          },
           id: "g2ebEKgjSybsBsZe",
           custom: {
             inputs: {
@@ -2091,40 +3257,73 @@ export const TEMPLATES = {
             },
           },
           inputs: {
-            sdVeVT7fU0PH8Dnx: { connection: "stP7Uh0cMxmjXerV:outputs:entry" },
+            sdVeVT7fU0PH8Dnx: {
+              connection: "stP7Uh0cMxmjXerV:outputs:entry",
+            },
           },
           outs: {
-            true: { connection: "wloqa2XV10trOpR6:ins:in" },
-            false: { connection: "3YnS5IA1cjMcjCzq:ins:in" },
+            true: {
+              connection: "wloqa2XV10trOpR6:ins:in",
+            },
+            false: {
+              connection: "3YnS5IA1cjMcjCzq:ins:in",
+            },
           },
         },
         {
           inputs: {
-            entry: { connection: "jBvVK9vdJIc9E4qw:outputs:KpZj65Aqn20LtCCI" },
+            entry: {
+              connection: "jBvVK9vdJIc9E4qw:outputs:KpZj65Aqn20LtCCI",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 3409.0714285714294, y: 625.5357142857147 },
+          position: {
+            x: 3363.535714285715,
+            y: 625.5357142857147,
+          },
           id: "stP7Uh0cMxmjXerV",
         },
         {
           type: "module-enabled",
-          position: { x: 837.108141858142, y: 202.42532467532453 },
+          position: {
+            x: 791.5724275724276,
+            y: 202.42532467532453,
+          },
           id: "13EyApSCy9j9QMu3",
-          inputs: { module: { value: "jb2a_patreon" } },
+          inputs: {
+            module: {
+              value: "jb2a_patreon",
+            },
+          },
           outs: {
-            true: { connection: "SwWZgQKcRz4yhAz2:ins:in" },
-            false: { connection: "nOV2yplyHvrgsZqM:ins:in" },
+            true: {
+              connection: "SwWZgQKcRz4yhAz2:ins:in",
+            },
+            false: {
+              connection: "nOV2yplyHvrgsZqM:ins:in",
+            },
           },
         },
         {
           type: "file",
           inputs: {
-            effect: { connection: "7J2Qlu4EksMqdT8f:outputs:effect" },
-            file: { value: "jb2a.breath_weapons.fire.cone.orange.02" },
+            effect: {
+              connection: "7J2Qlu4EksMqdT8f:outputs:effect",
+            },
+            file: {
+              value: "jb2a.breath_weapons.fire.cone.orange.02",
+            },
           },
-          position: { x: 1286.7272591547094, y: 90.10103012817069 },
+          position: {
+            x: 1241.1915448689952,
+            y: 90.10103012817069,
+          },
           id: "SwWZgQKcRz4yhAz2",
-          outs: { out: { connection: "mkPu8MpxhhL2iGfw:ins:in" } },
+          outs: {
+            out: {
+              connection: "mkPu8MpxhhL2iGfw:ins:in",
+            },
+          },
         },
       ],
       variables: {
@@ -2154,7 +3353,10 @@ export const TEMPLATES = {
       nodes: [
         {
           id: "buq3tU2pxIiR5IWz",
-          position: { x: 749.9999999999999, y: 171.66666666666657 },
+          position: {
+            x: 0,
+            y: 171.66666666666657,
+          },
           type: "animation-event",
           custom: {
             outputs: {
@@ -2168,12 +3370,23 @@ export const TEMPLATES = {
               },
             },
           },
-          inputs: { name: { value: "placeholder-trigger-names" } },
-          outs: { out: { connection: "R4V7ygO4mrXtDYAz:ins:in" } },
+          inputs: {
+            name: {
+              value: "placeholder-trigger-names",
+            },
+          },
+          outs: {
+            out: {
+              connection: "R4V7ygO4mrXtDYAz:ins:in",
+            },
+          },
         },
         {
           type: "extract-item",
-          position: { x: 1014.5897421569691, y: 182.56668923695878 },
+          position: {
+            x: 264.58974215696924,
+            y: 182.56668923695878,
+          },
           id: "R4V7ygO4mrXtDYAz",
           custom: {
             outputs: {
@@ -2196,86 +3409,169 @@ export const TEMPLATES = {
             },
           },
           inputs: {
-            input: { connection: "buq3tU2pxIiR5IWz:outputs:item" },
+            input: {
+              connection: "buq3tU2pxIiR5IWz:outputs:item",
+            },
           },
-          outs: { out: { connection: "liv4jrzZJXZpVSL2:ins:in" } },
+          outs: {
+            out: {
+              connection: "liv4jrzZJXZpVSL2:ins:in",
+            },
+          },
         },
         {
           type: "effect",
-          position: { x: 1268.5897249274692, y: 164.50000985463458 },
+          position: {
+            x: 518.5897249274693,
+            y: 164.50000985463458,
+          },
           id: "liv4jrzZJXZpVSL2",
           inputs: {
-            name: { connection: "R4V7ygO4mrXtDYAz:outputs:mCVSZGGWLUr7J0QM" },
+            name: {
+              connection: "R4V7ygO4mrXtDYAz:outputs:mCVSZGGWLUr7J0QM",
+            },
             origin: {
               connection: "R4V7ygO4mrXtDYAz:outputs:1vzDKaAlabAPOfQo",
             },
           },
-          outs: { out: { connection: "fnsvNB7lWSl3vZSq:ins:in" } },
+          outs: {
+            out: {
+              connection: "fnsvNB7lWSl3vZSq:ins:in",
+            },
+          },
         },
         {
           type: "file",
           inputs: {
-            effect: { connection: "liv4jrzZJXZpVSL2:outputs:effect" },
-            file: { value: "jb2a.lightning_bolt.narrow.blue" },
+            effect: {
+              connection: "liv4jrzZJXZpVSL2:outputs:effect",
+            },
+            file: {
+              value: "jb2a.lightning_bolt.narrow.blue",
+            },
           },
-          position: { x: 1583.9999864274369, y: 161.80557558271613 },
+          position: {
+            x: 833.999986427437,
+            y: 161.80557558271613,
+          },
           id: "fnsvNB7lWSl3vZSq",
-          outs: { out: { connection: "f8dyGCIfQr2TxSfX:ins:in" } },
+          outs: {
+            out: {
+              connection: "f8dyGCIfQr2TxSfX:ins:in",
+            },
+          },
         },
         {
           type: "location",
           state: "targets",
           inputs: {
-            effect: { connection: "liv4jrzZJXZpVSL2:outputs:effect" },
-            cacheLocation: { value: true },
-            location: { connection: "gqkQYUecKZvGqCuT:outputs:entry" },
+            effect: {
+              connection: "liv4jrzZJXZpVSL2:outputs:effect",
+            },
+            cacheLocation: {
+              value: true,
+            },
+            location: {
+              connection: "gqkQYUecKZvGqCuT:outputs:entry",
+            },
           },
-          position: { x: 1813.7777744880864, y: 160.70561627282024 },
+          position: {
+            x: 1063.7777744880864,
+            y: 160.70561627282024,
+          },
           id: "f8dyGCIfQr2TxSfX",
-          outs: { out: { connection: "hAY3LzLlYK4Q73P5:ins:in" } },
+          outs: {
+            out: {
+              connection: "hAY3LzLlYK4Q73P5:ins:in",
+            },
+          },
         },
         {
           type: "play",
-          position: { x: 3750.081584591428, y: 158.4721785916223 },
+          position: {
+            x: 3000.081584591428,
+            y: 158.4721785916223,
+          },
           id: "ExE2lGwaMB8rpUZ4",
-          inputs: { preload: { value: true }, local: { value: true } },
+          inputs: {
+            preload: {
+              value: true,
+            },
+            local: {
+              value: true,
+            },
+          },
         },
         {
           type: "sound",
-          position: { x: 2629.839743589744, y: 156.0555555555556 },
+          position: {
+            x: 1879.839743589744,
+            y: 156.0555555555556,
+          },
           id: "7BMsQhHOs2zfFjwI",
           inputs: {
-            file: { value: "ggg-sfx.magic.electricity.cast.charge.01" },
-            name: { connection: "R4V7ygO4mrXtDYAz:outputs:mCVSZGGWLUr7J0QM" },
+            file: {
+              value: "ggg-sfx.magic.electricity.cast.charge.01",
+            },
+            name: {
+              connection: "R4V7ygO4mrXtDYAz:outputs:mCVSZGGWLUr7J0QM",
+            },
           },
-          outs: { out: { connection: "N4e5N90bDsN8QIrB:ins:in" } },
+          outs: {
+            out: {
+              connection: "N4e5N90bDsN8QIrB:ins:in",
+            },
+          },
         },
         {
           type: "snd-location",
           state: "atLocation",
           inputs: {
-            sound: { connection: "7BMsQhHOs2zfFjwI:outputs:sound" },
+            sound: {
+              connection: "7BMsQhHOs2zfFjwI:outputs:sound",
+            },
             location: {
               connection: "N4e5N90bDsN8QIrB:outputs:YxpfFAOQggVwCsO8",
             },
           },
-          position: { x: 3233, y: 158.56666666666683 },
+          position: {
+            x: 2483,
+            y: 158.56666666666683,
+          },
           id: "k5yMLOhMnvJQdRui",
-          outs: { out: { connection: "TFhTKK0Le4SFT2iG:ins:in" } },
+          outs: {
+            out: {
+              connection: "TFhTKK0Le4SFT2iG:ins:in",
+            },
+          },
         },
         {
           type: "snd-flow",
           inputs: {
-            preset: { value: "troveSound" },
-            sound: { connection: "7BMsQhHOs2zfFjwI:outputs:sound" },
+            preset: {
+              value: "troveSound",
+            },
+            sound: {
+              connection: "7BMsQhHOs2zfFjwI:outputs:sound",
+            },
           },
-          position: { x: 3462.4444444444443, y: 158.16666666666686 },
+          position: {
+            x: 2712.4444444444443,
+            y: 158.16666666666686,
+          },
           id: "TFhTKK0Le4SFT2iG",
-          outs: { out: { connection: "ExE2lGwaMB8rpUZ4:ins:in" } },
+          outs: {
+            out: {
+              connection: "ExE2lGwaMB8rpUZ4:ins:in",
+            },
+          },
         },
         {
           type: "execute-script",
-          position: { x: 2936.583333333333, y: 155.22222222222223 },
+          position: {
+            x: 2186.583333333333,
+            y: 155.22222222222223,
+          },
           id: "N4e5N90bDsN8QIrB",
           custom: {
             inputs: {
@@ -2302,53 +3598,96 @@ export const TEMPLATES = {
               value:
                 '/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: "number", value: x + y}];\n */\nconst template = inputs[0]\nreturn [{type: "point", value: template?.shapes?.[0]?.center}];',
             },
-            qjU48Lj8nx9ds3i9: { connection: "M6jOJTalL2br81jH:outputs:entry" },
+            qjU48Lj8nx9ds3i9: {
+              connection: "M6jOJTalL2br81jH:outputs:entry",
+            },
           },
-          outs: { out: { connection: "k5yMLOhMnvJQdRui:ins:in" } },
+          outs: {
+            out: {
+              connection: "k5yMLOhMnvJQdRui:ins:in",
+            },
+          },
         },
         {
           inputs: {
-            entry: { connection: "buq3tU2pxIiR5IWz:outputs:yA5gipDgx9QRRKU1" },
+            entry: {
+              connection: "buq3tU2pxIiR5IWz:outputs:yA5gipDgx9QRRKU1",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 2764.6944444444443, y: 104.77777777777783 },
+          position: {
+            x: 2014.6944444444443,
+            y: 104.77777777777783,
+          },
           id: "M6jOJTalL2br81jH",
         },
         {
           type: "aim",
-          position: { x: 2051.3978243978245, y: 162.288888888889 },
+          position: {
+            x: 1301.3978243978245,
+            y: 162.288888888889,
+          },
           id: "hAY3LzLlYK4Q73P5",
           inputs: {
-            effect: { connection: "liv4jrzZJXZpVSL2:outputs:effect" },
-            towards: { connection: "G3IRIVBXB7Mvf6rV:outputs:entry" },
+            effect: {
+              connection: "liv4jrzZJXZpVSL2:outputs:effect",
+            },
+            towards: {
+              connection: "G3IRIVBXB7Mvf6rV:outputs:entry",
+            },
           },
-          outs: { out: { connection: "rj7X0Sf0wWMmwWB8:ins:in" } },
+          outs: {
+            out: {
+              connection: "rj7X0Sf0wWMmwWB8:ins:in",
+            },
+          },
         },
         {
           inputs: {
-            entry: { connection: "buq3tU2pxIiR5IWz:outputs:yA5gipDgx9QRRKU1" },
+            entry: {
+              connection: "buq3tU2pxIiR5IWz:outputs:yA5gipDgx9QRRKU1",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 1912.2222222222222, y: 116.43434343434362 },
+          position: {
+            x: 1162.2222222222222,
+            y: 116.43434343434362,
+          },
           id: "G3IRIVBXB7Mvf6rV",
         },
         {
           inputs: {
-            entry: { connection: "buq3tU2pxIiR5IWz:outputs:yA5gipDgx9QRRKU1" },
+            entry: {
+              connection: "buq3tU2pxIiR5IWz:outputs:yA5gipDgx9QRRKU1",
+            },
           },
           type: "__variable_getter__",
-          position: { x: 1633.333333333333, y: 116.43434343434356 },
+          position: {
+            x: 883.3333333333331,
+            y: 116.43434343434356,
+          },
           id: "gqkQYUecKZvGqCuT",
         },
         {
           type: "flow",
-          position: { x: 2350.0341880341884, y: 162.26767676767702 },
+          position: {
+            x: 1600.0341880341884,
+            y: 162.26767676767702,
+          },
           id: "rj7X0Sf0wWMmwWB8",
           inputs: {
-            effect: { connection: "liv4jrzZJXZpVSL2:outputs:effect" },
-            delayMin: { value: 2400 },
+            effect: {
+              connection: "liv4jrzZJXZpVSL2:outputs:effect",
+            },
+            delayMin: {
+              value: 2400,
+            },
           },
-          outs: { out: { connection: "7BMsQhHOs2zfFjwI:ins:in" } },
+          outs: {
+            out: {
+              connection: "7BMsQhHOs2zfFjwI:ins:in",
+            },
+          },
         },
       ],
       variables: {

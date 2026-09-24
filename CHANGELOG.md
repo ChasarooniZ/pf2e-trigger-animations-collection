@@ -18,7 +18,8 @@
     - ~~Trove: Template (Line)~~ -> `Trove: Template (Cone & Line)`
       - _Now intended to be used additionally for cones that fill the space or shouldn't be mirrored_
   - Updated `Trove: Template (Doubled Cone)` to fix error with it and simplify implementation
-  - Updated `Template Handler` to remove remaining console log and fix issue with it printing an object as a trigger
+  - Updated `Handler: Template` to remove remaining console log and fix issue with it printing an object as a trigger
+  - Updated `Templates` to fix starting position a bit
 
 ## 0.10.5
 
