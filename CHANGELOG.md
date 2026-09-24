@@ -2,10 +2,22 @@
 
 - **Animations**
   - **New**
+    - Daze (@Dio)
   - **Updated**
     - Torrent in the Blood _fixed issue with animation_ (@ChasarooniZ)
+- **New**
+  - Added New Templates
+    - `On Token (Source)` - For actions such as `Telekinetic Hand`
+    - `On Token (Source -> Targets)` - For spells or actions like slow
+  - Added a new helper function `tokenCrosshairHelper`
+    - This is used to create a crosshair that selects a spot to allow automation of crosshair related stuff, as a stopgap in the meantime
 - **Update**
-  - Updated `Trove Cone Template` to fix error with it and simplify implementation
+  - The following templates have been changed
+    - ~~Trove: Template (Cone)~~ -> `Trove: Template (Doubled Cone)`
+      - _To be used for times where the cone animation is to thin and needs to be duplicated_
+    - ~~Trove: Template (Line)~~ -> `Trove: Template (Cone & Line)`
+      - _Now intended to be used additionally for cones that fill the space or shouldn't be mirrored_
+  - Updated `Trove: Template (Doubled Cone)` to fix error with it and simplify implementation
   - Updated `Template Handler` to remove remaining console log and fix issue with it printing an object as a trigger
 
 ## 0.10.5

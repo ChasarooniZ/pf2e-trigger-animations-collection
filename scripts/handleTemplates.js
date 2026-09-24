@@ -12,7 +12,7 @@ const templates = [
   {
     id: "trove-melee-attack",
     label: "Trove: Melee Attack",
-    hint: "Effect on the source, pointed to the target compatible with Trigger Animation Trove (PF2e / SF2e).",
+    hint: "Effect on the source, pointed to the target compatible with Trigger Animation Trove",
     prefixes: ["attack", "damage"],
     build: (ctx) => {
       return createAnimation({ templateString: TEMPLATES.ATTACK.MELEE, ctx });
@@ -21,7 +21,7 @@ const templates = [
   {
     id: "trove-ranged-attack",
     label: "Trove: Ranged Attack",
-    hint: "Effect on the source, stretched to the target compatible with Trigger Animation Trove (PF2e / SF2e).",
+    hint: "Effect on the source, stretched to the target compatible with Trigger Animation Trove",
     prefixes: ["attack", "damage"],
     build: (ctx) => {
       return createAnimation({ templateString: TEMPLATES.ATTACK.RANGED, ctx });
@@ -30,7 +30,7 @@ const templates = [
   {
     id: "trove-effect-granted",
     label: "Trove: Effect Granted",
-    hint: "Effect on the source compatible with Trigger Animation Trove (PF2e / SF2e).",
+    hint: "Effect on the source compatible with Trigger Animation Trove",
     prefixes: ["effect"],
     build: (ctx) => {
       return createAnimation({
@@ -40,9 +40,33 @@ const templates = [
     },
   },
   {
+    id: "trove-ontoken-source",
+    label: "Trove: On-Token (Source)",
+    hint: "Effect on the source token; compatible with Trigger Animation Trove",
+    prefixes: ["action", "spell"],
+    build: (ctx) => {
+      return createAnimation({
+        templateString: TEMPLATES.ON_TOKEN.SOURCE,
+        ctx,
+      });
+    },
+  },
+  {
+    id: "trove-ontoken-source-to-target",
+    label: "Trove: On-Token (Source -> Target)",
+    hint: "Effect on the source token and on all targets; compatible with Trigger Animation Trove, for cones that are too small and need to be duplicated",
+    prefixes: ["action", "spell"],
+    build: (ctx) => {
+      return createAnimation({
+        templateString: TEMPLATES.ON_TOKEN.SOURCE_TO_TARGETS,
+        ctx,
+      });
+    },
+  },
+  {
     id: "trove-template-burst-emanation",
     label: "Trove: Template (Burst & Emanation)",
-    hint: "Effect on the template compatible with Trigger Animation Trove (PF2e / SF2e).",
+    hint: "Effect on the template compatible with Trigger Animation Trove",
     prefixes: ["template"],
     build: (ctx) => {
       return createAnimation({
@@ -53,8 +77,8 @@ const templates = [
   },
   {
     id: "trove-template-cone",
-    label: "Trove: Template (Cone)",
-    hint: "Effect on the template compatible with Trigger Animation Trove (PF2e / SF2e).",
+    label: "Trove: Template (Doubled Cone)",
+    hint: "Effect on the template compatible with Trigger Animation Trove, for cones that are too small and need to be duplicated",
     prefixes: ["template"],
     build: (ctx) => {
       return createAnimation({
@@ -65,8 +89,8 @@ const templates = [
   },
   {
     id: "trove-template-line",
-    label: "Trove: Template (Line)",
-    hint: "Effect on the template compatible with Trigger Animation Trove (PF2e / SF2e).",
+    label: "Trove: Template (Cone & Line)",
+    hint: "Effect on the template compatible with Trigger Animation Trove",
     prefixes: ["template"],
     build: (ctx) => {
       return createAnimation({
