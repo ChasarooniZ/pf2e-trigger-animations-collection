@@ -11,6 +11,19 @@
         "label": "Enable All Animations",
         "hint": "Asks the user to enable all animations again if they for whatever reason dismissed some dialog or want to force them to be enabled again"
       }
+    },
+    "message": {
+      "update": {
+        "title": "Trigger Animation Trove",
+        "animations": {
+          "description": "New animations were added",
+          "button": "Enable New Animations"
+        },
+        "triggers": {
+          "description": "New triggers were added, enable these to add the new triggers",
+          "button": "Enable New Triggers"
+        }
+      }
     }
   }
 }

@@ -1,5 +1,10 @@
 ## Unreleased
 
+- **New**
+  - _Less Pop Ups_
+    - Reworked asking to enable new animations/triggers
+    - Now a message will appear asking you to enable new triggers or animations (for the GM)
+
 ## 0.11.0
 
 - **Animations**
