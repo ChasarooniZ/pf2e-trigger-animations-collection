@@ -1,6 +1,6 @@
 import { MODULE_ID } from "./module.js";
 
-export async function askToAddNewAnimationsDialog() {
+export async function getAnimationsToAddAndUpdateFlags() {
   const askedAnimationsSet = new Set(
     game.settings.get(MODULE_ID, "animations-asked-to-enable"),
   );
@@ -11,24 +11,29 @@ export async function askToAddNewAnimationsDialog() {
   const list = await getNewAnimationData(askedAnimationsSet, enabledSet);
 
   if (list.length > 0) {
-    const addNewAnimations = await enableAnimationsDialog(list);
     list.forEach((anim) => {
       if (!askedAnimationsSet.has(anim.id)) {
         askedAnimationsSet.add(anim.id);
       }
     });
+  }
 
-    if (addNewAnimations) {
-      await enableAllDisabledAnimations(list);
-      ui.notifications.info("These new animations have been enabled");
+  triggerData?.enabled?.forEach((animID) => {
+    if (!askedAnimationsSet.has(animID)) {
+      askedAnimationsSet.add(animID);
     }
-    triggerData?.enabled?.forEach((animID) => {
-      if (!askedAnimationsSet.has(animID)) {
-        askedAnimationsSet.add(animID);
-      }
-    });
-    const array = Array.from(askedAnimationsSet);
-    await game.settings.set(MODULE_ID, "animations-asked-to-enable", array);
+  });
+  const array = Array.from(askedAnimationsSet);
+  await game.settings.set(MODULE_ID, "animations-asked-to-enable", array);
+  return list;
+}
+
+export async function askToAddNewAnimationsDialog(list) {
+  const addNewAnimations = await enableAnimationsDialog(list);
+
+  if (addNewAnimations) {
+    await enableAllDisabledAnimations(list);
+    ui.notifications.info("These new animations have been enabled");
   }
 }
 

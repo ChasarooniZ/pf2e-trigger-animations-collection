@@ -1,6 +1,7 @@
-import { askToAddNewAnimationsDialog } from "./enableNewAnimations.js";
-import { addRequiredAnimationTriggers } from "./enableNewTriggers.js";
+import { getAnimationsToAddAndUpdateFlags } from "./enableNewAnimations.js";
+import { getTriggersToAddAndUpdateFlags } from "./enableNewTriggers.js";
 import { registerTriggerAnimationTemplates } from "./handleTemplates.js";
+import { sendUpdateMessage } from "./lib/updateMessage.js";
 import { setupSettings } from "./settings.js";
 
 export const MODULE_ID = "pf2e-trigger-animations-trove";
@@ -18,7 +19,9 @@ Hooks.once("init", async function () {
     if (game.user.isGM) {
       if (!window?.troveAnimationsAsked) {
         window.troveAnimationsAsked = true;
-        askToAddNewAnimationsDialog();
+        // askToAddNewAnimationsDialog();
+        const list = await getAnimationsToAddAndUpdateFlags();
+        await sendUpdateMessage({ animations: list });
       }
     }
     // modifyTriggerAnimationTemplates();
@@ -26,7 +29,8 @@ Hooks.once("init", async function () {
 
   Hooks.once("triggerEngine.ready", async () => {
     if (game.user.isGM) {
-      addRequiredAnimationTriggers();
+      const list = await getTriggersToAddAndUpdateFlags();
+      await sendUpdateMessage({ triggers: list });
     }
   });
 });

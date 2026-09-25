@@ -1,5 +1,8 @@
-import { askToAddNewAnimationsDialog } from "./enableNewAnimations.js";
-import { addRequiredAnimationTriggers } from "./enableNewTriggers.js";
+import {
+  askToAddNewAnimationsDialog,
+  getAnimationsToAddAndUpdateFlags,
+} from "./enableNewAnimations.js";
+import { askToEnableNewTriggersDialog } from "./enableNewTriggers.js";
 import { MODULE_ID } from "./module.js";
 
 export function setupSettings() {
@@ -41,15 +44,12 @@ export function setupSettings() {
 }
 
 class ForceEnableAllAnimations extends FormApplication {
-  constructor(...args) {
-    super(...args);
-  }
-
   async render(force, options = {}) {
     await game.settings.set(MODULE_ID, "animations-asked-to-enable", []);
     // await game.settings.set(MODULE_ID, "triggers-asked-to-enable", []);
     // await askToEnableNewTriggersDialog();
-    askToAddNewAnimationsDialog();
+    const list = await getAnimationsToAddAndUpdateFlags();
+    askToAddNewAnimationsDialog(list);
 
     return this;
   }
