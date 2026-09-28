@@ -6,8 +6,8 @@ export async function getTriggersToAddAndUpdateFlags() {
   );
   const list = await getTriggerDataNew();
   triggerAnimations.api.requiredTriggerEngineTriggers.push(...list);
-  const missingTriggers = list.filter((trigger) =>
-    askedTriggersSet.has(trigger),
+  const missingTriggers = list.filter(
+    (trigger) => !askedTriggersSet.has(trigger?.id),
   );
   if (missingTriggers.length > 0) {
     missingTriggers.forEach((t) => {
