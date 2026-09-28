@@ -126,7 +126,7 @@
       },
       "outs": {
         "out": {
-          "connection": "kOveTNFibKl6yrrI:ins:in"
+          "connection": "gDl3N566fzgHJeW5:ins:in"
         }
       },
       "state": "object"
@@ -134,8 +134,8 @@
     {
       "type": "visibility",
       "position": {
-        "x": 1942.5103785103777,
-        "y": -67.38888888888891
+        "x": 2326.5103785103774,
+        "y": -89.38888888888891
       },
       "id": "Nrbbayr5LI09Phi2",
       "inputs": {
@@ -167,8 +167,8 @@
     {
       "type": "play",
       "position": {
-        "x": 2835.872571872572,
-        "y": -57.696969696969745
+        "x": 3219.872571872572,
+        "y": -79.69696969696975
       },
       "id": "SW6ZeNxbHQVg27Dj",
       "inputs": {
@@ -183,8 +183,8 @@
     {
       "type": "get-quality",
       "position": {
-        "x": 2250.1111111111113,
-        "y": -66.22222222222229
+        "x": 2634.1111111111113,
+        "y": -88.22222222222229
       },
       "id": "H2COAV35MOZAqh7W",
       "outs": {
@@ -205,8 +205,8 @@
     {
       "type": "persist",
       "position": {
-        "x": 2512.7777777777774,
-        "y": 131.44444444444434
+        "x": 2896.7777777777774,
+        "y": 109.44444444444434
       },
       "id": "icMdaJ1q3j1VHfPK",
       "inputs": {
@@ -238,8 +238,8 @@
     {
       "type": "rotation",
       "position": {
-        "x": 1685.9682539682542,
-        "y": -60.33333333333303
+        "x": 2069.9682539682544,
+        "y": -82.33333333333303
       },
       "id": "3v5Py0kM4c1sAYDK",
       "inputs": {
@@ -259,8 +259,8 @@
     {
       "type": "file",
       "position": {
-        "x": 1440.9035221330043,
-        "y": -59.98476728463231
+        "x": 1824.9035221330043,
+        "y": -81.98476728463231
       },
       "id": "kOveTNFibKl6yrrI",
       "inputs": {
@@ -276,10 +276,52 @@
           "connection": "3v5Py0kM4c1sAYDK:ins:in"
         }
       }
+    },
+    {
+      "type": "module-enabled",
+      "position": {
+        "x": 1406.0341880341882,
+        "y": -49.83333333333332
+      },
+      "id": "gDl3N566fzgHJeW5",
+      "inputs": {
+        "module": {
+          "value": "jb2a_patreon"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "kOveTNFibKl6yrrI:ins:in"
+        },
+        "false": {
+          "connection": "B1qeEKWSfp5H9Yyl:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 1809.9035221330046,
+        "y": 118.01523271536774
+      },
+      "id": "B1qeEKWSfp5H9Yyl",
+      "inputs": {
+        "file": {
+          "value": "jb2a.wind_stream.white"
+        },
+        "effect": {
+          "connection": "fOQmLPBTOTwEancN:outputs:effect"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "3v5Py0kM4c1sAYDK:ins:in"
+        }
+      }
     }
   ],
   "name": "Prone",
   "description": "<p>Written by @Chasarooni</p>",
   "folder": "Conditions",
-  "id": "jM7Rbv8cu2ONs5c3"
+  "id": "g8R0X88isfO0y8t3"
 }

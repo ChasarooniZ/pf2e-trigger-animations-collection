@@ -898,7 +898,7 @@
           "connection": "aZkwW0kygRGfqjCG:outputs:effect"
         },
         "file": {
-          "value": "jb2a.hammer.return"
+          "value": "jb2a.handaxe.return.01"
         }
       },
       "position": {
@@ -1194,6 +1194,9 @@
         },
         "delayMin": {
           "value": 800
+        },
+        "preset": {
+          "value": "troveSound"
         }
       },
       "position": {
@@ -1455,7 +1458,7 @@
       "id": "7mchn69BDFBCdpFZ"
     }
   ],
-  "id": "wmczi5oJodMuweoY",
+  "id": "469n6SenGGfa2bgl",
   "description": "<p><em>Example Animation from Trigger Animations by @MrVauxs.</em></p><p><em>Modified by @Chasarooni for use in Trigger Animation Trove</em></p>",
   "variables": {
     "4gZJ8Gm9UjlhMc4G:outputs:source": {

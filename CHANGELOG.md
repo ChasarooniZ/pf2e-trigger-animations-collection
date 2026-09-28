@@ -1,9 +1,19 @@
 ## Unreleased
 
+## 0.12.0
+
+- **Animations**
+  - **New**
+    - Courageous Anthem, Dirge of Doom, Erhu Bow, Germantria Rune of Partnership, Mesmerizing Melody, Phantom Orchestra, Rousing Splash, Shadow Raid, Shove, Soothe, Spirit Song, Stars of Another Sky, Subsonic Burst, Telekinetic Projectile, Triple Time, Unfathomable Song, Wail of the Banshee, Wails of the Damned (@ChasarooniZ)
+  - **Updated**
+    - Prone _added Jb2a Free version_ (@ChasarooniZ)
+    - Weapon Group: Axe _updated to use new returning axe animation_ (@ChasarooniZ)
 - **New**
   - _Less Pop Ups_
     - Reworked asking to enable new animations/triggers
     - Now a message will appear asking you to enable new triggers or animations (for the GM)
+- **Update**
+  - Fixed api not working
 
 ## 0.11.0
 

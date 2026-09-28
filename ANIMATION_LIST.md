@@ -43,6 +43,7 @@
     - [Feats](#feats)
       - [Ancestry Feats](#ancestry-feats)
       - [Class Feats](#class-feats)
+        - [Barbarian](#barbarian-1)
         - [Fighter](#fighter)
         - [Kineticist](#kineticist-1)
         - [Monk](#monk)
@@ -120,6 +121,7 @@
 
 - Rune: Atryl, Rune of Fire 🔊🆓 (✍🏼 @Chasarooni)
 - Rune: Esvadir, Rune of Whetstones 🔊🆓 (✍🏼 @Chasarooni)
+- Rune: Germantria, Rune of Partnership 🔊🆓 (✍🏼 @Chasarooni)
 - Rune: Ranshu, Rune of Thunder 🔊🆓 (✍🏼 @Chasarooni)
 
 ### Spells
@@ -128,8 +130,10 @@
 
 - Boost Eidolon 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Buzzing Bites 🔊🆓 (✍🏼 @Chasarooni)
+- Courageous Anthem 🔊🆓✅ (✍🏼 @Chasarooni)
 - Daze 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Detect Magic 🔊🆓✅ (✍🏼 @Suldrun45)
+- Dirge of Doom 🔊🆓✅ (✍🏼 @Chasarooni)
 - Divine Lance 🔊🆓 (✍🏼 @Chasarooni)
 - Electric Arc 🔊🆓✅ (✍🏼 @Chasarooni)
 - Frostbite 🔊🆓✅ (✍🏼 @Chasarooni)
@@ -137,9 +141,12 @@
 - Needle Darts 🔊🆓✅ (✍🏼 @Chasarooni)
 - Ray of Frost 🔊🆓✅ (✍🏼 @Chasarooni)
 - Reinforce Eidolon 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
+- Rousing Splash 🔊🆓✅ (✍🏼 @Chasarooni)
 - Scatter Scree 🔊🆓✅ (✍🏼 @Chasarooni)
 - Tangle Vine 🔊🆓✅ (✍🏼 @Suldrun45)
 - Telekinetic Hand 🔊🆓✅ (✍🏼 @Chasarooni)
+- Telekinetic Projectile 🔊🆓✅ (✍🏼 @Chasarooni)
+- Triple Time 🔊🆓✅ (✍🏼 @Chasarooni)
 - Void Warp 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### Focus Spells
@@ -163,6 +170,7 @@
 - Gust of Wind 🔊🆓✅ (✍🏼 @Suldrun45, 🛠️ @Chasarooni)
 - Harm 🔊🆓✅ (✍🏼 @Chasarooni)
 - Heal 🔊🆓✅ (✍🏼 @Chasarooni)
+- Soothe 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### 2nd Rank Spells
 
@@ -195,17 +203,24 @@
 #### 6th Rank Spells
 
 - Chain Lighting 🔊🆓✅ (✍🏼 @Suldrun45)
+- Phantom Orchestra 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### 7th Rank Spells
 
 - Fiery Body 🔊🆓✅ (✍🏼 @Chasarooni)
+- Shadow Raid 🔊🆓✅ (✍🏼 @Chasarooni)
 - Volcanic Eruption 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### 8th Rank Spells
 
 - Dessicate 🔊🆓 (✍🏼 @Chasarooni)
+- Spirit Song 🔊🆓✅ (✍🏼 @Chasarooni)
+- Stars of Another Sky 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### 9th Rank Spells
+
+- Unfathomable Song 🔊🆓✅ (✍🏼 @Chasarooni)
+- Wails of the Damned 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### 10th Rank Spells
 
@@ -214,8 +229,9 @@
 ### Basic Actions
 
 - Grapple 🔊🆓✅ (✍🏼 @Chasarooni)
-- Renewed Vigor 🔊🆓✅ (✍🏼 @Chasarooni)
 - Raise a Shield 🔇🆓✅ (✍🏼 @Chasarooni)
+- Shove 🔊🆓✅ (✍🏼 @Chasarooni)
+- Tumble Through 🔊🆓✅ (✍🏼 @Chasarooni)
 
 ### Conditions
 
@@ -256,6 +272,10 @@
 - Change Shape 🔇🆓 (✍🏼 @Chasarooni)
 
 #### Class Feats
+
+##### Barbarian
+
+- Renewed Vigor 🔊🆓✅ (✍🏼 @Chasarooni)
 
 ##### Fighter
 
@@ -321,6 +341,7 @@
 - Acid Missile 🔊🆓 (✍🏼 @Chasarooni)
 - Electrical Blast 🔇🆓 (✍🏼 @Chasarooni)
 - Solid Refrain 🔊🆓✅ (✍🏼 @Chasarooni)
+- Subsonic Burst 🔊🆓✅ (✍🏼 @Chasarooni)
 - Thunderbolt 🔊🆓 (✍🏼 @Chasarooni)
 - Wind Gust 🔊🆓✅ (✍🏼 @Chasarooni)
 
@@ -373,6 +394,8 @@
 - Whip 🔊🆓 (✍🏼 @Chasarooni)
 
 ##### Specific
+
+- Erhu Bow 🔊🆓✅ (✍🏼 @Chasarooni)
 
 ### Equipment
 

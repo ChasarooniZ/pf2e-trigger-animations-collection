@@ -1,3 +1,4 @@
+import { setupAPI } from "./api.js";
 import { getAnimationsToAddAndUpdateFlags } from "./enableNewAnimations.js";
 import { getTriggersToAddAndUpdateFlags } from "./enableNewTriggers.js";
 import { registerTriggerAnimationTemplates } from "./handleTemplates.js";
@@ -37,6 +38,7 @@ Hooks.once("init", async function () {
 
 Hooks.once("ready", async function () {
   registerPresets();
+  setupAPI();
 });
 // function modifyTriggerAnimationTemplates() {
 //   triggerAnimations.api.templates.attack.prefixes = [
