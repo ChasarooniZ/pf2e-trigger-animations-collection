@@ -1,5 +1,8 @@
 ## Unreleased
 
+- **Updated**
+  - Weapon Group: Sling _fixed impact timing_ (@ChasarooniZ)
+
 ## 0.12.0
 
 - **Animations**

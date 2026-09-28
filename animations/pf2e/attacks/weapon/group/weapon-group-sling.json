@@ -1,5 +1,5 @@
 {
-  "id": "JwApNJh0Yd2yLlkB",
+  "id": "Cay1OyWG1meJjOX2",
   "name": "Weapon Group: Sling",
   "folder": "Attacks",
   "priority": -100,
@@ -520,7 +520,7 @@
           "value": true
         },
         "waitDelayMin": {
-          "value": -600
+          "value": -1000
         }
       },
       "position": {
