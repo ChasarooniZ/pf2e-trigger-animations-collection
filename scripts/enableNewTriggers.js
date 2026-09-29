@@ -46,8 +46,11 @@ export async function askToEnableNewTriggersDialog(list) {
 }
 
 async function enableAllDisabledTriggers(list, sheet) {
-  for (const trigger of list) {
-    const triggerDoc = sheet.blueprint.triggers.get(`module:${trigger.id}`);
+  const triggers = Array.from(sheet.blueprint.triggers.entries())
+    .filter(([key, value]) => value?.folder === "Animations")
+    .map(([key, value]) => key);
+  for (const trigger of triggers) {
+    const triggerDoc = sheet.blueprint.triggers.get(trigger);
     if (triggerDoc) {
       sheet.blueprint.enableTrigger(triggerDoc, true);
     }

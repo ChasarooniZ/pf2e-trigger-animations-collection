@@ -1,7 +1,10 @@
 ## Unreleased
 
+- **Animations**
+  - **Updated**
+    - Weapon Group: Sling _fixed impact timing_ (@ChasarooniZ)
 - **Updated**
-  - Weapon Group: Sling _fixed impact timing_ (@ChasarooniZ)
+  - Trigger enabling now will enable all triggers in the `Animations` section
 
 ## 0.12.0
 
