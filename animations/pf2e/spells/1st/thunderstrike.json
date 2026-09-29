@@ -1,0 +1,675 @@
+{
+  "id": "CNy8svWnNFEUkR7m",
+  "name": "Thunderstrike",
+  "folder": "Spells",
+  "priority": 0,
+  "description": "<p>Created by @maplealmond</p><p><strong>Trigger: <code>damage-roll:thunderstrike</code></strong></p>",
+  "nodes": [
+    {
+      "id": "KgkMgbeYDdHCUyA9",
+      "type": "animation-event",
+      "position": {
+        "x": -210.0000000000001,
+        "y": -15.71428571428578
+      },
+      "inputs": {
+        "name": {
+          "value": "damage-roll:thunderstrike"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "D4PN4br1ktQOTbD6:ins:in"
+        }
+      }
+    },
+    {
+      "id": "D4PN4br1ktQOTbD6",
+      "type": "extract-item",
+      "position": {
+        "x": 280,
+        "y": 0
+      },
+      "custom": {
+        "outputs": {
+          "NAYVxdO3wIkHMO1t": {
+            "id": "NAYVxdO3wIkHMO1t",
+            "input": "name",
+            "label": "Name",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "CA6Xl8GbPRK1qH5n": {
+            "id": "CA6Xl8GbPRK1qH5n",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "KgkMgbeYDdHCUyA9:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "JkgWpjML8BIYJo4c:ins:in"
+        }
+      }
+    },
+    {
+      "id": "LqHpZPJB6rCnPY5M",
+      "type": "effect",
+      "position": {
+        "x": 530,
+        "y": 0
+      },
+      "inputs": {
+        "name": {
+          "connection": "D4PN4br1ktQOTbD6:outputs:NAYVxdO3wIkHMO1t"
+        },
+        "origin": {
+          "connection": "D4PN4br1ktQOTbD6:outputs:CA6Xl8GbPRK1qH5n"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Cy4i7lbIiuykhahV:ins:in"
+        }
+      }
+    },
+    {
+      "id": "Cy4i7lbIiuykhahV",
+      "type": "file",
+      "position": {
+        "x": 750,
+        "y": 0
+      },
+      "inputs": {
+        "effect": {
+          "connection": "LqHpZPJB6rCnPY5M:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.call_lightning.high_res.blue"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "1GGFrpizCNILJjRi:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "inputs": {
+        "effect": {
+          "connection": "LqHpZPJB6rCnPY5M:outputs:effect"
+        },
+        "objectScale": {
+          "value": 10
+        }
+      },
+      "position": {
+        "x": 970,
+        "y": 0
+      },
+      "id": "1GGFrpizCNILJjRi",
+      "outs": {
+        "out": {
+          "connection": "FYS3lgTlHl1AHIKw:ins:in"
+        }
+      }
+    },
+    {
+      "id": "FYS3lgTlHl1AHIKw",
+      "type": "location",
+      "state": "targets",
+      "position": {
+        "x": 1190,
+        "y": 0
+      },
+      "inputs": {
+        "effect": {
+          "connection": "LqHpZPJB6rCnPY5M:outputs:effect"
+        },
+        "location": {
+          "connection": "KgkMgbeYDdHCUyA9:outputs:targets"
+        },
+        "attachTo": {
+          "value": true
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "TOBtsX6WaLBemKk1:ins:in"
+        }
+      }
+    },
+    {
+      "type": "flow",
+      "inputs": {
+        "effect": {
+          "connection": "LqHpZPJB6rCnPY5M:outputs:effect"
+        },
+        "waitUntilFinished": {
+          "value": true
+        },
+        "waitDelayMin": {
+          "value": -1633
+        }
+      },
+      "position": {
+        "x": 1410,
+        "y": 0
+      },
+      "id": "JiPKIIMAKWW2gpXE",
+      "outs": {
+        "out": {
+          "connection": "jYIgGBkUHdsnHlEP:ins:in"
+        }
+      }
+    },
+    {
+      "id": "jYIgGBkUHdsnHlEP",
+      "type": "effect",
+      "position": {
+        "x": 1630,
+        "y": 0
+      },
+      "inputs": {
+        "name": {
+          "connection": "D4PN4br1ktQOTbD6:outputs:NAYVxdO3wIkHMO1t"
+        },
+        "origin": {
+          "connection": "D4PN4br1ktQOTbD6:outputs:CA6Xl8GbPRK1qH5n"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "opPCvfKP96NjA3OV:ins:in"
+        }
+      }
+    },
+    {
+      "id": "opPCvfKP96NjA3OV",
+      "type": "file",
+      "position": {
+        "x": 1850,
+        "y": 0
+      },
+      "inputs": {
+        "effect": {
+          "connection": "jYIgGBkUHdsnHlEP:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.lightning_strike.blue"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "k9arzOOk7aO0j4P9:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "inputs": {
+        "effect": {
+          "connection": "jYIgGBkUHdsnHlEP:outputs:effect"
+        },
+        "objectScale": {
+          "value": 7.5
+        }
+      },
+      "position": {
+        "x": 2070,
+        "y": 0
+      },
+      "id": "HbD8lAI87yYCelFD",
+      "outs": {
+        "out": {
+          "connection": "NxZD8E51isl0QnMI:ins:in"
+        }
+      }
+    },
+    {
+      "id": "NxZD8E51isl0QnMI",
+      "type": "location",
+      "state": "targets",
+      "position": {
+        "x": 2290,
+        "y": 0
+      },
+      "inputs": {
+        "effect": {
+          "connection": "jYIgGBkUHdsnHlEP:outputs:effect"
+        },
+        "location": {
+          "connection": "KgkMgbeYDdHCUyA9:outputs:targets"
+        },
+        "attachTo": {
+          "value": true
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "YNLdGhPAeHZ0ltcv:ins:in"
+        }
+      }
+    },
+    {
+      "id": "oFb5Y06MjgXRqpXE",
+      "type": "effect",
+      "position": {
+        "x": 2510,
+        "y": 0
+      },
+      "inputs": {
+        "name": {
+          "connection": "D4PN4br1ktQOTbD6:outputs:NAYVxdO3wIkHMO1t"
+        },
+        "origin": {
+          "connection": "D4PN4br1ktQOTbD6:outputs:CA6Xl8GbPRK1qH5n"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "DzGm2jWCzcSudv9m:ins:in"
+        }
+      }
+    },
+    {
+      "id": "DzGm2jWCzcSudv9m",
+      "type": "file",
+      "position": {
+        "x": 2730,
+        "y": 0
+      },
+      "inputs": {
+        "effect": {
+          "connection": "oFb5Y06MjgXRqpXE:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.explosion.02.blue"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "bdJrJEpk8fISxGbq:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "inputs": {
+        "effect": {
+          "connection": "oFb5Y06MjgXRqpXE:outputs:effect"
+        },
+        "objectScale": {
+          "value": 2
+        }
+      },
+      "position": {
+        "x": 2950,
+        "y": 0
+      },
+      "id": "bdJrJEpk8fISxGbq",
+      "outs": {
+        "out": {
+          "connection": "4zJxGN8ayZBmIQfb:ins:in"
+        }
+      }
+    },
+    {
+      "id": "4zJxGN8ayZBmIQfb",
+      "type": "location",
+      "state": "targets",
+      "position": {
+        "x": 3170,
+        "y": 0
+      },
+      "inputs": {
+        "effect": {
+          "connection": "oFb5Y06MjgXRqpXE:outputs:effect"
+        },
+        "location": {
+          "connection": "KgkMgbeYDdHCUyA9:outputs:targets"
+        },
+        "attachTo": {
+          "value": true
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "WWTtAhVUeLe7icQw:ins:in"
+        }
+      }
+    },
+    {
+      "type": "flow",
+      "inputs": {
+        "effect": {
+          "connection": "oFb5Y06MjgXRqpXE:outputs:effect"
+        },
+        "delayMin": {
+          "value": 500
+        }
+      },
+      "position": {
+        "x": 3390,
+        "y": 0
+      },
+      "id": "WWTtAhVUeLe7icQw",
+      "outs": {
+        "out": {
+          "connection": "2FEJzZVp8fOAwopX:ins:in"
+        }
+      }
+    },
+    {
+      "id": "2FEJzZVp8fOAwopX",
+      "type": "effect",
+      "position": {
+        "x": 3610,
+        "y": 0
+      },
+      "inputs": {
+        "name": {
+          "connection": "D4PN4br1ktQOTbD6:outputs:NAYVxdO3wIkHMO1t"
+        },
+        "origin": {
+          "connection": "D4PN4br1ktQOTbD6:outputs:CA6Xl8GbPRK1qH5n"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "VWIrlNkVLW70ZKUU:ins:in"
+        }
+      }
+    },
+    {
+      "id": "VWIrlNkVLW70ZKUU",
+      "type": "file",
+      "position": {
+        "x": 3830,
+        "y": 0
+      },
+      "inputs": {
+        "effect": {
+          "connection": "2FEJzZVp8fOAwopX:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.static_electricity.03.blue"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "2imFu3u0i8brGU0G:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "inputs": {
+        "effect": {
+          "connection": "2FEJzZVp8fOAwopX:outputs:effect"
+        },
+        "objectScale": {
+          "value": 1.5
+        }
+      },
+      "position": {
+        "x": 4050,
+        "y": 0
+      },
+      "id": "2imFu3u0i8brGU0G",
+      "outs": {
+        "out": {
+          "connection": "AdtcHZ2USv2raVmW:ins:in"
+        }
+      }
+    },
+    {
+      "id": "AdtcHZ2USv2raVmW",
+      "type": "location",
+      "state": "targets",
+      "position": {
+        "x": 4270,
+        "y": 0
+      },
+      "inputs": {
+        "effect": {
+          "connection": "2FEJzZVp8fOAwopX:outputs:effect"
+        },
+        "location": {
+          "connection": "KgkMgbeYDdHCUyA9:outputs:targets"
+        },
+        "attachTo": {
+          "value": true
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "ybKWIKb0AxNAA1SQ:ins:in"
+        }
+      }
+    },
+    {
+      "type": "flow",
+      "inputs": {
+        "effect": {
+          "connection": "2FEJzZVp8fOAwopX:outputs:effect"
+        },
+        "delayMin": {
+          "value": 1500
+        }
+      },
+      "position": {
+        "x": 4490,
+        "y": 0
+      },
+      "id": "ybKWIKb0AxNAA1SQ",
+      "outs": {
+        "out": {
+          "connection": "f1frUq91gJaxBw6O:ins:in"
+        }
+      }
+    },
+    {
+      "id": "iIFWGAaUxX37uWQy",
+      "type": "play",
+      "position": {
+        "x": 4710,
+        "y": 0
+      },
+      "inputs": {
+        "preload": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "type": "sprite",
+      "inputs": {
+        "effect": {
+          "connection": "jYIgGBkUHdsnHlEP:outputs:effect"
+        },
+        "randomizeMirrorX": {
+          "value": true
+        }
+      },
+      "position": {
+        "x": 1960,
+        "y": 150
+      },
+      "id": "k9arzOOk7aO0j4P9",
+      "outs": {
+        "out": {
+          "connection": "HbD8lAI87yYCelFD:ins:in"
+        }
+      }
+    },
+    {
+      "type": "visibility",
+      "position": {
+        "x": 1300,
+        "y": 150
+      },
+      "id": "TOBtsX6WaLBemKk1",
+      "inputs": {
+        "effect": {
+          "connection": "LqHpZPJB6rCnPY5M:outputs:effect"
+        },
+        "opacity": {
+          "value": 0.3
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "JiPKIIMAKWW2gpXE:ins:in"
+        }
+      }
+    },
+    {
+      "type": "get-quality",
+      "position": {
+        "x": 400,
+        "y": 220
+      },
+      "id": "JkgWpjML8BIYJo4c",
+      "outs": {
+        "minimal": {
+          "connection": "jYIgGBkUHdsnHlEP:ins:in"
+        },
+        "low": {
+          "connection": "LqHpZPJB6rCnPY5M:ins:in"
+        },
+        "medium": {
+          "connection": "LqHpZPJB6rCnPY5M:ins:in"
+        },
+        "high": {
+          "connection": "LqHpZPJB6rCnPY5M:ins:in"
+        }
+      },
+      "inputs": {}
+    },
+    {
+      "type": "get-quality",
+      "position": {
+        "x": 2410,
+        "y": 220
+      },
+      "id": "YNLdGhPAeHZ0ltcv",
+      "outs": {
+        "minimal": {
+          "connection": "f1frUq91gJaxBw6O:ins:in"
+        },
+        "low": {
+          "connection": "f1frUq91gJaxBw6O:ins:in"
+        },
+        "medium": {
+          "connection": "f1frUq91gJaxBw6O:ins:in"
+        },
+        "high": {
+          "connection": "oFb5Y06MjgXRqpXE:ins:in"
+        }
+      },
+      "inputs": {}
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 4110,
+        "y": 260
+      },
+      "id": "f1frUq91gJaxBw6O",
+      "inputs": {
+        "name": {
+          "connection": "D4PN4br1ktQOTbD6:outputs:NAYVxdO3wIkHMO1t"
+        },
+        "file": {
+          "value": "ggg-sfx.magic.electricity.thunder.strike.01"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "DvNPLXERTtroUB7H:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "f1frUq91gJaxBw6O:outputs:sound"
+        },
+        "location": {
+          "connection": "KgkMgbeYDdHCUyA9:outputs:targets"
+        },
+        "exitOnEmpty": {
+          "value": "global"
+        }
+      },
+      "position": {
+        "x": 4310,
+        "y": 260
+      },
+      "id": "DvNPLXERTtroUB7H",
+      "outs": {
+        "out": {
+          "connection": "GJnd3YKWhCjpXfnO:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "f1frUq91gJaxBw6O:outputs:sound"
+        },
+        "preset": {
+          "value": "troveSound"
+        }
+      },
+      "position": {
+        "x": 4510,
+        "y": 260
+      },
+      "id": "GJnd3YKWhCjpXfnO",
+      "outs": {
+        "out": {
+          "connection": "iIFWGAaUxX37uWQy:ins:in"
+        }
+      }
+    }
+  ],
+  "variables": {
+    "KgkMgbeYDdHCUyA9:outputs:sources": {
+      "isArray": true,
+      "label": "Sources",
+      "type": "target"
+    },
+    "KgkMgbeYDdHCUyA9:outputs:targets": {
+      "isArray": true,
+      "label": "Targets",
+      "type": "target"
+    },
+    "D4PN4br1ktQOTbD6:outputs:NAYVxdO3wIkHMO1t": {
+      "isArray": false,
+      "label": "Name",
+      "type": "text"
+    }
+  }
+}
