@@ -1476,7 +1476,7 @@ export const TEMPLATES = {
               connection: "gVixIsQVmAcLcDi5:outputs:effect",
             },
             objectScale: {
-              value: 1.5,
+              value: 2,
             },
           },
           position: {
@@ -1725,7 +1725,7 @@ export const TEMPLATES = {
               connection: "ES8oKsgK9yiexhgr:outputs:effect",
             },
             objectScale: {
-              value: 1.5,
+              value: 2,
             },
           },
           position: {
@@ -2216,7 +2216,7 @@ export const TEMPLATES = {
               connection: "ES8oKsgK9yiexhgr:outputs:effect",
             },
             objectScale: {
-              value: 1.5,
+              value: 2,
             },
           },
           position: {
