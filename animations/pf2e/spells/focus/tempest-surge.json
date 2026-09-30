@@ -40,7 +40,7 @@
       },
       "outs": {
         "out": {
-          "connection": "iyt5fVCv6shrN21T:ins:in"
+          "connection": "tsWhirlJb2aCheck:ins:in"
         }
       }
     },
@@ -101,7 +101,7 @@
         }
       },
       "position": {
-        "x": 549,
+        "x": 864,
         "y": 1133
       },
       "id": "iyt5fVCv6shrN21T",
@@ -123,7 +123,7 @@
         }
       },
       "position": {
-        "x": 809,
+        "x": 1124,
         "y": 1133
       },
       "id": "H2Z1mwcAK8Aki18F",
@@ -148,7 +148,7 @@
         }
       },
       "position": {
-        "x": 1085,
+        "x": 1400,
         "y": 1133
       },
       "id": "6o5yl4V5Db9EMUag",
@@ -262,7 +262,7 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 951,
+        "x": 1266,
         "y": 1700
       },
       "id": "TBud5J4DCvXK0uhv"
@@ -616,7 +616,7 @@
         }
       },
       "position": {
-        "x": 1346,
+        "x": 1661,
         "y": 1133
       },
       "id": "Rvp2ndaI9brjkZuG",
@@ -643,7 +643,7 @@
         }
       },
       "position": {
-        "x": 1613,
+        "x": 1928,
         "y": 1133
       },
       "id": "4MhcyZpa5pceS4bC",
@@ -773,7 +773,7 @@
       "id": "56QhQWU2ZSh2PK1m",
       "type": "__gate_entry__",
       "position": {
-        "x": 2206,
+        "x": 2521,
         "y": 1243
       },
       "outs": {
@@ -811,7 +811,7 @@
     {
       "type": "get-quality",
       "position": {
-        "x": 1946,
+        "x": 2261,
         "y": 1133
       },
       "id": "tsWhirlQuality01",
@@ -834,12 +834,54 @@
       "id": "tsWhirlSoundEnt1",
       "type": "__gate_entry__",
       "position": {
-        "x": 2206,
+        "x": 2521,
         "y": 1133
       },
       "outs": {
         "out": {
           "connection": "op5uBrUOeE3WvgsW:ins:in"
+        }
+      }
+    },
+    {
+      "type": "module-enabled",
+      "position": {
+        "x": 549,
+        "y": 1133
+      },
+      "id": "tsWhirlJb2aCheck",
+      "inputs": {
+        "module": {
+          "value": "jb2a_patreon"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "iyt5fVCv6shrN21T:ins:in"
+        },
+        "false": {
+          "connection": "tsWhirlFreeFile1:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "inputs": {
+        "effect": {
+          "connection": "sDof6IVO7DRBaEq2:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.whirlwind.bluegrey"
+        }
+      },
+      "position": {
+        "x": 864,
+        "y": 1347
+      },
+      "id": "tsWhirlFreeFile1",
+      "outs": {
+        "out": {
+          "connection": "H2Z1mwcAK8Aki18F:ins:in"
         }
       }
     }
