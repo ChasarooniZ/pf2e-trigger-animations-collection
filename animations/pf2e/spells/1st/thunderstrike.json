@@ -66,7 +66,7 @@
       "type": "effect",
       "position": {
         "x": 230,
-        "y": 393
+        "y": 1208
       },
       "inputs": {
         "name": {
@@ -87,7 +87,7 @@
       "type": "file",
       "position": {
         "x": 549,
-        "y": 393
+        "y": 1208
       },
       "inputs": {
         "effect": {
@@ -116,7 +116,7 @@
       },
       "position": {
         "x": 809,
-        "y": 393
+        "y": 1208
       },
       "id": "1GGFrpizCNILJjRi",
       "outs": {
@@ -131,7 +131,7 @@
       "state": "targets",
       "position": {
         "x": 1085,
-        "y": 393
+        "y": 1208
       },
       "inputs": {
         "effect": {
@@ -165,7 +165,7 @@
       },
       "position": {
         "x": 1679,
-        "y": 393
+        "y": 1208
       },
       "id": "JiPKIIMAKWW2gpXE",
       "outs": {
@@ -179,7 +179,7 @@
       "type": "effect",
       "position": {
         "x": 230,
-        "y": 1208
+        "y": 2023
       },
       "inputs": {
         "name": {
@@ -200,7 +200,7 @@
       "type": "file",
       "position": {
         "x": 549,
-        "y": 1208
+        "y": 2023
       },
       "inputs": {
         "effect": {
@@ -229,7 +229,7 @@
       },
       "position": {
         "x": 1077,
-        "y": 1208
+        "y": 2023
       },
       "id": "HbD8lAI87yYCelFD",
       "outs": {
@@ -244,7 +244,7 @@
       "state": "targets",
       "position": {
         "x": 1353,
-        "y": 1208
+        "y": 2023
       },
       "inputs": {
         "effect": {
@@ -268,7 +268,7 @@
       "type": "effect",
       "position": {
         "x": 230,
-        "y": 2023
+        "y": 2838
       },
       "inputs": {
         "name": {
@@ -289,7 +289,7 @@
       "type": "file",
       "position": {
         "x": 549,
-        "y": 2023
+        "y": 2838
       },
       "inputs": {
         "effect": {
@@ -318,7 +318,7 @@
       },
       "position": {
         "x": 809,
-        "y": 2023
+        "y": 2838
       },
       "id": "bdJrJEpk8fISxGbq",
       "outs": {
@@ -333,7 +333,7 @@
       "state": "targets",
       "position": {
         "x": 1085,
-        "y": 2023
+        "y": 2838
       },
       "inputs": {
         "effect": {
@@ -364,7 +364,7 @@
       },
       "position": {
         "x": 1346,
-        "y": 2023
+        "y": 2838
       },
       "id": "WWTtAhVUeLe7icQw",
       "outs": {
@@ -378,7 +378,7 @@
       "type": "effect",
       "position": {
         "x": 230,
-        "y": 2838
+        "y": 3653
       },
       "inputs": {
         "name": {
@@ -399,7 +399,7 @@
       "type": "file",
       "position": {
         "x": 549,
-        "y": 2838
+        "y": 3653
       },
       "inputs": {
         "effect": {
@@ -428,7 +428,7 @@
       },
       "position": {
         "x": 809,
-        "y": 2838
+        "y": 3653
       },
       "id": "2imFu3u0i8brGU0G",
       "outs": {
@@ -443,7 +443,7 @@
       "state": "targets",
       "position": {
         "x": 1085,
-        "y": 2838
+        "y": 3653
       },
       "inputs": {
         "effect": {
@@ -474,7 +474,7 @@
       },
       "position": {
         "x": 1346,
-        "y": 2838
+        "y": 3653
       },
       "id": "ybKWIKb0AxNAA1SQ",
       "outs": {
@@ -488,7 +488,7 @@
       "type": "play",
       "position": {
         "x": 1120,
-        "y": 3653
+        "y": 4468
       },
       "inputs": {
         "preload": {
@@ -511,7 +511,7 @@
       },
       "position": {
         "x": 809,
-        "y": 1208
+        "y": 2023
       },
       "id": "k9arzOOk7aO0j4P9",
       "outs": {
@@ -524,7 +524,7 @@
       "type": "visibility",
       "position": {
         "x": 1346,
-        "y": 393
+        "y": 1208
       },
       "id": "TOBtsX6WaLBemKk1",
       "inputs": {
@@ -556,10 +556,10 @@
           "connection": "VVRSyNUHDyPvM8lG:ins:in"
         },
         "medium": {
-          "connection": "VVRSyNUHDyPvM8lG:ins:in"
+          "connection": "TWbGSy33X6k55yFm:ins:in"
         },
         "high": {
-          "connection": "VVRSyNUHDyPvM8lG:ins:in"
+          "connection": "TWbGSy33X6k55yFm:ins:in"
         }
       }
     },
@@ -567,7 +567,7 @@
       "type": "get-quality",
       "position": {
         "x": 1614,
-        "y": 1208
+        "y": 2023
       },
       "id": "YNLdGhPAeHZ0ltcv",
       "outs": {
@@ -589,7 +589,7 @@
       "type": "sound",
       "position": {
         "x": 230,
-        "y": 3653
+        "y": 4468
       },
       "id": "f1frUq91gJaxBw6O",
       "inputs": {
@@ -622,7 +622,7 @@
       },
       "position": {
         "x": 552,
-        "y": 3653
+        "y": 4468
       },
       "id": "DvNPLXERTtroUB7H",
       "outs": {
@@ -643,7 +643,7 @@
       },
       "position": {
         "x": 812,
-        "y": 3653
+        "y": 4468
       },
       "id": "GJnd3YKWhCjpXfnO",
       "outs": {
@@ -661,7 +661,7 @@
       "type": "__variable_getter__",
       "position": {
         "x": 60,
-        "y": 960
+        "y": 1775
       },
       "id": "bSIpBDpybRfgDmhn"
     },
@@ -674,7 +674,7 @@
       "type": "__variable_getter__",
       "position": {
         "x": 230,
-        "y": 1024
+        "y": 1839
       },
       "id": "tHh511YccVess5zE"
     },
@@ -687,7 +687,7 @@
       "type": "__variable_getter__",
       "position": {
         "x": 915,
-        "y": 960
+        "y": 1775
       },
       "id": "xAHELLMhHliN6bor"
     },
@@ -700,7 +700,7 @@
       "type": "__variable_getter__",
       "position": {
         "x": 60,
-        "y": 1775
+        "y": 2590
       },
       "id": "hEomJACa4zT8p3hD"
     },
@@ -713,7 +713,7 @@
       "type": "__variable_getter__",
       "position": {
         "x": 230,
-        "y": 1839
+        "y": 2654
       },
       "id": "CLyENSLLXhSWZSY1"
     },
@@ -726,7 +726,7 @@
       "type": "__variable_getter__",
       "position": {
         "x": 1183,
-        "y": 1775
+        "y": 2590
       },
       "id": "d55z97edCdd6owzu"
     },
@@ -739,7 +739,7 @@
       "type": "__variable_getter__",
       "position": {
         "x": 60,
-        "y": 2590
+        "y": 3405
       },
       "id": "WVZnBKkJihUynJKM"
     },
@@ -752,7 +752,7 @@
       "type": "__variable_getter__",
       "position": {
         "x": 230,
-        "y": 2654
+        "y": 3469
       },
       "id": "um8TENxwtGtKJ5Rv"
     },
@@ -765,7 +765,7 @@
       "type": "__variable_getter__",
       "position": {
         "x": 915,
-        "y": 2590
+        "y": 3405
       },
       "id": "xo1qXqxfdfP58HbR"
     },
@@ -778,7 +778,7 @@
       "type": "__variable_getter__",
       "position": {
         "x": 60,
-        "y": 3405
+        "y": 4220
       },
       "id": "W47pYGSwldSITcKH"
     },
@@ -791,7 +791,7 @@
       "type": "__variable_getter__",
       "position": {
         "x": 230,
-        "y": 3469
+        "y": 4284
       },
       "id": "uL9Fc4fRbYVjb6gr"
     },
@@ -804,7 +804,7 @@
       "type": "__variable_getter__",
       "position": {
         "x": 915,
-        "y": 3405
+        "y": 4220
       },
       "id": "qXFzpYmGJHTwMES7"
     },
@@ -817,7 +817,7 @@
       "type": "__variable_getter__",
       "position": {
         "x": 60,
-        "y": 4146
+        "y": 4961
       },
       "id": "exfVcQgItIx7TSTx"
     },
@@ -830,7 +830,7 @@
       "type": "__variable_getter__",
       "position": {
         "x": 382,
-        "y": 4146
+        "y": 4961
       },
       "id": "syllLwVuYmdYJJhJ"
     },
@@ -842,7 +842,7 @@
       },
       "position": {
         "x": 0,
-        "y": 393
+        "y": 1208
       },
       "outs": {
         "out": {
@@ -858,7 +858,7 @@
       },
       "position": {
         "x": 0,
-        "y": 1208
+        "y": 2023
       },
       "outs": {
         "out": {
@@ -874,7 +874,7 @@
       },
       "position": {
         "x": 0,
-        "y": 2023
+        "y": 2838
       },
       "outs": {
         "out": {
@@ -890,7 +890,7 @@
       },
       "position": {
         "x": 0,
-        "y": 2838
+        "y": 3653
       },
       "outs": {
         "out": {
@@ -906,7 +906,7 @@
       },
       "position": {
         "x": 0,
-        "y": 3653
+        "y": 4468
       },
       "outs": {
         "out": {
@@ -919,7 +919,7 @@
       "type": "__gate_entry__",
       "position": {
         "x": 1987,
-        "y": 393
+        "y": 1208
       },
       "outs": {
         "out": {
@@ -932,7 +932,7 @@
       "type": "__gate_entry__",
       "position": {
         "x": 1654,
-        "y": 2023
+        "y": 2838
       },
       "outs": {
         "out": {
@@ -945,7 +945,7 @@
       "type": "__gate_entry__",
       "position": {
         "x": 1654,
-        "y": 2838
+        "y": 3653
       },
       "outs": {
         "out": {
@@ -984,7 +984,7 @@
       "type": "__gate_entry__",
       "position": {
         "x": 1874,
-        "y": 1208
+        "y": 2023
       },
       "outs": {
         "out": {
@@ -997,13 +997,217 @@
       "type": "__gate_entry__",
       "position": {
         "x": 1874,
-        "y": 1318
+        "y": 2133
       },
       "outs": {
         "out": {
           "connection": "x5ApVUb5SFGf8Ith:ins:in"
         }
       }
+    },
+    {
+      "id": "I3sVaBBAKoA4Edxw",
+      "type": "__gate_exit__",
+      "custom": {
+        "title": "Caster Cast"
+      },
+      "position": {
+        "x": 0,
+        "y": 393
+      },
+      "outs": {
+        "out": {
+          "connection": "IxXCe5QtsFq3g6eG:ins:in"
+        }
+      }
+    },
+    {
+      "id": "IxXCe5QtsFq3g6eG",
+      "type": "effect",
+      "position": {
+        "x": 230,
+        "y": 393
+      },
+      "inputs": {
+        "name": {
+          "connection": "xoveYrkBBBmit5C7:outputs:entry"
+        },
+        "origin": {
+          "connection": "XIrSDebWRGyT6dit:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "bzSl58FfG4vOTQ4j:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "inputs": {
+        "effect": {
+          "connection": "IxXCe5QtsFq3g6eG:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.cast_generic.03.blue.0"
+        }
+      },
+      "position": {
+        "x": 549,
+        "y": 393
+      },
+      "id": "bzSl58FfG4vOTQ4j",
+      "outs": {
+        "out": {
+          "connection": "XSgc767WNJJUbMIk:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "position": {
+        "x": 809,
+        "y": 393
+      },
+      "id": "XSgc767WNJJUbMIk",
+      "inputs": {
+        "effect": {
+          "connection": "IxXCe5QtsFq3g6eG:outputs:effect"
+        },
+        "location": {
+          "connection": "2IrzUlG6keot5GQC:outputs:entry"
+        },
+        "bindScale": {
+          "value": false
+        },
+        "local": {
+          "value": true
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "CpTcPlU4X4wzwKrW:ins:in"
+        }
+      }
+    },
+    {
+      "type": "aim",
+      "position": {
+        "x": 1070,
+        "y": 393
+      },
+      "id": "CpTcPlU4X4wzwKrW",
+      "inputs": {
+        "effect": {
+          "connection": "IxXCe5QtsFq3g6eG:outputs:effect"
+        },
+        "towards": {
+          "connection": "6mwB40W5jBMt2IQq:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "fUlA7NfHi6qN9TKg:ins:in"
+        }
+      },
+      "state": "rotateTowards"
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "inputs": {
+        "effect": {
+          "connection": "IxXCe5QtsFq3g6eG:outputs:effect"
+        }
+      },
+      "position": {
+        "x": 1398,
+        "y": 393
+      },
+      "id": "fUlA7NfHi6qN9TKg",
+      "outs": {
+        "out": {
+          "connection": "c70FjiWzEMhF6pnL:ins:in"
+        }
+      }
+    },
+    {
+      "id": "c70FjiWzEMhF6pnL",
+      "type": "__gate_entry__",
+      "position": {
+        "x": 1674,
+        "y": 393
+      },
+      "outs": {
+        "out": {
+          "connection": "Dnk7MoYAzfyszBQZ:ins:in"
+        }
+      }
+    },
+    {
+      "id": "TWbGSy33X6k55yFm",
+      "type": "__gate_entry__",
+      "position": {
+        "x": 803,
+        "y": 220
+      },
+      "outs": {
+        "out": {
+          "connection": "I3sVaBBAKoA4Edxw:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "D4PN4br1ktQOTbD6:outputs:NAYVxdO3wIkHMO1t"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 60,
+        "y": 960
+      },
+      "id": "xoveYrkBBBmit5C7"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "D4PN4br1ktQOTbD6:outputs:CA6Xl8GbPRK1qH5n"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 230,
+        "y": 1024
+      },
+      "id": "XIrSDebWRGyT6dit"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "KgkMgbeYDdHCUyA9:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 639,
+        "y": 960
+      },
+      "id": "2IrzUlG6keot5GQC"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "KgkMgbeYDdHCUyA9:outputs:targets"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 900,
+        "y": 960
+      },
+      "id": "6mwB40W5jBMt2IQq"
     }
   ],
   "variables": {
