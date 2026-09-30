@@ -12,6 +12,7 @@ _[Use Me to convert "Export Triggers" to individual files for a PR](https://chas
 - You must follow the quality guidelines below using the `Quality` node to section off your animation (This is explicitly strictly enforced for anything with persistent animations or those with exceptionally taxing animations)
 - Animations files that are patreon only should have a `Jb2a Free` backup option, it doesn't have to be great, but one should exist
 - Your description should include a description of anything extra the animation does (IE if the animation moves a token etc.)
+- For **Spells** they should almost always include some sort of casting animation on the caster (with exceptions for spells that can't use that)
 - There should be no functional components (IE effects added, damage applied etc.) to any animations with the exception of those like the case described above
 - Sort your animation in the proper folder, creating a new one if there's no folder that fits the animation
 - Format the trigger as requested on submission (`Prettier` 2 spaces per line) which can be run from the project with `npm run prettier`

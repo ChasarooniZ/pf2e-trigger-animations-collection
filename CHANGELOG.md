@@ -3,6 +3,8 @@
 - **Animations**
   - **Updated**
     - Weapon Group: Sling _fixed impact timing_ (@ChasarooniZ)
+    - Noise Blast _Added a casting animation_ (@ChasarooniZ)
+    - Bite, Claw _Added SFX_ (@ChasarooniZ)
 - **Updated**
   - Trigger enabling now will enable all triggers in the `Animations` section
   - Updated Templates on tokens scale ~~1.5~~ ➡ `2`
