@@ -171,6 +171,7 @@
 - Harm 🔊🆓✅ (✍🏼 @Chasarooni)
 - Heal 🔊🆓✅ (✍🏼 @Chasarooni)
 - Soothe 🔊🆓✅ (✍🏼 @Chasarooni)
+- Thunderstrike 🔊🆓✅ (✍🏼 @maplealmond)
 
 #### 2nd Rank Spells
 
