@@ -649,7 +649,7 @@
       "id": "4MhcyZpa5pceS4bC",
       "outs": {
         "out": {
-          "connection": "56QhQWU2ZSh2PK1m:ins:in"
+          "connection": "tsWhirlQuality01:ins:in"
         }
       }
     },
@@ -773,8 +773,8 @@
       "id": "56QhQWU2ZSh2PK1m",
       "type": "__gate_entry__",
       "position": {
-        "x": 1946,
-        "y": 1133
+        "x": 2206,
+        "y": 1243
       },
       "outs": {
         "out": {
@@ -807,6 +807,41 @@
         "y": 1013
       },
       "id": "tsCastUuidGet001"
+    },
+    {
+      "type": "get-quality",
+      "position": {
+        "x": 1946,
+        "y": 1133
+      },
+      "id": "tsWhirlQuality01",
+      "outs": {
+        "minimal": {
+          "connection": "tsWhirlSoundEnt1:ins:in"
+        },
+        "low": {
+          "connection": "56QhQWU2ZSh2PK1m:ins:in"
+        },
+        "medium": {
+          "connection": "56QhQWU2ZSh2PK1m:ins:in"
+        },
+        "high": {
+          "connection": "56QhQWU2ZSh2PK1m:ins:in"
+        }
+      }
+    },
+    {
+      "id": "tsWhirlSoundEnt1",
+      "type": "__gate_entry__",
+      "position": {
+        "x": 2206,
+        "y": 1133
+      },
+      "outs": {
+        "out": {
+          "connection": "op5uBrUOeE3WvgsW:ins:in"
+        }
+      }
     }
   ],
   "variables": {
