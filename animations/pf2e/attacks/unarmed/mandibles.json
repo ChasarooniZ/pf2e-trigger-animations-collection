@@ -1,0 +1,81 @@
+{
+  "id": "AVqdoSbJPbhMm8xk",
+  "name": "Mandibles",
+  "folder": "Attacks",
+  "priority": 10,
+  "description": "<p>Created by @Chasarooni</p>",
+  "nodes": [
+    {
+      "id": "hQiA05g7SJoVH87M",
+      "type": "animation-event",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "custom": {
+        "outputs": {
+          "LjdPjBQm4NFsfxc5": {
+            "id": "LjdPjBQm4NFsfxc5",
+            "input": "outcome",
+            "label": "Outcome",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "name": {
+          "value": "trove-attack:mandibles"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "qD98peHNgkWs6Cc4:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-animation",
+      "position": {
+        "x": 289,
+        "y": -12
+      },
+      "id": "qD98peHNgkWs6Cc4",
+      "inputs": {
+        "name": {
+          "value": "trove-attack:bite"
+        },
+        "options": {
+          "connection": "hQiA05g7SJoVH87M:outputs:options"
+        },
+        "item": {
+          "connection": "hQiA05g7SJoVH87M:outputs:item"
+        },
+        "targets": {
+          "connection": "hQiA05g7SJoVH87M:outputs:targets"
+        },
+        "sources": {
+          "connection": "hQiA05g7SJoVH87M:outputs:sources"
+        },
+        "actor": {
+          "connection": "hQiA05g7SJoVH87M:outputs:actor"
+        },
+        "7XKRtGKrYVrZcyCd": {
+          "connection": "hQiA05g7SJoVH87M:outputs:LjdPjBQm4NFsfxc5"
+        }
+      },
+      "custom": {
+        "inputs": {
+          "7XKRtGKrYVrZcyCd": {
+            "id": "7XKRtGKrYVrZcyCd",
+            "label": "Outcome",
+            "slug": "input",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      }
+    }
+  ]
+}

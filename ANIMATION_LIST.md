@@ -138,6 +138,8 @@
 - Electric Arc 🔊🆓✅ (✍🏼 @Chasarooni)
 - Frostbite 🔊🆓✅ (✍🏼 @Chasarooni)
 - Guidance 🔇🆓 (✍🏼 @Chasarooni)
+- Haunting Hymn 🔊🆓✅ (✍🏼 @Chasarooni)
+- Light 🔊🆓✅ (✍🏼 @Chasarooni)
 - Needle Darts 🔊🆓✅ (✍🏼 @Chasarooni)
 - Ray of Frost 🔊🆓✅ (✍🏼 @Chasarooni)
 - Reinforce Eidolon 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
@@ -166,10 +168,15 @@
 #### 1st Rank Spells
 
 - Bless 🔊🆓✅ (✍🏼 @ChazPls, 🛠️ @Chasarooni)
+- Concordant Choir 🔊🆓✅ (✍🏼 @Chasarooni)
 - Force Barrage 🔊🆓 (✍🏼 @Chasarooni)
+- Fear 🔊🆓✅ (✍🏼 @Chasarooni)
 - Gust of Wind 🔊🆓✅ (✍🏼 @Suldrun45, 🛠️ @Chasarooni)
 - Harm 🔊🆓✅ (✍🏼 @Chasarooni)
 - Heal 🔊🆓✅ (✍🏼 @Chasarooni)
+- Hydraulic Push 🔊🆓✅ (✍🏼 @Chasarooni)
+- Ill Omen 🔊🆓✅ (✍🏼 @Chasarooni)
+- Mud Pit 🔊🆓✅ (✍🏼 @Chasarooni)
 - Soothe 🔊🆓✅ (✍🏼 @Chasarooni)
 - Thunderstrike 🔊🆓✅ (✍🏼 @maplealmond)
 
@@ -178,6 +185,7 @@
 - Blazing Bolt 🔊🆓 (✍🏼 @Chasarooni)
 - Darkness 🔊🆓✅ (✍🏼 @Suldrun45)
 - Entangling Vine 🔊🆓✅ (✍🏼 @Suldrun45)
+- Laughing Fit 🔊🆓✅ (✍🏼 @Chasarooni)
 - Mist 🔊🆓✅ (✍🏼 @Suldrun45)
 - Noise Blast 🔊🆓✅ (✍🏼 @Suldrun45)
 - Revealing Light 🔊🆓✅ (✍🏼 @Suldrun45)
@@ -330,20 +338,28 @@
 
 #### Unarmed Strikes
 
-- Bite 🔇🆓 (✍🏼 @Chasarooni)
-- Claw 🔇🆓 (✍🏼 @Chasarooni)
-- Fangs 🔇🆓 (✍🏼 @Chasarooni)
+- Bite 🔊🆓 (✍🏼 @Chasarooni)
+- Claw 🔊🆓 (✍🏼 @Chasarooni)
+- Fangs 🔊🆓 (✍🏼 @Chasarooni)
 - Fist 🔊🆓 (✍🏼 @Chasarooni)
-- Jaws 🔇🆓 (✍🏼 @Chasarooni)
+- Jaws 🔊🆓 (✍🏼 @Chasarooni)
+- Mandibles 🔊🆓 (✍🏼 @Chasarooni)
 - Unarmed Attack 🔊🆓 (✍🏼 @Chasarooni)
+- Wing 🔊🆓 (✍🏼 @Chasarooni)
 
 #### Creature Strikes
 
 - Acid Missile 🔊🆓 (✍🏼 @Chasarooni)
 - Electrical Blast 🔇🆓 (✍🏼 @Chasarooni)
+- Psudopod 🔊🆓✅ (✍🏼 @Chasarooni)
+- Shadow Blast 🔊🆓✅ (✍🏼 @Chasarooni)
+- Shadow Hand 🔊🆓✅ (✍🏼 @Chasarooni)
+- Shadow Lash 🔊🆓✅ (✍🏼 @Chasarooni)
 - Solid Refrain 🔊🆓✅ (✍🏼 @Chasarooni)
+- Splinter 🔊🆓✅ (✍🏼 @Chasarooni)
 - Subsonic Burst 🔊🆓✅ (✍🏼 @Chasarooni)
 - Thunderbolt 🔊🆓 (✍🏼 @Chasarooni)
+- Web Attack 🔊🆓✅ (✍🏼 @Chasarooni)
 - Wind Gust 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### Weapons
@@ -405,6 +421,7 @@
 #### Misc
 
 - Smoke Ball (Lesser & Greater) 🔊🆓 (✍🏼 @RedB)
+- Torch 🔊🆓✅ (✍🏼 @Chasarooni)
 
 ##### Potions
 
@@ -427,11 +444,20 @@
 
 ### Creatures Actions
 
+- Acid Breath 🔊🆓✅ (✍🏼 @Chasarooni)
 - Conductive Downpour 🔊🆓 (✍🏼 @Chasarooni)
+- Consume Flesh 🔊🆓✅ (✍🏼 @Chasarooni)
 - Dance of Burning War 🔊🆓 (✍🏼 @Chasarooni)
+- Drench 🔊🆓✅ (✍🏼 @Chasarooni)
 - Kaiju Ray 🔊🆓 (✍🏼 @Chasarooni)
+- Launch Metal 🔊🆓✅ (✍🏼 @Chasarooni)
+- Mesmerizing Melody 🔊🆓✅ (✍🏼 @Chasarooni)
+- Screeching Gust 🔊🆓✅ (✍🏼 @Chasarooni)
 - Sonic Missile 🔊🆓 (✍🏼 @Chasarooni)
+- Splinter Spray 🔊🆓✅ (✍🏼 @Chasarooni)
+- Tag Team 🔊🆓✅ (✍🏼 @Chasarooni)
 - Terrifying Cry 🔊🆓 (✍🏼 @Chasarooni)
+- Unsteady Magnetism 🔊🆓✅ (✍🏼 @Chasarooni)
 - Volcanic Breath 🔊🆓✅ (✍🏼 @Chasarooni)
 
 ## SF2e

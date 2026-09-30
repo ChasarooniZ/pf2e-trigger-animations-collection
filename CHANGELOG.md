@@ -1,6 +1,10 @@
 ## Unreleased
 
+## 0.12.1
+
 - **Animations**
+  - Thunderstrike (@Maple 🎉 First time animation contributor)
+  - Pseudopod, Shadow Blast (Attack), Shadow Hand, Shadow Lash, Splinter, Splinter, Web (Attack), Mandibles, Wing, Acid Breath, Consume Flesh, Drench, Launch metal, Screeching Gust, Splinter Spray, Tag Team, Unsteady Magnetism, Torch, Concordant Choir, Fear, Haunting Hymn, Hydraulic Push, Ill Omen, Laughing Fit, Light, Mud Pit (@ChasarooniZ)
   - **Updated**
     - Weapon Group: Sling _fixed impact timing_ (@ChasarooniZ)
     - Noise Blast _Added a casting animation_ (@ChasarooniZ)
@@ -8,6 +12,8 @@
 - **Updated**
   - Trigger enabling now will enable all triggers in the `Animations` section
   - Updated Templates on tokens scale ~~1.5~~ ➡ `2`
+  - Updated `GGG` to version `0.1.9`
+    - _Added new spooky sounds_
 
 ## 0.12.0
 

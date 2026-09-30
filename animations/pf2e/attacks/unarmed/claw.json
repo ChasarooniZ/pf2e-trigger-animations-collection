@@ -309,9 +309,67 @@
         "anchorX": {
           "value": 0.2
         }
+      },
+      "outs": {
+        "out": {
+          "connection": "fKTYHlBN3O4h3SJp:ins:in"
+        }
       }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 2756,
+        "y": 41
+      },
+      "id": "fKTYHlBN3O4h3SJp",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.melee.claws.strike.slash.01.02"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "bqrrsibtBQGbIWXQ:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "fKTYHlBN3O4h3SJp:outputs:sound"
+        }
+      },
+      "position": {
+        "x": 3047.076923076923,
+        "y": 39.64999999999998
+      },
+      "id": "bqrrsibtBQGbIWXQ",
+      "outs": {
+        "out": {
+          "connection": "AAiAk1CSnsAkPTkV:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "bqrrsibtBQGbIWXQ:outputs:sound"
+        },
+        "preset": {
+          "value": "troveSound"
+        }
+      },
+      "position": {
+        "x": 3267.076923076923,
+        "y": 41.75
+      },
+      "id": "AAiAk1CSnsAkPTkV"
     }
   ],
-  "id": "ZEEJ7aNwRQYkNpP8",
+  "id": "Ikh1BRdNiH2mYTbh",
   "description": "<p><em>Made by @Chasarooni</em></p>"
 }

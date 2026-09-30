@@ -1,0 +1,107 @@
+{
+  "name": "Torch",
+  "folder": "Equipment",
+  "priority": 0,
+  "description": "<p>Created by @Chasarooni</p>",
+  "nodes": [
+    {
+      "id": "xAxuxsgijsXCRbFc",
+      "position": {
+        "x": 400,
+        "y": 200
+      },
+      "type": "animation-event",
+      "inputs": {
+        "name": {
+          "value": "update:torch"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "N3EtedcTsxqVeJHa:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 644,
+        "y": 191
+      },
+      "id": "N3EtedcTsxqVeJHa",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.equipment.misc.torch.light.01"
+        },
+        "name": {
+          "value": "Light Torch"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "3O2NAKjYO1U6YKdj:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "N3EtedcTsxqVeJHa:outputs:sound"
+        },
+        "exitOnEmpty": {
+          "value": "global"
+        },
+        "location": {
+          "connection": "xAxuxsgijsXCRbFc:outputs:sources"
+        }
+      },
+      "position": {
+        "x": 933.5769230769231,
+        "y": 191.90000000000003
+      },
+      "id": "3O2NAKjYO1U6YKdj",
+      "outs": {
+        "out": {
+          "connection": "QloVLl9khj75T1uS:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "preset": {
+          "value": "troveSound"
+        },
+        "sound": {
+          "connection": "N3EtedcTsxqVeJHa:outputs:sound"
+        }
+      },
+      "position": {
+        "x": 1154.2435897435898,
+        "y": 188.33333333333314
+      },
+      "id": "QloVLl9khj75T1uS",
+      "outs": {
+        "out": {
+          "connection": "sHBFMoOgW2etUMF2:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 1426.923076923077,
+        "y": 192.5
+      },
+      "id": "sHBFMoOgW2etUMF2",
+      "inputs": {
+        "local": {
+          "value": true
+        }
+      }
+    }
+  ],
+  "id": "LiO8LEpjpAI4fvy4"
+}
