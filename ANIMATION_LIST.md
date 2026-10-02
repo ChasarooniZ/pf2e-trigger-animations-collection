@@ -164,6 +164,7 @@
 - Lay on Hands 🔊🆓 (✍🏼 @Chasarooni)
 - Lifelink Surge 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Qi Rush 🔊🆓 (✍🏼 @Chasarooni)
+- Tempest Surge 🔊🆓✅ (✍🏼 @maplealmond)
 
 #### 1st Rank Spells
 
