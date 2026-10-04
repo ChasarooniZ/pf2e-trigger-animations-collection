@@ -1,5 +1,6 @@
 import { askToAddNewAnimationsDialog } from "./enableNewAnimations.js";
 import { askToEnableNewTriggersDialog } from "./enableNewTriggers.js";
+import { getCastSpellAnimationItems } from "./lib/cast-animation.js";
 // import { getEmanationWidth } from "./helper.js";
 import { tokenCrosshairHelper } from "./lib/helpers.js";
 
@@ -10,6 +11,7 @@ export function setupAPI() {
       enableNewAnimationsDialog: askToAddNewAnimationsDialog,
       helpers: {
         tokenCrosshairHelper,
+        getCastSpellAnimationItems,
       },
     },
   };

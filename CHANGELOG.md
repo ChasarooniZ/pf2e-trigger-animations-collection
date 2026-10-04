@@ -4,7 +4,7 @@
 
 - **Animations**
   - Thunderstrike (@Maple 🎉 First time animation contributor)
-  - Pseudopod, Shadow Blast (Attack), Shadow Hand, Shadow Lash, Splinter, Splinter, Web (Attack), Mandibles, Wing, Acid Breath, Consume Flesh, Drench, Launch metal, Screeching Gust, Splinter Spray, Tag Team, Unsteady Magnetism, Torch, Concordant Choir, Fear, Haunting Hymn, Hydraulic Push, Ill Omen, Laughing Fit, Light, Mud Pit (@ChasarooniZ)
+  - Pseudopod, Shadow Blast (Attack), Shadow Hand, Shadow Lash, Splinter, Splinter, Web (Attack), Mandibles, Wing, Acid Breath, Consume Flesh, Drench, Launch Metal, Screeching Gust, Splinter Spray, Tag Team, Unsteady Magnetism, Torch, Concordant Choir, Fear, Haunting Hymn, Hydraulic Push, Ill Omen, Laughing Fit, Light, Mud Pit (@ChasarooniZ)
   - **Updated**
     - Weapon Group: Sling _fixed impact timing_ (@ChasarooniZ)
     - Noise Blast _Added a casting animation_ (@ChasarooniZ)
