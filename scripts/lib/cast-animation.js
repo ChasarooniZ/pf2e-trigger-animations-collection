@@ -43,7 +43,12 @@ const LESSER_TRAITS = new Set([
 const SKIP_IF_TRAITS = new Set(["subtle"]);
 // TODO add Ranking maybe?
 
-const TRADITIONS = new Set(["arcane", "divine", "occult", "primal"]);
+const TRADITIONS = new Set([
+  "spellcasting:arcane",
+  "spellcasting:divine",
+  "spellcasting:occult",
+  "spellcasting:primal",
+]);
 
 export function getCastSpellAnimationItems({
   actor,
@@ -58,6 +63,8 @@ export function getCastSpellAnimationItems({
     animFile: "",
     filter: "",
     animWait: null,
+    duration: 0,
+    fadeOutDuration: 0,
     scale: 2,
     target: getTargetPoint(targets, template),
     sfxFile: "",
@@ -71,6 +78,10 @@ export function getCastSpellAnimationItems({
 
   switch (trait) {
     case "air":
+      output.animFile = "jb2a.swirling_leaves.outburst.01.pink";
+      output.filter = {
+        hue: -90,
+      };
       break;
     case "cold":
       output.animFile = jb2aPatreon ? "jb2a.cast_generic.ice.01.blue.0" : "";
@@ -96,8 +107,15 @@ export function getCastSpellAnimationItems({
     case "prediction":
     case "detection":
     case "divination":
+      output.animFile = jb2aPatreon
+        ? "jb2a.magic_signs.circle.02.divination.intro.yellow"
+        : "jb2a.magic_signs.circle.02.divination.intro.blue";
+      output.filter = jb2aPatreon ? {} : { hue: 180 };
+      output.scale = 1;
       break;
     case "dream":
+      output.animFile = "jb2a.swirling_sparkles.01.blue";
+      output.scale = 4;
       break;
     case "earth":
       output.animFile =
@@ -106,17 +124,20 @@ export function getCastSpellAnimationItems({
           : "jb2a.cast_generic.earth.01.browngreen.0";
       break;
     case "electricity":
+      output.animFile = "jb2a.on_token_cast.initiate.002.instant.part01.blue";
       break;
     case "fire":
       output.animFile = output.target
         ? "jb2a.cast_generic.fire.side01.orange.0"
         : "jb2a.cast_generic.fire.01.orange.0";
       break;
-    case "force":
-      break;
     case "metal":
       break;
     case "plant":
+      output.animFile = jb2aPatreon
+        ? "jb2a.swirling_leaves.outburst.01.greenorange"
+        : "jb2a.swirling_leaves.outburst.01.pink";
+      output.filter = jb2aPatreon ? {} : { hue: 180 };
       break;
     case "acid":
     case "poison":
@@ -127,46 +148,75 @@ export function getCastSpellAnimationItems({
       break;
     case "sleep":
       break;
+    case "death":
     case "void":
     case "unholy":
+    case "curse":
+      output.animFile = "jb2a.magic_signs.circle.02.necromancy.intro.green";
+      output.scale = 1;
       break;
     case "water":
       output.animFile = "jb2a.cast_generic.water.02.blue.0";
       break;
     case "wood":
-      break;
-    case "curse":
-      break;
-    case "death":
+      output.animFile = "jb2a.aura_themed.01.orbit.complete.wood.01.green";
+      output.duration = 2500;
+      output.fadeOutDuration = 500;
       break;
     case "extradimensional":
+      output.animFile = "jb2a.cast_shape.square.single01.blue";
       break;
     case "fear":
+      //TODO add a fade out and duration FX, also scale in and out
+      output.animFile = jb2aPatreon
+        ? "jb2a.dodecahedron.skull.below.dark_greenpurple"
+        : "jb2a.magic_signs.circle.02.illusion.intro.dark_purple";
+      output.scale = 1;
+      output.duration = 2000;
+      output.fadeOutDuration = 500;
       break;
     case "illusion":
-      break;
-    case "light":
-      break;
-    case "mental":
+      output.animFile = "jb2a.magic_signs.circle.02.illusion.intro.purple";
+      output.scale = 1;
       break;
     case "morph":
-      break;
     case "polymorph":
+      output.animFile = "jb2a.magic_signs.circle.02.transmutation.intro.yellow";
+      output.scale = 1;
       break;
     case "spirit":
+      output.animFile = "jb2a.on_token_cast.initiate.002.instant.part03.blue";
+      output.filter = {
+        hue: -110,
+      };
       break;
     case "teleportation":
+    case "force":
+    case "spellcasting:arcane":
+      output.animFile =
+        "jb2a.on_token_cast.initiate.001.instant.combined.blue.0";
       break;
-    case "arcane":
+    case "mental":
+    case "spellcasting:occult":
+      output.animFile = "jb2a.markers.simple.001.complete.001.purple";
       break;
-    case "occult":
+    case "spellcasting:primal":
+      //TODO set duration on this + fadeout
+      output.animFile = "jb2a.aura_themed.01.orbit.complete.nature.01.green";
+      output.duration = 2500;
+      output.fadeOutDuration = 500;
       break;
-    case "primal":
+    case "light":
+      output.animFile = output.target
+        ? "jb2a.markers.light_orb.complete.blue"
+        : "jb2a.markers.light.intro.blue";
       break;
     case "vitality":
+    case "spellcasting:divine":
+      output.animFile = "jb2a.cure_wounds.400px.blue";
+      break;
     case "holy":
-    case "divine":
-      output.animFile = "jb2a.divine_smite.caster.blueyellow";
+      output.animFile = "jb2a.sacred_flame.source.yellow";
       break;
     default:
   }
@@ -179,6 +229,8 @@ export function getCastSpellAnimationItems({
     { type: "text", value: output.sfxFile },
     { type: "number", value: output.sfxDelay },
     { type: "number", value: output.scale },
+    { type: "number", value: output.duration },
+    { type: "number", value: output.fadeOutDuration },
   ];
 }
 
