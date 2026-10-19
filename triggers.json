@@ -1507,14 +1507,11 @@
     "folder": "Animations",
     "priority": 0,
     "tags": ["pf2e", "sf2e"],
-    "id": "U9C33Uv0DfEvQp6r",
+    "id": "iBdeFSbGMXMYwHdj",
     "nodes": [
       {
         "type": "execute-animation",
-        "position": {
-          "x": 932.4414848662254,
-          "y": 12.62226598527684
-        },
+        "position": { "x": 932.4414848662254, "y": 12.62226598527684 },
         "id": "zJiAEHL0uEXPz5FL",
         "inputs": {
           "1NXZ8AH8e79Nfdaq": {
@@ -1544,23 +1541,14 @@
           "options": {
             "connection": "SD3dS8jXMDz7XxE3:outputs:gdcgWWTTBAScdwGf"
           },
-          "item": {
-            "connection": "SD3dS8jXMDz7XxE3:outputs:MenvkPsmkOSfatQJ"
-          },
-          "name": {
-            "connection": "kopaP7iWiPBibSrv:outputs:result"
-          },
-          "actor": {
-            "connection": "SD3dS8jXMDz7XxE3:outputs:keuRxdnim28rxq5L"
-          }
+          "item": { "connection": "SD3dS8jXMDz7XxE3:outputs:MenvkPsmkOSfatQJ" },
+          "name": { "connection": "kopaP7iWiPBibSrv:outputs:result" },
+          "actor": { "connection": "SD3dS8jXMDz7XxE3:outputs:keuRxdnim28rxq5L" }
         }
       },
       {
         "type": "hook-called-event",
-        "position": {
-          "x": -480,
-          "y": 8
-        },
+        "position": { "x": -480, "y": 8 },
         "id": "NVw98hipCZjZu9I0",
         "custom": {
           "outputs": {
@@ -1573,23 +1561,12 @@
             }
           }
         },
-        "inputs": {
-          "name": {
-            "value": "createChatMessage"
-          }
-        },
-        "outs": {
-          "out": {
-            "connection": "03VpfBEpU0Ke7ZoU:ins:in"
-          }
-        }
+        "inputs": { "name": { "value": "createChatMessage" } },
+        "outs": { "out": { "connection": "03VpfBEpU0Ke7ZoU:ins:in" } }
       },
       {
         "type": "execute-script",
-        "position": {
-          "x": -232,
-          "y": 9
-        },
+        "position": { "x": -232, "y": 9 },
         "id": "03VpfBEpU0Ke7ZoU",
         "custom": {
           "inputs": {
@@ -1616,21 +1593,14 @@
             "connection": "NVw98hipCZjZu9I0:outputs:6ssDORYrtuDo5mk4"
           },
           "script": {
-            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst msg = inputs[0];\n\nreturn [\n  { type: \"boolean\", value: \n    msg?.item?.type === 'spell'\n    && !msg?.isRoll\n    && !msg?.flags?.pf2e?.appliedDamage\n    && msg?.token && msg?.isAuthor\n  },\n];"
+            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst msg = inputs[0];\n\nreturn [\n  { type: \"boolean\", value: \n    msg?.item?.type === 'spell'\n    && !msg?.isRoll\n    && !msg?.flags?.pf2e?.appliedDamage\n    && msg?.token\n  },\n];"
           }
         },
-        "outs": {
-          "out": {
-            "connection": "xW4HXf7HurL1mvYp:ins:in"
-          }
-        }
+        "outs": { "out": { "connection": "xW4HXf7HurL1mvYp:ins:in" } }
       },
       {
         "type": "execute-script",
-        "position": {
-          "x": 335,
-          "y": 16
-        },
+        "position": { "x": 335, "y": 16 },
         "id": "SD3dS8jXMDz7XxE3",
         "custom": {
           "inputs": {
@@ -1695,36 +1665,20 @@
             "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst msg = inputs[0];\n\nconst isDamageRoll = msg?.isDamageRoll;\nconst item = msg?.item;\nconst token = msg?.token;\nconst rollOptions = [msg?.flags?.pf2e?.origin?.rollOptions, Object.keys(msg?.actor?.rollOptions?.all)].flat();\nconst slug = msg?.item?.slug ?? game?.pf2e?.system?.sluggify(msg?.item?.name)\nconst uuid = msg?.item?.uuid;\n\nconst toolbeltTargets = msg?.flags?.[\"pf2e-toolbelt\"]?.targetHelper?.targets.map(uuid => canvas.tokens.placeables.find(t => t?.document?.uuid === uuid))\nlet targets = toolbeltTargets?.length > 0 ? toolbeltTargets : (msg?.target ? [msg?.target] : [])\nif (targets?.length <= 0) {\n  targets = Array.from(msg?.author?.targets ?? 0);\n}\n\n\nreturn [\n  { type: \"text\", value: slug },\n  { type: \"target\", value: token },\n  { type: \"target\", isArray: true, value: targets },\n  { type: \"item\", value: item },\n  { type: \"text\", isArray: true, value: rollOptions },\n  { type: \"text\", value: uuid },\n];"
           }
         },
-        "outs": {
-          "out": {
-            "connection": "kopaP7iWiPBibSrv:ins:in"
-          }
-        }
+        "outs": { "out": { "connection": "kopaP7iWiPBibSrv:ins:in" } }
       },
       {
         "type": "split-boolean",
         "inputs": {
-          "input": {
-            "connection": "03VpfBEpU0Ke7ZoU:outputs:PKCr5b5ZcMMpMMo6"
-          }
+          "input": { "connection": "03VpfBEpU0Ke7ZoU:outputs:PKCr5b5ZcMMpMMo6" }
         },
-        "position": {
-          "x": 90,
-          "y": 29.25
-        },
+        "position": { "x": 90, "y": 29.25 },
         "id": "xW4HXf7HurL1mvYp",
-        "outs": {
-          "true": {
-            "connection": "SD3dS8jXMDz7XxE3:ins:in"
-          }
-        }
+        "outs": { "true": { "connection": "SD3dS8jXMDz7XxE3:ins:in" } }
       },
       {
         "type": "format-text",
-        "position": {
-          "x": 614.9230769230769,
-          "y": 28.399999999999977
-        },
+        "position": { "x": 614.9230769230769, "y": 28.399999999999977 },
         "id": "kopaP7iWiPBibSrv",
         "custom": {
           "inputs": {
@@ -1752,24 +1706,16 @@
           }
         },
         "inputs": {
-          "ThIbsXN3qb3X2Zfq": {
-            "value": "spell"
-          },
+          "ThIbsXN3qb3X2Zfq": { "value": "spell" },
           "lv9XTTitQYmpHlEX": {
             "connection": "SD3dS8jXMDz7XxE3:outputs:Ue6LY90NJ8Hyz24k"
           },
-          "plain": {
-            "value": "@a:@b, @a:@c"
-          },
+          "plain": { "value": "@a:@b, @a:@c" },
           "bub1AOPpVGz9AkkF": {
             "connection": "SD3dS8jXMDz7XxE3:outputs:RVeNBLxZTj7V4rnP"
           }
         },
-        "outs": {
-          "out": {
-            "connection": "zJiAEHL0uEXPz5FL:ins:in"
-          }
-        }
+        "outs": { "out": { "connection": "zJiAEHL0uEXPz5FL:ins:in" } }
       }
     ]
   },

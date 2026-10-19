@@ -1,5 +1,13 @@
 ## Unreleased
 
+- **New**
+  - `Cast a Spell`
+    - Added a helper function and animation that creates cast animation based on the properties passed in
+    - Currently the timing is off between it and the following animations
+- **Updated**
+  - Fixed bug causing the `Spell` animation type to only play on the triggering person's device
+  - `Handler: Attack Roll` now covers cases where an effect adds multiple strikes (by getting the roll option slug of the strike if it has one)
+
 ## 0.12.1
 
 - **Animations**

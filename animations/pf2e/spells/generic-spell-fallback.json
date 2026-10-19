@@ -1,0 +1,117 @@
+{
+  "name": "Generic Spell Fallback",
+  "folder": "Spells",
+  "priority": 0,
+  "nodes": [
+    {
+      "id": "UO3mj0qzJBL0a6N8",
+      "position": {
+        "x": 400,
+        "y": 200
+      },
+      "type": "animation-event",
+      "inputs": {
+        "name": {
+          "value": "spell:*"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "PyTTjsQCWhboh4fb:ins:in"
+        }
+      }
+    },
+    {
+      "type": "list-contains",
+      "position": {
+        "x": 690,
+        "y": 331
+      },
+      "id": "UbENiZPTpbTp44A6",
+      "inputs": {
+        "entry": {
+          "value": "damaging-effect"
+        },
+        "list": {
+          "connection": "UO3mj0qzJBL0a6N8:outputs:options"
+        }
+      },
+      "outs": {
+        "false": {
+          "connection": "cHYMMsM4j1gpgXiq:ins:in"
+        }
+      }
+    },
+    {
+      "type": "list-contains",
+      "position": {
+        "x": 688,
+        "y": 444
+      },
+      "id": "cHYMMsM4j1gpgXiq",
+      "inputs": {
+        "entry": {
+          "value": "area-effect"
+        },
+        "list": {
+          "connection": "UO3mj0qzJBL0a6N8:outputs:options"
+        }
+      },
+      "outs": {
+        "false": {
+          "connection": "402Kl4fNNHSN2bph:ins:in"
+        }
+      }
+    },
+    {
+      "type": "list-contains",
+      "position": {
+        "x": 690,
+        "y": 215
+      },
+      "id": "PyTTjsQCWhboh4fb",
+      "inputs": {
+        "entry": {
+          "value": "attack"
+        },
+        "list": {
+          "connection": "UO3mj0qzJBL0a6N8:outputs:options"
+        }
+      },
+      "outs": {
+        "false": {
+          "connection": "UbENiZPTpbTp44A6:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-animation",
+      "position": {
+        "x": 952,
+        "y": 220
+      },
+      "id": "402Kl4fNNHSN2bph",
+      "inputs": {
+        "name": {
+          "value": "spell:cast"
+        },
+        "actor": {
+          "connection": "UO3mj0qzJBL0a6N8:outputs:actor"
+        },
+        "sources": {
+          "connection": "UO3mj0qzJBL0a6N8:outputs:sources"
+        },
+        "targets": {
+          "connection": "UO3mj0qzJBL0a6N8:outputs:targets"
+        },
+        "item": {
+          "connection": "UO3mj0qzJBL0a6N8:outputs:item"
+        },
+        "options": {
+          "connection": "UO3mj0qzJBL0a6N8:outputs:options"
+        }
+      }
+    }
+  ],
+  "id": "IisGnJM3eDYIH7xV"
+}
