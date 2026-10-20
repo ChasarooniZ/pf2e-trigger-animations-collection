@@ -1,5 +1,5 @@
 {
-  "name": "Cast a Spell (Casting Template)",
+  "name": "Handler: Casting Template",
   "folder": "Handlers",
   "priority": 0,
   "description": "<p>Call this for any spell casting animations, this will then automatically check parameters of the spell cast and select what type of animation to use where to aim etc.</p>",
@@ -592,14 +592,14 @@
       },
       "id": "Hu6pF6PTtLTMErGL",
       "inputs": {
-        "waitUntilFinished": {
-          "value": true
+        "effect": {
+          "connection": "LMi2hhU7WPom4OKO:outputs:effect"
         },
         "waitDelayMin": {
           "connection": "X5sslreWKPqrxCwp:outputs:entry"
         },
-        "effect": {
-          "connection": "LMi2hhU7WPom4OKO:outputs:effect"
+        "waitUntilFinished": {
+          "value": true
         }
       },
       "outs": {
@@ -632,11 +632,11 @@
         }
       },
       "outs": {
-        "true": {
-          "connection": "Hu6pF6PTtLTMErGL:ins:in"
-        },
         "false": {
           "connection": "ZkgoEBRd8BaQZqyz:ins:in"
+        },
+        "true": {
+          "connection": "Hu6pF6PTtLTMErGL:ins:in"
         }
       }
     },
@@ -783,7 +783,7 @@
           "connection": "VusGp6GIUPJzayiK:outputs:entry"
         },
         "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconsole.log(inputs)\nreturn [{type: \"boolean\", value: !foundry.utils.equals(inputs[0], {x: 0, y: 0})}];"
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nreturn [{type: \"boolean\", value: !foundry.utils.equals(inputs[0], {x: 0, y: 0})}];"
         }
       },
       "outs": {
@@ -821,8 +821,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 3126,
-        "y": 87
+        "x": 3125,
+        "y": 85
       },
       "id": "gPkJZNXNQRQK9D27"
     },

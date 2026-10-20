@@ -1,5 +1,5 @@
 {
-  "name": "Generic Spell Fallback",
+  "name": "Spell Group: Spell Fallback",
   "folder": "Spells",
   "priority": 0,
   "nodes": [
@@ -109,6 +109,9 @@
         },
         "options": {
           "connection": "UO3mj0qzJBL0a6N8:outputs:options"
+        },
+        "await": {
+          "value": true
         }
       }
     }

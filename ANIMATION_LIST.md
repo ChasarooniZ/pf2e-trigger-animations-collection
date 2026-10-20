@@ -126,6 +126,8 @@
 
 ### Spells
 
+- Spell Group: Spell Fallback 🔊🆓✅ (✍🏼 @Chasarooni)
+
 #### Cantrips
 
 - Boost Eidolon 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
@@ -136,11 +138,13 @@
 - Dirge of Doom 🔊🆓✅ (✍🏼 @Chasarooni)
 - Divine Lance 🔊🆓 (✍🏼 @Chasarooni)
 - Electric Arc 🔊🆓✅ (✍🏼 @Chasarooni)
+- Evil Eye 🔊🆓✅ (✍🏼 @Chasarooni)
 - Frostbite 🔊🆓✅ (✍🏼 @Chasarooni)
 - Guidance 🔇🆓 (✍🏼 @Chasarooni)
 - Haunting Hymn 🔊🆓✅ (✍🏼 @Chasarooni)
 - Light 🔊🆓✅ (✍🏼 @Chasarooni)
 - Needle Darts 🔊🆓✅ (✍🏼 @Chasarooni)
+- Phase Bolt 🔊🆓✅ (✍🏼 @Chasarooni)
 - Ray of Frost 🔊🆓✅ (✍🏼 @Chasarooni)
 - Reinforce Eidolon 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Rousing Splash 🔊🆓✅ (✍🏼 @Chasarooni)
@@ -160,18 +164,22 @@
 - Garden of Healing 🔊🆓✅ (✍🏼 @ChazPls, 🛠️ @Chasarooni)
 - Hurtling Stone 🔊🆓 (✍🏼 @Chasarooni)
 - Ignition _TODO, Handle Psychic Yes + Melee somehow_ 🔊🆓 (✍🏼 @Chasarooni)
-- inner Upheaval 🔊🆓 (✍🏼 @Chasarooni)
+- Inner Upheaval 🔊🆓 (✍🏼 @Chasarooni)
 - Lay on Hands 🔊🆓 (✍🏼 @Chasarooni)
 - Lifelink Surge 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
+- Necrotic Bomb 🔊🆓✅ (✍🏼 @Chasarooni)
 - Qi Rush 🔊🆓 (✍🏼 @Chasarooni)
 - Tempest Surge 🔊🆓✅ (✍🏼 @maplealmond)
 
 #### 1st Rank Spells
 
+- Befuddle 🔊🆓✅ (✍🏼 @Chasarooni)
 - Bless 🔊🆓✅ (✍🏼 @ChazPls, 🛠️ @Chasarooni)
 - Concordant Choir 🔊🆓✅ (✍🏼 @Chasarooni)
+- Enfeeble 🔊🆓✅ (✍🏼 W@Chasarooni)
 - Force Barrage 🔊🆓 (✍🏼 @Chasarooni)
 - Fear 🔊🆓✅ (✍🏼 @Chasarooni)
+- Grim Tendrils 🔊🆓✅ (✍🏼 @Chasarooni)
 - Gust of Wind 🔊🆓✅ (✍🏼 @Suldrun45, 🛠️ @Chasarooni)
 - Harm 🔊🆓✅ (✍🏼 @Chasarooni)
 - Heal 🔊🆓✅ (✍🏼 @Chasarooni)
@@ -240,8 +248,10 @@
 
 - Grapple 🔊🆓✅ (✍🏼 @Chasarooni)
 - Raise a Shield 🔇🆓✅ (✍🏼 @Chasarooni)
+- Recall Knowledge 🔊🆓✅ (✍🏼 @Chasarooni)
 - Shove 🔊🆓✅ (✍🏼 @Chasarooni)
 - Tumble Through 🔊🆓✅ (✍🏼 @Chasarooni)
+- Trip 🔊🆓✅ (✍🏼 @Chasarooni)
 
 ### Conditions
 
@@ -360,6 +370,7 @@
 - Splinter 🔊🆓✅ (✍🏼 @Chasarooni)
 - Subsonic Burst 🔊🆓✅ (✍🏼 @Chasarooni)
 - Thunderbolt 🔊🆓 (✍🏼 @Chasarooni)
+- Thrall Strike 🔊🆓✅ (✍🏼 @Chasarooni)
 - Web Attack 🔊🆓✅ (✍🏼 @Chasarooni)
 - Wind Gust 🔊🆓✅ (✍🏼 @Chasarooni)
 

@@ -315,7 +315,7 @@
       },
       "inputs": {
         "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst options = [\n  'item:damage:type:bludgeoning',\n  'item:damage:type:piercing',  \n  'item:damage:type:slashing'\n]\nconst rollOptions = inputs[0];\nconst type = rollOptions.find(r => options.includes(r))\nconst files = {\n  'item:damage:type:bludgeoning': [\"jb2a.spear.melee.01.white.0\", \"jb2a.spear.melee.01.white.1\"],\n  'item:damage:type:piercing': [\"jb2a.spear.melee.01.white.2\",\"jb2a.spear.melee.01.white.3\"],  \n  'item:damage:type:slashing': [\"jb2a.spear.melee.01.white.4\",\"jb2a.spear.melee.01.white.5\"]\n}\n\nreturn [{type: \"text\", isArray:true, value: files[type]}];"
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst options = [\n  'item:damage:type:bludgeoning',\n  'item:damage:type:piercing',  \n  'item:damage:type:slashing'\n]\nconst rollOptions = inputs[0];\nconst type = rollOptions.find(r => options.includes(r))\nconst files = {\n  'item:damage:type:bludgeoning': [\"jb2a.spear.melee.01.white.0\", \"jb2a.spear.melee.01.white.1\"],\n  'item:damage:type:piercing': [\"jb2a.spear.melee.01.white.2\",\"jb2a.spear.melee.01.white.3\"],  \n  'item:damage:type:slashing': [\"jb2a.spear.melee.01.white.4\",\"jb2a.spear.melee.01.white.5\"]\n}\n\nreturn [{type: \"text\", isArray:true, value: Sequencer.Helpers.random_array_element(files[type] ?? [\"jb2a.spear.melee.01.white.2\",\"jb2a.spear.melee.01.white.3\"])}];"
         },
         "NsKWnbyf1KdVaILy": {
           "connection": "zwvWO50CXI44ObmF:outputs:options"
@@ -377,7 +377,7 @@
       },
       "inputs": {
         "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst options = [\n  'item:damage:type:bludgeoning',\n  'item:damage:type:piercing',  \n  'item:damage:type:slashing'\n]\nconst rollOptions = inputs[0];\nconst type = rollOptions.find(r => options.includes(r))\nconst files = {\n  'item:damage:type:bludgeoning': \"ggg-sfx.melee.polearm.strike.01.blunt\",\n  'item:damage:type:piercing': \"ggg-sfx.melee.polearm.strike.01.pierce\",  \n  'item:damage:type:slashing': \"ggg-sfx.melee.polearm.strike.01.blade\"\n}\n\nreturn [{type: \"text\", value: files[type]}];"
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst options = [\n  'item:damage:type:bludgeoning',\n  'item:damage:type:piercing',  \n  'item:damage:type:slashing'\n]\nconst rollOptions = inputs[0];\nconst type = rollOptions.find(r => options.includes(r))\nconst files = {\n  'item:damage:type:bludgeoning': \"ggg-sfx.melee.polearm.strike.01.blunt\",\n  'item:damage:type:piercing': \"ggg-sfx.melee.polearm.strike.01.pierce\",  \n  'item:damage:type:slashing': \"ggg-sfx.melee.polearm.strike.01.blade\"\n}\n\nreturn [{type: \"text\", value: files[type] ?? \"ggg-sfx.melee.polearm.strike.01.pierce\"}];"
         },
         "NsKWnbyf1KdVaILy": {
           "connection": "zwvWO50CXI44ObmF:outputs:options"
@@ -1376,7 +1376,7 @@
       "id": "lOD7SgeljRmdKHPe"
     }
   ],
-  "id": "MSMkH2HtfWeL0J7B",
+  "id": "IE4nmX5jB6jLtnCr",
   "description": "<p><em>Made by @Chasarooni</em></p>",
   "variables": {
     "4gZJ8Gm9UjlhMc4G:outputs:target": {

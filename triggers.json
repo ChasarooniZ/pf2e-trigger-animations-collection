@@ -554,6 +554,105 @@
       }
     ]
   },
+
+  {
+    "name": "[Trove] Recall Knowledge",
+    "folder": "Animations",
+    "priority": 0,
+    "description": "<p>Adds Support for PF2e HUD Recall Knowledge</p>",
+    "id": "1qKV6TUi9Ar8NguN",
+    "nodes": [
+      {
+        "type": "hook-called-event",
+        "position": { "x": 604, "y": 238 },
+        "id": "dQIreei49BiVmqWo",
+        "custom": {
+          "outputs": {
+            "EuGTjOp8uwmKZldU": {
+              "id": "EuGTjOp8uwmKZldU",
+              "label": "msg",
+              "slug": "output",
+              "isArray": false,
+              "type": "any"
+            }
+          }
+        },
+        "inputs": { "name": { "value": "createChatMessage" } },
+        "outs": { "out": { "connection": "gVLmqm0XJHssdAwN:ins:in" } }
+      },
+      {
+        "type": "execute-script",
+        "position": { "x": 838.9230769230769, "y": 232.39999999999998 },
+        "id": "gVLmqm0XJHssdAwN",
+        "custom": {
+          "inputs": {
+            "jyXjez1kZlxuOm4m": {
+              "id": "jyXjez1kZlxuOm4m",
+              "label": "msg",
+              "slug": "input",
+              "isArray": false,
+              "type": "any"
+            }
+          },
+          "outputs": {
+            "oT4wFZeHB102hoIa": {
+              "id": "oT4wFZeHB102hoIa",
+              "label": "Is Recall Knowledge",
+              "slug": "output",
+              "isArray": false,
+              "type": "boolean"
+            },
+            "Ko53Lq77d85ruJSE": {
+              "id": "Ko53Lq77d85ruJSE",
+              "label": "Token",
+              "slug": "output",
+              "isArray": false,
+              "type": "target"
+            },
+            "6cJlYZX3VTDWkCXn": {
+              "id": "6cJlYZX3VTDWkCXn",
+              "label": "Options",
+              "slug": "output",
+              "isArray": true,
+              "type": "text"
+            }
+          }
+        },
+        "inputs": {
+          "jyXjez1kZlxuOm4m": {
+            "connection": "dQIreei49BiVmqWo:outputs:EuGTjOp8uwmKZldU"
+          },
+          "script": {
+            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst msg = inputs[0]\n\nreturn [{type: \"boolean\", value: msg?.flags['pf2e-hud']?.action === 'recall-knowledge' || msg?.flags?.pf2e?.context?.options?.some(r => r === 'action:recall-knowledge')}, {type: \"target\", value: msg?.token ?? msg?.actor}, {type: \"text\", isArray: true, value: msg?.flags?.pf2e?.context?.options ?? []}];"
+          }
+        },
+        "outs": { "out": { "connection": "m6BgWbkVPh1Tb47B:ins:in" } }
+      },
+      {
+        "type": "split-boolean",
+        "inputs": {
+          "input": { "connection": "gVLmqm0XJHssdAwN:outputs:oT4wFZeHB102hoIa" }
+        },
+        "position": { "x": 1194, "y": 250.25 },
+        "id": "m6BgWbkVPh1Tb47B",
+        "outs": { "true": { "connection": "SW41D1OXFA7dqt9s:ins:in" } }
+      },
+      {
+        "type": "execute-animation",
+        "position": { "x": 1451.923076923077, "y": 214.39999999999998 },
+        "id": "SW41D1OXFA7dqt9s",
+        "inputs": {
+          "sources": {
+            "connection": "gVLmqm0XJHssdAwN:outputs:Ko53Lq77d85ruJSE"
+          },
+          "options": {
+            "connection": "gVLmqm0XJHssdAwN:outputs:6cJlYZX3VTDWkCXn"
+          },
+          "name": { "value": "action:recall-knowledge" }
+        }
+      }
+    ]
+  },
   {
     "name": "[Trove] Reload",
     "folder": "Animations",

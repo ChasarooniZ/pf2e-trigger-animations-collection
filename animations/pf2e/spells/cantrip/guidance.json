@@ -6,8 +6,8 @@
     {
       "id": "cmlqRAbNU6Qhyhgz",
       "position": {
-        "x": 286.66669160794214,
-        "y": 203.9999998707567
+        "x": -563.571403630153,
+        "y": 109.7142855850426
       },
       "type": "animation-event",
       "inputs": {
@@ -45,8 +45,8 @@
     {
       "type": "extract-item",
       "position": {
-        "x": 534.3809508804201,
-        "y": 279.99999020426543
+        "x": -315.8571443576751,
+        "y": 185.71427591855138
       },
       "id": "RXGgrusPFssap4Jg",
       "custom": {
@@ -68,7 +68,7 @@
       },
       "outs": {
         "out": {
-          "connection": "14pfkjbW1HJj3E54:ins:in"
+          "connection": "zQ0A4SrVyLMd9Iau:ins:in"
         }
       }
     },
@@ -427,8 +427,72 @@
           "connection": "LwpqtkK0V7tI3YBx:ins:in"
         }
       }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": -69.76190476190436,
+        "y": 141.90476190476204
+      },
+      "id": "zQ0A4SrVyLMd9Iau",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.magic.arcane.buff.general.02.01"
+        },
+        "name": {
+          "connection": "RXGgrusPFssap4Jg:outputs:EwCWjbhEVx8Vce1c"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "wbUtJsESrvxDvBtY:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "zQ0A4SrVyLMd9Iau:outputs:sound"
+        },
+        "location": {
+          "connection": "cmlqRAbNU6Qhyhgz:outputs:sources"
+        }
+      },
+      "position": {
+        "x": 214.33333333333394,
+        "y": 123.737301587302
+      },
+      "id": "wbUtJsESrvxDvBtY",
+      "outs": {
+        "out": {
+          "connection": "AbAT7P23iPE5Njjv:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "wbUtJsESrvxDvBtY:outputs:sound"
+        },
+        "preset": {
+          "value": "troveSound"
+        }
+      },
+      "position": {
+        "x": 429.88888888888937,
+        "y": 120.2817460317466
+      },
+      "id": "AbAT7P23iPE5Njjv",
+      "outs": {
+        "out": {
+          "connection": "14pfkjbW1HJj3E54:ins:in"
+        }
+      }
     }
   ],
-  "id": "BNuHmvy4KmkolZOD",
+  "id": "Dd2jJn2spaUKunKW",
   "description": "<p><em>Created by @Chasarooni</em></p>"
 }

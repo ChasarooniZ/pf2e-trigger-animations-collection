@@ -1,14 +1,28 @@
 ## Unreleased
 
+## 0.12.2
+
+- **Animations**
+  - **New**
+    - Spell Group: Spell Fallback _all spells with `spell:` trigger will automatically be covered by this until excluded using the new cast a spell helper_ (@ChasarooniZ)
+    - Recall Knowledge _has been ported over properly to Trigger Animations_ (@ChasarooniZ)
+    - Befuddle, Evil Eye, Enfeeble, Grim Tendrils, Necrotic Bomb, Phase Bolt, Thrall Strike, Trip (@ChasarooniZ)
+    - Tempest Surge (@Maple)
+  - **Updated**
+    - Guidance _better respects quality_ (@ChasarooniZ)
+    - Weapon Group: Spear _Fixed issue with different damage type spears failing to find animations, fixed misc bug causing spears to not actually use all possible animations for melee_ (🐛 @Mechamaya, 💻 @ChasarooniZ)
 - **New**
   - `Cast a Spell`
-    - Added a helper function and animation that creates cast animation based on the properties passed in
-    - Currently the timing is off between it and the following animations
+    - Added a helper animation that creates cast animation based on the properties passed in
 - **Updated**
   - Fixed bug causing the `Spell` animation type to only play on the triggering person's device
   - `Handler: Attack Roll`
-    - now covers cases where an effect adds multiple strikes (by getting the roll option slug of the strike if it has one)
+    - Now covers cases where an effect adds multiple strikes (by getting the roll option slug of the strike if it has one)
     - Also now handles `Shield` weapon group
+  - Updated `Trigger Animations` to version `0.9.10`
+  - Updated `Trigger Engine` to version `1.36.0`
+  - Updated `GGG` to version `0.2.2`
+    - _Added recall knowledge sfx_
 
 ## 0.12.1
 

@@ -24,6 +24,23 @@
           "button": "Enable New Triggers"
         }
       }
+    },
+    "animation": {
+      "recall-knowledge": {
+        "think": {
+          "a": "Think.",
+          "b": "Think..",
+          "c": "Think..."
+        },
+        "finale": {
+          "eureka": "εὕρηκα!",
+          "got-it": "Got It!",
+          "found-it": "Found It!",
+          "perfect": "Perfect!",
+          "thisll-do": "This'll do.",
+          "hope-im-right": "Hope I'm Right."
+        }
+      }
     }
   }
 }
