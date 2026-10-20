@@ -4,7 +4,7 @@
 
 - **Animations**
   - **Updated**
-    - Weapon Group: Spear _Fixed issue with different damage type ~~spears~~ polearms failing to find animations_ (🐛 @Mechamaya, 💻 @ChasarooniZ)
+    - Weapon Group: Polearm _Fixed issue with different damage type ~~spears~~ polearms failing to find animations_ (🐛 @Mechamaya, 💻 @ChasarooniZ)
 
 ## 0.12.2
 
