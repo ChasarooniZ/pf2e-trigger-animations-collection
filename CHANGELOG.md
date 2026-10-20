@@ -6,7 +6,9 @@
     - Currently the timing is off between it and the following animations
 - **Updated**
   - Fixed bug causing the `Spell` animation type to only play on the triggering person's device
-  - `Handler: Attack Roll` now covers cases where an effect adds multiple strikes (by getting the roll option slug of the strike if it has one)
+  - `Handler: Attack Roll`
+    - now covers cases where an effect adds multiple strikes (by getting the roll option slug of the strike if it has one)
+    - Also now handles `Shield` weapon group
 
 ## 0.12.1
 
