@@ -1,5 +1,11 @@
 ## Unreleased
 
+## 0.12.3
+
+- **Animations**
+  - **Updated**
+    - Weapon Group: Spear _Fixed issue with different damage type ~~spears~~ polearms failing to find animations_ (🐛 @Mechamaya, 💻 @ChasarooniZ)
+
 ## 0.12.2
 
 - **Animations**
