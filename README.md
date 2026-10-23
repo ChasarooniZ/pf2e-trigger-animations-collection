@@ -28,6 +28,11 @@ The following are triggers specific to Trigger Animation Trove, for all other tr
 | Spell Message                   | `none`                                             | `spell:spell-slug`                                       |
 | Roll Option Update              | `none`                                             | `update:item-slug`                                       |
 
+
+**Spellcasting Helper Setup**
+<img width="1200" height="922" alt="image" src="https://github.com/user-attachments/assets/0f5bdabd-c37c-4b2a-83e7-37dd9a1b64a6" />
+
+
 The following are presets for particular sources
 
 **Sound**
@@ -52,11 +57,6 @@ The following are presets for particular sources
 [Click Me!](./CONTRIBUTING.md)
 
 _[Use Me to convert "Export Triggers" to individual files for a PR](https://chasarooniz.github.io/pf2e-trigger-animations-collection/)_
-
-## Helpers
-
-**Spellcasting Helper Setup**
-<img width="1200" height="922" alt="image" src="https://github.com/user-attachments/assets/0f5bdabd-c37c-4b2a-83e7-37dd9a1b64a6" />
 
 ## Changelog
 
