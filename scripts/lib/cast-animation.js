@@ -186,12 +186,18 @@ export function getCastSpellAnimationItems({
       break;
     case "acid":
     case "poison":
-      output.animFile = "jb2a.on_token_cast.initiate.002.instant.part03.blue";
-      output.filter = {
-        hue: -110,
-      };
+      if (jb2aPatreon) {
+        output.animFile =
+          "jb2a.on_token_cast.initiate.001.instant.combined.greenpurple.1";
+        output.animWait = -2500;
+      } else {
+        output.animFile = "jb2a.on_token_cast.initiate.002.instant.part03.blue";
+        output.filter = {
+          hue: -110,
+        };
+        output.animWait = -400;
+      }
       output.scale = output.target ? 1 : 2;
-      output.animWait = -400;
       output.sfxFile = "ggg-sfx.magic.acid.cast.general.02";
       break;
     case "sleep":

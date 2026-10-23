@@ -1,5 +1,8 @@
 ## Unreleased
 
+- **Updated**
+  - `Spell Cast` - Modified `acid` spell cast animation for patreon
+
 ## 0.12.3
 
 - **Animations**
