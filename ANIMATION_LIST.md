@@ -173,6 +173,7 @@
 
 #### 1st Rank Spells
 
+- Acidic Burst 🔊🆓✅ (✍🏼 @Icarus)
 - Befuddle 🔊🆓✅ (✍🏼 @Chasarooni)
 - Bless 🔊🆓✅ (✍🏼 @ChazPls, 🛠️ @Chasarooni)
 - Concordant Choir 🔊🆓✅ (✍🏼 @Chasarooni)
