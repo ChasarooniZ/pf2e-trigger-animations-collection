@@ -3679,9 +3679,6 @@ export const TEMPLATES = {
             effect: {
               connection: "liv4jrzZJXZpVSL2:outputs:effect",
             },
-            delayMin: {
-              value: 2400,
-            },
           },
           outs: {
             out: {

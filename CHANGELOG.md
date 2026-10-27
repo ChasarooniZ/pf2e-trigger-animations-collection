@@ -1,7 +1,11 @@
 ## Unreleased
 
+- **Animations**
+  - **New**
+    - Acid Burst (@Icarus 🎉 First time animation contributor)
 - **Updated**
   - `Spell Cast` - Modified `acid` spell cast animation for patreon
+  - `Animation Template: Cone Template` - Removed the delay for the template that's added by default
 
 ## 0.12.3
 
