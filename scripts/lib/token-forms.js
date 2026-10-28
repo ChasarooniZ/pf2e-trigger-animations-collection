@@ -45,8 +45,19 @@ function getTokenImages({ slug, noSubject }) {
 
 function getArt(slug) {
   let art = null;
-  for (const id of MODULES) {
-    const data = game.modules.get(id)?.active && ART_MAPPING[id]?.[slug];
+  const compendiumConfig = game.settings.get(
+    "core",
+    "compendiumArtConfiguration",
+  );
+  let moduleIDs = MODULES;
+  if (compendiumConfig) {
+    moduleIDs = Object.entries(compendiumConfig)
+      .toSorted((a, b) => a?.[0]?.priority - b?.[0]?.priority)
+      .map(([id]) => id);
+  }
+
+  for (const id of moduleIDs) {
+    const data = game.modules.get(id)?.active && ART_MAPPING?.[id]?.[slug];
     if (data) {
       if (!art) {
         art = data;

@@ -11,6 +11,26 @@ export const ART_MAPPING = {
     },
   },
   "pf2e-tokens-monster-core-2": {
+    "angel-form": [
+      {
+        predicate: ["angel-form:kuribu"],
+        token:
+          "modules/pf2e-tokens-monster-core-2/assets/tokens/angel-kuribu.webp",
+        scale: 2,
+        subject:
+          "modules/pf2e-tokens-monster-core-2/assets/subjects/angel-kuribu.webp",
+        subjectScale: 2,
+      },
+      {
+        predicate: ["angel-form:tennin"],
+        token:
+          "modules/pf2e-tokens-monster-core-2/assets/tokens/angel-tennin.webp",
+        scale: 2,
+        subject:
+          "modules/pf2e-tokens-monster-core-2/assets/subjects/angel-tennin.webp",
+        subjectScale: 2,
+      },
+    ],
     "dragon-form": [
       {
         predicate: ["dragon-form:cinder"],
@@ -164,6 +184,26 @@ export const ART_MAPPING = {
     ],
   },
   "pf2e-tokens-monster-core": {
+    "angel-form": [
+      {
+        predicate: ["angel-form:balisse"],
+        token:
+          "modules/pf2e-tokens-monster-core/assets/tokens/angel-ballise.webp",
+        scale: 2,
+        subject:
+          "modules/pf2e-tokens-monster-core/assets/subjects/angel-ballise.webp",
+        subjectScale: 2,
+      },
+      {
+        predicate: ["angel-form:choral"],
+        token:
+          "modules/pf2e-tokens-monster-core/assets/tokens/angel-choral.webp",
+        scale: 2,
+        subject:
+          "modules/pf2e-tokens-monster-core/assets/subjects/angel-choral.webp",
+        subjectScale: 2,
+      },
+    ],
     "devil-form": [
       {
         predicate: ["devil-form:coarti"],
@@ -670,6 +710,25 @@ export const ART_MAPPING = {
     ],
   },
   "pf2e-tokens-bestiaries": {
+    "angel-form": [
+      {
+        predicate: ["angel-form:balisse"],
+        token:
+          "modules/pf2e-tokens-bestiaries/tokens/divine/angel/balisse.webp",
+        scale: 1.5,
+        subject:
+          "modules/pf2e-tokens-bestiaries/subjects/divine/angel/balisse.webp",
+        subjectScale: 1.5,
+      },
+      {
+        predicate: ["angel-form:choral"],
+        token: "modules/pf2e-tokens-bestiaries/tokens/divine/angel/choral.webp",
+        scale: 1.2,
+        subject:
+          "modules/pf2e-tokens-bestiaries/subjects/divine/angel/choral.webp",
+        subjectScale: 1.2,
+      },
+    ],
     "dragon-form": [
       {
         predicate: ["dragon-form:brine"],
