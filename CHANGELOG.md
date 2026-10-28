@@ -1,16 +1,24 @@
 ## Unreleased
 
+## 0.13.0
+
 - **Animations**
   - **New**
     - Acid Burst (@Icarus 🎉 First time animation contributor)
+    - Devise a Strategem, Strategic Strike, Concealed, Disintegrate, Vitality Lash, Rallying Anthem, Saoc Astrology, Heir of the Saoc (@ChasarooniZ)
+  - **Update**
+    - Prone _Now always points down_ (@ChasarooniZ)
+    - Recall Knowledge _Now pans the user back to the original point when they have pan setting on_ (@ChasarooniZ)
 - **New**
   - `Token Images` - Ported over the support that `PF2e Graphics` had for adding `TokenImage` Rule elements to tokens in real time as the effect is added
     - Adds more support for more art
     - Also adds a setting to disable it (and it respects your compendium art sort order)
+  - `Pan Setting` - Added a setting to allow users to opt out of panning parts of animations included in this pack
 - **Updated**
   - `Spell Cast` - Modified `acid` spell cast animation for patreon
   - `Handler: Damage Roll` - Modified the code so now it will automatically grab any matched slugs in the damage roll and trigger the corresponding `damage-roll-addon:<slug>`
-  - `Animation Template: Cone Template` - Removed the delay for the template that's added by default
+  - `Animation Template: Cone Template`, `Animation Template: On-Token (Source)`, `Animation Template: On-Token (Source -> Target)` - Removed the delay for the template that's added by default
+  - `GGG` to version `0.2.4`
 
 ## 0.12.3
 

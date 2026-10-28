@@ -246,7 +246,10 @@
         "effect": {
           "connection": "DIKQm9cpxx67j5yf:outputs:effect"
         },
-        "rotate": {
+        "zeroSpriteRotation": {
+          "value": true
+        },
+        "spriteRotation": {
           "value": -90
         }
       },
@@ -323,5 +326,5 @@
   "name": "Prone",
   "description": "<p>Written by @Chasarooni</p>",
   "folder": "Conditions",
-  "id": "g8R0X88isfO0y8t3"
+  "id": "tGSVq0waPQ7EIui9"
 }

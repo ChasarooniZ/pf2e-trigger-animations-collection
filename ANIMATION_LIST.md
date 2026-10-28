@@ -22,6 +22,7 @@
     - [Class Features](#class-features)
       - [Barbarian](#barbarian)
       - [Kineticist](#kineticist)
+    - [Investigator](#investigator)
       - [Rogue](#rogue)
       - [Runesmith](#runesmith)
     - [Spells](#spells)
@@ -42,6 +43,8 @@
     - [Conditions](#conditions)
     - [Feats](#feats)
       - [Ancestry Feats](#ancestry-feats)
+        - [General](#general)
+        - [Human](#human)
       - [Class Feats](#class-feats)
         - [Barbarian](#barbarian-1)
         - [Fighter](#fighter)
@@ -111,7 +114,12 @@
 
 #### Kineticist
 
-- Elemental Blast 🔊🆓 (✍🏼 @Chasarooni)
+- Elemental Blast 🔊🆓✅ (✍🏼 @Chasarooni)
+
+### Investigator
+
+- Devise a Strategem 🔊🆓 (✍🏼 @Chasarooni)
+- Strategic Strike 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### Rogue
 
@@ -145,6 +153,7 @@
 - Light 🔊🆓✅ (✍🏼 @Chasarooni)
 - Needle Darts 🔊🆓✅ (✍🏼 @Chasarooni)
 - Phase Bolt 🔊🆓✅ (✍🏼 @Chasarooni)
+- Rallying Anthem 🔊🆓✅ (✍🏼 @Chasarooni)
 - Ray of Frost 🔊🆓✅ (✍🏼 @Chasarooni)
 - Reinforce Eidolon 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
 - Rousing Splash 🔊🆓✅ (✍🏼 @Chasarooni)
@@ -153,6 +162,7 @@
 - Telekinetic Hand 🔊🆓✅ (✍🏼 @Chasarooni)
 - Telekinetic Projectile 🔊🆓✅ (✍🏼 @Chasarooni)
 - Triple Time 🔊🆓✅ (✍🏼 @Chasarooni)
+- Vitality Lash 🔊🆓✅ (✍🏼 @Chasarooni)
 - Void Warp 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### Focus Spells
@@ -222,6 +232,7 @@
 #### 6th Rank Spells
 
 - Chain Lighting 🔊🆓✅ (✍🏼 @Suldrun45)
+- Disintegrate 🔊🆓✅ (✍🏼 @Chasarooni)
 - Phantom Orchestra 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### 7th Rank Spells
@@ -258,6 +269,7 @@
 
 - Blinded 🔇🆓✅ (✍🏼 @Chasarooni)
 - Clumsy 🔇🆓✅ (✍🏼 @Chasarooni)
+- Conceaaled 🔇🆓✅ (✍🏼 @Chasarooni)
 - Confused 🔇🆓✅ (✍🏼 @Chasarooni)
 - Controlled 🔇🆓✅ (✍🏼 @Chasarooni)
 - Dazzled 🔇🆓✅ (✍🏼 @Chasarooni)
@@ -290,7 +302,14 @@
 
 #### Ancestry Feats
 
+##### General
+
 - Change Shape 🔇🆓 (✍🏼 @Chasarooni)
+
+##### Human
+
+- Saoc Astrology 🔊🆓✅ (✍🏼 @Chasarooni)
+- Heir of the Saoc 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### Class Feats
 

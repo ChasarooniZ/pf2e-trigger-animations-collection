@@ -118,17 +118,26 @@
     },
     {
       "custom": {
-        "title": "Pre Addons"
+        "title": "Pre Addons",
+        "outputs": {
+          "bcqqk8lbnNL5YIBG": {
+            "id": "bcqqk8lbnNL5YIBG",
+            "label": "index",
+            "slug": "entry",
+            "isArray": false,
+            "type": "number"
+          }
+        }
       },
       "type": "__gate_exit__",
       "position": {
-        "x": 764.75,
-        "y": 606.5
+        "x": 425.75,
+        "y": 591.5
       },
       "id": "gZrWmiyhcjFA2LvA",
       "outs": {
         "out": {
-          "connection": "gOMHyUjKJhFbwzZQ:ins:in"
+          "connection": "1oNwmr0DlMZwsnFo:ins:in"
         }
       }
     },
@@ -180,34 +189,10 @@
       },
       "type": "__gate_entry__",
       "position": {
-        "x": 2090.1111111111113,
-        "y": 584.3888888888889
+        "x": 1241.8611111111113,
+        "y": 567.6388888888889
       },
       "id": "zBHb5mwjGfTfbgX8"
-    },
-    {
-      "type": "list-contains",
-      "position": {
-        "x": 1084.5555555555557,
-        "y": 601.8055555555555
-      },
-      "id": "gOMHyUjKJhFbwzZQ",
-      "inputs": {
-        "list": {
-          "connection": "6vo2t5n4t2WKBH8Z:outputs:entry"
-        },
-        "entry": {
-          "value": "sneak-attack"
-        }
-      },
-      "outs": {
-        "true": {
-          "connection": "OCLOUKutnX5VoaA4:ins:in"
-        },
-        "false": {
-          "connection": "T1gMwAPQsQnSMLP5:ins:in"
-        }
-      }
     },
     {
       "inputs": {
@@ -217,26 +202,26 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 870.5555555555557,
-        "y": 690.2500000000001
+        "x": 526.1111111111111,
+        "y": 741.9166666666667
       },
       "id": "6vo2t5n4t2WKBH8Z"
     },
     {
       "type": "execute-animation",
       "position": {
-        "x": 1037.1452991452993,
-        "y": 737.538888888889
+        "x": 1701.8556166056171,
+        "y": 657.3206349206348
       },
       "id": "OCLOUKutnX5VoaA4",
       "outs": {
         "out": {
-          "connection": "T1gMwAPQsQnSMLP5:ins:in"
+          "connection": "bmwLEnLX1ltalVb5:ins:in"
         }
       },
       "inputs": {
         "name": {
-          "value": "damage-roll-addon:sneak-attack"
+          "connection": "9YvX04hy2NEPoO2r:outputs:result"
         },
         "actor": {
           "connection": "gFvckgjPabWLgQen:outputs:entry"
@@ -263,8 +248,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 888,
-        "y": 809.75
+        "x": 1552.7103174603176,
+        "y": 729.5317460317458
       },
       "id": "gFvckgjPabWLgQen"
     },
@@ -276,8 +261,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 887,
-        "y": 843.75
+        "x": 1551.7103174603176,
+        "y": 763.5317460317458
       },
       "id": "RmlohGLmWigUtqxX"
     },
@@ -289,8 +274,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 891,
-        "y": 877.75
+        "x": 1555.7103174603176,
+        "y": 797.531746031746
       },
       "id": "RRKZmvXrJ4OrhOdv"
     },
@@ -302,8 +287,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 895,
-        "y": 913.75
+        "x": 1559.7103174603176,
+        "y": 833.531746031746
       },
       "id": "hEyXulkulzzf4epS"
     },
@@ -315,8 +300,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 892,
-        "y": 952.75
+        "x": 1556.7103174603176,
+        "y": 872.531746031746
       },
       "id": "wVEQW0lsN3WWKELr"
     },
@@ -334,77 +319,164 @@
       "id": "F1k0h5q3qyPaLKOs"
     },
     {
-      "type": "list-contains",
-      "position": {
-        "x": 1440.2698412698414,
-        "y": 597.5198412698413
+      "type": "__select_index__",
+      "custom": {
+        "inputs": {
+          "list": {
+            "id": "list",
+            "isArray": true,
+            "label": "List",
+            "slug": "list",
+            "type": "text"
+          }
+        },
+        "outputs": {
+          "entry": {
+            "id": "entry",
+            "isArray": false,
+            "label": "Entry",
+            "slug": "entry",
+            "type": "text"
+          }
+        }
       },
-      "id": "T1gMwAPQsQnSMLP5",
+      "position": {
+        "x": 654.9206349206347,
+        "y": 618.920634920635
+      },
+      "id": "1oNwmr0DlMZwsnFo",
       "inputs": {
-        "entry": {
-          "value": "vicious-swing"
+        "index": {
+          "connection": "gZrWmiyhcjFA2LvA:outputs:bcqqk8lbnNL5YIBG"
         },
         "list": {
-          "connection": "HTpqVerQ7x8gkLzV:outputs:entry"
+          "connection": "6vo2t5n4t2WKBH8Z:outputs:entry"
         }
       },
-      "outs": {
-        "true": {
-          "connection": "NstprrB3FxPwVylT:ins:in"
-        },
-        "false": {
-          "connection": "zBHb5mwjGfTfbgX8:ins:in"
-        }
-      }
-    },
-    {
-      "type": "execute-animation",
-      "position": {
-        "x": 1432.859584859585,
-        "y": 748.9674603174606
-      },
-      "id": "NstprrB3FxPwVylT",
       "outs": {
         "out": {
-          "connection": "zBHb5mwjGfTfbgX8:ins:in"
-        }
-      },
-      "inputs": {
-        "name": {
-          "value": "damage-roll-addon:vicious-swing"
-        },
-        "actor": {
-          "connection": "gFvckgjPabWLgQen:outputs:entry"
-        },
-        "sources": {
-          "connection": "RmlohGLmWigUtqxX:outputs:entry"
-        },
-        "targets": {
-          "connection": "RRKZmvXrJ4OrhOdv:outputs:entry"
-        },
-        "item": {
-          "connection": "hEyXulkulzzf4epS:outputs:entry"
-        },
-        "options": {
-          "connection": "wVEQW0lsN3WWKELr:outputs:entry"
+          "connection": "WHWC11VA7QEs56JM:ins:in"
         }
       }
     },
     {
-      "inputs": {
-        "entry": {
-          "connection": "5Yy2lI6uhThGLmVb:outputs:zlri3FyTeHzt34RB"
+      "type": "format-text",
+      "custom": {
+        "inputs": {
+          "8n70Qk0TcGFncuut": {
+            "id": "8n70Qk0TcGFncuut",
+            "input": "slug",
+            "label": "slug",
+            "slug": "variable",
+            "type": "text"
+          },
+          "O9hZJamxrSSqR0cv": {
+            "id": "O9hZJamxrSSqR0cv",
+            "input": "prefix",
+            "label": "prefix",
+            "slug": "variable",
+            "type": "text"
+          }
         }
       },
-      "type": "__variable_getter__",
       "position": {
-        "x": 1325.714285714286,
-        "y": 651.1785714285712
+        "x": 1247.109584859584,
+        "y": 679.3404761904762
       },
-      "id": "HTpqVerQ7x8gkLzV"
+      "id": "9YvX04hy2NEPoO2r",
+      "inputs": {
+        "plain": {
+          "value": "@prefix:@slug"
+        },
+        "O9hZJamxrSSqR0cv": {
+          "value": "damage-roll-addon"
+        },
+        "8n70Qk0TcGFncuut": {
+          "connection": "1oNwmr0DlMZwsnFo:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "OCLOUKutnX5VoaA4:ins:in"
+        }
+      }
+    },
+    {
+      "type": "resolve-formula",
+      "custom": {
+        "inputs": {
+          "hIDofuiS6eBtSYYd": {
+            "id": "hIDofuiS6eBtSYYd",
+            "input": "index",
+            "label": "index",
+            "slug": "variable",
+            "type": "number"
+          }
+        }
+      },
+      "position": {
+        "x": 2036.7722832722827,
+        "y": 672.0190476190478
+      },
+      "id": "bmwLEnLX1ltalVb5",
+      "inputs": {
+        "hIDofuiS6eBtSYYd": {
+          "connection": "gZrWmiyhcjFA2LvA:outputs:bcqqk8lbnNL5YIBG"
+        },
+        "formula": {
+          "value": "@index+1"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "NgFicYqOh91blwdw:ins:in"
+        }
+      }
+    },
+    {
+      "outs": {
+        "out": {
+          "connection": "gZrWmiyhcjFA2LvA:ins:in"
+        }
+      },
+      "type": "__gate_entry__",
+      "position": {
+        "x": 2329.355616605616,
+        "y": 657.3134920634923
+      },
+      "id": "NgFicYqOh91blwdw",
+      "inputs": {
+        "bcqqk8lbnNL5YIBG": {
+          "connection": "bmwLEnLX1ltalVb5:outputs:value"
+        }
+      }
+    },
+    {
+      "type": "texts-match",
+      "inputs": {
+        "a": {
+          "connection": "1oNwmr0DlMZwsnFo:outputs:entry"
+        },
+        "b": {
+          "value": "undefined"
+        }
+      },
+      "position": {
+        "x": 931,
+        "y": 618.25
+      },
+      "id": "WHWC11VA7QEs56JM",
+      "outs": {
+        "false": {
+          "connection": "9YvX04hy2NEPoO2r:ins:in"
+        },
+        "true": {
+          "connection": "zBHb5mwjGfTfbgX8:ins:in"
+        }
+      }
     }
   ],
-  "id": "hA195dSh0DqXqUd4",
+  "id": "eNiIldgeH3iWTbza",
   "variables": {
     "5Yy2lI6uhThGLmVb:outputs:zlri3FyTeHzt34RB": {
       "isArray": true,

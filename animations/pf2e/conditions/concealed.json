@@ -1,0 +1,267 @@
+{
+  "priority": 0,
+  "nodes": [
+    {
+      "id": "ZOy2yUQRDp3DXNGr",
+      "position": {
+        "x": 721.6825917489405,
+        "y": -74.23533986597317
+      },
+      "type": "animation-event",
+      "outs": {
+        "out": {
+          "connection": "wjDV7ApiwKUADuEn:ins:in"
+        }
+      },
+      "inputs": {
+        "name": {
+          "value": "condition:concealed"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 1273.793428821952,
+        "y": -81.25399645586185
+      },
+      "id": "DIKQm9cpxx67j5yf",
+      "outs": {
+        "effect-out": {
+          "connection": "c91TuPMph3V1lTZx:ins:in"
+        },
+        "out": {
+          "connection": "6eNEzW2tgWvC5nbk:ins:in"
+        }
+      },
+      "inputs": {
+        "name": {
+          "connection": "wjDV7ApiwKUADuEn:outputs:4evIVjDjaVwQ28ss"
+        },
+        "origin": {
+          "connection": "wjDV7ApiwKUADuEn:outputs:70aosF6hawepmW0s"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "position": {
+        "x": 1582.1351392519794,
+        "y": -78.05535236090839
+      },
+      "id": "6eNEzW2tgWvC5nbk",
+      "inputs": {
+        "effect": {
+          "connection": "DIKQm9cpxx67j5yf:outputs:effect"
+        },
+        "location": {
+          "connection": "ZOy2yUQRDp3DXNGr:outputs:sources"
+        },
+        "attachTo": {
+          "value": true
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "fOQmLPBTOTwEancN:ins:in"
+        }
+      },
+      "state": "targets"
+    },
+    {
+      "type": "extract-item",
+      "inputs": {
+        "input": {
+          "connection": "ZOy2yUQRDp3DXNGr:outputs:item"
+        }
+      },
+      "position": {
+        "x": 1024.2378888912779,
+        "y": -68.54819346478871
+      },
+      "id": "wjDV7ApiwKUADuEn",
+      "custom": {
+        "outputs": {
+          "4evIVjDjaVwQ28ss": {
+            "id": "4evIVjDjaVwQ28ss",
+            "input": "name",
+            "label": "Name",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "70aosF6hawepmW0s": {
+            "id": "70aosF6hawepmW0s",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "DIKQm9cpxx67j5yf:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "position": {
+        "x": 1810.8278388278388,
+        "y": -76.74285714285713
+      },
+      "id": "fOQmLPBTOTwEancN",
+      "inputs": {
+        "objectScale": {
+          "value": 1.5
+        },
+        "effect": {
+          "connection": "DIKQm9cpxx67j5yf:outputs:effect"
+        },
+        "considerTokenScale": {
+          "value": true
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "kOveTNFibKl6yrrI:ins:in"
+        }
+      },
+      "state": "object"
+    },
+    {
+      "type": "visibility",
+      "position": {
+        "x": 2326.5103785103774,
+        "y": -89.38888888888891
+      },
+      "id": "Nrbbayr5LI09Phi2",
+      "inputs": {
+        "effect": {
+          "connection": "DIKQm9cpxx67j5yf:outputs:effect"
+        },
+        "fadeInEase": {
+          "value": "easeOutCubic"
+        },
+        "fadeOutEase": {
+          "value": "easeInCubic"
+        },
+        "fadeInDuration": {
+          "value": 250
+        },
+        "fadeOutDuration": {
+          "value": 500
+        },
+        "maskToSource": {
+          "value": true
+        },
+        "opacity": {
+          "value": 0.5
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "H2COAV35MOZAqh7W:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 3219.872571872572,
+        "y": -79.69696969696975
+      },
+      "id": "SW6ZeNxbHQVg27Dj",
+      "inputs": {
+        "preload": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "type": "get-quality",
+      "position": {
+        "x": 2634.1111111111113,
+        "y": -88.22222222222229
+      },
+      "id": "H2COAV35MOZAqh7W",
+      "outs": {
+        "minimal": {
+          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
+        },
+        "low": {
+          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
+        },
+        "medium": {
+          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
+        },
+        "high": {
+          "connection": "icMdaJ1q3j1VHfPK:ins:in"
+        }
+      }
+    },
+    {
+      "type": "persist",
+      "position": {
+        "x": 2896.7777777777774,
+        "y": 109.44444444444434
+      },
+      "id": "icMdaJ1q3j1VHfPK",
+      "inputs": {
+        "persist": {
+          "value": true
+        },
+        "persistTokenPrototype": {
+          "value": true
+        },
+        "tieToDocs": {
+          "connection": "ZOy2yUQRDp3DXNGr:outputs:sources"
+        },
+        "tieTo": {
+          "connection": "wjDV7ApiwKUADuEn:outputs:70aosF6hawepmW0s"
+        },
+        "extraEndDuration": {
+          "value": 500
+        },
+        "effect": {
+          "connection": "DIKQm9cpxx67j5yf:outputs:effect"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 2068.903522133004,
+        "y": -83.98476728463231
+      },
+      "id": "kOveTNFibKl6yrrI",
+      "inputs": {
+        "file": {
+          "value": "jb2a.ambient_fog.001.complete.small.white"
+        },
+        "effect": {
+          "connection": "DIKQm9cpxx67j5yf:outputs:effect"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Nrbbayr5LI09Phi2:ins:in"
+        }
+      }
+    }
+  ],
+  "name": "Concealed",
+  "description": "<p>Written by @Chasarooni</p>",
+  "folder": "Conditions",
+  "id": "SeVJ21FaCxvx1Plg"
+}

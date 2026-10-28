@@ -1809,12 +1809,6 @@ export const TEMPLATES = {
             effect: {
               connection: "9I0LwMT281lIAPws:outputs:effect",
             },
-            waitUntilFinished: {
-              value: true,
-            },
-            waitDelayMin: {
-              value: -2300,
-            },
           },
           position: {
             x: 5355.714285714286,
@@ -2299,12 +2293,6 @@ export const TEMPLATES = {
           inputs: {
             effect: {
               connection: "9I0LwMT281lIAPws:outputs:effect",
-            },
-            waitUntilFinished: {
-              value: true,
-            },
-            waitDelayMin: {
-              value: -2300,
             },
           },
           position: {
