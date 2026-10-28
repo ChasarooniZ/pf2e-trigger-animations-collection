@@ -2,6 +2,7 @@ import { setupAPI } from "./api.js";
 import { getAnimationsToAddAndUpdateFlags } from "./enableNewAnimations.js";
 import { getTriggersToAddAndUpdateFlags } from "./enableNewTriggers.js";
 import { registerTriggerAnimationTemplates } from "./handleTemplates.js";
+import { setupTokenImageFormHooks } from "./lib/token-forms.js";
 import { sendUpdateMessage } from "./lib/updateMessage.js";
 import { setupSettings } from "./settings.js";
 
@@ -39,6 +40,9 @@ Hooks.once("init", async function () {
 Hooks.once("ready", async function () {
   registerPresets();
   setupAPI();
+  setupTokenImageFormHooks(
+    game.settings.get(MODULE_ID, "token-image-form.enable"),
+  );
 });
 // function modifyTriggerAnimationTemplates() {
 //   triggerAnimations.api.templates.attack.prefixes = [

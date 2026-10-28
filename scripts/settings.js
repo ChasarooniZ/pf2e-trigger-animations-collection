@@ -2,7 +2,10 @@ import {
   askToAddNewAnimationsDialog,
   getAnimationsToAddAndUpdateFlags,
 } from "./enableNewAnimations.js";
-import { askToEnableNewTriggersDialog } from "./enableNewTriggers.js";
+import {
+  hasImageMappingModule,
+  setupTokenImageFormHooks,
+} from "./lib/token-forms.js";
 import { MODULE_ID } from "./module.js";
 
 export function setupSettings() {
@@ -13,6 +16,18 @@ export function setupSettings() {
     icon: "fas fa-arrows-rotate",
     type: ForceEnableAllAnimations,
     restricted: true,
+  });
+
+  game.settings.register(MODULE_ID, "token-image-form.enable", {
+    name: `${MODULE_ID}.module-settings.token-image-form.enable.name`,
+    hint: `${MODULE_ID}.module-settings.token-image-form.enable.hint`,
+    scope: "world",
+    config: hasImageMappingModule(),
+    type: Boolean,
+    default: hasImageMappingModule(),
+    onChange: (value) => {
+      setupTokenImageFormHooks(value);
+    },
   });
 
   game.settings.register(MODULE_ID, "disable-trigger-enable-spam", {

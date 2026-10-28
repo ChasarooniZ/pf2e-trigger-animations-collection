@@ -3,6 +3,8 @@
 - **Animations**
   - **New**
     - Acid Burst (@Icarus 🎉 First time animation contributor)
+- **New**
+  - `Token Images` - Ported over the support that `PF2e Graphics` had for adding `TokenImage` Rule elements to tokens in real time as the effect is added
 - **Updated**
   - `Spell Cast` - Modified `acid` spell cast animation for patreon
   - `Animation Template: Cone Template` - Removed the delay for the template that's added by default
