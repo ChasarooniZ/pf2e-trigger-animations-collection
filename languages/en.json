@@ -7,9 +7,18 @@
         "message": "<b>[Trigger Animation Trove (PF2e)]<b> To have this module work as expected your must enable all trigger engine triggers in the Animations folder. <br><br> To get there go to <code>Game Settings</code> -> <code>Trigger Engine</code> -> <code>Register Triggers</code> -> <code>Animations</code> -> Click the folder Icon -> Enable all Triggers underneath that folder -> click the save button at the top. <br><br> This message will repeat on startup until you confirm you have completed this setup in this module's settings under Game Settings"
       },
       "force-refresh-menu": {
-        "name": "",
         "label": "Enable All Animations",
         "hint": "Asks the user to enable all animations again if they for whatever reason dismissed some dialog or want to force them to be enabled again"
+      },
+      "token-image-form": {
+        "enable": {
+          "name": "Enable Automatic Token Image for Forms",
+          "hint": "When enabled, this module will automatically cause certain effects that would change the appearance of a token such as Animal Form, to actually change the art Token Image Rule Elements"
+        }
+      },
+      "do-pan-effects": {
+        "name": "Enable Panning Effects",
+        "hint": "When this is disabled, any animations included with Trove will not run the panning portion of their effects"
       }
     },
     "message": {

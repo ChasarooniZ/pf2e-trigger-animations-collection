@@ -1271,64 +1271,64 @@ export const ART_MAPPING = {
       {
         predicate: ["dragon-form:coral"],
         token:
-          "modules/pf2e-tokens-monster-core-2/assets/tokens/dragon-coral-adult.webp",
+          "modules/pf2e-tokens-monster-core-2/assets/tokens/dragon-adult-coral.webp",
         scale: 2,
         subject:
-          "modules/pf2e-tokens-monster-core-2/assets/subjects/dragon-coral-adult.webp",
+          "modules/pf2e-tokens-monster-core-2/assets/subjects/dragon-adult-coral.webp",
         subjectScale: 2,
       },
       {
         predicate: ["dragon-form:despair"],
         token:
-          "modules/pf2e-tokens-monster-core-2/assets/tokens/dragon-despair-adult.webp",
+          "modules/pf2e-tokens-monster-core-2/assets/tokens/dragon-adult-despair.webp",
         scale: 2,
         subject:
-          "modules/pf2e-tokens-monster-core-2/assets/subjects/dragon-despair-adult.webp",
+          "modules/pf2e-tokens-monster-core-2/assets/subjects/dragon-adult-despair.webp",
         subjectScale: 2,
       },
       {
         predicate: ["dragon-form:phase"],
         token:
-          "modules/pf2e-tokens-monster-core-2/assets/tokens/dragon-phase-adult.webp",
+          "modules/pf2e-tokens-monster-core-2/assets/tokens/dragon-adult-phase.webp",
         scale: 2,
         subject:
-          "modules/pf2e-tokens-monster-core-2/assets/subjects/dragon-phase-adult.webp",
+          "modules/pf2e-tokens-monster-core-2/assets/subjects/dragon-adult-phase.webp",
         subjectScale: 2,
       },
       {
         predicate: ["dragon-form:requiem"],
         token:
-          "modules/pf2e-tokens-monster-core-2/assets/tokens/dragon-requiem-adult.webp",
+          "modules/pf2e-tokens-monster-core-2/assets/tokens/dragon-adult-requiem.webp",
         scale: 2,
         subject:
-          "modules/pf2e-tokens-monster-core-2/assets/subjects/dragon-requiem-adult.webp",
+          "modules/pf2e-tokens-monster-core-2/assets/subjects/dragon-adult-requiem.webp",
         subjectScale: 2,
       },
       {
         predicate: ["dragon-form:resurrection"],
         token:
-          "modules/pf2e-tokens-monster-core-2/assets/tokens/dragon-resurrection-adult.webp",
+          "modules/pf2e-tokens-monster-core-2/assets/tokens/dragon-adult-resurrection.webp",
         scale: 2,
         subject:
-          "modules/pf2e-tokens-monster-core-2/assets/subjects/dragon-resurrection-adult.webp",
+          "modules/pf2e-tokens-monster-core-2/assets/subjects/dragon-adult-resurrection.webp",
         subjectScale: 2,
       },
       {
         predicate: ["dragon-form:rune"],
         token:
-          "modules/pf2e-tokens-monster-core-2/assets/tokens/dragon-rune-adult.webp",
+          "modules/pf2e-tokens-monster-core-2/assets/tokens/dragon-adult-rune.webp",
         scale: 2,
         subject:
-          "modules/pf2e-tokens-monster-core-2/assets/subjects/dragon-rune-adult.webp",
+          "modules/pf2e-tokens-monster-core-2/assets/subjects/dragon-adult-rune.webp",
         subjectScale: 2,
       },
       {
         predicate: ["dragon-form:whisper"],
         token:
-          "modules/pf2e-tokens-monster-core-2/assets/tokens/dragon-whisper-adult.webp",
+          "modules/pf2e-tokens-monster-core-2/assets/tokens/dragon-adult-whisper.webp",
         scale: 2,
         subject:
-          "modules/pf2e-tokens-monster-core-2/assets/subjects/dragon-whisper-adult.webp",
+          "modules/pf2e-tokens-monster-core-2/assets/subjects/dragon-adult-whisper.webp",
         subjectScale: 2,
       },
     ],

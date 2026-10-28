@@ -9,6 +9,7 @@
     - Also adds a setting to disable it (and it respects your compendium art sort order)
 - **Updated**
   - `Spell Cast` - Modified `acid` spell cast animation for patreon
+  - `Handler: Damage Roll` - Modified the code so now it will automatically grab any matched slugs in the damage roll and trigger the corresponding `damage-roll-addon:<slug>`
   - `Animation Template: Cone Template` - Removed the delay for the template that's added by default
 
 ## 0.12.3

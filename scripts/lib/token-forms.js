@@ -2,19 +2,21 @@ import { ART_MAPPING, MODULES, RELEVANT_SLUGS } from "../const/art-map.js";
 
 export function setupTokenImageFormHooks(enabled = true) {
   if (game.user.isGM) {
-    Hooks[enabled ? "on" : "off"]("createItem", async (item) => {
-      if (RELEVANT_SLUGS.has(item?.rollOptionSlug)) {
-        const tokenImageRule = getTokenImages({
-          slug: item?.rollOptionSlug,
-          noSubject: !item?.actor?.prototypeToken?.ring?.enabled,
-        });
-        const rules = item?.system.rules;
-        rules.push(...tokenImageRule);
-        await item.actor.updateEmbeddedDocuments("Item", [
-          { _id: item.id, system: { rules: rules } },
-        ]);
-      }
+    Hooks[enabled ? "on" : "off"]("createItem", imageHook);
+  }
+}
+
+async function imageHook(item) {
+  if (RELEVANT_SLUGS.has(item?.rollOptionSlug)) {
+    const tokenImageRule = getTokenImages({
+      slug: item?.rollOptionSlug,
+      noSubject: !item?.actor?.prototypeToken?.ring?.enabled,
     });
+    const rules = item?.system.rules;
+    rules.push(...tokenImageRule);
+    await item.actor.updateEmbeddedDocuments("Item", [
+      { _id: item.id, system: { rules: rules } },
+    ]);
   }
 }
 
@@ -78,4 +80,22 @@ function getArt(slug) {
 
 export function hasImageMappingModule() {
   return MODULES.some((id) => game.modules.get(id)?.active);
+}
+
+export function getFormListHTML() {
+  let text = "";
+  for (const [modID, entries] of Object.entries(ART_MAPPING)) {
+    const modName = game.modules.get(modID)?.name ?? modID;
+    text += `<h4>${modName}</h4><ul>`;
+    for (const [slug, entry] of Object.entries(entries)) {
+      if (Array.isArray(entry)) {
+        console.log({ slug, entry });
+        text += `<li>${slug}<ul><li>${entry.map((i) => i.predicate?.[0]?.split(":")?.[1]).join("</li><li>")}</li></ul></li>`;
+      } else {
+        text += `<li>${slug}</li>`;
+      }
+    }
+    text += `</ul>`;
+  }
+  return text;
 }

@@ -10,7 +10,7 @@ import { MODULE_ID } from "./module.js";
 
 export function setupSettings() {
   game.settings.registerMenu(MODULE_ID, "force-refresh-menu", {
-    name: `${MODULE_ID}.module-settings.force-refresh-menu.name`,
+    name: "",
     label: `${MODULE_ID}.module-settings.force-refresh-menu.label`,
     hint: `${MODULE_ID}.module-settings.force-refresh-menu.hint`,
     icon: "fas fa-arrows-rotate",
@@ -28,6 +28,15 @@ export function setupSettings() {
     onChange: (value) => {
       setupTokenImageFormHooks(value);
     },
+  });
+
+  game.settings.register(MODULE_ID, "do-pan-effects", {
+    name: `${MODULE_ID}.module-settings.do-pan-effects.name`,
+    hint: `${MODULE_ID}.module-settings.do-pan-effects.hint`,
+    scope: "user",
+    config: true,
+    type: Boolean,
+    default: true,
   });
 
   game.settings.register(MODULE_ID, "disable-trigger-enable-spam", {

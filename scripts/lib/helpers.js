@@ -25,3 +25,16 @@ function tokenScale(tokenDoc) {
     ? tokenDoc.texture.scaleX / tokenDoc.ring.subject.scale
     : tokenDoc.texture.scaleX;
 }
+
+export function getCurrentScreenPositionData() {
+  return [
+    { type: "number", value: canvas.stage.localTransform.a },
+    {
+      type: "point",
+      value: {
+        x: canvas.stage.transform.pivot.x,
+        y: canvas.stage.transform.pivot.y,
+      },
+    },
+  ];
+}
