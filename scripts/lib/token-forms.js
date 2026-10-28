@@ -2,7 +2,7 @@ import { ART_MAPPING, MODULES, RELEVANT_SLUGS } from "../const/art-map.js";
 
 export function setupTokenImageFormHooks(enabled = true) {
   if (game.user.isGM) {
-    Hooks[enabled ? "on" : "off"]("createItem", (item) => {
+    Hooks[enabled ? "on" : "off"]("createItem", async (item) => {
       if (RELEVANT_SLUGS.has(item?.rollOptionSlug)) {
         const tokenImageRule = getTokenImages({
           slug: item?.rollOptionSlug,
@@ -10,7 +10,7 @@ export function setupTokenImageFormHooks(enabled = true) {
         });
         const rules = item?.system.rules;
         rules.push(...tokenImageRule);
-        item.actor.updateEmbeddedDocuments("Item", [
+        await item.actor.updateEmbeddedDocuments("Item", [
           { _id: item.id, system: { rules: rules } },
         ]);
       }
