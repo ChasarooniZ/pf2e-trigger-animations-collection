@@ -1,5 +1,5 @@
 {
-  "id": "ibz4c4OxDdyiUlHP",
+  "id": "1ib0hCw7j6s7QK2g",
   "name": "Recall Knowledge",
   "folder": "Basic Actions",
   "priority": 0,
@@ -1211,17 +1211,17 @@
       },
       "id": "OoGURq3tX9vIv1lv",
       "outs": {
-        "low": {
-          "connection": "2L4LPXZbLleM8ubN:ins:in"
-        },
-        "medium": {
-          "connection": "2L4LPXZbLleM8ubN:ins:in"
-        },
-        "high": {
-          "connection": "2L4LPXZbLleM8ubN:ins:in"
-        },
         "minimal": {
           "connection": "XGkMCRzOT0w2xUmp:ins:in"
+        },
+        "low": {
+          "connection": "R3X7shTmwqLlc3Qd:ins:in"
+        },
+        "medium": {
+          "connection": "R3X7shTmwqLlc3Qd:ins:in"
+        },
+        "high": {
+          "connection": "R3X7shTmwqLlc3Qd:ins:in"
         }
       }
     },
@@ -1595,6 +1595,27 @@
         },
         "false": {
           "connection": "JecjmtM2HfDz7hPN:ins:in"
+        }
+      }
+    },
+    {
+      "type": "module-enabled",
+      "position": {
+        "x": 525.4230769230769,
+        "y": 23.75
+      },
+      "id": "R3X7shTmwqLlc3Qd",
+      "inputs": {
+        "module": {
+          "value": "jb2a_patreon"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "2L4LPXZbLleM8ubN:ins:in"
+        },
+        "false": {
+          "connection": "bza5w4zHApni9YLZ:ins:in"
         }
       }
     }

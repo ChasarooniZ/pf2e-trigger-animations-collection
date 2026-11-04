@@ -233,7 +233,6 @@ export function getCastSpellAnimationItems({
       output.scale = output.target ? 1 : 2;
       break;
     case "fear":
-      //TODO add a fade out and duration FX, also scale in and out
       output.animFile = jb2aPatreon
         ? "jb2a.dodecahedron.skull.below.dark_greenpurple"
         : "jb2a.magic_signs.circle.02.illusion.intro.dark_purple";
@@ -350,12 +349,13 @@ export function getCastSpellAnimationItems({
 
 function getTargetPoint(targets, template, sources) {
   if (template) {
-    return (
-      template?.shapes?.[0]?.origin ?? {
-        x: template?.shapes?.[0]?.x,
-        y: template?.shapes?.[0]?.y,
-      }
-    );
+    return (template?.shapes?.[0]?.origin ??
+      template?.shapes?.[0]?.type === "emanation")
+      ? template?.shaapes?.[0]?.center
+      : {
+          x: template?.shapes?.[0]?.x,
+          y: template?.shapes?.[0]?.y,
+        };
   } else if (
     targets?.length > 0 &&
     targets?.[0]?.token?.uuid !== sources?.[0]?.token?.uuid

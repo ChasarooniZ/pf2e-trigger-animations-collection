@@ -271,42 +271,30 @@
     "name": "[Trove] Effect / Condition Badge Update",
     "folder": "Animations",
     "priority": 0,
-    "id": "Yuk4s0i4d7Lpwtnn",
+    "id": "SrGAtfuahucRuDaD",
     "nodes": [
       {
         "type": "execute-animation",
-        "position": {
-          "x": 1922.1907624506157,
-          "y": 187.2055837573547
-        },
+        "position": { "x": 2099.1907624506157, "y": 136.2055837573547 },
         "id": "PEXiYyM5Qoo77FZK",
         "inputs": {
-          "targets": {
-            "connection": "iLQqpDvy8aS7XhpM:outputs:targets"
-          },
           "actor": {
             "connection": "mosxx1pPt8nuHzjX:outputs:Xk3O4efifslHIdqZ"
           },
           "sources": {
             "connection": "mosxx1pPt8nuHzjX:outputs:Xk3O4efifslHIdqZ"
           },
-          "item": {
-            "connection": "ZxdKeHGJd1pmBBiS:outputs:TdOzBdcKWTlrReUL"
-          },
+          "item": { "connection": "ZxdKeHGJd1pmBBiS:outputs:TdOzBdcKWTlrReUL" },
           "options": {
             "connection": "mosxx1pPt8nuHzjX:outputs:Xk3O4efifslHIdqZ"
           },
-          "name": {
-            "connection": "Oib6d57AsodU4FR0:outputs:result"
-          }
+          "name": { "connection": "Oib6d57AsodU4FR0:outputs:result" },
+          "targets": { "connection": "yKtRbM4ypapSuuDT:outputs:targets" }
         }
       },
       {
         "type": "extract-item",
-        "position": {
-          "x": 482.6667067754819,
-          "y": 60.00003046355749
-        },
+        "position": { "x": 482.6667067754819, "y": 60.00003046355749 },
         "id": "mosxx1pPt8nuHzjX",
         "custom": {
           "outputs": {
@@ -345,30 +333,13 @@
           }
         },
         "inputs": {
-          "input": {
-            "connection": "ZxdKeHGJd1pmBBiS:outputs:TdOzBdcKWTlrReUL"
-          }
+          "input": { "connection": "ZxdKeHGJd1pmBBiS:outputs:TdOzBdcKWTlrReUL" }
         },
-        "outs": {
-          "out": {
-            "connection": "3TzisWdJCV52USKq:ins:in"
-          }
-        }
-      },
-      {
-        "type": "scene-targets",
-        "position": {
-          "x": 833.3055250177011,
-          "y": 297.3056025299461
-        },
-        "id": "iLQqpDvy8aS7XhpM"
+        "outs": { "out": { "connection": "3TzisWdJCV52USKq:ins:in" } }
       },
       {
         "type": "hook-called-event",
-        "position": {
-          "x": 197.5555555555555,
-          "y": 30.99999999999997
-        },
+        "position": { "x": 197.5555555555555, "y": 30.99999999999997 },
         "id": "ZxdKeHGJd1pmBBiS",
         "custom": {
           "outputs": {
@@ -392,60 +363,40 @@
               "slug": "output",
               "isArray": false,
               "type": "any"
+            },
+            "4B8FjqBhKbFE9PvG": {
+              "id": "4B8FjqBhKbFE9PvG",
+              "label": "UserID",
+              "slug": "output",
+              "isArray": false,
+              "type": "text"
             }
           }
         },
-        "inputs": {
-          "name": {
-            "value": "updateItem"
-          }
-        },
-        "outs": {
-          "out": {
-            "connection": "mosxx1pPt8nuHzjX:ins:in"
-          }
-        }
+        "inputs": { "name": { "value": "updateItem" } },
+        "outs": { "out": { "connection": "mosxx1pPt8nuHzjX:ins:in" } }
       },
       {
         "type": "list-contains",
-        "position": {
-          "x": 764.5897435897431,
-          "y": 49.955555555555435
-        },
+        "position": { "x": 764.5897435897431, "y": 49.955555555555435 },
         "id": "3TzisWdJCV52USKq",
         "inputs": {
           "entry": {
             "connection": "mosxx1pPt8nuHzjX:outputs:znIlg3Jak9mV1rDw"
           },
-          "list": {
-            "connection": "7SBWh6kxs6p1ZXxQ:outputs:list"
-          }
+          "list": { "connection": "7SBWh6kxs6p1ZXxQ:outputs:list" }
         },
-        "outs": {
-          "true": {
-            "connection": "FxR5QChVGKXuHlVk:ins:in"
-          }
-        }
+        "outs": { "true": { "connection": "FxR5QChVGKXuHlVk:ins:in" } }
       },
       {
         "type": "list-value",
-        "position": {
-          "x": 478.5555555555552,
-          "y": -47.666666666666686
-        },
+        "position": { "x": 478.5555555555552, "y": -47.666666666666686 },
         "id": "7SBWh6kxs6p1ZXxQ",
-        "inputs": {
-          "entry": {
-            "value": "effect,condition"
-          }
-        }
+        "inputs": { "entry": { "value": "effect,condition" } }
       },
       {
         "type": "execute-script",
-        "position": {
-          "x": 1005.267676767676,
-          "y": 58.936868686868536
-        },
+        "position": { "x": 1005.267676767676, "y": 58.936868686868536 },
         "id": "FxR5QChVGKXuHlVk",
         "custom": {
           "inputs": {
@@ -455,6 +406,13 @@
               "slug": "input",
               "isArray": false,
               "type": "any"
+            },
+            "9MsMjAlwajkzHLhR": {
+              "id": "9MsMjAlwajkzHLhR",
+              "label": "UserID",
+              "slug": "input",
+              "isArray": false,
+              "type": "text"
             }
           },
           "outputs": {
@@ -472,46 +430,29 @@
             "connection": "ZxdKeHGJd1pmBBiS:outputs:GraPv91alupysDDs"
           },
           "script": {
-            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst update = inputs[0];\n\nconst value = Number.isInteger(update?.system?.badge?.value) || Number.isInteger(update?.system?.value?.value)\n\nreturn [{type: \"boolean\", value}];"
+            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst update = inputs[0];\nconst userID = inputs[1];\n\nconst value = Number.isInteger(update?.system?.badge?.value) || Number.isInteger(update?.system?.value?.value)\n\nreturn [\n  {type: \"boolean\", value: value && game.user.id === userID}\n];"
+          },
+          "9MsMjAlwajkzHLhR": {
+            "connection": "ZxdKeHGJd1pmBBiS:outputs:4B8FjqBhKbFE9PvG"
           }
         },
-        "outs": {
-          "out": {
-            "connection": "D7runevSoOuUnOJh:ins:in"
-          }
-        }
+        "outs": { "out": { "connection": "D7runevSoOuUnOJh:ins:in" } }
       },
       {
         "type": "split-boolean",
         "inputs": {
-          "input": {
-            "connection": "FxR5QChVGKXuHlVk:outputs:V6VZsM2Ki074RVD6"
-          }
+          "input": { "connection": "FxR5QChVGKXuHlVk:outputs:V6VZsM2Ki074RVD6" }
         },
-        "position": {
-          "x": 1356.6414141414134,
-          "y": 97.73232323232327
-        },
+        "position": { "x": 1356.6414141414134, "y": 97.73232323232327 },
         "id": "D7runevSoOuUnOJh",
-        "outs": {
-          "true": {
-            "connection": "Oib6d57AsodU4FR0:ins:in"
-          }
-        }
+        "outs": { "true": { "connection": "yKtRbM4ypapSuuDT:ins:in" } }
       },
       {
         "type": "format-text",
         "state": "plain",
-        "position": {
-          "x": 1595.7777777777776,
-          "y": 151.70555555555552
-        },
+        "position": { "x": 1772.7777777777776, "y": 100.70555555555552 },
         "id": "Oib6d57AsodU4FR0",
-        "outs": {
-          "out": {
-            "connection": "PEXiYyM5Qoo77FZK:ins:in"
-          }
-        },
+        "outs": { "out": { "connection": "PEXiYyM5Qoo77FZK:ins:in" } },
         "custom": {
           "inputs": {
             "EhOg8swVOvjZDDqY": {
@@ -538,12 +479,8 @@
           }
         },
         "inputs": {
-          "jhufYqifVCmc1Tb7": {
-            "value": "update"
-          },
-          "plain": {
-            "value": "@type:@slug, @type:@uuid"
-          },
+          "jhufYqifVCmc1Tb7": { "value": "update" },
+          "plain": { "value": "@type:@slug, @type:@uuid" },
           "EhOg8swVOvjZDDqY": {
             "connection": "mosxx1pPt8nuHzjX:outputs:E85qTXVg1K7pfp77"
           },
@@ -551,16 +488,27 @@
             "connection": "mosxx1pPt8nuHzjX:outputs:f9YhUDpEXtNAhUqu"
           }
         }
+      },
+      {
+        "type": "user-targets",
+        "position": { "x": 1566, "y": 84 },
+        "id": "yKtRbM4ypapSuuDT",
+        "inputs": { "user": { "connection": "9aCqz5VDSHTKRCXR:outputs:user" } },
+        "outs": { "out": { "connection": "Oib6d57AsodU4FR0:ins:in" } }
+      },
+      {
+        "type": "user-value",
+        "position": { "x": 1128, "y": -19.25 },
+        "id": "9aCqz5VDSHTKRCXR"
       }
     ]
   },
-
   {
     "name": "[Trove] Recall Knowledge",
     "folder": "Animations",
     "priority": 0,
     "description": "<p>Adds Support for PF2e HUD Recall Knowledge</p>",
-    "id": "1qKV6TUi9Ar8NguN",
+    "id": "LnrVB2ovO8x4hrGa",
     "nodes": [
       {
         "type": "hook-called-event",
@@ -577,7 +525,10 @@
             }
           }
         },
-        "inputs": { "name": { "value": "createChatMessage" } },
+        "inputs": {
+          "name": { "value": "createChatMessage" },
+          "gm": { "value": true }
+        },
         "outs": { "out": { "connection": "gVLmqm0XJHssdAwN:ins:in" } }
       },
       {
@@ -657,14 +608,11 @@
     "name": "[Trove] Reload",
     "folder": "Animations",
     "priority": 0,
-    "id": "KJ16ixdoL50OzVrV",
+    "id": "oDUNgvkomgBAQblz",
     "nodes": [
       {
         "type": "execute-animation",
-        "position": {
-          "x": 2473.0240957839487,
-          "y": -84.96108290931198
-        },
+        "position": { "x": 1603.0240957839487, "y": 15.038917090688074 },
         "id": "PEXiYyM5Qoo77FZK",
         "inputs": {
           "actor": {
@@ -673,15 +621,11 @@
           "sources": {
             "connection": "mosxx1pPt8nuHzjX:outputs:Xk3O4efifslHIdqZ"
           },
-          "item": {
-            "connection": "ZxdKeHGJd1pmBBiS:outputs:TdOzBdcKWTlrReUL"
-          },
+          "item": { "connection": "ZxdKeHGJd1pmBBiS:outputs:TdOzBdcKWTlrReUL" },
           "options": {
             "connection": "mosxx1pPt8nuHzjX:outputs:Xk3O4efifslHIdqZ"
           },
-          "name": {
-            "connection": "Oib6d57AsodU4FR0:outputs:result"
-          },
+          "name": { "connection": "Oib6d57AsodU4FR0:outputs:result" },
           "gs6nXHfK2aKEIIIj": {
             "connection": "KzAh0MHKwO6oo8Y4:outputs:tipwK3ayLKbn8LM8"
           },
@@ -702,12 +646,6 @@
           },
           "DmgYiD7Z1PcrJ53Q": {
             "connection": "FxR5QChVGKXuHlVk:outputs:TmZxRcmok2WAWBDU"
-          },
-          "user": {
-            "connection": "3k4ztAKqYFQdGH3l:outputs:vdIDlUEvPNvlTYqm"
-          },
-          "targets": {
-            "connection": "xh0UevTkdltGQCTs:outputs:targets"
           }
         },
         "custom": {
@@ -734,19 +672,11 @@
               "type": "number"
             }
           }
-        },
-        "outs": {
-          "out": {
-            "connection": "u7BIFKFJ9s6EaqSm:ins:in"
-          }
         }
       },
       {
         "type": "extract-item",
-        "position": {
-          "x": 976.333373442149,
-          "y": 22.619078082605142
-        },
+        "position": { "x": 976.333373442149, "y": 22.619078082605142 },
         "id": "mosxx1pPt8nuHzjX",
         "custom": {
           "outputs": {
@@ -793,22 +723,13 @@
           }
         },
         "inputs": {
-          "input": {
-            "connection": "ZxdKeHGJd1pmBBiS:outputs:TdOzBdcKWTlrReUL"
-          }
+          "input": { "connection": "ZxdKeHGJd1pmBBiS:outputs:TdOzBdcKWTlrReUL" }
         },
-        "outs": {
-          "out": {
-            "connection": "Oib6d57AsodU4FR0:ins:in"
-          }
-        }
+        "outs": { "out": { "connection": "Oib6d57AsodU4FR0:ins:in" } }
       },
       {
         "type": "hook-called-event",
-        "position": {
-          "x": 217.00000000000023,
-          "y": 4.174603174603249
-        },
+        "position": { "x": 217.00000000000023, "y": 4.174603174603249 },
         "id": "ZxdKeHGJd1pmBBiS",
         "custom": {
           "outputs": {
@@ -835,23 +756,12 @@
             }
           }
         },
-        "inputs": {
-          "name": {
-            "value": "preUpdateItem"
-          }
-        },
-        "outs": {
-          "out": {
-            "connection": "FxR5QChVGKXuHlVk:ins:in"
-          }
-        }
+        "inputs": { "name": { "value": "preUpdateItem" } },
+        "outs": { "out": { "connection": "FxR5QChVGKXuHlVk:ins:in" } }
       },
       {
         "type": "execute-script",
-        "position": {
-          "x": 466.7676767676762,
-          "y": 4.7225829725828135
-        },
+        "position": { "x": 466.7676767676762, "y": 4.7225829725828135 },
         "id": "FxR5QChVGKXuHlVk",
         "custom": {
           "inputs": {
@@ -912,43 +822,23 @@
             "connection": "ZxdKeHGJd1pmBBiS:outputs:TdOzBdcKWTlrReUL"
           }
         },
-        "outs": {
-          "out": {
-            "connection": "D7runevSoOuUnOJh:ins:in"
-          }
-        }
+        "outs": { "out": { "connection": "D7runevSoOuUnOJh:ins:in" } }
       },
       {
         "type": "split-boolean",
-        "position": {
-          "x": 756.9747474747469,
-          "y": 22.68470418470423
-        },
+        "position": { "x": 756.9747474747469, "y": 22.68470418470423 },
         "id": "D7runevSoOuUnOJh",
-        "outs": {
-          "true": {
-            "connection": "mosxx1pPt8nuHzjX:ins:in"
-          }
-        },
+        "outs": { "true": { "connection": "mosxx1pPt8nuHzjX:ins:in" } },
         "inputs": {
-          "input": {
-            "connection": "FxR5QChVGKXuHlVk:outputs:9SylGnZtvAPBnNst"
-          }
+          "input": { "connection": "FxR5QChVGKXuHlVk:outputs:9SylGnZtvAPBnNst" }
         }
       },
       {
         "type": "format-text",
         "state": "plain",
-        "position": {
-          "x": 1200.7777777777776,
-          "y": 19.70555555555552
-        },
+        "position": { "x": 1200.7777777777776, "y": 19.70555555555552 },
         "id": "Oib6d57AsodU4FR0",
-        "outs": {
-          "out": {
-            "connection": "xh0UevTkdltGQCTs:ins:in"
-          }
-        },
+        "outs": { "out": { "connection": "PEXiYyM5Qoo77FZK:ins:in" } },
         "custom": {
           "inputs": {
             "jhufYqifVCmc1Tb7": {
@@ -989,12 +879,8 @@
           }
         },
         "inputs": {
-          "jhufYqifVCmc1Tb7": {
-            "value": "reload"
-          },
-          "plain": {
-            "value": "@type:@a, @type:@b, @type:@c,  @type:@d"
-          },
+          "jhufYqifVCmc1Tb7": { "value": "reload" },
+          "plain": { "value": "@type:@a, @type:@b, @type:@c,  @type:@d" },
           "EhOg8swVOvjZDDqY": {
             "connection": "mosxx1pPt8nuHzjX:outputs:E85qTXVg1K7pfp77"
           },
@@ -1011,163 +897,6 @@
             "connection": "mosxx1pPt8nuHzjX:outputs:ifdU1f5gdGvEHXGw"
           }
         }
-      },
-      {
-        "type": "execute-script",
-        "position": {
-          "x": 1878.25,
-          "y": -37.97222222222223
-        },
-        "id": "3k4ztAKqYFQdGH3l",
-        "custom": {
-          "inputs": {
-            "s7L84KtcoqoWsB34": {
-              "id": "s7L84KtcoqoWsB34",
-              "label": "Count",
-              "slug": "input",
-              "isArray": false,
-              "type": "number"
-            }
-          },
-          "outputs": {
-            "vdIDlUEvPNvlTYqm": {
-              "id": "vdIDlUEvPNvlTYqm",
-              "label": "User",
-              "slug": "output",
-              "isArray": false,
-              "type": "user"
-            },
-            "xJZ5nTq9eYhparwk": {
-              "id": "xJZ5nTq9eYhparwk",
-              "label": "count",
-              "slug": "output",
-              "isArray": false,
-              "type": "number"
-            }
-          }
-        },
-        "inputs": {
-          "s7L84KtcoqoWsB34": {
-            "connection": "JgPqKdyOdsKAWadY:outputs:33Bq3ZkWNl8HA0Rt"
-          },
-          "script": {
-            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nlet cnt = inputs[0] ?? 0;\nconst user = game.users.contents?.[cnt];\n\ncnt++;\nreturn [{type: \"user\", value: user}, {type: \"number\", value: cnt}];"
-          }
-        },
-        "outs": {
-          "out": {
-            "connection": "xrvH72V5520NEj1v:ins:in"
-          }
-        }
-      },
-      {
-        "type": "if-truthy",
-        "position": {
-          "x": 2231.0277777777774,
-          "y": -50.47222222222223
-        },
-        "id": "xrvH72V5520NEj1v",
-        "custom": {
-          "inputs": {
-            "1sCTd5HhysoyKkAf": {
-              "id": "1sCTd5HhysoyKkAf",
-              "label": "User",
-              "slug": "condition",
-              "isArray": false,
-              "type": "user"
-            }
-          }
-        },
-        "inputs": {
-          "1sCTd5HhysoyKkAf": {
-            "connection": "3k4ztAKqYFQdGH3l:outputs:vdIDlUEvPNvlTYqm"
-          }
-        },
-        "outs": {
-          "true": {
-            "connection": "PEXiYyM5Qoo77FZK:ins:in"
-          }
-        }
-      },
-      {
-        "custom": {
-          "title": "User Loop",
-          "outputs": {
-            "33Bq3ZkWNl8HA0Rt": {
-              "id": "33Bq3ZkWNl8HA0Rt",
-              "label": "Count",
-              "slug": "entry",
-              "isArray": false,
-              "type": "number"
-            }
-          }
-        },
-        "type": "__gate_exit__",
-        "position": {
-          "x": 1572.0000000000002,
-          "y": -180.33333333333331
-        },
-        "id": "JgPqKdyOdsKAWadY",
-        "outs": {
-          "out": {
-            "connection": "3k4ztAKqYFQdGH3l:ins:in"
-          }
-        }
-      },
-      {
-        "custom": {
-          "inputs": {
-            "33Bq3ZkWNl8HA0Rt": {
-              "id": "33Bq3ZkWNl8HA0Rt",
-              "label": "Count",
-              "slug": "entry",
-              "isArray": false,
-              "type": "number"
-            }
-          }
-        },
-        "outs": {
-          "out": {
-            "connection": "JgPqKdyOdsKAWadY:ins:in"
-          }
-        },
-        "type": "__gate_entry__",
-        "position": {
-          "x": 2769.673076923077,
-          "y": -89.08333333333331
-        },
-        "id": "u7BIFKFJ9s6EaqSm",
-        "inputs": {
-          "33Bq3ZkWNl8HA0Rt": {
-            "connection": "3k4ztAKqYFQdGH3l:outputs:xJZ5nTq9eYhparwk"
-          }
-        }
-      },
-      {
-        "type": "user-targets",
-        "position": {
-          "x": 1523.7777777777778,
-          "y": 4
-        },
-        "id": "xh0UevTkdltGQCTs",
-        "inputs": {
-          "user": {
-            "connection": "tQfRQiqTYrYxeLaz:outputs:user"
-          }
-        },
-        "outs": {
-          "out": {
-            "connection": "3k4ztAKqYFQdGH3l:ins:in"
-          }
-        }
-      },
-      {
-        "type": "user-value",
-        "position": {
-          "x": 1248.4444444444443,
-          "y": -68.44444444444457
-        },
-        "id": "tQfRQiqTYrYxeLaz"
       }
     ]
   },
@@ -1175,14 +904,11 @@
     "name": "[Trove] Roll Option Update",
     "folder": "Animations",
     "priority": 0,
-    "id": "Fo8QMCHCNXj1jvYS",
+    "id": "p0Hls58brAvtuZb6",
     "nodes": [
       {
         "type": "execute-animation",
-        "position": {
-          "x": 1927.1907624506157,
-          "y": 148.2055837573547
-        },
+        "position": { "x": 1927.1907624506157, "y": 148.2055837573547 },
         "id": "PEXiYyM5Qoo77FZK",
         "inputs": {
           "actor": {
@@ -1191,21 +917,15 @@
           "sources": {
             "connection": "mosxx1pPt8nuHzjX:outputs:Xk3O4efifslHIdqZ"
           },
-          "item": {
-            "connection": "ZxdKeHGJd1pmBBiS:outputs:TdOzBdcKWTlrReUL"
-          },
+          "item": { "connection": "ZxdKeHGJd1pmBBiS:outputs:TdOzBdcKWTlrReUL" },
           "options": {
             "connection": "mosxx1pPt8nuHzjX:outputs:Xk3O4efifslHIdqZ"
           },
           "kW9rlifvGk20yyJP": {
             "connection": "FxR5QChVGKXuHlVk:outputs:t0XEao7zOBDbsfI2"
           },
-          "name": {
-            "connection": "Oib6d57AsodU4FR0:outputs:result"
-          },
-          "targets": {
-            "connection": "FPcJKIikmmk6AH0X:outputs:targets"
-          }
+          "name": { "connection": "Oib6d57AsodU4FR0:outputs:result" },
+          "targets": { "connection": "FPcJKIikmmk6AH0X:outputs:targets" }
         },
         "custom": {
           "inputs": {
@@ -1221,10 +941,7 @@
       },
       {
         "type": "extract-item",
-        "position": {
-          "x": 186.66670677548188,
-          "y": 157.0000304635575
-        },
+        "position": { "x": 186.66670677548188, "y": 157.0000304635575 },
         "id": "mosxx1pPt8nuHzjX",
         "custom": {
           "outputs": {
@@ -1263,22 +980,13 @@
           }
         },
         "inputs": {
-          "input": {
-            "connection": "ZxdKeHGJd1pmBBiS:outputs:TdOzBdcKWTlrReUL"
-          }
+          "input": { "connection": "ZxdKeHGJd1pmBBiS:outputs:TdOzBdcKWTlrReUL" }
         },
-        "outs": {
-          "out": {
-            "connection": "FxR5QChVGKXuHlVk:ins:in"
-          }
-        }
+        "outs": { "out": { "connection": "FxR5QChVGKXuHlVk:ins:in" } }
       },
       {
         "type": "hook-called-event",
-        "position": {
-          "x": -89.44444444444457,
-          "y": 45
-        },
+        "position": { "x": -89.44444444444457, "y": 45 },
         "id": "ZxdKeHGJd1pmBBiS",
         "custom": {
           "outputs": {
@@ -1302,26 +1010,22 @@
               "slug": "output",
               "isArray": false,
               "type": "any"
+            },
+            "VqcmKnReZYiFwxjK": {
+              "id": "VqcmKnReZYiFwxjK",
+              "label": "User ID",
+              "slug": "output",
+              "isArray": false,
+              "type": "text"
             }
           }
         },
-        "inputs": {
-          "name": {
-            "value": "updateItem"
-          }
-        },
-        "outs": {
-          "out": {
-            "connection": "mosxx1pPt8nuHzjX:ins:in"
-          }
-        }
+        "inputs": { "name": { "value": "updateItem" } },
+        "outs": { "out": { "connection": "mosxx1pPt8nuHzjX:ins:in" } }
       },
       {
         "type": "execute-script",
-        "position": {
-          "x": 558.267676767676,
-          "y": 21.936868686868536
-        },
+        "position": { "x": 558.267676767676, "y": 21.936868686868536 },
         "id": "FxR5QChVGKXuHlVk",
         "custom": {
           "inputs": {
@@ -1331,6 +1035,13 @@
               "slug": "input",
               "isArray": false,
               "type": "any"
+            },
+            "c2ThosXnFQV6s9rE": {
+              "id": "c2ThosXnFQV6s9rE",
+              "label": "User ID",
+              "slug": "input",
+              "isArray": false,
+              "type": "text"
             }
           },
           "outputs": {
@@ -1362,46 +1073,29 @@
             "connection": "ZxdKeHGJd1pmBBiS:outputs:GraPv91alupysDDs"
           },
           "script": {
-            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst update = inputs[0];\n\nconst rollOption = update?.system?.rules?.find(rule => rule?.value && rule?.key === 'RollOption')\n\nreturn [{type: \"boolean\", value: !!rollOption}, {type: \"text\", value: rollOption?.selection ?? ''}, {type: \"text\", value: rollOption?.option ?? ''}];"
+            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst update = inputs[0];\nconst userID = inputs[1];\n\nconst rollOption = update?.system?.rules?.find(rule => rule?.value && rule?.key === 'RollOption')\n\nreturn [\n  {type: \"boolean\", value: !!rollOption && game.user.id === userID},\n  {type: \"text\", value: rollOption?.selection ?? ''},\n  {type: \"text\", value: rollOption?.option ?? ''}\n];"
+          },
+          "c2ThosXnFQV6s9rE": {
+            "connection": "ZxdKeHGJd1pmBBiS:outputs:VqcmKnReZYiFwxjK"
           }
         },
-        "outs": {
-          "out": {
-            "connection": "D7runevSoOuUnOJh:ins:in"
-          }
-        }
+        "outs": { "out": { "connection": "D7runevSoOuUnOJh:ins:in" } }
       },
       {
         "type": "split-boolean",
         "inputs": {
-          "input": {
-            "connection": "FxR5QChVGKXuHlVk:outputs:V6VZsM2Ki074RVD6"
-          }
+          "input": { "connection": "FxR5QChVGKXuHlVk:outputs:V6VZsM2Ki074RVD6" }
         },
-        "position": {
-          "x": 1069.6414141414134,
-          "y": 111.73232323232327
-        },
+        "position": { "x": 1069.6414141414134, "y": 111.73232323232327 },
         "id": "D7runevSoOuUnOJh",
-        "outs": {
-          "true": {
-            "connection": "FPcJKIikmmk6AH0X:ins:in"
-          }
-        }
+        "outs": { "true": { "connection": "FPcJKIikmmk6AH0X:ins:in" } }
       },
       {
         "type": "format-text",
         "state": "plain",
-        "position": {
-          "x": 1595.7777777777776,
-          "y": 151.70555555555552
-        },
+        "position": { "x": 1595.7777777777776, "y": 151.70555555555552 },
         "id": "Oib6d57AsodU4FR0",
-        "outs": {
-          "out": {
-            "connection": "PEXiYyM5Qoo77FZK:ins:in"
-          }
-        },
+        "outs": { "out": { "connection": "PEXiYyM5Qoo77FZK:ins:in" } },
         "custom": {
           "inputs": {
             "EhOg8swVOvjZDDqY": {
@@ -1435,9 +1129,7 @@
           }
         },
         "inputs": {
-          "jhufYqifVCmc1Tb7": {
-            "value": "update"
-          },
+          "jhufYqifVCmc1Tb7": { "value": "update" },
           "plain": {
             "value": "@type:@slug, @type:@slug:@selection, @type:@uuid, @type:@uuid:@selection"
           },
@@ -1454,28 +1146,14 @@
       },
       {
         "type": "user-targets",
-        "position": {
-          "x": 1342,
-          "y": 134
-        },
+        "position": { "x": 1342, "y": 134 },
         "id": "FPcJKIikmmk6AH0X",
-        "inputs": {
-          "user": {
-            "connection": "GnAfGaMR0wnb8k1t:outputs:user"
-          }
-        },
-        "outs": {
-          "out": {
-            "connection": "Oib6d57AsodU4FR0:ins:in"
-          }
-        }
+        "inputs": { "user": { "connection": "GnAfGaMR0wnb8k1t:outputs:user" } },
+        "outs": { "out": { "connection": "Oib6d57AsodU4FR0:ins:in" } }
       },
       {
         "type": "user-value",
-        "position": {
-          "x": 1039,
-          "y": 207
-        },
+        "position": { "x": 1039, "y": 207 },
         "id": "GnAfGaMR0wnb8k1t"
       }
     ]
@@ -1485,14 +1163,11 @@
     "folder": "Animations",
     "priority": 0,
     "tags": ["pf2e", "sf2e"],
-    "id": "N1RJ2suJncrKHmYW",
+    "id": "PdDlfQn7wsc0zbtE",
     "nodes": [
       {
         "type": "execute-animation",
-        "position": {
-          "x": 1039.4414236949078,
-          "y": 225.95560949113622
-        },
+        "position": { "x": 1233.0777873312713, "y": 225.95560949113622 },
         "id": "zJiAEHL0uEXPz5FL",
         "custom": {
           "inputs": {
@@ -1519,51 +1194,25 @@
           "5E6lWUteSYs0PMsw": {
             "connection": "NNGbeJ0Gi5YfgOol:outputs:outcome"
           },
-          "options": {
-            "connection": "NNGbeJ0Gi5YfgOol:outputs:options"
-          },
-          "item": {
-            "connection": "NNGbeJ0Gi5YfgOol:outputs:item"
-          },
-          "targets": {
-            "connection": "NNGbeJ0Gi5YfgOol:outputs:target"
-          },
-          "sources": {
-            "connection": "NNGbeJ0Gi5YfgOol:outputs:roller"
-          },
-          "actor": {
-            "connection": "NNGbeJ0Gi5YfgOol:outputs:origin"
-          },
-          "name": {
-            "connection": "y9ZGBIEvTd1yHNzy:outputs:HyrCM6TXeQ5m2djZ"
-          }
+          "options": { "connection": "NNGbeJ0Gi5YfgOol:outputs:options" },
+          "item": { "connection": "NNGbeJ0Gi5YfgOol:outputs:item" },
+          "sources": { "connection": "NNGbeJ0Gi5YfgOol:outputs:roller" },
+          "actor": { "connection": "NNGbeJ0Gi5YfgOol:outputs:origin" },
+          "name": { "connection": "y9ZGBIEvTd1yHNzy:outputs:HyrCM6TXeQ5m2djZ" },
+          "targets": { "connection": "EfXnSkat8VAnv3eW:outputs:targets" }
         }
       },
       {
         "type": "check-roll-event",
-        "position": {
-          "x": 480.6666522503878,
-          "y": 226.66664600372314
-        },
+        "position": { "x": 480.6666522503878, "y": 226.66664600372314 },
         "id": "NNGbeJ0Gi5YfgOol",
-        "outs": {
-          "out": {
-            "connection": "y9ZGBIEvTd1yHNzy:ins:in"
-          }
-        },
-        "inputs": {
-          "for": {
-            "value": "skill-check"
-          }
-        },
+        "outs": { "out": { "connection": "y9ZGBIEvTd1yHNzy:ins:in" } },
+        "inputs": { "for": { "value": "skill-check" } },
         "state": "check"
       },
       {
         "type": "execute-script",
-        "position": {
-          "x": 741,
-          "y": 227
-        },
+        "position": { "x": 741, "y": 227 },
         "id": "y9ZGBIEvTd1yHNzy",
         "custom": {
           "inputs": {
@@ -1593,11 +1242,13 @@
             "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst options = inputs[0];\nconst names = options.filter(ro => ro.startsWith(\"action:\")).join(', ')\nreturn [{type: \"text\", value: names}];"
           }
         },
-        "outs": {
-          "out": {
-            "connection": "zJiAEHL0uEXPz5FL:ins:in"
-          }
-        }
+        "outs": { "out": { "connection": "EfXnSkat8VAnv3eW:ins:in" } }
+      },
+      {
+        "type": "user-targets",
+        "position": { "x": 1016.8181818181816, "y": 226.27272727272725 },
+        "id": "EfXnSkat8VAnv3eW",
+        "outs": { "out": { "connection": "zJiAEHL0uEXPz5FL:ins:in" } }
       }
     ]
   },
@@ -1606,7 +1257,7 @@
     "folder": "Animations",
     "priority": 0,
     "tags": ["pf2e", "sf2e"],
-    "id": "iBdeFSbGMXMYwHdj",
+    "id": "5y55R1wx7xv4wqeL",
     "nodes": [
       {
         "type": "execute-animation",
@@ -1660,7 +1311,10 @@
             }
           }
         },
-        "inputs": { "name": { "value": "createChatMessage" } },
+        "inputs": {
+          "name": { "value": "createChatMessage" },
+          "gm": { "value": true }
+        },
         "outs": { "out": { "connection": "03VpfBEpU0Ke7ZoU:ins:in" } }
       },
       {

@@ -1,5 +1,20 @@
 ## Unreleased
 
+## 0.13.1
+
+- **Animations**
+  - **New**
+    - Reload: Arquebus, Treat Wounds (@ChasarooniZ)
+  - **Updated**
+    - Recall Knowledge, Encumbered _Modified for better support of JB2a Free_ (@ChasarooniZ)
+    - Prone _Always Points Down now_ (@ChasarooniZ)
+    - Disintegrate _fix timing_ (@ChasarooniZ)
+    - Haunting Hymn _Add casting animation_ (@ChasarooniZ)
+- **Updated**
+  - Fixed `Cast Spell` to better support emanations
+  - Updated triggers `Recall Knowledge`, `Effect / Condition Badge Update`, `Roll Option Update`,` Reload` `Spell Message` to only fire once as opposed to once per active user
+  - `Skill Action Check` now properly passes targets
+
 ## 0.13.0
 
 - **Animations**

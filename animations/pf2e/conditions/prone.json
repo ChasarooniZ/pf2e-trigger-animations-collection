@@ -59,6 +59,9 @@
         },
         "attachTo": {
           "value": true
+        },
+        "bindRotation": {
+          "value": false
         }
       },
       "outs": {
@@ -246,10 +249,7 @@
         "effect": {
           "connection": "DIKQm9cpxx67j5yf:outputs:effect"
         },
-        "zeroSpriteRotation": {
-          "value": true
-        },
-        "spriteRotation": {
+        "rotate": {
           "value": -90
         }
       },

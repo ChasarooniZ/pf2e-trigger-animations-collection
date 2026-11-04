@@ -851,7 +851,7 @@
           "value": true
         },
         "waitDelayMin": {
-          "value": -800
+          "value": -400
         }
       },
       "position": {

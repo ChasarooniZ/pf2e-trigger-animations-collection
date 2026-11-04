@@ -1,5 +1,5 @@
 {
-  "id": "SnhdlcOOnayXybfh",
+  "id": "yhRtTHjlFzZABeZW",
   "name": "Haunting Hymn",
   "folder": "Spells",
   "priority": 0,
@@ -8,8 +8,8 @@
     {
       "id": "AGDSh0gA0kIM9ahY",
       "position": {
-        "x": -1645.5357142857142,
-        "y": 148.0595238095235
+        "x": -999.5357142857142,
+        "y": 158.0595238095235
       },
       "type": "animation-event",
       "custom": {
@@ -38,8 +38,8 @@
     {
       "type": "extract-item",
       "position": {
-        "x": -1380.9459721287449,
-        "y": 158.95954637981583
+        "x": -734.9459721287449,
+        "y": 168.95954637981583
       },
       "id": "JeMzbjKbEChWcqhn",
       "custom": {
@@ -69,7 +69,7 @@
       },
       "outs": {
         "out": {
-          "connection": "wrJ3DSxi9aLPCRzU:ins:in"
+          "connection": "kxrLnQiVHb3W0njx:ins:in"
         }
       }
     },
@@ -499,91 +499,47 @@
       }
     },
     {
-      "type": "effect",
+      "type": "execute-animation",
       "position": {
-        "x": -925.9971139971144,
-        "y": 262.67135642135577
+        "x": -216.44444444444434,
+        "y": 223.55555555555566
       },
-      "id": "OMFQrwzZcgCD6kw9",
+      "id": "anlsGtrphrfJ6H4r",
       "inputs": {
         "name": {
-          "connection": "JeMzbjKbEChWcqhn:outputs:ihumDWYmRPHnFaYv"
+          "value": "spell:cast"
         },
-        "origin": {
-          "connection": "JeMzbjKbEChWcqhn:outputs:oANL9cUQFZuAD2ZP"
-        }
-      },
-      "outs": {
-        "out": {
-          "connection": "PFLbz9438Jp1yXB5:ins:in"
-        }
-      }
-    },
-    {
-      "type": "file",
-      "inputs": {
-        "effect": {
-          "connection": "OMFQrwzZcgCD6kw9:outputs:effect"
-        },
-        "file": {
-          "value": "jb2a.cast_generic.01.yellow.0"
-        }
-      },
-      "position": {
-        "x": -908.8725667828608,
-        "y": 403.47692214943726
-      },
-      "id": "PFLbz9438Jp1yXB5",
-      "outs": {
-        "out": {
-          "connection": "JwOTBIrsVJ2Ax8V4:ins:in"
-        }
-      }
-    },
-    {
-      "type": "location",
-      "state": "targets",
-      "inputs": {
-        "effect": {
-          "connection": "OMFQrwzZcgCD6kw9:outputs:effect"
-        },
-        "cacheLocation": {
+        "await": {
           "value": true
         },
-        "gridUnits": {
-          "value": true
+        "options": {
+          "connection": "AGDSh0gA0kIM9ahY:outputs:options"
         },
-        "local": {
-          "value": true
+        "B1TllRebQhyZOcyo": {
+          "connection": "AGDSh0gA0kIM9ahY:outputs:H128dq3gh7ewMCet"
         },
-        "location": {
+        "item": {
+          "connection": "AGDSh0gA0kIM9ahY:outputs:item"
+        },
+        "targets": {
+          "connection": "AGDSh0gA0kIM9ahY:outputs:targets"
+        },
+        "sources": {
           "connection": "AGDSh0gA0kIM9ahY:outputs:sources"
-        }
-      },
-      "position": {
-        "x": -632.1304930079255,
-        "y": 260.19839141096986
-      },
-      "id": "wJBT0GLjYlP9edSZ",
-      "outs": {
-        "out": {
-          "connection": "dqdc7wwF5oyIH3Td:ins:in"
-        }
-      }
-    },
-    {
-      "type": "flow",
-      "position": {
-        "x": -168.54074612849,
-        "y": 261.3794995248745
-      },
-      "id": "8QP2XgBQ0OyAqnwE",
-      "inputs": {
-        "effect": {
-          "connection": "OMFQrwzZcgCD6kw9:outputs:effect"
         },
-        "waitUntilFinished": {
-          "value": true
+        "actor": {
+          "connection": "AGDSh0gA0kIM9ahY:outputs:actor"
+        }
+      },
+      "custom": {
+        "inputs": {
+          "B1TllRebQhyZOcyo": {
+            "id": "B1TllRebQhyZOcyo",
+            "label": "Template",
+            "slug": "input",
+            "isArray": false,
+            "type": "any"
+          }
         }
       },
       "outs": {
@@ -595,68 +551,22 @@
     {
       "type": "get-quality",
       "position": {
-        "x": -1153.4256854256855,
-        "y": 138.0999278499271
+        "x": -454.30158730158746,
+        "y": 156.8412698412701
       },
-      "id": "wrJ3DSxi9aLPCRzU",
+      "id": "kxrLnQiVHb3W0njx",
       "outs": {
         "low": {
-          "connection": "OMFQrwzZcgCD6kw9:ins:in"
-        },
-        "medium": {
-          "connection": "OMFQrwzZcgCD6kw9:ins:in"
+          "connection": "anlsGtrphrfJ6H4r:ins:in"
         },
         "high": {
-          "connection": "OMFQrwzZcgCD6kw9:ins:in"
+          "connection": "anlsGtrphrfJ6H4r:ins:in"
+        },
+        "medium": {
+          "connection": "anlsGtrphrfJ6H4r:ins:in"
         },
         "minimal": {
           "connection": "yeCTX5Rge8m1F5X2:ins:in"
-        }
-      }
-    },
-    {
-      "type": "scale",
-      "state": "object",
-      "inputs": {
-        "effect": {
-          "connection": "wJBT0GLjYlP9edSZ:outputs:effect"
-        },
-        "objectScale": {
-          "value": 2
-        }
-      },
-      "position": {
-        "x": -411.4256854256855,
-        "y": 263.3927849927842
-      },
-      "id": "dqdc7wwF5oyIH3Td",
-      "outs": {
-        "out": {
-          "connection": "8QP2XgBQ0OyAqnwE:ins:in"
-        }
-      }
-    },
-    {
-      "type": "style",
-      "inputs": {
-        "effect": {
-          "connection": "PFLbz9438Jp1yXB5:outputs:effect"
-        },
-        "filterType": {
-          "value": "ColorMatrix"
-        },
-        "filterData": {
-          "value": "{\n  \"hue\": -140\n}"
-        }
-      },
-      "position": {
-        "x": -907.0685425685435,
-        "y": 591.8181818181812
-      },
-      "id": "JwOTBIrsVJ2Ax8V4",
-      "outs": {
-        "out": {
-          "connection": "wJBT0GLjYlP9edSZ:ins:in"
         }
       }
     }
