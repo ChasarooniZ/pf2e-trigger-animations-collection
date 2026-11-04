@@ -262,6 +262,7 @@
 - Raise a Shield 🔇🆓✅ (✍🏼 @Chasarooni)
 - Recall Knowledge 🔊🆓✅ (✍🏼 @Chasarooni)
 - Shove 🔊🆓✅ (✍🏼 @Chasarooni)
+- Treat Wounds 🔊🆓✅ (✍🏼 @Chasarooni)
 - Tumble Through 🔊🆓✅ (✍🏼 @Chasarooni)
 - Trip 🔊🆓✅ (✍🏼 @Chasarooni)
 
@@ -467,6 +468,7 @@
 
 - Crossbow (Weapon Group) 🆓🔊 (✍🏼 @Chasarooni)
 - Firearm (Weapon Group) 🆓🔊 (✍🏼 @Chasarooni)
+- Arquebus 🆓🔊 (✍🏼 @Chasarooni)
 - Pepperbox 🆓🔊 (✍🏼 @Chasarooni)
 - Slide Pistol 🆓🔊 (✍🏼 @Chasarooni)
 
