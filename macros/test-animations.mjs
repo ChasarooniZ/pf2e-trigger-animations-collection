@@ -38,6 +38,7 @@ const VALID_TRIGGERS = [
   "damage-roll-addon:",
   "reload:",
   "spell:",
+  "exploration:",
 ];
 
 function validateFileName({ path, name }) {
@@ -75,7 +76,15 @@ function validateAnimationTrigger(triggersText, id) {
 function validateNodes(data) {
   const errors = [];
   for (const node of data.nodes) {
-    if (node.type === "file" && node?.inputs?.file?.value?.includes("/")) {
+    if (
+      node.type === "file" &&
+      node?.inputs?.file?.value?.includes("/") &&
+      !(
+        node?.inputs?.file?.value?.startsWith("systems/pf2e") ||
+        node?.inputs?.file?.value?.startsWith("systems/sf2e") ||
+        node?.inputs?.file?.value?.startsWith("icons/")
+      )
+    ) {
       console.error(
         `- Non Sequencer DB Value '${node?.inputs?.file?.value}' in ${data.name}`,
       );

@@ -40,6 +40,7 @@
       - [10th Rank Spells](#10th-rank-spells)
       - [Rituals](#rituals)
     - [Basic Actions](#basic-actions)
+      - [Exploration](#exploration)
     - [Conditions](#conditions)
     - [Feats](#feats)
       - [Ancestry Feats](#ancestry-feats)
@@ -265,6 +266,17 @@
 - Treat Wounds 🔊🆓✅ (✍🏼 @Chasarooni)
 - Tumble Through 🔊🆓✅ (✍🏼 @Chasarooni)
 - Trip 🔊🆓✅ (✍🏼 @Chasarooni)
+
+#### Exploration
+
+- Avoid Notice 🔊🆓✅ (✍🏼 @Chasarooni)
+- Defend 🔊🆓✅ (✍🏼 @Chasarooni)
+- Detect Magic 🔊🆓✅ (✍🏼 @Chasarooni)
+- Follow the Expert 🔊🆓✅ (✍🏼 @Chasarooni)
+- Investigate 🔊🆓✅ (✍🏼 @Chasarooni)
+- Repeat a Spell 🔊🆓✅ (✍🏼 @Chasarooni)
+- Scout 🔊🆓✅ (✍🏼 @Chasarooni)
+- Search 🔊🆓✅ (✍🏼 @Chasarooni)
 
 ### Conditions
 

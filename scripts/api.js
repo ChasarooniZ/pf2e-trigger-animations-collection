@@ -18,5 +18,6 @@ export function setupAPI() {
         getCurrentScreenPositionData,
       },
     },
+    flags: {},
   };
 }

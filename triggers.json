@@ -503,6 +503,206 @@
       }
     ]
   },
+
+  {
+    "name": "[Trove] Exploration Activity",
+    "folder": "Animations",
+    "priority": 0,
+    "id": "xElCyI0LBtHMzgvX",
+    "nodes": [
+      {
+        "type": "hook-called-event",
+        "custom": {
+          "outputs": {
+            "QtdX9QA9uZwQQufV": {
+              "id": "QtdX9QA9uZwQQufV",
+              "label": "Actor",
+              "slug": "output",
+              "isArray": false,
+              "type": "target"
+            },
+            "6iFBLRaHW5HB2Mc8": {
+              "id": "6iFBLRaHW5HB2Mc8",
+              "label": "Update",
+              "slug": "output",
+              "isArray": false,
+              "type": "any"
+            }
+          }
+        },
+        "position": { "x": 494, "y": 173 },
+        "id": "N1jWwM0mn4nV7sal",
+        "inputs": { "name": { "value": "preUpdateActor" } },
+        "outs": { "out": { "connection": "oY7wU4CJMLS7dqVB:ins:in" } }
+      },
+      {
+        "type": "execute-script",
+        "custom": {
+          "inputs": {
+            "eyZJWTrSkGiuXP2L": {
+              "id": "eyZJWTrSkGiuXP2L",
+              "label": "Actor",
+              "slug": "input",
+              "isArray": false,
+              "type": "target"
+            },
+            "NilDB276PM9nE1Mf": {
+              "id": "NilDB276PM9nE1Mf",
+              "label": "Update",
+              "slug": "input",
+              "isArray": false,
+              "type": "any"
+            }
+          },
+          "outputs": {
+            "jcyM4y0OQbY0xVQ0": {
+              "id": "jcyM4y0OQbY0xVQ0",
+              "label": "Is Valid?",
+              "slug": "output",
+              "isArray": false,
+              "type": "boolean"
+            },
+            "Y7RqNqf7Rr9vHkDh": {
+              "id": "Y7RqNqf7Rr9vHkDh",
+              "label": "Item",
+              "slug": "output",
+              "isArray": false,
+              "type": "item"
+            },
+            "xR6FNCGJJjroldD9": {
+              "id": "xR6FNCGJJjroldD9",
+              "label": "Tokens",
+              "slug": "output",
+              "isArray": false,
+              "type": "target"
+            },
+            "hjekrCEwRXR3hyE0": {
+              "id": "hjekrCEwRXR3hyE0",
+              "label": "Options",
+              "slug": "output",
+              "isArray": true,
+              "type": "text"
+            }
+          }
+        },
+        "position": { "x": 732.9230769230769, "y": 143.4 },
+        "id": "oY7wU4CJMLS7dqVB",
+        "inputs": {
+          "eyZJWTrSkGiuXP2L": {
+            "connection": "N1jWwM0mn4nV7sal:outputs:QtdX9QA9uZwQQufV"
+          },
+          "NilDB276PM9nE1Mf": {
+            "connection": "N1jWwM0mn4nV7sal:outputs:6iFBLRaHW5HB2Mc8"
+          },
+          "script": {
+            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst actor = inputs[0]?.actor;\nconst update = inputs[1];\n\nconst itemID = update?.system?.exploration?.find(i => !actor?.system?.exploration?.includes(i))\n\nreturn [\n  {type: \"boolean\", value: update?.system?.exploration?.length >= actor?.system?.exploration?.length},\n  {type: \"item\", value: actor?.items?.get(itemID)},\n  {type: \"target\", isArray: true, value: actor ? actor?.getActiveTokens() : []},\n  {type: \"text\", isArray: true, value: actor ? Object.keys(actor?.rollOptions?.all) : []},\n];"
+          }
+        },
+        "outs": { "out": { "connection": "35pnpUFf0C6NVMg6:ins:in" } }
+      },
+      {
+        "type": "execute-animation",
+        "position": { "x": 2002.25, "y": 155.25 },
+        "id": "FRJpjK1TCTJA6nWO",
+        "inputs": {
+          "actor": {
+            "connection": "N1jWwM0mn4nV7sal:outputs:QtdX9QA9uZwQQufV"
+          },
+          "targets": { "connection": "pxYyLpzPbjKAkOdx:outputs:targets" },
+          "item": { "connection": "oY7wU4CJMLS7dqVB:outputs:Y7RqNqf7Rr9vHkDh" },
+          "name": { "connection": "q9tG54BsBWB2jglK:outputs:result" },
+          "sources": {
+            "connection": "oY7wU4CJMLS7dqVB:outputs:xR6FNCGJJjroldD9"
+          }
+        }
+      },
+      {
+        "type": "user-targets",
+        "position": { "x": 1479, "y": 154 },
+        "id": "pxYyLpzPbjKAkOdx",
+        "outs": { "out": { "connection": "q9tG54BsBWB2jglK:ins:in" } }
+      },
+      {
+        "type": "split-boolean",
+        "position": { "x": 1021.9230769230769, "y": 157.5 },
+        "id": "35pnpUFf0C6NVMg6",
+        "inputs": {
+          "input": { "connection": "oY7wU4CJMLS7dqVB:outputs:jcyM4y0OQbY0xVQ0" }
+        },
+        "outs": { "true": { "connection": "inaAVPthd65fzXt9:ins:in" } }
+      },
+      {
+        "type": "extract-item",
+        "custom": {
+          "outputs": {
+            "fftJQKpEpRad9hNq": {
+              "id": "fftJQKpEpRad9hNq",
+              "input": "slug",
+              "label": "Slug",
+              "slug": "path",
+              "isArray": false,
+              "type": "text"
+            },
+            "rEXz7zCLb6ZvYUN1": {
+              "id": "rEXz7zCLb6ZvYUN1",
+              "input": "uuid",
+              "label": "UUID",
+              "slug": "path",
+              "isArray": false,
+              "type": "text"
+            }
+          }
+        },
+        "position": { "x": 1236.923076923077, "y": 166.39999999999998 },
+        "id": "inaAVPthd65fzXt9",
+        "inputs": {
+          "input": { "connection": "oY7wU4CJMLS7dqVB:outputs:Y7RqNqf7Rr9vHkDh" }
+        },
+        "outs": { "out": { "connection": "pxYyLpzPbjKAkOdx:ins:in" } }
+      },
+      {
+        "type": "format-text",
+        "custom": {
+          "inputs": {
+            "UPCYzu69m33z1Nmr": {
+              "id": "UPCYzu69m33z1Nmr",
+              "input": "slug",
+              "label": "slug",
+              "slug": "variable",
+              "type": "text"
+            },
+            "O0dSvJYU8KgQCHv1": {
+              "id": "O0dSvJYU8KgQCHv1",
+              "input": "prefix",
+              "label": "prefix",
+              "slug": "variable",
+              "type": "text"
+            },
+            "XD6v5Us37p3NzH0Z": {
+              "id": "XD6v5Us37p3NzH0Z",
+              "input": "uuid",
+              "label": "uuid",
+              "slug": "variable",
+              "type": "text"
+            }
+          }
+        },
+        "position": { "x": 1696.173076923077, "y": 168.14999999999998 },
+        "id": "q9tG54BsBWB2jglK",
+        "inputs": {
+          "UPCYzu69m33z1Nmr": {
+            "connection": "inaAVPthd65fzXt9:outputs:fftJQKpEpRad9hNq"
+          },
+          "plain": { "value": "@prefix:@uuid, @prefix:@slug" },
+          "O0dSvJYU8KgQCHv1": { "value": "exploration" },
+          "XD6v5Us37p3NzH0Z": {
+            "connection": "inaAVPthd65fzXt9:outputs:rEXz7zCLb6ZvYUN1"
+          }
+        },
+        "outs": { "out": { "connection": "FRJpjK1TCTJA6nWO:ins:in" } }
+      }
+    ]
+  },
   {
     "name": "[Trove] Recall Knowledge",
     "folder": "Animations",

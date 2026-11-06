@@ -28,6 +28,7 @@ The following are triggers specific to Trigger Animation Trove, for all other tr
 | Effect / Condition Badge Update | `none`                                             | `update:item-slug`                                       |
 | Damage Roll                     | `none`                                             | `damage-roll:item-slug`                                  |
 | Damage Roll + Addon (Sneak Atk) | `none`                                             | `damage-roll-addon:damage-slug`                          |
+| Exploration Activity Activated  | `none`                                             | `exploration:action-slug`                                |
 | Reload                          | `none`                                             | `reload:weapon-slug`                                     |
 | Skill Action Rolled             | `none`                                             | `action:action-slug`                                     |
 | Spell Message                   | `none`                                             | `spell:spell-slug`                                       |

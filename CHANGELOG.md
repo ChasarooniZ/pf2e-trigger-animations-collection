@@ -1,5 +1,17 @@
 ## Unreleased
 
+## 0.13.2
+
+- **Animations**
+  - **New**
+    - Avoid Notice, Defend, Detect Magic, Follow the Expert, Investigate, Repeat a Spell, Scout, Search (@ChasarooniZ)
+  - **Updated**
+    - Recall Knowledge _Modified to be once per Hour_ (@ChasarooniZ, 💡 @Vauxs)
+- **New**
+  - Added `exploration:` trigger which triggers when an exploration activity is activated
+- **Updated**
+  - Updated testing scripts to accomodate new triggers, and allow for official icons from the system to be used
+
 ## 0.13.1
 
 - **Animations**

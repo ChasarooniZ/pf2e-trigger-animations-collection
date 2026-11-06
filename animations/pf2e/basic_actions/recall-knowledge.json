@@ -1,5 +1,5 @@
 {
-  "id": "1ib0hCw7j6s7QK2g",
+  "id": "0hstnK3G1HPy2fBO",
   "name": "Recall Knowledge",
   "folder": "Basic Actions",
   "priority": 0,
@@ -149,7 +149,7 @@
           "connection": "29qAFEWnyU9vkLB6:outputs:mGsfCBlTHnVYQrJC"
         },
         "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst colorA = inputs[0];\nconst colorB = inputs[1];\nconst thinkList = inputs[2]\nconst actor = inputs[3]?.actor;\n\nconst genFormat = {\n  fill: [colorA, colorB],\n  linejoin: \"round\",\n  strokeThickness: 3,\n  fontFamily: \"Times New Roman\",\n  fontSize: 30,\n  fontVariant: \"small-caps\",\n  align: \"center\",\n  dropShadow: true,\n  dropShadowAlpha: 0.4,\n  dropShadowAngle: 1,\n  dropShadowBlur: 10,\n}\n\nconst finFormat = {\n    ...genFormat,\n    fontWeight: \"bold\",\n    fontSize: genFormat.fontSize * 1.2,\n  }\nreturn [\n  {type: \"text\", value: JSON.stringify(genFormat)}, \n  {type: \"text\", value: JSON.stringify(finFormat)},\n  {type: \"number\", value:thinkList.length * 1000},\n  {type: \"boolean\", value: !window[`zoomedInOnceRecallKnowledge${actor?.id}`]},\n  {type: \"number\", value:thinkList.length}\n];"
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst colorA = inputs[0];\nconst colorB = inputs[1];\nconst thinkList = inputs[2]\nconst actor = inputs[3]?.actor;\n\nconst HOUR = 60 * 60 * 1000;\n\nconst genFormat = {\n  fill: [colorA, colorB],\n  linejoin: \"round\",\n  strokeThickness: 3,\n  fontFamily: \"Times New Roman\",\n  fontSize: 30,\n  fontVariant: \"small-caps\",\n  align: \"center\",\n  dropShadow: true,\n  dropShadowAlpha: 0.4,\n  dropShadowAngle: 1,\n  dropShadowBlur: 10,\n}\n\nconst finFormat = {\n    ...genFormat,\n    fontWeight: \"bold\",\n    fontSize: genFormat.fontSize * 1.2,\n  }\n\nconst pastZoomTime = window.triggerAnimationsTrove?.flags?.recallKnowledgeZoom ?? 0;\n\nconst zoomedInLastHour = (Date.now() - pastZoomTime) < HOUR;\n\nreturn [\n  {type: \"text\", value: JSON.stringify(genFormat)}, \n  {type: \"text\", value: JSON.stringify(finFormat)},\n  {type: \"number\", value:thinkList.length * 1000},\n  {type: \"boolean\", value: zoomedInLastHour},\n  {type: \"number\", value:thinkList.length}\n];"
         },
         "xaEfEyo2j5nfE1Va": {
           "connection": "4QkhPMPouIrJVHEm:outputs:list"
@@ -568,7 +568,7 @@
       "id": "jmDt3VwR1I4AuDND",
       "inputs": {
         "code": {
-          "value": "const actor = inputs[0]?.actor\nwindow[`zoomedInOnceRecallKnowledge${actor?.id}`] = true"
+          "value": "window.triggerAnimationsTrove.flags.recallKnowledgeZoom = Date.now()"
         },
         "zI8GlUIjUIbuQ989": {
           "connection": "nN1h0JIkzBkBdYTA:outputs:entry"
@@ -577,17 +577,6 @@
       "outs": {
         "out": {
           "connection": "xAeVbToneyuAqbYV:ins:in"
-        }
-      },
-      "custom": {
-        "inputs": {
-          "zI8GlUIjUIbuQ989": {
-            "id": "zI8GlUIjUIbuQ989",
-            "label": "Source",
-            "slug": "input",
-            "isArray": false,
-            "type": "target"
-          }
         }
       }
     },
@@ -1242,19 +1231,6 @@
           "connection": "FrPTv4IpJNijHsJX:ins:in"
         }
       }
-    },
-    {
-      "inputs": {
-        "entry": {
-          "connection": "1yq1EYJmqc6ejvU7:outputs:sources"
-        }
-      },
-      "type": "__variable_getter__",
-      "position": {
-        "x": 3135.6944444444434,
-        "y": 77.27777777777703
-      },
-      "id": "nN1h0JIkzBkBdYTA"
     },
     {
       "type": "sound",

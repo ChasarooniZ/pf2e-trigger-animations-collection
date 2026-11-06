@@ -1,6 +1,6 @@
 ## Animations Created
 
-- Chasarooni - 189 animations created
+- Chasarooni - 197 animations created
 - Suldrun45 - 46 animations created
 - RunicLibrarian - 22 animations created
 - Dio/PorradaNoGajo - 7 animations created
