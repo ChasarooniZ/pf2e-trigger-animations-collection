@@ -10,7 +10,7 @@
 - **New**
   - Added `exploration:` trigger which triggers when an exploration activity is activated
 - **Updated**
-  - Updated testing scripts to accomodate new triggers, and allow for official icons from the system to be used
+  - Updated testing scripts to accommodate new triggers, and allow for official icons from the system to be used
 
 ## 0.13.1
 
