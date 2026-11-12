@@ -19,20 +19,31 @@ Hooks.once("init", async function () {
   Hooks.once("triggerAnimations.ready", async (api) => {
     registerTriggerAnimationTemplates();
     if (game.user.isGM) {
-      if (!window?.troveAnimationsAsked) {
-        window.troveAnimationsAsked = true;
-        // askToAddNewAnimationsDialog();
-        const list = await getAnimationsToAddAndUpdateFlags();
-        await sendUpdateMessage({ animations: list });
+      window.troveAnimationsAsked = true;
+      if (window?.troveTriggersAsked && !window?.troveUpdateSent) {
+        const animList = await getAnimationsToAddAndUpdateFlags();
+        const triggerList = await getTriggersToAddAndUpdateFlags();
+        window.troveUpdateSent = true;
+        await sendUpdateMessage({
+          animations: animList,
+          triggers: triggerList,
+        });
       }
     }
-    // modifyTriggerAnimationTemplates();
   });
 
   Hooks.once("triggerEngine.ready", async () => {
     if (game.user.isGM) {
-      const list = await getTriggersToAddAndUpdateFlags();
-      await sendUpdateMessage({ triggers: list });
+      window.troveTriggersAsked = true;
+      if (window?.troveAnimationsAsked && !window?.troveUpdateSent) {
+        const animList = await getAnimationsToAddAndUpdateFlags();
+        const triggerList = await getTriggersToAddAndUpdateFlags();
+        window.troveUpdateSent = true;
+        await sendUpdateMessage({
+          animations: animList,
+          triggers: triggerList,
+        });
+      }
     }
   });
 });

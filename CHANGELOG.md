@@ -1,5 +1,12 @@
 ## Unreleased
 
+## 0.13.3
+
+- **Updated**
+  - Updated `Enable Triggers Message`
+    - Format better matching sequencer and Trigger Animations
+    - Now consolidates everything down to one message (for both triggers and animations)
+
 ## 0.13.2
 
 - **Animations**

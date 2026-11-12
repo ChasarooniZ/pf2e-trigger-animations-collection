@@ -1,3 +1,66 @@
 .trigger-animation-trove-animation-enable-dialog .window-content {
   overflow: hidden auto;
 }
+:root {
+  --text-color: #fff;
+  --bg-color: #232323;
+  --highlight-color: #30a77a;
+  --link-color: #2f855a;
+}
+
+.chat-message:has(.trigger-animations-trove.update) {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.trigger-animations-trove.update {
+  text-align: center;
+  color: var(--text-color);
+
+  .title {
+    font-weight: bold;
+  }
+
+  hr.divider {
+    background-color: var(--highlight-color);
+    border-color: var(--highlight-color);
+    -webkit-mask-image: linear-gradient(
+      90deg,
+      transparent,
+      #000 12%,
+      #000 88%,
+      transparent
+    );
+    mask-image: linear-gradient(
+      90deg,
+      transparent,
+      #000 12%,
+      #000 88%,
+      transparent
+    );
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    a {
+      display: flex;
+      flex: 1;
+      color: var(--link-color);
+      &:hover {
+        color: var(--highlight-color);
+      }
+    }
+  }
+
+  button {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    &:disabled {
+      color: dimgray;
+      background-color: rgb(70, 70, 70);
+    }
+  }
+}

@@ -23,13 +23,11 @@
     },
     "message": {
       "update": {
-        "title": "Trigger Animation Trove",
+        "title": "Trigger Animation Trove updated to",
         "animations": {
-          "description": "New animations were added",
           "button": "Enable New Animations"
         },
         "triggers": {
-          "description": "New triggers were added, enable these to add the new triggers",
           "button": "Enable New Triggers"
         }
       }
