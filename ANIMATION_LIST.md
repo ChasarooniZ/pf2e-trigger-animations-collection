@@ -21,8 +21,10 @@
   - [PF2e](#pf2e)
     - [Class Features](#class-features)
       - [Barbarian](#barbarian)
+    - [Guardian](#guardian)
       - [Kineticist](#kineticist)
     - [Investigator](#investigator)
+    - [Ranger](#ranger)
       - [Rogue](#rogue)
       - [Runesmith](#runesmith)
     - [Spells](#spells)
@@ -113,6 +115,10 @@
 
 - Rage 🔊🆓 (✍🏼 @Chasarooni)
 
+### Guardian
+
+- Taunt 🔊🆓✅ (✍🏼 @Chasarooni)
+
 #### Kineticist
 
 - Elemental Blast 🔊🆓✅ (✍🏼 @Chasarooni)
@@ -121,6 +127,10 @@
 
 - Devise a Strategem 🔊🆓 (✍🏼 @Chasarooni)
 - Strategic Strike 🔊🆓✅ (✍🏼 @Chasarooni)
+
+### Ranger
+
+- Hunt Prey 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### Rogue
 

@@ -1,5 +1,13 @@
 ## Unreleased
 
+## 0.13.4
+
+- **Animations**
+  - **New**
+    - Taunt, Hunt Prey (@ChasarooniZ)
+  - **Updated**
+    - Recall Knowledge _Fixed to be once per Hour_ (@ChasarooniZ)
+
 ## 0.13.3
 
 - **Updated**
